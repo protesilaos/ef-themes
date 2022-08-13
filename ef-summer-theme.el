@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-summer "Light theme with a warm, pleasant palette.")
+  (deftheme ef-summer "Light theme with a pleasant palette.")
 
   (defconst ef-summer-palette
     '(;; Basic tones
