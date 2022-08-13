@@ -42,7 +42,7 @@
     '(;; Basic tones
       (bg-main "#fff5ea") (fg-main "#624a4a")
       (bg-dim  "#f5eddf") (fg-dim  "#836887")
-      (bg-alt  "#e9e0d8") (fg-alt  "#9f5f6a")
+      (bg-alt  "#e9e0d8") (fg-alt  "#7f6f4a")
 
       ;; Basic hues for foreground values
       (red             "#c42d2f") (green         "#217a3c")
