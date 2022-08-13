@@ -40,9 +40,9 @@
 
   (defconst ef-day-palette
     '(;; Basic tones
-      (bg-main "#fff5ea") (fg-main "#64555f")
-      (bg-dim  "#f3eae0") (fg-dim  "#7f6f87")
-      (bg-alt  "#efe2d4") (fg-alt  "#af506f")
+      (bg-main "#fff5ea") (fg-main "#624a4a")
+      (bg-dim  "#f3eae0") (fg-dim  "#7f6a87")
+      (bg-alt  "#efe2d4") (fg-alt  "#9f5f6a")
 
       ;; Basic hues for foreground values
       (red             "#b01f0f") (green         "#217a3c")
@@ -52,7 +52,7 @@
       (yellow          "#a45f22") (blue          "#375cc6")
       (yellow-warmer   "#b6540f") (blue-warmer   "#5f5fdf")
       (yellow-cooler   "#b06030") (blue-cooler   "#265fbf")
-      (yellow-faint    "#a05f5a") (blue-faint    "#706fcf")
+      (yellow-faint    "#a05f5a") (blue-faint    "#6a65bf")
       (magenta         "#ba35af") (cyan          "#1f6fbf")
       (magenta-warmer  "#cb2aa0") (cyan-warmer   "#3f6faf")
       (magenta-cooler  "#9435b4") (cyan-cooler   "#0f7b8f")
