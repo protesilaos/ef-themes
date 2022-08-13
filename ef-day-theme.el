@@ -95,8 +95,8 @@
 
       (link red-cooler)
       (link-alt magenta-cooler)
-      (date yellow-cooler)
-      (name green-warmer)
+      (date cyan-cooler)
+      (name green)
       (keybind red-cooler)
 
       (builtin red)
@@ -110,16 +110,16 @@
       (type blue-warmer)
       (variable cyan)
 
-      (accent-0 red-warmer)
-      (accent-1 green-cooler)
-      (accent-2 magenta-warmer)
-      (accent-3 blue)
+      (accent-0 green-cooler)
+      (accent-1 red)
+      (accent-2 blue)
+      (accent-3 magenta-warmer)
 
-      (mail-0 yellow-cooler)
-      (mail-1 cyan-cooler)
-      (mail-2 red-cooler)
+      (mail-0 cyan-warmer)
+      (mail-1 red-cooler)
+      (mail-2 magenta-cooler)
       (mail-3 green)
-      (mail-4 red)
+      (mail-4 magenta-warmer)
 
       (rainbow-0 red-cooler)
       (rainbow-1 magenta-cooler)
