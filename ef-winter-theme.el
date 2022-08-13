@@ -80,7 +80,7 @@
       (bg-mode-line  "#600f5a") (fg-mode-line  "#dedeff")
       (bg-completion "#2f2a7a")
       (bg-hover      "#00474f")
-      (bg-hover-alt  "#004f3f")
+      (bg-hover-alt  "#6030a5")
       (bg-hl-line    "#003045")
       (bg-region     "#441f2f")
 
