@@ -72,7 +72,7 @@
 
       ;; Diffs
       (bg-added          "#c5eaff")
-      (bg-added-faint    "#dff6ff")
+      (bg-added-faint    "#dff1ff")
       (bg-added-refine   "#bad7f5")
 
       (bg-changed        "#ffdd99")
@@ -80,7 +80,7 @@
       (bg-changed-refine "#ffca9f")
 
       (bg-removed        "#ffc0ef")
-      (bg-removed-faint  "#ffcdef")
+      (bg-removed-faint  "#ffd0ef")
       (bg-removed-refine "#f0a8ea")
 
       ;; (bg-removed        "#ffc8df")
@@ -92,7 +92,7 @@
       (bg-completion "#f4cfff")
       (bg-hover      "#b4cfff")
       (bg-hover-alt  "#aaeccf")
-      (bg-hl-line    "#f5deb3")
+      (bg-hl-line    "#f5e4bf")
       (bg-region     "#eecfff")
 
       (border        "#eebfef")
