@@ -89,7 +89,7 @@
     `(ansi-color-yellow ((,c :background ,yellow :foreground ,yellow)))
 ;;;; bongo
     `(bongo-album-title (( )))
-    `(bongo-artist ((,c :foreground ,accent-0)))
+    `(bongo-artist ((,c :foreground ,rainbow-0)))
     `(bongo-currently-playing-track ((,c :inherit bold)))
     `(bongo-elapsed-track-part ((,c :background ,bg-alt :underline t)))
     `(bongo-filled-seek-bar ((,c :background ,bg-hover)))
@@ -97,7 +97,7 @@
     `(bongo-marked-track-line ((,c :background ,bg-dim)))
     `(bongo-played-track ((,c :strike-through t)))
     `(bongo-track-length ((,c :inherit shadow)))
-    `(bongo-track-title ((,c :foreground ,accent-1)))
+    `(bongo-track-title ((,c :foreground ,rainbow-1)))
     `(bongo-unfilled-seek-bar ((,c :background ,bg-dim)))
 ;;;; bookmark
     `(bookmark-face ((,c :background ,bg-magenta :foreground ,fg-intense)))
