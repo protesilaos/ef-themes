@@ -40,9 +40,9 @@
 
   (defconst ef-winter-palette
     '(;; Basic tones
-      (bg-main "#0f0b15") (fg-main "#b8bbd5")
-      (bg-dim  "#221a2f") (fg-dim  "#80779f")
-      (bg-alt  "#252544") (fg-alt  "#b0629f")
+      (bg-main "#0f0b15") (fg-main "#b8c6d5")
+      (bg-dim  "#221a2f") (fg-dim  "#807c9f")
+      (bg-alt  "#252544") (fg-alt  "#b0889f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a") (green         "#0faa26")
@@ -55,7 +55,7 @@
       (yellow-faint    "#cf9f7f") (blue-faint    "#7a94df")
       (magenta         "#d0669f") (cyan          "#4fb0cf")
       (magenta-warmer  "#e580ea") (cyan-warmer   "#6fafff")
-      (magenta-cooler  "#af8fff") (cyan-cooler   "#20bfdf")
+      (magenta-cooler  "#af85ff") (cyan-cooler   "#1dbfcf")
       (magenta-faint   "#c57faf") (cyan-faint    "#8aa0df")
 
       ;; Basic hues for background values
