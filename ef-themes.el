@@ -53,15 +53,12 @@
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-known-themes))
 
-(defconst ef-themes-themes '(ef-summer ef-winter)
-  "List of Ef Themes.")
-
 (defvar ef-themes--select-theme-history nil)
 
 (defun ef-themes--select-prompt ()
   "Minibuffer prompt for `ef-themes-select'."
   (completing-read "Select Ef Theme: "
-                   ef-themes-themes
+                   (ef-themes--list-enabled-themes)
                    nil t nil
                    'ef-themes--select-theme-history))
 
