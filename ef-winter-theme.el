@@ -85,7 +85,7 @@
       (bg-region     "#441f2f")
 
       (border        "#eebfef")
-      (cursor        "#ff33cc")
+      (cursor        "#ff55cc")
       (fg-intense    "#ffffff")
 
       ;; Mappings
