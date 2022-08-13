@@ -1,9 +1,5 @@
 # Ef (εὖ) themes for GNU Emacs
 
-> All I know is that I know nothing about Emacs 🤔
->
-> --- Socrates (circa 5th century BCE)
-
 Colourful light and dark themes.
 
 ## Principles
