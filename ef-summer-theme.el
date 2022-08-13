@@ -111,10 +111,10 @@
 
       (builtin magenta)
       (comment yellow-cooler)
-      (constant green-warmer)
+      (constant red-cooler)
       (fnname magenta-warmer)
       (keyword magenta-cooler)
-      (preprocessor red-cooler)
+      (preprocessor green-warmer)
       (docstring cyan-faint)
       (string cyan-cooler)
       (type cyan-warmer)
