@@ -226,6 +226,20 @@
 ;;;; eldoc
     ;; NOTE: see https://github.com/purcell/package-lint/issues/187
     (list 'eldoc-highlight-function-argument `((,c :inherit bold :background ,bg-dim :foreground ,accent-0)))
+;;;; elfeed
+    `(elfeed-log-date-face ((,c :inherit elfeed-search-date-face)))
+    `(elfeed-log-debug-level-face ((,c :inherit elfeed-search-filter-face)))
+    `(elfeed-log-error-level-face ((,c :inherit error)))
+    `(elfeed-log-info-level-face ((,c :inherit success)))
+    `(elfeed-log-warn-level-face ((,c :inherit warning)))
+    `(elfeed-search-date-face ((,c :foreground ,date)))
+    `(elfeed-search-feed-face ((,c :foreground ,name)))
+    `(elfeed-search-filter-face ((,c :inherit success)))
+    `(elfeed-search-last-update-face ((,c :inherit bold :foreground ,date)))
+    `(elfeed-search-tag-face ((,c :foreground ,accent-0)))
+    `(elfeed-search-title-face ((,c :foreground ,fg-dim)))
+    `(elfeed-search-unread-count-face ((,c :inherit bold)))
+    `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg-main)))
 ;;;; font-lock
     `(font-lock-builtin-face ((,c :foreground ,builtin)))
     `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))
