@@ -93,10 +93,10 @@
       (warning red)
       (info green)
 
-      (link blue-warmer)
-      (link-alt cyan-warmer)
+      (link red-cooler)
+      (link-alt magenta-cooler)
       (date yellow-cooler)
-      (name red-cooler)
+      (name green-warmer)
       (keybind red-cooler)
 
       (builtin red)
