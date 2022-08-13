@@ -115,10 +115,10 @@
       (accent-2 magenta-warmer)
       (accent-3 blue)
 
-      (mail-0 blue-warmer)
-      (mail-1 magenta-warmer)
-      (mail-2 cyan-cooler)
-      (mail-3 yellow-cooler)
+      (mail-0 yellow-cooler)
+      (mail-1 cyan-cooler)
+      (mail-2 red-cooler)
+      (mail-3 green)
       (mail-4 red)
 
       (rainbow-0 red-cooler)
