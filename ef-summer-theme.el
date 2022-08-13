@@ -85,7 +85,7 @@
       (bg-completion "#f4cfff")
       (bg-hover      "#b4cfff")
       (bg-hover-alt  "#aaeccf")
-      (bg-hl-line    "#f5e4bf")
+      (bg-hl-line    "#ffd6e5")
       (bg-region     "#eecfff")
 
       (border        "#eebfef")
