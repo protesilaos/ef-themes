@@ -177,6 +177,9 @@ When called from Lisp, THEME is a symbol."
     `(custom-group-tag ((,c :inherit bold :foreground ,builtin)))
     `(custom-group-tag-1 ((,c :inherit bold :foreground ,constant)))
     `(custom-variable-tag ((,c :inherit bold :foreground ,variable)))
+;;;; denote
+    `(denote-faces-date ((,c :foreground ,date)))
+    `(denote-faces-keywords ((,c :foreground ,name)))
 ;;;; diff-hl
     `(diff-hl-change ((,c :background ,bg-changed-refine)))
     `(diff-hl-delete ((,c :background ,bg-removed-refine)))
