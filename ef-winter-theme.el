@@ -107,7 +107,7 @@
       (preprocessor red-warmer)
       (docstring cyan-faint)
       (string cyan-cooler)
-      (type green-warmer)
+      (type green)
       (variable green-cooler)
 
       (accent-0 magenta-warmer)
