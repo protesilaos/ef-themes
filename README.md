@@ -1,5 +1,7 @@
 # Ef (εὖ) themes for GNU Emacs
 
+WORK-IN-PROGRESS
+
 Colourful light and dark themes.
 
 ## Principles
