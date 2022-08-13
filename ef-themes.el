@@ -60,7 +60,7 @@
     `(fringe ((,c :background unspecified)))
     `(header-line ((,c :background ,bg-dim)))
     `(header-line-highlight ((,c :inherit highlight)))
-    `(help-argument-name ((,c :inherit italic :foreground ,docstring)))
+    `(help-argument-name ((,c :foreground ,accent-0)))
     `(help-key-binding ((,c :inherit bold :foreground ,keybind)))
     `(highlight ((,c :background ,bg-hover :foreground ,fg-intense)))
     `(secondary-selection ((,c :background ,bg-hover-alt :foreground ,fg-intense)))
