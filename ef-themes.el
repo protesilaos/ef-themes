@@ -227,7 +227,7 @@
     `(font-lock-negation-char-face ((,c :inherit bold)))
     `(font-lock-preprocessor-face ((,c :foreground ,preprocessor)))
     `(font-lock-regexp-grouping-backslash ((,c :inherit bold :foreground ,info)))
-    `(font-lock-regexp-grouping-construct ((,c :inherit bold :foreground ,warning)))
+    `(font-lock-regexp-grouping-construct ((,c :inherit bold :foreground ,err)))
     `(font-lock-string-face ((,c :foreground ,string)))
     `(font-lock-type-face ((,c :foreground ,type)))
     `(font-lock-variable-name-face ((,c :foreground ,variable)))
