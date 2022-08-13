@@ -265,7 +265,7 @@ When called from Lisp, THEME is a symbol."
     `(elfeed-log-info-level-face ((,c :inherit success)))
     `(elfeed-log-warn-level-face ((,c :inherit warning)))
     `(elfeed-search-date-face ((,c :foreground ,date)))
-    `(elfeed-search-feed-face ((,c :foreground ,name)))
+    `(elfeed-search-feed-face ((,c :foreground ,accent-1)))
     `(elfeed-search-filter-face ((,c :inherit success)))
     `(elfeed-search-last-update-face ((,c :inherit bold :foreground ,date)))
     `(elfeed-search-tag-face ((,c :foreground ,accent-0)))
