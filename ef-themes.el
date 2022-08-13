@@ -1,4 +1,4 @@
-;;; ef-themes.el --- Elegant and legible themes -*- lexical-binding:t -*-
+;;; ef-themes.el --- Colorful and legible themes -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
