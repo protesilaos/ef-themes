@@ -52,7 +52,7 @@
       (yellow          "#c48502") (blue          "#379cf6")
       (yellow-warmer   "#e6832f") (blue-warmer   "#6a9fff")
       (yellow-cooler   "#df8f7f") (blue-cooler   "#029fff")
-      (yellow-faint    "#cf9f7f") (blue-faint    "#6090df")
+      (yellow-faint    "#cf9f7f") (blue-faint    "#7a94df")
       (magenta         "#d0669f") (cyan          "#4fb0cf")
       (magenta-warmer  "#e580ea") (cyan-warmer   "#6fafff")
       (magenta-cooler  "#af8fff") (cyan-cooler   "#20bfdf")
