@@ -33,13 +33,6 @@
 
 
 
-(defun test-ef-winter ()
-  (interactive)
-  (mapc #'disable-theme custom-enabled-themes)
-  (load-theme 'ef-winter :no-confirm))
-
-(add-to-list 'custom-theme-load-path "/home/prot/Git/Projects/ef-themes/")
-
 (eval-and-compile
   (require 'ef-themes)
 
