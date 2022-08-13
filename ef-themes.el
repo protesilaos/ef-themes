@@ -374,7 +374,7 @@ When called from Lisp, THEME is a symbol."
     `(magit-log-author ((,c :foreground ,name)))
     `(magit-log-date ((,c :foreground ,date)))
     `(magit-log-graph ((,c :inherit shadow)))
-    `(magit-mode-line-process ((,c :inherit info)))
+    `(magit-mode-line-process ((,c :inherit success)))
     `(magit-mode-line-process-error ((,c :inherit error)))
     `(magit-process-ng ((,c :inherit error)))
     `(magit-process-ok ((,c :inherit success)))
