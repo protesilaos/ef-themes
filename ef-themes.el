@@ -326,12 +326,6 @@ When called from Lisp, THEME is a symbol."
     ;; `(magit-blame-margin ((,c :inherit (magit-blame-highlight modus-themes-reset-hard))))
     `(magit-blame-name ((,c :foreground ,name)))
     `(magit-blame-summary ((,c :foreground ,string)))
-    ;; ;; NOTE 2021-11-23: we do not set the `magit-branch-current'
-    ;; ;; because its definition checks if the :box attribute can be set
-    ;; ;; and if not, it uses :inverse-video.  Useful for terminal
-    ;; ;; emulators.
-    ;;
-    ;; `(magit-branch-current ((,c :foreground ,blue-alt-other :box t)))
     `(magit-branch-local ((,c :foreground ,builtin)))
     `(magit-branch-remote ((,c :foreground ,variable)))
     `(magit-branch-upstream ((,c :inherit italic)))
@@ -348,8 +342,6 @@ When called from Lisp, THEME is a symbol."
     `(magit-diff-file-heading-highlight ((,c :inherit magit-diff-file-heading :background ,bg-alt)))
     `(magit-diff-file-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
     `(magit-diff-hunk-heading ((,c :inherit bold :background ,bg-dim)))
-    ;; NOTE: we do not follow the pattern of inheriting from
-    ;; modus-themes-grue-* faces, as this is a special case.
     `(magit-diff-hunk-heading-highlight ((,c :inherit bold :background ,bg-hover)))
     `(magit-diff-hunk-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
     `(magit-diff-hunk-region ((,c :inherit bold)))
