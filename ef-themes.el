@@ -44,6 +44,8 @@
   :prefix "ef-themes-"
   :tag "Ef Themes")
 
+;;; Faces and variables
+
 (defconst ef-themes-faces
   '(
 ;;;; all basic faces
@@ -633,7 +635,7 @@
   '()
   "Custom variables for `ef-themes-theme'.")
 
-;;;; Instantiate a theme
+;;; Instantiate a theme
 
 (defmacro ef-themes-theme (name palette)
   "Bind NAME's color PALETTE around face specs and variables.
