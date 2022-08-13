@@ -148,6 +148,16 @@
     `(custom-group-tag ((,c :inherit bold :foreground ,builtin)))
     `(custom-group-tag-1 ((,c :inherit bold :foreground ,constant)))
     `(custom-variable-tag ((,c :inherit bold :foreground ,variable)))
+;;;; diff-hl
+    `(diff-hl-change ((,c :background ,bg-changed-refine)))
+    `(diff-hl-delete ((,c :background ,bg-removed-refine)))
+    `(diff-hl-dired-change ((,c :inherit diff-hl-change)))
+    `(diff-hl-dired-delete ((,c :inherit diff-hl-delete)))
+    `(diff-hl-dired-ignored ((,c :inherit dired-ignored)))
+    `(diff-hl-dired-insert ((,c :inherit diff-hl-insert)))
+    `(diff-hl-dired-unknown ((,c :inherit dired-ignored)))
+    `(diff-hl-insert ((,c :background ,bg-added-refine)))
+    `(diff-hl-reverted-hunk-highlight ((,c :background ,fg-main :foreground ,bg-main)))
 ;;;; diff-mode
     `(diff-added ((,c :background ,bg-added)))
     `(diff-changed ((,c :background ,bg-changed :extend t)))
