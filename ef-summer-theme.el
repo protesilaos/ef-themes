@@ -140,8 +140,7 @@
       (rainbow-5 magenta-warmer)
       (rainbow-6 green)
       (rainbow-7 blue-warmer)
-      (rainbow-8 yellow-cooler)
-      )
+      (rainbow-8 yellow-cooler))
     "The `ef-summer' palette.")
 
   (ef-themes-theme ef-summer ef-summer-palette)
