@@ -63,7 +63,7 @@
       (magenta         "#ba35af") (cyan          "#1f6fbf")
       (magenta-warmer  "#cb1aaa") (cyan-warmer   "#3f6faf")
       (magenta-cooler  "#7450df") (cyan-cooler   "#0f7b8f")
-      (magenta         "#bf3580") (cyan-faint    "#5f60bf")
+      (magenta-faint   "#bf3580") (cyan-faint    "#5f60bf")
 
       ;; Basic hues for background values
       (bg-red      "#ff7f88") (bg-green  "#86df80")
