@@ -41,20 +41,20 @@
   (defconst ef-day-palette
     '(;; Basic tones
       (bg-main "#fff5ea") (fg-main "#624a4a")
-      (bg-dim  "#f3eae0") (fg-dim  "#7f6a87")
-      (bg-alt  "#efe2d4") (fg-alt  "#9f5f6a")
+      (bg-dim  "#f4e7dd") (fg-dim  "#836887")
+      (bg-alt  "#ebe0d2") (fg-alt  "#9f5f6a")
 
       ;; Basic hues for foreground values
-      (red             "#ba1f0f") (green         "#217a3c")
+      (red             "#c42d2f") (green         "#217a3c")
       (red-warmer      "#d03003") (green-warmer  "#4a7d00")
-      (red-cooler      "#bf2f4f") (green-cooler  "#007f68")
-      (red-faint       "#c04f52") (green-faint   "#61756c")
+      (red-cooler      "#cf2f4f") (green-cooler  "#007f68")
+      (red-faint       "#b05350") (green-faint   "#61756c")
       (yellow          "#a45f22") (blue          "#375cc6")
       (yellow-warmer   "#b6540f") (blue-warmer   "#5f5fdf")
-      (yellow-cooler   "#b06030") (blue-cooler   "#265fbf")
+      (yellow-cooler   "#ae5a30") (blue-cooler   "#265fbf")
       (yellow-faint    "#a05f5a") (blue-faint    "#6a65bf")
-      (magenta         "#ba35af") (cyan          "#1f6fbf")
-      (magenta-warmer  "#cb2aa0") (cyan-warmer   "#3f6faf")
+      (magenta         "#d5206f") (cyan          "#1f6fbf")
+      (magenta-warmer  "#cb26a0") (cyan-warmer   "#3f6faf")
       (magenta-cooler  "#9435b4") (cyan-cooler   "#0f7b8f")
       (magenta-faint   "#a04450") (cyan-faint    "#5f60bf")
 
@@ -85,7 +85,7 @@
       (bg-region     "#fed8c4")
 
       (border        "#ded0bb")
-      (cursor        "#df4000")
+      (cursor        "#df4f00")
       (fg-intense    "#000000")
 
       ;; Mappings
