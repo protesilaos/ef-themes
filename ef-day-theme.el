@@ -77,12 +77,12 @@
       (bg-removed-refine "#ffbfaf")
 
       ;; Special hues
-      (bg-mode-line  "#ffbf9c") (fg-mode-line  "#542f38")
-      (bg-completion "#ffcfcf")
+      (bg-mode-line  "#ffc58c") (fg-mode-line  "#542f38")
+      (bg-completion "#ffd5d3")
       (bg-hover      "#b0e0df")
       (bg-hover-alt  "#febcaf")
-      (bg-hl-line    "#f0eacf")
-      (bg-region     "#fed8c4")
+      (bg-hl-line    "#f9e8b5")
+      (bg-region     "#ffdce4")
 
       (border        "#ded0bb")
       (cursor        "#df4f00")
