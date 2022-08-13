@@ -1,4 +1,4 @@
-;;; ef-winter-theme.el --- Dark theme with a cool, colorful palette -*- lexical-binding:t -*-
+;;; ef-winter-theme.el --- Dark theme with a cool and colorful palette -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-winter "Dark theme with a cool, colorful palette.")
+  (deftheme ef-winter "Dark theme with a cool and colorful palette.")
 
   (defconst ef-winter-palette
     '(;; Basic tones
