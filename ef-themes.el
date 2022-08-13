@@ -585,8 +585,8 @@
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
 ;;;; widget
-    `(widget-button ((,c :inherit bold :foreground ,accent-0)))
-    `(widget-button-pressed ((,c :inherit widget-button :foreground ,accent-1)))
+    `(widget-button ((,c :inherit bold :foreground ,link)))
+    `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
     `(widget-documentation ((,c :inherit font-lock-doc-face)))
     `(widget-field ((,c :background ,bg-alt :foreground ,fg-main :extend nil)))
     `(widget-inactive ((,c :inherit shadow :background ,bg-dim)))
