@@ -1,4 +1,4 @@
-;;; ef-summer-theme.el --- Elegant, highly legible and customizable light theme -*- lexical-binding:t -*-
+;;; ef-summer-theme.el ---Light theme with a cool and pleasant palette -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-summer "Light theme with a pleasant palette.")
+  (deftheme ef-summer "Light theme with a cool and pleasant palette.")
 
   (defconst ef-summer-palette
     '(;; Basic tones
