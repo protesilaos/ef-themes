@@ -44,6 +44,35 @@
   :prefix "ef-themes-"
   :tag "Ef Themes")
 
+;;; Commands and their helper functions
+
+(defun ef-themes--list-enabled-themes ()
+  "Return list of `custom-enabled-themes' with ef- prefix."
+  (seq-filter
+   (lambda (theme)
+     (string-prefix-p "ef-" (symbol-name theme)))
+   custom-enabled-themes))
+
+(defconst ef-themes-themes '(ef-summer ef-winter)
+  "List of Ef Themes.")
+
+(defvar ef-themes--select-theme-history nil)
+
+(defun ef-themes--select-prompt ()
+  "Minibuffer prompt for `ef-themes-select'."
+  (completing-read "Select Ef Theme: "
+                   ef-themes-themes
+                   nil t nil
+                   'ef-themes--select-theme-history))
+
+;;;###autoload
+(defun ef-themes-select (theme)
+  "Load an Ef THEME using minibuffer completion.
+When called from Lisp, THEME is a symbol."
+  (interactive
+   (list (intern (ef-themes--select-prompt))))
+  (load-theme theme :no-confirm))
+
 ;;; Faces and variables
 
 (defconst ef-themes-faces
