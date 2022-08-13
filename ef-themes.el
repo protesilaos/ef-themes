@@ -582,6 +582,28 @@
     `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,border))))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-alt)))
+;;;;; transient
+    `(transient-active-infix ((,c :background ,bg-hover-alt)))
+    `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
+    ;; Placate the compiler for what is a spurious warning.  We also
+    ;; have to do this with `eldoc-highlight-function-argument'.
+    (list 'transient-argument `((,c :inherit bold :background ,bg-added :foreground ,cyan)))
+    `(transient-blue ((,c :inherit bold :foreground ,blue-cooler)))
+    `(transient-disabled-suffix ((,c :strike-through t)))
+    `(transient-enabled-suffix ((,c :background ,bg-changed)))
+    `(transient-heading ((,c :inherit bold)))
+    `(transient-inactive-argument ((,c :inherit shadow)))
+    `(transient-inactive-value ((,c :inherit shadow)))
+    `(transient-key ((,c :inherit help-key-binding)))
+    `(transient-mismatched-key ((,c :underline t)))
+    `(transient-nonstandard-key ((,c :underline t)))
+    `(transient-pink ((,c :inherit bold :foreground ,magenta)))
+    `(transient-purple ((,c :inherit bold :foreground ,magenta-cooler)))
+    `(transient-red ((,c :inherit bold :foreground ,red)))
+    `(transient-teal ((,c :inherit bold :foreground ,cyan-cooler)))
+    `(transient-unreachable ((,c :inherit shadow)))
+    `(transient-unreachable-key ((,c :inherit shadow)))
+    `(transient-value ((,c :inherit success :background ,bg-dim)))
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
 ;;;; widget
