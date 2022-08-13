@@ -105,6 +105,7 @@
       (info blue)
 
       (link blue-warmer)
+      (link-alt cyan-warmer)
       (date cyan)
       (name blue)
       (keybind blue-cooler)
