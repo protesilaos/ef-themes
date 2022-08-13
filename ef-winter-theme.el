@@ -105,8 +105,8 @@
       (fnname magenta)
       (keyword magenta-cooler)
       (preprocessor red-warmer)
-      (docstring cyan-faint)
-      (string cyan-cooler)
+      (docstring fg-alt)
+      (string blue-warmer)
       (type green)
       (variable green-cooler)
 
