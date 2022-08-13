@@ -47,11 +47,11 @@
 ;;; Commands and their helper functions
 
 (defun ef-themes--list-enabled-themes ()
-  "Return list of `custom-enabled-themes' with ef- prefix."
+  "Return list of `custom-known-themes' with ef- prefix."
   (seq-filter
    (lambda (theme)
      (string-prefix-p "ef-" (symbol-name theme)))
-   custom-enabled-themes))
+   custom-known-themes))
 
 (defconst ef-themes-themes '(ef-summer ef-winter)
   "List of Ef Themes.")
