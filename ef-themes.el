@@ -71,6 +71,7 @@
 When called from Lisp, THEME is a symbol."
   (interactive
    (list (intern (ef-themes--select-prompt))))
+  (mapc #'disable-theme (ef-themes--list-enabled-themes))
   (load-theme theme :no-confirm))
 
 ;;; Faces and variables
