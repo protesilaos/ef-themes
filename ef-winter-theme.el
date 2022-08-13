@@ -117,9 +117,9 @@
 
       (mail-0 blue-warmer)
       (mail-1 magenta-warmer)
-      (mail-2 cyan-cooler)
+      (mail-2 green-cooler)
       (mail-3 yellow-cooler)
-      (mail-4 magenta)
+      (mail-4 magenta-cooler)
 
       (rainbow-0 red-cooler)
       (rainbow-1 magenta-cooler)
