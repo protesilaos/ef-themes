@@ -77,7 +77,7 @@
       (bg-removed-refine "#ffbfaf")
 
       ;; Special hues
-      (bg-mode-line  "#ffaf6c") (fg-mode-line  "#542f38")
+      (bg-mode-line  "#ffaf7c") (fg-mode-line  "#542f38")
       (bg-completion "#ffcfcf")
       (bg-hover      "#b0e0df")
       (bg-hover-alt  "#febcaf")
