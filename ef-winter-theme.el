@@ -59,9 +59,9 @@
       (magenta-faint   "#c57faf") (cyan-faint    "#8aa0df")
 
       ;; Basic hues for background values
-      (bg-red      "#dd0000") (bg-green  "#20a020")
-      (bg-yellow   "#bf7800") (bg-blue   "#4648ff")
-      (bg-magenta  "#ef3fc8") (bg-cyan   "#2270be")
+      (bg-red      "#cd2f30") (bg-green  "#20a020")
+      (bg-yellow   "#b47040") (bg-blue   "#4648d0")
+      (bg-magenta  "#c040cf") (bg-cyan   "#2270be")
 
       ;; Diffs
       (bg-added          "#003959")
