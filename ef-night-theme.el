@@ -40,23 +40,23 @@
 
   (defconst ef-night-palette
     '(;; Basic tones
-      (bg-main "#001313") (fg-main "#afbcbf")
-      (bg-dim  "#122024") (fg-dim  "#70857f")
-      (bg-alt  "#1a2a2a") (fg-alt  "#70a89f")
+      (bg-main "#000e17") (fg-main "#afbcbf")
+      (bg-dim  "#081529") (fg-dim  "#70857f")
+      (bg-alt  "#18252f") (fg-alt  "#70a89f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a") (green         "#0faa26")
       (red-warmer      "#f47360") (green-warmer  "#50a22f")
-      (red-cooler      "#ef798f") (green-cooler  "#00a692")
+      (red-cooler      "#ef798f") (green-cooler  "#00b672")
       (red-faint       "#d56f72") (green-faint   "#61a06c")
       (yellow          "#c48502") (blue          "#379cf6")
       (yellow-warmer   "#e6832f") (blue-warmer   "#6a90ff")
-      (yellow-cooler   "#df8f7f") (blue-cooler   "#029fff")
+      (yellow-cooler   "#df8f6f") (blue-cooler   "#029fff")
       (yellow-faint    "#cf9f7f") (blue-faint    "#7a94df")
-      (magenta         "#d0709f") (cyan          "#4fb0cf")
+      (magenta         "#d570af") (cyan          "#4fb0cf")
       (magenta-warmer  "#e580ea") (cyan-warmer   "#6fafff")
       (magenta-cooler  "#a587ff") (cyan-cooler   "#3dc0b0")
-      (magenta-faint   "#c57faf") (cyan-faint    "#8aa0df")
+      (magenta-faint   "#c59faf") (cyan-faint    "#92b4df")
 
       ;; Basic hues for background values
       (bg-red      "#cd2f30") (bg-green  "#20a020")
@@ -77,20 +77,20 @@
       (bg-removed-refine "#701836")
 
       ;; Special hues
-      (bg-mode-line  "#004f60") (fg-mode-line  "#ceeedf")
+      (bg-mode-line  "#004f6f") (fg-mode-line  "#ceeeff")
       (bg-accent     "#ff9270") (fg-accent     "#000000")
       (bg-completion "#00314f")
-      (bg-hover      "#664f4a")
-      (bg-hover-alt  "#6f2f5a")
-      (bg-hl-line    "#003045")
-      (bg-region     "#38261f")
-      (bg-active     "#2a3a3a")
+      (bg-hover      "#6f345a")
+      (bg-hover-alt  "#664f4a")
+      (bg-hl-line    "#002255")
+      (bg-region     "#222f40")
+      (bg-active     "#28353f")
       (bg-paren      "#703350")
       (bg-err        "#33140f") ; check with err
       (bg-info       "#00290f") ; check with info
 
-      (border        "#344f4a")
-      (cursor        "#22ccdd")
+      (border        "#34445a")
+      (cursor        "#44aaff")
       (fg-intense    "#ffffff")
 
       ;; Mappings
@@ -101,24 +101,24 @@
       (link cyan)
       (link-alt yellow)
       (date cyan-cooler)
-      (name green-warmer)
+      (name blue-warmer)
       (keybind blue-cooler)
 
-      (builtin green-warmer)
-      (comment yellow-faint)
-      (constant blue-cooler)
-      (fnname red-cooler)
-      (keyword green-cooler)
+      (builtin cyan)
+      (comment cyan-faint)
+      (constant yellow-cooler)
+      (fnname magenta)
+      (keyword magenta-cooler)
       (preprocessor red-warmer)
-      (docstring fg-alt)
-      (string cyan-warmer)
+      (docstring magenta-faint)
+      (string blue-cooler)
       (type blue-warmer)
-      (variable magenta-cooler)
+      (variable green-cooler)
 
-      (accent-0 green-cooler)
-      (accent-1 magenta)
-      (accent-2 blue-warmer)
-      (accent-3 red)
+      (accent-0 cyan-cooler)
+      (accent-1 red-cooler)
+      (accent-2 magenta-cooler)
+      (accent-3 yellow-cooler)
 
       (mail-0 cyan)
       (mail-1 magenta)
