@@ -84,6 +84,7 @@
       (bg-hl-line    "#f9e8b5")
       (bg-region     "#f0d6df")
       (bg-active     "#d9d0c8")
+      (bg-paren      "#8fcfdf")
 
       (border        "#ded0bb")
       (cursor        "#df4f00")

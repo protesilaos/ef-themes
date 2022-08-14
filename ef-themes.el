@@ -613,7 +613,7 @@ When called from Lisp, THEME is a symbol."
     `(rainbow-delimiters-mismatched-face ((,c :background ,bg-red :foreground ,fg-intense)))
     `(rainbow-delimiters-unmatched-face ((,c :inherit (bold rainbow-delimiters-mismatched-face))))
 ;;;; show-paren-mode
-    `(show-paren-match ((,c :background ,bg-cyan :foreground ,fg-intense)))
+    `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
     `(show-paren-mismatch ((,c :background ,bg-red :foreground ,fg-intense)))
 ;;;; tab-bar-mode
