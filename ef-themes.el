@@ -502,7 +502,7 @@ When called from Lisp, THEME is a symbol."
     `(org-agenda-date ((,c :foreground ,date)))
     `(org-agenda-date-today ((,c :inherit org-agenda-date :underline t)))
     `(org-agenda-date-weekend ((,c :inherit org-agenda-date)))
-    `(org-agenda-date-weekend-today ((,c :inherit :inherit org-agenda-date-today)))
+    `(org-agenda-date-weekend-today ((,c :inherit org-agenda-date-today)))
     `(org-agenda-diary ((,c :inherit org-agenda-calendar-sexp)))
     `(org-agenda-dimmed-todo-face ((,c :inherit shadow)))
     `(org-agenda-done ((,c :inherit success)))
