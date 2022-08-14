@@ -41,7 +41,7 @@
   (defconst ef-summer-palette
     '(;; Basic tones
       (bg-main "#fff2f3") (fg-main "#5f3f8f")
-      (bg-dim  "#fbe3ef") (fg-dim  "#7f6887")
+      (bg-dim  "#fbe3ef") (fg-dim  "#8a657f")
       (bg-alt  "#efd0e4") (fg-alt  "#af506f")
 
       ;; Basic hues for foreground values
