@@ -488,6 +488,11 @@ When called from Lisp, THEME is a symbol."
     `(notmuch-tree-no-match-date-face ((,c :inherit shadow)))
     `(notmuch-wash-cited-text ((,c :inherit message-cited-text-1)))
     `(notmuch-wash-toggle-button ((,c :background ,bg-dim :foreground ,fg-alt)))
+;;;; orderless
+    `(orderless-match-face-0 ((,c :inherit bold :foreground ,accent-0)))
+    `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))
+    `(orderless-match-face-2 ((,c :inherit bold :foreground ,accent-2)))
+    `(orderless-match-face-3 ((,c :inherit bold :foreground ,accent-3)))
 ;;;; org
     `(org-agenda-calendar-event ((,c :foreground ,fg-alt)))
     `(org-agenda-calendar-sexp ((,c :inherit (italic org-agenda-calendar-event))))
@@ -571,11 +576,6 @@ When called from Lisp, THEME is a symbol."
     `(org-verbatim ((,c :foreground ,variable)))
     `(org-verse (( )))
     `(org-warning ((,c :inherit warning)))
-;;;; orderless
-    `(orderless-match-face-0 ((,c :inherit bold :foreground ,accent-0)))
-    `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))
-    `(orderless-match-face-2 ((,c :inherit bold :foreground ,accent-2)))
-    `(orderless-match-face-3 ((,c :inherit bold :foreground ,accent-3)))
 ;;;; outline-mode
     `(outline-1 ((,c :inherit bold :foreground ,rainbow-1)))
     `(outline-2 ((,c :inherit bold :foreground ,rainbow-2)))
