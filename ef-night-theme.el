@@ -45,7 +45,7 @@
       (bg-alt  "#1a2a2f") (fg-alt  "#70a89f")
 
       ;; Basic hues for foreground values
-      (red             "#ef656a") (green         "#0faa26")
+      (red             "#ef656a") (green         "#1fa526")
       (red-warmer      "#f47360") (green-warmer  "#50a22f")
       (red-cooler      "#ef798f") (green-cooler  "#00b672")
       (red-faint       "#d56f72") (green-faint   "#61a06c")
