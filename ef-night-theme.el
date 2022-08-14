@@ -77,7 +77,7 @@
       (bg-removed-refine "#701836")
 
       ;; Special hues
-      (bg-mode-line  "#004f30") (fg-mode-line  "#ceeedf")
+      (bg-mode-line  "#004f60") (fg-mode-line  "#ceeedf")
       (bg-accent     "#ff9270") (fg-accent     "#000000")
       (bg-completion "#00314f")
       (bg-hover      "#664f4a")
@@ -90,7 +90,7 @@
       (bg-info       "#00290f") ; check with info
 
       (border        "#344f4a")
-      (cursor        "#33cc00")
+      (cursor        "#22ccdd")
       (fg-intense    "#ffffff")
 
       ;; Mappings
