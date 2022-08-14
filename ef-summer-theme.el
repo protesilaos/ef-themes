@@ -87,6 +87,7 @@
       (bg-hover-alt  "#aaeccf")
       (bg-hl-line    "#ffd6e5")
       (bg-region     "#eecfff")
+      (bg-active     "#dfc0d4")
 
       (border        "#eebfef")
       (cursor        "#cf0090")

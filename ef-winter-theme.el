@@ -83,6 +83,7 @@
       (bg-hover-alt  "#600f5a")
       (bg-hl-line    "#003045")
       (bg-region     "#34246f")
+      (bg-active     "#353554")
 
       (border        "#543f6f")
       (cursor        "#ff55cc")

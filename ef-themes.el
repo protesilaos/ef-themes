@@ -345,7 +345,7 @@ When called from Lisp, THEME is a symbol."
     `(magit-diff-file-heading-highlight ((,c :inherit magit-diff-file-heading :background ,bg-alt)))
     `(magit-diff-file-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
     `(magit-diff-hunk-heading ((,c :inherit bold :background ,bg-dim)))
-    `(magit-diff-hunk-heading-highlight ((,c :inherit bold :background ,bg-hover)))
+    `(magit-diff-hunk-heading-highlight ((,c :inherit bold :background ,bg-active :foreground ,fg-intense)))
     `(magit-diff-hunk-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
     `(magit-diff-hunk-region ((,c :inherit bold)))
     `(magit-diff-lines-boundary ((,c :background ,fg-intense)))
