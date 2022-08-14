@@ -681,7 +681,7 @@ When called from Lisp, THEME is a symbol."
     `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,border))))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-alt)))
-;;;;; transient
+;;;; transient
     `(transient-active-infix ((,c :background ,bg-hover-alt)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
     ;; Placate the compiler for what is a spurious warning.  We also
