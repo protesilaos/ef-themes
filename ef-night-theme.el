@@ -85,7 +85,7 @@
       (bg-hl-line    "#003045")
       (bg-region     "#38261f")
       (bg-active     "#2a3a3a")
-      (bg-paren      "#995566")
+      (bg-paren      "#703350")
       (bg-err        "#33140f") ; check with err
       (bg-info       "#00290f") ; check with info
 
