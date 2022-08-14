@@ -701,6 +701,18 @@ When called from Lisp, THEME is a symbol."
     `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,border))))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-alt)))
+;;;; term
+    `(term ((,c :background ,bg-main :foreground ,fg-main)))
+    `(term-bold ((,c :inherit bold)))
+    `(term-color-black ((,c :background "black" :foreground "black")))
+    `(term-color-blue ((,c :background ,blue :foreground ,blue)))
+    `(term-color-cyan ((,c :background ,cyan :foreground ,cyan)))
+    `(term-color-green ((,c :background ,green :foreground ,green)))
+    `(term-color-magenta ((,c :background ,magenta :foreground ,magenta)))
+    `(term-color-red ((,c :background ,red :foreground ,red)))
+    `(term-color-white ((,c :background "white" :foreground "white")))
+    `(term-color-yellow ((,c :background ,yellow :foreground ,yellow)))
+    `(term-underline ((,c :underline t)))
 ;;;; transient
     `(transient-active-infix ((,c :background ,bg-hover-alt)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
