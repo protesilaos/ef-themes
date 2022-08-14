@@ -41,8 +41,8 @@
   (defconst ef-night-palette
     '(;; Basic tones
       (bg-main "#000e17") (fg-main "#afbcbf")
-      (bg-dim  "#081529") (fg-dim  "#70857f")
-      (bg-alt  "#18252f") (fg-alt  "#70a89f")
+      (bg-dim  "#0f1b29") (fg-dim  "#70857f")
+      (bg-alt  "#1a2a2f") (fg-alt  "#70a89f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a") (green         "#0faa26")
