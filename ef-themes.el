@@ -661,6 +661,7 @@ When called from Lisp, THEME is a symbol."
 
 ;;; Instantiate a theme
 
+;;;###autoload
 (defmacro ef-themes-theme (name palette)
   "Bind NAME's color PALETTE around face specs and variables.
 Face specifications are passed to `custom-theme-set-faces'.
