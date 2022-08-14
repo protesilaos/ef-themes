@@ -290,6 +290,15 @@ When called from Lisp, THEME is a symbol."
     `(elfeed-search-title-face ((,c :foreground ,fg-dim)))
     `(elfeed-search-unread-count-face ((,c :inherit bold)))
     `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg-main)))
+;;;; epa
+    `(epa-field-body (( )))
+    `(epa-field-name ((,c :inherit bold :foreground ,fg-dim)))
+    `(epa-mark ((,c :inherit bold)))
+    `(epa-string ((,c :foreground ,string)))
+    `(epa-validity-disabled ((,c :foreground ,err)))
+    `(epa-validity-high ((,c :inherit success)))
+    `(epa-validity-low ((,c :inherit shadow)))
+    `(epa-validity-medium ((,c :foreground ,info)))
 ;;;; eshell
     `(eshell-ls-archive ((,c :foreground ,accent-2)))
     `(eshell-ls-backup ((,c :inherit shadow)))
