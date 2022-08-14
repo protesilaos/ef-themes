@@ -86,8 +86,8 @@
       (bg-region     "#222f40")
       (bg-active     "#28353f")
       (bg-paren      "#703350")
-      (bg-err        "#33140f") ; check with err
-      (bg-info       "#00290f") ; check with info
+      (bg-err        "#331419") ; check with err
+      (bg-info       "#00251f") ; check with info
 
       (border        "#34445a")
       (cursor        "#44aaff")
