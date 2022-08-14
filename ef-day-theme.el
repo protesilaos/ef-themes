@@ -41,7 +41,7 @@
   (defconst ef-day-palette
     '(;; Basic tones
       (bg-main "#fff5ea") (fg-main "#624a4a")
-      (bg-dim  "#f5eddf") (fg-dim  "#836887")
+      (bg-dim  "#f5eddf") (fg-dim  "#736d8f")
       (bg-alt  "#e9e0d8") (fg-alt  "#7f6f4a")
 
       ;; Basic hues for foreground values
