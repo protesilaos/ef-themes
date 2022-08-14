@@ -97,7 +97,7 @@ When called from Lisp, THEME is a symbol."
     `(button ((,c :foreground ,link :underline ,border)))
     `(link ((,c :foreground ,link :underline ,border)))
     `(shadow ((,c :foreground ,fg-dim)))
-    `(tooltip ((,c :background ,bg-alt :foreground ,fg-main)))
+    `(tooltip ((,c :background ,bg-active :foreground ,fg-intense)))
 ;;;; ansi-color
     `(ansi-color-black ((,c :background "black" :foreground "black")))
     `(ansi-color-blue ((,c :background ,blue :foreground ,blue)))
