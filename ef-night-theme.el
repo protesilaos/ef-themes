@@ -55,7 +55,7 @@
       (yellow-faint    "#cf9f7f") (blue-faint    "#7a94df")
       (magenta         "#d0709f") (cyan          "#4fb0cf")
       (magenta-warmer  "#e580ea") (cyan-warmer   "#6fafff")
-      (magenta-cooler  "#b577ff") (cyan-cooler   "#3dc0b0")
+      (magenta-cooler  "#a587ff") (cyan-cooler   "#3dc0b0")
       (magenta-faint   "#c57faf") (cyan-faint    "#8aa0df")
 
       ;; Basic hues for background values
