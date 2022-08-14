@@ -256,6 +256,23 @@ When called from Lisp, THEME is a symbol."
     `(diredfl-symlink ((,c :inherit dired-symlink)))
     `(diredfl-tagged-autofile-name ((,c :inherit (diredfl-autofile-name dired-marked))))
     `(diredfl-write-priv ((,c :foreground ,rainbow-2)))
+;;;; ediff
+    `(ediff-current-diff-A ((,c :inherit diff-removed)))
+    `(ediff-current-diff-Ancestor ((,c :background ,bg-region))) ; TODO 2022-08-14: Needs review
+    `(ediff-current-diff-B ((,c :inherit diff-added)))
+    `(ediff-current-diff-C ((,c :inherit diff-changed)))
+    `(ediff-even-diff-A ((,c :background ,bg-dim)))
+    `(ediff-even-diff-Ancestor ((,c :background ,bg-dim)))
+    `(ediff-even-diff-B ((,c :background ,bg-dim)))
+    `(ediff-even-diff-C ((,c :background ,bg-dim)))
+    `(ediff-fine-diff-A ((,c :inherit diff-refine-removed)))
+    `(ediff-fine-diff-Ancestor ((,c :inherit diff-refine-cyan)))
+    `(ediff-fine-diff-B ((,c :inherit diff-refine-added)))
+    `(ediff-fine-diff-C ((,c :inherit diff-refine-changed)))
+    `(ediff-odd-diff-A ((,c :inherit ediff-even-diff-A)))
+    `(ediff-odd-diff-Ancestor ((,c :inherit ediff-even-diff-Ancestor)))
+    `(ediff-odd-diff-B ((,c :inherit ediff-even-diff-B)))
+    `(ediff-odd-diff-C ((,c :inherit ediff-even-diff-C)))
 ;;;; eldoc
     ;; NOTE: see https://github.com/purcell/package-lint/issues/187
     (list 'eldoc-highlight-function-argument `((,c :inherit bold :background ,bg-dim :foreground ,accent-0)))
