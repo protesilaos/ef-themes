@@ -432,6 +432,9 @@ When called from Lisp, THEME is a symbol."
     `(magit-signature-revoked ((,c :inherit bold :foreground ,warning)))
     `(magit-signature-untrusted ((,c :inherit (bold shadow))))
     `(magit-tag ((,c :foreground ,constant)))
+;;;; man
+    `(Man-overstrike ((,c :inherit bold :foreground ,accent-0)))
+    `(Man-underline ((,c :foreground ,accent-1 :underline t)))
 ;;;; marginalia
     `(marginalia-archive ((,c :foreground ,cyan-cooler)))
     `(marginalia-char ((,c :foreground ,magenta)))
