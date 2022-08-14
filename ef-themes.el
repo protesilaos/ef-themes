@@ -617,7 +617,7 @@ When called from Lisp, THEME is a symbol."
     `(org-dispatcher-highlight ((,c :inherit (bold highlight))))
     `(org-document-info ((,c :foreground ,rainbow-1)))
     `(org-document-info-keyword ((,c :inherit shadow)))
-    `(org-document-title ((,c :foreground ,rainbow-0 :height 2.2)))
+    `(org-document-title ((,c :foreground ,rainbow-0 :height 1.8)))
     `(org-done ((,c :foreground ,info)))
     `(org-drawer ((,c :inherit shadow)))
     `(org-ellipsis (())) ; inherits from the heading's color
@@ -634,7 +634,7 @@ When called from Lisp, THEME is a symbol."
     `(org-level-3 ((,c :inherit bold :foreground ,rainbow-3 :height 1.5)))
     `(org-level-4 ((,c :inherit bold :foreground ,rainbow-4 :height 1.4)))
     `(org-level-5 ((,c :inherit bold :foreground ,rainbow-5 :height 1.3)))
-    `(org-level-6 ((,c :inherit bold :foreground ,rainbow-6 :height 1.3)))
+    `(org-level-6 ((,c :inherit bold :foreground ,rainbow-6 :height 1.2)))
     `(org-level-7 ((,c :inherit bold :foreground ,rainbow-7 :height 1.1)))
     `(org-level-8 ((,c :inherit bold :foreground ,rainbow-8 :height 1.0)))
     `(org-link ((,c :inherit link)))
