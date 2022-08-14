@@ -212,11 +212,11 @@ When called from Lisp, THEME is a symbol."
 ;;;; dired
     `(dired-broken-symlink ((,c :inherit (error link))))
     `(dired-directory ((,c :foreground ,accent-0)))
-    `(dired-flagged ((,c :inherit error :background ,bg-dim)))
+    `(dired-flagged ((,c :inherit error :background ,bg-err)))
     `(dired-header ((,c :inherit bold)))
     `(dired-ignored ((,c :inherit shadow)))
     `(dired-mark ((,c :inherit success)))
-    `(dired-marked ((,c :inherit success :background ,bg-dim)))
+    `(dired-marked ((,c :inherit success :background ,bg-info)))
     `(dired-symlink ((,c :inherit link)))
     `(dired-warning ((,c :inherit warning)))
 ;;;; dired-subtree
