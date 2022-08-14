@@ -94,7 +94,7 @@
       (warning yellow-warmer)
       (info green)
 
-      (link green-cooler)
+      (link green)
       (link-alt yellow)
       (date cyan-cooler)
       (name green-warmer)
