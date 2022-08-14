@@ -91,7 +91,7 @@
 
       ;; Mappings
       (err red-warmer)
-      (warning red)
+      (warning yellow-warmer)
       (info green)
 
       (link green-cooler)
