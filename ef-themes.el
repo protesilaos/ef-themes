@@ -431,7 +431,7 @@ When called from Lisp, THEME is a symbol."
     `(magit-signature-good ((,c :inherit success)))
     `(magit-signature-revoked ((,c :inherit bold :foreground ,warning)))
     `(magit-signature-untrusted ((,c :inherit (bold shadow))))
-    `(magit-tag ((,c :foreground ,constant)))
+    `(magit-tag ((,c :foreground ,accent-3))) ; compare with branches
 ;;;; man
     `(Man-overstrike ((,c :inherit bold :foreground ,accent-0)))
     `(Man-underline ((,c :foreground ,accent-1 :underline t)))
