@@ -756,18 +756,18 @@ When called from Lisp, THEME is a symbol."
     `(vc-up-to-date-state (( )))
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
-;;;; woman
-    `(woman-addition ((,c :foreground ,accent-2)))
-    `(woman-bold ((,c :inherit bold :foreground ,accent-0)))
-    `(woman-italic ((,c :inherit italic :foreground ,accent-1)))
-    `(woman-unknown ((,c :foreground ,accent-3)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
     `(widget-documentation ((,c :inherit font-lock-doc-face)))
     `(widget-field ((,c :background ,bg-alt :foreground ,fg-main :extend nil)))
     `(widget-inactive ((,c :inherit shadow :background ,bg-dim)))
-    `(widget-single-line-field ((,c :inherit widget-field))))
+    `(widget-single-line-field ((,c :inherit widget-field)))
+;;;; woman
+    `(woman-addition ((,c :foreground ,accent-2)))
+    `(woman-bold ((,c :inherit bold :foreground ,accent-0)))
+    `(woman-italic ((,c :inherit italic :foreground ,accent-1)))
+    `(woman-unknown ((,c :foreground ,accent-3))))
   "Face specs for use with `ef-themes-theme'.")
 
 (defconst ef-themes-custom-variables
