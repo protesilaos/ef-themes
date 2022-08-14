@@ -76,10 +76,6 @@
       (bg-removed-faint  "#ffd0ef")
       (bg-removed-refine "#f0a8ea")
 
-      ;; (bg-removed        "#ffc8df")
-      ;; (bg-removed-faint  "#ffcfef")
-      ;; (bg-removed-refine "#ffb0ca")
-
       ;; Special hues
       (bg-mode-line  "#ffa4dc") (fg-mode-line  "#341f58")
       (bg-completion "#f4cfff")
