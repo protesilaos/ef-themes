@@ -756,6 +756,12 @@ When called from Lisp, THEME is a symbol."
     `(vc-up-to-date-state (( )))
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
+;;;; wgrep
+    `(wgrep-delete-face ((,c :inherit warning)))
+    `(wgrep-done-face ((,c :inherit success)))
+    `(wgrep-face ((,c :inherit bold)))
+    `(wgrep-file-face ((,c :foreground ,fg-alt)))
+    `(wgrep-reject-face ((,c :inherit error)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
