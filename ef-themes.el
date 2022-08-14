@@ -566,7 +566,7 @@ When called from Lisp, THEME is a symbol."
     `(org-special-keyword ((,c :inherit shadow)))
     `(org-table ((,c :foreground ,string)))
     `(org-table-header ((,c :inherit (bold org-table))))
-    `(org-tag ((,c :foreground ,fg-main)))
+    `(org-tag ((,c :foreground ,fg-alt)))
     `(org-tag-group ((,c :inherit (bold org-tag))))
     `(org-target ((,c :underline t)))
     `(org-time-grid ((,c :foreground ,fg-dim)))
