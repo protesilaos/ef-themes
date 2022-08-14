@@ -1,4 +1,4 @@
-;;; ef-summer-theme.el ---Light theme with a cool and pleasant palette -*- lexical-binding:t -*-
+;;; ef-summer-theme.el --- Light theme with a cool and pleasant palette -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
