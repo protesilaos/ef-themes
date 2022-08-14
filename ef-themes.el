@@ -312,8 +312,8 @@ When called from Lisp, THEME is a symbol."
     `(git-commit-comment-heading ((,c :inherit (bold font-lock-comment-face))))
     `(git-commit-comment-file ((,c :inherit font-lock-comment-face :foreground ,name)))
     `(git-commit-keyword ((,c :foreground ,keyword)))
-    `(git-commit-nonempty-second-line ((,c :inherit error)))
-    `(git-commit-overlong-summary ((,c :inherit warning)))
+    `(git-commit-nonempty-second-line ((,c :background ,bg-dim :foreground ,err)))
+    `(git-commit-overlong-summary ((,c :background ,bg-dim :foreground ,warning)))
     `(git-commit-summary ((,c :inherit bold :foreground ,string)))
 ;;;; git-rebase
     `(git-rebase-comment-hash ((,c :inherit font-lock-comment-face :foreground ,constant)))
