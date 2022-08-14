@@ -94,9 +94,9 @@
       (fg-intense    "#ffffff")
 
       ;; Mappings
-      (err red-warmer)
+      (err red)
       (warning yellow-warmer)
-      (info green)
+      (info green-cooler)
 
       (link cyan)
       (link-alt yellow)
