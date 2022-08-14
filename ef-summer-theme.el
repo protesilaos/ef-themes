@@ -115,10 +115,10 @@
       (type cyan-warmer)
       (variable blue-warmer)
 
-      (accent-0 magenta-warmer)
-      (accent-1 green-cooler)
-      (accent-2 red-cooler)
-      (accent-3 blue-cooler)
+      (accent-0 magenta-cooler)
+      (accent-1 yellow)
+      (accent-2 cyan-cooler)
+      (accent-3 red)
 
       (mail-0 yellow-cooler)
       (mail-1 cyan-cooler)
