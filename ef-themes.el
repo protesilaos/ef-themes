@@ -303,6 +303,13 @@ When called from Lisp, THEME is a symbol."
     `(git-rebase-comment-heading  ((,c :inherit (bold font-lock-comment-face))))
     `(git-rebase-description ((,c :foreground ,fg-main)))
     `(git-rebase-hash ((,c :foreground ,constant)))
+;;;; gnus WORK-IN-PROGRESS
+    `(gnus-emphasis-highlight-words ((,c :background ,bg-alt :foreground ,warning)))
+    `(gnus-header-content ((,c :inherit message-header-other)))
+    `(gnus-header-from ((,c :inherit message-header-to :underline nil)))
+    `(gnus-header-name ((,c :inherit message-header-name)))
+    `(gnus-header-newsgroups ((,c :inherit message-header-newsgroups)))
+    `(gnus-header-subject ((,c :inherit message-header-subject)))
 ;;;; isearch, occur, and the like
     `(isearch ((,c :background ,bg-yellow :foreground ,fg-intense)))
     `(isearch-fail ((,c :background ,bg-red :foreground ,fg-intense)))
