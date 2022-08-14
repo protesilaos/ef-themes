@@ -744,6 +744,11 @@ When called from Lisp, THEME is a symbol."
     `(vc-up-to-date-state (( )))
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
+;;;; woman
+    `(woman-addition ((,c :foreground ,accent-2)))
+    `(woman-bold ((,c :inherit bold :foreground ,accent-0)))
+    `(woman-italic ((,c :inherit italic :foreground ,accent-1)))
+    `(woman-unknown ((,c :foreground ,accent-3)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
