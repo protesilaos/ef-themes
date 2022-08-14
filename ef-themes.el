@@ -38,7 +38,7 @@
   (require 'subr-x))
 
 (defgroup ef-themes ()
-  "Work-in-progress."
+  "Colorful and legible themes."
   :group 'faces
   :link '(info-link "(ef-themes) Top")
   :prefix "ef-themes-"
