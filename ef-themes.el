@@ -311,6 +311,9 @@ When called from Lisp, THEME is a symbol."
     `(lazy-highlight ((,c :background ,bg-blue :foreground ,fg-intense)))
     `(match ((,c :background ,bg-alt :foreground ,fg-intense)))
     `(query-replace ((,c :background ,bg-red :foreground ,fg-intense)))
+;;;; keycast
+    `(keycast-command ((,c :inherit bold)))
+    `(keycast-key ((,c :background ,bg-accent :foreground ,fg-accent)))
 ;;;; line numbers (display-line-numbers-mode and global variant)
     ;; Here we cannot inherit `modus-themes-fixed-pitch'.  We need to
     ;; fall back to `default' otherwise line numbers do not scale when
