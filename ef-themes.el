@@ -517,7 +517,7 @@ When called from Lisp, THEME is a symbol."
     `(org-checkbox-statistics-done ((,c :inherit org-done)))
     `(org-checkbox-statistics-todo ((,c :inherit org-todo)))
     `(org-clock-overlay ((,c :background ,bg-alt :foreground ,red-cooler)))
-    `(org-code ((,c :foreground ,builtin)))
+    `(org-code ((,c :foreground ,fnname)))
     `(org-column ((,c :inherit default :background ,bg-alt)))
     `(org-column-title ((,c :inherit (bold default) :underline t :background ,bg-alt)))
     `(org-date ((,c :foreground ,date)))
@@ -568,7 +568,7 @@ When called from Lisp, THEME is a symbol."
     `(org-todo ((,c :foreground ,err)))
     `(org-upcoming-deadline ((,c :foreground ,warning)))
     `(org-upcoming-distant-deadline ((,c :inherit org-upcoming-deadline)))
-    `(org-verbatim ((,c :foreground ,constant)))
+    `(org-verbatim ((,c :foreground ,variable)))
     `(org-verse (( )))
     `(org-warning ((,c :inherit warning)))
 ;;;; orderless
