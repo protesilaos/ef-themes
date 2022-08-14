@@ -82,7 +82,7 @@
       (bg-hover      "#b0e0df")
       (bg-hover-alt  "#febcaf")
       (bg-hl-line    "#f9e8b5")
-      (bg-region     "#ffdce4")
+      (bg-region     "#f0d6df")
       (bg-active     "#d9d0c8")
 
       (border        "#ded0bb")
