@@ -1,0 +1,156 @@
+;;; ef-dark-theme.el --- Legible dark theme -*- lexical-binding:t -*-
+
+;; Copyright (C) 2022  Free Software Foundation, Inc.
+
+;; Author: Protesilaos Stavrou <info@protesilaos.com>
+;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
+;; URL: https://git.sr.ht/~protesilaos/ef-themes
+;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
+;; Version: 0.0.0
+;; Package-Requires: ((emacs "28.1"))
+;; Keywords: faces, theme, accessibility
+
+;; This file is part of GNU Emacs.
+
+;; GNU Emacs is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; GNU Emacs is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Commentary:
+;;
+;; Work-in-progress.
+
+;;; Code:
+
+
+
+(eval-and-compile
+  (require 'ef-themes)
+
+  (deftheme ef-dark "Legible dark theme.")
+
+  (defconst ef-dark-palette
+    '(;; Basic tones
+      (bg-main "#000000") (fg-main "#d0d0d0")
+      (bg-dim  "#1a1a1a") (fg-dim  "#857f8f")
+      (bg-alt  "#2b2b2b") (fg-alt  "#89afef")
+
+      ;; Basic hues for foreground values
+      (red             "#ef6560")
+      (red-warmer      "#f47360")
+      (red-cooler      "#ff5a7a")
+      (red-faint       "#d56f72")
+      (green           "#0faa26")
+      (green-warmer    "#6aad0f")
+      (green-cooler    "#00a692")
+      (green-faint     "#61a06c")
+      (yellow          "#c48032")
+      (yellow-warmer   "#d1843f")
+      (yellow-cooler   "#df8f5a")
+      (yellow-faint    "#cf9f8f")
+      (blue            "#3f95f6")
+      (blue-warmer     "#6a9fff")
+      (blue-cooler     "#029fff")
+      (blue-faint      "#7a94df")
+      (magenta         "#d369af")
+      (magenta-warmer  "#e580ea")
+      (magenta-cooler  "#af85ff")
+      (magenta-faint   "#c57faf")
+      (cyan            "#4fbaef")
+      (cyan-warmer     "#6fafff")
+      (cyan-cooler     "#1dbfcf")
+      (cyan-faint      "#8aa0df")
+
+      ;; Basic hues for background values
+      (bg-red      "#cd2f30") (bg-green  "#20a020")
+      (bg-yellow   "#b47040") (bg-blue   "#4648d0")
+      (bg-magenta  "#c040cf") (bg-cyan   "#2270be")
+
+      ;; Diffs
+      (bg-added          "#003929")
+      (bg-added-faint    "#002f18")
+      (bg-added-refine   "#03602f")
+
+      (bg-changed        "#424200")
+      (bg-changed-faint  "#2a2000")
+      (bg-changed-refine "#585800")
+
+      (bg-removed        "#501129")
+      (bg-removed-faint  "#3a0a1f")
+      (bg-removed-refine "#85284f")
+
+      ;; Special hues
+      (bg-mode-line  "#2a2a75") (fg-mode-line  "#e0e0ff")
+      (bg-accent     "#25adff") (fg-accent     "#000000")
+      (bg-completion "#0f2d4a")
+      (bg-hover      "#00474f")
+      (bg-hover-alt  "#303f5a")
+      (bg-hl-line    "#002435")
+      (bg-region     "#25164a")
+      (bg-active     "#3b3b3b")
+      (bg-paren      "#20577a")
+      (bg-err        "#330d09") ; check with err
+      (bg-info       "#002212") ; check with info
+
+      (border        "#444f5f")
+      (cursor        "#ff66ff")
+      (fg-intense    "#ffffff")
+
+      ;; Mappings
+      (err red-warmer)
+      (warning yellow-warmer)
+      (info green)
+
+      (link blue-warmer)
+      (link-alt magenta)
+      (date cyan)
+      (name blue)
+      (keybind blue)
+
+      (builtin magenta)
+      (comment yellow-faint)
+      (constant blue-cooler)
+      (fnname magenta-warmer)
+      (keyword magenta-cooler)
+      (preprocessor red-warmer)
+      (docstring cyan-faint)
+      (string blue-warmer)
+      (type green-cooler)
+      (variable cyan-cooler)
+
+      (accent-0 blue-warmer)
+      (accent-1 magenta-warmer)
+      (accent-2 green-cooler)
+      (accent-3 red)
+
+      (mail-0 blue)
+      (mail-1 magenta-warmer)
+      (mail-2 green-cooler)
+      (mail-3 yellow-cooler)
+      (mail-4 magenta-cooler)
+
+      (rainbow-0 green-cooler)
+      (rainbow-1 blue)
+      (rainbow-2 magenta-warmer)
+      (rainbow-3 cyan-cooler)
+      (rainbow-4 yellow-cooler)
+      (rainbow-5 magenta-cooler)
+      (rainbow-6 red-cooler)
+      (rainbow-7 green)
+      (rainbow-8 yellow))
+    "The `ef-dark' palette.")
+
+  (ef-themes-theme ef-dark ef-dark-palette)
+
+  (provide-theme 'ef-dark))
+
+;;; ef-dark-theme.el ends here
