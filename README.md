@@ -29,3 +29,18 @@ necessity_.  The `modus-themes` are such because:
 
 The `ef-themes` can afford to be minimal because they do not have such a
 lofty accessibility target.
+
+## FAQ
+
+### Will you stop using the modus-themes?
+
+No.  For my workflow, accessibility is the most important quality.  The
+`modus-themes` will remain my default choice.
+
+### Then why develop the ef-themes?
+
+Because I think that users deserve "pretty" themes that (i) do make some
+considerations for legibility, and (ii) are not designed on a whimsy.
+
+In other words, this is my answer to those who like my `modus-themes`
+but want something with a bit more flair.
