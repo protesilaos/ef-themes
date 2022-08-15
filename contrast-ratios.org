@@ -1,0 +1,250 @@
+#+title: Ef themes: contrast ratios of the main colours
+#+author: Protesilaos Stavrou (https://protesilaos.com)
+#+startup: content indent
+
+Check this files Git history for updates.
+
+Evaluate these snippets, otherwise the tables will not work.  Then
+update a table by typing =C-c C-c= with point at the =#+TBLFM:= line.
+
+#+begin_src emacs-lisp
+;; Copied from my `modus-thmes'.
+
+;; This is the WCAG formula to measure relative luminance:
+;; <https://www.w3.org/TR/WCAG20-TECHS/G18.html>.
+(defun modus-themes-wcag-formula (hex)
+  "Get WCAG value of color value HEX.
+The value is defined in hexadecimal RGB notation, such as those in
+`modus-themes-operandi-colors' and `modus-themes-vivendi-colors'."
+  (cl-loop for k in '(0.2126 0.7152 0.0722)
+           for x in (color-name-to-rgb hex)
+           sum (* k (if (<= x 0.03928)
+                        (/ x 12.92)
+                      (expt (/ (+ x 0.055) 1.055) 2.4)))))
+
+;;;###autoload
+(defun modus-themes-contrast (c1 c2)
+  "Measure WCAG contrast ratio between C1 and C2.
+C1 and C2 are color values written in hexadecimal RGB."
+  (let ((ct (/ (+ (modus-themes-wcag-formula c1) 0.05)
+               (+ (modus-themes-wcag-formula c2) 0.05))))
+    (max ct (/ ct))))
+
+(defalias #'Λ #'modus-themes-contrast)
+#+end_src
+
+* ef-autumn
+:PROPERTIES:
+:CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
+:END:
+
+| Name           |         | #0f0e06 | #1f1b19 | #36322f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #cfbcba |   10.64 |    9.40 |    6.99 |
+| fg-dim         | #887c8a |    4.88 |    4.31 |    3.20 |
+| fg-alt         | #70a89f |    7.18 |    6.34 |    4.71 |
+| red            | #ef656a |    6.21 |    5.48 |    4.07 |
+| red-warmer     | #f26f25 |    6.52 |    5.76 |    4.28 |
+| red-cooler     | #f07f7f |    7.41 |    6.55 |    4.86 |
+| red-faint      | #d08f72 |    7.23 |    6.39 |    4.75 |
+| green          | #2fa526 |    6.02 |    5.31 |    3.95 |
+| green-warmer   | #64aa0f |    6.72 |    5.94 |    4.41 |
+| green-cooler   | #00b672 |    7.31 |    6.46 |    4.80 |
+| green-faint    | #61ab78 |    7.00 |    6.19 |    4.60 |
+| yellow         | #c48502 |    6.17 |    5.45 |    4.05 |
+| yellow-warmer  | #e0832f |    6.87 |    6.07 |    4.51 |
+| yellow-cooler  | #df8f6f |    7.64 |    6.75 |    5.02 |
+| yellow-faint   | #cf9f7f |    8.21 |    7.26 |    5.39 |
+| blue           | #379cf6 |    6.68 |    5.90 |    4.38 |
+| blue-warmer    | #6a88ff |    6.06 |    5.35 |    3.98 |
+| blue-cooler    | #029fff |    6.82 |    6.03 |    4.48 |
+| blue-faint     | #7a94df |    6.57 |    5.80 |    4.31 |
+| magenta        | #d570af |    6.23 |    5.50 |    4.09 |
+| magenta-warmer | #e580ea |    7.93 |    7.00 |    5.20 |
+| magenta-cooler | #af8aff |    7.28 |    6.43 |    4.78 |
+| magenta-faint  | #c590af |    7.35 |    6.49 |    4.83 |
+| cyan           | #4fb0cf |    7.78 |    6.87 |    5.10 |
+| cyan-warmer    | #6fafff |    8.52 |    7.53 |    5.59 |
+| cyan-cooler    | #3dbbb0 |    8.23 |    7.27 |    5.40 |
+| cyan-faint     | #92b4df |    9.04 |    7.99 |    5.93 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
+* ef-day
+:PROPERTIES:
+:CUSTOM_ID: h:3146bf01-7f75-4e26-bd68-feeb268cf7ff
+:END:
+
+| Name           |         | #fff5ea | #f5eddf | #e9e0d8 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #624a4a |    7.51 |    6.95 |    6.20 |
+| fg-dim         | #736d8f |    4.52 |    4.19 |    3.74 |
+| fg-alt         | #7f6f4a |    4.56 |    4.22 |    3.77 |
+| red            | #c42d2f |    5.18 |    4.80 |    4.28 |
+| red-warmer     | #d03003 |    4.75 |    4.40 |    3.93 |
+| red-cooler     | #cf2f4f |    4.67 |    4.33 |    3.86 |
+| red-faint      | #b05350 |    4.64 |    4.30 |    3.84 |
+| green          | #217a3c |    4.98 |    4.61 |    4.12 |
+| green-warmer   | #4a7d00 |    4.62 |    4.28 |    3.82 |
+| green-cooler   | #007f68 |    4.60 |    4.26 |    3.81 |
+| green-faint    | #61756c |    4.57 |    4.23 |    3.78 |
+| yellow         | #a45f22 |    4.60 |    4.26 |    3.80 |
+| yellow-warmer  | #b6540f |    4.57 |    4.24 |    3.78 |
+| yellow-cooler  | #ae5a30 |    4.53 |    4.20 |    3.74 |
+| yellow-faint   | #a05f5a |    4.56 |    4.22 |    3.77 |
+| blue           | #375cc6 |    5.56 |    5.15 |    4.59 |
+| blue-warmer    | #5f5fdf |    4.66 |    4.31 |    3.85 |
+| blue-cooler    | #265fbf |    5.62 |    5.20 |    4.64 |
+| blue-faint     | #6a65bf |    4.61 |    4.27 |    3.81 |
+| magenta        | #d5206f |    4.57 |    4.23 |    3.78 |
+| magenta-warmer | #cb26a0 |    4.51 |    4.18 |    3.73 |
+| magenta-cooler | #9435b4 |    5.69 |    5.27 |    4.70 |
+| magenta-faint  | #a04450 |    5.67 |    5.25 |    4.69 |
+| cyan           | #1f6fbf |    4.77 |    4.42 |    3.95 |
+| cyan-warmer    | #3f6faf |    4.75 |    4.40 |    3.93 |
+| cyan-cooler    | #0f7b8f |    4.59 |    4.25 |    3.79 |
+| cyan-faint     | #5f60bf |    4.98 |    4.62 |    4.12 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
+* ef-night
+:PROPERTIES:
+:CUSTOM_ID: h:cc74fbff-d0da-4fef-a83a-8e92d27738b9
+:END:
+
+| Name           |         | #000e17 | #0f1b29 | #1a2a2f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #afbcbf |   10.02 |    8.91 |    7.60 |
+| fg-dim         | #70857f |    4.98 |    4.43 |    3.78 |
+| fg-alt         | #70a89f |    7.25 |    6.44 |    5.50 |
+| red            | #ef656a |    6.27 |    5.57 |    4.76 |
+| red-warmer     | #f47360 |    6.95 |    6.18 |    5.27 |
+| red-cooler     | #ef798f |    7.26 |    6.45 |    5.51 |
+| red-faint      | #d56f72 |    5.90 |    5.25 |    4.48 |
+| green          | #1fa526 |    6.02 |    5.35 |    4.57 |
+| green-warmer   | #50a22f |    6.09 |    5.42 |    4.63 |
+| green-cooler   | #00b672 |    7.38 |    6.56 |    5.60 |
+| green-faint    | #61a06c |    6.28 |    5.59 |    4.77 |
+| yellow         | #c48502 |    6.23 |    5.54 |    4.73 |
+| yellow-warmer  | #e6832f |    7.12 |    6.33 |    5.40 |
+| yellow-cooler  | #df8f6f |    7.72 |    6.86 |    5.86 |
+| yellow-faint   | #cf9f7f |    8.30 |    7.38 |    6.30 |
+| blue           | #379cf6 |    6.74 |    6.00 |    5.12 |
+| blue-warmer    | #6a88ff |    6.12 |    5.44 |    4.65 |
+| blue-cooler    | #029fff |    6.89 |    6.13 |    5.23 |
+| blue-faint     | #7a94df |    6.63 |    5.90 |    5.03 |
+| magenta        | #d570af |    6.29 |    5.60 |    4.78 |
+| magenta-warmer | #e580ea |    8.01 |    7.12 |    6.08 |
+| magenta-cooler | #af8aff |    7.35 |    6.54 |    5.58 |
+| magenta-faint  | #c59faf |    8.33 |    7.40 |    6.32 |
+| cyan           | #4fb0cf |    7.85 |    6.98 |    5.96 |
+| cyan-warmer    | #6fafff |    8.60 |    7.65 |    6.53 |
+| cyan-cooler    | #3dc0b0 |    8.71 |    7.75 |    6.61 |
+| cyan-faint     | #92b4df |    9.13 |    8.12 |    6.93 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
+* ef-spring
+:PROPERTIES:
+:CUSTOM_ID: h:f8eea1d3-359a-4ab6-9c5c-c54ebe896b43
+:END:
+
+| Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #3f4946 |    9.14 |    2.25 |    2.25 |
+| fg-dim         | #7f6f8a |    4.53 |    4.54 |    4.54 |
+| fg-alt         | #8d6e6a |    4.50 |    4.57 |    4.57 |
+| red            | #c42d2f |    5.47 |    3.76 |    3.76 |
+| red-warmer     | #d03003 |    5.01 |    4.11 |    4.11 |
+| red-cooler     | #cf2f4f |    4.93 |    4.17 |    4.17 |
+| red-faint      | #b64850 |    5.11 |    4.03 |    4.03 |
+| green          | #14872f |    4.54 |    4.54 |    4.54 |
+| green-warmer   | #4a7d00 |    4.87 |    4.22 |    4.22 |
+| green-cooler   | #007f68 |    4.86 |    4.24 |    4.24 |
+| green-faint    | #61756c |    4.82 |    4.27 |    4.27 |
+| yellow         | #a45f22 |    4.86 |    4.24 |    4.24 |
+| yellow-warmer  | #b6540f |    4.83 |    4.26 |    4.26 |
+| yellow-cooler  | #ae5a30 |    4.78 |    4.30 |    4.30 |
+| yellow-faint   | #876450 |    5.19 |    3.97 |    3.97 |
+| blue           | #375cc6 |    5.87 |    3.51 |    3.51 |
+| blue-warmer    | #5f5fdf |    4.92 |    4.19 |    4.19 |
+| blue-cooler    | #265fbf |    5.93 |    3.47 |    3.47 |
+| blue-faint     | #6a65bf |    4.87 |    4.23 |    4.23 |
+| magenta        | #d5206f |    4.83 |    4.27 |    4.27 |
+| magenta-warmer | #cb26a0 |    4.76 |    4.32 |    4.32 |
+| magenta-cooler | #9435b4 |    6.01 |    3.43 |    3.43 |
+| magenta-faint  | #a04450 |    5.99 |    3.44 |    3.44 |
+| cyan           | #1f6fbf |    5.04 |    4.08 |    4.08 |
+| cyan-warmer    | #3f6faf |    5.02 |    4.10 |    4.10 |
+| cyan-cooler    | #0f7b8f |    4.84 |    4.25 |    4.25 |
+| cyan-faint     | #5f60bf |    5.26 |    3.91 |    3.91 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @2$4);%.2f :: $5='(Λ $2 @2$5);%.2f
+
+* ef-summer
+:PROPERTIES:
+:CUSTOM_ID: h:11cc99c5-435d-4928-9fe1-1b4763cd47ff
+:END:
+
+| Name           |         | #fff2f3 | #fbe3ef | #efd0e4 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #5f3f8f |    7.42 |    6.68 |    5.71 |
+| fg-dim         | #8a657f |    4.53 |    4.08 |    3.49 |
+| fg-alt         | #af506f |    4.58 |    4.13 |    3.53 |
+| red            | #d3303a |    4.52 |    4.08 |    3.48 |
+| red-warmer     | #e00033 |    4.56 |    4.11 |    3.51 |
+| red-cooler     | #d50f7f |    4.58 |    4.12 |    3.52 |
+| red-faint      | #c24552 |    4.51 |    4.06 |    3.47 |
+| green          | #217a3c |    4.92 |    4.43 |    3.78 |
+| green-warmer   | #4a7d00 |    4.56 |    4.10 |    3.51 |
+| green-cooler   | #007f68 |    4.54 |    4.09 |    3.50 |
+| green-faint    | #61756c |    4.51 |    4.06 |    3.47 |
+| yellow         | #a45f22 |    4.54 |    4.09 |    3.49 |
+| yellow-warmer  | #b6532f |    4.51 |    4.06 |    3.47 |
+| yellow-cooler  | #b65050 |    4.53 |    4.08 |    3.48 |
+| yellow-faint   | #9a5f6a |    4.56 |    4.11 |    3.51 |
+| blue           | #375ce6 |    5.02 |    4.52 |    3.86 |
+| blue-warmer    | #5250ef |    5.13 |    4.62 |    3.95 |
+| blue-cooler    | #065fff |    4.71 |    4.24 |    3.62 |
+| blue-faint     | #6060d0 |    4.72 |    4.25 |    3.63 |
+| magenta        | #ba35af |    4.57 |    4.11 |    3.51 |
+| magenta-warmer | #cb1aaa |    4.51 |    4.06 |    3.47 |
+| magenta-cooler | #7450df |    4.87 |    4.38 |    3.74 |
+| magenta-faint  | #bf3580 |    4.77 |    4.30 |    3.67 |
+| cyan           | #1f6fbf |    4.71 |    4.24 |    3.63 |
+| cyan-warmer    | #3f6faf |    4.69 |    4.22 |    3.61 |
+| cyan-cooler    | #0f7b8f |    4.53 |    4.08 |    3.49 |
+| cyan-faint     | #5f60bf |    4.92 |    4.43 |    3.79 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
+* ef-winter
+:PROPERTIES:
+:CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
+:END:
+
+| Name           |         | #0f0b15 | #221a2f | #252544 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #b8c6d5 |   11.19 |    9.61 |    8.46 |
+| fg-dim         | #807c9f |    4.91 |    4.22 |    3.72 |
+| fg-alt         | #b0889f |    6.37 |    5.46 |    4.81 |
+| red            | #ef6560 |    6.21 |    5.33 |    4.70 |
+| red-warmer     | #f47360 |    6.92 |    5.94 |    5.23 |
+| red-cooler     | #ff5a7a |    6.48 |    5.57 |    4.90 |
+| red-faint      | #d56f72 |    5.88 |    5.05 |    4.45 |
+| green          | #0faa26 |    6.30 |    5.41 |    4.76 |
+| green-warmer   | #6aad0f |    7.04 |    6.04 |    5.32 |
+| green-cooler   | #00a692 |    6.37 |    5.47 |    4.81 |
+| green-faint    | #61a06c |    6.26 |    5.37 |    4.73 |
+| yellow         | #c48032 |    6.01 |    5.16 |    4.54 |
+| yellow-warmer  | #d1843f |    6.56 |    5.64 |    4.96 |
+| yellow-cooler  | #df8f5a |    7.61 |    6.54 |    5.76 |
+| yellow-faint   | #cf9f8f |    8.35 |    7.17 |    6.31 |
+| blue           | #3f95f6 |    6.34 |    5.44 |    4.79 |
+| blue-warmer    | #6a9fff |    7.43 |    6.38 |    5.62 |
+| blue-cooler    | #029fff |    6.86 |    5.89 |    5.19 |
+| blue-faint     | #7a94df |    6.61 |    5.67 |    5.00 |
+| magenta        | #d369af |    5.94 |    5.10 |    4.49 |
+| magenta-warmer | #e580ea |    7.98 |    6.85 |    6.03 |
+| magenta-cooler | #af85ff |    7.06 |    6.06 |    5.34 |
+| magenta-faint  | #c57faf |    6.51 |    5.59 |    4.93 |
+| cyan           | #4fbaef |    8.90 |    7.64 |    6.73 |
+| cyan-warmer    | #6fafff |    8.57 |    7.36 |    6.48 |
+| cyan-cooler    | #1dbfcf |    8.72 |    7.48 |    6.59 |
+| cyan-faint     | #8aa0df |    7.58 |    6.50 |    5.73 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
