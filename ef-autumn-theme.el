@@ -99,7 +99,7 @@
       (info green-warmer)
 
       (link yellow)
-      (link-alt magenta-cooler)
+      (link-alt red-cooler)
       (date yellow-cooler)
       (name green-warmer)
       (keybind red)
