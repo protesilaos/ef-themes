@@ -95,7 +95,7 @@
       (bg-mode-line  "#2a2a75") (fg-mode-line  "#e0e0ff")
       (bg-accent     "#25adff") (fg-accent     "#000000")
       (bg-completion "#0f2d4a")
-      (bg-hover      "#00474f")
+      (bg-hover      "#004a5f")
       (bg-hover-alt  "#303f5a")
       (bg-hl-line    "#002435")
       (bg-region     "#25164a")
