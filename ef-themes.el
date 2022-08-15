@@ -538,7 +538,7 @@ When called from Lisp, THEME is a symbol."
     `(mu4e-moved-face ((,c :inherit italic :foreground ,warning)))
     `(mu4e-ok-face ((,c :inherit success)))
     `(mu4e-region-code ((,c :foreground ,builtin)))
-    `(mu4e-related-face ((,c :inherit shadow)))
+    `(mu4e-related-face ((,c :inherit (italic shadow))))
     `(mu4e-replied-face ((,c :foreground ,info)))
     `(mu4e-special-header-value-face ((,c :inherit message-header-subject)))
     `(mu4e-system-face ((,c :inherit italic)))
