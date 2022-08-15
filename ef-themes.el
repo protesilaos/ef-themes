@@ -225,12 +225,12 @@ When called from Lisp, THEME is a symbol."
     ;; dired-{flagged,marked} and any other face that sets a background
     ;; such as hl-line.  Also, denoting depth by varying shades of gray
     ;; does not look right.
-    `(dired-subtree-depth-1-face (()))
-    `(dired-subtree-depth-2-face (()))
-    `(dired-subtree-depth-3-face (()))
-    `(dired-subtree-depth-4-face (()))
-    `(dired-subtree-depth-5-face (()))
-    `(dired-subtree-depth-6-face (()))
+    `(dired-subtree-depth-1-face (( )))
+    `(dired-subtree-depth-2-face (( )))
+    `(dired-subtree-depth-3-face (( )))
+    `(dired-subtree-depth-4-face (( )))
+    `(dired-subtree-depth-5-face (( )))
+    `(dired-subtree-depth-6-face (( )))
 ;;;; diredfl
     `(diredfl-autofile-name ((,c :background ,bg-alt)))
     `(diredfl-compressed-file-name ((,c :foreground ,yellow-cooler)))
@@ -622,7 +622,7 @@ When called from Lisp, THEME is a symbol."
     `(org-document-title ((,c :foreground ,rainbow-0 :height 1.8)))
     `(org-done ((,c :foreground ,info)))
     `(org-drawer ((,c :inherit shadow)))
-    `(org-ellipsis (())) ; inherits from the heading's color
+    `(org-ellipsis (( ))) ; inherits from the heading's color
     `(org-footnote ((,c :inherit link)))
     `(org-formula ((,c :foreground ,fnname)))
     `(org-headline-done ((,c :inherit org-done)))
@@ -686,7 +686,7 @@ When called from Lisp, THEME is a symbol."
     `(outline-7 ((,c :inherit bold :foreground ,rainbow-7)))
     `(outline-8 ((,c :inherit bold :foreground ,rainbow-8)))
 ;;;; outline-minor-faces
-    `(outline-minor-0 (()))
+    `(outline-minor-0 (( )))
 ;;;; package (M-x list-packages)
     `(package-description ((,c :foreground ,docstring)))
     `(package-help-section-name ((,c :inherit bold)))
