@@ -105,6 +105,42 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #5f60bf |    4.98 |    4.62 |    4.12 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
+* ef-light
+:PROPERTIES:
+:CUSTOM_ID: h:02d01731-b9ab-4653-9e71-ab1592c64734
+:END:
+
+| Name           |         | #ffffff | #efefef | #dbdbdb |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #202020 |   16.29 |   14.17 |   11.77 |
+| fg-dim         | #70627f |    5.61 |    4.88 |    4.05 |
+| fg-alt         | #196f70 |    5.92 |    5.15 |    4.27 |
+| red            | #d3303a |    4.94 |    4.29 |    3.57 |
+| red-warmer     | #e00033 |    4.98 |    4.33 |    3.60 |
+| red-cooler     | #d50f7f |    5.00 |    4.34 |    3.61 |
+| red-faint      | #c24552 |    4.92 |    4.28 |    3.55 |
+| green          | #217a3c |    5.37 |    4.67 |    3.88 |
+| green-warmer   | #4a7d00 |    4.97 |    4.32 |    3.59 |
+| green-cooler   | #008858 |    4.50 |    3.92 |    3.25 |
+| green-faint    | #61756c |    4.92 |    4.28 |    3.55 |
+| yellow         | #a45f22 |    4.95 |    4.31 |    3.58 |
+| yellow-warmer  | #b6532f |    4.92 |    4.28 |    3.55 |
+| yellow-cooler  | #b65050 |    4.94 |    4.29 |    3.57 |
+| yellow-faint   | #a65f6a |    4.70 |    4.09 |    3.40 |
+| blue           | #375cd8 |    5.70 |    4.96 |    4.12 |
+| blue-warmer    | #4250ef |    5.79 |    5.04 |    4.18 |
+| blue-cooler    | #065fff |    5.14 |    4.47 |    3.71 |
+| blue-faint     | #6060d0 |    5.15 |    4.47 |    3.72 |
+| magenta        | #ba35af |    4.98 |    4.33 |    3.60 |
+| magenta-warmer | #cf25aa |    4.67 |    4.06 |    3.37 |
+| magenta-cooler | #6052cf |    5.82 |    5.07 |    4.21 |
+| magenta-faint  | #bf3580 |    5.20 |    4.52 |    3.76 |
+| cyan           | #1f6fbf |    5.14 |    4.47 |    3.71 |
+| cyan-warmer    | #3f6faf |    5.12 |    4.45 |    3.70 |
+| cyan-cooler    | #1f77bb |    4.76 |    4.14 |    3.44 |
+| cyan-faint     | #506fa0 |    5.09 |    4.43 |    3.68 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
 * ef-night
 :PROPERTIES:
 :CUSTOM_ID: h:cc74fbff-d0da-4fef-a83a-8e92d27738b9
