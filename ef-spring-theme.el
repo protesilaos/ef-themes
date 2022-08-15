@@ -1,4 +1,4 @@
-;;; ef-spring-theme.el --- Light theme with a pleasant palette -*- lexical-binding:t -*-
+;;; ef-spring-theme.el --- Legible light theme -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-spring "Light theme with a pleasant palette.")
+  (deftheme ef-spring "Legible light theme.")
 
   (defconst ef-spring-palette
     '(;; Basic tones
