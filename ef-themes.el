@@ -823,7 +823,6 @@ Those are stored in `ef-themes-faces' and
                                      value
                                    (car (alist-get value ,sym))))))
                       colors))
-            ;; ,@(symbol-value colors))
        (custom-theme-set-faces ',name ,@ef-themes-faces)
        (custom-theme-set-variables ',name ,@ef-themes-custom-variables))))
 
