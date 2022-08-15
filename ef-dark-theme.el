@@ -72,7 +72,7 @@
 
       ;; Basic hues for background values
       (bg-red      "#cd2f30") (bg-green  "#20a020")
-      (bg-yellow   "#b47040") (bg-blue   "#4648d0")
+      (bg-yellow   "#8f5040") (bg-blue   "#4648d0")
       (bg-magenta  "#c040cf") (bg-cyan   "#2270be")
 
       ;; Diffs
