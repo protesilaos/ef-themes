@@ -96,6 +96,7 @@ When called from Lisp, THEME is a symbol."
     `(hl-line ((,c :background ,bg-hl-line)))
     `(button ((,c :foreground ,link :underline ,border)))
     `(link ((,c :foreground ,link :underline ,border)))
+    `(link-visited ((,c :foreground ,link-alt :underline ,border)))
     `(shadow ((,c :foreground ,fg-dim)))
     `(trailing-whitespace ((,c :background ,bg-red :foreground ,fg-intense)))
     `(tooltip ((,c :background ,bg-active :foreground ,fg-intense)))
