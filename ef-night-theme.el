@@ -78,15 +78,15 @@
       ;; Diffs
       (bg-added          "#003a2f")
       (bg-added-faint    "#002f28")
-      (bg-added-refine   "#005a4f")
+      (bg-added-refine   "#005b52")
 
       (bg-changed        "#424200")
       (bg-changed-faint  "#2a2000")
-      (bg-changed-refine "#585800")
+      (bg-changed-refine "#5f5c00")
 
       (bg-removed        "#55142a")
       (bg-removed-faint  "#3a111f")
-      (bg-removed-refine "#701836")
+      (bg-removed-refine "#781f36")
 
       ;; Special hues
       (bg-mode-line  "#003a7f") (fg-mode-line  "#ceeeff")
