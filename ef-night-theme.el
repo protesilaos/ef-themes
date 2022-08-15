@@ -50,12 +50,12 @@
       (red-cooler      "#ef798f") (green-cooler  "#00b672")
       (red-faint       "#d56f72") (green-faint   "#61a06c")
       (yellow          "#c48502") (blue          "#379cf6")
-      (yellow-warmer   "#e6832f") (blue-warmer   "#6a90ff")
+      (yellow-warmer   "#e6832f") (blue-warmer   "#6a88ff")
       (yellow-cooler   "#df8f6f") (blue-cooler   "#029fff")
       (yellow-faint    "#cf9f7f") (blue-faint    "#7a94df")
       (magenta         "#d570af") (cyan          "#4fb0cf")
       (magenta-warmer  "#e580ea") (cyan-warmer   "#6fafff")
-      (magenta-cooler  "#a587ff") (cyan-cooler   "#3dc0b0")
+      (magenta-cooler  "#af8aff") (cyan-cooler   "#3dc0b0")
       (magenta-faint   "#c59faf") (cyan-faint    "#92b4df")
 
       ;; Basic hues for background values
