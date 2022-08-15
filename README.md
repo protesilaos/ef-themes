@@ -4,7 +4,7 @@ WORK-IN-PROGRESS
 
 Colourful light and dark themes.
 
-## Screenshots
+## Screenshots (PRE-RELEASE and WORK-IN-PROGRESS)
 
 **Those will be removed from the repo before the actual package is
 released.**
