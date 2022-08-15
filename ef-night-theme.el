@@ -43,9 +43,12 @@
 
   (defconst ef-night-palette
     '(;; Basic tones
-      (bg-main "#000e17") (fg-main "#afbcbf")
-      (bg-dim  "#0f1b29") (fg-dim  "#70857f")
-      (bg-alt  "#1a2a2f") (fg-alt  "#70a89f")
+      (bg-main  "#000e17")
+      (fg-main  "#afbcbf")
+      (bg-dim   "#0f1b29")
+      (fg-dim   "#70857f")
+      (bg-alt   "#1a2a2f")
+      (fg-alt   "#70a89f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
@@ -74,9 +77,12 @@
       (cyan-faint      "#92b4df")
 
       ;; Basic hues for background values
-      (bg-red      "#cd2f30") (bg-green  "#20a020")
-      (bg-yellow   "#904f30") (bg-blue   "#2f439f")
-      (bg-magenta  "#c040cf") (bg-cyan   "#027080")
+      (bg-red      "#cd2f30")
+      (bg-green    "#20a020")
+      (bg-yellow   "#904f30")
+      (bg-blue     "#2f439f")
+      (bg-magenta  "#c040cf")
+      (bg-cyan     "#027080")
 
       ;; Diffs
       (bg-added          "#003a2f")

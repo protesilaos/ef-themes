@@ -43,9 +43,12 @@
 
   (defconst ef-light-palette
     '(;; Basic tones
-      (bg-main "#ffffff") (fg-main "#202020")
-      (bg-dim  "#efefef") (fg-dim  "#70627f")
-      (bg-alt  "#dbdbdb") (fg-alt  "#196f70")
+      (bg-main  "#ffffff")
+      (fg-main  "#202020")
+      (bg-dim   "#efefef")
+      (fg-dim   "#70627f")
+      (bg-alt   "#dbdbdb")
+      (fg-alt   "#196f70")
 
       ;; Basic hues for foreground values
       (red             "#d3303a")

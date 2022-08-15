@@ -43,9 +43,12 @@
 
   (defconst ef-autumn-palette
     '(;; Basic tones
-      (bg-main "#0f0e06") (fg-main "#cfbcba")
-      (bg-dim  "#1f1b19") (fg-dim  "#887c8a")
-      (bg-alt  "#36322f") (fg-alt  "#70a89f")
+      (bg-main  "#0f0e06")
+      (fg-main  "#cfbcba")
+      (bg-dim   "#1f1b19")
+      (fg-dim   "#887c8a")
+      (bg-alt   "#36322f")
+      (fg-alt   "#70a89f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
@@ -74,9 +77,12 @@
       (cyan-faint      "#92b4df")
 
       ;; Basic hues for background values
-      (bg-red      "#cd2f30") (bg-green  "#20a020")
-      (bg-yellow   "#9a4f20") (bg-blue   "#3f43af")
-      (bg-magenta  "#c040cf") (bg-cyan   "#027080")
+      (bg-red      "#cd2f30")
+      (bg-green    "#20a020")
+      (bg-yellow   "#9a4f20")
+      (bg-blue     "#3f43af")
+      (bg-magenta  "#c040cf")
+      (bg-cyan     "#027080")
 
       ;; Diffs
       (bg-added          "#20320f")

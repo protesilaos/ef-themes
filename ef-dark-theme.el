@@ -43,9 +43,12 @@
 
   (defconst ef-dark-palette
     '(;; Basic tones
-      (bg-main "#000000") (fg-main "#d0d0d0")
-      (bg-dim  "#1a1a1a") (fg-dim  "#857f8f")
-      (bg-alt  "#2b2b2b") (fg-alt  "#89afef")
+      (bg-main  "#000000")
+      (fg-main  "#d0d0d0")
+      (bg-dim   "#1a1a1a")
+      (fg-dim   "#857f8f")
+      (bg-alt   "#2b2b2b")
+      (fg-alt   "#89afef")
 
       ;; Basic hues for foreground values
       (red             "#ef6560")
@@ -74,9 +77,12 @@
       (cyan-faint      "#8aa0df")
 
       ;; Basic hues for background values
-      (bg-red      "#cd2f30") (bg-green  "#20a020")
-      (bg-yellow   "#8f5040") (bg-blue   "#4648d0")
-      (bg-magenta  "#c040cf") (bg-cyan   "#2270be")
+      (bg-red      "#cd2f30")
+      (bg-green    "#20a020")
+      (bg-yellow   "#8f5040")
+      (bg-blue     "#4648d0")
+      (bg-magenta  "#c040cf")
+      (bg-cyan     "#2270be")
 
       ;; Diffs
       (bg-added          "#003929")

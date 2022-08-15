@@ -43,9 +43,12 @@
 
   (defconst ef-winter-palette
     '(;; Basic tones
-      (bg-main "#0f0b15") (fg-main "#b8c6d5")
-      (bg-dim  "#221a2f") (fg-dim  "#807c9f")
-      (bg-alt  "#252544") (fg-alt  "#b0889f")
+      (bg-main  "#0f0b15")
+      (fg-main  "#b8c6d5")
+      (bg-dim   "#221a2f")
+      (fg-dim   "#807c9f")
+      (bg-alt   "#252544")
+      (fg-alt   "#b0889f")
 
       ;; Basic hues for foreground values
       (red             "#ef6560")
@@ -74,9 +77,12 @@
       (cyan-faint      "#8aa0df")
 
       ;; Basic hues for background values
-      (bg-red      "#cd2f30") (bg-green  "#20a020")
-      (bg-yellow   "#b47040") (bg-blue   "#4648d0")
-      (bg-magenta  "#c040cf") (bg-cyan   "#2270be")
+      (bg-red      "#cd2f30")
+      (bg-green    "#20a020")
+      (bg-yellow   "#b47040")
+      (bg-blue     "#4648d0")
+      (bg-magenta  "#c040cf")
+      (bg-cyan     "#2270be")
 
       ;; Diffs
       (bg-added          "#003959")

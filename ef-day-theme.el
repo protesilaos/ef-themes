@@ -43,9 +43,12 @@
 
   (defconst ef-day-palette
     '(;; Basic tones
-      (bg-main "#fff5ea") (fg-main "#624a4a")
-      (bg-dim  "#f5eddf") (fg-dim  "#736d8f")
-      (bg-alt  "#e9e0d8") (fg-alt  "#7f6f4a")
+      (bg-main  "#fff5ea")
+      (fg-main  "#624a4a")
+      (bg-dim   "#f5eddf")
+      (fg-dim   "#736d8f")
+      (bg-alt   "#e9e0d8")
+      (fg-alt   "#7f6f4a")
 
       ;; Basic hues for foreground values
       (red             "#c42d2f")
@@ -74,9 +77,12 @@
       (cyan-faint      "#5f60bf")
 
       ;; Basic hues for background values
-      (bg-red      "#ff8f88") (bg-green  "#96df80")
-      (bg-yellow   "#efbf00") (bg-blue   "#cfceff")
-      (bg-magenta  "#ff9fee") (bg-cyan   "#88cfd0")
+      (bg-red      "#ff8f88")
+      (bg-green    "#96df80")
+      (bg-yellow   "#efbf00")
+      (bg-blue     "#cfceff")
+      (bg-magenta  "#ff9fee")
+      (bg-cyan     "#88cfd0")
 
       ;; Diffs
       (bg-added          "#d5efcf")

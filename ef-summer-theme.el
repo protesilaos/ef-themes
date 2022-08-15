@@ -43,9 +43,12 @@
 
   (defconst ef-summer-palette
     '(;; Basic tones
-      (bg-main "#fff2f3") (fg-main "#5f3f8f")
-      (bg-dim  "#fbe3ef") (fg-dim  "#8a657f")
-      (bg-alt  "#efd0e4") (fg-alt  "#af506f")
+      (bg-main  "#fff2f3")
+      (fg-main  "#5f3f8f")
+      (bg-dim   "#fbe3ef")
+      (fg-dim   "#8a657f")
+      (bg-alt   "#efd0e4")
+      (fg-alt   "#af506f")
 
       ;; Basic hues for foreground values
       (red             "#d3303a")
@@ -74,9 +77,12 @@
       (cyan-faint      "#5f60bf")
 
       ;; Basic hues for background values
-      (bg-red      "#ff7f88") (bg-green  "#86df80")
-      (bg-yellow   "#ffc200") (bg-blue   "#cbcfff")
-      (bg-magenta  "#ff9fee") (bg-cyan   "#88ccff")
+      (bg-red      "#ff7f88")
+      (bg-green    "#86df80")
+      (bg-yellow   "#ffc200")
+      (bg-blue     "#cbcfff")
+      (bg-magenta  "#ff9fee")
+      (bg-cyan     "#88ccff")
 
       ;; Diffs
       (bg-added          "#c5eaff")
