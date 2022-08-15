@@ -737,14 +737,14 @@ When called from Lisp, THEME is a symbol."
     `(term-color-yellow ((,c :background ,yellow :foreground ,yellow)))
     `(term-underline ((,c :underline t)))
 ;;;; transient
-    `(transient-active-infix ((,c :background ,bg-hover-alt)))
+    `(transient-active-infix ((,c :background ,bg-hover-alt :foreground ,fg-intense)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
     ;; Placate the compiler for what is a spurious warning.  We also
     ;; have to do this with `eldoc-highlight-function-argument'.
-    (list 'transient-argument `((,c :inherit bold :background ,bg-added :foreground ,cyan)))
+    (list 'transient-argument `((,c :inherit bold :background ,bg-dim :foreground ,accent-0)))
     `(transient-blue ((,c :inherit bold :foreground ,blue-cooler)))
     `(transient-disabled-suffix ((,c :strike-through t)))
-    `(transient-enabled-suffix ((,c :background ,bg-changed)))
+    `(transient-enabled-suffix ((,c :background ,bg-dim :foreground ,accent-1)))
     `(transient-heading ((,c :inherit bold)))
     `(transient-inactive-argument ((,c :inherit shadow)))
     `(transient-inactive-value ((,c :inherit shadow)))
@@ -757,7 +757,7 @@ When called from Lisp, THEME is a symbol."
     `(transient-teal ((,c :inherit bold :foreground ,cyan-cooler)))
     `(transient-unreachable ((,c :inherit shadow)))
     `(transient-unreachable-key ((,c :inherit shadow)))
-    `(transient-value ((,c :inherit success :background ,bg-dim)))
+    `(transient-value ((,c :background ,bg-dim :foreground ,accent-2)))
 ;;;; vc (vc-dir.el, vc-hooks.el)
     `(vc-dir-directory ((,c :foreground ,accent-0)))
     `(vc-dir-file ((,c :foreground ,name)))
