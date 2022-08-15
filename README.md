@@ -2,7 +2,7 @@
 
 WORK-IN-PROGRESS
 
-Colourful light and dark themes.
+Colourful and legible themes.
 
 ## Screenshots (PRE-RELEASE and WORK-IN-PROGRESS)
 
