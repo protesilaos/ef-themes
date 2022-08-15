@@ -18,17 +18,17 @@ The themes in order:
 - `ef-winter`
 - `ef-autumn`
 
-![Ef Spring PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-spring.png)
+![Ef Spring PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-spring.png)
 
-![Ef Summer PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-summer.png)
+![Ef Summer PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-summer.png)
 
-![Ef Day PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-day.png)
+![Ef Day PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-day.png)
 
-![Ef Night PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-night.png)
+![Ef Night PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-night.png)
 
-![Ef Winter PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-winter.png)
+![Ef Winter PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-winter.png)
 
-![Ef Autumn PRE-RELEASE DEMO](./screnshots/pre-release-ef-themes-demo-autumn.png)
+![Ef Autumn PRE-RELEASE DEMO](./screenshots/pre-release-ef-themes-demo-autumn.png)
 
 ## Principles
 
