@@ -98,8 +98,8 @@
       (warning yellow-warmer)
       (info green)
 
-      (link yellow)
-      (link-alt magenta-cooler)
+      (link red-warmer)
+      (link-alt yellow)
       (date cyan-cooler)
       (name green)
       (keybind red-cooler)
