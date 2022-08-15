@@ -122,7 +122,7 @@
       (link blue-warmer)
       (link-alt magenta)
       (date cyan)
-      (name blue)
+      (name blue-warmer)
       (keybind blue)
 
       (builtin magenta)
@@ -136,7 +136,7 @@
       (type green-cooler)
       (variable cyan-cooler)
 
-      (accent-0 blue-warmer)
+      (accent-0 blue)
       (accent-1 magenta-warmer)
       (accent-2 green-cooler)
       (accent-3 red)
