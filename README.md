@@ -42,5 +42,5 @@ No.  For my workflow, accessibility is the most important quality.  The
 Because I think that users deserve "pretty" themes that (i) do make some
 considerations for legibility, and (ii) are not designed on a whimsy.
 
-In other words, this is my answer to those who like my `modus-themes`
-but want something with a bit more flair.
+In other words, the `ef-themes` are my answer to those who like my
+`modus-themes` but want something with a bit more flair.
