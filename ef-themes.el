@@ -603,7 +603,7 @@ When called from Lisp, THEME is a symbol."
     `(org-agenda-filter-tags ((,c :inherit success)))
     `(org-agenda-restriction-lock ((,c :background ,bg-dim :foreground ,fg-dim)))
     `(org-agenda-structure ((,c :foreground ,rainbow-0 :height 1.7)))
-    `(org-agenda-structure-filter ((,c :inherit org-agenda-structure :foreground ,info)))
+    `(org-agenda-structure-filter ((,c :inherit (bold org-agenda-structure) :foreground ,rainbow-1)))
     `(org-agenda-structure-secondary ((,c :foreground ,rainbow-1)))
     `(org-archived ((,c :background ,bg-alt :foreground ,fg-alt)))
     `(org-block (( )))
