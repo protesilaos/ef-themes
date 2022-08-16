@@ -238,6 +238,11 @@ When called from Lisp, THEME is a symbol."
 ;;;; denote
     `(denote-faces-date ((,c :foreground ,date)))
     `(denote-faces-keywords ((,c :foreground ,name)))
+;;;; dictionary
+    `(dictionary-button-face ((,c :inherit bold)))
+    `(dictionary-reference-face ((,c :inherit link)))
+    `(dictionary-word-definition-face (()))
+    `(dictionary-word-entry-face ((,c :inherit font-lock-comment-face)))
 ;;;; diff-hl
     `(diff-hl-change ((,c :background ,bg-changed-refine)))
     `(diff-hl-delete ((,c :background ,bg-removed-refine)))
