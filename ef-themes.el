@@ -49,7 +49,7 @@
 
 ;;; Commands and their helper functions
 
-(defun ef-themes--list-enabled-themes ()
+(defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
   (seq-filter
    (lambda (theme)
@@ -61,7 +61,7 @@
 (defun ef-themes--select-prompt ()
   "Minibuffer prompt for `ef-themes-select'."
   (completing-read "Select Ef Theme: "
-                   (ef-themes--list-enabled-themes)
+                   (ef-themes--list-known-themes)
                    nil t nil
                    'ef-themes--select-theme-history))
 
@@ -71,7 +71,7 @@
 When called from Lisp, THEME is a symbol."
   (interactive
    (list (intern (ef-themes--select-prompt))))
-  (mapc #'disable-theme (ef-themes--list-enabled-themes))
+  (mapc #'disable-theme (ef-themes--list-known-themes))
   (load-theme theme :no-confirm))
 
 ;;; Faces and variables
