@@ -938,12 +938,6 @@ Those are stored in `ef-themes-faces' and
        (custom-theme-set-faces ',name ,@ef-themes-faces)
        (custom-theme-set-variables ',name ,@ef-themes-custom-variables))))
 
-;;;###autoload
-(when load-file-name
-  (let ((dir (file-name-directory load-file-name)))
-    (unless (equal dir (expand-file-name "themes/" data-directory))
-      (add-to-list 'custom-theme-load-path dir))))
-
 ;;; Use theme colors
 
 (defmacro ef-themes-with-colors (&rest body)
@@ -965,6 +959,14 @@ Those are stored in `ef-themes-faces' and
                       colors))
        (ignore c ,@colors)            ; Silence unused variable warnings
        ,@body)))
+
+;;; Add to path
+
+;;;###autoload
+(when load-file-name
+  (let ((dir (file-name-directory load-file-name)))
+    (unless (equal dir (expand-file-name "themes/" data-directory))
+      (add-to-list 'custom-theme-load-path dir))))
 
 (provide 'ef-themes)
 ;;; ef-themes.el ends here
