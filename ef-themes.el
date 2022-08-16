@@ -146,7 +146,7 @@ When called from Lisp, THEME is a symbol."
     `(change-log-list ((,c :inherit bold)))
     `(change-log-name ((,c :foreground ,name)))
     `(log-edit-header ((,c :inherit bold)))
-    `(log-edit-summary ((,c :inherit bold :foreground ,string)))
+    `(log-edit-summary ((,c :inherit bold :foreground ,accent-0)))
     `(log-edit-unknown-header ((,c :inherit shadow)))
     `(log-view-commit-body (( )))
     `(log-view-file ((,c :inherit bold)))
@@ -340,7 +340,7 @@ When called from Lisp, THEME is a symbol."
     `(git-commit-keyword ((,c :foreground ,keyword)))
     `(git-commit-nonempty-second-line ((,c :background ,bg-dim :foreground ,err)))
     `(git-commit-overlong-summary ((,c :background ,bg-dim :foreground ,warning)))
-    `(git-commit-summary ((,c :inherit bold :foreground ,string)))
+    `(git-commit-summary ((,c :inherit bold :foreground ,accent-0)))
 ;;;; git-rebase
     `(git-rebase-comment-hash ((,c :inherit font-lock-comment-face :foreground ,constant)))
     `(git-rebase-comment-heading  ((,c :inherit (bold font-lock-comment-face))))
