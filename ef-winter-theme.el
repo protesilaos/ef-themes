@@ -85,9 +85,9 @@
       (bg-cyan     "#2270be")
 
       ;; Diffs
-      (bg-added          "#003959")
-      (bg-added-faint    "#001f48")
-      (bg-added-refine   "#234f8f")
+      (bg-added          "#004035")
+      (bg-added-faint    "#002f28")
+      (bg-added-refine   "#036f3f")
 
       (bg-changed        "#424200")
       (bg-changed-faint  "#2a2000")
@@ -108,16 +108,16 @@
       (bg-active     "#353554")
       (bg-paren      "#3f4fbe")
       (bg-err        "#330d09") ; check with err
-      (bg-info       "#001d40") ; check with info
+      (bg-info       "#002a10") ; check with info
 
       (border        "#543f6f")
       (cursor        "#ff55cc")
       (fg-intense    "#ffffff")
 
       ;; Mappings
-      (err red-warmer)
+      (err red)
       (warning yellow-warmer)
-      (info blue)
+      (info green)
 
       (link blue-warmer)
       (link-alt magenta)
