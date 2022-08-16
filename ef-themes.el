@@ -944,5 +944,27 @@ Those are stored in `ef-themes-faces' and
     (unless (equal dir (expand-file-name "themes/" data-directory))
       (add-to-list 'custom-theme-load-path dir))))
 
+;;; Use theme colors
+
+(defmacro ef-themes-with-colors (&rest body)
+  "Evaluate BODY with colors from current palette bound."
+  (declare (indent 0))
+  (let* ((sym (gensym))
+         (palette (intern
+                   (format "%s-palette"
+                           (car (ef-themes--list-enabled-themes)))))
+         (colors (mapcar #'car (symbol-value palette))))
+    `(let* ((c '((class color) (min-colors 256)))
+            (,sym ,palette)
+            ,@(mapcar (lambda (color)
+                        (list color
+                              `(let* ((value (car (alist-get ',color ,sym))))
+                                 (if (stringp value)
+                                     value
+                                   (car (alist-get value ,sym))))))
+                      colors))
+       (ignore c ,@colors)            ; Silence unused variable warnings
+       ,@body)))
+
 (provide 'ef-themes)
 ;;; ef-themes.el ends here
