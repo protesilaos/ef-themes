@@ -63,6 +63,15 @@
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-known-themes))
 
+(defun ef-themes--current-theme-palette ()
+  "Return palette of active Ef theme, else produce `user-error'."
+  (if-let* ((themes (ef-themes--list-enabled-themes))
+            (palette (intern
+                      (format "%s-palette"
+                              (car themes)))))
+      palette
+    (user-error "No enabled Ef theme could be found")))
+
 (defvar ef-themes--select-theme-history nil)
 
 (defun ef-themes--select-prompt ()
@@ -938,15 +947,6 @@ Those are stored in `ef-themes-faces' and
        (custom-theme-set-variables ',name ,@ef-themes-custom-variables))))
 
 ;;; Use theme colors
-
-(defun ef-themes--current-theme-palette ()
-  "Return palette of active Ef theme, else produce `user-error'."
-  (if-let* ((themes (ef-themes--list-enabled-themes))
-            (palette (intern
-                      (format "%s-palette"
-                              (car themes)))))
-      palette
-    (user-error "No enabled Ef theme could be found")))
 
 (defmacro ef-themes-with-colors (&rest body)
   "Evaluate BODY with colors from current palette bound."
