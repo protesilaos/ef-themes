@@ -277,7 +277,7 @@ When called from Lisp, THEME is a symbol."
     `(dired-flagged ((,c :inherit error :background ,bg-err)))
     `(dired-header ((,c :inherit bold)))
     `(dired-ignored ((,c :inherit shadow)))
-    `(dired-mark ((,c :inherit success)))
+    `(dired-mark ((,c :foreground ,fg-intense)))
     `(dired-marked ((,c :inherit success :background ,bg-info)))
     `(dired-symlink ((,c :inherit link)))
     `(dired-warning ((,c :inherit warning)))
