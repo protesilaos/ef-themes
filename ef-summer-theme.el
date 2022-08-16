@@ -107,7 +107,7 @@
       (bg-region     "#eecfff")
       (bg-active     "#dfc0d4")
       (bg-paren      "#9fc0ef")
-      (bg-err        "#ffd5ea") ; check with err
+      (bg-err        "#ffd0e6") ; check with err
       (bg-info       "#bbefda") ; check with info
 
       (border        "#eebfef")
