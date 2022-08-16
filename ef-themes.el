@@ -790,6 +790,18 @@ When called from Lisp, THEME is a symbol."
     `(wgrep-reject-face ((,c :inherit error)))
 ;;;; which-function-mode
     `(which-func ((,c :inherit bold :foreground ,fg-intense)))
+;;;; whitespace-mode
+    `(whitespace-big-indent ((,c :background ,bg-err :foreground ,err)))
+    `(whitespace-empty ((,c :inherit whitespace-big-indent)))
+    `(whitespace-hspace ((,c :inherit whitespace-indentation)))
+    `(whitespace-indentation ((,c :background ,bg-dim :foreground ,fg-dim)))
+    `(whitespace-line ((,c :background ,bg-dim :foreground ,warning)))
+    `(whitespace-newline ((,c :inherit whitespace-indentation)))
+    `(whitespace-space ((,c :inherit whitespace-indentation)))
+    `(whitespace-space-after-tab ((,c :inherit whitespace-space-before-tab)))
+    `(whitespace-space-before-tab ((,c :background ,bg-red)))
+    `(whitespace-tab ((,c :inherit whitespace-indentation)))
+    `(whitespace-trailing ((,c :inherit whitespace-space-before-tab)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
