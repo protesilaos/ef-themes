@@ -940,13 +940,20 @@ Those are stored in `ef-themes-faces' and
 
 ;;; Use theme colors
 
+(defun ef-themes--current-theme-palette ()
+  "Return palette of active Ef theme, else produce `user-error'."
+  (if-let* ((themes (ef-themes--list-enabled-themes))
+            (palette (intern
+                      (format "%s-palette"
+                              (car themes)))))
+      palette
+    (user-error "No enabled Ef theme could be found")))
+
 (defmacro ef-themes-with-colors (&rest body)
   "Evaluate BODY with colors from current palette bound."
   (declare (indent 0))
   (let* ((sym (gensym))
-         (palette (intern
-                   (format "%s-palette"
-                           (car (ef-themes--list-enabled-themes)))))
+         (palette (ef-themes--current-theme-palette))
          (colors (mapcar #'car (symbol-value palette))))
     `(let* ((c '((class color) (min-colors 256)))
             (,sym ,palette)
