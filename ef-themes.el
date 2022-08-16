@@ -430,9 +430,8 @@ When called from Lisp, THEME is a symbol."
     `(keycast-command ((,c :inherit bold)))
     `(keycast-key ((,c :background ,bg-accent :foreground ,fg-accent)))
 ;;;; line numbers (display-line-numbers-mode and global variant)
-    ;; Here we cannot inherit `modus-themes-fixed-pitch'.  We need to
-    ;; fall back to `default' otherwise line numbers do not scale when
-    ;; using `text-scale-adjust'.
+    ;; We need to fall back to `default' otherwise line numbers do not
+    ;; scale when using `text-scale-adjust'.
     `(line-number ((,c :inherit (shadow default))))
     `(line-number-current-line ((,c :inherit bold :foreground ,fg-intense)))
     `(line-number-major-tick ((,c :inherit line-number :background ,bg-alt :foreground ,info)))
