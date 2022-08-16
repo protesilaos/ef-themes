@@ -824,6 +824,8 @@ When called from Lisp, THEME is a symbol."
     `(term-color-white ((,c :background "white" :foreground "white")))
     `(term-color-yellow ((,c :background ,yellow :foreground ,yellow)))
     `(term-underline ((,c :underline t)))
+;;;; textsec
+    `(textsec-suspicious (( )))
 ;;;; transient
     `(transient-active-infix ((,c :background ,bg-hover-alt :foreground ,fg-intense)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
