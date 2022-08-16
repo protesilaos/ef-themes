@@ -803,6 +803,15 @@ When called from Lisp, THEME is a symbol."
     `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,border))))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-alt)))
+;;;; tab-line-mode
+    `(tab-line ((,c :background ,bg-alt :height 0.95)))
+    `(tab-line-close-highlight ((,c :foreground ,red)))
+    `(tab-line-highlight ((,c :inherit highlight)))
+    `(tab-line-tab (( )))
+    `(tab-line-tab-current ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
+    `(tab-line-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
+    `(tab-line-tab-inactive-alternate ((,c :inherit tab-line-tab-inactive :foreground ,fg-alt)))
+    `(tab-line-tab-modified ((,c :foreground ,warning)))
 ;;;; term
     `(term ((,c :background ,bg-main :foreground ,fg-main)))
     `(term-bold ((,c :inherit bold)))
