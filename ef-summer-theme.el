@@ -121,8 +121,8 @@
 
       (link blue-warmer)
       (link-alt cyan-warmer)
-      (date cyan)
-      (name blue)
+      (date cyan-cooler)
+      (name magenta-warmer)
       (keybind blue-cooler)
 
       (builtin magenta)
