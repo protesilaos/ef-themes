@@ -788,6 +788,8 @@ When called from Lisp, THEME is a symbol."
     `(wgrep-face ((,c :inherit bold)))
     `(wgrep-file-face ((,c :foreground ,fg-alt)))
     `(wgrep-reject-face ((,c :inherit error)))
+;;;; which-function-mode
+    `(which-func ((,c :inherit bold :foreground ,fg-intense)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
