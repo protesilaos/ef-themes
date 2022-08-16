@@ -108,7 +108,7 @@
       (bg-active     "#dfc0d4")
       (bg-paren      "#9fc0ef")
       (bg-err        "#ffd5ea") ; check with err
-      (bg-info       "#e4e1ff") ; check with info
+      (bg-info       "#baefe5") ; check with info
 
       (border        "#eebfef")
       (cursor        "#cf0090")
@@ -117,7 +117,7 @@
       ;; Mappings
       (err red-warmer)
       (warning yellow-warmer)
-      (info blue)
+      (info green-cooler)
 
       (link blue-warmer)
       (link-alt cyan-warmer)
