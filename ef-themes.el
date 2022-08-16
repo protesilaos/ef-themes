@@ -775,6 +775,13 @@ When called from Lisp, THEME is a symbol."
     `(rainbow-delimiters-depth-9-face ((,c :foreground ,rainbow-8)))
     `(rainbow-delimiters-mismatched-face ((,c :background ,bg-red :foreground ,fg-intense)))
     `(rainbow-delimiters-unmatched-face ((,c :inherit (bold rainbow-delimiters-mismatched-face))))
+;;;; regexp-builder (re-builder)
+    `(reb-match-0 ((,c :background ,bg-cyan :foreground ,fg-intense)))
+    `(reb-match-1 ((,c :background ,bg-magenta :foreground ,fg-intense)))
+    `(reb-match-2 ((,c :background ,bg-red :foreground ,fg-intense)))
+    `(reb-match-3 ((,c :background ,bg-yellow :foreground ,fg-intense)))
+    `(reb-regexp-grouping-backslash ((,c :inherit font-lock-regexp-grouping-backslash)))
+    `(reb-regexp-grouping-construct ((,c :inherit font-lock-regexp-grouping-construct)))
 ;;;; show-paren-mode
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
