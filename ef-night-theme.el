@@ -125,7 +125,7 @@
       (name blue-warmer)
       (keybind blue-cooler)
 
-      (builtin cyan)
+      (builtin green-cooler)
       (comment yellow-faint)
       (constant magenta-cooler)
       (fnname cyan-cooler)
