@@ -103,8 +103,8 @@
       (bg-completion "#ffd5d3")
       (bg-hover      "#b0e0df")
       (bg-hover-alt  "#febcaf")
-      (bg-region     "#f0d6df")
       (bg-hl-line    "#f9e2b2")
+      (bg-region     "#f0d2df")
       (bg-active     "#d9d0c8")
       (bg-paren      "#8fcfdf")
       (bg-err        "#ffddee") ; check with err
