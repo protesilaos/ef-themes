@@ -217,34 +217,34 @@ C1 and C2 are color values written in hexadecimal RGB."
 
 | Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 |
 |----------------+---------+---------+---------+---------|
-| fg-main        | #3f4946 |    9.14 |    2.25 |    2.25 |
-| fg-dim         | #7f6f8a |    4.53 |    4.54 |    4.54 |
-| fg-alt         | #8d6e6a |    4.50 |    4.57 |    4.57 |
-| red            | #c42d2f |    5.47 |    3.76 |    3.76 |
-| red-warmer     | #d03003 |    5.01 |    4.11 |    4.11 |
-| red-cooler     | #cf2f4f |    4.93 |    4.17 |    4.17 |
-| red-faint      | #b64850 |    5.11 |    4.03 |    4.03 |
-| green          | #14872f |    4.54 |    4.54 |    4.54 |
-| green-warmer   | #4a7d00 |    4.87 |    4.22 |    4.22 |
-| green-cooler   | #007f68 |    4.86 |    4.24 |    4.24 |
-| green-faint    | #61756c |    4.82 |    4.27 |    4.27 |
-| yellow         | #a45f22 |    4.86 |    4.24 |    4.24 |
-| yellow-warmer  | #b6540f |    4.83 |    4.26 |    4.26 |
-| yellow-cooler  | #ae5a30 |    4.78 |    4.30 |    4.30 |
-| yellow-faint   | #876450 |    5.19 |    3.97 |    3.97 |
-| blue           | #375cc6 |    5.87 |    3.51 |    3.51 |
-| blue-warmer    | #5f5fdf |    4.92 |    4.19 |    4.19 |
-| blue-cooler    | #265fbf |    5.93 |    3.47 |    3.47 |
-| blue-faint     | #6a65bf |    4.87 |    4.23 |    4.23 |
-| magenta        | #d5206f |    4.83 |    4.27 |    4.27 |
-| magenta-warmer | #cb26a0 |    4.76 |    4.32 |    4.32 |
-| magenta-cooler | #9435b4 |    6.01 |    3.43 |    3.43 |
-| magenta-faint  | #a04450 |    5.99 |    3.44 |    3.44 |
-| cyan           | #1f6fbf |    5.04 |    4.08 |    4.08 |
-| cyan-warmer    | #3f6faf |    5.02 |    4.10 |    4.10 |
-| cyan-cooler    | #0f7b8f |    4.84 |    4.25 |    4.25 |
-| cyan-faint     | #5f60bf |    5.26 |    3.91 |    3.91 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @2$4);%.2f :: $5='(Λ $2 @2$5);%.2f
+| fg-main        | #3f4946 |    9.14 |    8.06 |    7.37 |
+| fg-dim         | #7f6f8a |    4.53 |    4.00 |    3.65 |
+| fg-alt         | #8d6e6a |    4.50 |    3.97 |    3.63 |
+| red            | #c42d2f |    5.47 |    4.82 |    4.41 |
+| red-warmer     | #d03003 |    5.01 |    4.42 |    4.04 |
+| red-cooler     | #cf2f4f |    4.93 |    4.35 |    3.98 |
+| red-faint      | #b64850 |    5.11 |    4.50 |    4.12 |
+| green          | #14872f |    4.54 |    4.00 |    3.66 |
+| green-warmer   | #4a7d00 |    4.87 |    4.30 |    3.93 |
+| green-cooler   | #007f68 |    4.86 |    4.29 |    3.92 |
+| green-faint    | #61756c |    4.82 |    4.25 |    3.89 |
+| yellow         | #a45f22 |    4.86 |    4.28 |    3.92 |
+| yellow-warmer  | #b6540f |    4.83 |    4.26 |    3.89 |
+| yellow-cooler  | #ae5a30 |    4.78 |    4.22 |    3.86 |
+| yellow-faint   | #876450 |    5.19 |    4.57 |    4.18 |
+| blue           | #375cc6 |    5.87 |    5.17 |    4.73 |
+| blue-warmer    | #5f5fdf |    4.92 |    4.33 |    3.96 |
+| blue-cooler    | #265fbf |    5.93 |    5.23 |    4.78 |
+| blue-faint     | #6a65bf |    4.87 |    4.30 |    3.93 |
+| magenta        | #d5206f |    4.83 |    4.26 |    3.89 |
+| magenta-warmer | #cb26a0 |    4.76 |    4.20 |    3.84 |
+| magenta-cooler | #9435b4 |    6.01 |    5.30 |    4.84 |
+| magenta-faint  | #a04450 |    5.99 |    5.28 |    4.83 |
+| cyan           | #1f6fbf |    5.04 |    4.44 |    4.06 |
+| cyan-warmer    | #3f6faf |    5.02 |    4.42 |    4.04 |
+| cyan-cooler    | #0f7b8f |    4.84 |    4.27 |    3.91 |
+| cyan-faint     | #5f60bf |    5.26 |    4.64 |    4.24 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 * ef-summer
 :PROPERTIES:
