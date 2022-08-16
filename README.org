@@ -124,7 +124,7 @@ Everything is in place to set up the package.
 #+begin_src emacs-lisp
 (require 'ef-themes)
 
-;; Disable all other themes to avoid awkward blending
+;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
 
 ;; Load the theme of choice:
