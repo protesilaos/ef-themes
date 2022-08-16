@@ -102,7 +102,7 @@
       (bg-accent     "#25adff") (fg-accent     "#000000")
       (bg-completion "#0f2d4a")
       (bg-hover      "#004a5f")
-      (bg-hover-alt  "#303f5a")
+      (bg-hover-alt  "#551f5a")
       (bg-hl-line    "#002435")
       (bg-region     "#25164a")
       (bg-active     "#3b3b3b")
