@@ -85,8 +85,8 @@
       (bg-cyan     "#027080")
 
       ;; Diffs
-      (bg-added          "#20320f")
-      (bg-added-faint    "#102000")
+      (bg-added          "#20360f")
+      (bg-added-faint    "#102300")
       (bg-added-refine   "#304b1f")
 
       (bg-changed        "#424200")
