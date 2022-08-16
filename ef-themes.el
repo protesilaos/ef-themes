@@ -461,7 +461,7 @@ Helper function for `ef-themes-preview-colors'."
     `(eshell-ls-unreadable ((,c :inherit shadow)))
     `(eshell-prompt ((,c :inherit minibuffer-prompt)))
 ;;;; font-lock
-    `(font-lock-builtin-face ((,c :foreground ,builtin)))
+    `(font-lock-builtin-face ((,c :inherit bold :foreground ,builtin)))
     `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))
     `(font-lock-comment-face ((,c :inherit italic :foreground ,comment)))
     `(font-lock-constant-face ((,c :foreground ,constant)))
