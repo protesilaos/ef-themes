@@ -130,6 +130,12 @@ Everything is in place to set up the package.
 ;; Load the theme of choice:
 (load-theme 'ef-summer :no-confirm)
 
+;; The themes we provide:
+;;
+;; Light: `ef-day', `ef-light', `ef-spring', `ef-summer'.
+;; Dark:  `ef-autumn', `ef-dark', `ef-night', `ef-winter'.
+
+
 ;; We also provide these commands, but do not assign them to any key:
 ;;
 ;; - `ef-themes-select'
