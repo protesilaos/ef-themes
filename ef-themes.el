@@ -136,6 +136,15 @@ When called from Lisp, THEME is a symbol."
 ;;;; bookmark
     `(bookmark-face ((,c :background ,bg-magenta :foreground ,fg-intense)))
     `(bookmark-menu-bookmark ((,c :inherit bold)))
+;;;; calendar and diary
+    `(calendar-month-header ((,c :inherit bold)))
+    `(calendar-today ((,c :inherit bold :underline t)))
+    `(calendar-weekday-header ((,c :foreground ,fg-alt)))
+    `(calendar-weekend-header ((,c :inherit calendar-weekday-header)))
+    `(diary ((,c :background ,bg-dim :foreground ,accent-0)))
+    `(diary-anniversary ((,c :foreground ,accent-1)))
+    `(diary-time ((,c :foreground ,date)))
+    `(holiday ((,c :background ,bg-dim :foreground ,accent-2)))
 ;;;; change-log and log-view (`vc-print-log' and `vc-print-root-log')
     `(change-log-acknowledgment ((,c :inherit shadow)))
     `(change-log-conditionals ((,c :foreground ,preprocessor)))
