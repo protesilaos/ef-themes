@@ -106,7 +106,7 @@
       (bg-hl-line    "#f9e0e5")
       (bg-region     "#d0e6ff")
       (bg-active     "#d0d6d3")
-      (bg-paren      "#8fcfdf")
+      (bg-paren      "#8fddb0")
       (bg-err        "#ffe8e0") ; check with err
       (bg-info       "#ccf5dd") ; check with info
 
