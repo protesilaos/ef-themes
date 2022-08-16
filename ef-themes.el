@@ -178,7 +178,7 @@ When called from Lisp, THEME is a symbol."
     `(bongo-track-title ((,c :foreground ,rainbow-1)))
     `(bongo-unfilled-seek-bar ((,c :background ,bg-dim)))
 ;;;; bookmark
-    `(bookmark-face ((,c :background ,bg-magenta :foreground ,fg-intense)))
+    `(bookmark-face ((,c :foreground ,info)))
     `(bookmark-menu-bookmark ((,c :inherit bold)))
 ;;;; calendar and diary
     `(calendar-month-header ((,c :inherit bold)))
