@@ -799,10 +799,10 @@ When called from Lisp, THEME is a symbol."
     `(show-paren-mismatch ((,c :background ,bg-red :foreground ,fg-intense)))
 ;;;; tab-bar-mode
     `(tab-bar ((,c :background ,bg-alt)))
-    `(tab-bar-tab-group-current ((,c :background ,bg-main :box (:line-width (2 . -2) :color ,border))))
-    `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,border))))
+    `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-main :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
+    `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
-    `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-alt)))
+    `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
 ;;;; tab-line-mode
     `(tab-line ((,c :background ,bg-alt :height 0.95)))
     `(tab-line-close-highlight ((,c :foreground ,red)))
