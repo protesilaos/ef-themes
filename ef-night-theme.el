@@ -48,7 +48,7 @@
       (bg-dim   "#0f1b29")
       (fg-dim   "#70819f")
       (bg-alt   "#1a2a2f")
-      (fg-alt   "#70a89f")
+      (fg-alt   "#b0a0a0")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
