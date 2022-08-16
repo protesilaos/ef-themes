@@ -254,7 +254,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | Name           |         | #fff2f3 | #fbe3ef | #efd0e4 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #5f3f8f |    7.42 |    6.68 |    5.71 |
-| fg-dim         | #8a657f |    4.53 |    4.08 |    3.49 |
+| fg-dim         | #7a6c7f |    4.50 |    4.05 |    3.46 |
 | fg-alt         | #af506f |    4.58 |    4.13 |    3.53 |
 | red            | #d3303a |    4.52 |    4.08 |    3.48 |
 | red-warmer     | #e00033 |    4.56 |    4.11 |    3.51 |
