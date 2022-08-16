@@ -97,6 +97,69 @@ When called from Lisp, THEME is a symbol."
   (mapc #'disable-theme (ef-themes--list-known-themes))
   (load-theme theme :no-confirm))
 
+(defun ef-themes--preview-colors-render (buffer theme &rest _)
+  "Render colors in BUFFER from THEME.
+Routine for `ef-themes-preview-colors'."
+  (let ((palette (seq-remove (lambda (cell)
+                               (symbolp (cadr cell)))
+                             (symbol-value (ef-themes--palette theme))))
+        (current-buffer buffer)
+        (current-theme theme))
+    (with-help-window buffer
+      (with-current-buffer standard-output
+        (erase-buffer)
+        (when (<= (display-color-cells) 256)
+          (insert (concat "Your display terminal may not render all color previews!\n"
+                          "It seems to only support <= 256 colors.\n\n"))
+          (put-text-property (point-min) (point) 'face 'warning))
+        ;; We need this to properly render the first line.
+        (insert " ")
+        (dolist (cell palette)
+          (let* ((name (car cell))
+                 (color (cadr cell))
+                 (fg (readable-foreground-color color))
+                 (pad (make-string 5 ?\s)))
+            (let ((old-point (point)))
+              (insert (format "%s %s" color pad))
+              (put-text-property old-point (point) 'face `( :foreground ,color)))
+            (let ((old-point (point)))
+              (insert (format " %s %s %s\n" color pad name))
+              (put-text-property old-point (point)
+                                 'face `( :background ,color
+                                          :foreground ,fg
+                                          :extend t)))
+            ;; We need this to properly render the last line.
+            (insert " ")))
+        (setq-local revert-buffer-function
+                    (lambda (_ignore-auto _noconfirm)
+                       (ef-themes--preview-colors-render current-buffer current-theme)))))))
+
+(defvar ef-themes--preview-colors-prompt-history '()
+  "Minibuffer history for `ef-themes--preview-colors-prompt'.")
+
+(defun ef-themes--preview-colors-prompt ()
+  "Prompt for Ef theme.
+Helper function for `ef-themes-preview-colors'."
+  (let ((def (format "%s" (ef-themes--current-theme))))
+    (completing-read
+     (format "Use palette from theme [%s]: " def)
+     (ef-themes--list-known-themes) nil t nil
+     'ef-themes--preview-colors-prompt-history def)))
+
+;;;###autoload
+(defun ef-themes-preview-colors (theme)
+  "Preview palette of the Ef THEME of choice."
+  (interactive (list (intern (ef-themes--preview-colors-prompt))))
+  (ef-themes--preview-colors-render
+   (format "*%s-preview-colors*" theme)
+   theme))
+
+;;;###autoload
+(defun ef-themes-preview-colors-current ()
+  "Call `ef-themes-preview-colors' for the current Ef theme."
+  (interactive)
+  (ef-themes-preview-colors (ef-themes--current-theme)))
+
 ;;; Faces and variables
 
 (defconst ef-themes-faces
