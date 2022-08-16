@@ -104,7 +104,7 @@ When called from Lisp, THEME is a symbol."
     `(rectangle-preview ((,c :inherit secondary-selection)))
     `(shadow ((,c :foreground ,fg-dim)))
     `(trailing-whitespace ((,c :background ,bg-red :foreground ,fg-intense)))
-    `(tooltip ((,c :background ,bg-active :foreground ,fg-intense)))
+    `(tooltip ((,c :background ,bg-alt :foreground ,fg-intense)))
 ;;;; all-the-icons
     `(all-the-icons-blue ((,c :foreground ,blue-cooler)))
     `(all-the-icons-blue-alt ((,c :foreground ,blue-warmer)))
