@@ -46,7 +46,7 @@
       (bg-main  "#000e17")
       (fg-main  "#afbcbf")
       (bg-dim   "#0f1b29")
-      (fg-dim   "#70857f")
+      (fg-dim   "#70819f")
       (bg-alt   "#1a2a2f")
       (fg-alt   "#70a89f")
 
