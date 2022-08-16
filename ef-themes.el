@@ -922,7 +922,7 @@ When called from Lisp, THEME is a symbol."
   '()
   "Custom variables for `ef-themes-theme'.")
 
-;;; Instantiate a theme
+;;; Theme macros
 
 ;;;###autoload
 (defmacro ef-themes-theme (name palette)
@@ -965,8 +965,6 @@ Those are stored in `ef-themes-faces' and
                       colors))
        (ignore c ,@colors)            ; Silence unused variable warnings
        ,@body)))
-
-;;; Add to path
 
 ;;;###autoload
 (when load-file-name
