@@ -45,9 +45,9 @@
     '(;; Basic tones
       (bg-main  "#0f0b15")
       (fg-main  "#b8c6d5")
-      (bg-dim   "#221a2f")
+      (bg-dim   "#1c192b")
       (fg-dim   "#807c9f")
-      (bg-alt   "#252544")
+      (bg-alt   "#202240")
       (fg-alt   "#ba8a9f")
 
       ;; Basic hues for foreground values

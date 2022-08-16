@@ -290,33 +290,33 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
 :END:
 
-| Name           |         | #0f0b15 | #221a2f | #252544 |
+| Name           |         | #0f0b15 | #1c192b | #202240 |
 |----------------+---------+---------+---------+---------|
-| fg-main        | #b8c6d5 |   11.19 |    9.61 |    8.46 |
-| fg-dim         | #807c9f |    4.91 |    4.22 |    3.72 |
-| fg-alt         | #ba8a9f |    6.69 |    5.75 |    5.06 |
-| red            | #ef6560 |    6.21 |    5.33 |    4.70 |
-| red-warmer     | #f47360 |    6.92 |    5.94 |    5.23 |
-| red-cooler     | #ff5a7a |    6.48 |    5.57 |    4.90 |
-| red-faint      | #d56f72 |    5.88 |    5.05 |    4.45 |
-| green          | #1faa30 |    6.35 |    5.45 |    4.80 |
-| green-warmer   | #6aad0f |    7.04 |    6.04 |    5.32 |
-| green-cooler   | #00a692 |    6.37 |    5.47 |    4.81 |
-| green-faint    | #61a06c |    6.26 |    5.37 |    4.73 |
-| yellow         | #c48032 |    6.01 |    5.16 |    4.54 |
-| yellow-warmer  | #d1843f |    6.56 |    5.64 |    4.96 |
-| yellow-cooler  | #df8f5a |    7.61 |    6.54 |    5.76 |
-| yellow-faint   | #cf9f8f |    8.35 |    7.17 |    6.31 |
-| blue           | #3f95f6 |    6.34 |    5.44 |    4.79 |
-| blue-warmer    | #6a9fff |    7.43 |    6.38 |    5.62 |
-| blue-cooler    | #029fff |    6.86 |    5.89 |    5.19 |
-| blue-faint     | #7a94df |    6.61 |    5.67 |    5.00 |
-| magenta        | #d369af |    5.94 |    5.10 |    4.49 |
-| magenta-warmer | #e580ea |    7.98 |    6.85 |    6.03 |
-| magenta-cooler | #af85ff |    7.06 |    6.06 |    5.34 |
-| magenta-faint  | #c57faf |    6.51 |    5.59 |    4.93 |
-| cyan           | #4fbaef |    8.90 |    7.64 |    6.73 |
-| cyan-warmer    | #6fafff |    8.57 |    7.36 |    6.48 |
-| cyan-cooler    | #1dbfcf |    8.72 |    7.48 |    6.59 |
-| cyan-faint     | #8aa0df |    7.58 |    6.50 |    5.73 |
+| fg-main        | #b8c6d5 |   11.19 |    9.87 |    8.85 |
+| fg-dim         | #807c9f |    4.91 |    4.33 |    3.89 |
+| fg-alt         | #ba8a9f |    6.69 |    5.91 |    5.30 |
+| red            | #ef6560 |    6.21 |    5.48 |    4.91 |
+| red-warmer     | #f47360 |    6.92 |    6.10 |    5.47 |
+| red-cooler     | #ff5a7a |    6.48 |    5.72 |    5.13 |
+| red-faint      | #d56f72 |    5.88 |    5.19 |    4.65 |
+| green          | #1faa30 |    6.35 |    5.60 |    5.02 |
+| green-warmer   | #6aad0f |    7.04 |    6.21 |    5.57 |
+| green-cooler   | #00a692 |    6.37 |    5.62 |    5.04 |
+| green-faint    | #61a06c |    6.26 |    5.52 |    4.95 |
+| yellow         | #c48032 |    6.01 |    5.30 |    4.75 |
+| yellow-warmer  | #d1843f |    6.56 |    5.79 |    5.19 |
+| yellow-cooler  | #df8f5a |    7.61 |    6.71 |    6.02 |
+| yellow-faint   | #cf9f8f |    8.35 |    7.36 |    6.60 |
+| blue           | #3f95f6 |    6.34 |    5.59 |    5.01 |
+| blue-warmer    | #6a9fff |    7.43 |    6.55 |    5.88 |
+| blue-cooler    | #029fff |    6.86 |    6.05 |    5.43 |
+| blue-faint     | #7a94df |    6.61 |    5.83 |    5.23 |
+| magenta        | #d369af |    5.94 |    5.24 |    4.70 |
+| magenta-warmer | #e580ea |    7.98 |    7.04 |    6.31 |
+| magenta-cooler | #af85ff |    7.06 |    6.23 |    5.59 |
+| magenta-faint  | #c57faf |    6.51 |    5.75 |    5.15 |
+| cyan           | #4fbaef |    8.90 |    7.85 |    7.04 |
+| cyan-warmer    | #6fafff |    8.57 |    7.56 |    6.78 |
+| cyan-cooler    | #1dbfcf |    8.72 |    7.69 |    6.89 |
+| cyan-faint     | #8aa0df |    7.58 |    6.68 |    5.99 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
