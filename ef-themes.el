@@ -782,6 +782,17 @@ When called from Lisp, THEME is a symbol."
     `(reb-match-3 ((,c :background ,bg-yellow :foreground ,fg-intense)))
     `(reb-regexp-grouping-backslash ((,c :inherit font-lock-regexp-grouping-backslash)))
     `(reb-regexp-grouping-construct ((,c :inherit font-lock-regexp-grouping-construct)))
+;;;; ruler-mode
+    `(ruler-mode-column-number ((,c :inherit ruler-mode-default)))
+    `(ruler-mode-comment-column ((,c :inherit ruler-mode-default :foreground ,red)))
+    `(ruler-mode-current-column ((,c :inherit ruler-mode-default :background ,bg-active :foreground ,fg-intense)))
+    `(ruler-mode-default ((,c :inherit default :background ,bg-dim :foreground ,fg-dim)))
+    `(ruler-mode-fill-column ((,c :inherit ruler-mode-default :foreground ,green)))
+    `(ruler-mode-fringes ((,c :inherit ruler-mode-default :foreground ,cyan)))
+    `(ruler-mode-goal-column ((,c :inherit ruler-mode-default :foreground ,blue)))
+    `(ruler-mode-margins ((,c :inherit ruler-mode-default :foreground ,bg-main)))
+    `(ruler-mode-pad ((,c :inherit ruler-mode-default :background ,bg-alt :foreground ,fg-dim)))
+    `(ruler-mode-tab-stop ((,c :inherit ruler-mode-default :foreground ,yellow)))
 ;;;; show-paren-mode
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
