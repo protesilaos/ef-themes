@@ -63,12 +63,15 @@
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-known-themes))
 
+(defun ef-themes--palette (theme)
+  "Return THEME palette as a symbol."
+  (intern (format "%s-palette" theme)))
+
 (defun ef-themes--current-theme-palette ()
   "Return palette of active Ef theme, else produce `user-error'."
   (if-let* ((themes (ef-themes--list-enabled-themes))
-            (palette (intern
-                      (format "%s-palette"
-                              (car themes)))))
+            (theme (car themes))
+            (palette (ef-themes--palette theme)))
       palette
     (user-error "No enabled Ef theme could be found")))
 
