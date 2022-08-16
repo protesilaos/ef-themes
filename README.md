@@ -8,6 +8,7 @@ users who want something with a bit more flair than the `modus-themes`
 (also designed by me).
 
 + Package name (GNU ELPA): `ef-themes`
++ Official manual: <https://protesilaos.com/emacs/ef-themes>
 + Git repo on SourceHut: <https://git.sr.ht/~protesilaos/ef-themes>
   - Mirrors:
     + GitHub: <https://github.com/protesilaos/ef-themes>
