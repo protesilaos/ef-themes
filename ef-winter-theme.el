@@ -77,7 +77,7 @@
       (cyan-faint      "#8aa0df")
 
       ;; Basic hues for background values
-      (bg-red      "#cd2f30")
+      (bg-red      "#bd1f30")
       (bg-green    "#20a020")
       (bg-yellow   "#945020")
       (bg-blue     "#4648d0")
