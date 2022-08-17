@@ -696,7 +696,7 @@ Helper function for `ef-themes-preview-colors'."
     `(markdown-missing-link-face ((,c :inherit warning)))
     `(markdown-pre-face ((,c :inherit markdown-code-face)))
     `(markdown-table-face ((,c :foreground ,fg-alt))) ; same as `org-table'
-    `(markdown-url-face ((,c :inherit link :underline nil)))
+    `(markdown-url-face ((,c :foreground ,fg-alt)))
 ;;;; messages
     `(message-cited-text-1 ((,c :foreground ,mail-0)))
     `(message-cited-text-2 ((,c :foreground ,mail-1)))
