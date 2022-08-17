@@ -139,6 +139,7 @@ Everything is in place to set up the package.
 ;; We also provide these commands, but do not assign them to any key:
 ;;
 ;; - `ef-themes-select'
+;; - `ef-themes-load-random'
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
 #+end_src

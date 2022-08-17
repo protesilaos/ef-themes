@@ -97,6 +97,23 @@ When called from Lisp, THEME is a symbol."
   (mapc #'disable-theme (ef-themes--list-known-themes))
   (load-theme theme :no-confirm))
 
+(defun ef-themes--minus-current ()
+  "Return list of Ef themes minus the current one."
+  (let* ((themes (copy-sequence (ef-themes--list-known-themes))))
+    (delete (ef-themes--current-theme) themes)))
+
+;;;###autoload
+(defun ef-themes-load-random ()
+  "Load an Ef theme at random, excluding the current one."
+  (interactive)
+  (let* ((themes (ef-themes--minus-current))
+         (n (random (length themes)))
+         (pick (nth n themes)))
+    (mapc #'disable-theme (ef-themes--list-known-themes))
+    (if (null pick)
+        (load-theme (car themes) :no-confim)
+      (load-theme pick :no-confim))))
+
 (defun ef-themes--preview-colors-render (buffer theme &rest _)
   "Render colors in BUFFER from THEME.
 Routine for `ef-themes-preview-colors'."
