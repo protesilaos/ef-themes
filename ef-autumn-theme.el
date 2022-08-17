@@ -108,7 +108,7 @@
       (bg-active     "#46423f")
       (bg-paren      "#7f2d40")
       (bg-err        "#361400") ; check with err
-      (bg-info       "#152500") ; check with info
+      (bg-info       "#152800") ; check with info
 
       (border        "#54444a")
       (cursor        "#ffaa33")
