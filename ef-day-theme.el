@@ -85,17 +85,17 @@
       (bg-cyan     "#88cfd0")
 
       ;; Diffs
-      (bg-added          "#c5eaca")
-      (bg-added-faint    "#d5fada")
-      (bg-added-refine   "#b5e3b8")
+      (bg-added          "#d6efd2")
+      (bg-added-faint    "#e5f5e0")
+      (bg-added-refine   "#c8e3c0")
 
-      (bg-changed        "#ffdd99")
-      (bg-changed-faint  "#ffeebb")
-      (bg-changed-refine "#ffc090")
+      (bg-changed        "#ffe5b9")
+      (bg-changed-faint  "#ffefc5")
+      (bg-changed-refine "#ffd09f")
 
-      (bg-removed        "#ffcfcf")
-      (bg-removed-faint  "#ffe3df")
-      (bg-removed-refine "#ffb0a0")
+      (bg-removed        "#ffd8d8")
+      (bg-removed-faint  "#ffe5e5")
+      (bg-removed-refine "#ffc0b0")
 
       ;; Special hues
       (bg-mode-line  "#ffaf72") (fg-mode-line  "#542f38")
