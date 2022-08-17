@@ -131,7 +131,7 @@
       (fnname green-warmer)
       (keyword yellow-warmer)
       (preprocessor magenta-warmer)
-      (docstring red-faint)
+      (docstring cyan-faint)
       (string green)
       (type blue-warmer)
       (variable cyan)
