@@ -80,7 +80,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | fg-dim         | #63728f |    4.50 |    4.17 |    3.72 |
 | fg-alt         | #8f5f4a |    5.00 |    4.63 |    4.13 |
 | red            | #ba2d2f |    5.57 |    5.15 |    4.60 |
-| red-warmer     | #d03003 |    4.75 |    4.40 |    3.93 |
+| red-warmer     | #ce3f00 |    4.50 |    4.17 |    3.72 |
 | red-cooler     | #cf2f4f |    4.67 |    4.33 |    3.86 |
 | red-faint      | #b05350 |    4.64 |    4.30 |    3.84 |
 | green          | #2a7a0c |    5.02 |    4.65 |    4.15 |
