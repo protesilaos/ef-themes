@@ -92,21 +92,43 @@
 (defun ef-themes-select (theme)
   "Load an Ef THEME using minibuffer completion.
 When called from Lisp, THEME is a symbol."
-  (interactive
-   (list (intern (ef-themes--select-prompt))))
+  (interactive (list (intern (ef-themes--select-prompt))))
   (mapc #'disable-theme (ef-themes--list-known-themes))
   (load-theme theme :no-confirm))
 
-(defun ef-themes--minus-current ()
-  "Return list of Ef themes minus the current one."
-  (let* ((themes (copy-sequence (ef-themes--list-known-themes))))
+(defun ef-themes--minus-current (&optional variant)
+  "Return list of Ef themes minus the current one.
+VARIANT is either `light' or `dark', which stand for
+`ef-themes-light-themes' and `ef-themes-dark-themes',
+respectively.  Else check against the return value of
+`ef-themes--list-known-themes'."
+  (let* ((list (when variant
+                 (if (eq variant 'dark)
+                     ef-themes-dark-themes
+                   ef-themes-light-themes)))
+         (sequence (or list (ef-themes--list-known-themes)))
+         (themes (copy-sequence sequence)))
     (delete (ef-themes--current-theme) themes)))
 
+(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
+  "List of symbols with the light Ef themes.")
+
+(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
+  "List of symbols with the dark Ef themes.")
+
 ;;;###autoload
-(defun ef-themes-load-random ()
-  "Load an Ef theme at random, excluding the current one."
-  (interactive)
-  (let* ((themes (ef-themes--minus-current))
+(defun ef-themes-load-random (&optional variant)
+  "Load an Ef theme at random, excluding the current one.
+With optional VARIANT as either `light' or `dark', limit the set
+to the relevant themes.
+
+When called interactively, VARIANT is the prefix argument which
+prompts with completion for either `light' or `dark'."
+  (interactive
+   (list (when current-prefix-arg
+           (intern (completing-read "Random choice of Ef themes VARIANT: "
+                            '(light dark) nil t)))))
+  (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
     (mapc #'disable-theme (ef-themes--list-known-themes))
