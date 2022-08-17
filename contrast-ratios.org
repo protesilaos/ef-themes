@@ -87,7 +87,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | green-warmer   | #4a7d00 |    4.62 |    4.28 |    3.82 |
 | green-cooler   | #007f68 |    4.60 |    4.26 |    3.81 |
 | green-faint    | #61756c |    4.57 |    4.23 |    3.78 |
-| yellow         | #a45f22 |    4.60 |    4.26 |    3.80 |
+| yellow         | #a45a22 |    4.80 |    4.44 |    3.97 |
 | yellow-warmer  | #b6540f |    4.57 |    4.24 |    3.78 |
 | yellow-cooler  | #ae5a30 |    4.53 |    4.20 |    3.74 |
 | yellow-faint   | #a05f5a |    4.56 |    4.22 |    3.77 |
