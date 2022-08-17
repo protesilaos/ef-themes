@@ -141,11 +141,11 @@
       (accent-2 cyan-cooler)
       (accent-3 magenta-cooler)
 
-      (mail-0 green-warmer)
-      (mail-1 red)
-      (mail-2 green-cooler)
-      (mail-3 yellow-warmer)
-      (mail-4 red-cooler)
+      (mail-0 yellow-warmer)
+      (mail-1 green-cooler)
+      (mail-2 red-warmer)
+      (mail-3 magenta)
+      (mail-4 green-warmer)
 
       (rainbow-0 yellow-warmer)
       (rainbow-1 green-warmer)
