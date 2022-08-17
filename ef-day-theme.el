@@ -139,10 +139,10 @@
       (accent-0 red)
       (accent-1 green-cooler)
       (accent-2 yellow)
-      (accent-3 magenta-cooler)
+      (accent-3 magenta-warmer)
 
       (mail-0 red)
-      (mail-1 magenta-cooler)
+      (mail-1 green)
       (mail-2 yellow)
       (mail-3 green-cooler)
       (mail-4 yellow-cooler)
