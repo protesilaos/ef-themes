@@ -36,9 +36,8 @@
 
 
 
-(eval-when-compile
-  (require 'cl-lib)
-  (require 'subr-x))
+(require 'seq)
+(eval-when-compile (require 'subr-x))
 
 (defgroup ef-themes ()
   "Colorful and legible themes."
