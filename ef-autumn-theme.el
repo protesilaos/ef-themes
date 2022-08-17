@@ -58,7 +58,7 @@
       (green           "#2fa526")
       (green-warmer    "#64aa0f")
       (green-cooler    "#00b672")
-      (green-faint     "#61ab78")
+      (green-faint     "#519068")
       (yellow          "#c48502")
       (yellow-warmer   "#e0832f")
       (yellow-cooler   "#df8f6f")
@@ -66,7 +66,7 @@
       (blue            "#379cf6")
       (blue-warmer     "#6a88ff")
       (blue-cooler     "#029fff")
-      (blue-faint      "#7a94df")
+      (blue-faint      "#6a84af")
       (magenta         "#d570af")
       (magenta-warmer  "#e580ea")
       (magenta-cooler  "#af8aff")
@@ -74,7 +74,7 @@
       (cyan            "#4fb0cf")
       (cyan-warmer     "#6fafff")
       (cyan-cooler     "#3dbbb0")
-      (cyan-faint      "#92b4df")
+      (cyan-faint      "#82a0af")
 
       ;; Basic hues for background values
       (bg-red      "#cd2f30")
