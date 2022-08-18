@@ -197,8 +197,9 @@ No.  For my workflow, accessibility is the most important quality.  The
 Because I think that users deserve "pretty" themes that (i) do make some
 considerations for legibility, and (ii) are not designed on a whimsy.
 
-In other words, the =ef-themes= are my answer to those who like my
-=modus-themes= but want something with a bit more flair.
+The =ef-themes= are my answer to those who (i) like my =modus-themes=,
+(ii) want something with a bit more flair, and (iii) are fine with a
+bit more relaxed accessibility target.
 
 * Acknowledgements
 :PROPERTIES:
