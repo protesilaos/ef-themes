@@ -176,6 +176,32 @@ necessity.  The =modus-themes= are such because:
 The =ef-themes= can afford to be minimal because they do not have such a
 lofty accessibility target.
 
+* Loading a theme
+:PROPERTIES:
+:CUSTOM_ID: h:75d74aea-d17f-497f-a3b8-f0bf4c372de0
+:END:
+
+Emacs can load and maintain enabled multiple themes at once.  This
+typically leads to awkward styling and weird combinations.  The theme
+looks broken and the designer's intent is misunderstood.  Before loading
+one of the =ef-themes=, the user is encouraged to disable all others:
+
+#+begin_src emacs-lisp
+(mapc #'disable-theme custom-enabled-themes)
+#+end_src
+
+Then load the theme of choice.  For example:
+
+#+begin_src emacs-lisp
+(load-theme 'ef-summer :no-confirm)
+#+end_src
+
+The =:no-confirm= is optional.  It simply skips the step where Emacs
+asks the user whether they are sure about loading the theme.
+
+Consider adding code like the above to the user configuration file, such
+as =init.el=.
+
 * FAQ
 :PROPERTIES:
 :CUSTOM_ID: h:a6d5c6f1-84c5-4d74-ba39-b5ccda05497a
