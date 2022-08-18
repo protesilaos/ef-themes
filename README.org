@@ -279,6 +279,41 @@ which reflects the given choice, like =ef-summer-preview-colors= for the
 The command ~ef-themes-preview-colors-current~ skips the minibuffer
 selection process and just produces a preview for the current Ef theme.
 
+* Use colors from the active Ef theme
+:PROPERTIES:
+:CUSTOM_ID: h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245
+:END:
+
+#+findex: ef-themes-with-colors
+Advanced users may want to call color variables from the palette of the
+active Ef theme.  The macro ~ef-themes-with-colors~ supplies those to
+any form called inside of it.  For example:
+
+#+begin_src emacs-lisp
+(ef-themes-with-colors
+  (list bg-main fg-main bg-mode-line cursor))
+;; => ("#fff2f3" "#5f456f" "#ffa4dc" "#cf0090")
+#+end_src
+
+The above return value is for =ef-summer=.  Switching to another theme
+and evaluating this code anew will give us the relevant results for that
+theme.  The same with =ef-winter=:
+
+#+begin_src emacs-lisp
+(ef-themes-with-colors
+  (list bg-main fg-main bg-mode-line cursor))
+;; => ("#0f0b15" "#b8c6d5" "#5f1f5f" "#ff6ff0")
+#+end_src
+
+For the time being, we do not provide detailed instructions on how to
+use this macro.  We shall do so as the needs of users become more clear
+through the development process.
+
+The palette of each Ef theme is considered stable.  No removals shall be
+made.  Though please note that some tweaks to individual hues or color
+mapping are still possible.  At any rate, we will not outright break any
+code that uses ~ef-themes-with-colors~.
+
 * FAQ
 :PROPERTIES:
 :CUSTOM_ID: h:a6d5c6f1-84c5-4d74-ba39-b5ccda05497a
