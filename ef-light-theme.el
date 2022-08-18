@@ -110,7 +110,7 @@
       (bg-region     "#bfefff")
       (bg-paren      "#efa09f")
       (bg-err        "#ffd5ea") ; check with err
-      (bg-info       "#e4e1ff") ; check with info
+      (bg-info       "#d0efda") ; check with info
 
       (border        "#cecfff")
       (cursor        "#0033cc")
