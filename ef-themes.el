@@ -61,24 +61,28 @@
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-enabled-themes))
 
-(defun ef-themes--list-known-themes ()
-  "Return list of `custom-known-themes' with ef- prefix."
-  (seq-filter
-   (lambda (theme)
-     (string-prefix-p "ef-" (symbol-name theme)))
-   custom-known-themes))
-
 (defun ef-themes--enable-themes ()
+  "Enable all Ef themes."
   (mapc (lambda (theme)
           (load-theme theme :no-confirm :no-enable))
         (append ef-themes-light-themes
                 ef-themes-dark-themes)))
 
+(defun ef-themes--list-known-themes ()
+  "Return list of `custom-known-themes' with ef- prefix."
+  (unless (seq-find (lambda (theme)
+                      (string-prefix-p "ef-" (symbol-name theme)))
+                    custom-known-themes)
+    (ef-themes--enable-themes))
+  (seq-filter
+   (lambda (theme)
+     (string-prefix-p "ef-" (symbol-name theme)))
+   custom-known-themes))
+
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
-  (if-let ((themes (ef-themes--list-enabled-themes)))
-      (car themes)
-    (user-error "No enabled Ef theme could be found")))
+  (when-let ((themes (ef-themes--list-enabled-themes)))
+    (car themes)))
 
 (defun ef-themes--palette (theme)
   "Return THEME palette as a symbol."
@@ -94,7 +98,6 @@
 
 (defun ef-themes--select-prompt ()
   "Minibuffer prompt for `ef-themes-select'."
-  (ef-themes--enable-themes)
   (completing-read "Select Ef Theme: "
                    (ef-themes--list-known-themes)
                    nil t nil
@@ -147,7 +150,6 @@ prompts with completion for either `light' or `dark'."
    (list (when current-prefix-arg
            (intern (completing-read "Random choice of Ef themes VARIANT: "
                                     '(light dark) nil t)))))
-  (ef-themes--enable-themes)
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
