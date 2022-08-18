@@ -202,6 +202,67 @@ asks the user whether they are sure about loading the theme.
 Consider adding code like the above to the user configuration file, such
 as =init.el=.
 
+* Commands to load an Ef theme
+:PROPERTIES:
+:CUSTOM_ID: h:58345e8c-2bec-459c-872c-a85a29e9fe97
+:END:
+
+#+findex: ef-themes-select
+The themes can also be loaded interactively ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  The
+command ~ef-themes-select~ (call it with =M-x=) prompts with minibuffer
+completion for a theme among the collection of items we provide.  It
+then loads the selected theme.  Internally, ~ef-themes-select~ takes
+care to disable any other Ef theme, though it does not disable other
+themes.  This is by design to let users maintain theme blending when
+they want it.  Otherwise, the user is encouraged to disable all other
+themes and stick with the Ef themes:
+
+#+begin_src emacs-lisp
+(mapc #'disable-theme custom-enabled-themes)
+#+end_src
+
+#+findex: ef-themes-load-random
+The command ~ef-themes-load-random~ is for those who appreciate a bit of
+serendipity in their life.  When call interactively with =M-x= it loads
+a random theme from the Ef themes collection.  The selection excludes
+the current Ef theme.  Calling ~ef-themes-load-random~ with a prefix
+argument (=C-u= by default) makes the command limit the random selection
+to either light or dark themes.  The user is prompted with minibuffer
+completion to pick among the two sets.
+
+The ~ef-themes-load-random~ can also be called from Lisp (e.g. from the
+=init.el= file):
+
+#+begin_src emacs-lisp
+(ef-themes-load-random)
+#+end_src
+
+This has the effect of loading an Ef theme at random, as described
+above.  It is also possible to limit the set with either of those:
+
+#+begin_src emacs-lisp
+;; Load a light Ef theme at random
+(ef-themes-load-random 'light)
+
+;; Load a dark Ef theme at random
+(ef-themes-load-random 'dark)
+#+end_src
+
+The author of the Ef themes likes to check with their operating system
+to determine if the desktop environment outside of Emacs is using a
+light/dark theme and then loads an appropriate Ef theme at random:
+
+#+begin_src emacs-lisp
+;; Check GNOME's gsettings database for the dark theme preference.  If
+;; it is enabled, we want to load a dark Ef theme at random.  Otherwise
+;; we load a random light theme.
+(if (string-match-p
+     "dark"
+     (shell-command-to-string "gsettings get org.gnome.desktop.interface color-scheme"))
+    (ef-themes-load-random 'dark)
+  (ef-themes-load-random 'light))
+#+end_src
+
 * FAQ
 :PROPERTIES:
 :CUSTOM_ID: h:a6d5c6f1-84c5-4d74-ba39-b5ccda05497a
