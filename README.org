@@ -363,7 +363,8 @@ matters.
 
 + Author/maintainer :: Protesilaos Stavrou.
 
-+ Ideas and/or user feedback :: Spike-Leung, Summer Emacs.
++ Ideas and/or user feedback :: Spike-Leung, Summer Emacs, Zoltán
+  Király.
 
 * GNU Free Documentation License
 :PROPERTIES:
