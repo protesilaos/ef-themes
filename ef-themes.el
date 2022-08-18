@@ -94,6 +94,7 @@
 
 (defun ef-themes--select-prompt ()
   "Minibuffer prompt for `ef-themes-select'."
+  (ef-themes--enable-themes)
   (completing-read "Select Ef Theme: "
                    (ef-themes--list-known-themes)
                    nil t nil
