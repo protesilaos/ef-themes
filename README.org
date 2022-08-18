@@ -207,6 +207,11 @@ as =init.el=.
 :CUSTOM_ID: h:58345e8c-2bec-459c-872c-a85a29e9fe97
 :END:
 
+#+vindex: ef-themes-post-load-hook
+The commands mentioned herein call ~ef-themes-post-load-hook~ at the
+end.  This is for advanced users who want to trigger some code after an
+Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).
+
 #+findex: ef-themes-select
 The themes can also be loaded interactively ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  The
 command ~ef-themes-select~ (call it with =M-x=) prompts with minibuffer

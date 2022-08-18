@@ -87,13 +87,26 @@
                    nil t nil
                    'ef-themes--select-theme-history))
 
+(defcustom ef-themes-post-load-hook nil
+  "Hook that runs after loading an Ef theme.
+This is used by the commands `ef-themes-select' and
+`ef-themes-load-random'."
+  :type 'hook
+  :group 'ef-themes)
+
+(defun ef-themes--load-theme (theme)
+  "Load THEME while disabling other Ef themes.
+Run `ef-themes-post-load-hook'."
+  (mapc #'disable-theme (ef-themes--list-known-themes))
+  (load-theme theme :no-confirm)
+  (run-hooks 'ef-themes-post-load-hook))
+
 ;;;###autoload
 (defun ef-themes-select (theme)
   "Load an Ef THEME using minibuffer completion.
 When called from Lisp, THEME is a symbol."
   (interactive (list (intern (ef-themes--select-prompt))))
-  (mapc #'disable-theme (ef-themes--list-known-themes))
-  (load-theme theme :no-confirm))
+  (ef-themes--load-theme theme))
 
 (defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
   "List of symbols with the light Ef themes.")
@@ -126,14 +139,13 @@ prompts with completion for either `light' or `dark'."
   (interactive
    (list (when current-prefix-arg
            (intern (completing-read "Random choice of Ef themes VARIANT: "
-                            '(light dark) nil t)))))
+                                    '(light dark) nil t)))))
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
-    (mapc #'disable-theme (ef-themes--list-known-themes))
     (if (null pick)
-        (load-theme (car themes) :no-confim)
-      (load-theme pick :no-confim))))
+        (ef-themes--load-theme (car themes))
+      (ef-themes--load-theme pick))))
 
 (defun ef-themes--preview-colors-render (buffer theme &rest _)
   "Render colors in BUFFER from THEME.
