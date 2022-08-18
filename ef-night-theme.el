@@ -43,12 +43,15 @@
 
   (defconst ef-night-palette
     '(;; Basic tones
-      (bg-main  "#000e17")
-      (fg-main  "#afbcbf")
-      (bg-dim   "#0f1b29")
-      (fg-dim   "#70819f")
-      (bg-alt   "#1a2a2f")
-      (fg-alt   "#b0a0a0")
+      (bg-main     "#000e17")
+      (fg-main     "#afbcbf")
+      (bg-dim      "#0f1b29")
+      (fg-dim      "#70819f")
+      (bg-alt      "#1a2a2f")
+      (fg-alt      "#b0a0a0")
+
+      (bg-active   "#28353f")
+      (bg-inactive "#0f121f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
@@ -105,7 +108,6 @@
       (bg-hover-alt  "#664f4a")
       (bg-hl-line    "#002255")
       (bg-region     "#222f40")
-      (bg-active     "#28353f")
       (bg-paren      "#703350")
       (bg-err        "#331419") ; check with err
       (bg-info       "#00251f") ; check with info

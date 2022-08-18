@@ -43,12 +43,15 @@
 
   (defconst ef-spring-palette
     '(;; Basic tones
-      (bg-main  "#f6fff9")
-      (fg-main  "#3f4946")
-      (bg-dim   "#e8f0f0")
-      (fg-dim   "#707586")
-      (bg-alt   "#e0e6e3")
-      (fg-alt   "#9d5e7a")
+      (bg-main     "#f6fff9")
+      (fg-main     "#3f4946")
+      (bg-dim      "#e8f0f0")
+      (fg-dim      "#707586")
+      (bg-alt      "#e0e6e3")
+      (fg-alt      "#9d5e7a")
+
+      (bg-active   "#d0d6d3")
+      (bg-inactive "#f0f8f4")
 
       ;; Basic hues for foreground values
       (red             "#c42d2f")
@@ -105,7 +108,6 @@
       (bg-hover-alt  "#feb5ff")
       (bg-hl-line    "#f9e0e5")
       (bg-region     "#d0e6ff")
-      (bg-active     "#d0d6d3")
       (bg-paren      "#8fddb0")
       (bg-err        "#ffe8e0") ; check with err
       (bg-info       "#ccf5dd") ; check with info

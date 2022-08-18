@@ -43,12 +43,15 @@
 
   (defconst ef-autumn-palette
     '(;; Basic tones
-      (bg-main  "#0f0e06")
-      (fg-main  "#cfbcba")
-      (bg-dim   "#1f1b19")
-      (fg-dim   "#887c8a")
-      (bg-alt   "#36322f")
-      (fg-alt   "#70a89f")
+      (bg-main     "#0f0e06")
+      (fg-main     "#cfbcba")
+      (bg-dim      "#1f1b19")
+      (fg-dim      "#887c8a")
+      (bg-alt      "#36322f")
+      (fg-alt      "#70a89f")
+
+      (bg-active   "#46423f")
+      (bg-inactive "#14130a")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
@@ -105,7 +108,6 @@
       (bg-hover-alt  "#6f345a")
       (bg-hl-line    "#302a3a")
       (bg-region     "#3f1020")
-      (bg-active     "#46423f")
       (bg-paren      "#7f2d40")
       (bg-err        "#361400") ; check with err
       (bg-info       "#152800") ; check with info
