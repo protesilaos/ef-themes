@@ -566,6 +566,17 @@ Helper function for `ef-themes-preview-colors'."
     `(gnus-header-name ((,c :inherit message-header-name)))
     `(gnus-header-newsgroups ((,c :inherit message-header-newsgroups)))
     `(gnus-header-subject ((,c :inherit message-header-subject)))
+;;;; info
+    `(Info-quoted ((,c :foreground ,accent-0))) ; the capitalization is canonical
+    `(info-header-node ((,c :inherit (shadow bold))))
+    `(info-index-match ((,c :inherit match)))
+    `(info-menu-header ((,c :inherit bold)))
+    `(info-menu-star ((,c :foreground ,red)))
+    `(info-node ((,c :inherit bold)))
+    `(info-title-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
+    `(info-title-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
+    `(info-title-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
+    `(info-title-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
 ;;;; isearch, occur, and the like
     `(isearch ((,c :background ,bg-yellow :foreground ,fg-intense)))
     `(isearch-fail ((,c :background ,bg-red :foreground ,fg-intense)))
