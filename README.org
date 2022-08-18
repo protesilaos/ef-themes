@@ -149,10 +149,18 @@ Everything is in place to set up the package.
 :CUSTOM_ID: h:a6dd030c-6b6c-4992-83e8-3438b4607b51
 :END:
 
-+ No customisation options!  Either you like them or you don't.
++ No customization options that affect the style of individual
+  components (e.g. change the color of the mode line, remove bold,
+  etc.)!  Either you like them or you don't.  To change faces, it is
+  better to do it in user-level configurations (report the issue and we
+  can help with the relevant code).  Providing customizations that
+  refashion a wide set of themes is not maintainable.
 
 + Curated list of supported packages.  I will only cover what I use
-  and/or know is in a well-maintained state.
+  and/or know is in a well-maintained state.  Styling a package requires
+  a lot of work as one must (i) know how the package works, (ii) see all
+  its interfaces in action, (iii) make sure that the color combinations
+  look consistent with the rest of the theme.
 
 + Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
   standard).  Use my =modus-themes= package (also built into Emacs 28 or
