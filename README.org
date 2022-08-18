@@ -263,6 +263,22 @@ light/dark theme and then loads an appropriate Ef theme at random:
   (ef-themes-load-random 'light))
 #+end_src
 
+* Preview theme colors
+:PROPERTIES:
+:CUSTOM_ID: h:8dd67bf5-879e-46e5-b277-5bac141f53d1
+:END:
+
+#+findex: ef-themes-preview-colors
+The command ~ef-themes-preview-colors~ uses minibuffer completion to
+select an item from the Ef themes and then produces a buffer with
+previews of its color palette entries.  The buffer has a naming scheme
+which reflects the given choice, like =ef-summer-preview-colors= for the
+~ef-summer~ theme.
+
+#+findex: ef-themes-preview-colors-current
+The command ~ef-themes-preview-colors-current~ skips the minibuffer
+selection process and just produces a preview for the current Ef theme.
+
 * FAQ
 :PROPERTIES:
 :CUSTOM_ID: h:a6d5c6f1-84c5-4d74-ba39-b5ccda05497a
