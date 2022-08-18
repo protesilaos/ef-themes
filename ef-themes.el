@@ -212,6 +212,25 @@ Helper function for `ef-themes-preview-colors'."
 
 ;;; Faces and variables
 
+;; This produces `ef-themes-height-0' and the like.
+(defmacro ef-themes--height (n)
+  "Write `defvar' for height level N."
+  `(defcustom ,(intern (format "ef-themes-height-%s" n)) ,(- 1.8 (* n 0.1))
+     ,(format "Height as floating point for %i level heading." n)
+     :type 'float))
+
+;; FIXME 2022-08-18: Why won't `dotimes' work with the macro?  (dotimes
+;; (n 8) ...) does not interpret the n as a number.
+(ef-themes--height 0)
+(ef-themes--height 1)
+(ef-themes--height 2)
+(ef-themes--height 3)
+(ef-themes--height 4)
+(ef-themes--height 5)
+(ef-themes--height 6)
+(ef-themes--height 7)
+(ef-themes--height 8)
+
 (defconst ef-themes-faces
   '(
 ;;;; all basic faces
@@ -689,12 +708,12 @@ Helper function for `ef-themes-preview-colors'."
     `(markdown-code-face ((,c :background ,bg-inactive :extend t)))
     `(markdown-gfm-checkbox-face ((,c :foreground ,warning)))
     `(markdown-header-face (( )))
-    `(markdown-header-face-1 ((,c :inherit bold :height 1.7 :foreground ,rainbow-0)))
-    `(markdown-header-face-2 ((,c :inherit bold :height 1.6 :foreground ,rainbow-1)))
-    `(markdown-header-face-3 ((,c :inherit bold :height 1.5 :foreground ,rainbow-2)))
-    `(markdown-header-face-4 ((,c :inherit bold :height 1.4 :foreground ,rainbow-3)))
-    `(markdown-header-face-5 ((,c :inherit bold :height 1.3 :foreground ,rainbow-4)))
-    `(markdown-header-face-6 ((,c :inherit bold :height 1.2 :foreground ,rainbow-5)))
+    `(markdown-header-face-1 ((,c :inherit bold :foreground ,rainbow-0 :height ,ef-themes-height-1)))
+    `(markdown-header-face-2 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-2)))
+    `(markdown-header-face-3 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-3)))
+    `(markdown-header-face-4 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-4)))
+    `(markdown-header-face-5 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-5)))
+    `(markdown-header-face-6 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-6)))
     `(markdown-highlighting-face ((,c :background ,bg-info :foreground ,info)))
     `(markdown-inline-code-face ((,c :foreground ,accent-1))) ; same as `org-code'
     `(markdown-italic-face ((,c :inherit italic)))
@@ -851,14 +870,14 @@ Helper function for `ef-themes-preview-colors'."
     `(org-indent ((,c :inherit org-hide)))
     `(org-imminent-deadline ((,c :inherit bold :foreground ,err)))
     `(org-latex-and-related ((,c :foreground ,type)))
-    `(org-level-1 ((,c :inherit bold :foreground ,rainbow-1 :height 1.7)))
-    `(org-level-2 ((,c :inherit bold :foreground ,rainbow-2 :height 1.6)))
-    `(org-level-3 ((,c :inherit bold :foreground ,rainbow-3 :height 1.5)))
-    `(org-level-4 ((,c :inherit bold :foreground ,rainbow-4 :height 1.4)))
-    `(org-level-5 ((,c :inherit bold :foreground ,rainbow-5 :height 1.3)))
-    `(org-level-6 ((,c :inherit bold :foreground ,rainbow-6 :height 1.2)))
-    `(org-level-7 ((,c :inherit bold :foreground ,rainbow-7 :height 1.1)))
-    `(org-level-8 ((,c :inherit bold :foreground ,rainbow-8 :height 1.0)))
+    `(org-level-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
+    `(org-level-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
+    `(org-level-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
+    `(org-level-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
+    `(org-level-5 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-5)))
+    `(org-level-6 ((,c :inherit bold :foreground ,rainbow-6 :height ,ef-themes-height-6)))
+    `(org-level-7 ((,c :inherit bold :foreground ,rainbow-7 :height ,ef-themes-height-7)))
+    `(org-level-8 ((,c :inherit bold :foreground ,rainbow-8 :height ,ef-themes-height-8)))
     `(org-link ((,c :inherit link)))
     `(org-list-dt ((,c :inherit bold)))
     `(org-macro ((,c :foreground ,accent-2)))
@@ -897,14 +916,14 @@ Helper function for `ef-themes-preview-colors'."
     `(org-modern-time-inactive ((,c :inherit org-modern-date-inactive)))
     `(org-modern-todo ((,c :background ,bg-err :foreground ,err)))
 ;;;; outline-mode
-    `(outline-1 ((,c :inherit bold :foreground ,rainbow-1)))
-    `(outline-2 ((,c :inherit bold :foreground ,rainbow-2)))
-    `(outline-3 ((,c :inherit bold :foreground ,rainbow-3)))
-    `(outline-4 ((,c :inherit bold :foreground ,rainbow-4)))
-    `(outline-5 ((,c :inherit bold :foreground ,rainbow-5)))
-    `(outline-6 ((,c :inherit bold :foreground ,rainbow-6)))
-    `(outline-7 ((,c :inherit bold :foreground ,rainbow-7)))
-    `(outline-8 ((,c :inherit bold :foreground ,rainbow-8)))
+    `(outline-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
+    `(outline-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
+    `(outline-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
+    `(outline-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
+    `(outline-5 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-5)))
+    `(outline-6 ((,c :inherit bold :foreground ,rainbow-6 :height ,ef-themes-height-6)))
+    `(outline-7 ((,c :inherit bold :foreground ,rainbow-7 :height ,ef-themes-height-7)))
+    `(outline-8 ((,c :inherit bold :foreground ,rainbow-8 :height ,ef-themes-height-8)))
 ;;;; outline-minor-faces
     `(outline-minor-0 (( )))
 ;;;; package (M-x list-packages)
