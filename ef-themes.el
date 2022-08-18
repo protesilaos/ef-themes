@@ -1031,10 +1031,10 @@ Helper function for `ef-themes-preview-colors'."
     `(vertico-current ((,c :background ,bg-completion)))
 ;;;; wgrep
     `(wgrep-delete-face ((,c :inherit warning)))
-    `(wgrep-done-face ((,c :inherit success)))
+    `(wgrep-done-face ((,c :background ,bg-info :foreground ,info)))
     `(wgrep-face ((,c :inherit bold)))
     `(wgrep-file-face ((,c :foreground ,fg-alt)))
-    `(wgrep-reject-face ((,c :inherit error)))
+    `(wgrep-reject-face ((,c :background ,bg-err :foreground ,err)))
 ;;;; which-function-mode
     `(which-func ((,c :inherit bold :foreground ,fg-intense)))
 ;;;; whitespace-mode
