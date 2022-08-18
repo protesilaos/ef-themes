@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.1.0
-#+macro:                 release-date 2022-08-17
-#+macro:                 development-version 0.2.0-dev
+#+macro:                 stable-version 0.2.0
+#+macro:                 release-date 2022-08-18
+#+macro:                 development-version 0.3.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
