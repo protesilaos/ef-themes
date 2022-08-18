@@ -69,10 +69,12 @@
    custom-known-themes))
 
 (defun ef-themes--enable-themes ()
+  (setq-local current-theme (car custom-enabled-themes))
   (mapc (lambda (theme)
           (load-theme theme :no-confirm :no-enable))
         (append ef-themes-light-themes
-                ef-themes-dark-themes)))
+                ef-themes-dark-themes))
+  (load-theme current-theme :no-confirm))
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
