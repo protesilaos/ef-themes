@@ -48,6 +48,12 @@
 
 ;;; Commands and their helper functions
 
+(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
+  "List of symbols with the light Ef themes.")
+
+(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
+  "List of symbols with the dark Ef themes.")
+
 (defun ef-themes--list-enabled-themes ()
   "Return list of `custom-enabled-themes' with ef- prefix."
   (seq-filter
@@ -61,6 +67,12 @@
    (lambda (theme)
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-known-themes))
+
+(defun ef-themes--enable-themes ()
+  (mapc (lambda (theme)
+          (load-theme theme :no-confirm :no-enable))
+        (append ef-themes-light-themes
+                ef-themes-dark-themes)))
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
@@ -108,12 +120,6 @@ When called from Lisp, THEME is a symbol."
   (interactive (list (intern (ef-themes--select-prompt))))
   (ef-themes--load-theme theme))
 
-(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
-  "List of symbols with the light Ef themes.")
-
-(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
-  "List of symbols with the dark Ef themes.")
-
 (defun ef-themes--minus-current (&optional variant)
   "Return list of Ef themes minus the current one.
 VARIANT is either `light' or `dark', which stand for
@@ -140,6 +146,7 @@ prompts with completion for either `light' or `dark'."
    (list (when current-prefix-arg
            (intern (completing-read "Random choice of Ef themes VARIANT: "
                                     '(light dark) nil t)))))
+  (ef-themes--enable-themes)
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
