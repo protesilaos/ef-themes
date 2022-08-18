@@ -95,6 +95,12 @@ When called from Lisp, THEME is a symbol."
   (mapc #'disable-theme (ef-themes--list-known-themes))
   (load-theme theme :no-confirm))
 
+(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
+  "List of symbols with the light Ef themes.")
+
+(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
+  "List of symbols with the dark Ef themes.")
+
 (defun ef-themes--minus-current (&optional variant)
   "Return list of Ef themes minus the current one.
 VARIANT is either `light' or `dark', which stand for
@@ -108,12 +114,6 @@ respectively.  Else check against the return value of
          (sequence (or list (ef-themes--list-known-themes)))
          (themes (copy-sequence sequence)))
     (delete (ef-themes--current-theme) themes)))
-
-(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
-  "List of symbols with the light Ef themes.")
-
-(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
-  "List of symbols with the dark Ef themes.")
 
 ;;;###autoload
 (defun ef-themes-load-random (&optional variant)
