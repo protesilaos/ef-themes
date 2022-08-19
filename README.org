@@ -124,6 +124,20 @@ Everything is in place to set up the package.
 #+begin_src emacs-lisp
 (require 'ef-themes)
 
+;; Make customisations BEFORE loading a theme (any change needs a theme
+;; re-load to take effect).
+
+(setq ef-themes-headings ; read the manual's entry of the doc string
+      '((0 . (variable-pitch light 1.9))
+        (1 . (variable-pitch light 1.8))
+        (2 . (variable-pitch regular 1.7))
+        (3 . (variable-pitch regular 1.6))
+        (4 . (variable-pitch regular 1.5))
+        (5 . (variable-pitch 1.4)) ; absence of weight means `bold'
+        (6 . (variable-pitch 1.3))
+        (7 . (variable-pitch 1.2))
+        (t . (variable-pitch 1.1))))
+
 ;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
 
@@ -137,17 +151,6 @@ Everything is in place to set up the package.
 ;;
 ;; Also those which are optimized for deuteranopia (red-green color
 ;; deficiency): `ef-deuteranopia-dark', `ef-deuteranopia-light'.
-
-(setq ef-themes-headings ; read the manual's entry of the doc string
-      '((0 . (variable-pitch light 1.9))
-        (1 . (variable-pitch light 1.8))
-        (2 . (variable-pitch regular 1.7))
-        (3 . (variable-pitch regular 1.6))
-        (4 . (variable-pitch regular 1.5))
-        (5 . (variable-pitch 1.4)) ; absence of weight means `bold'
-        (6 . (variable-pitch 1.3))
-        (7 . (variable-pitch 1.2))
-        (t . (variable-pitch 1.1))))
 
 ;; We also provide these commands, but do not assign them to any key:
 ;;
@@ -179,6 +182,9 @@ such users.  The named of the themes are: ~ef-deuteranopia-dark~ and
 The =ef-themes= provide a limited set of user options which tweak
 secondary aspects of the theme.  No option affects coloration or the
 overall character of each theme ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Principles]]).
+
+All customizations need to be evaluated before loading a theme.  Any
+change thus requires a theme re-load ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Loading a theme]]).
 
 ** Option for headings
 :PROPERTIES:
