@@ -136,7 +136,7 @@ Everything is in place to set up the package.
 ;; Dark:  `ef-autumn', `ef-dark', `ef-night', `ef-winter'.
 ;;
 ;; Also those which are optimized for deuteranopia (red-green color
-;; deficiency): `ef-deuteranopia-dark'.
+;; deficiency): `ef-deuteranopia-dark', `ef-deuteranopia-light'.
 
 ;; We also provide these commands, but do not assign them to any key:
 ;;
@@ -145,6 +145,20 @@ Everything is in place to set up the package.
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
 #+end_src
+
+* Options for red-green color deficiency
+:PROPERTIES:
+:CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
+:END:
+
+[ Part of {{{development-version}}} ]
+
+Most items in the =ef-themes= collection are designed to use colors from
+many sides of the spectrum.  Those items generally are inappropriate for
+people with red-green color deficiency or deuteranopia.  We do,
+nonetheless, provide a light and a dark theme that are optimized for
+such users.  The named of the themes are: ~ef-deuteranopia-dark~ and
+~ef-deuteranopia-light~ ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).
 
 * Principles
 :PROPERTIES:
