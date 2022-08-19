@@ -90,7 +90,7 @@
 
       ;; Diffs
       (bg-added          "#00234f")
-      (bg-added-faint    "#001430")
+      (bg-added-faint    "#00143f")
       (bg-added-refine   "#03395f")
 
       (bg-changed        "#2f123f")
