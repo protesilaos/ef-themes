@@ -160,7 +160,7 @@ Everything is in place to set up the package.
 ;; - `ef-themes-preview-colors-current'
 #+end_src
 
-* Options for red-green color deficiency
+* Themes for red-green color deficiency
 :PROPERTIES:
 :CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
 :END:
