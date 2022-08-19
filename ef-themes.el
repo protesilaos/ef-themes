@@ -1385,7 +1385,7 @@ Those are stored in `ef-themes-faces' and
 ;;;###autoload
 (when load-file-name
   (let ((dir (file-name-directory load-file-name)))
-    (unless (equal dir (expand-file-name "themes/" data-directory))
+    (unless (file-equal-p dir (expand-file-name "themes/" data-directory))
       (add-to-list 'custom-theme-load-path dir))))
 
 (provide 'ef-themes)
