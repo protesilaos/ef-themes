@@ -109,7 +109,7 @@
       (bg-hover-alt  "#003a7f")
       (bg-hl-line    "#323210")
       (bg-region     "#2c2c3a")
-      (bg-paren      "#00478a")
+      (bg-paren      "#0f4f9a")
       (bg-err        "#232d09") ; check with err
       (bg-info       "#001a4a") ; check with info
 
