@@ -46,6 +46,14 @@
   :prefix "ef-themes-"
   :tag "Ef Themes")
 
+;;; Use options
+
+(defcustom ef-themes-post-load-hook nil
+  "Hook that runs after loading an Ef theme.
+This is used by the commands `ef-themes-select' and
+`ef-themes-load-random'."
+  :type 'hook
+  :group 'ef-themes)
 ;;; Commands and their helper functions
 
 (defconst ef-themes-light-themes '( ef-day ef-light ef-spring ef-summer
@@ -104,13 +112,6 @@
                    (ef-themes--list-known-themes)
                    nil t nil
                    'ef-themes--select-theme-history))
-
-(defcustom ef-themes-post-load-hook nil
-  "Hook that runs after loading an Ef theme.
-This is used by the commands `ef-themes-select' and
-`ef-themes-load-random'."
-  :type 'hook
-  :group 'ef-themes)
 
 (defun ef-themes--load-theme (theme)
   "Load THEME while disabling other Ef themes.
