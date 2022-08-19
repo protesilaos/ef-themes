@@ -89,15 +89,15 @@
       (bg-cyan     "#88c8ff")
 
       ;; Diffs
-      (bg-added          "#d4d4ff")
+      (bg-added          "#dfdfff")
       (bg-added-faint    "#e4e4ff")
       (bg-added-refine   "#c0c0ef")
 
-      (bg-changed        "#eec8df")
+      (bg-changed        "#eecfdf")
       (bg-changed-faint  "#f0dde5")
       (bg-changed-refine "#e0b0d0")
 
-      (bg-removed        "#f9e89f")
+      (bg-removed        "#fff0af")
       (bg-removed-faint  "#efe6cf")
       (bg-removed-refine "#f0da88")
 
