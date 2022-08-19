@@ -51,7 +51,8 @@
 (defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
   "List of symbols with the light Ef themes.")
 
-(defconst ef-themes-dark-themes '(ef-autumn ef-dark ef-night ef-winter)
+(defconst ef-themes-dark-themes '( ef-autumn ef-dark ef-night ef-winter
+                                   ef-deuteranopia-dark)
   "List of symbols with the dark Ef themes.")
 
 (defun ef-themes--list-enabled-themes ()
