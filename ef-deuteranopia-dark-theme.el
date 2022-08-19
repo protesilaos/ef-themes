@@ -144,11 +144,11 @@
       (accent-2 cyan-warmer)
       (accent-3 magenta-cooler)
 
-      (mail-0 yellow)
-      (mail-1 blue-cooler)
-      (mail-2 yellow-cooler)
-      (mail-3 fg-alt)
-      (mail-4 magenta-cooler)
+      (mail-0 blue-warmer)
+      (mail-1 yellow)
+      (mail-2 blue-cooler)
+      (mail-3 yellow-cooler)
+      (mail-4 cyan)
 
       (rainbow-0 yellow-warmer)
       (rainbow-1 blue)
