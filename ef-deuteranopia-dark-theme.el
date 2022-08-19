@@ -107,8 +107,8 @@
       (bg-completion "#343420")
       (bg-hover      "#4f4f00")
       (bg-hover-alt  "#003a7f")
-      (bg-hl-line    "#33331f")
-      (bg-region     "#202c4a")
+      (bg-hl-line    "#323210")
+      (bg-region     "#2c2c3a")
       (bg-paren      "#00478a")
       (bg-err        "#232d09") ; check with err
       (bg-info       "#001a4a") ; check with info
