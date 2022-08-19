@@ -48,7 +48,8 @@
 
 ;;; Commands and their helper functions
 
-(defconst ef-themes-light-themes '(ef-day ef-light ef-spring ef-summer)
+(defconst ef-themes-light-themes '( ef-day ef-light ef-spring ef-summer
+                                    ef-deuteranopia-light)
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes '( ef-autumn ef-dark ef-night ef-winter
