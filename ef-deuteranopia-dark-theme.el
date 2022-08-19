@@ -102,7 +102,7 @@
       (bg-removed-refine "#484800")
 
       ;; Special hues
-      (bg-mode-line  "#484800") (fg-mode-line  "#ffffff")
+      (bg-mode-line  "#003f8f") (fg-mode-line  "#ffffff")
       (bg-accent     "#ffaa33") (fg-accent     "#000000")
       (bg-completion "#2b2b3f")
       (bg-hover      "#003a7f")
