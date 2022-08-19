@@ -46,13 +46,13 @@
     '(;; Basic tones
       (bg-main     "#000a1f")
       (fg-main     "#ddddee")
-      (bg-dim      "#0a1629")
+      (bg-dim      "#0f1c2d")
       (fg-dim      "#7f8797")
       (bg-alt      "#20253f")
       (fg-alt      "#90afef")
 
       (bg-active   "#30354f")
-      (bg-inactive "#061125")
+      (bg-inactive "#071225")
 
       ;; Basic hues for foreground values
       (red             "#cf8560")
