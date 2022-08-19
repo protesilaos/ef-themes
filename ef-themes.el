@@ -768,7 +768,7 @@ Helper function for `ef-themes-preview-colors'."
     `(mode-line ((,c :background ,bg-mode-line :foreground ,fg-mode-line)))
     `(mode-line-active ((,c :inherit mode-line)))
     `(mode-line-buffer-id ((,c :inherit bold)))
-    `(mode-line-emphasis ((,c :inherit bold :foreground ,fg-intense)))
+    `(mode-line-emphasis ((,c :inherit bold-italic)))
     `(mode-line-highlight ((,c :inherit highlight)))
     `(mode-line-inactive ((,c :background ,bg-alt :foreground ,fg-dim)))
 ;;;; mu4e
