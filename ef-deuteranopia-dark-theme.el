@@ -106,8 +106,8 @@
       (bg-accent     "#ffaa33") (fg-accent     "#000000")
       (bg-completion "#2b2b3f")
       (bg-hover      "#003a7f")
-      (bg-hover-alt  "#3f4f00")
       (bg-hl-line    "#2a2a1f")
+      (bg-hover-alt  "#4f4f00")
       (bg-region     "#202c4a")
       (bg-paren      "#00478a")
       (bg-err        "#232d09") ; check with err
