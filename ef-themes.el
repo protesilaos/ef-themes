@@ -280,7 +280,7 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
-  (when-let ((themes (ef-themes--list-enabled-themes)))
+  (when-let* ((themes (ef-themes--list-enabled-themes)))
     (car themes)))
 
 (defun ef-themes--palette (theme)
@@ -289,7 +289,7 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--current-theme-palette ()
   "Return palette of active Ef theme, else produce `user-error'."
-  (if-let ((palette (ef-themes--palette (ef-themes--current-theme))))
+  (if-let* ((palette (ef-themes--palette (ef-themes--current-theme))))
       palette
     (user-error "No enabled Ef theme could be found")))
 
@@ -328,7 +328,7 @@ When called from Lisp, THEME is a symbol."
 (defun ef-themes-toggle ()
   "Toggle between the two `ef-themes-to-toggle'."
   (interactive)
-  (when-let ((themes (ef-themes--toggle-theme-p))
+  (when-let* ((themes (ef-themes--toggle-theme-p))
              (one (car themes))
              (two (cadr themes)))
     (unless (eq (length themes) 2)
