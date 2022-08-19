@@ -48,6 +48,27 @@
 
 ;;; User options
 
+(defconst ef-themes-collection
+  '(ef-autumn
+    ef-dark
+    ef-day
+    ef-deuteranopia-dark
+    ef-deuteranopia-light
+    ef-light
+    ef-night
+    ef-spring
+    ef-summer
+    ef-winter)
+  "Symbols of all the Ef themes.")
+
+(defconst ef-themes-light-themes
+  '(ef-day ef-light ef-spring ef-summer ef-deuteranopia-light)
+  "List of symbols with the light Ef themes.")
+
+(defconst ef-themes-dark-themes
+  '(ef-autumn ef-dark ef-night ef-winter ef-deuteranopia-dark)
+  "List of symbols with the dark Ef themes.")
+
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
 This is used by the commands `ef-themes-select' and
@@ -215,27 +236,6 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
           (or weight 'unspecified))))
 
 ;;; Commands and their helper functions
-
-(defconst ef-themes-collection
-  '(ef-autumn
-    ef-dark
-    ef-day
-    ef-deuteranopia-dark
-    ef-deuteranopia-light
-    ef-light
-    ef-night
-    ef-spring
-    ef-summer
-    ef-winter)
-  "Symbols of all the Ef themes.")
-
-(defconst ef-themes-light-themes '( ef-day ef-light ef-spring ef-summer
-                                    ef-deuteranopia-light)
-  "List of symbols with the light Ef themes.")
-
-(defconst ef-themes-dark-themes '( ef-autumn ef-dark ef-night ef-winter
-                                   ef-deuteranopia-dark)
-  "List of symbols with the dark Ef themes.")
 
 (defun ef-themes--list-enabled-themes ()
   "Return list of `custom-enabled-themes' with ef- prefix."
