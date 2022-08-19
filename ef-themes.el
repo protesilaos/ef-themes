@@ -216,6 +216,19 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 ;;; Commands and their helper functions
 
+(defconst ef-themes-collection
+  '(ef-autumn
+    ef-dark
+    ef-day
+    ef-deuteranopia-dark
+    ef-deuteranopia-light
+    ef-light
+    ef-night
+    ef-spring
+    ef-summer
+    ef-winter)
+  "Symbols of all the Ef themes.")
+
 (defconst ef-themes-light-themes '( ef-day ef-light ef-spring ef-summer
                                     ef-deuteranopia-light)
   "List of symbols with the light Ef themes.")
@@ -235,8 +248,7 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
   "Enable all Ef themes."
   (mapc (lambda (theme)
           (load-theme theme :no-confirm :no-enable))
-        (append ef-themes-light-themes
-                ef-themes-dark-themes)))
+        ef-themes-collection))
 
 (defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
