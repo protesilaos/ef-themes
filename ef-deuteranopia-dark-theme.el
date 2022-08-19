@@ -104,10 +104,10 @@
       ;; Special hues
       (bg-mode-line  "#003f8f") (fg-mode-line  "#ffffff")
       (bg-accent     "#ffaa33") (fg-accent     "#000000")
-      (bg-completion "#2b2b3f")
+      (bg-completion "#343420")
       (bg-hover      "#003a7f")
-      (bg-hl-line    "#2a2a1f")
       (bg-hover-alt  "#4f4f00")
+      (bg-hl-line    "#33331f")
       (bg-region     "#202c4a")
       (bg-paren      "#00478a")
       (bg-err        "#232d09") ; check with err
