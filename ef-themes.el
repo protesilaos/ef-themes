@@ -80,7 +80,17 @@ This is used by the commands `ef-themes-select' and
   "Specify two `ef-themes' for `ef-themes-toggle' command.
 The variable `ef-themes-collection' contains the symbols of all
 themes that form part of this collection."
-  :type '(repeat symbol) ; FIXME 2022-08-19: Replace `symbol' with specific choices.  How?
+  :type `(choice
+          (const :tag "No toggle (default)" nil)
+          (list :tag "Pick two themes to toggle between"
+                (choice :tag "Theme one of two"
+                        ,@(mapcar (lambda (theme)
+                                    (list 'const theme))
+                                  ef-themes-collection))
+                (choice :tag "Theme two of two"
+                        ,@(mapcar (lambda (theme)
+                                    (list 'const theme))
+                                  ef-themes-collection))))
   :group 'ef-themes)
 
 (defconst ef-themes-weights
