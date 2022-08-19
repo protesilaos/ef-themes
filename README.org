@@ -134,7 +134,9 @@ Everything is in place to set up the package.
 ;;
 ;; Light: `ef-day', `ef-light', `ef-spring', `ef-summer'.
 ;; Dark:  `ef-autumn', `ef-dark', `ef-night', `ef-winter'.
-
+;;
+;; Also those which are optimized for deuteranopia (red-green color
+;; deficiency): `ef-deuteranopia-dark'.
 
 ;; We also provide these commands, but do not assign them to any key:
 ;;
