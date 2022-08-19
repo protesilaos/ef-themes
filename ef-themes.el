@@ -76,6 +76,13 @@ This is used by the commands `ef-themes-select' and
   :type 'hook
   :group 'ef-themes)
 
+(defcustom ef-themes-to-toggle nil
+  "Specify two `ef-themes' for `ef-themes-toggle' command.
+The variable `ef-themes-collection' contains the symbols of all
+themes that form part of this collection."
+  :type '(repeat symbol) ; FIXME 2022-08-19: Replace `symbol' with specific choices.  How?
+  :group 'ef-themes)
+
 (defconst ef-themes-weights
   '( thin ultralight extralight light semilight regular medium
      semibold bold heavy extrabold ultrabold)
@@ -298,6 +305,27 @@ Run `ef-themes-post-load-hook'."
 When called from Lisp, THEME is a symbol."
   (interactive (list (intern (ef-themes--select-prompt))))
   (ef-themes--load-theme theme))
+
+(defun ef-themes--toggle-theme-p ()
+  "Return non-nil if `ef-themes-to-toggle' are valid."
+  (mapc (lambda (theme)
+          (if (memq theme ef-themes-collection)
+              theme
+            (user-error "`%s' is not part of `ef-themes-collection'" theme)))
+        ef-themes-to-toggle))
+
+;;;###autoload
+(defun ef-themes-toggle ()
+  "Toggle between the two `ef-themes-to-toggle'."
+  (interactive)
+  (when-let ((themes (ef-themes--toggle-theme-p))
+             (one (car themes))
+             (two (cadr themes)))
+    (unless (eq (length themes) 2)
+      (user-error "Can only toggle between two themes"))
+    (if (eq (car custom-enabled-themes) one)
+        (ef-themes--load-theme two)
+      (ef-themes--load-theme one))))
 
 (defun ef-themes--minus-current (&optional variant)
   "Return list of Ef themes minus the current one.

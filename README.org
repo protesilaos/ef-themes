@@ -124,8 +124,13 @@ Everything is in place to set up the package.
 #+begin_src emacs-lisp
 (require 'ef-themes)
 
-;; Make customisations BEFORE loading a theme (any change needs a theme
-;; re-load to take effect).
+;; If you like two specific themes and want to switch between them, you
+;; can specify them in `ef-themes-to-toggle' and then invoke the command
+;; `ef-themes-toggle':
+(setq ef-themes-to-toggle '(ef-summer ef-winter))
+
+;; Make customisations that affect Emacs faces BEFORE loading a theme
+;; (any change needs a theme re-load to take effect).
 
 (setq ef-themes-headings ; read the manual's entry of the doc string
       '((0 . (variable-pitch light 1.9))
@@ -154,6 +159,7 @@ Everything is in place to set up the package.
 
 ;; We also provide these commands, but do not assign them to any key:
 ;;
+;; - `ef-themes-toggle'
 ;; - `ef-themes-select'
 ;; - `ef-themes-load-random'
 ;; - `ef-themes-preview-colors'
@@ -312,7 +318,8 @@ as =init.el=.
 #+vindex: ef-themes-post-load-hook
 The commands mentioned herein call ~ef-themes-post-load-hook~ at the
 end.  This is for advanced users who want to trigger some code after an
-Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).
+Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).  The same goes
+for ~ef-themes-toggle~ ([[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]).
 
 #+findex: ef-themes-select
 The themes can also be loaded interactively ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  The
@@ -369,6 +376,24 @@ light/dark theme and then loads an appropriate Ef theme at random:
     (ef-themes-load-random 'dark)
   (ef-themes-load-random 'light))
 #+end_src
+
+* Toggle between two Ef themes
+:PROPERTIES:
+:CUSTOM_ID: h:a58b8e21-0f8f-4763-9b47-185bf7e10043
+:END:
+
+[ Part of {{{development-version}}}. ]
+
+#+vindex: ef-themes-to-toggle
+#+findex: ef-themes-toggle
+The user option ~ef-themes-to-toggle~ expects two symbols that name
+items in the Ef themes collection.  The variable ~ef-themes-collection~
+includes a list with all relevant symbols.  The user can then switch
+between the two specified themes by invoking the ~ef-themes-toggle~
+command.
+
+This is in addition to the other ways of loading a theme, either with
+minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
 
 * Preview theme colors
 :PROPERTIES:
