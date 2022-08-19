@@ -111,7 +111,7 @@
       (bg-region     "#202c4a")
       (bg-paren      "#00478a")
       (bg-err        "#232d09") ; check with err
-      (bg-info       "#001242") ; check with info
+      (bg-info       "#001a4a") ; check with info
 
       (border        "#40455f")
       (cursor        "#ffff00")
