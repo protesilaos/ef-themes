@@ -46,7 +46,7 @@
   :prefix "ef-themes-"
   :tag "Ef Themes")
 
-;;; Use options
+;;; User options
 
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
