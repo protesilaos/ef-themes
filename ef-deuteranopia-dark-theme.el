@@ -37,6 +37,9 @@
 (eval-and-compile
   (require 'ef-themes)
 
+  ;; Most of the colors here, like the red and green hues, are defined
+  ;; simply to preserve compatibility with the rest of the project.  We
+  ;; don't actually rely on them for anything critical.
   (deftheme ef-deuteranopia-dark "Legible dark theme, optimized for red-green color deficiency.")
 
   (defconst ef-deuteranopia-dark-palette
