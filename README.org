@@ -278,46 +278,6 @@ will retain the original aesthetic for that level.  For example:
               (t . t))) ; default style for all other levels
 #+end_src
 
-* Principles
-:PROPERTIES:
-:CUSTOM_ID: h:a6dd030c-6b6c-4992-83e8-3438b4607b51
-:END:
-
-+ No customization options that affect the style of individual
-  components (e.g. change the color of the mode line, remove bold,
-  etc.)!  Either you like them or you don't.  To change faces, it is
-  better to do it in user-level configurations (report the issue and we
-  can help with the relevant code).  Providing customizations that
-  refashion a wide set of themes is not maintainable.
-
-+ Curated list of supported packages.  I will only cover what I use
-  and/or know is in a well-maintained state.  Styling a package requires
-  a lot of work as one must (i) know how the package works, (ii) see all
-  its interfaces in action, (iii) make sure that the color combinations
-  look consistent with the rest of the theme.
-
-+ Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
-  standard).  Use my =modus-themes= package (also built into Emacs 28 or
-  higher) if you need top-class accessibility.
-
-* Minimal VS maximal scope
-:PROPERTIES:
-:CUSTOM_ID: h:fb219b87-ab95-401a-a742-a2fc451bf9f7
-:END:
-
-The =ef-themes= are meant to be minimal in scope, as opposed to my
-=modus-themes= whose accessibility requirements make them maximalist by
-necessity.  The =modus-themes= are such because:
-
-1. Accessibility is not a one-size-fits-all.  Customisation options are
-   necessary to empower users.
-2. Accessibility is as good as its weakest link.  If the user spends all
-   day using FOO package, it needs to be perfectly legible, otherwise
-   the whole theme fails to deliver on its promise.
-
-The =ef-themes= can afford to be minimal because they do not have such a
-lofty accessibility target.
-
 * Loading a theme
 :PROPERTIES:
 :CUSTOM_ID: h:75d74aea-d17f-497f-a3b8-f0bf4c372de0
@@ -460,6 +420,46 @@ The palette of each Ef theme is considered stable.  No removals shall be
 made.  Though please note that some tweaks to individual hues or color
 mapping are still possible.  At any rate, we will not outright break any
 code that uses ~ef-themes-with-colors~.
+
+* Principles
+:PROPERTIES:
+:CUSTOM_ID: h:a6dd030c-6b6c-4992-83e8-3438b4607b51
+:END:
+
++ No customization options that affect the style of individual
+  components (e.g. change the color of the mode line, remove bold,
+  etc.)!  Either you like them or you don't.  To change faces, it is
+  better to do it in user-level configurations (report the issue and we
+  can help with the relevant code).  Providing customizations that
+  refashion a wide set of themes is not maintainable.
+
++ Curated list of supported packages.  I will only cover what I use
+  and/or know is in a well-maintained state.  Styling a package requires
+  a lot of work as one must (i) know how the package works, (ii) see all
+  its interfaces in action, (iii) make sure that the color combinations
+  look consistent with the rest of the theme.
+
++ Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
+  standard).  Use my =modus-themes= package (also built into Emacs 28 or
+  higher) if you need top-class accessibility.
+
+* Minimal VS maximal scope
+:PROPERTIES:
+:CUSTOM_ID: h:fb219b87-ab95-401a-a742-a2fc451bf9f7
+:END:
+
+The =ef-themes= are meant to be minimal in scope, as opposed to my
+=modus-themes= whose accessibility requirements make them maximalist by
+necessity.  The =modus-themes= are such because:
+
+1. Accessibility is not a one-size-fits-all.  Customisation options are
+   necessary to empower users.
+2. Accessibility is as good as its weakest link.  If the user spends all
+   day using FOO package, it needs to be perfectly legible, otherwise
+   the whole theme fails to deliver on its promise.
+
+The =ef-themes= can afford to be minimal because they do not have such a
+lofty accessibility target.
 
 * FAQ
 :PROPERTIES:
