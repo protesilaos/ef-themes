@@ -247,6 +247,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; all basic faces
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(cursor ((,c :background ,cursor)))
+    `(bold-italic ((,c :inherit (bold italic))))
     `(region ((,c :background ,bg-region)))
     `(comint-highlight-input ((,c :inherit bold)))
     `(comint-highlight-prompt ((,c :foreground ,accent-2)))
