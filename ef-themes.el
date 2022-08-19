@@ -443,23 +443,11 @@ Helper function for `ef-themes-preview-colors'."
   :tag "Ef Themes Faces")
 
 ;; This produces `ef-themes-height-0' and the like.
-(defmacro ef-themes--height (n)
-  "Write `defface' for height level N."
-  `(defface ,(intern (format "ef-themes-heading-%s" n)) nil
-     ,(format "Used for level %s heading." n)
-     :group 'ef-themes-faces))
-
-;; FIXME 2022-08-18: Why won't `dotimes' work with the macro?  (dotimes
-;; (n 8) ...) does not interpret the n as a number.
-(ef-themes--height 0)
-(ef-themes--height 1)
-(ef-themes--height 2)
-(ef-themes--height 3)
-(ef-themes--height 4)
-(ef-themes--height 5)
-(ef-themes--height 6)
-(ef-themes--height 7)
-(ef-themes--height 8)
+(dotimes (n 8)
+  (custom-declare-face
+    (intern (format "ef-themes-heading-%d" n))
+    nil (format "Used for level %d heading." n)
+    :group 'ef-themes-faces))
 
 (defconst ef-themes-faces
   '(
