@@ -522,6 +522,8 @@ matters.
 
 + Author/maintainer :: Protesilaos Stavrou.
 
++ Contributions to code or the manual :: Philip Kaludercic.
+
 + Ideas and/or user feedback :: Iris Garcia, Spike-Leung, Summer Emacs,
   Zoltán Király.
 
