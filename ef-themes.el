@@ -54,6 +54,166 @@ This is used by the commands `ef-themes-select' and
 `ef-themes-load-random'."
   :type 'hook
   :group 'ef-themes)
+
+(defconst ef-themes-weights
+  '( thin ultralight extralight light semilight regular medium
+     semibold bold heavy extrabold ultrabold)
+  "List of font weights.")
+
+(defconst ef-themes--headings-choice
+  '(set :tag "Properties" :greedy t
+        (const :tag "Proportionately spaced font (variable-pitch)" variable-pitch)
+        (choice :tag "Font weight (must be supported by the typeface)"
+                (const :tag "Bold (default)" nil)
+                (const :tag "Thin" thin)
+                (const :tag "Ultra-light" ultralight)
+                (const :tag "Extra-light" extralight)
+                (const :tag "Light" light)
+                (const :tag "Semi-light" semilight)
+                (const :tag "Regular" regular)
+                (const :tag "Medium" medium)
+                (const :tag "Semi-bold" semibold)
+                (const :tag "Extra-bold" extrabold)
+                (const :tag "Ultra-bold" ultrabold))
+        (radio :tag "Height"
+               (float :tag "Floating point to adjust height by")
+               (cons :tag "Cons cell of `(height . FLOAT)'"
+                     (const :tag "The `height' key (constant)" height)
+                     (float :tag "Floating point"))))
+  "Refer to the doc string of `ef-themes-headings'.
+This is a helper variable intended for internal use.")
+
+(defcustom ef-themes-headings nil
+  "Heading styles with optional list of values for levels 0-8.
+
+This is an alist that accepts a (key . list-of-values)
+combination.  The key is either a number, representing the
+heading's level (0-8) or t, which pertains to the fallback style.
+
+Level 0 is a special heading: it is used for what counts as a
+document title or equivalent, such as the #+title construct we
+find in Org files.  Levels 1-8 are regular headings.
+
+The list of values covers symbols that refer to properties, as
+described below.  Here is a complete sample, followed by a
+presentation of all available properties:
+
+    (setq ef-themes-headings
+          (quote ((1 . (light variable-pitch 1.5))
+                  (2 . (regular 1.3))
+                  (3 . (1.1))
+                  (t . (variable-pitch)))))
+
+By default (a nil value for this variable), all headings have a
+bold typographic weight, a font family that is the same as the
+`default' face (typically monospaced), and a height that is equal
+to the `default' face's height.
+
+- A `variable-pitch' property changes the font family of the
+  heading to that of the `variable-pitch' face (normally a
+  proportionately spaced typeface).  Also check the `fontaine'
+  package (by Protesilaos) for tweaking fonts via faces.
+
+- The symbol of a weight attribute adjusts the font of the
+  heading accordingly, such as `light', `semibold', etc.  Valid
+  symbols are defined in the variable `ef-themes-weights'.  The
+  absence of a weight means that bold will be used by virtue of
+  inheriting the `bold' face.
+
+- A number, expressed as a floating point (e.g. 1.5), adjusts the
+  height of the heading to that many times the base font size.
+  The default height is the same as 1.0, though it need not be
+  explicitly stated.  Instead of a floating point, an acceptable
+  value can be in the form of a cons cell like (height . FLOAT)
+  or (height FLOAT), where FLOAT is the given number.
+
+Combinations of any of those properties are expressed as a list,
+like in these examples:
+
+    (semibold)
+    (variable-pitch semibold)
+    (variable-pitch semibold 1.3)
+    (variable-pitch semibold (height 1.3))   ; same as above
+    (variable-pitch semibold (height . 1.3)) ; same as above
+
+The order in which the properties are set is not significant.
+
+In user configuration files the form may look like this:
+
+    (setq ef-themes-headings
+          (quote ((1 . (light variable-pitch 1.5))
+                  (2 . (regular 1.3))
+                  (3 . (1.1))
+                  (t . (variable-pitch)))))
+
+When defining the styles per heading level, it is possible to
+pass a non-nil value (t) instead of a list of properties.  This
+will retain the original aesthetic for that level.  For example:
+
+    (setq ef-themes-headings
+          (quote ((1 . t)           ; keep the default style
+                  (2 . (variable-pitch 1.2))
+                  (t . (variable-pitch))))) ; style for all other headings
+
+    (setq ef-themes-headings
+          (quote ((1 . (variable-pitch 1.6))
+                  (2 . (1.3))
+                  (t . t)))) ; default style for all other levels"
+  :group 'ef-themes
+  :package-version '(ef-themes . "0.3.0")
+  :version "29.1"
+  :type `(alist
+          :options ,(mapcar (lambda (el)
+                              (list el ef-themes--headings-choice))
+                            '(0 1 2 3 4 5 6 7 8 t))
+          :key-type symbol
+          :value-type ,ef-themes--headings-choice)
+  :link '(info-link "(ef-themes) Heading styles"))
+
+;;; Helpers for user options
+
+(defun ef-themes--key-cdr (key alist)
+  "Get cdr of KEY in ALIST."
+  (cdr (assoc key alist)))
+
+(defun ef-themes--alist-or-seq (properties alist-key seq-pred seq-default)
+  "Return value from alist or sequence.
+Check PROPERTIES for an alist value that corresponds to
+ALIST-KEY.  If no alist is present, search the PROPERTIES
+sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
+  (if-let* ((val (or (alist-get alist-key properties)
+                     (seq-find seq-pred properties seq-default)))
+            ((listp val)))
+      (car val)
+    val))
+
+(defun ef-themes--weight (list)
+  "Search for `ef-themes--heading' weight in LIST."
+  (catch 'found
+    (dolist (elt list)
+      (when (memq elt ef-themes-weights)
+        (throw 'found elt)))))
+
+(defun ef-themes--heading (level)
+  "Conditional styles for `ef-themes-headings' per LEVEL heading."
+  (let* ((key (ef-themes--key-cdr level ef-themes-headings))
+         (style (or key (ef-themes--key-cdr t ef-themes-headings)))
+         (style-listp (listp style))
+         (properties style)
+         (var (when (memq 'variable-pitch properties) 'variable-pitch))
+         (varbold (if var
+                      (append (list 'bold) (list var))
+                    'bold))
+         (weight (when style-listp (ef-themes--weight style))))
+    (list :inherit
+          (cond
+           (weight var)
+           (varbold))
+          :height
+          (ef-themes--alist-or-seq properties 'height #'floatp 'unspecified)
+          :weight
+          (or weight 'unspecified))))
+
 ;;; Commands and their helper functions
 
 (defconst ef-themes-light-themes '( ef-day ef-light ef-spring ef-summer
@@ -225,12 +385,19 @@ Helper function for `ef-themes-preview-colors'."
 
 ;;; Faces and variables
 
+(defgroup ef-themes-faces ()
+  "Faces defined by the Ef themes."
+  :group 'ef-themes
+  :link '(info-link "(ef-themes) Top")
+  :prefix "ef-themes-"
+  :tag "Ef Themes Faces")
+
 ;; This produces `ef-themes-height-0' and the like.
 (defmacro ef-themes--height (n)
-  "Write `defvar' for height level N."
-  `(defcustom ,(intern (format "ef-themes-height-%s" n)) ,(- 1.8 (* n 0.1))
-     ,(format "Height as floating point for %i level heading." n)
-     :type 'float))
+  "Write `defface' for height level N."
+  `(defface ,(intern (format "ef-themes-heading-%s" n)) nil
+     ,(format "Used for level %s heading." n)
+     :group 'ef-themes-faces))
 
 ;; FIXME 2022-08-18: Why won't `dotimes' work with the macro?  (dotimes
 ;; (n 8) ...) does not interpret the n as a number.
@@ -246,6 +413,16 @@ Helper function for `ef-themes-preview-colors'."
 
 (defconst ef-themes-faces
   '(
+;;;; internal faces for headings
+    `(ef-themes-heading-0 ((,c ,@(ef-themes--heading 0) :foreground ,rainbow-0)))
+    `(ef-themes-heading-1 ((,c ,@(ef-themes--heading 1) :foreground ,rainbow-1)))
+    `(ef-themes-heading-2 ((,c ,@(ef-themes--heading 2) :foreground ,rainbow-2)))
+    `(ef-themes-heading-3 ((,c ,@(ef-themes--heading 3) :foreground ,rainbow-3)))
+    `(ef-themes-heading-4 ((,c ,@(ef-themes--heading 4) :foreground ,rainbow-4)))
+    `(ef-themes-heading-5 ((,c ,@(ef-themes--heading 5) :foreground ,rainbow-5)))
+    `(ef-themes-heading-6 ((,c ,@(ef-themes--heading 6) :foreground ,rainbow-6)))
+    `(ef-themes-heading-7 ((,c ,@(ef-themes--heading 7) :foreground ,rainbow-7)))
+    `(ef-themes-heading-8 ((,c ,@(ef-themes--heading 8) :foreground ,rainbow-8)))
 ;;;; all basic faces
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(cursor ((,c :background ,cursor)))
@@ -587,10 +764,10 @@ Helper function for `ef-themes-preview-colors'."
     `(info-menu-header ((,c :inherit bold)))
     `(info-menu-star ((,c :foreground ,red)))
     `(info-node ((,c :inherit bold)))
-    `(info-title-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
-    `(info-title-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
-    `(info-title-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
-    `(info-title-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
+    `(info-title-1 ((,c :inherit ef-themes-heading-1)))
+    `(info-title-2 ((,c :inherit ef-themes-heading-2)))
+    `(info-title-3 ((,c :inherit ef-themes-heading-3)))
+    `(info-title-4 ((,c :inherit ef-themes-heading-4)))
 ;;;; isearch, occur, and the like
     `(isearch ((,c :background ,bg-yellow :foreground ,fg-intense)))
     `(isearch-fail ((,c :background ,bg-red :foreground ,fg-intense)))
@@ -733,12 +910,12 @@ Helper function for `ef-themes-preview-colors'."
     `(markdown-code-face ((,c :background ,bg-inactive :extend t)))
     `(markdown-gfm-checkbox-face ((,c :foreground ,warning)))
     `(markdown-header-face (( )))
-    `(markdown-header-face-1 ((,c :inherit bold :foreground ,rainbow-0 :height ,ef-themes-height-1)))
-    `(markdown-header-face-2 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-2)))
-    `(markdown-header-face-3 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-3)))
-    `(markdown-header-face-4 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-4)))
-    `(markdown-header-face-5 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-5)))
-    `(markdown-header-face-6 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-6)))
+    `(markdown-header-face-1 ((,c :inherit ef-themes-heading-1)))
+    `(markdown-header-face-2 ((,c :inherit ef-themes-heading-2)))
+    `(markdown-header-face-3 ((,c :inherit ef-themes-heading-3)))
+    `(markdown-header-face-4 ((,c :inherit ef-themes-heading-4)))
+    `(markdown-header-face-5 ((,c :inherit ef-themes-heading-5)))
+    `(markdown-header-face-6 ((,c :inherit ef-themes-heading-6)))
     `(markdown-highlighting-face ((,c :background ,bg-info :foreground ,info)))
     `(markdown-inline-code-face ((,c :foreground ,accent-1))) ; same as `org-code'
     `(markdown-italic-face ((,c :inherit italic)))
@@ -852,7 +1029,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-agenda-clocking ((,c :background ,bg-alt :foreground ,red-warmer)))
     `(org-agenda-column-dateline ((,c :background ,bg-alt)))
     `(org-agenda-current-time ((,c :foreground ,variable)))
-    `(org-agenda-date ((,c :foreground ,date :height ,ef-themes-height-3)))
+    `(org-agenda-date ((,c :inherit ef-themes-heading-3)))
     `(org-agenda-date-today ((,c :inherit org-agenda-date :underline t)))
     `(org-agenda-date-weekend ((,c :inherit org-agenda-date)))
     `(org-agenda-date-weekend-today ((,c :inherit org-agenda-date-today)))
@@ -864,7 +1041,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-agenda-filter-regexp ((,c :inherit success)))
     `(org-agenda-filter-tags ((,c :inherit success)))
     `(org-agenda-restriction-lock ((,c :background ,bg-dim :foreground ,fg-dim)))
-    `(org-agenda-structure ((,c :height ,ef-themes-height-0)))
+    `(org-agenda-structure ((,c :inherit ef-themes-heading-0)))
     `(org-agenda-structure-filter ((,c :inherit (warning org-agenda-structure))))
     `(org-agenda-structure-secondary ((,c :foreground ,rainbow-1)))
     `(org-archived ((,c :background ,bg-alt :foreground ,fg-alt)))
@@ -883,7 +1060,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-dispatcher-highlight ((,c :inherit (bold secondary-selection))))
     `(org-document-info ((,c :foreground ,rainbow-1)))
     `(org-document-info-keyword ((,c :inherit shadow)))
-    `(org-document-title ((,c :foreground ,rainbow-0 :height ,ef-themes-height-0)))
+    `(org-document-title ((,c :inherit ef-themes-heading-0)))
     `(org-done ((,c :foreground ,info)))
     `(org-drawer ((,c :inherit shadow)))
     `(org-ellipsis (( ))) ; inherits from the heading's color
@@ -895,14 +1072,14 @@ Helper function for `ef-themes-preview-colors'."
     `(org-indent ((,c :inherit org-hide)))
     `(org-imminent-deadline ((,c :inherit bold :foreground ,err)))
     `(org-latex-and-related ((,c :foreground ,type)))
-    `(org-level-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
-    `(org-level-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
-    `(org-level-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
-    `(org-level-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
-    `(org-level-5 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-5)))
-    `(org-level-6 ((,c :inherit bold :foreground ,rainbow-6 :height ,ef-themes-height-6)))
-    `(org-level-7 ((,c :inherit bold :foreground ,rainbow-7 :height ,ef-themes-height-7)))
-    `(org-level-8 ((,c :inherit bold :foreground ,rainbow-8 :height ,ef-themes-height-8)))
+    `(org-level-1 ((,c :inherit ef-themes-heading-1)))
+    `(org-level-2 ((,c :inherit ef-themes-heading-2)))
+    `(org-level-3 ((,c :inherit ef-themes-heading-3)))
+    `(org-level-4 ((,c :inherit ef-themes-heading-4)))
+    `(org-level-5 ((,c :inherit ef-themes-heading-5)))
+    `(org-level-6 ((,c :inherit ef-themes-heading-6)))
+    `(org-level-7 ((,c :inherit ef-themes-heading-7)))
+    `(org-level-8 ((,c :inherit ef-themes-heading-8)))
     `(org-link ((,c :inherit link)))
     `(org-list-dt ((,c :inherit bold)))
     `(org-macro ((,c :foreground ,accent-2)))
@@ -941,14 +1118,14 @@ Helper function for `ef-themes-preview-colors'."
     `(org-modern-time-inactive ((,c :inherit org-modern-date-inactive)))
     `(org-modern-todo ((,c :background ,bg-err :foreground ,err)))
 ;;;; outline-mode
-    `(outline-1 ((,c :inherit bold :foreground ,rainbow-1 :height ,ef-themes-height-1)))
-    `(outline-2 ((,c :inherit bold :foreground ,rainbow-2 :height ,ef-themes-height-2)))
-    `(outline-3 ((,c :inherit bold :foreground ,rainbow-3 :height ,ef-themes-height-3)))
-    `(outline-4 ((,c :inherit bold :foreground ,rainbow-4 :height ,ef-themes-height-4)))
-    `(outline-5 ((,c :inherit bold :foreground ,rainbow-5 :height ,ef-themes-height-5)))
-    `(outline-6 ((,c :inherit bold :foreground ,rainbow-6 :height ,ef-themes-height-6)))
-    `(outline-7 ((,c :inherit bold :foreground ,rainbow-7 :height ,ef-themes-height-7)))
-    `(outline-8 ((,c :inherit bold :foreground ,rainbow-8 :height ,ef-themes-height-8)))
+    `(outline-1 ((,c :inherit ef-themes-heading-1)))
+    `(outline-2 ((,c :inherit ef-themes-heading-2)))
+    `(outline-3 ((,c :inherit ef-themes-heading-3)))
+    `(outline-4 ((,c :inherit ef-themes-heading-4)))
+    `(outline-5 ((,c :inherit ef-themes-heading-5)))
+    `(outline-6 ((,c :inherit ef-themes-heading-6)))
+    `(outline-7 ((,c :inherit ef-themes-heading-7)))
+    `(outline-8 ((,c :inherit ef-themes-heading-8)))
 ;;;; outline-minor-faces
     `(outline-minor-0 (( )))
 ;;;; package (M-x list-packages)
