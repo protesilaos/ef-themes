@@ -152,7 +152,7 @@
       (rainbow-2 magenta)
       (rainbow-3 blue-warmer)
       (rainbow-4 red)
-      (rainbow-5 green-cooler)
+      (rainbow-5 green)
       (rainbow-6 magenta-warmer)
       (rainbow-7 cyan)
       (rainbow-8 yellow))
