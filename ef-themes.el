@@ -330,8 +330,8 @@ When called from Lisp, THEME is a symbol."
   "Toggle between the two `ef-themes-to-toggle'."
   (interactive)
   (when-let* ((themes (ef-themes--toggle-theme-p))
-             (one (car themes))
-             (two (cadr themes)))
+              (one (car themes))
+              (two (cadr themes)))
     (unless (eq (length themes) 2)
       (user-error "Can only toggle between two themes"))
     (if (eq (car custom-enabled-themes) one)
@@ -406,7 +406,7 @@ Routine for `ef-themes-preview-colors'."
             (insert " ")))
         (setq-local revert-buffer-function
                     (lambda (_ignore-auto _noconfirm)
-                       (ef-themes--preview-colors-render current-buffer current-theme)))))))
+                      (ef-themes--preview-colors-render current-buffer current-theme)))))))
 
 (defvar ef-themes--preview-colors-prompt-history '()
   "Minibuffer history for `ef-themes--preview-colors-prompt'.")
@@ -446,10 +446,10 @@ Helper function for `ef-themes-preview-colors'."
 ;; This produces `ef-themes-height-0' and the like.
 (dotimes (n 9)
   (custom-declare-face
-    (intern (format "ef-themes-heading-%d" n))
-    nil (format "Used for level %d heading." n)
-    :package-version '(ef-themes . "0.3.0")
-    :group 'ef-themes-faces))
+   (intern (format "ef-themes-heading-%d" n))
+   nil (format "Used for level %d heading." n)
+   :package-version '(ef-themes . "0.3.0")
+   :group 'ef-themes-faces))
 
 (defface ef-themes-key-binding nil
   "Face for key bindings."
@@ -633,7 +633,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; dictionary
     `(dictionary-button-face ((,c :inherit bold)))
     `(dictionary-reference-face ((,c :inherit link)))
-    `(dictionary-word-definition-face (()))
+    `(dictionary-word-definition-face (( )))
     `(dictionary-word-entry-face ((,c :inherit font-lock-comment-face)))
 ;;;; diff-hl
     `(diff-hl-change ((,c :background ,bg-changed-refine)))
