@@ -126,7 +126,8 @@ Everything is in place to set up the package.
 
 ;; If you like two specific themes and want to switch between them, you
 ;; can specify them in `ef-themes-to-toggle' and then invoke the command
-;; `ef-themes-toggle':
+;; `ef-themes-toggle'.  All the themes are included in the variable
+;; `ef-themes-collection'.
 (setq ef-themes-to-toggle '(ef-summer ef-winter))
 
 ;; Make customisations that affect Emacs faces BEFORE loading a theme
