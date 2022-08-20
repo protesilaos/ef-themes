@@ -1238,6 +1238,14 @@ Helper function for `ef-themes-preview-colors'."
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
     `(show-paren-mismatch ((,c :background ,bg-red :foreground ,fg-intense)))
+;;;; smerge
+    `(smerge-base ((,c :inherit diff-changed)))
+    `(smerge-lower ((,c :inherit diff-added)))
+    `(smerge-markers ((,c :inherit diff-header)))
+    `(smerge-refined-added ((,c :inherit diff-refine-added)))
+    `(smerge-refined-changed (( )))
+    `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
+    `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; tab-bar-mode
     `(tab-bar ((,c :background ,bg-alt)))
     `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-main :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
