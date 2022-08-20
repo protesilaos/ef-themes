@@ -491,6 +491,16 @@ lofty accessibility target.
 :CUSTOM_ID: h:a6d5c6f1-84c5-4d74-ba39-b5ccda05497a
 :END:
 
+** What does Ef mean?
+:PROPERTIES:
+:CUSTOM_ID: h:22a92ee8-eda6-4c29-b850-b2709a7239c0
+:END:
+
+"Ef" is a Greek word (ευ), commonly used as a prefix to denote that
+something is good, nice, and/or easy.  For example, eftopia (ευτοπία) is
+the opposite of dystopia (δυστοπία): a good place as opposed to a bad
+place.
+
 ** Will you stop using the modus-themes?
 :PROPERTIES:
 :CUSTOM_ID: h:33c9b520-0af2-441c-a2e8-2945522feb3e
