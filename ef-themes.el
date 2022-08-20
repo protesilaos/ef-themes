@@ -443,7 +443,7 @@ Helper function for `ef-themes-preview-colors'."
   :tag "Ef Themes Faces")
 
 ;; This produces `ef-themes-height-0' and the like.
-(dotimes (n 8)
+(dotimes (n 9)
   (custom-declare-face
     (intern (format "ef-themes-heading-%d" n))
     nil (format "Used for level %d heading." n)
