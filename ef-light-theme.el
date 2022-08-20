@@ -154,7 +154,7 @@
       (rainbow-4 yellow-cooler)
       (rainbow-5 magenta-cooler)
       (rainbow-6 red-cooler)
-      (rainbow-7 green)
+      (rainbow-7 green-cooler)
       (rainbow-8 yellow))
     "The `ef-light' palette.")
 
