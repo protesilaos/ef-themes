@@ -427,9 +427,9 @@ any form called inside of it.  For example:
 ;; => ("#fff2f3" "#5f456f" "#ffa4dc" "#cf0090")
 #+end_src
 
-The above return value is for =ef-summer=.  Switching to another theme
-and evaluating this code anew will give us the relevant results for that
-theme.  The same with =ef-winter=:
+The above return value is for =ef-summer= when that is the active Ef
+theme.  Switching to another theme and evaluating this code anew will
+give us the relevant results for that theme.  The same with =ef-winter=:
 
 #+begin_src emacs-lisp
 (ef-themes-with-colors
