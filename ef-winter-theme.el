@@ -56,7 +56,7 @@
       (red-warmer      "#ef6560")
       (red-cooler      "#ff6a7a")
       (red-faint       "#d56f72")
-      (green           "#26a254")
+      (green           "#29a444")
       (green-warmer    "#6aad0f")
       (green-cooler    "#00a392")
       (green-faint     "#61a06c")
