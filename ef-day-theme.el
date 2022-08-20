@@ -56,8 +56,8 @@
       (red-warmer      "#ce3f00")
       (red-cooler      "#cf2f4f")
       (red-faint       "#b05350")
-      (green           "#2a7a0c")
-      (green-warmer    "#437000")
+      (green           "#007a0a")
+      (green-warmer    "#5a7400")
       (green-cooler    "#0f7f5f")
       (green-faint     "#61756c")
       (yellow          "#a45a22")
@@ -117,7 +117,7 @@
       ;; Mappings
       (err red-warmer)
       (warning yellow-warmer)
-      (info green-warmer)
+      (info green)
 
       (link red)
       (link-alt green-warmer)
