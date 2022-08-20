@@ -150,11 +150,11 @@
       (rainbow-0 magenta-warmer)
       (rainbow-1 magenta-cooler)
       (rainbow-2 yellow)
-      (rainbow-3 cyan-cooler)
+      (rainbow-3 cyan)
       (rainbow-4 magenta)
       (rainbow-5 blue-warmer)
       (rainbow-6 red-warmer)
-      (rainbow-7 cyan)
+      (rainbow-7 cyan-cooler)
       (rainbow-8 yellow-cooler))
     "The `ef-summer' palette.")
 
