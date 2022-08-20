@@ -137,7 +137,7 @@
       (link-alt blue-cooler)
       (date cyan)
       (name green-cooler)
-      (keybind blue-cooler)
+      (keybind red-warmer)
 
       (builtin green)
       (comment yellow-faint)
