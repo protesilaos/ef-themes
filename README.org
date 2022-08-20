@@ -132,7 +132,7 @@ Everything is in place to set up the package.
 ;; Make customisations that affect Emacs faces BEFORE loading a theme
 ;; (any change needs a theme re-load to take effect).
 
-(setq ef-themes-headings ; read the manual's entry of the doc string
+(setq ef-themes-headings ; read the manual's entry or the doc string
       '((0 . (variable-pitch light 1.9))
         (1 . (variable-pitch light 1.8))
         (2 . (variable-pitch regular 1.7))
