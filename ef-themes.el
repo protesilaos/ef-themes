@@ -205,7 +205,7 @@ will retain the original aesthetic for that level.  For example:
                             '(0 1 2 3 4 5 6 7 8 t))
           :key-type symbol
           :value-type ,ef-themes--headings-choice)
-  :link '(info-link "(ef-themes) Heading styles"))
+  :link '(info-link "(ef-themes) Option for headings"))
 
 ;;; Helpers for user options
 
