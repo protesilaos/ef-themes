@@ -702,6 +702,10 @@ Helper function for `ef-themes-preview-colors'."
     `(diredfl-symlink ((,c :inherit dired-symlink)))
     `(diredfl-tagged-autofile-name ((,c :inherit (diredfl-autofile-name dired-marked))))
     `(diredfl-write-priv ((,c :foreground ,rainbow-2)))
+;;;; doom-modeline
+    ;; NOTE 2022-08-20: This is the only face that seems necessary.  All
+    ;; others inherit from basic faces.
+    `(doom-modeline-bar ((,c :background ,bg-accent)))
 ;;;; ediff
     `(ediff-current-diff-A ((,c :inherit diff-removed)))
     `(ediff-current-diff-Ancestor ((,c :background ,bg-region))) ; TODO 2022-08-14: Needs review
