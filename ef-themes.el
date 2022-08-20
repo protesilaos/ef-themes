@@ -449,9 +449,13 @@ Helper function for `ef-themes-preview-colors'."
     nil (format "Used for level %d heading." n)
     :group 'ef-themes-faces))
 
+(defface ef-themes-key-binding nil
+  "Face for key bindings."
+  :group 'ef-themes-faces)
+
 (defconst ef-themes-faces
   '(
-;;;; internal faces for headings
+;;;; internal faces
     `(ef-themes-heading-0 ((,c ,@(ef-themes--heading 0) :foreground ,rainbow-0)))
     `(ef-themes-heading-1 ((,c ,@(ef-themes--heading 1) :foreground ,rainbow-1)))
     `(ef-themes-heading-2 ((,c ,@(ef-themes--heading 2) :foreground ,rainbow-2)))
@@ -461,6 +465,7 @@ Helper function for `ef-themes-preview-colors'."
     `(ef-themes-heading-6 ((,c ,@(ef-themes--heading 6) :foreground ,rainbow-6)))
     `(ef-themes-heading-7 ((,c ,@(ef-themes--heading 7) :foreground ,rainbow-7)))
     `(ef-themes-heading-8 ((,c ,@(ef-themes--heading 8) :foreground ,rainbow-8)))
+    `(ef-themes-key-binding ((,c :inherit bold :foreground ,keybind)))
 ;;;; all basic faces
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(cursor ((,c :background ,cursor)))
@@ -869,7 +874,7 @@ Helper function for `ef-themes-preview-colors'."
     `(magit-hash ((,c :inherit shadow)))
     `(magit-head ((,c :inherit magit-branch-local)))
     `(magit-header-line ((,c :inherit bold)))
-    `(magit-header-line-key ((,c :inherit help-key-binding)))
+    `(magit-header-line-key ((,c :inherit ef-themes-key-binding)))
     `(magit-header-line-log-select ((,c :inherit bold)))
     `(magit-keyword ((,c :foreground ,keyword)))
     `(magit-keyword-squash ((,c :inherit bold :foreground ,warning)))
@@ -932,7 +937,7 @@ Helper function for `ef-themes-preview-colors'."
     `(marginalia-file-priv-read ((,c :foreground ,rainbow-1)))
     `(marginalia-file-priv-write ((,c :foreground ,rainbow-2)))
     `(marginalia-function ((,c :foreground ,fnname)))
-    `(marginalia-key ((,c :inherit help-key-binding)))
+    `(marginalia-key ((,c :inherit ef-themes-key-binding)))
     `(marginalia-lighter ((,c :inherit shadow)))
     `(marginalia-liqst ((,c :inherit shadow)))
     `(marginalia-mode ((,c :foreground ,constant)))
@@ -1015,7 +1020,7 @@ Helper function for `ef-themes-preview-colors'."
     `(mu4e-header-marks-face ((,c :inherit mu4e-special-header-value-face)))
     `(mu4e-header-title-face ((,c :foreground ,rainbow-0)))
     `(mu4e-header-value-face ((,c :inherit message-header-other)))
-    `(mu4e-highlight-face ((,c :inherit help-key-binding)))
+    `(mu4e-highlight-face ((,c :inherit ef-themes-key-binding)))
     `(mu4e-link-face ((,c :inherit link)))
     `(mu4e-modeline-face ((,c :foreground ,info)))
     `(mu4e-moved-face ((,c :inherit italic :foreground ,warning)))
@@ -1038,7 +1043,7 @@ Helper function for `ef-themes-preview-colors'."
     `(notmuch-crypto-signature-good ((,c :inherit success)))
     `(notmuch-crypto-signature-good-key ((,c :inherit success)))
     `(notmuch-crypto-signature-unknown ((,c :inherit warning)))
-    `(notmuch-jump-key ((,c :inherit help-key-binding)))
+    `(notmuch-jump-key ((,c :inherit ef-themes-key-binding)))
     `(notmuch-message-summary-face ((,c :inherit bold :background ,bg-dim)))
     `(notmuch-search-count ((,c :foreground ,fg-dim)))
     `(notmuch-search-date ((,c :foreground ,date)))
@@ -1270,7 +1275,7 @@ Helper function for `ef-themes-preview-colors'."
     `(transient-heading ((,c :inherit bold)))
     `(transient-inactive-argument ((,c :inherit shadow)))
     `(transient-inactive-value ((,c :inherit shadow)))
-    `(transient-key ((,c :inherit help-key-binding)))
+    `(transient-key ((,c :inherit ef-themes-key-binding)))
     `(transient-mismatched-key ((,c :underline t)))
     `(transient-nonstandard-key ((,c :underline t)))
     `(transient-pink ((,c :inherit bold :foreground ,magenta)))
