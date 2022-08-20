@@ -610,7 +610,7 @@ Helper function for `ef-themes-preview-colors'."
     `(completions-common-part ((,c :inherit bold :foreground ,accent-0)))
     `(completions-first-difference ((,c :inherit bold :foreground ,accent-1)))
 ;;;; custom (M-x customize)
-    `(custom-button ((,c :box ,fg-dim :background ,bg-alt :foreground ,fg-intense)))
+    `(custom-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
     `(custom-button-mouse ((,c :inherit (highlight custom-button))))
     `(custom-button-pressed ((,c :inherit (secondary-selection custom-button))))
     `(custom-changed ((,c :background ,bg-changed)))
