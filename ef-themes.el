@@ -199,7 +199,6 @@ will retain the original aesthetic for that level.  For example:
                   (t . t)))) ; default style for all other levels"
   :group 'ef-themes
   :package-version '(ef-themes . "0.3.0")
-  :version "29.1"
   :type `(alist
           :options ,(mapcar (lambda (el)
                               (list el ef-themes--headings-choice))
