@@ -125,7 +125,7 @@
       (bg-info       "#ddf5cc") ; check with info
 
       (border        "#ded0bb")
-      (cursor        "#b00f00")
+      (cursor        "#cf1f00")
       (fg-intense    "#000000")
 
       ;; Mappings
