@@ -1336,7 +1336,11 @@ Helper function for `ef-themes-preview-colors'."
   "Face specs for use with `ef-themes-theme'.")
 
 (defconst ef-themes-custom-variables
-  '()
+  '(
+;;;; chart
+    `(chart-face-color-list
+      '( ,red-graph-0-bg ,green-graph-0-bg ,yellow-graph-0-bg ,blue-graph-0-bg ,magenta-graph-0-bg ,cyan-graph-0-bg
+         ,red-graph-1-bg ,green-graph-1-bg ,yellow-graph-1-bg ,blue-graph-1-bg ,magenta-graph-1-bg ,cyan-graph-1-bg)))
   "Custom variables for `ef-themes-theme'.")
 
 ;;; Theme macros
