@@ -101,6 +101,20 @@
       (bg-removed-faint  "#efe6cf")
       (bg-removed-refine "#f0da88")
 
+      ;; Graphs
+      (red-graph-0-bg     "#ef7969")
+      (red-graph-1-bg     "#ffaab4")
+      (green-graph-0-bg   "#4faa09")
+      (green-graph-1-bg   "#8fef00")
+      (yellow-graph-0-bg  "#ffcf00")
+      (yellow-graph-1-bg  "#f9ff00")
+      (blue-graph-0-bg    "#7090ff")
+      (blue-graph-1-bg    "#9fc6ff")
+      (magenta-graph-0-bg "#e07fff")
+      (magenta-graph-1-bg "#fad0ff")
+      (cyan-graph-0-bg    "#70d3f0")
+      (cyan-graph-1-bg    "#afefff")
+
       ;; Special hues
       (bg-mode-line  "#99c7ff") (fg-mode-line  "#0a0a1f")
       (bg-accent     "#eecc33") (fg-accent     "#000000")

@@ -1148,6 +1148,15 @@ Helper function for `ef-themes-preview-colors'."
     `(org-verbatim ((,c :foreground ,accent-0)))
     `(org-verse ((,c :inherit org-block)))
     `(org-warning ((,c :inherit warning)))
+;;;; org-habit
+    `(org-habit-alert-face ((,c :background ,yellow-graph-0-bg :foreground "black"))) ; special case
+    `(org-habit-alert-future-face ((,c :background ,yellow-graph-1-bg)))
+    `(org-habit-clear-face ((,c :background ,blue-graph-0-bg :foreground "black"))) ; special case
+    `(org-habit-clear-future-face ((,c :background ,blue-graph-1-bg)))
+    `(org-habit-overdue-face ((,c :background ,red-graph-0-bg)))
+    `(org-habit-overdue-future-face ((,c :background ,red-graph-1-bg)))
+    `(org-habit-ready-face ((,c :background ,green-graph-0-bg :foreground "black"))) ; special case
+    `(org-habit-ready-future-face ((,c :background ,green-graph-1-bg)))
 ;;;; org-modern
     `(org-modern-block-keyword (( )))
     `(org-modern-date-active ((,c :background ,bg-alt)))
