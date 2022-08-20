@@ -74,6 +74,7 @@
 This is used by the commands `ef-themes-select' and
 `ef-themes-load-random'."
   :type 'hook
+  :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
 
 (defcustom ef-themes-to-toggle nil
@@ -91,6 +92,7 @@ themes that form part of this collection."
                         ,@(mapcar (lambda (theme)
                                     (list 'const theme))
                                   ef-themes-collection))))
+  :package-version '(ef-themes . "0.3.0")
   :group 'ef-themes)
 
 (defconst ef-themes-weights
@@ -446,10 +448,12 @@ Helper function for `ef-themes-preview-colors'."
   (custom-declare-face
     (intern (format "ef-themes-heading-%d" n))
     nil (format "Used for level %d heading." n)
+    :package-version '(ef-themes . "0.3.0")
     :group 'ef-themes-faces))
 
 (defface ef-themes-key-binding nil
   "Face for key bindings."
+  :package-version '(ef-themes . "0.3.0")
   :group 'ef-themes-faces)
 
 (defconst ef-themes-faces
