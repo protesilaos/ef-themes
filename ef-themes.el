@@ -361,9 +361,10 @@ to the relevant themes.
 When called interactively, VARIANT is the prefix argument which
 prompts with completion for either `light' or `dark'."
   (interactive
-   (list (when current-prefix-arg
-           (intern (completing-read "Random choice of Ef themes VARIANT: "
-                                    '(light dark) nil t)))))
+   (list
+    (when current-prefix-arg
+      (intern (completing-read "Random choice of Ef themes VARIANT: "
+                               '(light dark) nil t)))))
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
