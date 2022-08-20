@@ -43,7 +43,7 @@
     '(;; Basic tones
       (bg-main     "#fff5ea")
       (fg-main     "#584141")
-      (bg-dim      "#f5eddf")
+      (bg-dim      "#f3ebdc")
       (fg-dim      "#63728f")
       (bg-alt      "#e9e0d8")
       (fg-alt      "#8f5f4a")
