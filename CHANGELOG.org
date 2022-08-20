@@ -1,0 +1,190 @@
+#+title: Change log of the Ef Themes
+#+author: Protesilaos Stavrou
+#+email: info@protesilaos.com
+#+options: ':nil toc:nil num:nil author:nil email:nil
+
+This document contains the release notes for each tagged commit on the
+project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
+
+The newest release is at the top.  For further details, please consult
+the manual: <https://protesilaos.com/emacs/ef-themes>.
+
+* Version 0.3.0 on 2022-08-20
+:PROPERTIES:
+:CUSTOM_ID: h:f91c2c29-cc5b-4cf3-a322-f3a286a17e8c
+:END:
+
+** User-facing changes
+:PROPERTIES:
+:CUSTOM_ID: h:691f108f-7a92-47a9-a3a3-89c31916d8c8
+:END:
+
++ Revised the minimum Emacs version of the =ef-themes= package.  It now
+  depends on Emacs 27.1 instead of Emacs 28.1.  Relevant internal
+  adjustments were made, some of which are courtesy of Philip
+  Kaludercic: <https://lists.sr.ht/~protesilaos/ef-themes/patches/34787>.
+
+  [ Philip has assigned copyright to the Free Software Foundation.  This
+    is necessary for all non-trivial patches. ]
+
++ Added two new themes to the collection which are designed for users
+  with red-green colour deficiency/blindness (deuteranopia).  In simple
+  terms, their effective palette consists of blue, yellow, and the base
+  tones.  The themes are named descriptively: ~ef-deuteranopia-dark~ and
+  ~ef-deuteranopia-light~.  Announcement with screenshots:
+  <https://protesilaos.com/codelog/2022-08-19-ef-themes-deuteranopia/>.
+
++ Reconsidered the principle of what kind of user options are
+  acceptable.  Those which affect colours directly will never be a part
+  of the project.  Others are subject to consideration with a preference
+  for simplicity.  Detailed documentation to do-it-yourself will still
+  be preferred over user options.
+
++ Implemented the ~ef-themes-headings~ user option which provides the
+  mechanism to change the weight and height of each heading level, as
+  well as set it to ~variable-pitch~ (i.e. a proportionately spaced
+  font).  The doc string of that variable or the relevant entry in the
+  manual explain the particularities and provided code samples.
+
+  To accommodate this variable, the default style of all headings has
+  been revised to remove the added height they once had.  Users who
+  preferred the previous style must add the following to their
+  configuration BEFORE the code that actually loads the theme (e.g. a
+  ~load-theme~ call):
+
+  #+begin_src emacs-lisp
+  ;; Restore height of each heading level to its previous value.
+  (setq ef-themes-headings
+        '((0 . (1.9))
+          (1 . (1.8))
+          (2 . (1.7))
+          (3 . (1.6))
+          (4 . (1.5))
+          (5 . (1.4))
+          (6 . (1.3))
+          (7 . (1.2))
+          (t . (1.1))))
+
+  ;; First set the above configuration, then load the theme (changes to
+  ;; user options require a theme re-load).
+  (load-theme 'ef-summer :no-confirm)
+  #+end_src
+
++ Introduced the command ~ef-themes-toggle~ and the companion user
+  option ~ef-themes-to-toggle~.  To use the command, one must first set
+  their two preferred Ef themes, such as with this:
+
+  #+begin_src emacs-lisp
+  (setq ef-themes-to-toggle '(ef-summer ef-winter))
+  #+end_src
+
+  The names of all the themes are included in the ~ef-themes-collection~
+  variable.  Though recall that the commands ~ef-themes-select~ and
+  ~ef-themes-load-random~ still use the entire collection (read their
+  doc strings or consult the manual).
+
++ Fixed how themes are made available at startup.  Before, there was a
+  mistake to how items were registered as "known" and were thus not
+  recognised by our commands, even though the standard ~load-theme~
+  worked as expected.  Thanks to Iris Garcia for reporting the problem
+  in issue 2 on the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/2>.  It was
+  propagated to users as version 0.2.1 of the =ef-themes=.
+
++ Added support for these packages:
+
+  - chart
+  - doom-modeline (tentative)
+  - info
+  - org-habit
+  - rcirc
+  - smerge
+
+  Thanks to Spike-Leung for reminding me about ~org-habit~ in issue 5
+  over at the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/5>.
+
+  [ Remember that if a package looks awfully out of place, it is not
+    support (yet). ]
+
++ Expanded and/or clarified the manual, including an answer to the
+  question of what "Ef" means:
+
+  #+begin_quote
+  "Ef" is a Greek word (ευ), commonly used as a prefix to denote that
+  something is good, nice, and/or easy.  For example, eftopia (ευτοπία)
+  is the opposite of dystopia (δυστοπία): a good place as opposed to a
+  bad place.
+  #+end_quote
+
++ Helped Adam Sherwood figure out why zsh-autosuggestions did not look
+  right.  In short: this has nothing to do with Emacs.  Try to avoid
+  termcolor{0,7,8,15} as a default.  Prefer the remaining nominal accent
+  colours, as every theme is more likely to work with those, whereas,
+  say, termcolor0 ("black") will not be legible with dark themes.  This
+  was done in issue 3 on the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/3>.
+
+** Internal refinements
+:PROPERTIES:
+:CUSTOM_ID: h:bf3fcbee-9057-497a-8258-2ef8029a3459
+:END:
+
++ Recalibrated lots of colour values and mappings across several themes.
+  The changes are small and help with the internal consistency of each
+  theme.  Consult the Git commit log for the minutiae.
+
++ The internal faces for headings are now done with a ~dotimes~ call on
+  ~custom-declare-face~ instead of a bespoke macro.  Thanks to Philip
+  Kaludercic for the patch:
+  <https://lists.sr.ht/~protesilaos/ef-themes/patches/34791>.
+
++ Applied ~file-equal-p~ for the registration of the themes in the
+  relevant path.  Doing so is generally more resilient than ~equal~ and
+  might avoid an unexpected edge case in the future.  Thanks to Philip
+  Kaludercic for the patch:
+  <https://lists.sr.ht/~protesilaos/ef-themes/patches/34789>.
+
++ Opted for ={if,when}-let*= over ={if,when}-let=.  The former do not
+  support the obsolete single-binding syntax, and make clear that both
+  macros operate more like ~let*~ than ~let~ by evaluating and binding
+  variables sequentially.  Thanks to Philip Kaludercic for the patch:
+  <https://lists.sr.ht/~protesilaos/ef-themes/patches/34787>.
+
+** Acknowledgement for the first version of the project
+:PROPERTIES:
+:CUSTOM_ID: h:f7b55da3-a848-463c-ab71-aa044ee7a8dd
+:END:
+
+Thanks to user Summer Emacs whose feedback helped define the identity of
+the ~ef-summer~ theme.  Summer's comments pertained to the need to
+increase the occurence of yellow as the theme used to be predominantly
+magenta and purple.  I thus implemented the revised colour mapping and
+made the relevant adjustments.  Without Summer's comments, ~ef-summer~
+wouldn't have been as pretty.
+
+* Version 0.2.0 on 2022-08-18
+:PROPERTIES:
+:CUSTOM_ID: h:1e875631-853a-4bd1-9a33-ff4e51fe7614
+:END:
+
+[ Added after the fact on 2022-08-20 ]
+
+No release notes were produced at the time.  This version included
+various stylistic refinements and added commands for (i) loading a theme
+and (ii) previewing a theme's colour palette.
+
+The commands which load a theme call the =ef-themes-post-load-hook=.
+Advanced and/or do-it-yourself users may have a use for it.  The manual
+will eventually provide specific code samples.
+
+* Version 0.1.0 on 2022-08-17
+:PROPERTIES:
+:CUSTOM_ID: h:fb284e98-ec9c-434d-9e9a-1773300d2fb6
+:END:
+
+[ Added after the fact on 2022-08-20 ]
+
+There were no release notes for it.  It established the foundations of
+the project: the main macros, the character of each theme, etc.  Check
+the Git commit log for more.

@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.2.0
-#+macro:                 release-date 2022-08-18
-#+macro:                 development-version 0.3.0-dev
+#+macro:                 stable-version 0.3.0
+#+macro:                 release-date 2022-08-20
+#+macro:                 development-version 0.4.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -172,8 +172,6 @@ Everything is in place to set up the package.
 :CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
 :END:
 
-[ Part of {{{development-version}}} ]
-
 Most items in the =ef-themes= collection are designed to use colors from
 many sides of the spectrum.  Those items generally are inappropriate for
 people with red-green color deficiency or deuteranopia.  We do,
@@ -198,8 +196,6 @@ change thus requires a theme re-load ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51]
 :CUSTOM_ID: h:a58b8e21-0f8f-4763-9b47-185bf7e10043
 :END:
 
-[ Part of {{{development-version}}}. ]
-
 #+vindex: ef-themes-to-toggle
 #+findex: ef-themes-toggle
 The user option ~ef-themes-to-toggle~ expects two symbols that name
@@ -215,8 +211,6 @@ minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][C
 :PROPERTIES:
 :CUSTOM_ID: h:a7a02817-e324-43e9-a7d8-fde024530af6
 :END:
-
-[ Part of {{{development-version}}} ]
 
 #+vindex: ef-themes-headings
 The user option ~ef-themes-headings~ provides support for individual
