@@ -769,6 +769,15 @@ Helper function for `ef-themes-preview-colors'."
     `(eshell-ls-symlink ((,c :inherit link)))
     `(eshell-ls-unreadable ((,c :inherit shadow)))
     `(eshell-prompt ((,c :inherit minibuffer-prompt)))
+;;;; eww
+    `(eww-invalid-certificate ((,c :foreground ,err)))
+    `(eww-valid-certificate ((,c :foreground ,info)))
+    `(eww-form-checkbox ((,c :inherit eww-form-text)))
+    `(eww-form-file ((,c :inherit eww-form-submit)))
+    `(eww-form-select ((,c :inherit eww-form-submit)))
+    `(eww-form-submit ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
+    `(eww-form-text ((,c :inherit widget-field)))
+    `(eww-form-textarea ((,c :inherit eww-form-text)))
 ;;;; font-lock
     `(font-lock-builtin-face ((,c :inherit bold :foreground ,builtin)))
     `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))
