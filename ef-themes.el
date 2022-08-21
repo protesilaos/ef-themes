@@ -732,7 +732,7 @@ Helper function for `ef-themes-preview-colors'."
     `(ediff-odd-diff-C ((,c :inherit ediff-even-diff-C)))
 ;;;; eldoc
     ;; NOTE: see https://github.com/purcell/package-lint/issues/187
-    (list 'eldoc-highlight-function-argument `((,c :inherit bold :background ,bg-dim :foreground ,accent-0)))
+    (list 'eldoc-highlight-function-argument `((,c :inherit warning :background ,bg-warning)))
 ;;;; elfeed
     `(elfeed-log-date-face ((,c :inherit elfeed-search-date-face)))
     `(elfeed-log-debug-level-face ((,c :inherit elfeed-search-filter-face)))
