@@ -1106,7 +1106,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-column-title ((,c :inherit (bold default) :underline t :background ,bg-alt)))
     `(org-date ((,c :foreground ,date)))
     `(org-date-selected ((,c :foreground ,date :inverse-video t)))
-    `(org-dispatcher-highlight ((,c :inherit (bold secondary-selection))))
+    `(org-dispatcher-highlight ((,c :inherit warning :background ,bg-warning)))
     `(org-document-info ((,c :foreground ,rainbow-1)))
     `(org-document-info-keyword ((,c :inherit shadow)))
     `(org-document-title ((,c :inherit ef-themes-heading-0)))
