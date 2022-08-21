@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 0.3.1
+;; Version: 0.3.2
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -1165,16 +1165,16 @@ Helper function for `ef-themes-preview-colors'."
     `(org-habit-ready-face ((,c :background ,green-graph-0-bg :foreground "black"))) ; special case
     `(org-habit-ready-future-face ((,c :background ,green-graph-1-bg)))
 ;;;; org-modern
-    `(org-modern-block-keyword (( )))
-    `(org-modern-date-active ((,c :background ,bg-alt)))
-    `(org-modern-date-inactive ((,c :background ,bg-dim :foreground ,fg-dim)))
-    `(org-modern-done ((,c :background ,bg-info :foreground ,info)))
-    `(org-modern-priority ((,c :inherit org-priority :background ,bg-dim)))
+    `(org-modern-date-active ((,c :inherit org-modern-label :background ,bg-alt)))
+    `(org-modern-date-inactive ((,c :inherit org-modern-label :background ,bg-dim :foreground ,fg-dim)))
+    `(org-modern-done ((,c :inherit org-modern-label :background ,bg-info :foreground ,info)))
+    `(org-modern-label ((,c :height 0.9 :width condensed :weight regular :underline nil)))
+    `(org-modern-priority ((,c :inherit (org-modern-label org-priority) :background ,bg-dim)))
     `(org-modern-statistics ((,c :background ,bg-dim)))
-    `(org-modern-tag ((,c :inherit org-tag :background ,bg-dim)))
-    `(org-modern-time-active ((,c :background ,bg-active :foreground ,fg-intense)))
-    `(org-modern-time-inactive ((,c :inherit org-modern-date-inactive)))
-    `(org-modern-todo ((,c :background ,bg-err :foreground ,err)))
+    `(org-modern-tag ((,c :inherit (org-modern-label org-tag) :background ,bg-dim)))
+    `(org-modern-time-active ((,c :inherit org-modern-label :background ,bg-active :foreground ,fg-intense)))
+    `(org-modern-time-inactive ((,c :inherit (org-modern-label org-modern-date-inactive))))
+    `(org-modern-todo ((,c :inherit org-modern-label :background ,bg-err :foreground ,err)))
 ;;;; outline-mode
     `(outline-1 ((,c :inherit ef-themes-heading-1)))
     `(outline-2 ((,c :inherit ef-themes-heading-2)))
