@@ -314,7 +314,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | magenta        | #d5206f |    4.83 |    4.26 |    3.89 |    4.56 |
 | magenta-warmer | #cb26a0 |    4.76 |    4.20 |    3.84 |    4.50 |
 | magenta-cooler | #9435b4 |    6.01 |    5.30 |    4.84 |    5.67 |
-| magenta-faint  | #a04450 |    5.99 |    5.28 |    4.83 |    5.65 |
+| magenta-faint  | #a04360 |    5.94 |    5.24 |    4.79 |    5.61 |
 | cyan           | #1f6fbf |    5.04 |    4.44 |    4.06 |    4.76 |
 | cyan-warmer    | #3f6faf |    5.02 |    4.42 |    4.04 |    4.74 |
 | cyan-cooler    | #0f7b8f |    4.84 |    4.27 |    3.91 |    4.57 |
