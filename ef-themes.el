@@ -562,7 +562,7 @@ Helper function for `ef-themes-preview-colors'."
     `(bongo-currently-playing-track ((,c :inherit bold)))
     `(bongo-elapsed-track-part ((,c :background ,bg-alt :underline t)))
     `(bongo-filled-seek-bar ((,c :background ,bg-hover)))
-    `(bongo-marked-track ((,c :inherit warning :background ,bg-dim)))
+    `(bongo-marked-track ((,c :inherit success :background ,bg-info)))
     `(bongo-marked-track-line ((,c :background ,bg-dim)))
     `(bongo-played-track ((,c :strike-through t)))
     `(bongo-track-length ((,c :inherit shadow)))
