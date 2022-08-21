@@ -1288,14 +1288,14 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; textsec
     `(textsec-suspicious (( )))
 ;;;; transient
-    `(transient-active-infix ((,c :background ,bg-hover-alt :foreground ,fg-intense)))
+    `(transient-active-infix ((,c :background ,bg-active :foreground ,fg-intense)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
     ;; Placate the compiler for what is a spurious warning.  We also
     ;; have to do this with `eldoc-highlight-function-argument'.
-    (list 'transient-argument `((,c :inherit bold :background ,bg-dim :foreground ,accent-0)))
+    (list 'transient-argument `((,c :inherit warning :background ,bg-warning)))
     `(transient-blue ((,c :inherit bold :foreground ,blue-cooler)))
     `(transient-disabled-suffix ((,c :strike-through t)))
-    `(transient-enabled-suffix ((,c :background ,bg-dim :foreground ,accent-1)))
+    `(transient-enabled-suffix ((,c :inherit success :background ,bg-info)))
     `(transient-heading ((,c :inherit bold)))
     `(transient-inactive-argument ((,c :inherit shadow)))
     `(transient-inactive-value ((,c :inherit shadow)))
@@ -1308,7 +1308,7 @@ Helper function for `ef-themes-preview-colors'."
     `(transient-teal ((,c :inherit bold :foreground ,cyan-cooler)))
     `(transient-unreachable ((,c :inherit shadow)))
     `(transient-unreachable-key ((,c :inherit shadow)))
-    `(transient-value ((,c :background ,bg-dim :foreground ,accent-2)))
+    `(transient-value ((,c :inherit success :background ,bg-info)))
 ;;;; vc (vc-dir.el, vc-hooks.el)
     `(vc-dir-directory ((,c :foreground ,accent-0)))
     `(vc-dir-file ((,c :foreground ,name)))
