@@ -832,7 +832,7 @@ Helper function for `ef-themes-preview-colors'."
     ;; We need to fall back to `default' otherwise line numbers do not
     ;; scale when using `text-scale-adjust'.
     `(line-number ((,c :inherit (shadow default))))
-    `(line-number-current-line ((,c :inherit bold :foreground ,fg-intense)))
+    `(line-number-current-line ((,c :inherit (bold line-number) :foreground ,fg-intense)))
     `(line-number-major-tick ((,c :inherit line-number :background ,bg-alt :foreground ,info)))
     `(line-number-minor-tick ((,c :inherit line-number :background ,bg-dim :foreground ,warning)))
 ;;;; magit
