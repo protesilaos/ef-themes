@@ -122,6 +122,7 @@
       (bg-region     "#342464")
       (bg-paren      "#2f608e")
       (bg-err        "#330d06") ; check with err
+      (bg-warning    "#332610") ; check with warning
       (bg-info       "#0f2a10") ; check with info
 
       (border        "#543f6f")
