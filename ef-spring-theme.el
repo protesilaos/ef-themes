@@ -145,7 +145,7 @@
       (fnname green-warmer)
       (keyword green-cooler)
       (preprocessor magenta-warmer)
-      (docstring red-faint)
+      (docstring magenta-faint)
       (string yellow-warmer)
       (type magenta-cooler)
       (variable cyan)
