@@ -265,15 +265,13 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 (defun ef-themes--enable-themes ()
   "Enable all Ef themes."
   (mapc (lambda (theme)
-          (load-theme theme :no-confirm :no-enable))
+          (unless (memq theme custom-known-themes)
+            (load-theme theme :no-confirm :no-enable)))
         ef-themes-collection))
 
 (defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
-  (unless (seq-find (lambda (theme)
-                      (string-prefix-p "ef-" (symbol-name theme)))
-                    custom-known-themes)
-    (ef-themes--enable-themes))
+  (ef-themes--enable-themes)
   (seq-filter
    (lambda (theme)
      (string-prefix-p "ef-" (symbol-name theme)))
