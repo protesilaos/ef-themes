@@ -1259,6 +1259,15 @@ Helper function for `ef-themes-preview-colors'."
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
     `(show-paren-mismatch ((,c :background ,bg-red :foreground ,fg-intense)))
+;;;; shr
+    `(shr-code ((,c :foreground ,accent-1))) ; same as `org-code'
+    `(shr-h1 ((,c :inherit ef-themes-heading-1)))
+    `(shr-h2 ((,c :inherit ef-themes-heading-2)))
+    `(shr-h3 ((,c :inherit ef-themes-heading-3)))
+    `(shr-h4 ((,c :inherit ef-themes-heading-4)))
+    `(shr-h5 ((,c :inherit ef-themes-heading-5)))
+    `(shr-h6 ((,c :inherit ef-themes-heading-6)))
+    `(shr-selected-link ((,c :inherit link :background ,bg-dim)))
 ;;;; smerge
     `(smerge-base ((,c :inherit diff-changed)))
     `(smerge-lower ((,c :inherit diff-added)))
