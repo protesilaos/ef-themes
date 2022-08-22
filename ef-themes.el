@@ -226,12 +226,30 @@ Protesilaos))."
   :type 'boolean
   :link '(info-link "(ef-themes) Enable mixed fonts"))
 
+(defcustom ef-themes-variable-pitch-ui nil
+  "Use proportional fonts (`variable-pitch') in UI elements.
+This includes the mode line, header line, tab bar, and tab line.
+
+Users may need to explicitly configure the font family of
+`variable-pitch' in order to get a consistent experience with
+their typography (also check the `fontaine' package on GNU
+ELPA (by Protesilaos))."
+  :group 'ef-themes
+  :package-version '(ef-themes . "0.4.0")
+  :type 'boolean
+  :link '(info-link "(ef-themes) UI typeface"))
+
 ;;; Helpers for user options
 
 (defun ef-themes--fixed-pitch ()
   "Conditional application of `fixed-pitch' inheritance."
   (when ef-themes-mixed-fonts
     (list :inherit 'fixed-pitch)))
+
+(defun ef-themes--variable-pitch-ui ()
+  "Conditional application of `variable-pitch' in the UI."
+  (when ef-themes-variable-pitch-ui
+    (list :inherit 'variable-pitch)))
 
 (defun ef-themes--key-cdr (key alist)
   "Get cdr of KEY in ALIST."
@@ -482,6 +500,11 @@ Helper function for `ef-themes-preview-colors'."
   :package-version '(ef-themes . "0.4.0")
   :group 'ef-themes-faces)
 
+(defface ef-themes-ui-variable-pitch nil
+  "Face for `variable-pitch' if `ef-themes-variable-pitch-ui' is non-nil."
+  :package-version '(ef-themes . "0.4.0")
+  :group 'ef-themes-faces)
+
 (defconst ef-themes-faces
   '(
 ;;;; internal faces
@@ -496,6 +519,7 @@ Helper function for `ef-themes-preview-colors'."
     `(ef-themes-heading-7 ((,c ,@(ef-themes--heading 7) :foreground ,rainbow-7)))
     `(ef-themes-heading-8 ((,c ,@(ef-themes--heading 8) :foreground ,rainbow-8)))
     `(ef-themes-key-binding ((,c :inherit (bold ef-themes-fixed-pitch) :foreground ,keybind)))
+    `(ef-themes-ui-variable-pitch ((,c ,@(ef-themes--variable-pitch-ui))))
 ;;;; all basic faces
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(cursor ((,c :background ,cursor)))
@@ -509,7 +533,7 @@ Helper function for `ef-themes-preview-colors'."
     `(success ((,c :inherit bold :foreground ,info)))
     `(warning ((,c :inherit bold :foreground ,warning)))
     `(fringe ((,c :background unspecified)))
-    `(header-line ((,c :background ,bg-dim)))
+    `(header-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-dim)))
     `(header-line-highlight ((,c :inherit highlight)))
     `(help-argument-name ((,c :foreground ,accent-0)))
     `(help-key-binding ((,c :inherit bold :foreground ,keybind)))
@@ -1030,12 +1054,12 @@ Helper function for `ef-themes-preview-colors'."
     `(message-mml ((,c :foreground ,info)))
     `(message-separator ((,c :background ,bg-alt)))
 ;;;; mode-line
-    `(mode-line ((,c :background ,bg-mode-line :foreground ,fg-mode-line)))
+    `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
     `(mode-line-active ((,c :inherit mode-line)))
     `(mode-line-buffer-id ((,c :inherit bold)))
     `(mode-line-emphasis ((,c :inherit bold-italic)))
     `(mode-line-highlight ((,c :inherit highlight)))
-    `(mode-line-inactive ((,c :background ,bg-alt :foreground ,fg-dim)))
+    `(mode-line-inactive ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :foreground ,fg-dim)))
 ;;;; mu4e
     `(mu4e-attach-number-face ((,c :inherit bold :foreground ,fg-dim)))
     `(mu4e-cited-1-face ((,c :inherit message-cited-text-1)))
@@ -1305,13 +1329,13 @@ Helper function for `ef-themes-preview-colors'."
     `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; tab-bar-mode
-    `(tab-bar ((,c :background ,bg-alt)))
+    `(tab-bar ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt)))
     `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-main :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
     `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
 ;;;; tab-line-mode
-    `(tab-line ((,c :background ,bg-alt :height 0.95)))
+    `(tab-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :height 0.95)))
     `(tab-line-close-highlight ((,c :foreground ,red)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab (( )))

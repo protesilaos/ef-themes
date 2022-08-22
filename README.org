@@ -238,6 +238,32 @@ To get consistent typography, the user may need to edit the font family
 of the ~fixed-pitch~ face.  The =fontaine= package on GNU ELPA (by
 Protesilaos) can be helpful in that regard.
 
+** UI typeface
+:PROPERTIES:
+:CUSTOM_ID: h:7c3d1057-c4a7-43b3-b91b-9887264d4072
+:END:
+
+[ Part of {{{development-version}}} ]
+
+#+vindex: ef-themes-variable-pitch-ui
+The user option ~ef-themes-variable-pitch-ui~ controls whether the
+elements of the User Interface (UI) use a proportionately spaced font.
+By default (a nil value), all UI elements use the default font family.
+When this user option is set to a non-nil value, all UI elements will
+inherit the face ~variable-pitch~ instead thus rendering them in a
+proportionately spaced font.
+
+In this context, the UI elements are:
+
+- ~header-line~
+- ~mode-line~ (active and inactive)
+- ~tab-bar-mode~
+- ~tab-line-mode~
+
+To get consistent typography, the user may need to edit the font family
+of the ~variable-pitch~ face.  The =fontaine= package on GNU ELPA (by
+Protesilaos) can be helpful in that regard.
+
 ** Option for headings
 :PROPERTIES:
 :CUSTOM_ID: h:a7a02817-e324-43e9-a7d8-fde024530af6
