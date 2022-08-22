@@ -1336,7 +1336,7 @@ Helper function for `ef-themes-preview-colors'."
     `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
 ;;;; tab-line-mode
     `(tab-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :height 0.95)))
-    `(tab-line-close-highlight ((,c :foreground ,red)))
+    `(tab-line-close-highlight ((,c :foreground ,err)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab (( )))
     `(tab-line-tab-current ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
