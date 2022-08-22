@@ -1179,7 +1179,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-modern-done ((,c :inherit org-modern-label :background ,bg-info :foreground ,info)))
     `(org-modern-label ((,c :height 0.9 :width condensed :weight regular :underline nil)))
     `(org-modern-priority ((,c :inherit (org-modern-label org-priority) :background ,bg-dim)))
-    `(org-modern-statistics ((,c :background ,bg-dim)))
+    `(org-modern-statistics ((,c :inherit org-modern-label :background ,bg-dim)))
     `(org-modern-tag ((,c :inherit (org-modern-label org-tag) :background ,bg-dim)))
     `(org-modern-time-active ((,c :inherit org-modern-label :background ,bg-active :foreground ,fg-intense)))
     `(org-modern-time-inactive ((,c :inherit (org-modern-label org-modern-date-inactive))))
