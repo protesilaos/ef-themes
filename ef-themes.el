@@ -710,7 +710,7 @@ Helper function for `ef-themes-preview-colors'."
     `(diff-context (( )))
     `(diff-error ((,c :inherit error)))
     `(diff-file-header ((,c :inherit bold)))
-    `(diff-function ((,c :inherit bold)))
+    `(diff-function ((,c :background ,bg-alt)))
     `(diff-header (( )))
     `(diff-hunk-header ((,c :inherit bold :background ,bg-alt)))
     `(diff-index ((,c :inherit italic)))
