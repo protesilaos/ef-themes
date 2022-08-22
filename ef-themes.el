@@ -1330,17 +1330,17 @@ Helper function for `ef-themes-preview-colors'."
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; tab-bar-mode
     `(tab-bar ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt)))
-    `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-main :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
-    `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :style flat-button) :foreground ,fg-alt)))
-    `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
-    `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
+    `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-main :box (:line-width (2 . -2) :color ,bg-main) :foreground ,fg-alt)))
+    `(tab-bar-tab-group-inactive ((,c :background ,bg-alt :box (:line-width (2 . -2) :color ,bg-alt) :foreground ,fg-alt)))
+    `(tab-bar-tab ((,c :inherit bold :box (:line-width (2 . -2) :color ,bg-main) :background ,bg-main :foreground ,fg-main)))
+    `(tab-bar-tab-inactive ((,c :box (:line-width (2 . -2) :color ,bg-dim) :background ,bg-dim :foreground ,fg-dim)))
 ;;;; tab-line-mode
     `(tab-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :height 0.95)))
     `(tab-line-close-highlight ((,c :foreground ,err)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab (( )))
-    `(tab-line-tab-current ((,c :inherit bold :box (:line-width (2 . -2) :style flat-button) :background ,bg-main :foreground ,fg-main)))
-    `(tab-line-tab-inactive ((,c :box (:line-width (2 . -2) :style flat-button) :background ,bg-dim :foreground ,fg-dim)))
+    `(tab-line-tab-current ((,c :inherit bold :box (:line-width (2 . -2) :color ,bg-main) :background ,bg-main :foreground ,fg-main)))
+    `(tab-line-tab-inactive ((,c :box (:line-width (2 . -2) :color ,bg-dim) :background ,bg-dim :foreground ,fg-dim)))
     `(tab-line-tab-inactive-alternate ((,c :inherit tab-line-tab-inactive :foreground ,fg-alt)))
     `(tab-line-tab-modified ((,c :foreground ,warning)))
 ;;;; term
