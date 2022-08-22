@@ -1311,6 +1311,9 @@ Helper function for `ef-themes-preview-colors'."
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
     `(show-paren-mismatch ((,c :background ,bg-red :foreground ,fg-intense)))
+;;;; shell-script-mode (sh-mode)
+    `(sh-heredoc ((,c :inherit font-lock-doc-face)))
+    `(sh-quoted-exec ((,c :inherit font-lock-builtin-face)))
 ;;;; shr
     `(shr-code ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-1))) ; same as `org-code'
     `(shr-h1 ((,c :inherit ef-themes-heading-1)))

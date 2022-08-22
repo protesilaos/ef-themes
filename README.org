@@ -571,6 +571,7 @@ everything most users need.
 - rcirc
 - regexp-builder (re-builder)
 - ruler-mode
+- shell-script-mode (sh-mode)
 - show-paren-mode
 - shr [ Part of {{{development-version}}} ]
 - smerge
