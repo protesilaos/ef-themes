@@ -207,6 +207,37 @@ command.
 This is in addition to the other ways of loading a theme, either with
 minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
 
+** Enable mixed fonts
+:PROPERTIES:
+:CUSTOM_ID: h:621d3bb9-5967-4f97-b253-7470bba9168c
+:END:
+
+[ Part of {{{development-version}}} ]
+
+#+vindex: ef-themes-mixed-fonts
+The user option ~ef-themes-mixed-fonts~ controls whether strictly
+spacing-sensitive constructs inherit from ~fixed-pitch~ (a monospaced
+font family).
+
+By default (a nil value for this user option) no face inherits from
+~fixed-pitch~: they all use the default font family, regardless of
+whether it is monospaced or not.
+
+When ~ef-themes-mixed-fonts~ is set to a non-nil value, faces such as
+Org tables, inline code, code blocks, and the like, are rendered in a
+monospaced font at all times.  The user can thus set their default font
+family to a proportionately spaced font without worrying about breaking
+the alignment of relevant elements, or if they simply prefer the
+aesthetics of mixed mono and proportionately spaced font families.
+
+A temporary switch to a proportionately spaced font (known in Emacs as
+~variable-pitch~) can be enabled in the current buffer with the
+activation of the built-in ~variable-pitch-mode~.
+
+To get consistent typography, the user may need to edit the font family
+of the ~fixed-pitch~ face.  The =fontaine= package on GNU ELPA (by
+Protesilaos) can be helpful in that regard.
+
 ** Option for headings
 :PROPERTIES:
 :CUSTOM_ID: h:a7a02817-e324-43e9-a7d8-fde024530af6
