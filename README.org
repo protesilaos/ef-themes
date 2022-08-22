@@ -493,14 +493,91 @@ give us the relevant results for that theme.  The same with =ef-winter=:
 ;; => ("#0f0b15" "#b8c6d5" "#5f1f5f" "#ff6ff0")
 #+end_src
 
-For the time being, we do not provide detailed instructions on how to
-use this macro.  We shall do so as the needs of users become more clear
-through the development process.
+[[#h:152326a3-9356-4158-8adb-83c42c2ef117][Do-It-Yourself customizations]].
 
 The palette of each Ef theme is considered stable.  No removals shall be
 made.  Though please note that some tweaks to individual hues or color
 mapping are still possible.  At any rate, we will not outright break any
 code that uses ~ef-themes-with-colors~.
+
+* Do-It-Yourself customizations
+:PROPERTIES:
+:CUSTOM_ID: h:152326a3-9356-4158-8adb-83c42c2ef117
+:END:
+
+This section documents how the user can further tweak the Ef themes to
+their liking.
+
+** The general approach to DIY changes
+:PROPERTIES:
+:CUSTOM_ID: h:ec0adf54-c037-4c53-81b8-7eab2303794d
+:END:
+
+When the user wants to customize Emacs faces there are two
+considerations they need to make if they care about robustness:
+
+1. Do not hardcode color values, but instead use the relevant variables
+   from the Ef themes.
+2. Make the changes persist through theme changes between the Ef themes
+   collection.
+
+For point 1 we provide the ~ef-themes-with-colors~ macro, while for
+point 2 we have the ~ef-themes-post-load-hook~.
+
+[[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]].
+
+[[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]].
+
+We need to wrap our code in the ~ef-themes-with-colors~ and declare it
+as a function which we then add to the hook.  Here we show the general
+approach of putting those pieces together.
+
+To customize faces we use the built-in ~custom-set-faces~.  The value it
+accepts has the same syntax as that found in =ef-themes.el=,
+specifically the ~ef-themes-faces~ constant.  It thus is easy to copy
+lines from there and tweak them.  Let's pick a couple of font-lock faces
+(used in all programming modes, among others):
+
+#+begin_src emacs-lisp
+(defun my-ef-themes-custom-faces ()
+  "My customizations on top of the Ef themes.
+This function is added to the `ef-themes-post-load-hook'."
+  (ef-themes-with-colors
+    (custom-set-faces
+     ;; These are the default specifications
+     `(font-lock-comment-face ((,c :inherit italic :foreground ,comment)))
+     `(font-lock-variable-name-face ((,c :foreground ,variable))))))
+
+;; Using the hook lets our changes persist when we use the commands
+;; `ef-themes-toggle', `ef-themes-select', and `ef-themes-load-random'.
+(add-hook 'ef-themes-post-load-hook #'my-ef-themes-custom-faces)
+#+end_src
+
+Each item in the Ef themes collection has its own color mapping.  So the
+color value of the =comment= variable will differ from theme-to-theme.
+For our purposes, we make variables look like comments and comments like
+variables:
+
+#+begin_src emacs-lisp
+(defun my-ef-themes-custom-faces ()
+  "My customizations on top of the Ef themes.
+This function is added to the `ef-themes-post-load-hook'."
+  (ef-themes-with-colors
+    (custom-set-faces
+     ;; These are the default specifications
+     `(font-lock-comment-face ((,c :foreground ,variable)))
+     `(font-lock-variable-name-face ((,c :inherit italic :foreground ,comment))))))
+
+;; Using the hook lets our changes persist when we use the commands
+;; `ef-themes-toggle', `ef-themes-select', and `ef-themes-load-random'.
+(add-hook 'ef-themes-post-load-hook #'my-ef-themes-custom-faces)
+#+end_src
+
+All changes take effect when a theme is loaded again.
+
+Please contact us if you have specific questions about this mechanism.
+We are willing to help and shall provide comprehensive documentation
+where necessary.
 
 * Supported packages or face groups
 :PROPERTIES:
