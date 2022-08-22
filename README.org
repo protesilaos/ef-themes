@@ -703,7 +703,7 @@ The above list is non-exhaustive though you get the idea.
   standard).  Use my =modus-themes= package (also built into Emacs 28 or
   higher) if you need top-class accessibility.
 
-* Minimal VS maximal scope
+** Minimal VS maximal scope
 :PROPERTIES:
 :CUSTOM_ID: h:fb219b87-ab95-401a-a742-a2fc451bf9f7
 :END:
