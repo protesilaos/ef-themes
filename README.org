@@ -502,6 +502,184 @@ made.  Though please note that some tweaks to individual hues or color
 mapping are still possible.  At any rate, we will not outright break any
 code that uses ~ef-themes-with-colors~.
 
+* Supported packages or face groups
+:PROPERTIES:
+:CUSTOM_ID: h:c8d80daf-d039-40c4-bb74-e7814a9b4c79
+:END:
+
+The =ef-themes= will only ever support a curated list of packages based
+on my judgement ([[#h:ea2eedd7-a473-4826-9b83-31bf3ac2c5f7][Packages that are hard to support]]).  Nevertheless, the
+list of explicitly or implicitly supported packages already covers
+everything most users need.
+
+** Explicitly supported packages or face groups
+:PROPERTIES:
+:CUSTOM_ID: h:8e87733c-9fc9-45cd-9b9e-97b11f4f6c05
+:END:
+
+- all basic faces
+- all-the-icons
+- all-the-icons-dired
+- all-the-icons-ibuffer
+- ansi-color
+- bongo
+- bookmark
+- calendar and diary
+- change-log and log-view (part of VC)
+- chart
+- compilation
+- completions
+- custom (M-x customize)
+- denote
+- dictionary
+- diff-hl
+- diff-mode
+- dired
+- dired-subtree
+- diredfl
+- doom-modeline (incomplete, though likely is okay)
+- ediff
+- eldoc
+- elfeed
+- epa
+- eshell
+- eww [ Part of {{{development-version}}} ]
+- font-lock
+- git-commit
+- git-rebase
+- gnus (incomplete, though likely is okay)
+- info
+- isearch, occur, query-replace
+- keycast
+- line numbers (~display-line-numbers-mode~ and global variant)
+- magit
+- man
+- marginalia
+- markdown-mode
+- messages
+- mode-line
+- mu4e
+- notmuch
+- orderless
+- org
+- org-habit
+- org-modern
+- outline-mode
+- outline-minor-faces
+- package (M-x list-packages)
+- rainbow-delimiters
+- rcirc
+- regexp-builder (re-builder)
+- ruler-mode
+- show-paren-mode
+- shr [ Part of {{{development-version}}} ]
+- smerge
+- tab-bar-mode
+- tab-line-mode
+- term
+- textsec
+- transient
+- vc (=vc-dir.el=, =vc-hooks.el=)
+- vertico
+- wgrep
+- which-function-mode
+- whitespace-mode
+- widget
+- woman
+
+** Implicitly support packages or face groups
+:PROPERTIES:
+:CUSTOM_ID: h:7d1acc40-a2ce-4e6d-a230-35ddffc00690
+:END:
+
+Those are known to work with the Ef themes either because their colors
+are appropriate or because they inherit from basic faces which the
+themes already cover:
+
+- apropos
+- consult
+- corfu
+- dim-autoload
+- embark
+- flycheck
+- flymake
+- flyspell
+- hl-todo
+- icomplete
+- ido
+- lin
+- multiple-cursors
+- paren-face
+- pulsar
+- tempel
+- which-key (seems okay, but may need explicit support)
+- xref
+
+** Packages that are hard to support
+:PROPERTIES:
+:CUSTOM_ID: h:ea2eedd7-a473-4826-9b83-31bf3ac2c5f7
+:END:
+
+These are difficult to support due to their (i) incompatibility with the
+design of the =ef-themes=, (ii) complexity or multitude of points of
+entry, (iii) external dependencies, (iv) existence of better
+alternatives in my opinion, or (v) inconsiderate use of color
+out-of-the-box and implicit unwillingness to be good Emacs citizens:
+
+- auctex :: it has a zillion dependencies; I don't know LaTeX.
+
+- avy :: its UI is prone to visual breakage and is hard to style
+  correctly.
+
+- calibredb :: has an external dependency that I don't use.
+
+- ctrlf :: use the built-in isearch or the ~consult-line~ command of
+  =consult=.
+
+- dired+ :: it is complex and makes inconsiderate use of color.
+
+- ein (Emacs IPython Notebook) :: external dependency that I don't use.
+
+- elfeed-goodies :: depends on =powerline=...
+
+- ement.el :: has an external dependency that I don't use. - helm :: it
+  is complex and makes inconsiderate use of color.  Prefer the
+  =vertico=, =consult=, and =embark= packages.
+
+- info+ :: it is complex and makes inconsiderate use of color.
+
+- ivy/counsel/swiper :: use the =vertico=, =consult=, and =embark=
+  packages which are designed to be compatible with standard Emacs
+  mechanisms and are modular.
+
+- lsp-mode :: has external dependencies that I don't use.
+
+- powerline :: requires too many shades of background and generally
+  violates our expectation of how the mode-line is supposed to look by
+  placing the designated default background in unexpected places.
+
+- selectrum :: use =vertico=.
+
+- solaire :: in principle, it is incompatible with practically every
+  theme that is not designed around it.  Emacs does not distinguish
+  between "UI" and "syntax" buffers.
+
+- spaceline :: same as =powerline=.
+
+- sx :: has an external dependency that I don't use.
+
+- telega :: has an external dependency that I don't use (I don't even
+  have a smartphone).
+
+- telephone-line :: same as =powerline=.
+
+- treemacs :: it has too many dependencies and does too many things.
+
+- web-mode :: I don't use all those Web technologies and cannot test
+  this properly without support from an expert.
+
+The above list is non-exhaustive though you get the idea.
+
 * Principles
 :PROPERTIES:
 :CUSTOM_ID: h:a6dd030c-6b6c-4992-83e8-3438b4607b51
@@ -513,11 +691,12 @@ code that uses ~ef-themes-with-colors~.
   we can help with the relevant code).  Providing customizations that
   refashion a wide set of themes is not maintainable.
 
-+ Curated list of supported packages.  I will only cover what I use
-  and/or know is in a well-maintained state.  Styling a package requires
-  a lot of work as one must (i) know how the package works, (ii) see all
-  its interfaces in action, (iii) make sure that the color combinations
-  look consistent with the rest of the theme.
++ Curated list of supported faces ([[#h:c8d80daf-d039-40c4-bb74-e7814a9b4c79][Supported packages or face groups]]).
+  I will only cover what I use and/or know is in a well-maintained
+  state.  Styling a package requires a lot of work as one must (i) know
+  how the package works, (ii) see all its interfaces in action, (iii)
+  make sure that the color combinations look consistent with the rest of
+  the theme.
 
 + Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
   standard).  Use my =modus-themes= package (also built into Emacs 28 or
