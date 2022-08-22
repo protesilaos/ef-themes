@@ -144,6 +144,10 @@ Everything is in place to set up the package.
         (7 . (variable-pitch 1.2))
         (t . (variable-pitch 1.1))))
 
+;; They are nil by default...
+(setq ef-themes-mixed-fonts t
+      ef-themes-variable-pitch-ui t)
+
 ;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
 
