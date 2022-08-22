@@ -507,11 +507,10 @@ code that uses ~ef-themes-with-colors~.
 :CUSTOM_ID: h:a6dd030c-6b6c-4992-83e8-3438b4607b51
 :END:
 
-+ No customization options that affect the style of individual
-  components (e.g. change the color of the mode line, remove bold,
-  etc.)!  Either you like them or you don't.  To change faces, it is
-  better to do it in user-level configurations (report the issue and we
-  can help with the relevant code).  Providing customizations that
++ No customization options that affect the coloration of individual
+  components !  Either you like them or you don't.  To change faces, it
+  is better to do it in user-level configurations (report the issue and
+  we can help with the relevant code).  Providing customizations that
   refashion a wide set of themes is not maintainable.
 
 + Curated list of supported packages.  I will only cover what I use
