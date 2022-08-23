@@ -1033,6 +1033,34 @@ heading heights, (iii) different levels of indentation.  Realigning tags
 by inserting spaces also creates noise in version-controlled files,
 which is undesirable.
 
+** Add something like Nord or Zenburn?
+:PROPERTIES:
+:CUSTOM_ID: h:103def23-def7-48f9-b14b-4089e4e13242
+:END:
+
+In general, I am not against the idea of drawing inspiration from other
+themes.  Note though that every item in the =ef-themes= collection is
+designed from scratch to work in accordance with the principles of this
+project ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Principles]]).
+
+Each palette is an original implementation.  The six basic hues of red,
+green, blue, yellow, magenta, cyan are implemented as quartets of a
+base, warmer, cooler, and faint variants.
+
+All themes have their own color mapping, which is conducted in
+accordance with the exact values of the aforementioned hues and their
+innate relations.
+
+Copying another project's palette is generally not possible or not
+desirable, not even if that is my =modus-themes= (they, too, have a
+different set of requirements).
+
+Furthermore, trying to mimic another theme generally is an exercise with
+prior constraints, as we are always labouring under the expectation of
+remaining faithful to the original.  This can lead to awkward
+compromises and sub-optimal choices, which make no sense for a project
+with opinionanted design principles.
+
 * Acknowledgements
 :PROPERTIES:
 :CUSTOM_ID: h:5d8753d2-cc10-44a7-9467-dcd62157718b
