@@ -319,8 +319,10 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
-  (when-let* ((themes (ef-themes--list-enabled-themes)))
-    (car themes)))
+  (when-let* ((theme (car custom-enabled-themes)))
+    (if (memq theme (ef-themes--list-enabled-themes))
+        theme
+      (user-error "`%s' is not an Ef theme" theme))))
 
 (defun ef-themes--palette (theme)
   "Return THEME palette as a symbol."
