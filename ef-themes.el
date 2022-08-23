@@ -324,7 +324,8 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--palette (theme)
   "Return THEME palette as a symbol."
-  (intern (format "%s-palette" theme)))
+  (when theme
+    (intern (format "%s-palette" theme))))
 
 (defun ef-themes--current-theme-palette ()
   "Return palette of active Ef theme, else produce `user-error'."
