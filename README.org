@@ -395,6 +395,8 @@ end.  This is for advanced users who want to trigger some code after an
 Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).  The same goes
 for ~ef-themes-toggle~ ([[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]).
 
+[[#h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d][A theme-agnostic hook for theme loading]].
+
 #+findex: ef-themes-select
 The themes can also be loaded interactively ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  The
 command ~ef-themes-select~ (call it with =M-x=) prompts with minibuffer
@@ -528,6 +530,8 @@ point 2 we have the ~ef-themes-post-load-hook~.
 
 [[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]].
 
+[[#h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d][A theme-agnostic hook for theme loading]].
+
 We need to wrap our code in the ~ef-themes-with-colors~ and declare it
 as a function which we then add to the hook.  Here we show the general
 approach of putting those pieces together.
@@ -578,6 +582,53 @@ All changes take effect when a theme is loaded again.
 Please contact us if you have specific questions about this mechanism.
 We are willing to help and shall provide comprehensive documentation
 where necessary.
+
+** A theme-agnostic hook for theme loading
+:PROPERTIES:
+:CUSTOM_ID: h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d
+:END:
+
+The themes are designed with the intent to be useful to Emacs users of
+varying skill levels, from beginners to experts.  This means that we try
+to make things easier by not expecting anyone reading this document to
+be proficient in Emacs Lisp or programming in general.
+
+Such a case is with the use of the ~ef-themes-post-load-theme-hook~,
+which is called after the evaluation of any of the commands we provide
+for loading a theme ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).  We recommend using
+that hook for advanced customizations, because (1) we know for sure that
+it is available once the themes are loaded, and (2) anyone consulting
+this manual, especially the sections on enabling and loading the themes,
+will be in a good position to benefit from that hook.
+
+Advanced users who have a need to switch between the Ef themes and other
+items (e.g. my =modus-themes=) will find that such a hook does not meet
+their requirements: it only works with the Ef themes and only with the
+aforementioned functions.
+
+A theme-agnostic setup can be configured thus:
+
+#+begin_src emacs-lisp
+(defvar after-enable-theme-hook nil
+   "Normal hook run after enabling a theme.")
+
+(defun run-after-enable-theme-hook (&rest _args)
+   "Run `after-enable-theme-hook'."
+   (run-hooks 'after-enable-theme-hook))
+
+(advice-add 'enable-theme :after #'run-after-enable-theme-hook)
+#+end_src
+
+This creates the ~after-enable-theme-hook~ and makes it run after each
+call to ~enable-theme~, which means that it will work for all themes and
+also has the benefit that it does not depend on functions such as
+~ef-themes-select~ and the others mentioned in this manual.  The
+function ~enable-theme~ is called internally by ~load-theme~, so the
+hook works everywhere.
+
+In this document, we always mention ~ef-themes-post-load-theme-hook~
+though the user can replace it with ~after-enable-theme-hook~ should
+they need to.
 
 * Supported packages or face groups
 :PROPERTIES:
