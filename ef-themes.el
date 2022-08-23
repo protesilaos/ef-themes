@@ -1212,7 +1212,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-special-keyword ((,c :inherit (shadow ef-themes-fixed-pitch))))
     `(org-table ((,c :inherit ef-themes-fixed-pitch :foreground ,fg-alt)))
     `(org-table-header ((,c :inherit (bold org-table))))
-    `(org-tag ((,c :foreground ,fg-alt)))
+    `(org-tag (( )))
     `(org-tag-group ((,c :inherit (bold org-tag))))
     `(org-target ((,c :underline t)))
     `(org-time-grid ((,c :foreground ,fg-dim)))
