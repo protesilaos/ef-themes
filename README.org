@@ -593,13 +593,13 @@ varying skill levels, from beginners to experts.  This means that we try
 to make things easier by not expecting anyone reading this document to
 be proficient in Emacs Lisp or programming in general.
 
-Such a case is with the use of the ~ef-themes-post-load-theme-hook~,
-which is called after the evaluation of any of the commands we provide
-for loading a theme ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).  We recommend using
-that hook for advanced customizations, because (1) we know for sure that
-it is available once the themes are loaded, and (2) anyone consulting
-this manual, especially the sections on enabling and loading the themes,
-will be in a good position to benefit from that hook.
+Such a case is with the use of the ~ef-themes-post-load-hook~, which is
+called after the evaluation of any of the commands we provide for
+loading a theme ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).  We recommend using that
+hook for advanced customizations, because (1) we know for sure that it
+is available once the themes are loaded, and (2) anyone consulting this
+manual, especially the sections on enabling and loading the themes, will
+be in a good position to benefit from that hook.
 
 Advanced users who have a need to switch between the Ef themes and other
 items (e.g. my =modus-themes=) will find that such a hook does not meet
@@ -626,9 +626,9 @@ also has the benefit that it does not depend on functions such as
 function ~enable-theme~ is called internally by ~load-theme~, so the
 hook works everywhere.
 
-In this document, we always mention ~ef-themes-post-load-theme-hook~
-though the user can replace it with ~after-enable-theme-hook~ should
-they need to.
+In this document, we always mention ~ef-themes-post-load-hook~ though
+the user can replace it with ~after-enable-theme-hook~ should they need
+to.
 
 * Supported packages or face groups
 :PROPERTIES:
