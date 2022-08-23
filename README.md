@@ -1,5 +1,7 @@
 # Ef (εὖ) themes for GNU Emacs
 
+IMAGES HERE: <https://protesilaos.com/emacs/ef-themes-pictures>.
+
 The `ef-themes` are a collection of light and dark themes for GNU Emacs
 whose goal is to provide colorful ("pretty") yet legible options for
 users who want something with a bit more flair than the `modus-themes`
