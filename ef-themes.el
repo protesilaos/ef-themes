@@ -330,7 +330,7 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 (defun ef-themes--current-theme-palette ()
   "Return palette of active Ef theme, else produce `user-error'."
   (if-let* ((palette (ef-themes--palette (ef-themes--current-theme))))
-      palette
+      (symbol-value palette)
     (user-error "No enabled Ef theme could be found")))
 
 (defvar ef-themes--select-theme-history nil)
@@ -1477,10 +1477,14 @@ Those are stored in `ef-themes-faces' and
   "Evaluate BODY with colors from current palette bound."
   (declare (indent 0))
   (let* ((sym (gensym))
-         (palette (ef-themes--current-theme-palette))
-         (colors (mapcar #'car (symbol-value palette))))
+         ;; NOTE 2022-08-23: We just give it a sample palette at this
+         ;; stage.  It only needs to collect each car.  Then we
+         ;; instantiate the actual theme's palette.  We have to do this
+         ;; otherwise the macro does not work properly when called from
+         ;; inside a function.
+         (colors (mapcar #'car (symbol-value 'ef-light-palette))))
     `(let* ((c '((class color) (min-colors 256)))
-            (,sym ,palette)
+            (,sym (ef-themes--current-theme-palette))
             ,@(mapcar (lambda (color)
                         (list color
                               `(let* ((value (car (alist-get ',color ,sym))))
