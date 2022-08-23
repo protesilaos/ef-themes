@@ -690,6 +690,50 @@ In this document, we always mention ~ef-themes-post-load-hook~ though
 the user can replace it with ~after-enable-theme-hook~ should they need
 to.
 
+** Add support for hl-todo
+:PROPERTIES:
+:CUSTOM_ID: h:19c549dc-d13f-45c4-a727-3618591d5c4f
+:END:
+
+The =hl-todo= package provides the user option ~hl-todo-keyword-faces~:
+it specifies an association list of =(KEYWORD . COLOR-VALUE)= pairs.
+There are no faces, which the theme could style seamlessly.  As such, it
+rests on the user to specify appropriate color values.  This can be done
+either by hardcoding colors, which is inefficient, or by using the macro
+~ef-themes-with-colors~ ([[#h:ec0adf54-c037-4c53-81b8-7eab2303794d][The general approach to DIY changes]]).  Here we
+show the latter method.
+
+#+begin_src emacs-lisp
+(defun my-ef-themes-hl-todo-faces ()
+  "Configure `hl-todo-keyword-faces' with Ef themes colors.
+The exact color values are taken from the active Ef theme."
+  (ef-themes-with-colors
+    (setq hl-todo-keyword-faces
+          `(("HOLD" . ,yellow)
+            ("TODO" . ,red)
+            ("NEXT" . ,blue)
+            ("THEM" . ,magenta)
+            ("PROG" . ,cyan-warmer)
+            ("OKAY" . ,green-warmer)
+            ("DONT" . ,yellow-warmer)
+            ("FAIL" . ,red-warmer)
+            ("BUG" . ,red-warmer)
+            ("DONE" . ,green)
+            ("NOTE" . ,blue-warmer)
+            ("KLUDGE" . ,cyan)
+            ("HACK" . ,cyan)
+            ("TEMP" . ,red)
+            ("FIXME" . ,red-warmer)
+            ("XXX+" . ,red-warmer)
+            ("REVIEW" . ,red)
+            ("DEPRECATED" . ,yellow)))))
+
+(add-hook 'ef-themes-post-load-hook #'my-ef-themes-hl-todo-faces)
+#+end_src
+
+To find the names of the color variables, the user can rely on the
+commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
+
 * Supported packages or face groups
 :PROPERTIES:
 :CUSTOM_ID: h:c8d80daf-d039-40c4-bb74-e7814a9b4c79
