@@ -583,6 +583,64 @@ Please contact us if you have specific questions about this mechanism.
 We are willing to help and shall provide comprehensive documentation
 where necessary.
 
+** Configure bold and italic faces
+:PROPERTIES:
+:CUSTOM_ID: h:8c0b05b7-5624-4051-844c-3c4882658782
+:END:
+#+cindex: Bold and italic fonts
+
+The Ef themes do not hardcode a ~:weight~ or ~:slant~ attribute in the
+faces they cover.  Instead, they configure the generic faces called
+~bold~ and ~italic~ to use the appropriate styles and then instruct all
+relevant faces that require emphasis to inherit from them.
+
+This practically means that users can change the particularities of what
+it means for a construct to be bold/italic, by tweaking the ~bold~ and
+~italic~ faces.  Cases where that can be useful include:
+
++ The default typeface does not have a variant with slanted glyphs
+  (e.g. Fira Mono/Code as of this writing on 2022-08-23), so the user
+  wants to add another family for the italics, such as Hack.
+
++ The typeface of choice provides a multitude of weights and the user
+  prefers the light one by default.  To prevent the bold weight from
+  being too heavy compared to the light one, they opt to make ~bold~ use a
+  semibold weight.
+
++ The typeface distinguishes between oblique and italic forms by
+  providing different font variants (the former are just slanted
+  versions of the upright forms, while the latter have distinguishing
+  features as well).  In this case, the user wants to specify the font
+  that applies to the ~italic~ face.
+
+To achieve those effects, one must first be sure that the fonts they use
+have support for those features.
+
+In this example, we set the default font family to Fira Code, while we
+choose to render italics in the Hack typeface (obviously one needs to
+pick fonts that work in tandem):
+
+#+begin_src emacs-lisp
+(set-face-attribute 'default nil :family "Fira Code" :height 110)
+(set-face-attribute 'italic nil :family "Hack")
+#+end_src
+
+And here we play with different weights, using Source Code Pro:
+
+#+begin_src emacs-lisp
+(set-face-attribute 'default nil :family "Source Code Pro" :height 110 :weight 'light)
+(set-face-attribute 'bold nil :weight 'semibold)
+#+end_src
+
+To reset the font family, one can use this:
+
+#+begin_src emacs-lisp
+(set-face-attribute 'italic nil :family 'unspecified)
+#+end_src
+
+Consider the =fontaine= package on GNU ELPA (by Protesilaos) which
+provides the means to configure font families via faces.
+
 ** A theme-agnostic hook for theme loading
 :PROPERTIES:
 :CUSTOM_ID: h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d
