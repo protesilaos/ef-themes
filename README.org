@@ -944,6 +944,39 @@ The =ef-themes= are my answer to those who (i) like my =modus-themes=,
 (ii) want something with a bit more flair, and (iii) are fine with a
 bit more relaxed accessibility target.
 
+** Let Org tags inherit the heading color?
+:PROPERTIES:
+:CUSTOM_ID: h:b59f315c-6d25-4225-b99b-c06594fa3bf0
+:END:
+
+Upstream Org defines tags in headings to have the same color as the rest
+of the heading's text.  However, tags are a distinct component of the
+heading as noted in the doc string of the ~org-get-heading~ function.
+Tags also are functionally different than the ordinary text of the
+heading: they are a clickable link/button.  It thus is a matter of
+usability to render this distinction clear at the visual level: the fact
+that upstream Org does not do that does not mean we should uncritically
+accept its decision.
+
+Normally, we would style a link to have an underline.  However, this
+design does not look right in headings (as it doesn't look right in,
+e.g., the headings in a listing of emails or the unread items in the
+Elfeed list of entries).  We thus have to go with the next option, which
+is to use a distinct foreground color that differentiates the tag from
+its context, while accounting for theme-wide usability and consistency.
+
+The overarching principle is that when two things function differently,
+they have to look apart even if the difference is small.
+
+The assumption that tags are right-aligned (per Org's default behaviour)
+does not hold, as there exists a user option to disable this effect:
+~org-auto-align-tags~.  The author of the =ef-themes= uses this option
+because the way Org performs this alignment using literal spaces does
+not work properly with (i) proportionately spaced fonts, (ii) varying
+heading heights, (iii) different levels of indentation.  Realigning tags
+by inserting spaces also creates noise in version-controlled files,
+which is undesirable.
+
 * Acknowledgements
 :PROPERTIES:
 :CUSTOM_ID: h:5d8753d2-cc10-44a7-9467-dcd62157718b
