@@ -1075,7 +1075,8 @@ matters.
 + Contributions to code or the manual :: Philip Kaludercic.
 
 + Ideas and/or user feedback :: Anthony Chavez, Iris Garcia,
-  Jean-Philippe Gagné Guay, Spike-Leung, Summer Emacs, Zoltán Király.
+  Jean-Philippe Gagné Guay, Spike-Leung, Steve Molitor, Summer Emacs,
+  Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:

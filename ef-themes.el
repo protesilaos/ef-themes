@@ -1185,7 +1185,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-headline-done ((,c :inherit org-done)))
     `(org-headline-todo ((,c :inherit org-todo)))
     `(org-hide ((,c :foreground ,bg-main)))
-    `(org-indent ((,c :inherit org-hide)))
+    `(org-indent ((,c :inherit (fixed-pitch org-hide))))
     `(org-imminent-deadline ((,c :inherit bold :foreground ,err)))
     `(org-latex-and-related ((,c :foreground ,type)))
     `(org-level-1 ((,c :inherit ef-themes-heading-1)))
