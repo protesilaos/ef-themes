@@ -156,6 +156,9 @@ Everything is in place to set up the package.
 ;; Load the theme of choice:
 (load-theme 'ef-summer :no-confirm)
 
+;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
+(ef-themes-select 'ef-summer)
+
 ;; The themes we provide:
 ;;
 ;; Light: `ef-day', `ef-light', `ef-spring', `ef-summer'.
