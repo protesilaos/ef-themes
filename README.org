@@ -1093,7 +1093,8 @@ matters.
 
 + Author/maintainer :: Protesilaos Stavrou.
 
-+ Contributions to code or the manual :: Philip Kaludercic.
++ Contributions to code or the manual :: Christopher League, Philip
+  Kaludercic.
 
 + Ideas and/or user feedback :: Anthony Chavez, Iris Garcia,
   Jean-Philippe Gagné Guay, Spike-Leung, Steve Molitor, Summer Emacs,
