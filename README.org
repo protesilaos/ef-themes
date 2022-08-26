@@ -570,7 +570,6 @@ variables:
 This function is added to the `ef-themes-post-load-hook'."
   (ef-themes-with-colors
     (custom-set-faces
-     ;; These are the default specifications
      `(font-lock-comment-face ((,c :foreground ,variable)))
      `(font-lock-variable-name-face ((,c :inherit italic :foreground ,comment))))))
 
