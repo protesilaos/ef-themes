@@ -805,6 +805,10 @@ Helper function for `ef-themes-preview-colors'."
     `(elfeed-search-title-face ((,c :foreground ,fg-dim)))
     `(elfeed-search-unread-count-face (( )))
     `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg-main)))
+;;;; embark
+    `(embark-keybinding ((,c :inherit ef-themes-key-binding)))
+    `(embark-keybinding-repeat ((,c :inherit bold)))
+    `(embark-collect-marked ((,c :inherit success :background ,bg-info)))
 ;;;; epa
     `(epa-field-body (( )))
     `(epa-field-name ((,c :inherit bold :foreground ,fg-dim)))

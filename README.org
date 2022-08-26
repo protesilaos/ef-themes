@@ -773,6 +773,7 @@ everything most users need.
 - ediff
 - eldoc
 - elfeed
+- embark [ Part of {{{development-version}}} ]
 - epa
 - eshell
 - eww [ Part of {{{development-version}}} ]
@@ -833,7 +834,6 @@ themes already cover:
 - consult
 - corfu
 - dim-autoload
-- embark
 - flycheck
 - flymake
 - flyspell
