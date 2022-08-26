@@ -581,7 +581,26 @@ This function is added to the `ef-themes-post-load-hook'."
 (add-hook 'ef-themes-post-load-hook #'my-ef-themes-custom-faces)
 #+end_src
 
-All changes take effect when a theme is loaded again.
+All changes take effect when a theme is loaded again.  As such, it is
+better to use ~ef-themes-select~ at startup so that the function added
+to the hook gets applied properly upon first load.  Like this:
+
+#+begin_src emacs-lisp
+(defun my-ef-themes-custom-faces ()
+  "My customizations on top of the Ef themes.
+This function is added to the `ef-themes-post-load-hook'."
+  (ef-themes-with-colors
+    (custom-set-faces
+     `(font-lock-comment-face ((,c :foreground ,variable)))
+     `(font-lock-variable-name-face ((,c :inherit italic :foreground ,comment))))))
+
+;; Using the hook lets our changes persist when we use the commands
+;; `ef-themes-toggle', `ef-themes-select', and `ef-themes-load-random'.
+(add-hook 'ef-themes-post-load-hook #'my-ef-themes-custom-faces)
+
+;; Load the theme and run `ef-themes-post-load-hook'
+(ef-themes-select 'ef-summer) ; Instead of (load-theme 'ef-summer :no-confirm)
+#+end_src
 
 Please contact us if you have specific questions about this mechanism.
 We are willing to help and shall provide comprehensive documentation
