@@ -138,7 +138,7 @@
       (link-alt magenta)
       (date cyan)
       (name blue-warmer)
-      (keybind blue)
+      (keybind blue-cooler)
 
       (builtin magenta)
       (comment yellow-faint)
