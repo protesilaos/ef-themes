@@ -656,7 +656,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; compilation
     `(compilation-column-number ((,c :inherit compilation-line-number)))
     `(compilation-error ((,c :inherit error)))
-    `(compilation-info ((,c :inherit success)))
+    `(compilation-info ((,c :inherit bold :foreground ,name)))
     `(compilation-line-number ((,c :inherit shadow)))
     `(compilation-mode-line-exit ((,c :inherit bold)))
     `(compilation-mode-line-fail ((,c :inherit error)))
