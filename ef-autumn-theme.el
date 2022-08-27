@@ -164,12 +164,12 @@
 
       (rainbow-0 yellow-warmer)
       (rainbow-1 green-warmer)
-      (rainbow-2 magenta)
-      (rainbow-3 blue-warmer)
-      (rainbow-4 red)
-      (rainbow-5 green)
-      (rainbow-6 magenta-warmer)
-      (rainbow-7 cyan)
+      (rainbow-2 red)
+      (rainbow-3 cyan-cooler)
+      (rainbow-4 yellow-cooler)
+      (rainbow-5 blue)
+      (rainbow-6 red-cooler)
+      (rainbow-7 green)
       (rainbow-8 yellow))
     "The `ef-autumn' palette.")
 
