@@ -134,7 +134,7 @@
       (warning yellow-warmer)
       (info green)
 
-      (link blue-warmer)
+      (link cyan)
       (link-alt magenta)
       (date cyan)
       (name blue-warmer)
