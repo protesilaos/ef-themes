@@ -125,7 +125,7 @@
       (bg-warning    "#332800") ; check with warning
       (bg-info       "#152800") ; check with info
 
-      (border        "#54444a")
+      (border        "#4f4945")
       (cursor        "#ffaa33")
       (fg-intense    "#ffffff")
 
