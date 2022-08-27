@@ -666,6 +666,7 @@ Helper function for `ef-themes-preview-colors'."
     `(completions-annotations ((,c :inherit italic :foreground ,docstring)))
     `(completions-common-part ((,c :inherit bold :foreground ,accent-0)))
     `(completions-first-difference ((,c :inherit bold :foreground ,accent-1)))
+    `(completions-group-title ((,c :inherit bold :foreground ,name)))
 ;;;; consult
     `(consult-async-split ((,c :inherit warning)))
     `(consult-key ((,c :inherit ef-themes-key-binding)))
@@ -814,6 +815,7 @@ Helper function for `ef-themes-preview-colors'."
     `(embark-keybinding ((,c :inherit ef-themes-key-binding)))
     `(embark-keybinding-repeat ((,c :inherit bold)))
     `(embark-collect-marked ((,c :inherit success :background ,bg-info)))
+    `(embark-collect-group-title ((,c :inherit bold :foreground ,name)))
 ;;;; epa
     `(epa-field-body (( )))
     `(epa-field-name ((,c :inherit bold :foreground ,fg-dim)))
@@ -1419,6 +1421,7 @@ Helper function for `ef-themes-preview-colors'."
     `(vc-up-to-date-state (( )))
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
+    `(vertico-group-title ((,c :inherit bold :foreground ,name)))
 ;;;; wgrep
     `(wgrep-delete-face ((,c :inherit warning)))
     `(wgrep-done-face ((,c :background ,bg-info :foreground ,info)))
