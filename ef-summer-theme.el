@@ -42,11 +42,11 @@
   (defconst ef-summer-palette
     '(;; Basic tones
       (bg-main     "#fff2f3")
-      (fg-main     "#5f456f")
+      (fg-main     "#4f4073")
       (bg-dim      "#fbe3ef")
-      (fg-dim      "#68717f")
+      (fg-dim      "#786e74")
       (bg-alt      "#efd0e4")
-      (fg-alt      "#af506f")
+      (fg-alt      "#af4988")
 
       (bg-active   "#dfc0d4")
       (bg-inactive "#f9ecf0")
