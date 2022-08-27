@@ -1068,7 +1068,7 @@ Helper function for `ef-themes-preview-colors'."
     `(message-header-subject ((,c :inherit bold :foreground ,mail-2)))
     `(message-header-xheader ((,c :foreground ,mail-3)))
     `(message-header-other ((,c :foreground ,mail-4)))
-    `(message-mml ((,c :foreground ,info)))
+    `(message-mml ((,c :inherit bold :foreground ,fg-alt)))
     `(message-separator ((,c :background ,bg-alt)))
 ;;;; mode-line
     `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
