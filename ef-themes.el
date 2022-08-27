@@ -1117,8 +1117,8 @@ Helper function for `ef-themes-preview-colors'."
     `(mu4e-view-body-face (( )))
     `(mu4e-warning-face ((,c :inherit warning)))
 ;;;; notmuch
-    `(notmuch-crypto-decryption ((,c :inherit (shadow bold))))
-    `(notmuch-crypto-part-header ((,c :foreground ,magenta-cooler)))
+    `(notmuch-crypto-decryption ((,c :inherit bold)))
+    `(notmuch-crypto-part-header ((,c :inherit bold :foreground ,fg-alt)))
     `(notmuch-crypto-signature-bad ((,c :inherit error)))
     `(notmuch-crypto-signature-good ((,c :inherit success)))
     `(notmuch-crypto-signature-good-key ((,c :inherit success)))
