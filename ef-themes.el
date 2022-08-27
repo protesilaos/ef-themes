@@ -666,6 +666,11 @@ Helper function for `ef-themes-preview-colors'."
     `(completions-annotations ((,c :inherit italic :foreground ,docstring)))
     `(completions-common-part ((,c :inherit bold :foreground ,accent-0)))
     `(completions-first-difference ((,c :inherit bold :foreground ,accent-1)))
+;;;; consult
+    `(consult-async-split ((,c :inherit warning)))
+    `(consult-key ((,c :inherit ef-themes-key-binding)))
+    `(consult-imenu-prefix ((,c :inherit shadow)))
+    `(consult-line-number ((,c :inherit shadow)))
 ;;;; custom (M-x customize)
     `(custom-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
     `(custom-button-mouse ((,c :inherit (highlight custom-button))))

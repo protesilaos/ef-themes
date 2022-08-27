@@ -782,6 +782,7 @@ everything most users need.
 - chart
 - compilation
 - completions
+- consult [ Part of {{{development-version}}} ]
 - custom (M-x customize)
 - denote
 - dictionary
@@ -852,7 +853,6 @@ are appropriate or because they inherit from basic faces which the
 themes already cover:
 
 - apropos
-- consult
 - corfu
 - dim-autoload
 - flycheck
