@@ -1068,7 +1068,7 @@ Helper function for `ef-themes-preview-colors'."
     `(message-header-subject ((,c :inherit bold :foreground ,mail-2)))
     `(message-header-xheader ((,c :foreground ,mail-3)))
     `(message-header-other ((,c :foreground ,mail-4)))
-    `(message-mml ((,c :inherit bold :foreground ,fg-alt)))
+    `(message-mml ((,c :foreground ,mail-5)))
     `(message-separator ((,c :background ,bg-alt)))
 ;;;; mode-line
     `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
@@ -1118,7 +1118,7 @@ Helper function for `ef-themes-preview-colors'."
     `(mu4e-warning-face ((,c :inherit warning)))
 ;;;; notmuch
     `(notmuch-crypto-decryption ((,c :inherit bold)))
-    `(notmuch-crypto-part-header ((,c :inherit bold :foreground ,fg-alt)))
+    `(notmuch-crypto-part-header ((,c :foreground ,mail-5))) ; like `message-mml'
     `(notmuch-crypto-signature-bad ((,c :inherit error)))
     `(notmuch-crypto-signature-good ((,c :inherit success)))
     `(notmuch-crypto-signature-good-key ((,c :inherit success)))

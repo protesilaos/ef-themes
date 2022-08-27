@@ -161,6 +161,7 @@
       (mail-2 magenta-warmer)
       (mail-3 blue-warmer)
       (mail-4 magenta-cooler)
+      (mail-5 green-warmer)
 
       (rainbow-0 magenta-warmer)
       (rainbow-1 magenta-cooler)
