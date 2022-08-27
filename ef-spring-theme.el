@@ -42,9 +42,9 @@
   (defconst ef-spring-palette
     '(;; Basic tones
       (bg-main     "#f6fff9")
-      (fg-main     "#3f4946")
+      (fg-main     "#34494a")
       (bg-dim      "#e8f0f0")
-      (fg-dim      "#707586")
+      (fg-dim      "#777294")
       (bg-alt      "#e0e6e3")
       (fg-alt      "#9d5e7a")
 
