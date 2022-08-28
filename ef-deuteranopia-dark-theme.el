@@ -154,6 +154,9 @@
       (type magenta-cooler)
       (variable cyan-cooler)
 
+      (rx-escape yellow-faint) ; compare with `string'
+      (rx-construct yellow-warmer)
+
       (accent-0 blue-cooler)
       (accent-1 yellow-warmer)
       (accent-2 cyan-warmer)
