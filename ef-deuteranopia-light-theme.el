@@ -46,7 +46,7 @@
     '(;; Basic tones
       (bg-main     "#f5f5ff")
       (fg-main     "#1a1a2f")
-      (bg-dim      "#e4e4f0")
+      (bg-dim      "#e8e8ea")
       (fg-dim      "#70627f")
       (bg-alt      "#d3d3e0")
       (fg-alt      "#6f6336")
