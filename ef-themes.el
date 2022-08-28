@@ -1213,7 +1213,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-meta-line ((,c :inherit (shadow ef-themes-fixed-pitch))))
     `(org-mode-line-clock (( )))
     `(org-mode-line-clock-overrun ((,c :inherit bold :foreground ,err)))
-    `(org-priority ((,c :foreground ,magenta)))
+    `(org-priority ((,c :foreground ,fg-alt)))
     `(org-property-value ((,c :inherit ef-themes-fixed-pitch :foreground ,fg-alt)))
     `(org-quote ((,c :inherit org-block)))
     `(org-scheduled ((,c :foreground ,warning)))
