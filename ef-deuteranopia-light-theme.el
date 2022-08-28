@@ -89,7 +89,7 @@
       (bg-cyan     "#88c8ff")
 
       ;; Diffs
-      (bg-added          "#dfdfff")
+      (bg-added          "#dbdbff")
       (bg-added-faint    "#e4e4ff")
       (bg-added-refine   "#c0c0ef")
 
@@ -98,7 +98,7 @@
       (bg-changed-refine "#e0b0d0")
 
       (bg-removed        "#fff0af")
-      (bg-removed-faint  "#efe6cf")
+      (bg-removed-faint  "#efefcb")
       (bg-removed-refine "#f0da88")
 
       ;; Graphs
