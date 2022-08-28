@@ -526,6 +526,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; all basic faces
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(cursor ((,c :background ,cursor)))
+    `(vertical-border ((,c :foreground ,border)))
     `(bold ((,c :weight bold)))
     `(italic ((,c :slant italic)))
     `(bold-italic ((,c :inherit (bold italic))))
