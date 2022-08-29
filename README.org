@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.3.0
-#+macro:                 release-date 2022-08-20
-#+macro:                 development-version 0.4.0-dev
+#+macro:                 stable-version 0.4.0
+#+macro:                 release-date 2022-08-29
+#+macro:                 development-version 0.5.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -221,8 +221,6 @@ minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][C
 :CUSTOM_ID: h:621d3bb9-5967-4f97-b253-7470bba9168c
 :END:
 
-[ Part of {{{development-version}}} ]
-
 #+vindex: ef-themes-mixed-fonts
 The user option ~ef-themes-mixed-fonts~ controls whether strictly
 spacing-sensitive constructs inherit from ~fixed-pitch~ (a monospaced
@@ -251,8 +249,6 @@ Protesilaos) can be helpful in that regard.
 :PROPERTIES:
 :CUSTOM_ID: h:7c3d1057-c4a7-43b3-b91b-9887264d4072
 :END:
-
-[ Part of {{{development-version}}} ]
 
 #+vindex: ef-themes-variable-pitch-ui
 The user option ~ef-themes-variable-pitch-ui~ controls whether the
@@ -782,7 +778,7 @@ everything most users need.
 - chart
 - compilation
 - completions
-- consult [ Part of {{{development-version}}} ]
+- consult
 - custom (M-x customize)
 - denote
 - dictionary
@@ -795,10 +791,10 @@ everything most users need.
 - ediff
 - eldoc
 - elfeed
-- embark [ Part of {{{development-version}}} ]
+- embark
 - epa
 - eshell
-- eww [ Part of {{{development-version}}} ]
+- eww
 - font-lock
 - git-commit
 - git-rebase
@@ -828,7 +824,7 @@ everything most users need.
 - ruler-mode
 - shell-script-mode (sh-mode)
 - show-paren-mode
-- shr [ Part of {{{development-version}}} ]
+- shr
 - smerge
 - tab-bar-mode
 - tab-line-mode

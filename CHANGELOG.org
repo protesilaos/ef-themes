@@ -9,6 +9,220 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.4.0 on 2022-08-29
+:PROPERTIES:
+:CUSTOM_ID: h:cc22cc5a-d787-4335-abf0-aa45cef92721
+:END:
+
+** New deuteranopia-friendly themes
+:PROPERTIES:
+:CUSTOM_ID: h:f94f8637-73c8-4e43-bc70-c17c42e76ad6
+:END:
+
+Designed two bespoke themes for users with red-green colour deficiency
+or blindness (deuteranopia).  They rely on blue and yellow hues.  Their
+names are:
+
++ ~ef-deuteranopia-dark~
++ ~ef-deuteranopia-light~
+
+Announcement with sample pictures:
+<https://protesilaos.com/codelog/2022-08-19-ef-themes-deuteranopia/>.
+
+** User options
+:PROPERTIES:
+:CUSTOM_ID: h:3dc43b00-843b-4827-b7cd-f381de619433
+:END:
+
++ Introduced the variable ~ef-themes-mixed-fonts~.  When it is set to a
+  non-nil (=t=) value, it makes spacing-sensitive elements use a
+  monospaced font.  For example, Org tables and code blocks will always
+  look properly aligned.  This is useful for those who either use a
+  proportionately spaced font as their default or enable the built-in
+  ~variable-pitch-mode~.
+
++ Implemented the variable ~ef-themes-variable-pitch-ui~.  When it is
+  set to a non-nil (=t=) value, it renders the mode-line, tab-bar-mode,
+  and tab-line-mode in a proportionately spaced font.
+
+User options must be set before the theme is loaded.  If an option
+changes, its value will be read upon a theme re-load.
+
+For font configurations, refer to my =fontaine= package.
+
+** Newly supported packages
+:PROPERTIES:
+:CUSTOM_ID: h:c1d351ca-1802-44b1-b43f-f9d5f7ba95d9
+:END:
+
+Built into Emacs:
+
++ eww
++ shell-script-mode (sh-mode)
++ shr
+
+External packages:
+
++ consult
++ embark
+
+** Refinements to faces
+:PROPERTIES:
+:CUSTOM_ID: h:582dea7b-454a-4500-871b-4ec45e875274
+:END:
+
++ Fixed the scaling of current line of ~display-line-numbers-mode~ when
+  ~text-scale-adjust~ was invoked.  Basically I forgot to include the
+  ~line-number~ face, while all others were covered.  Thanks to Anthony
+  Chavez for the feedback in issue 7 over at the GitHub mirror:
+  <https://github.com/protesilaos/denote/issues/7>.
+
++ Covered all faces that define group titles in completion contexts.
+  These are headings which are used by various commands, such as
+  ~consult-buffer~, ~consult-imenu~, and ~consult-grep~.  As they denote
+  a group name, we apply the =name= colour mapping (the hue differs for
+  each theme).  And since they are titles, we inherit from ~bold~ to
+  make them look like headings.  Thanks to Summer Emacs for the feedback
+  which amounted to:
+
+  1. Treating group titles as headings.
+  2. Using a more consistent colour theme-wide.
+
++ Revised the ~compilation-info~ face from a colour-coded "success" face
+  to a value that is consistent with the semantics of its application in
+  file names or related (as seen in the emacs.git repository).  For
+  example, file names in Grep or Xref buffers will now look like they
+  belong to the theme, whereas before they were predominantly green,
+  even when that did not make sense.  This point is connected to the
+  above, such as in workflows that go from the minibuffer to a Grep
+  buffer (e.g. with the use of the =embark= package).
+
++ Toned down the vertical border between windows by explicitly
+  supporting the ~vertical-border~ face.  The previous design would use
+  the main foreground which generally led to a disproportionately
+  intense result.
+
++ Adjusted all spacing-sensitive faces to accommodate the user option
+  ~ef-themes-mixed-fonts~, as noted above.  Also thanks to Christopher
+  League for spotting that I had missed the ~line-number~ face and for
+  providing the relevant patch (I do the same in the =modus-themes=):
+  https://lists.sr.ht/~protesilaos/ef-themes/%3C871qt2x4wi.fsf%40nita.mail-host-address-is-not-set%3E
+
+  The patch is well below the ~15 line threshold and thus does not
+  require copyright assignment to the Free Software Foundation.
+
++ Enforced mono spacing for the ~org-indent~ face.  This is essential
+  for ~org-indent-mode~ to align entries correctly.  Thanks to Steve
+  Molitor for reporting this in the issue 9 over at the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/9>.  Steve tested a
+  sample file with ~modus-vivendi~ and got the desired results.  It
+  reminded me how I handle this face in the =modus-themes=.
+
++ Added explicit support for the ~bold~ and ~italic~ faces.  The default
+  definition of ~italic~ has conditionality which we do not want, such
+  as drawing an underline if the font does not have italics (e.g. Fira
+  Code).  Styling it at the theme level prevents that from happening:
+  the font without italics will simply use the upright/roman glyphs.
+  Adding ~bold~ is just for clarity.  Its default definition is fine.
+
++ Made the tabs of the built-in ~tab-bar-mode~ and ~tab-line-mode~ stand
+  out more.  The difference between the current tab and the rest was too
+  subtle.  Depending on the lighting conditions, their respective
+  backgrounds were indistinguishable.  Thanks to Summer Emacs for
+  reporting this issue and for helping me decide on the final design.
+
++ Applied tinted backgrounds to values and arguments in transient.el
+  buffers (e.g. Magit).  They now stand out better.
+
+** Documentation
+:PROPERTIES:
+:CUSTOM_ID: h:5549f628-390d-478c-b8d3-a0b068f3f1e0
+:END:
+
++ Created a page with screenshots of all the Ef themes:
+  <https://protesilaos.com/emacs/ef-themes-pictures>.
+
++ Answered the Frequently Asked Question of letting Org tags inherit the
+  foreground colour of the heading they belong to.  The gist (though
+  note that the entry also mentions the option for the non-alignment of
+  tags):
+
+  #+begin_quote
+  Upstream Org defines tags in headings to have the same color as the rest
+  of the heading's text.  However, tags are a distinct component of the
+  heading as noted in the doc string of the ~org-get-heading~ function.
+  Tags also are functionally different than the ordinary text of the
+  heading: they are a clickable link/button.  It thus is a matter of
+  usability to render this distinction clear at the visual level: I do not
+  agree with upstream Org's design decision.
+  #+end_quote
+
++ Addressed another Frequently Asked Question on whether we can have
+  Ef-style themes inspired by the Nord or Zenburn themes.  The short
+  version is that this is technically difficult and undesirable.  Each
+  palette in the Ef themes collection is original and is designed around
+  the normative and aesthetic principles of this project.
+
++ Wrote an entire section on Do-It-Yourself customisations.  These
+  generally are for advanced users, though the manual provides concrete
+  examples of using the ~ef-themes-with-colors~ macro in tandem with the
+  ~ef-themes-post-load-hook~.
+
++ Elaborated on the list of packages that I will most likely NOT support
+  in the Ef themes.  The reasons vary though.  Quote:
+
+  #+begin_quote
+  These are difficult to support due to their (i) incompatibility with
+  the design of the =ef-themes=, (ii) complexity or multiple points of
+  entry, (iii) external dependencies, (iv) existence of better
+  alternatives in my opinion, or (v) inconsiderate use of color
+  out-of-the-box and implicit unwillingness to be good Emacs citizens
+  #+end_quote
+
+  If a certain package does not look right, then it is not supported
+  (yet).
+
+The manual can be read from Emacs, if the =ef-themes= package is
+installed.  Evaluate:
+
+#+begin_src emacs-lisp
+(info "(ef-themes) Top")
+#+end_src
+
+Else visit: <https://protesilaos.com/emacs/ef-themes>.
+
+** Internal refinements
+:PROPERTIES:
+:CUSTOM_ID: h:4013a8aa-d2ff-45a1-95db-edd140e31cb1
+:END:
+
++ Recalibrated diff colours or the context of diff buffers, especially
+  in Magit, to improve usability.
+
++ Adjusted or otherwise tweaked the hues that apply to key bindings and
+  links in order to reinforce the stylistic consistency of each theme.
+
++ Introduced a yellow-tinted background which is used in various
+  contexts that (i) should be styled with a coloured background but (ii)
+  should not be colour-coded as either red or green/blue.
+
++ Made the ~ef-themes-with-colors~ macro always reify the current Ef
+  theme's palette.  This macro is for advanced users.  Its utility is
+  documented in the themes' manual.
+
++ Fixed how themes become "known" at startup.  Before, they were not
+  registered correctly for immediate use with the ~ef-themes-select~
+  command.  Thanks to Jean-Philippe Gagné Guay for the feedback in issue
+  6 over at the GitHub mirror: <https://github.com/protesilaos/denote/issues/6>.
+
++ Tweaked some face attributes to work with Emacs 27.
+
++ Tinkered with the colour mapping or precise values of practically all
+  the themes.  Better consult the Git log for the minutiae.  I think the
+  identity of each theme is largely defined, though there may still be
+  tweaks to be done here and there until we eventually reach version
+  =1.0.0=.
+
 * Version 0.3.0 on 2022-08-20
 :PROPERTIES:
 :CUSTOM_ID: h:f91c2c29-cc5b-4cf3-a322-f3a286a17e8c
