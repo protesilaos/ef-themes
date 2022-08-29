@@ -875,10 +875,10 @@ themes already cover:
 :END:
 
 These are difficult to support due to their (i) incompatibility with the
-design of the =ef-themes=, (ii) complexity or multitude of points of
-entry, (iii) external dependencies, (iv) existence of better
-alternatives in my opinion, or (v) inconsiderate use of color
-out-of-the-box and implicit unwillingness to be good Emacs citizens:
+design of the =ef-themes=, (ii) complexity or multiple points of entry,
+(iii) external dependencies, (iv) existence of better alternatives in my
+opinion, or (v) inconsiderate use of color out-of-the-box and implicit
+unwillingness to be good Emacs citizens:
 
 - auctex :: it has a zillion dependencies; I don't know LaTeX.
 
@@ -1031,9 +1031,8 @@ of the heading's text.  However, tags are a distinct component of the
 heading as noted in the doc string of the ~org-get-heading~ function.
 Tags also are functionally different than the ordinary text of the
 heading: they are a clickable link/button.  It thus is a matter of
-usability to render this distinction clear at the visual level: the fact
-that upstream Org does not do that does not mean we should uncritically
-accept its decision.
+usability to render this distinction clear at the visual level: I do not
+agree with upstream Org's design decision.
 
 Normally, we would style a link to have an underline.  However, this
 design does not look right in headings (as it doesn't look right in,
