@@ -136,7 +136,7 @@
 
       (link cyan-warmer)
       (link-alt green-warmer)
-      (date cyan-warmer)
+      (date cyan-cooler)
       (name yellow)
       (keybind red-warmer)
 
