@@ -1518,7 +1518,7 @@ Those are stored in `ef-themes-faces' and
          ;; instantiate the actual theme's palette.  We have to do this
          ;; otherwise the macro does not work properly when called from
          ;; inside a function.
-         (colors (mapcar #'car (symbol-value 'ef-light-palette))))
+         (colors (mapcar #'car (ef-themes--current-theme-palette))))
     `(let* ((c '((class color) (min-colors 256)))
             (,sym (ef-themes--current-theme-palette))
             ,@(mapcar (lambda (color)
