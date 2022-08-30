@@ -776,6 +776,7 @@ everything most users need.
 - calendar and diary
 - change-log and log-view (part of VC)
 - chart
+- company [ Part of {{{development-version}}} ]
 - compilation
 - completions
 - consult
@@ -1091,9 +1092,9 @@ matters.
 + Contributions to code or the manual :: Christopher League, Philip
   Kaludercic.
 
-+ Ideas and/or user feedback :: Anthony Chavez, Iris Garcia,
-  Jean-Philippe Gagné Guay, Spike-Leung, Steve Molitor, Summer Emacs,
-  Zoltán Király.
++ Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Iris
+  Garcia, Jean-Philippe Gagné Guay, Spike-Leung, Steve Molitor, Summer
+  Emacs, Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:
