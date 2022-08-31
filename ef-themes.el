@@ -319,7 +319,7 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
-  (when-let* ((theme (car custom-enabled-themes)))
+  (when-let* ((theme (car (ef-themes--list-enabled-themes))))
     (if (memq theme (ef-themes--list-enabled-themes))
         theme
       (user-error "`%s' is not an Ef theme" theme))))
