@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 0.4.1
+;; Version: 0.4.2
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -621,12 +621,10 @@ Helper function for `ef-themes-preview-colors'."
     `(font-latex-script-char-face ((,c :inherit font-lock-builtin-face)))
     `(font-latex-sectioning-5-face ((,c :inherit (bold ef-themes-variable-pitch) :foreground ,fg-alt)))
     `(font-latex-sedate-face ((,c :inherit font-lock-keyword-face)))
-    `(font-latex-slide-title-face ((,c :inherit modus-themes-heading-1)))
+    `(font-latex-slide-title-face ((,c :inherit ef-themes-heading-0)))
     `(font-latex-string-face ((,c :inherit font-lock-string-face)))
-    `(font-latex-subscript-face ((,c :height 0.95)))
-    `(font-latex-superscript-face ((,c :height 0.95)))
     `(font-latex-underline-face ((,c :inherit underline)))
-    `(font-latex-verbatim-face ((,c :inherit modus-themes-markup-verbatim)))
+    `(font-latex-verbatim-face ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-0)))
     `(font-latex-warning-face ((,c :inherit font-lock-warning-face)))
     `(tex-verbatim ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-0)))
     ;; `(texinfo-heading ((,c :foreground ,magenta)))
