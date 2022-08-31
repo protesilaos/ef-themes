@@ -1089,8 +1089,8 @@ matters.
 
 + Author/maintainer :: Protesilaos Stavrou.
 
-+ Contributions to code or the manual :: Christopher League, Philip
-  Kaludercic.
++ Contributions to code or the manual :: Alex Lu, Christopher League,
+  Philip Kaludercic.
 
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Iris
   Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Spike-Leung, Steve
