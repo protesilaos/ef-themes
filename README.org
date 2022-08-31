@@ -771,6 +771,7 @@ everything most users need.
 - all-the-icons-dired
 - all-the-icons-ibuffer
 - ansi-color
+- auctex [ Part of {{{development-version}}} ]
 - bongo
 - bookmark
 - calendar and diary
@@ -876,8 +877,6 @@ design of the =ef-themes=, (ii) complexity or multiple points of entry,
 (iii) external dependencies, (iv) existence of better alternatives in my
 opinion, or (v) inconsiderate use of color out-of-the-box and implicit
 unwillingness to be good Emacs citizens:
-
-- auctex :: it has a zillion dependencies; I don't know LaTeX.
 
 - avy :: its UI is prone to visual breakage and is hard to style
   correctly.
