@@ -809,6 +809,8 @@ Helper function for `ef-themes-preview-colors'."
     `(diredfl-symlink ((,c :inherit dired-symlink)))
     `(diredfl-tagged-autofile-name ((,c :inherit (diredfl-autofile-name dired-marked))))
     `(diredfl-write-priv ((,c :foreground ,rainbow-2)))
+;;;; dirvish
+    `(dirvish-hl-line ((,c :background ,bg-hl-line)))
 ;;;; doom-modeline
     ;; NOTE 2022-08-20: This is the only face that seems necessary.  All
     ;; others inherit from basic faces.

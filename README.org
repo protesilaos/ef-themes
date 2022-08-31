@@ -789,6 +789,7 @@ everything most users need.
 - dired
 - dired-subtree
 - diredfl
+- dirvish
 - doom-modeline (incomplete, though likely is okay)
 - ediff
 - eldoc
