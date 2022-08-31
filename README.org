@@ -1092,8 +1092,8 @@ matters.
   Kaludercic.
 
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Iris
-  Garcia, Jean-Philippe Gagné Guay, Spike-Leung, Steve Molitor, Summer
-  Emacs, Zoltán Király.
+  Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Spike-Leung, Steve
+  Molitor, Summer Emacs, Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:
