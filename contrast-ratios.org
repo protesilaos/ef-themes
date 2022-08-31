@@ -163,9 +163,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 | yellow-warmer  | #cfaf00 |    9.20 |    7.99 |    7.09 |    8.72 |
 | yellow-cooler  | #bfaf7a |    9.06 |    7.86 |    6.98 |    8.58 |
 | yellow-faint   | #af9a6a |    7.20 |    6.25 |    5.55 |    6.82 |
-| blue           | #3f95f6 |    6.43 |    5.59 |    4.96 |    6.10 |
+| blue           | #3f90f0 |    6.07 |    5.28 |    4.68 |    5.76 |
 | blue-warmer    | #6a9fff |    7.54 |    6.55 |    5.81 |    7.14 |
-| blue-cooler    | #1f90ff |    6.11 |    5.30 |    4.71 |    5.78 |
+| blue-cooler    | #009fff |    6.96 |    6.05 |    5.37 |    6.60 |
 | blue-faint     | #7a94df |    6.71 |    5.82 |    5.17 |    6.35 |
 | magenta        | #b379bf |    6.02 |    5.23 |    4.64 |    5.71 |
 | magenta-warmer | #af80ea |    6.68 |    5.80 |    5.15 |    6.33 |
