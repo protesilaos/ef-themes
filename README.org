@@ -789,7 +789,7 @@ everything most users need.
 - dired
 - dired-subtree
 - diredfl
-- dirvish
+- dirvish [ Part of {{{development-version}}} ]
 - doom-modeline (incomplete, though likely is okay)
 - ediff
 - eldoc
