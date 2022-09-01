@@ -844,7 +844,7 @@ everything most users need.
 - widget
 - woman
 
-** Implicitly support packages or face groups
+** Implicitly supported packages or face groups
 :PROPERTIES:
 :CUSTOM_ID: h:7d1acc40-a2ce-4e6d-a230-35ddffc00690
 :END:
