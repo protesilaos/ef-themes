@@ -821,6 +821,7 @@ everything most users need.
 - outline-mode
 - outline-minor-faces
 - package (M-x list-packages)
+- pulsar [ Part of {{{development-version}}} ]
 - rainbow-delimiters
 - rcirc
 - regexp-builder (re-builder)
@@ -863,7 +864,6 @@ themes already cover:
 - lin
 - multiple-cursors
 - paren-face
-- pulsar
 - tempel
 - which-key (seems okay, but may need explicit support)
 - xref

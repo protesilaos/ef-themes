@@ -1316,6 +1316,13 @@ Helper function for `ef-themes-preview-colors'."
     `(package-status-installed ((,c :foreground ,fg-alt)))
     `(package-status-new ((,c :inherit success)))
     `(package-status-unsigned ((,c :inherit error)))
+;;;; pulsar
+    `(pulsar-blue ((,c :background ,bg-blue-subtle)))
+    `(pulsar-cyan ((,c :background ,bg-cyan-subtle)))
+    `(pulsar-green ((,c :background ,bg-green-subtle)))
+    `(pulsar-magenta ((,c :background ,bg-magenta-subtle)))
+    `(pulsar-red ((,c :background ,bg-red-subtle)))
+    `(pulsar-yellow ((,c :background ,bg-yellow-subtle)))
 ;;;; rainbow-delimiters
     `(rainbow-delimiters-base-error-face ((,c :inherit (bold rainbow-delimiters-mismatched-face))))
     `(rainbow-delimiters-base-face    ((,c :foreground ,rainbow-0)))
