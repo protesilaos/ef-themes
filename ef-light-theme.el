@@ -86,7 +86,7 @@
       (bg-cyan     "#88c8ff")
 
       (bg-red-subtle      "#ffcfbf")
-      (bg-green-subtle    "#afffbf")
+      (bg-green-subtle    "#b3fabf")
       (bg-yellow-subtle   "#fff576")
       (bg-blue-subtle     "#ccdfff")
       (bg-magenta-subtle  "#ffddff")
