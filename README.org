@@ -805,6 +805,7 @@ everything most users need.
 - info
 - isearch, occur, query-replace
 - keycast
+- lin [ Part of {{{development-version}}} ]
 - line numbers (~display-line-numbers-mode~ and global variant)
 - magit
 - man
@@ -861,7 +862,6 @@ themes already cover:
 - hl-todo
 - icomplete
 - ido
-- lin
 - multiple-cursors
 - paren-face
 - tempel
