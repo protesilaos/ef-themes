@@ -823,6 +823,7 @@ everything most users need.
 - outline-minor-faces
 - package (M-x list-packages)
 - pulsar [ Part of {{{development-version}}} ]
+- pulse [ Part of {{{development-version}}} ]
 - rainbow-delimiters
 - rcirc
 - regexp-builder (re-builder)

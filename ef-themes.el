@@ -1336,6 +1336,8 @@ Helper function for `ef-themes-preview-colors'."
     `(pulsar-magenta ((,c :background ,bg-magenta-subtle)))
     `(pulsar-red ((,c :background ,bg-red-subtle)))
     `(pulsar-yellow ((,c :background ,bg-yellow-subtle)))
+;;;; pulse
+    `(pulse-highlight-start-face ((,c :background ,bg-blue-subtle)))
 ;;;; rainbow-delimiters
     `(rainbow-delimiters-base-error-face ((,c :inherit (bold rainbow-delimiters-mismatched-face))))
     `(rainbow-delimiters-base-face    ((,c :foreground ,rainbow-0)))
