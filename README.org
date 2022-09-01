@@ -865,8 +865,12 @@ themes already cover:
 - multiple-cursors
 - paren-face
 - tempel
-- which-key (seems okay, but may need explicit support)
+- which-key
 - xref
+
+Note that "implicitly supported" does not mean that they always fit in
+perfectly.  If there are refinements we need to made, then we need to
+intervene ([[#h:8e87733c-9fc9-45cd-9b9e-97b11f4f6c05][Explicitly supported packages or face groups]]).
 
 ** Packages that are hard to support
 :PROPERTIES:
