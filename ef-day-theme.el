@@ -86,10 +86,10 @@
       (bg-cyan     "#88cfd0")
 
       (bg-red-subtle      "#ffc6bf")
-      (bg-green-subtle    "#afffbf")
-      (bg-yellow-subtle   "#fff076")
+      (bg-green-subtle    "#c4f2af")
+      (bg-yellow-subtle   "#f0f07f")
       (bg-blue-subtle     "#ccdfff")
-      (bg-magenta-subtle  "#ffd0ff")
+      (bg-magenta-subtle  "#fad3ff")
       (bg-cyan-subtle     "#bfefff")
 
       ;; Diffs
