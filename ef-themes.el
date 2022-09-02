@@ -640,7 +640,7 @@ Helper function for `ef-themes-preview-colors'."
     `(bongo-filled-seek-bar ((,c :background ,bg-hover)))
     `(bongo-marked-track ((,c :inherit success :background ,bg-info)))
     `(bongo-marked-track-line ((,c :background ,bg-dim)))
-    `(bongo-played-track ((,c :strike-through t)))
+    `(bongo-played-track ((,c :inherit shadow :strike-through t)))
     `(bongo-track-length ((,c :inherit shadow)))
     `(bongo-track-title ((,c :foreground ,rainbow-1)))
     `(bongo-unfilled-seek-bar ((,c :background ,bg-dim)))
