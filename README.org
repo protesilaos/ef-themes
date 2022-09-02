@@ -835,6 +835,7 @@ everything most users need.
 - smerge
 - tab-bar-mode
 - tab-line-mode
+- tempel [ Part of {{{development-version}}} ]
 - term
 - textsec
 - transient
@@ -866,7 +867,6 @@ themes already cover:
 - ido
 - multiple-cursors
 - paren-face
-- tempel
 - which-key
 - xref
 

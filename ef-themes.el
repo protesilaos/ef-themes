@@ -1427,6 +1427,10 @@ Helper function for `ef-themes-preview-colors'."
     `(tab-line-tab-inactive ((,c :box (:line-width -2 :color ,bg-active) :background ,bg-active)))
     `(tab-line-tab-inactive-alternate ((,c :inherit tab-line-tab-inactive :foreground ,fg-alt)))
     `(tab-line-tab-modified ((,c :foreground ,warning)))
+;;;; tempel
+    `(tempel-default ((,c :inherit italic :background ,bg-alt :foreground ,fg-alt)))
+    `(tempel-field ((,c :background ,bg-info :foreground ,info)))
+    `(tempel-form ((,c :background ,bg-err :foreground ,err)))
 ;;;; term
     `(term ((,c :background ,bg-main :foreground ,fg-main)))
     `(term-bold ((,c :inherit bold)))
