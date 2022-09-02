@@ -802,6 +802,7 @@ everything most users need.
 - git-commit
 - git-rebase
 - gnus (incomplete, though likely is okay)
+- image-dired [ Part of {{{development-version}}} ]
 - info
 - isearch, occur, query-replace
 - keycast

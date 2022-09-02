@@ -922,6 +922,9 @@ Helper function for `ef-themes-preview-colors'."
     `(gnus-header-name ((,c :inherit message-header-name)))
     `(gnus-header-newsgroups ((,c :inherit message-header-newsgroups)))
     `(gnus-header-subject ((,c :inherit message-header-subject)))
+;;;; image-dired
+    `(image-dired-thumb-flagged ((,c :background ,err)))
+    `(image-dired-thumb-mark ((,c :background ,info)))
 ;;;; info
     `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-0))) ; the capitalization is canonical
     `(info-header-node ((,c :inherit (shadow bold))))
