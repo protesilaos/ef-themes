@@ -164,7 +164,7 @@
       (accent-0 blue-warmer)
       (accent-1 magenta-warmer)
       (accent-2 green-cooler)
-      (accent-3 red)
+      (accent-3 yellow-warmer)
 
       (mail-0 blue-warmer)
       (mail-1 magenta)
