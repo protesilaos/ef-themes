@@ -38,6 +38,8 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
 :END:
 
+** Base colours
+
 | Name           |         | #0f0e06 | #1f1b19 | #36322f | #14130a |
 |----------------+---------+---------+---------+---------+---------|
 | fg-main        | #cfbcba |   10.64 |    9.40 |    6.99 |   10.25 |
@@ -69,10 +71,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #82a0af |    7.00 |    6.18 |    4.59 |    6.74 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #692a12 |
+|------------------+---------+---------|
+| modeline-err     | #ff8faf |    5.05 |
+| modeline-warning | #c0b333 |    5.02 |
+| modeline-info    | #5fc80f |    5.03 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-dark
 :PROPERTIES:
 :CUSTOM_ID: h:c97a3ebc-de07-40bf-af86-1df8be72f214
 :END:
+
+** Base colours
 
 | Name           |         | #000000 | #1a1a1a | #2b2b2b | #0c0c0c |
 |----------------+---------+---------+---------+---------+---------|
@@ -105,10 +118,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #8aa0df |    8.17 |    6.77 |    5.51 |    7.61 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #2a2a75 |
+|------------------+---------+---------|
+| modeline-err     | #ff80af |    5.31 |
+| modeline-warning | #c0b300 |    5.75 |
+| modeline-info    | #2fc82f |    5.59 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-day
 :PROPERTIES:
 :CUSTOM_ID: h:3146bf01-7f75-4e26-bd68-feeb268cf7ff
 :END:
+
+** Base colours
 
 | Name           |         | #fff5ea | #f3ebdc | #e9e0d8 | #f9f1e8 |
 |----------------+---------+---------+---------+---------+---------|
@@ -141,10 +165,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #4f6f8f |    4.87 |    4.43 |    4.03 |    4.69 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #ffaf72 |
+|------------------+---------+---------|
+| modeline-err     | #9a0000 |    4.90 |
+| modeline-warning | #585000 |    4.54 |
+| modeline-info    | #225500 |    4.91 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-deuteranopia-dark
 :PROPERTIES:
 :CUSTOM_ID: h:12b9f4e4-5d65-460d-b3cb-2664f7830c24
 :END:
+
+** Base colours
 
 | Name           |         | #000a1f | #0f1c2d | #19263a | #071225 |
 |----------------+---------+---------+---------+---------+---------|
@@ -177,10 +212,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #8aa0df |    7.69 |    6.68 |    5.92 |    7.28 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #003f8f |
+|------------------+---------+---------|
+| modeline-err     | #ffff00 |    9.28 |
+| modeline-warning | #ddb300 |    4.99 |
+| modeline-info    | #aaccff |    6.07 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-deuteranopia-light
 :PROPERTIES:
 :CUSTOM_ID: h:64efdb85-f6fc-418b-96fc-156409e0258d
 :END:
+
+** Base colours
 
 | Name           |         | #f5f5ff | #e8e8ea | #d3d3e0 | #efeff5 |
 |----------------+---------+---------+---------+---------+---------|
@@ -213,10 +259,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #506fa0 |    4.70 |    4.16 |    3.44 |    4.45 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #99c7ff |
+|------------------+---------+---------|
+| modeline-err     | #605000 |    4.53 |
+| modeline-warning | #444400 |    5.77 |
+| modeline-info    | #2222c3 |    5.74 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-light
 :PROPERTIES:
 :CUSTOM_ID: h:02d01731-b9ab-4653-9e71-ab1592c64734
 :END:
+
+** Base colours
 
 | Name           |         | #ffffff | #efefef | #dbdbdb | #f9f9f9 |
 |----------------+---------+---------+---------+---------+---------|
@@ -249,10 +306,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #506fa0 |    5.09 |    4.43 |    3.68 |    4.84 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #b7c7ff |
+|------------------+---------+---------|
+| modeline-err     | #9f0000 |    5.10 |
+| modeline-warning | #5f5000 |    4.79 |
+| modeline-info    | #005f00 |    4.79 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-night
 :PROPERTIES:
 :CUSTOM_ID: h:cc74fbff-d0da-4fef-a83a-8e92d27738b9
 :END:
+
+** Base colours
 
 | Name           |         | #000e17 | #0f1b29 | #1a2a2f | #0f121f |
 |----------------+---------+---------+---------+---------+---------|
@@ -285,10 +353,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #92b4df |    9.13 |    8.12 |    6.93 |    8.71 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #003a7f |
+|------------------+---------+---------|
+| modeline-err     | #ff8faf |    5.13 |
+| modeline-warning | #c0b300 |    5.07 |
+| modeline-info    | #2fca4f |    5.06 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-spring
 :PROPERTIES:
 :CUSTOM_ID: h:f8eea1d3-359a-4ab6-9c5c-c54ebe896b43
 :END:
+
+** Base colours
 
 | Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 | #f0f8f4 |
 |----------------+---------+---------+---------+---------+---------|
@@ -321,10 +400,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #5f60bf |    5.26 |    4.64 |    4.24 |    4.97 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #90e8b0 |
+|------------------+---------+---------|
+| modeline-err     | #9f0030 |    5.70 |
+| modeline-warning | #5f5400 |    5.21 |
+| modeline-info    | #005f20 |    5.40 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-summer
 :PROPERTIES:
 :CUSTOM_ID: h:11cc99c5-435d-4928-9fe1-1b4763cd47ff
 :END:
+
+** Base colours
 
 | Name           |         | #fff2f3 | #f3e7eb | #efd3e4 | #f9eff0 |
 |----------------+---------+---------+---------+---------+---------|
@@ -357,10 +447,21 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #5f60bf |    4.92 |    4.46 |    3.86 |    4.76 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
+** Special colours against the modeline
+
+| Name             |         | #ffa4dc |
+|------------------+---------+---------|
+| modeline-err     | #9f003f |    4.55 |
+| modeline-warning | #5c4f00 |    4.51 |
+| modeline-info    | #00553f |    4.89 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-winter
 :PROPERTIES:
 :CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
 :END:
+
+** Base colours
 
 | Name           |         | #0f0b15 | #161926 | #202234 | #14121a |
 |----------------+---------+---------+---------+---------+---------|
@@ -392,3 +493,12 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-cooler    | #35afbf |    7.45 |    6.69 |    6.00 |    7.10 |
 | cyan-faint     | #8aa0df |    7.58 |    6.81 |    6.10 |    7.23 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+
+| Name             |         | #5f1f5f |
+|------------------+---------+---------|
+| modeline-err     | #ff8faf |    5.30 |
+| modeline-warning | #c0b300 |    5.24 |
+| modeline-info    | #2fca4f |    5.24 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
