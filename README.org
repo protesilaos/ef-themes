@@ -831,6 +831,7 @@ everything most users need.
 - pulse [ Part of {{{development-version}}} ]
 - rainbow-delimiters
 - rcirc
+- recursion-indicator [ Part of {{{development-version}}} ]
 - regexp-builder (re-builder)
 - ruler-mode
 - shell-script-mode (sh-mode)

@@ -1373,6 +1373,9 @@ Helper function for `ef-themes-preview-colors'."
     `(rcirc-track-keyword ((,c :inherit bold)))
     `(rcirc-track-nick ((,c :inherit warning)))
     `(rcirc-url ((,c :inherit link)))
+;;;; recursion-indicator
+    `(recursion-indicator-general ((,c :foreground ,modeline-err)))
+    `(recursion-indicator-minibuffer ((,c :foreground ,modeline-info)))
 ;;;; regexp-builder (re-builder)
     `(reb-match-0 ((,c :background ,bg-cyan :foreground ,fg-intense)))
     `(reb-match-1 ((,c :background ,bg-magenta :foreground ,fg-intense)))
