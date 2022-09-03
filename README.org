@@ -794,7 +794,7 @@ everything most users need.
 - dired-subtree
 - diredfl
 - dirvish [ Part of {{{development-version}}} ]
-- doom-modeline (incomplete, though likely is okay)
+- doom-modeline [ Expanded as part of {{{development-version}}} ]
 - ediff
 - eldoc
 - elfeed
