@@ -698,9 +698,9 @@ Helper function for `ef-themes-preview-colors'."
     `(compilation-error ((,c :inherit error)))
     `(compilation-info ((,c :inherit bold :foreground ,name)))
     `(compilation-line-number ((,c :inherit shadow)))
-    `(compilation-mode-line-exit ((,c :inherit bold)))
-    `(compilation-mode-line-fail ((,c :inherit error)))
-    `(compilation-mode-line-run ((,c :inherit warning)))
+    `(compilation-mode-line-exit ((,c :inherit bold :foreground ,modeline-info)))
+    `(compilation-mode-line-fail ((,c :inherit bold :foreground ,modeline-err)))
+    `(compilation-mode-line-run ((,c :inherit bold :foreground ,modeline-warning)))
     `(compilation-warning ((,c :inherit warning)))
 ;;;; completions
     `(completions-annotations ((,c :inherit italic :foreground ,docstring)))
