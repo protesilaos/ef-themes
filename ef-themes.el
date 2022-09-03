@@ -534,6 +534,7 @@ Helper function for `ef-themes-preview-colors'."
     `(comint-highlight-input ((,c :inherit bold)))
     `(comint-highlight-prompt ((,c :foreground ,accent-2)))
     `(minibuffer-prompt ((,c :foreground ,accent-2)))
+    `(edmacro-label ((,c :inherit bold)))
     `(elisp-shorthand-font-lock-face ((,c :inherit italic)))
     `(escape-glyph ((,c :foreground ,warning)))
     `(error ((,c :inherit bold :foreground ,err)))
