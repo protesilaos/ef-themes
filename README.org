@@ -904,9 +904,10 @@ unwillingness to be good Emacs citizens:
 
 - elfeed-goodies :: depends on =powerline=...
 
-- ement.el :: has an external dependency that I don't use. - helm :: it
-  is complex and makes inconsiderate use of color.  Prefer the
-  =vertico=, =consult=, and =embark= packages.
+- ement.el :: has an external dependency that I don't use.
+
+- helm :: it is complex and makes inconsiderate use of color.  Prefer
+  the =vertico=, =consult=, and =embark= packages.
 
 - info+ :: it is complex and makes inconsiderate use of color.
 
