@@ -246,7 +246,7 @@ overall design of the project.
 |------------------+---------+---------|
 | modeline-err     | #ffff00 |    9.28 |
 | modeline-warning | #ddb300 |    4.99 |
-| modeline-info    | #aaccff |    6.07 |
+| modeline-info    | #aaaaff |    4.70 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-deuteranopia-light

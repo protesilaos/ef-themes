@@ -141,7 +141,7 @@
 
       (modeline-err     "#ffff00")
       (modeline-warning "#ddb300")
-      (modeline-info    "#aaccff")
+      (modeline-info    "#aaaaff")
 
       ;; Mappings
       (err yellow-warmer)
