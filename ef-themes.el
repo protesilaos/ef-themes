@@ -402,10 +402,10 @@ prompts with completion for either `light' or `dark'."
    (list
     (when current-prefix-arg
       (intern (cadr (read-multiple-choice
-		     "Variant"
-		     '((?d "dark" "Load a random dark theme")
-		       (?l "light" "Load a random light theme"))
-		     "Limit the variation themes to select."))))))
+                     "Variant"
+                     '((?d "dark" "Load a random dark theme")
+                       (?l "light" "Load a random light theme"))
+                     "Limit the variation themes to select."))))))
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
