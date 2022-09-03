@@ -39,6 +39,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:85f29c2d-ae5c-4bb8-94bf-ac43543c8539
+:END:
 
 | Name           |         | #0f0e06 | #1f1b19 | #36322f | #14130a |
 |----------------+---------+---------+---------+---------+---------|
@@ -72,12 +75,15 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:1e6d64de-43c8-4e37-8ab2-0615b08a9b7a
+:END:
 
 | Name             |         | #692a12 |
 |------------------+---------+---------|
-| modeline-err     | #ff8faf |    5.05 |
-| modeline-warning | #c0b333 |    5.02 |
-| modeline-info    | #5fc80f |    5.03 |
+| modeline-err     | #ff9fbf |    5.65 |
+| modeline-warning | #dfcf33 |    6.76 |
+| modeline-info    | #4fdf5f |    6.21 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-dark
@@ -86,6 +92,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:bdc5d5b7-4d1a-4e3d-8333-01a96164f4d8
+:END:
 
 | Name           |         | #000000 | #1a1a1a | #2b2b2b | #0c0c0c |
 |----------------+---------+---------+---------+---------+---------|
@@ -119,6 +128,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:89510840-d210-46f6-9dd8-40cf04dea37c
+:END:
 
 | Name             |         | #2a2a75 |
 |------------------+---------+---------|
@@ -133,6 +145,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:36958e2f-8e19-47d8-ba3e-16fd7c8df3e4
+:END:
 
 | Name           |         | #fff5ea | #f3ebdc | #e9e0d8 | #f9f1e8 |
 |----------------+---------+---------+---------+---------+---------|
@@ -166,12 +181,15 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:8554cce0-4d28-4da5-aee3-f01c846f35eb
+:END:
 
 | Name             |         | #ffaf72 |
 |------------------+---------+---------|
-| modeline-err     | #9a0000 |    4.90 |
-| modeline-warning | #585000 |    4.54 |
-| modeline-info    | #225500 |    4.91 |
+| modeline-err     | #900000 |    5.32 |
+| modeline-warning | #66008f |    5.37 |
+| modeline-info    | #1f409f |    5.07 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-deuteranopia-dark
@@ -180,6 +198,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:922e7f85-8666-4d18-9399-ffb90d688a05
+:END:
 
 Most of these are not actually used.  The theme only maps the blues and
 yellows.  We just define the entire palette to make it work with the
@@ -217,6 +238,9 @@ overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:483bcdd8-9078-449c-8cb6-e2c878b3cdcb
+:END:
 
 | Name             |         | #003f8f |
 |------------------+---------+---------|
@@ -231,6 +255,9 @@ overall design of the project.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:4b25f3a6-8775-467b-8470-35248a2585f5
+:END:
 
 Most of these are not actually used.  The theme only maps the blues and
 yellows.  We just define the entire palette to make it work with the
@@ -268,14 +295,17 @@ overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:4ec2e354-9c7b-4613-b2ca-3633b13f2ac5
+:END:
 
 We can't have the appropriate colour-coding with this theme.  So we use
 a tone.  Blue is okay.
 
 | Name             |         | #99c7ff |
 |------------------+---------+---------|
-| modeline-err     | #605000 |    4.53 |
-| modeline-warning | #444400 |    5.77 |
+| modeline-err     | #000000 |   11.97 |
+| modeline-warning | #0a0a1f |   11.12 |
 | modeline-info    | #2222c3 |    5.74 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
@@ -285,6 +315,9 @@ a tone.  Blue is okay.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:fa4269da-7941-4b53-a523-e2edd86d457e
+:END:
 
 | Name           |         | #ffffff | #efefef | #dbdbdb | #f9f9f9 |
 |----------------+---------+---------+---------+---------+---------|
@@ -318,12 +351,15 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:4a89450f-9537-40c5-9f50-ed60ae93fe38
+:END:
 
 | Name             |         | #b7c7ff |
 |------------------+---------+---------|
 | modeline-err     | #9f0000 |    5.10 |
-| modeline-warning | #5f5000 |    4.79 |
-| modeline-info    | #005f00 |    4.79 |
+| modeline-warning | #5f0070 |    7.34 |
+| modeline-info    | #002fa0 |    6.60 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-night
@@ -332,6 +368,9 @@ a tone.  Blue is okay.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
+:END:
 
 | Name           |         | #000e17 | #0f1b29 | #1a2a2f | #0f121f |
 |----------------+---------+---------+---------+---------+---------|
@@ -365,12 +404,15 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:a6964d93-4f16-42bc-a40e-ddddea858fe0
+:END:
 
 | Name             |         | #003a7f |
 |------------------+---------+---------|
 | modeline-err     | #ff8faf |    5.13 |
-| modeline-warning | #c0b300 |    5.07 |
-| modeline-info    | #2fca4f |    5.06 |
+| modeline-warning | #dfcf00 |    6.83 |
+| modeline-info    | #00e06f |    6.22 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-spring
@@ -379,6 +421,9 @@ a tone.  Blue is okay.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:1e3e257a-6362-46f2-bbe1-f3d4ea71ff57
+:END:
 
 | Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 | #f0f8f4 |
 |----------------+---------+---------+---------+---------+---------|
@@ -412,12 +457,15 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:490ced18-faf2-4cfe-beda-4c294ec1b82d
+:END:
 
 | Name             |         | #90e8b0 |
 |------------------+---------+---------|
 | modeline-err     | #9f0030 |    5.70 |
-| modeline-warning | #5f5400 |    5.21 |
-| modeline-info    | #005f20 |    5.40 |
+| modeline-warning | #5f0f9f |    6.98 |
+| modeline-info    | #1240af |    6.04 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-summer
@@ -426,6 +474,9 @@ a tone.  Blue is okay.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:5f7da43e-0853-4fd5-a3e0-a149fc63a855
+:END:
 
 | Name           |         | #fff2f3 | #f3e7eb | #efd3e4 | #f9eff0 |
 |----------------+---------+---------+---------+---------+---------|
@@ -459,12 +510,15 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:1a03b3cf-9220-43a1-93e3-b41023dc014c
+:END:
 
 | Name             |         | #ffa4dc |
 |------------------+---------+---------|
 | modeline-err     | #9f003f |    4.55 |
-| modeline-warning | #5c4f00 |    4.51 |
-| modeline-info    | #00553f |    4.89 |
+| modeline-warning | #5f009f |    5.84 |
+| modeline-info    | #1240af |    4.88 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-winter
@@ -473,6 +527,9 @@ a tone.  Blue is okay.
 :END:
 
 ** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:76e0b621-7872-4597-8bdc-6c007e43aff5
+:END:
 
 | Name           |         | #0f0b15 | #161926 | #202234 | #14121a |
 |----------------+---------+---------+---------+---------+---------|
@@ -506,10 +563,13 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:38936e4a-8b0b-4c38-a07d-872ba28772e0
+:END:
 
 | Name             |         | #5f1f5f |
 |------------------+---------+---------|
-| modeline-err     | #ff8faf |    5.30 |
+| modeline-err     | #ff9fbf |    5.93 |
 | modeline-warning | #c0b300 |    5.24 |
-| modeline-info    | #2fca4f |    5.24 |
+| modeline-info    | #40e0af |    6.76 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
