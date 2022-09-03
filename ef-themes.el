@@ -545,6 +545,7 @@ Helper function for `ef-themes-preview-colors'."
     `(help-argument-name ((,c :foreground ,accent-0)))
     `(help-key-binding ((,c :inherit bold :foreground ,keybind)))
     `(highlight ((,c :background ,bg-hover :foreground ,fg-intense)))
+    `(read-multiple-choice-face ((,c :inherit warning :background ,bg-warning)))
     `(secondary-selection ((,c :background ,bg-hover-alt :foreground ,fg-intense)))
     `(hl-line ((,c :background ,bg-hl-line)))
     `(button ((,c :foreground ,link :underline ,border)))
