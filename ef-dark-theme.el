@@ -137,7 +137,7 @@
       (fg-intense    "#ffffff")
 
       (modeline-err     "#ff80af")
-      (modeline-warning "#c0b300")
+      (modeline-warning "#dfcf33")
       (modeline-info    "#2fc82f")
 
       ;; Mappings

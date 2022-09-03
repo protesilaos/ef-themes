@@ -136,9 +136,9 @@
       (cursor        "#ffaa33")
       (fg-intense    "#ffffff")
 
-      (modeline-err     "#ff8faf")
-      (modeline-warning "#c0b333")
-      (modeline-info    "#5fc80f")
+      (modeline-err     "#ff9fbf")
+      (modeline-warning "#dfcf33")
+      (modeline-info    "#4fdf5f")
 
       ;; Mappings
       (err red-warmer)

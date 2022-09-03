@@ -137,8 +137,8 @@
       (fg-intense    "#000000")
 
       (modeline-err     "#9f003f")
-      (modeline-warning "#5c4f00")
-      (modeline-info    "#00553f")
+      (modeline-warning "#5f009f")
+      (modeline-info    "#1240af")
 
       ;; Mappings
       (err red-warmer)

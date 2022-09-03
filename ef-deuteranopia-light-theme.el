@@ -139,8 +139,8 @@
       (cursor        "#0000bb")
       (fg-intense    "#000000")
 
-      (modeline-err     "#605000")
-      (modeline-warning "#444400")
+      (modeline-err     "#000000") ; too dark to have red/yellow here
+      (modeline-warning "#0a0a1f")
       (modeline-info    "#2222c3")
 
       ;; Mappings
