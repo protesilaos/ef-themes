@@ -755,6 +755,32 @@ The exact color values are taken from the active Ef theme."
 To find the names of the color variables, the user can rely on the
 commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
 
+** Tweak goto-address-mode faces
+:PROPERTIES:
+:CUSTOM_ID: h:d42f726c-44e5-4dd6-b77e-e6ca0bab3189
+:END:
+
+The built-in ~goto-address-mode~ uses heuristics to identify URLs and
+email addresses in the current buffer.  It then applies a face to them
+to change their style.  Some packages, such as =notmuch=, use this
+minor-mode automatically.
+
+The faces are not declared with ~defface~, meaning that it is better
+that the theme does not modify them.  The user is thus encouraged to
+consider including this in their setup:
+
+#+begin_src emacs-lisp
+(setq goto-address-url-face 'link
+      goto-address-url-mouse-face 'highlight
+      goto-address-mail-face 'link
+      goto-address-mail-mouse-face 'highlight)
+#+end_src
+
+My personal preference is to set ~goto-address-mail-face~ to nil,
+because it otherwise adds too much visual noise to the buffer (email
+addresses stand out more, due to the use of the uncommon =@= caharacter
+but also because they are often enclosed in angled brackets).
+
 * Supported packages or face groups
 :PROPERTIES:
 :CUSTOM_ID: h:c8d80daf-d039-40c4-bb74-e7814a9b4c79
