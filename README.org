@@ -418,8 +418,12 @@ serendipity in their life.  When call interactively with =M-x= it loads
 a random theme from the Ef themes collection.  The selection excludes
 the current Ef theme.  Calling ~ef-themes-load-random~ with a prefix
 argument (=C-u= by default) makes the command limit the random selection
-to either light or dark themes.  The user is prompted with minibuffer
-completion to pick among the two sets.
+to either light or dark themes.  The user is prompted at the minibuffer
+to pick among the two sets.
+
+[ As part of {{{development-version}}} the choice between =light= and
+  =dark= sets in ~ef-themes-load-random~ is done using the function
+  ~read-multiple-choice~.  Before, it was ~completing-read~. ]
 
 The ~ef-themes-load-random~ can also be called from Lisp (e.g. from the
 =init.el= file):
