@@ -133,7 +133,7 @@
       (bg-info       "#ccf5dd") ; check with info
 
       (border        "#b4c4c0")
-      (cursor        "#bf0040")
+      (cursor        "#bf005f")
       (fg-intense    "#000000")
 
       (modeline-err     "#9f0030")
