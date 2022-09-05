@@ -145,10 +145,10 @@
       (warning yellow-warmer)
       (info green)
 
-      (link cyan)
+      (link blue)
       (link-alt magenta)
-      (date cyan)
-      (name blue)
+      (date cyan-cooler)
+      (name magenta-cooler)
       (keybind blue-cooler)
 
       (builtin magenta)
