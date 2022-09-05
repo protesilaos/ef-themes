@@ -538,6 +538,7 @@ Helper function for `ef-themes-preview-colors'."
     `(elisp-shorthand-font-lock-face ((,c :inherit italic)))
     `(escape-glyph ((,c :foreground ,warning)))
     `(error ((,c :inherit bold :foreground ,err)))
+    `(icon-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense))) ; same as `custom-button'
     `(success ((,c :inherit bold :foreground ,info)))
     `(warning ((,c :inherit bold :foreground ,warning)))
     `(fringe ((,c :background unspecified)))
