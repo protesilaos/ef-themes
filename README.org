@@ -831,7 +831,7 @@ everything most users need.
 - font-lock
 - git-commit
 - git-rebase
-- gnus (incomplete, though likely is okay)
+- gnus [ Added all faces as part of {{{development-version}}} ]
 - image-dired [ Part of {{{development-version}}} ]
 - info
 - isearch, occur, query-replace
