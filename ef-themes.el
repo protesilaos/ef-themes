@@ -336,12 +336,14 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defvar ef-themes--select-theme-history nil)
 
-(defun ef-themes--select-prompt ()
-  "Minibuffer prompt for `ef-themes-select'."
-  (completing-read "Select Ef Theme: "
-                   (ef-themes--list-known-themes)
-                   nil t nil
-                   'ef-themes--select-theme-history))
+(defun ef-themes--select-prompt (&optional prompt)
+  "Minibuffer prompt for `ef-themes-select'.
+With optional PROMPT string, use it.  Else use a generic prompt."
+  (intern
+   (completing-read (or prompt "Select Ef Theme: ")
+                    (ef-themes--list-known-themes)
+                    nil t nil
+                    'ef-themes--select-theme-history)))
 
 (defun ef-themes--load-theme (theme)
   "Load THEME while disabling other Ef themes.
@@ -354,7 +356,7 @@ Run `ef-themes-post-load-hook'."
 (defun ef-themes-select (theme)
   "Load an Ef THEME using minibuffer completion.
 When called from Lisp, THEME is a symbol."
-  (interactive (list (intern (ef-themes--select-prompt))))
+  (interactive (list (ef-themes--select-prompt)))
   (ef-themes--load-theme theme))
 
 (defun ef-themes--toggle-theme-p ()
@@ -367,16 +369,22 @@ When called from Lisp, THEME is a symbol."
 
 ;;;###autoload
 (defun ef-themes-toggle ()
-  "Toggle between the two `ef-themes-to-toggle'."
+  "Toggle between the two `ef-themes-to-toggle'.
+If `ef-themes-to-toggle' does not specify two Ef themes, inform
+the user about it while prompting with completion for a theme
+among our collection (this is practically the same as the
+`ef-themes-select' command)."
   (interactive)
-  (when-let* ((themes (ef-themes--toggle-theme-p))
-              (one (car themes))
-              (two (cadr themes)))
-    (unless (eq (length themes) 2)
-      (user-error "Can only toggle between two themes"))
-    (if (eq (car custom-enabled-themes) one)
-        (ef-themes--load-theme two)
-      (ef-themes--load-theme one))))
+  (if-let* ((themes (ef-themes--toggle-theme-p))
+            (one (car themes))
+            (two (cadr themes)))
+      (if (eq (car custom-enabled-themes) one)
+          (ef-themes--load-theme two)
+        (ef-themes--load-theme one))
+    (ef-themes--load-theme
+     (ef-themes--select-prompt
+      (concat (propertize "Set two `ef-themes-to-toggle';" 'face 'error)
+              " switching to theme selection for now: ")))))
 
 (defun ef-themes--minus-current (&optional variant)
   "Return list of Ef themes minus the current one.

@@ -213,8 +213,15 @@ includes a list with all relevant symbols.  The user can then switch
 between the two specified themes by invoking the ~ef-themes-toggle~
 command.
 
-This is in addition to the other ways of loading a theme, either with
-minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
+[ The fallback behaviour of selecting a theme is part of {{{development-version}}}. ]
+
+If ~ef-themes-to-toggle~ does not specify two Ef themes, inform the user
+about it while prompting with completion for a theme among our
+collection (this is practically the same as the ~ef-themes-select~
+command).
+
+This command is in addition to the other ways of loading a theme, either
+with minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
 
 ** Enable mixed fonts
 :PROPERTIES:
