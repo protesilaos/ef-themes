@@ -161,8 +161,8 @@ Everything is in place to set up the package.
 
 ;; The themes we provide:
 ;;
-;; Light: `ef-day', `ef-light', `ef-spring', `ef-summer'.
-;; Dark:  `ef-autumn', `ef-dark', `ef-night', `ef-winter'.
+;; Light: `ef-day', `ef-duo-light', `ef-light', `ef-spring', `ef-summer'.
+;; Dark:  `ef-autumn', `ef-duo-dark', `ef-dark', `ef-night', `ef-winter'.
 ;;
 ;; Also those which are optimized for deuteranopia (red-green color
 ;; deficiency): `ef-deuteranopia-dark', `ef-deuteranopia-light'.
