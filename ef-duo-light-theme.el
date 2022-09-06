@@ -140,9 +140,9 @@
       (cursor        "#1144ff")
       (fg-intense    "#000000")
 
-      (modeline-err     "#900000")
-      (modeline-warning "#66008f")
-      (modeline-info    "#1f409f")
+      (modeline-err     "#950000")
+      (modeline-warning "#6f008f")
+      (modeline-info    "#00409f")
 
       ;; Mappings
       (err red)
