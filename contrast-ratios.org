@@ -416,11 +416,11 @@ work with the overall design of the project.
 :CUSTOM_ID: h:19583fbb-5a8a-430d-9cd8-fb4af5eaf577
 :END:
 
-| Name             |         | #f0caa5 |
+| Name             |         | #f8cf8f |
 |------------------+---------+---------|
-| modeline-err     | #900000 |    6.27 |
-| modeline-warning | #66008f |    6.98 |
-| modeline-info    | #1f409f |    5.98 |
+| modeline-err     | #950000 |    6.28 |
+| modeline-warning | #6f008f |    6.91 |
+| modeline-info    | #00409f |    6.41 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 * ef-light
