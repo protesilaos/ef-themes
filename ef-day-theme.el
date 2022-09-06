@@ -1,4 +1,4 @@
-;;; ef-day-theme.el --- Legible light theme -*- lexical-binding:t -*-
+;;; ef-day-theme.el --- Legible light theme with warm colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-day "Legible light theme.")
+  (deftheme ef-day "Legible light theme with warm colors.")
 
   (defconst ef-day-palette
     '(;; Basic tones

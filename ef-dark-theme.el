@@ -1,4 +1,4 @@
-;;; ef-dark-theme.el --- Legible dark theme -*- lexical-binding:t -*-
+;;; ef-dark-theme.el --- Legible dark theme with blue and magenta colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-dark "Legible dark theme.")
+  (deftheme ef-dark "Legible dark theme with blue and magenta colors.")
 
   (defconst ef-dark-palette
     '(;; Basic tones

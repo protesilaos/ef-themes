@@ -1,4 +1,4 @@
-;;; ef-winter-theme.el --- Legible dark theme -*- lexical-binding:t -*-
+;;; ef-winter-theme.el --- Legible dark theme with magenta, purple, gold colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-winter "Legible dark theme.")
+  (deftheme ef-winter "Legible dark theme with magenta, purple, gold colors.")
 
   (defconst ef-winter-palette
     '(;; Basic tones

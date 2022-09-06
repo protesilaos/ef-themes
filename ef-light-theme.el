@@ -1,4 +1,4 @@
-;;; ef-light-theme.el --- Legible light theme -*- lexical-binding:t -*-
+;;; ef-light-theme.el --- Legible light theme with blue and magenta colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-light "Legible light theme.")
+  (deftheme ef-light "Legible light theme with blue and magenta colors.")
 
   (defconst ef-light-palette
     '(;; Basic tones

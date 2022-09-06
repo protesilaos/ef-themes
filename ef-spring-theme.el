@@ -1,4 +1,4 @@
-;;; ef-spring-theme.el --- Legible light theme -*- lexical-binding:t -*-
+;;; ef-spring-theme.el --- Legible light theme with cool, green, red colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-spring "Legible light theme.")
+  (deftheme ef-spring "Legible light theme with cool, green, red colors.")
 
   (defconst ef-spring-palette
     '(;; Basic tones

@@ -1,4 +1,4 @@
-;;; ef-duo-light-theme.el --- Legible light theme -*- lexical-binding:t -*-
+;;; ef-duo-light-theme.el --- Legible light theme with blue and yellow colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -40,7 +40,7 @@
   ;; Most of the colors here are defined simply to preserve
   ;; compatibility with the rest of the project.  We don't actually rely
   ;; on them for anything critical.
-  (deftheme ef-duo-light "Legible light theme.")
+  (deftheme ef-duo-light "Legible light theme with blue and yellow colors.")
 
   (defconst ef-duo-light-palette
     '(;; Basic tones
