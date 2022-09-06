@@ -123,13 +123,13 @@
       (cyan-graph-1-bg    "#afefff")
 
       ;; Special hues
-      (bg-mode-line  "#f0caa5") (fg-mode-line  "#111133")
+      (bg-mode-line  "#f8cf8f") (fg-mode-line  "#111133")
       (bg-accent     "#0044aa")
       (fg-accent     "#ffffff")
-      (bg-completion "#ffdfcf")
+      (bg-completion "#fadacf")
       (bg-hover      "#b4cfff")
       (bg-hover-alt  "#aaeccf")
-      (bg-hl-line    "#ffefc0")
+      (bg-hl-line    "#f9e8c0")
       (bg-region     "#daeafa")
       (bg-paren      "#efa09f")
       (bg-err        "#ffdfe6") ; check with err
