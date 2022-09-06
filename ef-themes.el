@@ -1467,7 +1467,7 @@ Helper function for `ef-themes-preview-colors'."
     `(rcirc-monospace-text ((,c :inherit fixed-pitch)))
     `(rcirc-my-nick ((,c :inherit bold :foreground ,accent-1)))
     `(rcirc-nick-in-message ((,c :inherit warning)))
-    `(rcirc-nick-in-message-full-line ((,c :inherit bold)))
+    `(rcirc-nick-in-message-full-line ((,c :inherit warning)))
     `(rcirc-other-nick ((,c :inherit bold :foreground ,accent-0)))
     `(rcirc-prompt ((,c :inherit minibuffer-prompt)))
     `(rcirc-server ((,c :inherit shadow)))
