@@ -383,7 +383,7 @@ among our collection (this is practically the same as the
         (ef-themes--load-theme one))
     (ef-themes--load-theme
      (ef-themes--select-prompt
-      (concat (propertize "Set two `ef-themes-to-toggle';" 'face 'error)
+      (concat "Set two `ef-themes-to-toggle';"
               " switching to theme selection for now: ")))))
 
 (defun ef-themes--minus-current (&optional variant)
