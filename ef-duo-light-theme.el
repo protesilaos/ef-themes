@@ -1,0 +1,199 @@
+;;; ef-duo-light-theme.el --- Legible light theme -*- lexical-binding:t -*-
+
+;; Copyright (C) 2022  Free Software Foundation, Inc.
+
+;; Author: Protesilaos Stavrou <info@protesilaos.com>
+;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
+;; URL: https://git.sr.ht/~protesilaos/ef-themes
+;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
+;; Keywords: faces, theme, accessibility
+
+;; This file is part of GNU Emacs.
+
+;; GNU Emacs is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; GNU Emacs is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
+
+;;; Commentary:
+;;
+;; The `ef-themes' are a collection of light and dark themes for GNU
+;; Emacs whose goal is to provide colorful ("pretty") yet legible
+;; options for users who want something with a bit more flair than the
+;; `modus-themes' (also designed by me).
+
+;;; Code:
+
+
+
+(eval-and-compile
+  (require 'ef-themes)
+
+  ;; Most of the colors here are defined simply to preserve
+  ;; compatibility with the rest of the project.  We don't actually rely
+  ;; on them for anything critical.
+  (deftheme ef-duo-light "Legible light theme.")
+
+  (defconst ef-duo-light-palette
+    '(;; Basic tones
+      (bg-main     "#fff8f0")
+      (fg-main     "#222222")
+      (bg-dim      "#f6efe8")
+      (fg-dim      "#63728f")
+      (bg-alt      "#e7e0da")
+      (fg-alt      "#856f4a")
+
+      (bg-active   "#d7d0ca")
+      (bg-inactive "#f9f4ef")
+
+      ;; Basic hues for foreground values
+      (red             "#cc3333")
+      (red-warmer      "#dd1100")
+      (red-cooler      "#c04440")
+      (red-faint       "#a2403f")
+      (green           "#217a3c")
+      (green-warmer    "#4a7d00")
+      (green-cooler    "#008058")
+      (green-faint     "#61756c")
+      (yellow          "#8a5d00")
+      (yellow-warmer   "#9f4a00")
+      (yellow-cooler   "#8f5a3a")
+      (yellow-faint    "#765640")
+      (blue            "#375cd8")
+      (blue-warmer     "#4250ef")
+      (blue-cooler     "#065fff")
+      (blue-faint      "#6060d0")
+      (magenta         "#ba35af")
+      (magenta-warmer  "#cf25aa")
+      (magenta-cooler  "#6052cf")
+      (magenta-faint   "#bf3580")
+      (cyan            "#1f6fbf")
+      (cyan-warmer     "#3f6faf")
+      (cyan-cooler     "#1f77bb")
+      (cyan-faint      "#406f90")
+
+      ;; Basic hues for background values
+      (bg-red      "#ff8f88")
+      (bg-green    "#8adf80")
+      (bg-yellow   "#fac200")
+      (bg-blue     "#cbcfff")
+      (bg-magenta  "#ff9fef")
+      (bg-cyan     "#88c8ff")
+
+      (bg-red-subtle      "#ffcfbf")
+      (bg-green-subtle    "#afffbf")
+      (bg-yellow-subtle   "#fff576")
+      (bg-blue-subtle     "#ccdfff")
+      (bg-magenta-subtle  "#ffddff")
+      (bg-cyan-subtle     "#bfefff")
+
+      ;; Diffs
+      (bg-added          "#ccefcf")
+      (bg-added-faint    "#e0f3e0")
+      (bg-added-refine   "#bae0c0")
+
+      (bg-changed        "#ffe5b9")
+      (bg-changed-faint  "#ffefc5")
+      (bg-changed-refine "#ffd09f")
+
+      (bg-removed        "#ffd4d8")
+      (bg-removed-faint  "#ffe3e3")
+      (bg-removed-refine "#ffc0ca")
+
+      ;; Graphs
+      (red-graph-0-bg     "#ef7969")
+      (red-graph-1-bg     "#ffaab4")
+      (green-graph-0-bg   "#4faa09")
+      (green-graph-1-bg   "#8fef00")
+      (yellow-graph-0-bg  "#ffcf00")
+      (yellow-graph-1-bg  "#f9ff00")
+      (blue-graph-0-bg    "#7090ff")
+      (blue-graph-1-bg    "#9fc6ff")
+      (magenta-graph-0-bg "#e07fff")
+      (magenta-graph-1-bg "#fad0ff")
+      (cyan-graph-0-bg    "#70d3f0")
+      (cyan-graph-1-bg    "#afefff")
+
+      ;; Special hues
+      (bg-mode-line  "#f0caa5") (fg-mode-line  "#111133")
+      (bg-accent     "#0044aa")
+      (fg-accent     "#ffffff")
+      (bg-completion "#ffdfcf")
+      (bg-hover      "#b4cfff")
+      (bg-hover-alt  "#aaeccf")
+      (bg-hl-line    "#ffefc0")
+      (bg-region     "#daeafa")
+      (bg-paren      "#efa09f")
+      (bg-err        "#ffdfe6") ; check with err
+      (bg-warning    "#ffe5ba") ; check with warning
+      (bg-info       "#cff5d0") ; check with info
+
+      (border        "#cabfca")
+      (cursor        "#1144ff")
+      (fg-intense    "#000000")
+
+      (modeline-err     "#900000")
+      (modeline-warning "#66008f")
+      (modeline-info    "#1f409f")
+
+      ;; Mappings
+      (err red)
+      (warning yellow-warmer)
+      (info green)
+
+      (link cyan)
+      (link-alt green-cooler)
+      (date cyan-cooler)
+      (name blue)
+      (keybind blue-cooler)
+
+      (builtin cyan-cooler)
+      (comment yellow-faint)
+      (constant blue)
+      (fnname cyan)
+      (keyword blue-warmer)
+      (preprocessor cyan-warmer)
+      (docstring cyan-faint)
+      (string yellow-warmer)
+      (type green-cooler)
+      (variable magenta-cooler)
+
+      (rx-escape cyan) ; compare with `string'
+      (rx-construct red-warmer)
+
+      (accent-0 blue-warmer)
+      (accent-1 yellow-warmer)
+      (accent-2 green-cooler)
+      (accent-3 red)
+
+      (mail-0 blue)
+      (mail-1 yellow-cooler)
+      (mail-2 blue-warmer)
+      (mail-3 yellow-warmer)
+      (mail-4 cyan-cooler)
+      (mail-5 green)
+
+      (rainbow-0 blue)
+      (rainbow-1 yellow-warmer)
+      (rainbow-2 blue-warmer)
+      (rainbow-3 yellow-cooler)
+      (rainbow-4 cyan-cooler)
+      (rainbow-5 green-warmer)
+      (rainbow-6 cyan)
+      (rainbow-7 yellow)
+      (rainbow-8 green-cooler))
+    "The `ef-duo-light' palette.")
+
+  (ef-themes-theme ef-duo-light ef-duo-light-palette)
+
+  (provide-theme 'ef-duo-light))
+
+;;; ef-duo-light-theme.el ends here
