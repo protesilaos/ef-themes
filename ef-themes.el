@@ -545,7 +545,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;;; all other basic faces
     `(button ((,c :foreground ,link :underline ,border)))
     `(comint-highlight-input ((,c :inherit bold)))
-    `(comint-highlight-prompt ((,c :foreground ,accent-2)))
+    `(comint-highlight-prompt ((,c :inherit minibuffer-prompt)))
     `(edmacro-label ((,c :inherit bold)))
     `(elisp-shorthand-font-lock-face ((,c :inherit italic)))
     `(error ((,c :inherit bold :foreground ,err)))
@@ -560,7 +560,7 @@ Helper function for `ef-themes-preview-colors'."
     `(icon-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense))) ; same as `custom-button'
     `(link ((,c :foreground ,link :underline ,border)))
     `(link-visited ((,c :foreground ,link-alt :underline ,border)))
-    `(minibuffer-prompt ((,c :foreground ,accent-2)))
+    `(minibuffer-prompt ((,c :foreground ,prompt)))
     `(pgtk-im-0 ((,c :inherit secondary-selection)))
     `(read-multiple-choice-face ((,c :inherit warning :background ,bg-warning)))
     `(rectangle-preview ((,c :inherit secondary-selection)))

@@ -154,6 +154,7 @@
       (date cyan-cooler)
       (name blue)
       (keybind blue-cooler)
+      (prompt blue)
 
       (builtin cyan-cooler)
       (comment yellow-faint)

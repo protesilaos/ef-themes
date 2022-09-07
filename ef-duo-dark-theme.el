@@ -153,6 +153,7 @@
       (date cyan-cooler)
       (name blue)
       (keybind blue-cooler)
+      (prompt yellow)
 
       (builtin cyan)
       (comment yellow-faint)

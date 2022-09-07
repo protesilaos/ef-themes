@@ -150,6 +150,7 @@
       (date cyan-cooler)
       (name magenta-warmer)
       (keybind red-cooler)
+      (prompt magenta-warmer)
 
       (builtin magenta)
       (comment yellow-faint)

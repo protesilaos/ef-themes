@@ -150,6 +150,7 @@
       (date cyan-cooler)
       (name yellow)
       (keybind red-warmer)
+      (prompt yellow)
 
       (builtin red-cooler)
       (comment green-faint)
