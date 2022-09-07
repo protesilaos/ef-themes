@@ -130,7 +130,7 @@
       (bg-hover-alt  "#265f4a")
       (bg-hl-line    "#301a4f")
       (bg-region     "#042a50")
-      (bg-paren      "#7f2d40")
+      (bg-paren      "#2f608e")
       (bg-err        "#330d09") ; check with err
       (bg-warning    "#332600") ; check with warning
       (bg-info       "#002212") ; check with info
