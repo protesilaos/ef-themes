@@ -174,7 +174,7 @@
       (accent-2 green-cooler)
       (accent-3 red)
 
-      (mail-0 blue)
+      (mail-0 cyan)
       (mail-1 yellow-cooler)
       (mail-2 blue-warmer)
       (mail-3 yellow)
