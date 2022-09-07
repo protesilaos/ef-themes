@@ -1480,8 +1480,8 @@ Helper function for `ef-themes-preview-colors'."
     `(rcirc-prompt ((,c :inherit minibuffer-prompt)))
     `(rcirc-server ((,c :inherit font-lock-comment-face)))
     `(rcirc-timestamp ((,c :foreground ,date)))
-    `(rcirc-track-keyword ((,c :inherit bold)))
     `(rcirc-track-nick ((,c :inherit warning)))
+    `(rcirc-track-keyword ((,c :inherit bold :foreground ,modeline-warning)))
     `(rcirc-url ((,c :inherit link)))
 ;;;; recursion-indicator
     `(recursion-indicator-general ((,c :foreground ,modeline-err)))
