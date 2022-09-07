@@ -1,4 +1,4 @@
-;;; ef-autumn-theme.el --- Legible dark theme with warm colors -*- lexical-binding:t -*-
+;;; ef-autumn-theme.el --- Legible dark theme with warm, varied colors (red, yellow, green, teal) -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022  Free Software Foundation, Inc.
 
@@ -37,7 +37,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-autumn "Legible dark theme with warm colors.")
+  (deftheme ef-autumn "Legible dark theme with warm, varied colors (red, yellow, green, teal).")
 
   (defconst ef-autumn-palette
     '(;; Basic tones
