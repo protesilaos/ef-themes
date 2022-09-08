@@ -972,7 +972,8 @@ unwillingness to be good Emacs citizens:
 - treemacs :: it has too many dependencies and does too many things.
 
 - web-mode :: I don't use all those Web technologies and cannot test
-  this properly without support from an expert.
+  this properly without support from an expert.  It also defines lots of
+  faces that hardcode color values for no good reason.
 
 The above list is non-exhaustive though you get the idea.
 
