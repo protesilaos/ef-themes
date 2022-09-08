@@ -180,7 +180,7 @@
       (mail-2 cyan-cooler)
       (mail-3 yellow)
       (mail-4 blue-warmer)
-      (mail-5 green)
+      (mail-5 green-warmer)
 
       (rainbow-0 blue)
       (rainbow-1 yellow-warmer)
