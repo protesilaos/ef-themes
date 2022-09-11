@@ -1242,7 +1242,7 @@ Helper function for `ef-themes-preview-colors'."
     `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
     `(mode-line-active ((,c :inherit mode-line)))
     `(mode-line-buffer-id ((,c :inherit bold)))
-    `(mode-line-emphasis ((,c :inherit bold-italic)))
+    `(mode-line-emphasis ((,c :inherit bold :foreground ,modeline-info)))
     `(mode-line-highlight ((,c :inherit highlight)))
     `(mode-line-inactive ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :foreground ,fg-dim)))
 ;;;; mu4e
