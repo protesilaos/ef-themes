@@ -867,6 +867,7 @@ everything most users need.
 - recursion-indicator [ Part of {{{development-version}}} ]
 - regexp-builder (re-builder)
 - ruler-mode
+- selectrum [ Part of {{{development-version}}} ]
 - shell-script-mode (sh-mode)
 - show-paren-mode
 - shr
@@ -953,8 +954,6 @@ unwillingness to be good Emacs citizens:
 - powerline :: requires too many shades of background and generally
   violates our expectation of how the mode-line is supposed to look by
   placing the designated default background in unexpected places.
-
-- selectrum :: use =vertico=.
 
 - solaire :: in principle, it is incompatible with practically every
   theme that is not designed around it.  Emacs does not distinguish
