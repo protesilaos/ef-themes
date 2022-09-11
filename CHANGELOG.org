@@ -9,6 +9,238 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.5.0 on 2022-09-11
+:PROPERTIES:
+:CUSTOM_ID: h:d0d24c93-7954-4c52-b5a2-79089b53c767
+:END:
+
+** New duo-chrome themes
+:PROPERTIES:
+:CUSTOM_ID: h:dfdea23c-8d89-4461-8668-04a317fb498d
+:END:
+
+The collection now includes two items which apply shades of blue and
+yellow in most interfaces.  The themes are named ~ef-duo-dark~ and
+~ef-duo-light~.
+
+Read the announcement:
+<https://protesilaos.com/codelog/2022-09-06-ef-themes-duo/>.
+
+View all image samples:
+<https://protesilaos.com/emacs/ef-themes-pictures>.
+
+The choice of blue and yellow is largely stylistic: it is not done to
+accommodate users with red-green colour deficiency.  For that case, the
+Ef themes provide ~ef-deuteranopia-dark~ and ~ef-deuteranopia-light~.
+
+** Bespoke accent colours for the mode line
+:PROPERTIES:
+:CUSTOM_ID: h:db9d8e1d-d33c-46a5-b41c-8bbb19e0b8af
+:END:
+
+Each theme now includes a subset of foreground values optimised for use
+against the active mode line's background.  The active mode line's
+background is accented, meaning that we cannot use colours that are
+otherwise decent against the main background.
+
+These new entries are meant to style warnings, errors, and other
+notifications that appear on the mode line.  They empower us to extend
+support for packages that make use of such colour-coding (more further
+below).
+
+** "Subtle" accented backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:1935e028-10ea-4a3f-adb5-a755c1ddfe2b
+:END:
+
+Each theme's palette now contains six accented backgrounds that are not
+very intense.  These are used by packages that need to (i) highlight a
+line or region, (ii) preserve a modicum of legibility without overriding
+existing foreground values (more below about new packages).
+
+** Refined the colour of prompts, where necessary
+:PROPERTIES:
+:CUSTOM_ID: h:5a1f7bde-658a-4240-bab8-92cb8e5327b0
+:END:
+
+Each theme's palette now includes a dedicated =prompt= mapping.  This
+gives us full control over what colour we use for prompts.  In some
+themes the prompt will look the same as before, though I made a few
+changes to have stylistic consistency in each theme.  Specifically:
+
+| Theme                 | Old prompt   | New prompt     |
+|-----------------------+--------------+----------------|
+| ef-deuteranopia-dark  | cyan-warmer  | yellow         |
+| ef-deuteranopia-light | cyan         | blue           |
+| ef-duo-dark           | green-cooler | yellow         |
+| ef-duo-light          | green-cooler | blue           |
+| ef-spring             | blue         | green          |
+| ef-summer             | cyan-cooler  | magenta-warmer |
+| ef-winter             | green-cooler | magenta-warmer |
+
+In short: we don't want prompts to look blue/green all the time.  Some
+themes have a different character.
+
+** Newly supported packages
+:PROPERTIES:
+:CUSTOM_ID: h:197a98a6-96d3-47ca-935d-6736d3836211
+:END:
+
+In general, if a package does not look right, it is not supported by the
+Ef themes.  What we have for this release:
+
++ auctex :: Thanks to Philip Kaludercic for providing the sample file
+  that let me view the relevant faces, as well as for helping me
+  correct some mistakes of mine:
+  <https://lists.sr.ht/~protesilaos/ef-themes/%3C87h71t97hl.fsf%40posteo.net%3E>.
+
++ company :: Thanks to Alan Schmitt for reminding me about it:
+  <https://lists.sr.ht/~protesilaos/ef-themes/%3C87pmgjw3j9.fsf%40m4x.org%3E>.
+
++ dirvish :: Thanks to Alex Lu (=dirvish= developer) for the
+  contribution.  This was done in pull request 14 at the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/pull/14>.  The change is
+  below the ~15 line threshold and thus does not require copyright
+  assignment to the Free Software Foundation.
+
++ doom-modeline :: Expanded support for almost all the faces it
+  provides.  The only exception is some debugging-related indicators
+  that I do not know how to trigger (contact me, if you encounter them).
+  This support is made possible by the new accented foregrounds that are
+  designed specifically for the mode line.
+
++ gnus :: Expanded support for all the faces it defines.  I had used
+  Gnus for several months before and am familiar with its interfaces.
+  Though I never made use of its scoring system.  I think the relevant
+  faces look okay, though please let me know if we can refine them
+  further.
+
++ image-dired :: This is made possible by the new "subtle" coloured
+  backgrounds that I added to each theme.
+
++ lin (my package) :: Made possible by the new subtle backgrounds.
+
++ pulsar (my package) :: Same as above.
+
++ pulse :: Same.
+
++ recursion-indicator :: Same
+
++ selectrum :: Made it look like the already supported =vertico=.
+
++ tempel :: Same as =lin= and friends.
+
+** Refinements to existing faces
+:PROPERTIES:
+:CUSTOM_ID: h:83fa9e74-0460-49b0-a123-15767d07f806
+:END:
+
++ Lots of small tweaks affect mode line indicators, per the new
+  foreground colours I introduced.  Expect to see a bit more colour in
+  the mode line when using =magit=, compilation buffers, appointment
+  reminders, keyboard macros, Org agenda filters, and more.
+
++ All the =rcirc= faces have been revised in the interest of thematic
+  consistency.
+
+  - Rcirc uses the new foregrounds for the mode line, where relevant.
+
+  - Indicators that track/highlight the user's nick use the same
+    paradigm.
+
+  - IRC server messages look like comments in code buffers.
+
+  Thanks to Philip Kaludercic for telling me about the downsides of
+  using the ~italic~ in the ~rcirc-nick-in-message-full-line~ face:
+  <https://lists.sr.ht/~protesilaos/ef-themes/%3C87edwphahl.fsf%40posteo.net%3E>.
+
+  Please note that I am not a regular/experienced IRC user.  If there
+  are improvements to be made, I am happy to implement them but will
+  likely need your help (I will ask the relevant questions).
+
+** New fallback behaviour for ~ef-themes-toggle~
+:PROPERTIES:
+:CUSTOM_ID: h:3399f33c-3d1b-4d18-b50f-8d2f0838aa54
+:END:
+
+The command ~ef-themes-toggle~ will switch between two themes specified
+in the user option ~ef-themes-to-toggle~.  For example:
+
+#+begin_src emacs-lisp
+;; Toggle between `ef-summer' and `ef-winter' using `ef-themes-toggle'.
+(setq ef-themes-to-toggle '(ef-summer ef-winter))
+#+end_src
+
+By default, ~ef-themes-to-toggle~ is nil. In the past, this meant that
+~ef-themes-toggle~ would do nothing out-of-the-box.  To improve the
+initial user experience, the command will now fall back to minibuffer
+completion to load a theme if ~ef-themes-to-toggle~ does not have the
+expected value.  The completion candidates are the items of the Ef
+themes collection.  This fallback behaviour is essentially the same as
+what the user gets by invoking the ~ef-themes-select~ command.
+
+When ~ef-themes-to-toggle~ is set properly, the corresponding command
+will perform the switch, as intended.
+
+This is based on the discussion with Philip Kaludercic about revising
+the ~ef-themes-toggle~ command to have a more Do-What-I-Mean behaviour:
+<https://lists.sr.ht/~protesilaos/ef-themes/%3C878rmwfs0e.fsf%40posteo.net%3E>.
+
+** Improved how ~ef-themes-load-random~ picks subsets
+:PROPERTIES:
+:CUSTOM_ID: h:4407d5a6-b837-4168-88b2-f7b175978122
+:END:
+
+The ~ef-themes-load-random~ command accepts a prefix argument (=C-u=, by
+default): it prompts the user for a =dark= or =light= subset out of the
+collection.  Once that is selected, the command loads a theme at random.
+
+Before, the prompt was using minibuffer completion, but this has now
+changed to a ~read-multiple-choice~ function, meaning that =d= selects
+=dark= and =l= selects =light=.  Basically, we skip possible extra key
+presses.
+
+Thanks to Philip Kaludercic for the patch:
+<https://lists.sr.ht/~protesilaos/ef-themes/patches/35089>.
+
+** Internal changes
+:PROPERTIES:
+:CUSTOM_ID: h:b9156099-0bcd-4974-9cdf-ada73d5745ce
+:END:
+
++ Fixed the initial colors' list in the ~ef-themes-with-colors~ macro.
+  Thanks to Steve Molitor for telling me that the previous design would
+  not work if ~ef-light~ was not loaded.  This was done in issue 11 at
+  the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/11>.
+
++ Simplified the helper function ~ef-themes--current-theme~.  Thanks to
+  Jonas Collberg for the feedback in issue 12 over at the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/issues/12>.  Also thanks to
+  Jonas for the subsequent patch in pull request 13:
+  <https://github.com/protesilaos/ef-themes/pull/13>.  The change is
+  below the ~15 line threshold and thus does not require copyright
+  assignment to the Free Software Foundation.
+
++ Refined the colour mapping of some themes to improve overall
+  aesthetics and/or usability, without deviating from the theme's
+  established character.  For example, in the ~ef-dark~ I adjusted the
+  mappings for dates, links, and names.  This helps distinguish all
+  elements, while retaining the overall looks of the design.  Some
+  contexts where that is relevant:
+
+  - Notmuch search buffers
+  - Magit commit log
+  - Org clocktables
+  - Org documents with links, to-do, etc.
+
+  I will not cover all such technicalities.  Please consult the Git
+  commit log.  If, however, some new combination of colours feels
+  awkward, you are welcome to tell me about it.
+
++ Made improvements to the manual and implemented other internal
+  changes.
+
 * Version 0.4.0 on 2022-08-29
 :PROPERTIES:
 :CUSTOM_ID: h:cc22cc5a-d787-4335-abf0-aa45cef92721

@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.4.0
-#+macro:                 release-date 2022-08-29
-#+macro:                 development-version 0.5.0-dev
+#+macro:                 stable-version 0.5.0
+#+macro:                 release-date 2022-09-11
+#+macro:                 development-version 0.6.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -212,8 +212,6 @@ items in the Ef themes collection.  The variable ~ef-themes-collection~
 includes a list with all relevant symbols.  The user can then switch
 between the two specified themes by invoking the ~ef-themes-toggle~
 command.
-
-[ The fallback behaviour of selecting a theme is part of {{{development-version}}}. ]
 
 If ~ef-themes-to-toggle~ does not specify two Ef themes, inform the user
 about it while prompting with completion for a theme among our
@@ -427,10 +425,6 @@ the current Ef theme.  Calling ~ef-themes-load-random~ with a prefix
 argument (=C-u= by default) makes the command limit the random selection
 to either light or dark themes.  The user is prompted at the minibuffer
 to pick among the two sets.
-
-[ As part of {{{development-version}}} the choice between =light= and
-  =dark= sets in ~ef-themes-load-random~ is done using the function
-  ~read-multiple-choice~.  Before, it was ~completing-read~. ]
 
 The ~ef-themes-load-random~ can also be called from Lisp (e.g. from the
 =init.el= file):
@@ -808,13 +802,13 @@ everything most users need.
 - all-the-icons-dired
 - all-the-icons-ibuffer
 - ansi-color
-- auctex [ Part of {{{development-version}}} ]
+- auctex
 - bongo
 - bookmark
 - calendar and diary
 - change-log and log-view (part of VC)
 - chart
-- company [ Part of {{{development-version}}} ]
+- company
 - compilation
 - completions
 - consult
@@ -826,8 +820,8 @@ everything most users need.
 - dired
 - dired-subtree
 - diredfl
-- dirvish [ Part of {{{development-version}}} ]
-- doom-modeline [ Expanded as part of {{{development-version}}} ]
+- dirvish
+- doom-modeline
 - ediff
 - eldoc
 - elfeed
@@ -838,12 +832,12 @@ everything most users need.
 - font-lock
 - git-commit
 - git-rebase
-- gnus [ Added all faces as part of {{{development-version}}} ]
-- image-dired [ Part of {{{development-version}}} ]
+- gnus
+- image-dired
 - info
 - isearch, occur, query-replace
 - keycast
-- lin [ Part of {{{development-version}}} ]
+- lin
 - line numbers (~display-line-numbers-mode~ and global variant)
 - magit
 - man
@@ -860,21 +854,21 @@ everything most users need.
 - outline-mode
 - outline-minor-faces
 - package (M-x list-packages)
-- pulsar [ Part of {{{development-version}}} ]
-- pulse [ Part of {{{development-version}}} ]
+- pulsar
+- pulse
 - rainbow-delimiters
 - rcirc
-- recursion-indicator [ Part of {{{development-version}}} ]
+- recursion-indicator
 - regexp-builder (re-builder)
 - ruler-mode
-- selectrum [ Part of {{{development-version}}} ]
+- selectrum
 - shell-script-mode (sh-mode)
 - show-paren-mode
 - shr
 - smerge
 - tab-bar-mode
 - tab-line-mode
-- tempel [ Part of {{{development-version}}} ]
+- tempel
 - term
 - textsec
 - transient
