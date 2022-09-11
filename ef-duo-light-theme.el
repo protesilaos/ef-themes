@@ -164,7 +164,7 @@
       (preprocessor cyan-warmer)
       (docstring cyan-faint)
       (string yellow-warmer)
-      (type green-cooler)
+      (type blue-cooler)
       (variable magenta-cooler)
 
       (rx-escape cyan) ; compare with `string'
