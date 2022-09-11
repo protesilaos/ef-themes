@@ -160,7 +160,7 @@
       (constant blue-cooler)
       (fnname yellow-cooler)
       (keyword yellow-warmer)
-      (preprocessor green-cooler)
+      (preprocessor yellow)
       (docstring cyan-faint)
       (string blue)
       (type magenta-cooler)
