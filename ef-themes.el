@@ -1414,7 +1414,6 @@ Helper function for `ef-themes-preview-colors'."
     `(org-modern-date-active ((,c :inherit (ef-themes-fixed-pitch org-modern-label) :background ,bg-alt)))
     `(org-modern-date-inactive ((,c :inherit (ef-themes-fixed-pitch org-modern-label) :background ,bg-dim :foreground ,fg-dim)))
     `(org-modern-done ((,c :inherit org-modern-label :background ,bg-info :foreground ,info)))
-    `(org-modern-label (( )))
     `(org-modern-priority ((,c :inherit (org-modern-label org-priority) :background ,bg-dim)))
     `(org-modern-statistics ((,c :inherit org-modern-label :background ,bg-dim)))
     `(org-modern-tag ((,c :inherit (org-modern-label org-tag) :background ,bg-dim)))
