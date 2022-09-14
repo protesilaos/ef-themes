@@ -821,6 +821,7 @@ everything most users need.
 - dired-subtree
 - diredfl
 - dirvish
+- display-fill-column-indicator-mode [ Part of {{{development-version}}} ]
 - doom-modeline
 - ediff
 - eldoc
@@ -1131,9 +1132,9 @@ matters.
 + Contributions to code or the manual :: Alex Lu, Christopher League,
   Philip Kaludercic.
 
-+ Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Iris
-  Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Spike-Leung, Steve
-  Molitor, Summer Emacs, Zoltán Király.
++ Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Daniel
+  Mendler, Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg,
+  Spike-Leung, Steve Molitor, Summer Emacs, Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:

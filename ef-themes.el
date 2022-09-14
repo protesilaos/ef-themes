@@ -829,6 +829,10 @@ Helper function for `ef-themes-preview-colors'."
     `(diredfl-write-priv ((,c :foreground ,rainbow-2)))
 ;;;; dirvish
     `(dirvish-hl-line ((,c :background ,bg-hl-line)))
+;;;; display-fill-column-indicator-mode
+    ;; NOTE 2022-09-14: We use the bg-alt mapping as the border mapping
+    ;; is for the `vertical-border'.  We want this to be more subtle.
+    `(fill-column-indicator ((,c :height 1 :background ,bg-alt :foreground ,bg-alt)))
 ;;;; doom-modeline
     `(doom-modeline-bar ((,c :background ,bg-accent)))
     `(doom-modeline-bar-inactive ((,c :background ,bg-alt)))
