@@ -1601,6 +1601,8 @@ Helper function for `ef-themes-preview-colors'."
     `(vc-dir-status-warning ((,c :inherit error)))
     `(vc-conflict-state ((,c :inherit error)))
     `(vc-edited-state ((,c :inherit italic)))
+    `(vc-git-log-edit-summary-max-warning ((,c :background ,bg-err :foreground ,err)))
+    `(vc-git-log-edit-summary-target-warning ((,c :background ,bg-warning :foreground ,warning)))
     `(vc-locally-added-state ((,c :inherit italic)))
     `(vc-locked-state ((,c :inherit success)))
     `(vc-missing-state ((,c :inherit error)))
