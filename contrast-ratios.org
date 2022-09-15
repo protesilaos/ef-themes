@@ -8,7 +8,7 @@ Evaluate these snippets, otherwise the tables will not work.  Then
 update a table by typing =C-c C-c= with point at the =#+TBLFM:= line.
 
 #+begin_src emacs-lisp
-;; Copied from my `modus-thmes'.
+;; Copied from my `modus-themes'.
 
 ;; This is the WCAG formula to measure relative luminance:
 ;; <https://www.w3.org/TR/WCAG20-TECHS/G18.html>.
