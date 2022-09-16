@@ -48,6 +48,9 @@
 
 ;;; User options
 
+;; FIXME 2022-09-16: Maybe the `ef-themes-collection' should just
+;; combine the `ef-themes-light-themes' and `ef-themes-dark-themes'?
+;; This duplication seems unnecessary.
 (defconst ef-themes-collection
   '(ef-autumn
     ef-dark
