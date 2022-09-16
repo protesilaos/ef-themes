@@ -390,6 +390,16 @@ asks the user whether they are sure about loading the theme.
 Consider adding code like the above to the user configuration file, such
 as =init.el=.
 
+NOTE: If you plan on using the ~ef-themes-post-load-hook~, the above
+method will not work.  Instead, you need to load the theme from your
+init file with ~ef-themes-select~ ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).  For
+example:
+
+#+begin_src emacs-lisp
+;; like `load-theme' but also call `ef-themes-post-load-hook'
+(ef-themes-select 'ef-summer)
+#+end_src
+
 * Commands to load an Ef theme
 :PROPERTIES:
 :CUSTOM_ID: h:58345e8c-2bec-459c-872c-a85a29e9fe97
@@ -404,8 +414,8 @@ for ~ef-themes-toggle~ ([[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle betwee
 [[#h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d][A theme-agnostic hook for theme loading]].
 
 #+findex: ef-themes-select
-The themes can also be loaded interactively ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  The
-command ~ef-themes-select~ (call it with =M-x=) prompts with minibuffer
+The themes can also be loaded interactively.  The command
+~ef-themes-select~ (call it with =M-x=) prompts with minibuffer
 completion for a theme among the collection of items we provide.  It
 then loads the selected theme.  Internally, ~ef-themes-select~ takes
 care to disable any other Ef theme, though it does not disable other
@@ -415,6 +425,14 @@ themes and stick with the Ef themes:
 
 #+begin_src emacs-lisp
 (mapc #'disable-theme custom-enabled-themes)
+#+end_src
+
+The ~ef-themes-select~ command can also be called from the user's init
+file to load the theme of their choice ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).  For example:
+
+#+begin_src emacs-lisp
+;; like `load-theme' but also call `ef-themes-post-load-hook'
+(ef-themes-select 'ef-summer)
 #+end_src
 
 #+findex: ef-themes-load-random
