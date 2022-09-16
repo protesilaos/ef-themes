@@ -357,7 +357,9 @@ Run `ef-themes-post-load-hook'."
 ;;;###autoload
 (defun ef-themes-select (theme)
   "Load an Ef THEME using minibuffer completion.
-When called from Lisp, THEME is a symbol."
+When called from Lisp, THEME is a symbol.
+
+Run `ef-themes-post-load-hook' after loading the theme."
   (interactive (list (ef-themes--select-prompt)))
   (ef-themes--load-theme theme))
 
@@ -375,7 +377,9 @@ When called from Lisp, THEME is a symbol."
 If `ef-themes-to-toggle' does not specify two Ef themes, inform
 the user about it while prompting with completion for a theme
 among our collection (this is practically the same as the
-`ef-themes-select' command)."
+`ef-themes-select' command).
+
+Run `ef-themes-post-load-hook' after loading the theme."
   (interactive)
   (if-let* ((themes (ef-themes--toggle-theme-p))
             (one (car themes))
@@ -409,7 +413,9 @@ With optional VARIANT as either `light' or `dark', limit the set
 to the relevant themes.
 
 When called interactively, VARIANT is the prefix argument which
-prompts with completion for either `light' or `dark'."
+prompts with completion for either `light' or `dark'.
+
+Run `ef-themes-post-load-hook' after loading the theme."
   (interactive
    (list
     (when current-prefix-arg
