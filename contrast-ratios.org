@@ -635,6 +635,112 @@ work with the overall design of the project.
 | modeline-info    | #1240af |    4.88 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
+* ef-trio-dark
+:PROPERTIES:
+:CUSTOM_ID: h:0b8d9f78-dc10-4b50-9197-90713266ec71
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:db8a51f5-a28f-422c-a046-b44bc0fdfb24
+:END:
+
+| Name           |         | #160f0f | #251a23 | #33252d | #1c1416 |
+|----------------+---------+---------+---------+---------+---------|
+| fg-main        | #d8cfd5 |   12.44 |   11.04 |    9.57 |   11.89 |
+| fg-dim         | #908890 |    5.51 |    4.89 |    4.23 |    5.26 |
+| fg-alt         | #afdacf |   12.40 |   11.00 |    9.53 |   11.85 |
+| red            | #f48359 |    7.43 |    6.59 |    5.71 |    7.09 |
+| red-warmer     | #ff7560 |    7.18 |    6.37 |    5.52 |    6.86 |
+| red-cooler     | #ff85aa |    8.28 |    7.35 |    6.37 |    7.91 |
+| red-faint      | #e47f72 |    6.83 |    6.06 |    5.25 |    6.53 |
+| green          | #60b444 |    7.31 |    6.48 |    5.62 |    6.98 |
+| green-warmer   | #a0c27f |    9.48 |    8.41 |    7.29 |    9.06 |
+| green-cooler   | #60bf88 |    8.39 |    7.44 |    6.45 |    8.01 |
+| green-faint    | #61a06c |    6.09 |    5.40 |    4.68 |    5.82 |
+| yellow         | #d4a052 |    8.07 |    7.16 |    6.20 |    7.71 |
+| yellow-warmer  | #ef926f |    8.12 |    7.21 |    6.24 |    7.76 |
+| yellow-cooler  | #ef9680 |    8.42 |    7.47 |    6.47 |    8.05 |
+| yellow-faint   | #c7a07f |    7.90 |    7.01 |    6.07 |    7.55 |
+| blue           | #7fa5f6 |    7.77 |    6.89 |    5.97 |    7.42 |
+| blue-warmer    | #8895ff |    7.02 |    6.23 |    5.40 |    6.71 |
+| blue-cooler    | #72afff |    8.38 |    7.43 |    6.44 |    8.00 |
+| blue-faint     | #7a94df |    6.43 |    5.70 |    4.94 |    6.14 |
+| magenta        | #d37faf |    6.69 |    5.94 |    5.14 |    6.39 |
+| magenta-warmer | #e772df |    7.09 |    6.29 |    5.45 |    6.78 |
+| magenta-cooler | #a698ef |    7.54 |    6.68 |    5.79 |    7.20 |
+| magenta-faint  | #c9addf |    9.49 |    8.42 |    7.29 |    9.07 |
+| cyan           | #8fbaff |    9.59 |    8.50 |    7.37 |    9.16 |
+| cyan-warmer    | #9ac2ff |   10.40 |    9.22 |    7.99 |    9.93 |
+| cyan-cooler    | #8fcfdf |   10.96 |    9.72 |    8.42 |   10.47 |
+| cyan-faint     | #8ac0ef |    9.80 |    8.69 |    7.53 |    9.36 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:6ba87f26-1fe0-4880-9a4c-f3c2ecf9dd2c
+:END:
+
+| Name             |         | #6a294f |
+|------------------+---------+---------|
+| modeline-err     | #ff9fcf |    5.44 |
+| modeline-warning | #edbf00 |    5.90 |
+| modeline-info    | #5fd0bf |    5.51 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
+* ef-trio-light
+:PROPERTIES:
+:CUSTOM_ID: h:1e351ab9-e2c4-496e-b40f-2d813db940e2
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:ea3998f4-10ed-4b6e-bd2e-c342860a7597
+:END:
+
+| Name           |         | #f8f5ff | #f0ecf4 | #e3e0e9 | #f5f2fa |
+|----------------+---------+---------+---------+---------+---------|
+| fg-main        | #4f3363 |    9.82 |    9.07 |    8.11 |    9.55 |
+| fg-dim         | #786e74 |    4.55 |    4.21 |    3.76 |    4.43 |
+| fg-alt         | #3f7668 |    4.87 |    4.50 |    4.02 |    4.74 |
+| red            | #c3303a |    5.12 |    4.73 |    4.23 |    4.98 |
+| red-warmer     | #d03033 |    4.69 |    4.34 |    3.88 |    4.57 |
+| red-cooler     | #c01f5f |    5.41 |    5.00 |    4.47 |    5.26 |
+| red-faint      | #c24552 |    4.57 |    4.22 |    3.77 |    4.44 |
+| green          | #057800 |    5.28 |    4.88 |    4.36 |    5.14 |
+| green-warmer   | #4f7d0f |    4.56 |    4.21 |    3.77 |    4.44 |
+| green-cooler   | #007f6f |    4.57 |    4.22 |    3.78 |    4.45 |
+| green-faint    | #61756c |    4.57 |    4.22 |    3.77 |    4.44 |
+| yellow         | #a45f22 |    4.60 |    4.25 |    3.80 |    4.47 |
+| yellow-warmer  | #b8532f |    4.52 |    4.17 |    3.73 |    4.39 |
+| yellow-cooler  | #b65050 |    4.58 |    4.24 |    3.79 |    4.46 |
+| yellow-faint   | #a05b5f |    4.69 |    4.33 |    3.87 |    4.56 |
+| blue           | #375cd6 |    5.32 |    4.91 |    4.40 |    5.18 |
+| blue-warmer    | #5165e4 |    4.50 |    4.16 |    3.72 |    4.38 |
+| blue-cooler    | #065fbf |    5.74 |    5.30 |    4.74 |    5.58 |
+| blue-faint     | #6060d0 |    4.78 |    4.41 |    3.95 |    4.65 |
+| magenta        | #ad45ba |    4.50 |    4.15 |    3.71 |    4.37 |
+| magenta-warmer | #c035aa |    4.50 |    4.16 |    3.72 |    4.38 |
+| magenta-cooler | #705ae3 |    4.58 |    4.23 |    3.78 |    4.45 |
+| magenta-faint  | #804fb0 |    5.32 |    4.92 |    4.40 |    5.18 |
+| cyan           | #1f6fbf |    4.77 |    4.41 |    3.94 |    4.64 |
+| cyan-warmer    | #3f6faf |    4.75 |    4.39 |    3.92 |    4.62 |
+| cyan-cooler    | #0f7a9d |    4.54 |    4.20 |    3.75 |    4.42 |
+| cyan-faint     | #5f60bf |    4.98 |    4.60 |    4.12 |    4.85 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:bc4d3158-a055-4574-8920-dd0c3403fa64
+:END:
+
+| Name             |         | #ddb4ff |
+|------------------+---------+---------|
+| modeline-err     | #980000 |    5.16 |
+| modeline-warning | #5f4400 |    5.21 |
+| modeline-info    | #1042af |    4.98 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
 * ef-winter
 :PROPERTIES:
 :CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
