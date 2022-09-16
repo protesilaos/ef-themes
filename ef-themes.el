@@ -60,15 +60,17 @@
     ef-night
     ef-spring
     ef-summer
+    ef-trio-dark
+    ef-trio-light
     ef-winter)
   "Symbols of all the Ef themes.")
 
 (defconst ef-themes-light-themes
-  '(ef-day ef-deuteranopia-light ef-duo-light ef-light ef-spring ef-summer)
+  '(ef-day ef-deuteranopia-light ef-duo-light ef-light ef-spring ef-summer ef-trio-light)
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes
-  '(ef-autumn ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-winter)
+  '(ef-autumn ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-trio-dark ef-winter)
   "List of symbols with the dark Ef themes.")
 
 (defcustom ef-themes-post-load-hook nil
