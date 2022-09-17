@@ -120,7 +120,7 @@
       (cyan-graph-1-bg    "#00808f")
 
       ;; Special hues
-      (bg-mode-line  "#6a294f") (fg-mode-line  "#ffdadf")
+      (bg-mode-line  "#6a294f") (fg-mode-line  "#ffdfdf")
       (bg-accent     "#7fdf50") (fg-accent     "#000000")
       (bg-completion "#2f335a")
       (bg-hover      "#004f3f")
