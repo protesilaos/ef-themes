@@ -132,8 +132,8 @@
       (bg-warning    "#332910") ; check with warning
       (bg-info       "#1f2a00") ; check with info
 
-      (cursor        "#dd88ff")
       (border        "#504750")
+      (cursor        "#ff99ff")
       (fg-intense    "#ffffff")
 
       (modeline-err     "#ff9fcf")
