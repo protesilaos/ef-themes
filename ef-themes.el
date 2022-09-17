@@ -48,26 +48,6 @@
 
 ;;; User options
 
-;; FIXME 2022-09-16: Maybe the `ef-themes-collection' should just
-;; combine the `ef-themes-light-themes' and `ef-themes-dark-themes'?
-;; This duplication seems unnecessary.
-(defconst ef-themes-collection
-  '(ef-autumn
-    ef-dark
-    ef-day
-    ef-deuteranopia-dark
-    ef-deuteranopia-light
-    ef-duo-dark
-    ef-duo-light
-    ef-light
-    ef-night
-    ef-spring
-    ef-summer
-    ef-trio-dark
-    ef-trio-light
-    ef-winter)
-  "Symbols of all the Ef themes.")
-
 (defconst ef-themes-light-themes
   '(ef-day ef-deuteranopia-light ef-duo-light ef-light ef-spring ef-summer ef-trio-light)
   "List of symbols with the light Ef themes.")
@@ -75,6 +55,10 @@
 (defconst ef-themes-dark-themes
   '(ef-autumn ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-trio-dark ef-winter)
   "List of symbols with the dark Ef themes.")
+
+(defconst ef-themes-collection
+  (append ef-themes-light-themes ef-themes-dark-themes)
+  "Symbols of all the Ef themes.")
 
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
