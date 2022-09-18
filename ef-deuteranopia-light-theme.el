@@ -81,12 +81,12 @@
       (cyan-faint      "#506fa0")
 
       ;; Basic hues for background values
-      (bg-red      "#ff8f88")
-      (bg-green    "#8adf80")
+      (bg-red      "#cac200")
+      (bg-green    "#9aaf80")
       (bg-yellow   "#fac200")
       (bg-blue     "#cbcfff")
-      (bg-magenta  "#ff9fef")
-      (bg-cyan     "#88c8ff")
+      (bg-magenta  "#3fbfff")
+      (bg-cyan     "#98e8ff")
 
       (bg-red-subtle      "#ffcfbf")
       (bg-green-subtle    "#afffbf")
