@@ -82,7 +82,7 @@
       (bg-green    "#20a020")
       (bg-yellow   "#904f30")
       (bg-blue     "#2f439f")
-      (bg-magenta  "#c040cf")
+      (bg-magenta  "#b04fcf")
       (bg-cyan     "#027080")
 
       (bg-red-subtle      "#6a002a")
