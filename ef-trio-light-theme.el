@@ -147,8 +147,8 @@
 
       (link cyan)
       (link-alt magenta)
-      (date cyan-warmer)
-      (name blue-warmer)
+      (date cyan-cooler)
+      (name blue)
       (keybind magenta-warmer)
       (prompt blue-cooler)
 
