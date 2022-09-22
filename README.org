@@ -534,7 +534,7 @@ code that uses ~ef-themes-with-colors~.
 This section documents how the user can further tweak the Ef themes to
 their liking.
 
-** The general approach to DIY changes
+** The general approach to advanced DIY changes
 :PROPERTIES:
 :CUSTOM_ID: h:ec0adf54-c037-4c53-81b8-7eab2303794d
 :END:
