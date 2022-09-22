@@ -534,7 +534,7 @@ code that uses ~ef-themes-with-colors~.
 This section documents how the user can further tweak the Ef themes to
 their liking.
 
-** Style font of =org-modern= elements
+** Tweak =org-modern= timestamps
 :PROPERTIES:
 :CUSTOM_ID: h:32e3b7b2-3b53-4ec2-bd4e-fa24235e447d
 :END:
@@ -543,37 +543,29 @@ their liking.
 
 The =org-modern= package uses faces and text properties to make Org
 buffers more aesthetically pleasing.  It affects tables, timestamps,
-lists, headings, and more.  To achieve a uniform look, the package
-defines a face that applies to all of those restyled elements.  The face
-is ~org-modern-label~.
+lists, headings, and more.
 
-Depending on the user's font configurations, some elements may not line
-up properly.  The Ef themes used to prevent that phenomenon by expressly
-disabling all attributes of the ~org-modern-label~.  However, that only
-works for users who do not tinker with their packages, as it has the
-adverse effect of impacting the user option ~org-modern-label-border~.
+In previous versions of the Ef themes, we mistakenly affected one of its
+faces: the ~org-modern-label~.  It changed the intended looks and
+prevented the user option ~org-modern-label-border~ from having its
+desired effect.  As such, we no longer override that face.
 
-As such, the Ef themes no longer touch the ~org-modern-label~.  Users
-who want the old behaviour, are advised to include the following snipet
-in their init file.  They can add it, for example, after the call to
-load their theme of choice ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).
+Users who were used to the previous design and who generally do not
+configure the user options of =org-modern= may thus notice a change in
+how clocktables (or generally tables with timestamps) are aligned.  The
+simplest solution is to instruct the mode to not prettify timestamps, by
+setting the user option ~org-modern-timestamp~ to nil.  For example, by
+adding this to the init file:
 
 #+begin_src emacs-lisp
-;; Revert to previous style of ef-themes version 0.5.0.  This makes,
-;; e.g., timestamps align in tables since they have the same typographic
-;; attributes as the default typeface.
-(set-face-attribute 'org-modern-label nil
-                    :inherit 'unspecified
-                    :height 'unspecified
-                    :weight 'unspecified
-                    :width 'unspecified
-                    :underline 'unspecified
-                    :box 'unspecified)
+(setq org-modern-timestamp nil)
 #+end_src
 
 Alignment in tables will also depend on the use of proportionately
 spaced fonts.  Enable the relevant option to work with those without any
 further trouble ([[#h:621d3bb9-5967-4f97-b253-7470bba9168c][Enable mixed fonts]]).
+
+For any further issues, you are welcome to ask for help.
 
 ** The general approach to advanced DIY changes
 :PROPERTIES:
