@@ -91,6 +91,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:2b8cf2d5-079f-4f69-b631-6da33da9416f
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #0f0e06 | distance | contrast |
@@ -153,6 +156,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:3b421386-0db3-4076-8386-ab6f96a1b327
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #000000 | distance | contrast |
@@ -215,6 +221,9 @@ C1 and C2 are color values written in hexadecimal RGB."
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:a03046a7-225d-4114-9415-fa565c8bcfbf
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #fff5ea | distance | contrast |
@@ -281,6 +290,9 @@ overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:67d4c194-bacf-4d6a-b67b-700b1444b500
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #000a1f | distance | contrast |
@@ -350,6 +362,9 @@ a tone.  Blue is okay.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:4bae6fee-350d-4b65-ab8c-4a196beada4f
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #f5f5ff | distance | contrast |
@@ -416,6 +431,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:9f1301ef-971b-499e-9465-cb9c88c47580
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #070019 | distance | contrast |
@@ -482,6 +500,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:fb1c3c25-16d8-483e-a9cf-15f511325cf1
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #fff8f0 | distance | contrast |
@@ -544,6 +565,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:934dd36a-ba24-4669-9df2-023b0ee1c81e
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #ffffff | distance | contrast |
@@ -606,6 +630,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:af14156e-2999-467d-8d56-97cceacaca46
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #000e17 | distance | contrast |
@@ -668,6 +695,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:e9585341-8217-4f8a-9bbf-99dd360b21b3
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #f6fff9 | distance | contrast |
@@ -730,6 +760,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:a36fc40a-a68f-4156-b803-fdf025dfb1f9
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #fff2f3 | distance | contrast |
@@ -792,6 +825,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:81d313cf-401c-4280-80fe-72185879034f
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #160f0f | distance | contrast |
@@ -854,6 +890,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:847a4c42-7068-4cb6-8d23-833588ae921e
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #f8f5ff | distance | contrast |
@@ -916,6 +955,9 @@ work with the overall design of the project.
 #+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:3f1ebd01-f359-44d3-99a3-85e58823ce46
+:END:
 
 # bg-main / bg-dim, bg-main / bg-alt
 | #0f0b15 | distance | contrast |
