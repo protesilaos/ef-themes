@@ -127,7 +127,7 @@
       (bg-hover-alt  "#664f4a")
       (bg-hl-line    "#002255")
       (bg-region     "#222f40")
-      (bg-paren      "#703350")
+      (bg-paren      "#664950")
       (bg-err        "#331419") ; check with err
       (bg-warning    "#332613") ; check with warning
       (bg-info       "#00251f") ; check with info
