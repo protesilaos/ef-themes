@@ -539,8 +539,6 @@ their liking.
 :CUSTOM_ID: h:32e3b7b2-3b53-4ec2-bd4e-fa24235e447d
 :END:
 
-[ Part of {{{development-version}}} ]
-
 The =org-modern= package uses faces and text properties to make Org
 buffers more aesthetically pleasing.  It affects tables, timestamps,
 lists, headings, and more.
@@ -872,7 +870,7 @@ everything most users need.
 - dired-subtree
 - diredfl
 - dirvish
-- display-fill-column-indicator-mode [ Part of {{{development-version}}} ]
+- display-fill-column-indicator-mode
 - doom-modeline
 - ediff
 - eldoc

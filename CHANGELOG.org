@@ -9,6 +9,1128 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.6.0 on 2022-09-23
+:PROPERTIES:
+:CUSTOM_ID: h:42f955b9-60a1-4a91-a050-913cb75c37c3
+:END:
+
+** New tri-chrome themes
+:PROPERTIES:
+:CUSTOM_ID: h:060dee0b-f18a-4ea4-84f0-8b30ae13ed12
+:END:
+
+The collection now includes two themes which apply shades of magenta,
+blue, and teal in most contexts.  They are named ~ef-trio-dark~ and
+~ef-trio-light~.  I think some of you will like their aesthetics.
+
+The announcement includes screenshots (and it also links to the page
+with all the pictures of the themes):
+<https://protesilaos.com/codelog/2022-09-16-ef-themes-trio/>.
+
+As part of the development, I initially forgot to register the "trio"
+themes as part of the collection.  Thanks to Sven Seebeck for informing
+me about it.  (This is shared with permission, as it was done via a
+private channel.)
+
+** Changes to faces or face groups
+:PROPERTIES:
+:CUSTOM_ID: h:91711f5b-b14c-4840-97fc-ca91b221a265
+:END:
+
++ Removed the override for the ~org-modern-label~ face.  We used to
+  affect its properties, which had the unintended effect of breaking the
+  functionality of the user option ~org-modern-label-border~.  Users of
+  the =org-modern= package may thus notice a difference in the effective
+  typography that ~org-modern-mode~ produces.
+
+  For the alignment of tables with timestamps (e.g. clocktables), it is
+  recommended to set the user option ~org-modern-timestamp~ to nil.  The
+  manual covers this information in the section titled "Tweak
+  =org-modern= timestamps".
+
+  Users who still need help with this are welcome to contact me in
+  private or via the development channels of the Ef themes (mailing list
+  or GitHub/GitLab mirrors).
+
+  Thanks to Daniel Mendler (the =org-modern= developer) for explaining
+  the technicalities and correcting errors I made in the previous
+  version of that entry in the manual:
+  <https://github.com/protesilaos/ef-themes/commit/79bb1436f2fd8ab07e850c247c5616490f619f52>.
+
++ Refined the backgrounds of regexp groupings.  Commands such as
+  ~re-builder~ and ~isearch-forward-regexp~ apply distinct colours to
+  matching regexp groups.  Those are now optimised to stand out more
+  when seen side-by-side.
+
+  Part of this work involved a thorough review of the applicable hues
+  used by the ~ef-deuteranopia-dark~ and ~ef-deuteranopia-light~ (the
+  two themes which are designed for users with red-green colour
+  deficiency).  The announcement on my website shows screenshots,
+  including those which simulate deuteranopia:
+  <https://protesilaos.com/codelog/2022-09-18-ef-themes-deuteranopia-regexp/>.
+
++ Added support for ~display-fill-column-indicator-mode~.  Thanks to
+  Daniel Mendler for informing me about it (this is shared with
+  permission, as it was done via a private channel).
+
++ Covered two faces that are available on Emacs 29 (current development
+  target) for Version Control: ~vc-git-log-edit-summary-max-warning~,
+  and ~vc-git-log-edit-summary-target-warning~.
+
+** Making use of ~ef-themes-select~ in init files
+:PROPERTIES:
+:CUSTOM_ID: h:2d404dd7-5064-4ead-96b9-db4e1fb4e914
+:END:
+
+The manual includes improved language on how to use the function
+~ef-themes-select~ in user init files.  This is for users who need to
+leverage the ~ef-themes-post-load-hook~ at startup (using that hook is
+also explained in the manual).  Basically, one loads a theme in their
+init file with something like:
+
+#+begin_src emacs-lisp
+;; like `load-theme' but also call `ef-themes-post-load-hook'
+(ef-themes-select 'ef-summer)
+#+end_src
+
+** Miscellaneous refinements
+:PROPERTIES:
+:CUSTOM_ID: h:c295fd76-473f-4de9-bba8-babc2b97564e
+:END:
+
++ Simplified how the variable ~ef-themes-collection~ gets its value.
+  Thanks to Philip Kaludercic for suggesting the use of ~seq-union~ over
+  at the emacs-devel mailing list:
+  <https://lists.gnu.org/archive/html/emacs-devel/2022-09/msg01053.html>.
+
+  I could not use ~seq-union~ because it introduces a dependency on
+  Emacs 28, whereas we support Emacs 27.  I went with ~append~ instead.
+
++ Ensured that the background colour of matching delimiters in
+  ~show-paren-mode~ is no longer red-tinted.  We thus avoid the
+  potential problem of mistaking those highlights for errors of some
+  sort.  This affects the themes ~ef-autumn, ~ef-light~, and ~ef-night~.
+
++ Recorded the colour distance and colour contrast between the base
+  background values across all themes.  The data is incorporated in the
+  file =contrast-ratios.org=, which is part of the Git repository and is
+  basically intended for my own use as part of this project's
+  development (though you are welcome to consult it).
+
+** What you do not see but still need to know about
+:PROPERTIES:
+:CUSTOM_ID: h:444d811f-fff8-4bbd-8c0c-6da270de0a70
+:END:
+
+I worked on two major changes but refrained from implementing them in
+this version.  Whether I will do so in the future remains to be
+determined.  The first is an option to apply "intense" colouration to
+the ~region~ face.  The second pertains to a review of the base
+backgrounds across all dark themes in order to improve their contrast
+relative to the main background.
+
+The following sections delve into the specifics.  To cut the long story
+short: changing colours is not trivial work.
+
+*** Considerations for the "intense" region
+:PROPERTIES:
+:CUSTOM_ID: h:0e1981df-ae21-45b3-b254-ed01c9c5c183
+:END:
+
+The following patch is deceptively simple.  It defines some new colour
+values, adds a tiny function, and a user option.  Why not add this to
+the themes, then?  The reason is that colours are never that simple.
+Any new value for the region must (i) work with ~hl-line-mode~, (ii)
+respect the highlights of ~show-paren-mode~, (iii) complement or
+otherwise not interfere with isearch and its lazy highlights or any
+other search utility that can extend the active region highlight, (iv)
+keep the cursor visible, and (v) remain thematically consistent with the
+rest of the theme.  Running those checks for 14 themes is no mean feat
+and there is always the chance that the new colours will still have a
+negative effect in places that are not expected.  Furthermore, there is
+no guarantee that the number of Ef themes will stay at 14 (I have some
+more ideas, yes).
+
+It is for such reasons that one of the principles of this project is to
+NOT offer customisation options that influence colours.  They do not
+scale and will make things unmaintainable.
+
+#+begin_src diff
+From 30506843a9692c6539de79d819b63f328dbb5638 Mon Sep 17 00:00:00 2001
+Message-Id: <30506843a9692c6539de79d819b63f328dbb5638.1663662345.git.info@protesilaos.com>
+From: Protesilaos Stavrou <info@protesilaos.com>
+Date: Tue, 20 Sep 2022 11:25:15 +0300
+Subject: [PATCH] Add user option for intense region
+
+---
+ ef-autumn-theme.el             |  1 +
+ ef-dark-theme.el               |  1 +
+ ef-day-theme.el                |  1 +
+ ef-deuteranopia-dark-theme.el  |  1 +
+ ef-deuteranopia-light-theme.el |  1 +
+ ef-duo-dark-theme.el           |  1 +
+ ef-duo-light-theme.el          |  1 +
+ ef-light-theme.el              |  1 +
+ ef-night-theme.el              |  1 +
+ ef-spring-theme.el             |  1 +
+ ef-summer-theme.el             |  1 +
+ ef-themes.el                   | 20 +++++++++++++++++++-
+ ef-trio-dark-theme.el          |  1 +
+ ef-trio-light-theme.el         |  1 +
+ ef-winter-theme.el             |  1 +
+ 15 files changed, 33 insertions(+), 1 deletion(-)
+
+diff --git a/ef-autumn-theme.el b/ef-autumn-theme.el
+index e4b6e02..cd18137 100644
+--- a/ef-autumn-theme.el
++++ b/ef-autumn-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#6f345a")
+       (bg-hl-line    "#302a3a")
+       (bg-region     "#3f1020")
++      (bg-region-intense "#3f5030")
+       (bg-paren      "#7f2d40")
+       (bg-err        "#361400") ; check with err
+       (bg-warning    "#332800") ; check with warning
+diff --git a/ef-dark-theme.el b/ef-dark-theme.el
+index 2377178..3ff49aa 100644
+--- a/ef-dark-theme.el
++++ b/ef-dark-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#551f5a")
+       (bg-hl-line    "#002435")
+       (bg-region     "#25164a")
++      (bg-region-intense "#4f3f3f")
+       (bg-paren      "#20577a")
+       (bg-err        "#330d09") ; check with err
+       (bg-warning    "#332600") ; check with warning
+diff --git a/ef-day-theme.el b/ef-day-theme.el
+index c27fd63..7faecb9 100644
+--- a/ef-day-theme.el
++++ b/ef-day-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#febcaf")
+       (bg-hl-line    "#f9e2b2")
+       (bg-region     "#f0d2df")
++      (bg-region-intense "#d2aaaf")
+       (bg-paren      "#8fcfdf")
+       (bg-err        "#ffddee") ; check with err
+       (bg-warning    "#ffe0aa") ; check with warning
+diff --git a/ef-deuteranopia-dark-theme.el b/ef-deuteranopia-dark-theme.el
+index 084b11c..816019a 100644
+--- a/ef-deuteranopia-dark-theme.el
++++ b/ef-deuteranopia-dark-theme.el
+@@ -130,6 +130,7 @@ (eval-and-compile
+       (bg-hover-alt  "#003a7f")
+       (bg-hl-line    "#2e2e1b")
+       (bg-region     "#202d3f")
++      (bg-region-intense "#50557f")
+       (bg-paren      "#0f4f9a")
+       (bg-err        "#232d09") ; check with err
+       (bg-warning    "#332600") ; check with warning
+diff --git a/ef-deuteranopia-light-theme.el b/ef-deuteranopia-light-theme.el
+index 06d091a..fac544f 100644
+--- a/ef-deuteranopia-light-theme.el
++++ b/ef-deuteranopia-light-theme.el
+@@ -130,6 +130,7 @@ (eval-and-compile
+       (bg-hover-alt  "#afafff")
+       (bg-hl-line    "#f3e0d5")
+       (bg-region     "#dadadf")
++      (bg-region-intense "#bbaacf")
+       (bg-paren      "#8fc0cf")
+       (bg-err        "#f0e0aa") ; check with err
+       (bg-warning    "#ffe0aa") ; check with warning
+diff --git a/ef-duo-dark-theme.el b/ef-duo-dark-theme.el
+index bbb25be..148c668 100644
+--- a/ef-duo-dark-theme.el
++++ b/ef-duo-dark-theme.el
+@@ -130,6 +130,7 @@ (eval-and-compile
+       (bg-hover-alt  "#265f4a")
+       (bg-hl-line    "#301a4f")
+       (bg-region     "#042a50")
++      (bg-region-intense "#4f423f")
+       (bg-paren      "#2f608e")
+       (bg-err        "#330d09") ; check with err
+       (bg-warning    "#332600") ; check with warning
+diff --git a/ef-duo-light-theme.el b/ef-duo-light-theme.el
+index 423f803..ceaba92 100644
+--- a/ef-duo-light-theme.el
++++ b/ef-duo-light-theme.el
+@@ -131,6 +131,7 @@ (eval-and-compile
+       (bg-hover-alt  "#aaeccf")
+       (bg-hl-line    "#f9e8c0")
+       (bg-region     "#caeafa")
++      (bg-region-intense "#d0a99f")
+       (bg-paren      "#afbfef")
+       (bg-err        "#ffdfe6") ; check with err
+       (bg-warning    "#ffe5ba") ; check with warning
+diff --git a/ef-light-theme.el b/ef-light-theme.el
+index 8cf425a..8389dba 100644
+--- a/ef-light-theme.el
++++ b/ef-light-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#b4cfff")
+       (bg-hl-line    "#e4efd8")
+       (bg-region     "#bfefff")
++      (bg-region-intense "#c0c0ef")
+       (bg-paren      "#efa09f")
+       (bg-err        "#ffd5ea") ; check with err
+       (bg-warning    "#ffeabb") ; check with warning
+diff --git a/ef-night-theme.el b/ef-night-theme.el
+index f54689c..f17330c 100644
+--- a/ef-night-theme.el
++++ b/ef-night-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#664f4a")
+       (bg-hl-line    "#002255")
+       (bg-region     "#222f40")
++      (bg-region-intense "#2f4b4f")
+       (bg-paren      "#703350")
+       (bg-err        "#331419") ; check with err
+       (bg-warning    "#332613") ; check with warning
+diff --git a/ef-spring-theme.el b/ef-spring-theme.el
+index 63927a2..3c77ebc 100644
+--- a/ef-spring-theme.el
++++ b/ef-spring-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#feb5ff")
+       (bg-hl-line    "#f9e0e5")
+       (bg-region     "#d0e6ff")
++      (bg-region-intense "#cabaef")
+       (bg-paren      "#7fddd0")
+       (bg-err        "#ffe8e0") ; check with err
+       (bg-warning    "#ffecba") ; check with warning
+diff --git a/ef-summer-theme.el b/ef-summer-theme.el
+index f8d6a7a..664046d 100644
+--- a/ef-summer-theme.el
++++ b/ef-summer-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#aaeccf")
+       (bg-hl-line    "#ffd6e5")
+       (bg-region     "#eecfff")
++      (bg-region-intense "#e0b29f")
+       (bg-paren      "#9fc0ef")
+       (bg-err        "#ffd0e6") ; check with err
+       (bg-warning    "#ffe5ba") ; check with warning
+diff --git a/ef-themes.el b/ef-themes.el
+index 53ae1c6..8eb90dc 100644
+--- a/ef-themes.el
++++ b/ef-themes.el
+@@ -230,6 +230,18 @@ (defcustom ef-themes-variable-pitch-ui nil
+   :type 'boolean
+   :link '(info-link "(ef-themes) UI typeface"))
+
++(defcustom ef-themes-intense-region nil
++  "When non-nil, make the `region' more intense.
++Increase the overall coloration of the `region' background and
++make it override any foreground colors within its boundaries.
++
++If nil (the default), use a more subtle background for the region
++and refrain from overriding foregrounds."
++  :group 'ef-themes
++  :package-version '(ef-themes . "0.6.0")
++  :type 'boolean
++  :link '(info-link "(ef-themes) Intense region"))
++
+ ;;; Helpers for user options
+
+ (defun ef-themes--fixed-pitch ()
+@@ -242,6 +254,12 @@ (defun ef-themes--variable-pitch-ui ()
+   (when ef-themes-variable-pitch-ui
+     (list :inherit 'variable-pitch)))
+
++(defun ef-themes--region (bg bg-intense fg-intense)
++  "Conditional application of `ef-themes-intense-region'."
++  (if ef-themes-intense-region
++      (list :background bg-intense :foreground fg-intense)
++    (list :background bg)))
++
+ (defun ef-themes--key-cdr (key alist)
+   "Get cdr of KEY in ALIST."
+   (cdr (assoc key alist)))
+@@ -535,7 +553,7 @@ ;;;;; absolute essentials
+     `(cursor ((,c :background ,cursor)))
+     `(default ((,c :background ,bg-main :foreground ,fg-main)))
+     `(italic ((,c :slant italic)))
+-    `(region ((,c :background ,bg-region)))
++    `(region ((,c ,@(ef-themes--region bg-region bg-region-intense fg-intense))))
+     `(vertical-border ((,c :foreground ,border)))
+ ;;;;; all other basic faces
+     `(button ((,c :foreground ,link :underline ,border)))
+diff --git a/ef-trio-dark-theme.el b/ef-trio-dark-theme.el
+index 0a1b5f4..76df54e 100644
+--- a/ef-trio-dark-theme.el
++++ b/ef-trio-dark-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#551f5a")
+       (bg-hl-line    "#34223f")
+       (bg-region     "#16304f")
++      (bg-region-intense "#514438")
+       (bg-paren      "#2f605e")
+       (bg-err        "#300f06") ; check with err
+       (bg-warning    "#332910") ; check with warning
+diff --git a/ef-trio-light-theme.el b/ef-trio-light-theme.el
+index 015188d..37fb6ae 100644
+--- a/ef-trio-light-theme.el
++++ b/ef-trio-light-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#b4cfff")
+       (bg-hl-line    "#cfe6ff")
+       (bg-region     "#eed0ff")
++      (bg-region-intense "#d2b6ff")
+       (bg-paren      "#dfadaf")
+       (bg-err        "#ffdfe6") ; check with err
+       (bg-warning    "#ffe5bf") ; check with warning
+diff --git a/ef-winter-theme.el b/ef-winter-theme.el
+index e552471..b68275b 100644
+--- a/ef-winter-theme.el
++++ b/ef-winter-theme.el
+@@ -127,6 +127,7 @@ (eval-and-compile
+       (bg-hover-alt  "#600f5a")
+       (bg-hl-line    "#003045")
+       (bg-region     "#342464")
++      (bg-region-intense "#54363f")
+       (bg-paren      "#2f608e")
+       (bg-err        "#330d06") ; check with err
+       (bg-warning    "#332610") ; check with warning
+--
+2.37.3
+#+end_src
+
+*** Revising the dark backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:379f696f-3a8a-4454-974f-686a483b65f2
+:END:
+
+As with the "intense" region, any change to the base backgrounds has
+far-reaching implications.  The following patch is, again, a matter of
+making small tweaks to colours values whose effect is far greater than
+what meets the eye.  I mean, what can possibly go wrong by changing the
+colour =#1a1a1a= to =#232323=, right?  This marginal adjustment
+requires, among others, that we also adjust (i) the foregrounds in
+header lines, (ii) the background colours of added and removed lines in
+Magit focused diff hunks as well as the backgrounds of word-wise, aka
+"refined", diff highlights, (iii) the foregrounds of inactive mode
+lines, (iv) the legibility of inactive tabs in ~tab-bar-mode~,
+~tab-line-mode~, (v) the legibility of elements such as the
+=#+begin_src= line in Org buffers, and probably many others.  A change
+to one background necessarily needs a change to all others.
+
+This topic is discussed with Alan Schmitt who has one monitor that does
+not reproduce black properly:
+<https://lists.sr.ht/~protesilaos/ef-themes/%3C87leqe2tji.fsf%40m4x.org%3E>.
+
+My suggestion is to calibrate hardware, if possible, such as by relying
+on those resources:
+
+1. <http://www.lagom.nl/lcd-test/black.php>
+2. <http://www.lagom.nl/lcd-test/white.php>
+
+[ Yes, I once did spend 8 hours calibrating my monitor.  It was crazy. ]
+
+#+begin_src diff
+From 35f3ee6b9c5a8f15615be1ef75e58c8b27e3b633 Mon Sep 17 00:00:00 2001
+Message-Id: <35f3ee6b9c5a8f15615be1ef75e58c8b27e3b633.1663904476.git.info@protesilaos.com>
+From: Protesilaos Stavrou <info@protesilaos.com>
+Date: Fri, 23 Sep 2022 06:07:12 +0300
+Subject: [PATCH] Revise base backgrounds in all dark themes (DRAFT)
+
+---
+ contrast-ratios.org           | 420 +++++++++++++++++-----------------
+ ef-autumn-theme.el            |   8 +-
+ ef-dark-theme.el              |   8 +-
+ ef-deuteranopia-dark-theme.el |   8 +-
+ ef-duo-dark-theme.el          |   8 +-
+ ef-night-theme.el             |   8 +-
+ ef-trio-dark-theme.el         |   8 +-
+ ef-winter-theme.el            |   8 +-
+ 8 files changed, 238 insertions(+), 238 deletions(-)
+
+diff --git a/contrast-ratios.org b/contrast-ratios.org
+index 0860495..bef9817 100644
+--- a/contrast-ratios.org
++++ b/contrast-ratios.org
+@@ -47,35 +47,35 @@ ** Base colours
+ :CUSTOM_ID: h:85f29c2d-ae5c-4bb8-94bf-ac43543c8539
+ :END:
+
+-| Name           |         | #0f0e06 | #1f1b19 | #36322f | #14130a |
++| Name           |         | #0f0e06 | #262422 | #342e2a | #17150f |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #cfbcba |   10.64 |    9.40 |    6.99 |   10.25 |
+-| fg-dim         | #887c8a |    4.88 |    4.31 |    3.20 |    4.70 |
+-| fg-alt         | #70a89f |    7.18 |    6.34 |    4.71 |    6.91 |
+-| red            | #ef656a |    6.21 |    5.48 |    4.07 |    5.98 |
+-| red-warmer     | #f26f25 |    6.52 |    5.76 |    4.28 |    6.28 |
+-| red-cooler     | #f07f7f |    7.41 |    6.55 |    4.86 |    7.14 |
+-| red-faint      | #d08f72 |    7.23 |    6.39 |    4.75 |    6.97 |
+-| green          | #2fa526 |    6.02 |    5.31 |    3.95 |    5.79 |
+-| green-warmer   | #64aa0f |    6.72 |    5.94 |    4.41 |    6.47 |
+-| green-cooler   | #00b066 |    6.82 |    6.02 |    4.47 |    6.57 |
+-| green-faint    | #5f9f6f |    6.15 |    5.43 |    4.04 |    5.92 |
+-| yellow         | #c48702 |    6.28 |    5.54 |    4.12 |    6.04 |
+-| yellow-warmer  | #d0730f |    5.66 |    5.00 |    3.71 |    5.45 |
+-| yellow-cooler  | #df8f6f |    7.64 |    6.75 |    5.02 |    7.36 |
+-| yellow-faint   | #cf9f7f |    8.21 |    7.26 |    5.39 |    7.91 |
+-| blue           | #379cf6 |    6.68 |    5.90 |    4.38 |    6.43 |
+-| blue-warmer    | #6a88ff |    6.06 |    5.35 |    3.98 |    5.84 |
+-| blue-cooler    | #029fff |    6.82 |    6.03 |    4.48 |    6.57 |
+-| blue-faint     | #6a84af |    5.10 |    4.50 |    3.34 |    4.91 |
+-| magenta        | #d570af |    6.23 |    5.50 |    4.09 |    6.00 |
+-| magenta-warmer | #e580ea |    7.93 |    7.00 |    5.20 |    7.64 |
+-| magenta-cooler | #af8aff |    7.28 |    6.43 |    4.78 |    7.01 |
+-| magenta-faint  | #c590af |    7.35 |    6.49 |    4.83 |    7.08 |
+-| cyan           | #4fb0cf |    7.78 |    6.87 |    5.10 |    7.49 |
+-| cyan-warmer    | #6fafff |    8.52 |    7.53 |    5.59 |    8.21 |
+-| cyan-cooler    | #3dbbb0 |    8.23 |    7.27 |    5.40 |    7.92 |
+-| cyan-faint     | #82a0af |    7.00 |    6.18 |    4.59 |    6.74 |
++| fg-main        | #cfbcba |   10.64 |    8.51 |    7.36 |   10.04 |
++| fg-dim         | #887c8a |    4.88 |    3.90 |    3.37 |    4.60 |
++| fg-alt         | #70a89f |    7.18 |    5.74 |    4.96 |    6.77 |
++| red            | #ef656a |    6.21 |    4.96 |    4.29 |    5.86 |
++| red-warmer     | #f26f25 |    6.52 |    5.21 |    4.51 |    6.15 |
++| red-cooler     | #f07f7f |    7.41 |    5.93 |    5.12 |    6.99 |
++| red-faint      | #d08f72 |    7.23 |    5.78 |    5.00 |    6.83 |
++| green          | #2fa526 |    6.02 |    4.81 |    4.16 |    5.68 |
++| green-warmer   | #64aa0f |    6.72 |    5.38 |    4.65 |    6.34 |
++| green-cooler   | #00b066 |    6.82 |    5.45 |    4.71 |    6.43 |
++| green-faint    | #5f9f6f |    6.15 |    4.92 |    4.25 |    5.80 |
++| yellow         | #c48702 |    6.28 |    5.02 |    4.34 |    5.92 |
++| yellow-warmer  | #d0730f |    5.66 |    4.52 |    3.91 |    5.34 |
++| yellow-cooler  | #df8f6f |    7.64 |    6.11 |    5.28 |    7.21 |
++| yellow-faint   | #cf9f7f |    8.21 |    6.57 |    5.68 |    7.75 |
++| blue           | #379cf6 |    6.68 |    5.34 |    4.62 |    6.30 |
++| blue-warmer    | #6a88ff |    6.06 |    4.84 |    4.19 |    5.72 |
++| blue-cooler    | #029fff |    6.82 |    5.45 |    4.72 |    6.44 |
++| blue-faint     | #6a84af |    5.10 |    4.07 |    3.52 |    4.81 |
++| magenta        | #d570af |    6.23 |    4.98 |    4.31 |    5.88 |
++| magenta-warmer | #e580ea |    7.93 |    6.34 |    5.48 |    7.48 |
++| magenta-cooler | #af8aff |    7.28 |    5.82 |    5.03 |    6.87 |
++| magenta-faint  | #c590af |    7.35 |    5.88 |    5.08 |    6.94 |
++| cyan           | #4fb0cf |    7.78 |    6.22 |    5.38 |    7.34 |
++| cyan-warmer    | #6fafff |    8.52 |    6.81 |    5.89 |    8.04 |
++| cyan-cooler    | #3dbbb0 |    8.23 |    6.58 |    5.69 |    7.76 |
++| cyan-faint     | #82a0af |    7.00 |    5.59 |    4.84 |    6.60 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -95,8 +95,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #0f0e06 | distance | contrast |
+ |---------+----------+----------|
+-| #1f1b19 |     2279 |     1.13 |
+-| #36322f |    13351 |     1.52 |
++| #262422 |     5361 |     1.25 |
++| #342e2a |    10815 |     1.45 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-dark
+@@ -109,35 +109,35 @@ ** Base colours
+ :CUSTOM_ID: h:bdc5d5b7-4d1a-4e3d-8333-01a96164f4d8
+ :END:
+
+-| Name           |         | #000000 | #1a1a1a | #2b2b2b | #0c0c0c |
++| Name           |         | #000000 | #232323 | #2e2e2e | #101010 |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #d0d0d0 |   13.62 |   11.28 |    9.18 |   12.68 |
+-| fg-dim         | #807f9f |    5.45 |    4.52 |    3.68 |    5.08 |
+-| fg-alt         | #89afef |    9.44 |    7.83 |    6.37 |    8.80 |
+-| red            | #ef6560 |    6.70 |    5.55 |    4.52 |    6.24 |
+-| red-warmer     | #f47360 |    7.47 |    6.19 |    5.04 |    6.96 |
+-| red-cooler     | #ff5a7a |    7.00 |    5.80 |    4.72 |    6.52 |
+-| red-faint      | #d56f72 |    6.35 |    5.26 |    4.28 |    5.91 |
+-| green          | #0faa26 |    6.80 |    5.63 |    4.58 |    6.33 |
+-| green-warmer   | #6aad0f |    7.60 |    6.30 |    5.12 |    7.08 |
+-| green-cooler   | #00a692 |    6.87 |    5.69 |    4.63 |    6.40 |
+-| green-faint    | #61a06c |    6.75 |    5.60 |    4.55 |    6.29 |
+-| yellow         | #c48032 |    6.48 |    5.37 |    4.37 |    6.04 |
+-| yellow-warmer  | #d1843f |    7.08 |    5.87 |    4.78 |    6.60 |
+-| yellow-cooler  | #df8f5a |    8.21 |    6.81 |    5.54 |    7.65 |
+-| yellow-faint   | #cf9f8f |    9.01 |    7.47 |    6.07 |    8.39 |
+-| blue           | #3f95f6 |    6.84 |    5.67 |    4.61 |    6.37 |
+-| blue-warmer    | #6a9fff |    8.02 |    6.64 |    5.40 |    7.47 |
+-| blue-cooler    | #029fff |    7.41 |    6.14 |    4.99 |    6.90 |
+-| blue-faint     | #7a94df |    7.13 |    5.91 |    4.81 |    6.64 |
+-| magenta        | #d369af |    6.41 |    5.31 |    4.32 |    5.97 |
+-| magenta-warmer | #e580ea |    8.61 |    7.13 |    5.80 |    8.02 |
+-| magenta-cooler | #af85ff |    7.62 |    6.32 |    5.14 |    7.10 |
+-| magenta-faint  | #c57faf |    7.03 |    5.83 |    4.74 |    6.55 |
+-| cyan           | #4fbaef |    9.60 |    7.96 |    6.47 |    8.94 |
+-| cyan-warmer    | #6fafff |    9.25 |    7.67 |    6.24 |    8.62 |
+-| cyan-cooler    | #1dbfcf |    9.41 |    7.80 |    6.34 |    8.76 |
+-| cyan-faint     | #8aa0df |    8.17 |    6.77 |    5.51 |    7.61 |
++| fg-main        | #d0d0d0 |   13.62 |   10.19 |    8.80 |   12.34 |
++| fg-dim         | #807f9f |    5.45 |    4.08 |    3.53 |    4.94 |
++| fg-alt         | #89afef |    9.44 |    7.07 |    6.11 |    8.56 |
++| red            | #ef6560 |    6.70 |    5.01 |    4.33 |    6.07 |
++| red-warmer     | #f47360 |    7.47 |    5.59 |    4.83 |    6.77 |
++| red-cooler     | #ff5a7a |    7.00 |    5.24 |    4.52 |    6.34 |
++| red-faint      | #d56f72 |    6.35 |    4.75 |    4.10 |    5.75 |
++| green          | #0faa26 |    6.80 |    5.09 |    4.40 |    6.16 |
++| green-warmer   | #6aad0f |    7.60 |    5.69 |    4.91 |    6.88 |
++| green-cooler   | #00a692 |    6.87 |    5.14 |    4.44 |    6.22 |
++| green-faint    | #61a06c |    6.75 |    5.05 |    4.37 |    6.12 |
++| yellow         | #c48032 |    6.48 |    4.85 |    4.19 |    5.87 |
++| yellow-warmer  | #d1843f |    7.08 |    5.30 |    4.58 |    6.42 |
++| yellow-cooler  | #df8f5a |    8.21 |    6.15 |    5.31 |    7.44 |
++| yellow-faint   | #cf9f8f |    9.01 |    6.74 |    5.83 |    8.16 |
++| blue           | #3f95f6 |    6.84 |    5.12 |    4.42 |    6.20 |
++| blue-warmer    | #6a9fff |    8.02 |    6.00 |    5.18 |    7.26 |
++| blue-cooler    | #029fff |    7.41 |    5.54 |    4.79 |    6.71 |
++| blue-faint     | #7a94df |    7.13 |    5.34 |    4.61 |    6.46 |
++| magenta        | #d369af |    6.41 |    4.80 |    4.14 |    5.81 |
++| magenta-warmer | #e580ea |    8.61 |    6.44 |    5.57 |    7.80 |
++| magenta-cooler | #af85ff |    7.62 |    5.70 |    4.93 |    6.91 |
++| magenta-faint  | #c57faf |    7.03 |    5.26 |    4.55 |    6.37 |
++| cyan           | #4fbaef |    9.60 |    7.19 |    6.21 |    8.70 |
++| cyan-warmer    | #6fafff |    9.25 |    6.92 |    5.98 |    8.38 |
++| cyan-cooler    | #1dbfcf |    9.41 |    7.04 |    6.08 |    8.52 |
++| cyan-faint     | #8aa0df |    8.17 |    6.12 |    5.29 |    7.41 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -157,8 +157,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #000000 | distance | contrast |
+ |---------+----------+----------|
+-| #1a1a1a |     6131 |     1.21 |
+-| #2b2b2b |    16771 |     1.48 |
++| #232323 |    11111 |     1.34 |
++| #2e2e2e |    19193 |     1.55 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-day
+@@ -237,35 +237,35 @@ ** Base colours
+ yellows.  We just define the entire palette to make it work with the
+ overall design of the project.
+
+-| Name           |         | #000a1f | #0f1c2d | #19263a | #071225 |
++| Name           |         | #000a1f | #1a2332 | #2c2c3f | #101625 |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #ddddee |   14.72 |   12.78 |   11.34 |   13.95 |
+-| fg-dim         | #7f8797 |    5.47 |    4.75 |    4.21 |    5.18 |
+-| fg-alt         | #90afef |    9.00 |    7.81 |    6.93 |    8.52 |
+-| red            | #cf8560 |    6.75 |    5.86 |    5.20 |    6.40 |
+-| red-warmer     | #e47360 |    6.51 |    5.65 |    5.02 |    6.17 |
+-| red-cooler     | #cf7a7a |    6.32 |    5.49 |    4.87 |    5.99 |
+-| red-faint      | #b57f82 |    5.95 |    5.16 |    4.58 |    5.63 |
+-| green          | #3faa26 |    6.57 |    5.71 |    5.07 |    6.23 |
+-| green-warmer   | #7aad0f |    7.35 |    6.38 |    5.66 |    6.96 |
+-| green-cooler   | #3fa672 |    6.50 |    5.64 |    5.01 |    6.16 |
+-| green-faint    | #61a06c |    6.35 |    5.52 |    4.89 |    6.02 |
+-| yellow         | #aa9f32 |    7.26 |    6.30 |    5.59 |    6.87 |
+-| yellow-warmer  | #cfaf00 |    9.20 |    7.99 |    7.09 |    8.72 |
+-| yellow-cooler  | #bfaf7a |    9.06 |    7.86 |    6.98 |    8.58 |
+-| yellow-faint   | #af9a6a |    7.20 |    6.25 |    5.55 |    6.82 |
+-| blue           | #3f90f0 |    6.07 |    5.28 |    4.68 |    5.76 |
+-| blue-warmer    | #6a9fff |    7.54 |    6.55 |    5.81 |    7.14 |
+-| blue-cooler    | #009fff |    6.96 |    6.05 |    5.37 |    6.60 |
+-| blue-faint     | #7a94df |    6.71 |    5.82 |    5.17 |    6.35 |
+-| magenta        | #b379bf |    6.02 |    5.23 |    4.64 |    5.71 |
+-| magenta-warmer | #af80ea |    6.68 |    5.80 |    5.15 |    6.33 |
+-| magenta-cooler | #9f95ff |    7.73 |    6.71 |    5.96 |    7.32 |
+-| magenta-faint  | #c59fcf |    8.69 |    7.54 |    6.69 |    8.23 |
+-| cyan           | #5faaef |    7.98 |    6.93 |    6.15 |    7.56 |
+-| cyan-warmer    | #7fafff |    8.91 |    7.74 |    6.87 |    8.45 |
+-| cyan-cooler    | #0db0ff |    8.16 |    7.08 |    6.28 |    7.73 |
+-| cyan-faint     | #8aa0df |    7.69 |    6.68 |    5.92 |    7.28 |
++| fg-main        | #ddddee |   14.72 |   11.76 |   10.17 |   13.45 |
++| fg-dim         | #7f8797 |    5.47 |    4.37 |    3.78 |    5.00 |
++| fg-alt         | #90afef |    9.00 |    7.19 |    6.21 |    8.22 |
++| red            | #cf8560 |    6.75 |    5.39 |    4.66 |    6.17 |
++| red-warmer     | #e47360 |    6.51 |    5.20 |    4.50 |    5.95 |
++| red-cooler     | #cf7a7a |    6.32 |    5.05 |    4.36 |    5.77 |
++| red-faint      | #b57f82 |    5.95 |    4.75 |    4.11 |    5.43 |
++| green          | #3faa26 |    6.57 |    5.25 |    4.54 |    6.01 |
++| green-warmer   | #7aad0f |    7.35 |    5.87 |    5.08 |    6.71 |
++| green-cooler   | #3fa672 |    6.50 |    5.19 |    4.49 |    5.94 |
++| green-faint    | #61a06c |    6.35 |    5.08 |    4.39 |    5.80 |
++| yellow         | #aa9f32 |    7.26 |    5.80 |    5.01 |    6.63 |
++| yellow-warmer  | #cfaf00 |    9.20 |    7.36 |    6.36 |    8.41 |
++| yellow-cooler  | #bfaf7a |    9.06 |    7.24 |    6.26 |    8.28 |
++| yellow-faint   | #af9a6a |    7.20 |    5.75 |    4.97 |    6.58 |
++| blue           | #3f90f0 |    6.07 |    4.85 |    4.20 |    5.55 |
++| blue-warmer    | #6a9fff |    7.54 |    6.03 |    5.21 |    6.89 |
++| blue-cooler    | #009fff |    6.96 |    5.56 |    4.81 |    6.36 |
++| blue-faint     | #7a94df |    6.71 |    5.36 |    4.63 |    6.13 |
++| magenta        | #b379bf |    6.02 |    4.81 |    4.16 |    5.50 |
++| magenta-warmer | #af80ea |    6.68 |    5.34 |    4.61 |    6.10 |
++| magenta-cooler | #9f95ff |    7.73 |    6.18 |    5.34 |    7.06 |
++| magenta-faint  | #c59fcf |    8.69 |    6.94 |    6.00 |    7.94 |
++| cyan           | #5faaef |    7.98 |    6.38 |    5.51 |    7.29 |
++| cyan-warmer    | #7fafff |    8.91 |    7.12 |    6.16 |    8.15 |
++| cyan-cooler    | #0db0ff |    8.16 |    6.52 |    5.63 |    7.45 |
++| cyan-faint     | #8aa0df |    7.69 |    6.14 |    5.31 |    7.03 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -285,8 +285,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #000a1f | distance | contrast |
+ |---------+----------+----------|
+-| #0f1c2d |     2353 |     1.15 |
+-| #19263a |     6619 |     1.30 |
++| #1a2332 |     4989 |     1.25 |
++| #2c2c3f |    11737 |     1.45 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-deuteranopia-light
+@@ -372,35 +372,35 @@ ** Base colours
+ blue/cyan and yellow hues.  We just define the entire palette to make it
+ work with the overall design of the project.
+
+-| Name           |         | #070019 | #1c1926 | #262230 | #140e1c |
++| Name           |         | #070019 | #211c2b | #2c2836 | #181322 |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #d0d0d0 |   13.31 |   11.19 |   10.06 |   12.27 |
+-| fg-dim         | #857f8f |    5.31 |    4.46 |    4.01 |    4.89 |
+-| fg-alt         | #89afef |    9.23 |    7.76 |    6.97 |    8.51 |
+-| red            | #ef656a |    6.59 |    5.54 |    4.98 |    6.08 |
+-| red-warmer     | #f47360 |    7.30 |    6.14 |    5.52 |    6.73 |
+-| red-cooler     | #ef798f |    7.63 |    6.41 |    5.76 |    7.03 |
+-| red-faint      | #d08f72 |    7.68 |    6.46 |    5.80 |    7.08 |
+-| green          | #1fa526 |    6.32 |    5.32 |    4.78 |    5.83 |
+-| green-warmer   | #50a22f |    6.40 |    5.38 |    4.84 |    5.90 |
+-| green-cooler   | #00b982 |    8.08 |    6.79 |    6.10 |    7.45 |
+-| green-faint    | #61a06c |    6.60 |    5.55 |    4.99 |    6.09 |
+-| yellow         | #c48702 |    6.66 |    5.60 |    5.03 |    6.14 |
+-| yellow-warmer  | #d0730f |    6.00 |    5.05 |    4.54 |    5.54 |
+-| yellow-cooler  | #df805f |    7.22 |    6.08 |    5.46 |    6.66 |
+-| yellow-faint   | #9f8f6a |    6.46 |    5.44 |    4.88 |    5.96 |
+-| blue           | #379cf6 |    7.09 |    5.96 |    5.35 |    6.53 |
+-| blue-warmer    | #6f80ff |    6.07 |    5.10 |    4.58 |    5.60 |
+-| blue-cooler    | #029fff |    7.24 |    6.09 |    5.47 |    6.68 |
+-| blue-faint     | #8a9fdf |    7.92 |    6.66 |    5.99 |    7.31 |
+-| magenta        | #d369af |    6.26 |    5.27 |    4.73 |    5.78 |
+-| magenta-warmer | #e580ea |    8.41 |    7.08 |    6.36 |    7.76 |
+-| magenta-cooler | #af85ff |    7.45 |    6.27 |    5.63 |    6.87 |
+-| magenta-faint  | #c57faf |    6.87 |    5.78 |    5.19 |    6.34 |
+-| cyan           | #5faaef |    8.29 |    6.97 |    6.27 |    7.65 |
+-| cyan-warmer    | #7fafff |    9.26 |    7.79 |    7.00 |    8.54 |
+-| cyan-cooler    | #0dafdf |    8.03 |    6.75 |    6.07 |    7.41 |
+-| cyan-faint     | #8aa0df |    7.99 |    6.72 |    6.04 |    7.37 |
++| fg-main        | #d0d0d0 |   13.31 |   10.76 |    9.30 |   11.79 |
++| fg-dim         | #857f8f |    5.31 |    4.29 |    3.71 |    4.70 |
++| fg-alt         | #89afef |    9.23 |    7.46 |    6.45 |    8.17 |
++| red            | #ef656a |    6.59 |    5.33 |    4.60 |    5.83 |
++| red-warmer     | #f47360 |    7.30 |    5.90 |    5.10 |    6.47 |
++| red-cooler     | #ef798f |    7.63 |    6.16 |    5.33 |    6.75 |
++| red-faint      | #d08f72 |    7.68 |    6.21 |    5.37 |    6.80 |
++| green          | #1fa526 |    6.32 |    5.11 |    4.42 |    5.60 |
++| green-warmer   | #50a22f |    6.40 |    5.18 |    4.47 |    5.67 |
++| green-cooler   | #00b982 |    8.08 |    6.53 |    5.64 |    7.15 |
++| green-faint    | #61a06c |    6.60 |    5.34 |    4.61 |    5.85 |
++| yellow         | #c48702 |    6.66 |    5.38 |    4.65 |    5.90 |
++| yellow-warmer  | #d0730f |    6.00 |    4.85 |    4.20 |    5.32 |
++| yellow-cooler  | #df805f |    7.22 |    5.84 |    5.05 |    6.40 |
++| yellow-faint   | #9f8f6a |    6.46 |    5.22 |    4.52 |    5.72 |
++| blue           | #379cf6 |    7.09 |    5.73 |    4.95 |    6.28 |
++| blue-warmer    | #6f80ff |    6.07 |    4.90 |    4.24 |    5.37 |
++| blue-cooler    | #029fff |    7.24 |    5.85 |    5.06 |    6.41 |
++| blue-faint     | #8a9fdf |    7.92 |    6.40 |    5.54 |    7.02 |
++| magenta        | #d369af |    6.26 |    5.06 |    4.38 |    5.55 |
++| magenta-warmer | #e580ea |    8.41 |    6.80 |    5.88 |    7.45 |
++| magenta-cooler | #af85ff |    7.45 |    6.02 |    5.21 |    6.60 |
++| magenta-faint  | #c57faf |    6.87 |    5.55 |    4.80 |    6.09 |
++| cyan           | #5faaef |    8.29 |    6.70 |    5.79 |    7.34 |
++| cyan-warmer    | #7fafff |    9.26 |    7.49 |    6.47 |    8.21 |
++| cyan-cooler    | #0dafdf |    8.03 |    6.49 |    5.61 |    7.11 |
++| cyan-faint     | #8aa0df |    7.99 |    6.46 |    5.58 |    7.08 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -420,8 +420,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #070019 | distance | contrast |
+ |---------+----------+----------|
+-| #1c1926 |     3938 |     1.19 |
+-| #262230 |     8235 |     1.32 |
++| #211c2b |     5530 |     1.24 |
++| #2c2836 |    11805 |     1.43 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-duo-light
+@@ -562,35 +562,35 @@ ** Base colours
+ :CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
+ :END:
+
+-| Name           |         | #000e17 | #0f1b29 | #1a2a2f | #0f121f |
++| Name           |         | #000e17 | #18242f | #262e36 | #121522 |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #afbcbf |   10.02 |    8.91 |    7.60 |    9.56 |
+-| fg-dim         | #70819f |    4.96 |    4.41 |    3.76 |    4.73 |
+-| fg-alt         | #b0a0a0 |    7.80 |    6.93 |    5.92 |    7.44 |
+-| red            | #ef656a |    6.27 |    5.57 |    4.76 |    5.98 |
+-| red-warmer     | #f47360 |    6.95 |    6.18 |    5.27 |    6.63 |
+-| red-cooler     | #ef798f |    7.26 |    6.45 |    5.51 |    6.92 |
+-| red-faint      | #d56f72 |    5.90 |    5.25 |    4.48 |    5.63 |
+-| green          | #1fa526 |    6.02 |    5.35 |    4.57 |    5.74 |
+-| green-warmer   | #50a22f |    6.09 |    5.42 |    4.63 |    5.81 |
+-| green-cooler   | #00b672 |    7.38 |    6.56 |    5.60 |    7.04 |
+-| green-faint    | #61a06c |    6.28 |    5.59 |    4.77 |    5.99 |
+-| yellow         | #c48502 |    6.23 |    5.54 |    4.73 |    5.95 |
+-| yellow-warmer  | #e6832f |    7.12 |    6.33 |    5.40 |    6.79 |
+-| yellow-cooler  | #df8f6f |    7.72 |    6.86 |    5.86 |    7.36 |
+-| yellow-faint   | #cf9f7f |    8.30 |    7.38 |    6.30 |    7.92 |
+-| blue           | #379cf6 |    6.74 |    6.00 |    5.12 |    6.43 |
+-| blue-warmer    | #6a88ff |    6.12 |    5.44 |    4.65 |    5.84 |
+-| blue-cooler    | #029fff |    6.89 |    6.13 |    5.23 |    6.57 |
+-| blue-faint     | #7a94df |    6.63 |    5.90 |    5.03 |    6.33 |
+-| magenta        | #d570af |    6.29 |    5.60 |    4.78 |    6.01 |
+-| magenta-warmer | #e580ea |    8.01 |    7.12 |    6.08 |    7.64 |
+-| magenta-cooler | #af8aff |    7.35 |    6.54 |    5.58 |    7.01 |
+-| magenta-faint  | #c59faf |    8.33 |    7.40 |    6.32 |    7.95 |
+-| cyan           | #4fb0cf |    7.85 |    6.98 |    5.96 |    7.49 |
+-| cyan-warmer    | #6fafff |    8.60 |    7.65 |    6.53 |    8.21 |
+-| cyan-cooler    | #3dc0b0 |    8.71 |    7.75 |    6.61 |    8.31 |
+-| cyan-faint     | #92b4df |    9.13 |    8.12 |    6.93 |    8.71 |
++| fg-main        | #afbcbf |   10.02 |    8.08 |    7.05 |    9.31 |
++| fg-dim         | #70819f |    4.96 |    4.00 |    3.49 |    4.61 |
++| fg-alt         | #b0a0a0 |    7.80 |    6.29 |    5.49 |    7.25 |
++| red            | #ef656a |    6.27 |    5.06 |    4.42 |    5.83 |
++| red-warmer     | #f47360 |    6.95 |    5.61 |    4.89 |    6.46 |
++| red-cooler     | #ef798f |    7.26 |    5.86 |    5.11 |    6.75 |
++| red-faint      | #d56f72 |    5.90 |    4.76 |    4.16 |    5.49 |
++| green          | #1fa526 |    6.02 |    4.86 |    4.24 |    5.60 |
++| green-warmer   | #50a22f |    6.09 |    4.92 |    4.29 |    5.67 |
++| green-cooler   | #00b672 |    7.38 |    5.96 |    5.20 |    6.86 |
++| green-faint    | #61a06c |    6.28 |    5.07 |    4.42 |    5.84 |
++| yellow         | #c48502 |    6.23 |    5.03 |    4.39 |    5.80 |
++| yellow-warmer  | #e6832f |    7.12 |    5.74 |    5.01 |    6.62 |
++| yellow-cooler  | #df8f6f |    7.72 |    6.23 |    5.43 |    7.18 |
++| yellow-faint   | #cf9f7f |    8.30 |    6.69 |    5.84 |    7.71 |
++| blue           | #379cf6 |    6.74 |    5.44 |    4.75 |    6.27 |
++| blue-warmer    | #6a88ff |    6.12 |    4.94 |    4.31 |    5.69 |
++| blue-cooler    | #029fff |    6.89 |    5.56 |    4.85 |    6.41 |
++| blue-faint     | #7a94df |    6.63 |    5.35 |    4.67 |    6.17 |
++| magenta        | #d570af |    6.29 |    5.08 |    4.43 |    5.85 |
++| magenta-warmer | #e580ea |    8.01 |    6.46 |    5.64 |    7.45 |
++| magenta-cooler | #af8aff |    7.35 |    5.93 |    5.18 |    6.84 |
++| magenta-faint  | #c59faf |    8.33 |    6.72 |    5.86 |    7.74 |
++| cyan           | #4fb0cf |    7.85 |    6.34 |    5.53 |    7.30 |
++| cyan-warmer    | #6fafff |    8.60 |    6.94 |    6.06 |    8.00 |
++| cyan-cooler    | #3dc0b0 |    8.71 |    7.03 |    6.14 |    8.10 |
++| cyan-faint     | #92b4df |    9.13 |    7.37 |    6.43 |    8.49 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -610,8 +610,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #000e17 | distance | contrast |
+ |---------+----------+----------|
+-| #0f1b29 |     2111 |     1.12 |
+-| #1a2a2f |     6269 |     1.32 |
++| #18242f |     4853 |     1.24 |
++| #262e36 |     9980 |     1.42 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-spring
+@@ -748,35 +748,35 @@ ** Base colours
+ :CUSTOM_ID: h:db8a51f5-a28f-422c-a046-b44bc0fdfb24
+ :END:
+
+-| Name           |         | #160f0f | #251a23 | #33252d | #1c1416 |
++| Name           |         | #160f0f | #2b2328 | #3a2b35 | #1f171a |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #d8cfd5 |   12.44 |   11.04 |    9.57 |   11.89 |
+-| fg-dim         | #908890 |    5.51 |    4.89 |    4.23 |    5.26 |
+-| fg-alt         | #afdacf |   12.40 |   11.00 |    9.53 |   11.85 |
+-| red            | #f48359 |    7.43 |    6.59 |    5.71 |    7.09 |
+-| red-warmer     | #ff7560 |    7.18 |    6.37 |    5.52 |    6.86 |
+-| red-cooler     | #ff85aa |    8.28 |    7.35 |    6.37 |    7.91 |
+-| red-faint      | #e47f72 |    6.83 |    6.06 |    5.25 |    6.53 |
+-| green          | #60b444 |    7.31 |    6.48 |    5.62 |    6.98 |
+-| green-warmer   | #a0c27f |    9.48 |    8.41 |    7.29 |    9.06 |
+-| green-cooler   | #60bf88 |    8.39 |    7.44 |    6.45 |    8.01 |
+-| green-faint    | #61a06c |    6.09 |    5.40 |    4.68 |    5.82 |
+-| yellow         | #d4a052 |    8.07 |    7.16 |    6.20 |    7.71 |
+-| yellow-warmer  | #ef926f |    8.12 |    7.21 |    6.24 |    7.76 |
+-| yellow-cooler  | #ef9680 |    8.42 |    7.47 |    6.47 |    8.05 |
+-| yellow-faint   | #c7a07f |    7.90 |    7.01 |    6.07 |    7.55 |
+-| blue           | #7fa5f6 |    7.77 |    6.89 |    5.97 |    7.42 |
+-| blue-warmer    | #8895ff |    7.02 |    6.23 |    5.40 |    6.71 |
+-| blue-cooler    | #72afff |    8.38 |    7.43 |    6.44 |    8.00 |
+-| blue-faint     | #7a94df |    6.43 |    5.70 |    4.94 |    6.14 |
+-| magenta        | #d37faf |    6.69 |    5.94 |    5.14 |    6.39 |
+-| magenta-warmer | #e772df |    7.09 |    6.29 |    5.45 |    6.78 |
+-| magenta-cooler | #a698ef |    7.54 |    6.68 |    5.79 |    7.20 |
+-| magenta-faint  | #c9addf |    9.49 |    8.42 |    7.29 |    9.07 |
+-| cyan           | #8fbaff |    9.59 |    8.50 |    7.37 |    9.16 |
+-| cyan-warmer    | #9ac2ff |   10.40 |    9.22 |    7.99 |    9.93 |
+-| cyan-cooler    | #8fcfdf |   10.96 |    9.72 |    8.42 |   10.47 |
+-| cyan-faint     | #8ac0ef |    9.80 |    8.69 |    7.53 |    9.36 |
++| fg-main        | #d8cfd5 |   12.44 |   10.05 |    8.76 |   11.55 |
++| fg-dim         | #908890 |    5.51 |    4.45 |    3.87 |    5.11 |
++| fg-alt         | #afdacf |   12.40 |   10.01 |    8.72 |   11.50 |
++| red            | #f48359 |    7.43 |    6.00 |    5.22 |    6.89 |
++| red-warmer     | #ff7560 |    7.18 |    5.80 |    5.05 |    6.66 |
++| red-cooler     | #ff85aa |    8.28 |    6.69 |    5.83 |    7.68 |
++| red-faint      | #e47f72 |    6.83 |    5.52 |    4.81 |    6.34 |
++| green          | #60b444 |    7.31 |    5.90 |    5.14 |    6.78 |
++| green-warmer   | #a0c27f |    9.48 |    7.66 |    6.67 |    8.80 |
++| green-cooler   | #60bf88 |    8.39 |    6.77 |    5.90 |    7.78 |
++| green-faint    | #61a06c |    6.09 |    4.92 |    4.28 |    5.65 |
++| yellow         | #d4a052 |    8.07 |    6.51 |    5.68 |    7.48 |
++| yellow-warmer  | #ef926f |    8.12 |    6.56 |    5.71 |    7.54 |
++| yellow-cooler  | #ef9680 |    8.42 |    6.80 |    5.93 |    7.81 |
++| yellow-faint   | #c7a07f |    7.90 |    6.38 |    5.56 |    7.33 |
++| blue           | #7fa5f6 |    7.77 |    6.27 |    5.46 |    7.20 |
++| blue-warmer    | #8895ff |    7.02 |    5.67 |    4.94 |    6.51 |
++| blue-cooler    | #72afff |    8.38 |    6.76 |    5.89 |    7.77 |
++| blue-faint     | #7a94df |    6.43 |    5.19 |    4.52 |    5.96 |
++| magenta        | #d37faf |    6.69 |    5.40 |    4.71 |    6.21 |
++| magenta-warmer | #e772df |    7.09 |    5.73 |    4.99 |    6.58 |
++| magenta-cooler | #a698ef |    7.54 |    6.08 |    5.30 |    6.99 |
++| magenta-faint  | #c9addf |    9.49 |    7.66 |    6.68 |    8.80 |
++| cyan           | #8fbaff |    9.59 |    7.74 |    6.74 |    8.89 |
++| cyan-warmer    | #9ac2ff |   10.40 |    8.40 |    7.31 |    9.65 |
++| cyan-cooler    | #8fcfdf |   10.96 |    8.85 |    7.71 |   10.17 |
++| cyan-faint     | #8ac0ef |    9.80 |    7.91 |    6.89 |    9.09 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -796,8 +796,8 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #160f0f | distance | contrast |
+ |---------+----------+----------|
+-| #251a23 |     2130 |     1.13 |
+-| #33252d |     6358 |     1.30 |
++| #2b2328 |     4367 |     1.24 |
++| #3a2b35 |    10115 |     1.42 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
+ * ef-trio-light
+@@ -872,35 +872,35 @@ ** Base colours
+ :CUSTOM_ID: h:76e0b621-7872-4597-8bdc-6c007e43aff5
+ :END:
+
+-| Name           |         | #0f0b15 | #161926 | #202234 | #14121a |
++| Name           |         | #0f0b15 | #1d2030 | #292b3d | #18151d |
+ |----------------+---------+---------+---------+---------+---------|
+-| fg-main        | #b8c6d5 |   11.19 |   10.05 |    9.01 |   10.68 |
+-| fg-dim         | #807c9f |    4.91 |    4.41 |    3.96 |    4.69 |
+-| fg-alt         | #bf8f8f |    6.99 |    6.28 |    5.63 |    6.67 |
+-| red            | #f47359 |    6.90 |    6.20 |    5.56 |    6.58 |
+-| red-warmer     | #ef6560 |    6.21 |    5.58 |    5.00 |    5.92 |
+-| red-cooler     | #ff6a7a |    7.04 |    6.32 |    5.67 |    6.71 |
+-| red-faint      | #d56f72 |    5.88 |    5.28 |    4.74 |    5.61 |
+-| green          | #29a444 |    6.01 |    5.40 |    4.84 |    5.74 |
+-| green-warmer   | #6aad0f |    7.04 |    6.32 |    5.67 |    6.72 |
+-| green-cooler   | #00a392 |    6.17 |    5.54 |    4.97 |    5.88 |
+-| green-faint    | #61a06c |    6.26 |    5.62 |    5.04 |    5.97 |
+-| yellow         | #c48052 |    6.08 |    5.46 |    4.89 |    5.80 |
+-| yellow-warmer  | #d1803f |    6.37 |    5.72 |    5.13 |    6.07 |
+-| yellow-cooler  | #df8a88 |    7.53 |    6.77 |    6.07 |    7.19 |
+-| yellow-faint   | #c0a38a |    8.20 |    7.37 |    6.60 |    7.82 |
+-| blue           | #3f95f6 |    6.34 |    5.70 |    5.11 |    6.05 |
+-| blue-warmer    | #6a9fff |    7.43 |    6.67 |    5.98 |    7.09 |
+-| blue-cooler    | #029fff |    6.86 |    6.17 |    5.53 |    6.55 |
+-| blue-faint     | #7a94df |    6.61 |    5.94 |    5.32 |    6.30 |
+-| magenta        | #d369af |    5.94 |    5.34 |    4.78 |    5.67 |
+-| magenta-warmer | #e580e0 |    7.87 |    7.07 |    6.34 |    7.51 |
+-| magenta-cooler | #af85ea |    6.83 |    6.13 |    5.50 |    6.51 |
+-| magenta-faint  | #c57faf |    6.51 |    5.85 |    5.25 |    6.21 |
+-| cyan           | #4fbaef |    8.90 |    7.99 |    7.17 |    8.49 |
+-| cyan-warmer    | #6fafdf |    8.22 |    7.39 |    6.62 |    7.84 |
+-| cyan-cooler    | #35afbf |    7.45 |    6.69 |    6.00 |    7.10 |
+-| cyan-faint     | #8aa0df |    7.58 |    6.81 |    6.10 |    7.23 |
++| fg-main        | #b8c6d5 |   11.19 |    9.28 |    8.01 |   10.38 |
++| fg-dim         | #807c9f |    4.91 |    4.07 |    3.52 |    4.56 |
++| fg-alt         | #bf8f8f |    6.99 |    5.79 |    5.00 |    6.48 |
++| red            | #f47359 |    6.90 |    5.72 |    4.94 |    6.40 |
++| red-warmer     | #ef6560 |    6.21 |    5.15 |    4.45 |    5.76 |
++| red-cooler     | #ff6a7a |    7.04 |    5.84 |    5.04 |    6.53 |
++| red-faint      | #d56f72 |    5.88 |    4.88 |    4.21 |    5.45 |
++| green          | #29a444 |    6.01 |    4.98 |    4.30 |    5.57 |
++| green-warmer   | #6aad0f |    7.04 |    5.84 |    5.04 |    6.53 |
++| green-cooler   | #00a392 |    6.17 |    5.11 |    4.41 |    5.72 |
++| green-faint    | #61a06c |    6.26 |    5.19 |    4.48 |    5.80 |
++| yellow         | #c48052 |    6.08 |    5.04 |    4.35 |    5.63 |
++| yellow-warmer  | #d1803f |    6.37 |    5.28 |    4.56 |    5.90 |
++| yellow-cooler  | #df8a88 |    7.53 |    6.25 |    5.39 |    6.98 |
++| yellow-faint   | #c0a38a |    8.20 |    6.80 |    5.87 |    7.60 |
++| blue           | #3f95f6 |    6.34 |    5.26 |    4.54 |    5.88 |
++| blue-warmer    | #6a9fff |    7.43 |    6.16 |    5.32 |    6.89 |
++| blue-cooler    | #029fff |    6.86 |    5.69 |    4.91 |    6.36 |
++| blue-faint     | #7a94df |    6.61 |    5.48 |    4.73 |    6.13 |
++| magenta        | #d369af |    5.94 |    4.92 |    4.25 |    5.51 |
++| magenta-warmer | #e580e0 |    7.87 |    6.53 |    5.64 |    7.30 |
++| magenta-cooler | #af85ea |    6.83 |    5.66 |    4.89 |    6.33 |
++| magenta-faint  | #c57faf |    6.51 |    5.40 |    4.66 |    6.04 |
++| cyan           | #4fbaef |    8.90 |    7.38 |    6.37 |    8.25 |
++| cyan-warmer    | #6fafdf |    8.22 |    6.82 |    5.89 |    7.62 |
++| cyan-cooler    | #35afbf |    7.45 |    6.17 |    5.33 |    6.90 |
++| cyan-faint     | #8aa0df |    7.58 |    6.28 |    5.42 |    7.02 |
+ #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+ ** Special colours against the modeline
+@@ -920,6 +920,6 @@ ** Distance and contrast between main backgrounds
+ # bg-main / bg-dim, bg-main / bg-alt
+ | #0f0b15 | distance | contrast |
+ |---------+----------+----------|
+-| #161926 |     1745 |     1.11 |
+-| #202234 |     5558 |     1.24 |
++| #1d2030 |     4330 |     1.21 |
++| #292b3d |    10225 |     1.40 |
+ #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+diff --git a/ef-autumn-theme.el b/ef-autumn-theme.el
+index e4b6e02..e82e363 100644
+--- a/ef-autumn-theme.el
++++ b/ef-autumn-theme.el
+@@ -43,13 +43,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main     "#0f0e06")
+       (fg-main     "#cfbcba")
+-      (bg-dim      "#1f1b19")
++      (bg-dim      "#262422")
+       (fg-dim      "#887c8a")
+-      (bg-alt      "#36322f")
++      (bg-alt      "#342e2a")
+       (fg-alt      "#70a89f")
+
+-      (bg-active   "#46423f")
+-      (bg-inactive "#14130a")
++      (bg-active   "#443e3a")
++      (bg-inactive "#17150f")
+
+       ;; Basic hues for foreground values
+       (red             "#ef656a")
+diff --git a/ef-dark-theme.el b/ef-dark-theme.el
+index 15c85a8..043553b 100644
+--- a/ef-dark-theme.el
++++ b/ef-dark-theme.el
+@@ -43,13 +43,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main     "#000000")
+       (fg-main     "#d0d0d0")
+-      (bg-dim      "#1a1a1a")
++      (bg-dim      "#232323")
+       (fg-dim      "#857f8f")
+-      (bg-alt      "#2b2b2b")
++      (bg-alt      "#2e2e2e")
+       (fg-alt      "#89afef")
+
+-      (bg-active   "#3b3b3b")
+-      (bg-inactive "#0c0c0c")
++      (bg-active   "#3d3d3d")
++      (bg-inactive "#101010")
+
+       ;; Basic hues for foreground values
+       (red             "#ef6560")
+diff --git a/ef-deuteranopia-dark-theme.el b/ef-deuteranopia-dark-theme.el
+index 084b11c..238d696 100644
+--- a/ef-deuteranopia-dark-theme.el
++++ b/ef-deuteranopia-dark-theme.el
+@@ -46,13 +46,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main     "#000a1f")
+       (fg-main     "#ddddee")
+-      (bg-dim      "#0f1c2d")
++      (bg-dim      "#1a2332")
+       (fg-dim      "#7f8797")
+-      (bg-alt      "#19263a")
++      (bg-alt      "#2c2c3f")
+       (fg-alt      "#90afef")
+
+-      (bg-active   "#30354f")
+-      (bg-inactive "#071225")
++      (bg-active   "#3c3c4f")
++      (bg-inactive "#101625")
+
+       ;; Basic hues for foreground values
+       (red             "#cf8560")
+diff --git a/ef-duo-dark-theme.el b/ef-duo-dark-theme.el
+index bbb25be..fcda486 100644
+--- a/ef-duo-dark-theme.el
++++ b/ef-duo-dark-theme.el
+@@ -46,13 +46,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main     "#070019")
+       (fg-main     "#d0d0d0")
+-      (bg-dim      "#1c1926")
++      (bg-dim      "#211c2b")
+       (fg-dim      "#857f8f")
+-      (bg-alt      "#262230")
++      (bg-alt      "#2c2836")
+       (fg-alt      "#89afef")
+
+-      (bg-active   "#363240")
+-      (bg-inactive "#140e1c")
++      (bg-active   "#3c3846")
++      (bg-inactive "#181322")
+
+       ;; Basic hues for foreground values
+       (red             "#ef656a")
+diff --git a/ef-night-theme.el b/ef-night-theme.el
+index f54689c..91a98b6 100644
+--- a/ef-night-theme.el
++++ b/ef-night-theme.el
+@@ -43,13 +43,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main     "#000e17")
+       (fg-main     "#afbcbf")
+-      (bg-dim      "#0f1b29")
++      (bg-dim      "#18242f")
+       (fg-dim      "#70819f")
+-      (bg-alt      "#1a2a2f")
++      (bg-alt      "#262e36")
+       (fg-alt      "#b0a0a0")
+
+-      (bg-active   "#28353f")
+-      (bg-inactive "#0f121f")
++      (bg-active   "#363e46")
++      (bg-inactive "#121522")
+
+       ;; Basic hues for foreground values
+       (red             "#ef656a")
+diff --git a/ef-trio-dark-theme.el b/ef-trio-dark-theme.el
+index aaa4eba..8e00d68 100644
+--- a/ef-trio-dark-theme.el
++++ b/ef-trio-dark-theme.el
+@@ -43,13 +43,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main      "#160f0f")
+       (fg-main      "#d8cfd5")
+-      (bg-dim       "#251a23")
++      (bg-dim       "#2b2328")
+       (fg-dim       "#908890")
+-      (bg-alt       "#33252d")
++      (bg-alt       "#3a2b35")
+       (fg-alt       "#afdacf")
+
+-      (bg-active    "#43353d")
+-      (bg-inactive  "#1c1416")
++      (bg-active    "#4a3b45")
++      (bg-inactive  "#1f171a")
+
+       ;; Basic hues for foreground values
+       (red             "#f48359")
+diff --git a/ef-winter-theme.el b/ef-winter-theme.el
+index e552471..02451c5 100644
+--- a/ef-winter-theme.el
++++ b/ef-winter-theme.el
+@@ -43,13 +43,13 @@ (eval-and-compile
+     '(;; Basic tones
+       (bg-main      "#0f0b15")
+       (fg-main      "#b8c6d5")
+-      (bg-dim       "#161926")
++      (bg-dim       "#1d2030")
+       (fg-dim       "#807c9f")
+-      (bg-alt       "#202234")
++      (bg-alt       "#292b3d")
+       (fg-alt       "#bf8f8f")
+
+-      (bg-active    "#353554")
+-      (bg-inactive  "#14121a")
++      (bg-active    "#393b4d")
++      (bg-inactive  "#18151d")
+
+       ;; Basic hues for foreground values
+       (red             "#f47359")
+--
+2.37.3
+#+end_src
+
 * Version 0.5.0 on 2022-09-11
 :PROPERTIES:
 :CUSTOM_ID: h:d0d24c93-7954-4c52-b5a2-79089b53c767
