@@ -1596,7 +1596,7 @@ Helper function for `ef-themes-preview-colors'."
     `(vc-dir-mark-indicator ((,c :inherit success)))
     `(vc-dir-status-edited ((,c :inherit warning)))
     `(vc-dir-status-ignored ((,c :inherit shadow)))
-    `(vc-dir-status-up-to-date (( )))
+    `(vc-dir-status-up-to-date ((,c :foreground ,info)))
     `(vc-dir-status-warning ((,c :inherit error)))
     `(vc-conflict-state ((,c :inherit error)))
     `(vc-edited-state ((,c :inherit italic)))
