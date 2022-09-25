@@ -716,6 +716,43 @@ The exact color values are taken from the active Ef theme."
 To find the names of the color variables, the user can rely on the
 commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
 
+** Make the modeline like the =modus-themes= default
+:PROPERTIES:
+:CUSTOM_ID: h:69ea8788-33b9-42f9-a4f1-92ee22074d2b
+:END:
+
+The Ef themes do not use a =:box= attribute for their mode lines, while
+the active one has an accented background.  Users may prefer the
+approach that my =modus-themes= follow by default, where both active and
+inactive mode lines use shades of gray and have a border around them.
+
+Try something like this, using the approach we have already explained
+about ~ef-themes-with-colors~ ([[#h:ec0adf54-c037-4c53-81b8-7eab2303794d][The general approach to DIY changes]]):
+
+#+begin_src emacs-lisp
+(defun my-ef-themes-mode-line ()
+  "Tweak the style of the mode lines."
+  (ef-themes-with-colors
+    (custom-set-faces
+     `(mode-line ((,c :background ,bg-active :foreground ,fg-main :box (:line-width 1 :color ,fg-dim))))
+     `(mode-line-inactive ((,c :box (:line-width 1 :color ,bg-active)))))))
+
+(add-hook 'ef-themes-post-load-hook #'my-ef-themes-mode-line)
+#+end_src
+
+If you want the active mode line to retain its accented background but
+also have a border around it, change this line from the above snippet:
+
+#+begin_src emacs-lisp
+(mode-line ((,c :background ,bg-active :foreground ,fg-main :box (:line-width 1 :color ,fg-dim))))
+#+end_src
+
+To this:
+
+#+begin_src emacs-lisp
+`(mode-line ((,c :background ,bg-mode-line :foreground ,fg-mode-line :box (:line-width 1 :color ,fg-dim))))
+#+end_src
+
 ** Configure bold and italic faces
 :PROPERTIES:
 :CUSTOM_ID: h:8c0b05b7-5624-4051-844c-3c4882658782
