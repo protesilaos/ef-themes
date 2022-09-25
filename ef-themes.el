@@ -539,6 +539,7 @@ Helper function for `ef-themes-preview-colors'."
     `(vertical-border ((,c :foreground ,border)))
 ;;;;; all other basic faces
     `(button ((,c :foreground ,link :underline ,border)))
+    `(child-frame-border ((,c :background ,border)))
     `(comint-highlight-input ((,c :inherit bold)))
     `(comint-highlight-prompt ((,c :inherit minibuffer-prompt)))
     `(edmacro-label ((,c :inherit bold)))
