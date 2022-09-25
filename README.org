@@ -534,37 +534,6 @@ code that uses ~ef-themes-with-colors~.
 This section documents how the user can further tweak the Ef themes to
 their liking.
 
-** Tweak =org-modern= timestamps
-:PROPERTIES:
-:CUSTOM_ID: h:32e3b7b2-3b53-4ec2-bd4e-fa24235e447d
-:END:
-
-The =org-modern= package uses faces and text properties to make Org
-buffers more aesthetically pleasing.  It affects tables, timestamps,
-lists, headings, and more.
-
-In previous versions of the Ef themes, we mistakenly affected one of its
-faces: the ~org-modern-label~.  It changed the intended looks and
-prevented the user option ~org-modern-label-border~ from having its
-desired effect.  As such, we no longer override that face.
-
-Users who were used to the previous design and who generally do not
-configure the user options of =org-modern= may thus notice a change in
-how clocktables (or generally tables with timestamps) are aligned.  The
-simplest solution is to instruct the mode to not prettify timestamps, by
-setting the user option ~org-modern-timestamp~ to nil.  For example, by
-adding this to the init file:
-
-#+begin_src emacs-lisp
-(setq org-modern-timestamp nil)
-#+end_src
-
-Alignment in tables will also depend on the use of proportionately
-spaced fonts.  Enable the relevant option to work with those without any
-further trouble ([[#h:621d3bb9-5967-4f97-b253-7470bba9168c][Enable mixed fonts]]).
-
-For any further issues, you are welcome to ask for help.
-
 ** The general approach to advanced DIY changes
 :PROPERTIES:
 :CUSTOM_ID: h:ec0adf54-c037-4c53-81b8-7eab2303794d
@@ -804,6 +773,37 @@ The exact color values are taken from the active Ef theme."
 
 To find the names of the color variables, the user can rely on the
 commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
+
+** Tweak =org-modern= timestamps
+:PROPERTIES:
+:CUSTOM_ID: h:32e3b7b2-3b53-4ec2-bd4e-fa24235e447d
+:END:
+
+The =org-modern= package uses faces and text properties to make Org
+buffers more aesthetically pleasing.  It affects tables, timestamps,
+lists, headings, and more.
+
+In previous versions of the Ef themes, we mistakenly affected one of its
+faces: the ~org-modern-label~.  It changed the intended looks and
+prevented the user option ~org-modern-label-border~ from having its
+desired effect.  As such, we no longer override that face.
+
+Users who were used to the previous design and who generally do not
+configure the user options of =org-modern= may thus notice a change in
+how clocktables (or generally tables with timestamps) are aligned.  The
+simplest solution is to instruct the mode to not prettify timestamps, by
+setting the user option ~org-modern-timestamp~ to nil.  For example, by
+adding this to the init file:
+
+#+begin_src emacs-lisp
+(setq org-modern-timestamp nil)
+#+end_src
+
+Alignment in tables will also depend on the use of proportionately
+spaced fonts.  Enable the relevant option to work with those without any
+further trouble ([[#h:621d3bb9-5967-4f97-b253-7470bba9168c][Enable mixed fonts]]).
+
+For any further issues, you are welcome to ask for help.
 
 ** Tweak goto-address-mode faces
 :PROPERTIES:
