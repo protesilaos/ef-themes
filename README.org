@@ -583,8 +583,8 @@ This function is added to the `ef-themes-post-load-hook'."
 
 Each item in the Ef themes collection has its own color mapping.  So the
 color value of the =comment= variable will differ from theme-to-theme.
-For our purposes, we make variables look like comments and comments like
-variables:
+For the purpose of our demonstration, we make variables look like
+comments and comments like variables:
 
 #+begin_src emacs-lisp
 (defun my-ef-themes-custom-faces ()
