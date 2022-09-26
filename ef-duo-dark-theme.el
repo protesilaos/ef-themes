@@ -166,8 +166,8 @@
       (type blue-cooler)
       (variable magenta-cooler)
 
-      (rx-escape cyan) ; compare with `string'
-      (rx-construct red-warmer)
+      (rx-escape magenta-cooler) ; compare with `string'
+      (rx-construct blue)
 
       (accent-0 blue-warmer)
       (accent-1 yellow-warmer)
