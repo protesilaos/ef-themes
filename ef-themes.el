@@ -680,6 +680,7 @@ Helper function for `ef-themes-preview-colors'."
     `(change-log-list ((,c :inherit bold)))
     `(change-log-name ((,c :foreground ,name)))
     `(log-edit-header ((,c :inherit bold)))
+    `(log-edit-headers-separator ((,c :height 1 :background ,border :extend t)))
     `(log-edit-summary ((,c :inherit bold :foreground ,accent-0)))
     `(log-edit-unknown-header ((,c :inherit shadow)))
     `(log-view-commit-body (( )))
