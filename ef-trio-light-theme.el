@@ -171,11 +171,11 @@
       (accent-2 blue-warmer)
       (accent-3 yellow)
 
-      (mail-0 green-cooler)
-      (mail-1 magenta-cooler)
-      (mail-2 magenta)
-      (mail-3 green-warmer)
-      (mail-4 blue-warmer)
+      (mail-0 blue-warmer)
+      (mail-1 magenta-warmer)
+      (mail-2 green-cooler)
+      (mail-3 magenta-cooler)
+      (mail-4 cyan)
       (mail-5 yellow-cooler)
 
       (rainbow-0 magenta-warmer)
