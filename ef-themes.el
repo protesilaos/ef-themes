@@ -1030,7 +1030,7 @@ Helper function for `ef-themes-preview-colors'."
     `(gnus-summary-low-read ((,c :inherit (shadow italic))))
     `(gnus-summary-low-ticked ((,c :inherit italic :foreground ,err)))
     `(gnus-summary-low-undownloaded ((,c :inherit italic :foreground ,warning)))
-    `(gnus-summary-low-unread (( )))
+    `(gnus-summary-low-unread ((,c :inherit italic)))
     `(gnus-summary-normal-ancient (( )))
     `(gnus-summary-normal-read ((,c :inherit shadow)))
     `(gnus-summary-normal-ticked ((,c :foreground ,err)))
