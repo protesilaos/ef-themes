@@ -102,6 +102,68 @@ C1 and C2 are color values written in hexadecimal RGB."
 | #36322f |    13351 |     1.52 |
 #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
 
+* ef-bio
+:PROPERTIES:
+:CUSTOM_ID: h:3926f2b9-ff3b-42db-b11a-54fcc11488cb
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:669d758b-9d7b-441d-bd56-bc15a1bc27e4
+:END:
+
+| Name           |         | #111111 | #222522 | #303230 | #161916 |
+|----------------+---------+---------+---------+---------+---------|
+| red            | #ef6560 |    6.03 |    4.94 |    4.12 |    5.66 |
+| red-warmer     | #f47360 |    6.72 |    5.51 |    4.60 |    6.30 |
+| red-cooler     | #ff778f |    7.45 |    6.11 |    5.10 |    7.00 |
+| red-faint      | #d56f72 |    5.71 |    4.68 |    3.91 |    5.36 |
+| green          | #3fb83f |    7.32 |    6.00 |    5.01 |    6.87 |
+| green-warmer   | #7fc500 |    8.89 |    7.29 |    6.09 |    8.35 |
+| green-cooler   | #00c089 |    8.00 |    6.57 |    5.48 |    7.51 |
+| green-faint    | #7fc07f |    8.77 |    7.19 |    6.00 |    8.23 |
+| yellow         | #d4aa02 |    8.59 |    7.04 |    5.88 |    8.06 |
+| yellow-warmer  | #e09a0f |    7.91 |    6.49 |    5.42 |    7.43 |
+| yellow-cooler  | #cfc04f |   10.17 |    8.34 |    6.96 |    9.54 |
+| yellow-faint   | #b7a07f |    7.51 |    6.16 |    5.14 |    7.05 |
+| blue           | #37aff6 |    7.76 |    6.36 |    5.31 |    7.28 |
+| blue-warmer    | #78afff |    8.43 |    6.91 |    5.77 |    7.91 |
+| blue-cooler    | #32cfef |   10.17 |    8.34 |    6.96 |    9.54 |
+| blue-faint     | #6ab4cf |    8.13 |    6.67 |    5.57 |    7.63 |
+| magenta        | #d38faf |    7.48 |    6.14 |    5.12 |    7.02 |
+| magenta-warmer | #e490df |    8.41 |    6.90 |    5.76 |    7.90 |
+| magenta-cooler | #af9fff |    8.30 |    6.81 |    5.68 |    7.79 |
+| magenta-faint  | #caa5bf |    8.67 |    7.11 |    5.94 |    8.14 |
+| cyan           | #6fc5ef |    9.81 |    8.05 |    6.71 |    9.21 |
+| cyan-warmer    | #7fcfdf |   10.69 |    8.77 |    7.32 |   10.04 |
+| cyan-cooler    | #5dc0aa |    8.62 |    7.07 |    5.90 |    8.09 |
+| cyan-faint     | #7fb4cf |    8.39 |    6.88 |    5.74 |    7.88 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:ff277c9d-9dbb-4d0c-b126-d672fbee7e2e
+:END:
+
+| Name             |         | #00552f |
+|------------------+---------+---------|
+| modeline-err     | #ff9fbf |    4.68 |
+| modeline-warning | #dfcf33 |    5.60 |
+| modeline-info    | #7fdfff |    5.94 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
+** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:66e7998e-bfac-4f7e-a269-b6f701e567d4
+:END:
+
+# bg-main / bg-dim, bg-main / bg-alt
+| #111111 | distance | contrast |
+|---------+----------+----------|
+| #222522 |     3068 |     1.22 |
+| #303230 |     9232 |     1.46 |
+#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
 * ef-dark
 :PROPERTIES:
 :CUSTOM_ID: h:c97a3ebc-de07-40bf-af86-1df8be72f214

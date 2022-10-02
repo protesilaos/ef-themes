@@ -53,7 +53,7 @@
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes
-  '(ef-autumn ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-trio-dark ef-winter)
+  '(ef-autumn ef-bio ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-trio-dark ef-winter)
   "List of symbols with the dark Ef themes.")
 
 (defconst ef-themes-collection
@@ -762,6 +762,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; diff-mode
     `(diff-added ((,c :background ,bg-added)))
     `(diff-changed ((,c :background ,bg-changed :extend t)))
+    `(diff-changed-unspecified ((,c :inherit diff-changed)))
     `(diff-removed ((,c :background ,bg-removed)))
     `(diff-refine-added ((,c :background ,bg-added-refine :foreground ,fg-intense)))
     `(diff-refine-changed ((,c :background ,bg-changed-refine :foreground ,fg-intense)))
