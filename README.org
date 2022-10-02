@@ -159,13 +159,8 @@ Everything is in place to set up the package.
 ;; OR use this to load the theme which also calls `ef-themes-post-load-hook':
 (ef-themes-select 'ef-summer)
 
-;; The themes we provide:
-;;
-;; Light: `ef-day', `ef-duo-light', `ef-light', `ef-spring', `ef-summer', `ef-trio-light'.
-;; Dark:  `ef-autumn', `ef-duo-dark', `ef-dark', `ef-night', `ef-trio-dark', `ef-winter'.
-;;
-;; Also those which are optimized for deuteranopia (red-green color
-;; deficiency): `ef-deuteranopia-dark', `ef-deuteranopia-light'.
+;; The themes we provide are recorded in the `ef-themes-dark-themes',
+;; `ef-themes-light-themes'.
 
 ;; We also provide these commands, but do not assign them to any key:
 ;;
