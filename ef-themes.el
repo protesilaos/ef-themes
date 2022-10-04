@@ -49,7 +49,7 @@
 ;;; User options
 
 (defconst ef-themes-light-themes
-  '(ef-day ef-deuteranopia-light ef-duo-light ef-light ef-spring ef-summer ef-trio-light)
+  '(ef-day ef-deuteranopia-light ef-duo-light ef-frost ef-light ef-spring ef-summer ef-trio-light)
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes
