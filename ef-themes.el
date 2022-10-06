@@ -31,6 +31,14 @@
 ;; Emacs whose goal is to provide colorful ("pretty") yet legible
 ;; options for users who want something with a bit more flair than the
 ;; `modus-themes' (also designed by me).
+;;
+;; "Ef" is a Greek word (ευ), commonly used as a prefix to denote
+;; something good, nice, and/or easy.  For example, eftopia (ευτοπία)
+;; is the opposite of dystopia (δυστοπία): a good place as opposed to
+;; a bad place.
+;;
+;; The backronym of the `ef-themes' is: Extremely Fatigued of Themes
+;; Having Exaggerated Markings, Embellishments, and Sparkles.
 
 ;;; Code:
 
