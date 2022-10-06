@@ -1114,8 +1114,8 @@ lofty accessibility target.
 :CUSTOM_ID: h:22a92ee8-eda6-4c29-b850-b2709a7239c0
 :END:
 
-"Ef" is a Greek word (ευ), commonly used as a prefix to denote that
-something is good, nice, and/or easy.  For example, eftopia (ευτοπία) is
+"Ef" is a Greek word (ευ), commonly used as a prefix to denote
+something good, nice, and/or easy.  For example, eftopia (ευτοπία) is
 the opposite of dystopia (δυστοπία): a good place as opposed to a bad
 place.
 
