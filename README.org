@@ -1141,6 +1141,19 @@ The =ef-themes= are my answer to those who (i) like my =modus-themes=,
 (ii) want something with a bit more flair, and (iii) are fine with a
 bit more relaxed accessibility target.
 
+** Too many options, what should I do?
+:PROPERTIES:
+:CUSTOM_ID: h:3c0201ed-2c06-4981-a3a3-3d15bc4eec00
+:END:
+
+Take a deep breath, drink some water, get some fresh air, and take it
+one step at a time.  You don't have to try all the themes outright.
+For a light theme, go with =ef-light=; for a dark one use =ef-dark=.
+They have generic names exactly for this reason.  Then make the
+necessary tweaks to toggle between those two and don't worry anymore
+about the abundance of choice ([[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]).  Good
+luck!
+
 ** Let Org tags inherit the heading color?
 :PROPERTIES:
 :CUSTOM_ID: h:b59f315c-6d25-4225-b99b-c06594fa3bf0
