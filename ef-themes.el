@@ -1334,7 +1334,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-agenda-clocking ((,c :background ,bg-alt :foreground ,red-warmer)))
     `(org-agenda-column-dateline ((,c :background ,bg-alt)))
     `(org-agenda-current-time ((,c :foreground ,variable)))
-    `(org-agenda-date ((,c :inherit ef-themes-heading-3)))
+    `(org-agenda-date ((,c :inherit ef-themes-heading-1)))
     `(org-agenda-date-today ((,c :inherit org-agenda-date :underline t)))
     `(org-agenda-date-weekend ((,c :inherit org-agenda-date)))
     `(org-agenda-date-weekend-today ((,c :inherit org-agenda-date-today)))
