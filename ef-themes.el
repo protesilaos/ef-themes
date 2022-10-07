@@ -1331,7 +1331,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; org
     `(org-agenda-calendar-event ((,c :foreground ,fg-alt)))
     `(org-agenda-calendar-sexp ((,c :inherit (italic org-agenda-calendar-event))))
-    `(org-agenda-clocking ((,c :background ,bg-alt :foreground ,red-warmer)))
+    `(org-agenda-clocking ((,c :background ,bg-warning :foreground ,warning)))
     `(org-agenda-column-dateline ((,c :background ,bg-alt)))
     `(org-agenda-current-time ((,c :foreground ,variable)))
     `(org-agenda-date ((,c :inherit ef-themes-heading-1)))
