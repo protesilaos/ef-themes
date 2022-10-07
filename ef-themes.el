@@ -1349,7 +1349,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-agenda-structure ((,c :inherit ef-themes-heading-0)))
     `(org-agenda-structure-filter ((,c :inherit org-agenda-structure :foreground ,rainbow-1)))
     `(org-agenda-structure-secondary ((,c :foreground ,rainbow-1)))
-    `(org-archived ((,c :background ,bg-alt :foreground ,fg-alt)))
+    `(org-archived ((,c :background ,bg-alt :foreground ,fg-main)))
     `(org-block ((,c :inherit ef-themes-fixed-pitch :background ,bg-inactive :extend t)))
     `(org-block-begin-line ((,c :inherit (shadow ef-themes-fixed-pitch) :background ,bg-dim :extend t)))
     `(org-block-end-line ((,c :inherit org-block-begin-line)))
