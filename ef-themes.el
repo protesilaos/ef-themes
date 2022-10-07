@@ -1089,8 +1089,8 @@ Helper function for `ef-themes-preview-colors'."
     ;; scale when using `text-scale-adjust'.
     `(line-number ((,c :inherit (ef-themes-fixed-pitch shadow default))))
     `(line-number-current-line ((,c :inherit (bold line-number) :foreground ,fg-intense)))
-    `(line-number-major-tick ((,c :inherit line-number :background ,bg-alt :foreground ,info)))
-    `(line-number-minor-tick ((,c :inherit line-number :background ,bg-dim :foreground ,warning)))
+    `(line-number-major-tick ((,c :inherit line-number :background ,bg-warning :foreground ,warning)))
+    `(line-number-minor-tick ((,c :inherit line-number :background ,bg-info :foreground ,info)))
 ;;;; magit
     `(magit-bisect-bad ((,c :inherit error)))
     `(magit-bisect-good ((,c :inherit success)))
