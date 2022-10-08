@@ -9,6 +9,247 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.7.0 on 2022-10-08
+:PROPERTIES:
+:CUSTOM_ID: h:447f35cd-f741-43e7-b4f3-100d95df9013
+:END:
+
+** Introduced the ~ef-bio~ and ~ef-frost~ themes
+:PROPERTIES:
+:CUSTOM_ID: h:b2731515-50d0-4502-8d63-1c99a3474bfc
+:END:
+
+These two new themes bring the total count to 16.
+
++ ~ef-bio~ is a dark theme with green, teal, blue, and purple colours.
+  Read the announcement, which also includes screen shots:
+  <https://protesilaos.com/codelog/2022-10-02-ef-themes-bio-theme/>.
+
++ ~ef-frost~ is a light theme with blue, cyan, teal, and purple
+  colours.  Check the announcement on my website (with screenshots):
+  <https://protesilaos.com/codelog/2022-10-03-ef-themes-frost-theme/>.
+
+You may have noticed that some themes in this collection have a
+=-dark= or =-light= suffix in their name.  This means that they are
+stylistically close to each other (NOT identical colour mappings
+though).  For example the ~ef-trio-dark~ and ~ef-trio-light~ follow
+the same idea of using three main hues across almost all interfaces
+(magenta, blue, teal).  Whereas all other themes are designed to stand
+on their own and have no obvious counterpart.  Nevertheless, one can
+pick whichever two themes they prefer to switch between.  Refer to the
+user option ~ef-themes-to-toggle~ and then invoke the command
+~ef-themes-toggle~.  Else use the command ~ef-themes-load-random~,
+optionally with a prefix argument (=C-u=) to limit the choice to dark
+or light themes.
+
+Thanks to Sven Seebeck for reminding me to register the ~ef-frost~ as
+part of the collection.  I forgot to do it the day I published the
+theme.  This information is shared with permission, as it was done via
+a private channel.
+
+** General refinements
+:PROPERTIES:
+:CUSTOM_ID: h:2093bc64-1d42-472a-86ba-1de71a5316f2
+:END:
+
++ Changed the dates in ~org-agenda~ buffers to use the same style as
+  headings level 1 instead of 3.  This ensures that they are always
+  sufficiently distinct from the title of the agenda structure (there
+  can be many titles for those who use block agendas).  In the agenda,
+  the block titles use the equivalent of the Org =#+title= construct,
+  i.e. heading level 0.
+
+  The style of all heading levels is subject to the user option
+  ~ef-themes-headings~: it affects their height, weight, and whether
+  they have a proportionately spaced font, on a per-level basis.
+
++ Tweaked the background colour which is used by Org (among others) to
+  highlight the calculated date in its relevant prompts or when
+  rescheduling an item in the agenda.  The changes are subtle in most
+  cases, with the intent to make the colour fit better with the rest
+  of the theme.
+
+  This background is also used to highlight in its original context an
+  Org source block that is shown in its own buffer following the use
+  of =C-c '= (~org-edit-special~).
+
++ Adjusted the style of the filter that is used in the header of Org
+  agenda searches.  It now always complements the rest of the text on
+  that line.  To understand what I am referring to, do =M-x
+  org-agenda=, then type =s=, and search for, say, =TODO=.  In the
+  resulting buffer, the header reads: =Search words: TODO=.  The final
+  part is this filter.
+
++ Changed the applicable colours of ~org-agenda-clocking~ to use a
+  combination of yellow foreground and yellow-tinted background.  This
+  face is used to highlight in the agenda the currently clocked in
+  task.  The element is easier to spot, without being too intense.
+
++ Reduced the overall colouration in the ~vc-dir~ buffer.  It should
+  now look appropriate across all the Ef themes, while remaining
+  usable.
+
++ Aligned the style of the ~gnus-summary-low-unread~ face with that of
+  all the other "low" scoring messages to use italicised fonts (by
+  inheriting from the ~italic~ face).
+
++ Added support for the ~log-edit-headers-separator~ (which I added to
+  Emacs 29) and ~child-frame-border~ (Emacs 28) faces.  They basically
+  add an appropriately coloured border in relevant contexts.
+
++ Removed the background colour from the ~line-number-major-tick~,
+  ~line-number-minor-tick~ faces.  These are used by the
+  ~display-line-numbers-mode~ with something like:
+  
+  #+begin_src emacs-lisp
+  (setq display-line-numbers-major-tick 20
+        display-line-numbers-minor-tick 5)
+  #+end_src
+
++ Wrote a Do-It-Yourself guide to make the style of the mode lines
+  emulate the default of my =modus-themes=: shades of grey with a
+  border around them.
+
++ Answered a frequently asked question about the availability of too
+  many options.  In short: pick ~ef-light~ and/or ~ef-dark~ and take
+  it slow.
+
++ Finally, the most important entry in the list thus far...  The new
+  backronym for EF THEMES is: Extremely Fatigued of Themes Having
+  Exaggerated Markings, Embellishments, and Sparkles. 🙃
+
+** Changed the email colours of the ~ef-trio-dark~, ~ef-trio-light~
+:PROPERTIES:
+:CUSTOM_ID: h:da03e5c1-b8b5-43f9-803e-210785d58bc8
+:END:
+
+These are two themes that were introduced in the previous version of
+the project (=0.6.0=).  In =message.el= buffers, which are used by
+Gnus, Mu4e, and Notmuch, the quote levels now have colour combinations
+that are closer in spirit to the rest of the theme's aesthetic.
+
+The "trio" themes use magenta, blue, and teal hues.  The previous
+design prioritised teal, which broke the established patterns.  It was
+not terrible per se, but it did not feel right when switching through
+the various contexts.
+
+[ If you think that something "does not feel right" in a given theme,
+  please let me know.  I make mistakes and there is always scope for
+  refinements or even the creation of a new theme. ]
+
+** Intensified the diff colours of ~ef-spring~
+:PROPERTIES:
+:CUSTOM_ID: h:e7a19fde-0073-4f38-8650-d2658d8789d5
+:END:
+
+The greens, in particular, were too subtle and could be missed against
+the green-tinted light background of the theme.  The new colour values
+are consistent with the overall character of the theme, while
+improving on the usability of the relevant interfaces.
+
+** Revised the "rainbow" colours for ~ef-winter~
+:PROPERTIES:
+:CUSTOM_ID: h:5ae96878-8f85-429d-a092-0b09f929df66
+:END:
+
+Each theme's palette has a subset of colour mappings that apply to
+constructs such as Org headings.  For ~ef-winter~, those were somewhat
+inconsistent with the theme's character, in that they had certain hues
+or sequences thereof that stood out more than they should.  The new
+design has more harmonious colour combinations.
+
+** Changes to ~ef-deuteranopia-dark~, ~ef-deuteranopia-light~
+:PROPERTIES:
+:CUSTOM_ID: h:21468fe2-2b80-43e1-9f83-7eb3ed41c690
+:END:
+
++ Revised the subset of each theme's palette that applies to graphs or
+  related.  These are much better than before, in that they account
+  for red-green colour deficiency, but they will never be perfect in
+  practice because whatever mode displays graphs needs to be designed
+  from the outset with deuteranopia in mind.  For example, the
+  ~org-habit~ graph is BY DESIGN unsuitable for colour blindness
+  because of the colour coding it introduces combined with the way it
+  displays its information. We cannot fix that at the theme level.
+
++ Tweaked the colour of the backgrounds used in ~dired~ marked items,
+  ~org-modern~ TODO or DONE keywords, and related.  These backgrounds
+  now stand out a bit more, while retaining their original character.
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:5c4fef35-f306-4f9d-95ec-6722d684b0fe
+:END:
+
+There are lots of other fine tweaks to individual themes and the
+manual.  If you think something is missing or does not look right,
+please let me know.
+
+Lastly, I copy an excerpt of a discussion on the emacs-devel mailing
+list with the participation of Philip Kaludercic.  It is about my
+plans with the =ef-themes= and how maintainable the project is:
+<https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg00060.html>.
+
+#+begin_example message
+From: Protesilaos Stavrou <info@protesilaos.com>
+To: Philip Kaludercic <philipk@posteo.net>, emacs-devel@gnu.org
+Subject: Re: [elpa] externals/ef-themes b6fc326946: Add ef-bio theme
+Date: Sun, 02 Oct 2022 15:18:28 +0300
+
+> From: Philip Kaludercic <philipk@posteo.net>
+> Date: Sun,  2 Oct 2022 11:50:52 +0000
+>
+> ELPA Syncer <elpasync@gnu.org> writes:
+>
+>> branch: externals/ef-themes
+>> commit b6fc32694646c65adbf1ed6d3d7bfddf55e16273
+>> Author: Protesilaos Stavrou <info@protesilaos.com>
+>> Commit: Protesilaos Stavrou <info@protesilaos.com>
+>>
+>>     Add ef-bio theme
+>>     
+>>     Read the announcement, which also includes screen shots:
+>>     <https://protesilaos.com/codelog/2022-10-02-ef-themes-bio-theme/>.
+>>     
+>>     Enjoy your new theme :)
+>
+> Out of curiosity, what is your long-term plan for ef-themes?  Do you
+> plan to add more and more variations, or is there some upper bound you
+> plan to approach?  It seems to me that maintenance will become more and
+> more difficult, and it would be a shame to see the nice themes
+> abandoned, because of it becoming infeasible to properly test all the
+> changes.
+
+This is why the principle is to not add customisation options that
+introduce colour permutations (e.g. change the intensity of the
+'region').  Those will indeed make the project unmaintainable.
+
+Without customisation options, the maintenance is manageable.  It is
+basically limited to the occasional tweak to the supported faces.
+Granted, now I am still iterating on the individual colour palettes
+because we have not yet reached version 1.0.0 (maybe before the end of
+the year).
+
+The supported packages are also curated.  Unlike the modus-themes, not
+every package is meant to be covered.
+
+In terms of total number of themes, I started working on another light
+theme to bring the total number to 16.  I will probably finalise it
+tonight or tomorrow.  Then I MIGHT develop two more themes specifically
+for tritanopia (blue-yellow colour deficiency), which will be the final
+ones.
+
+> Also, do you think that splitting up the theme into multiple packages
+> would be a good idea?
+
+I am not against it per se, if there is some practical reason to do it
+(e.g. to bundle two of the themes with some other project).  Though now
+I feel it is easier to keep them all in one package.
+#+end_example
+
+I don't know if the possible tritanopia-optimised themes will be "the
+final ones", as there may be scope for more entries.  But this is the
+idea for the time being.
 * Version 0.6.0 on 2022-09-23
 :PROPERTIES:
 :CUSTOM_ID: h:42f955b9-60a1-4a91-a050-913cb75c37c3
