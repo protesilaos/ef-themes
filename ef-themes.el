@@ -57,11 +57,11 @@
 ;;; User options
 
 (defconst ef-themes-light-themes
-  '(ef-day ef-deuteranopia-light ef-duo-light ef-frost ef-light ef-spring ef-summer ef-trio-light)
+  '(ef-day ef-deuteranopia-light ef-duo-light ef-frost ef-light ef-spring ef-summer ef-tritanopia-light ef-trio-light)
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes
-  '(ef-autumn ef-bio ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-trio-dark ef-winter)
+  '(ef-autumn ef-bio ef-dark ef-deuteranopia-dark ef-duo-dark ef-night ef-tritanopia-dark ef-trio-dark ef-winter)
   "List of symbols with the dark Ef themes.")
 
 (defconst ef-themes-collection
