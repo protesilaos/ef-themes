@@ -145,7 +145,7 @@
 
       ;; Mappings
       (err red-warmer)
-      (warning red)
+      (warning magenta)
       (info cyan)
 
       (link cyan)
