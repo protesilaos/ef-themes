@@ -127,7 +127,7 @@
       (bg-accent     "#2299cc") (fg-accent     "#000000")
       (bg-completion "#ffcada")
       (bg-hover      "#8fcfff")
-      (bg-hover-alt  "#dd99cc")
+      (bg-hover-alt  "#eda9dc")
       (bg-hl-line    "#ffdadf")
       (bg-region     "#dadadf")
       (bg-paren      "#8fc0cf")
