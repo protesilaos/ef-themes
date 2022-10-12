@@ -733,7 +733,7 @@ Helper function for `ef-themes-preview-colors'."
     `(consult-line-number ((,c :inherit shadow)))
 ;;;;; corfu
     `(corfu-current ((,c :background ,bg-completion)))
-    `(corfu-bar ((,c :background ,fg-alt)))
+    `(corfu-bar ((,c :background ,fg-main)))
     `(corfu-border ((,c :background ,bg-active)))
     `(corfu-default ((,c :background ,bg-inactive)))
 ;;;; custom (M-x customize)
