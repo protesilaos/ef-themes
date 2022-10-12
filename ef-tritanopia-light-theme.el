@@ -150,7 +150,7 @@
 
       (link cyan)
       (link-alt magenta-cooler)
-      (date cyan-warmer)
+      (date cyan-cooler)
       (name magenta)
       (keybind red-cooler)
       (prompt cyan)
