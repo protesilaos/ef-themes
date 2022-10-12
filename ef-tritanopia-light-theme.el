@@ -49,7 +49,7 @@
       (bg-dim      "#ece8e8")
       (fg-dim      "#756275")
       (bg-alt      "#dad6d6")
-      (fg-alt      "#793f50")
+      (fg-alt      "#194f90")
 
       (bg-active   "#cac6c6")
       (bg-inactive "#f7f1f1")
