@@ -174,11 +174,11 @@
       (accent-2 cyan)
       (accent-3 magenta)
 
-      (mail-0 cyan)
+      (mail-0 cyan-cooler)
       (mail-1 red-cooler)
-      (mail-2 cyan-cooler)
+      (mail-2 cyan-warmer)
       (mail-3 red-faint)
-      (mail-4 cyan-warmer)
+      (mail-4 cyan)
       (mail-5 red-warmer)
 
       (rainbow-0 cyan)
