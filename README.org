@@ -713,7 +713,7 @@ The exact color values are taken from the active Ef theme."
 To find the names of the color variables, the user can rely on the
 commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
 
-** Make the modeline like the =modus-themes= default
+** Make the mode line like the =modus-themes= default
 :PROPERTIES:
 :CUSTOM_ID: h:69ea8788-33b9-42f9-a4f1-92ee22074d2b
 :END:
