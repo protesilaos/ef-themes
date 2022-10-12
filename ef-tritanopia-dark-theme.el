@@ -169,9 +169,9 @@
       (rx-escape cyan) ; compare with `string'
       (rx-construct red)
 
-      (accent-0 cyan-cooler)
+      (accent-0 cyan)
       (accent-1 red)
-      (accent-2 cyan)
+      (accent-2 cyan-warmer)
       (accent-3 magenta)
 
       (mail-0 cyan)
