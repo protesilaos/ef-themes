@@ -731,6 +731,11 @@ Helper function for `ef-themes-preview-colors'."
     `(consult-key ((,c :inherit ef-themes-key-binding)))
     `(consult-imenu-prefix ((,c :inherit shadow)))
     `(consult-line-number ((,c :inherit shadow)))
+;;;;; corfu
+    `(corfu-current ((,c :background ,bg-completion)))
+    `(corfu-bar ((,c :background ,fg-alt)))
+    `(corfu-border ((,c :background ,bg-active)))
+    `(corfu-default ((,c :background ,bg-inactive)))
 ;;;; custom (M-x customize)
     `(custom-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
     `(custom-button-mouse ((,c :inherit (highlight custom-button))))

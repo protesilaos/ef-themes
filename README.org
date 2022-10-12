@@ -895,6 +895,7 @@ everything most users need.
 - compilation
 - completions
 - consult
+- corfu [ Part of {{{development-version}}} ]
 - custom (M-x customize)
 - denote
 - dictionary
@@ -974,7 +975,6 @@ are appropriate or because they inherit from basic faces which the
 themes already cover:
 
 - apropos
-- corfu
 - dim-autoload
 - flycheck
 - flymake
