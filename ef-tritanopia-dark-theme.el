@@ -166,7 +166,7 @@
       (type cyan-warmer)
       (variable cyan-cooler)
 
-      (rx-escape cyan) ; compare with `string'
+      (rx-escape cyan-cooler) ; compare with `string'
       (rx-construct red)
 
       (accent-0 cyan)
