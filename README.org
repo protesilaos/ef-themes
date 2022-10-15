@@ -931,6 +931,7 @@ everything most users need.
 - messages
 - mode-line
 - mu4e
+- neotree [ Part of {{{development-version}}} ]
 - notmuch
 - orderless
 - org
