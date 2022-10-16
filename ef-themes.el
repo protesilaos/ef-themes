@@ -969,6 +969,9 @@ Helper function for `ef-themes-preview-colors'."
     `(flymake-error ((,c :underline (:style wave :color ,underline-err))))
     `(flymake-note ((,c :underline (:style wave :color ,underline-info))))
     `(flymake-warning ((,c :underline (:style wave :color ,underline-warning))))
+;;;; flyspell
+    `(flyspell-duplicate ((,c :underline (:style wave :color ,underline-warning))))
+    `(flyspell-incorrect ((,c :underline (:style wave :color ,underline-err))))
 ;;;; font-lock
     `(font-lock-builtin-face ((,c :inherit bold :foreground ,builtin)))
     `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))

@@ -915,6 +915,7 @@ everything most users need.
 - eshell
 - eww
 - flymake [ Part of {{{development-version}}} ]
+- flyspell [ Part of {{{development-version}}} ]
 - font-lock
 - git-commit
 - git-rebase
