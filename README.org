@@ -920,6 +920,7 @@ everything most users need.
 - git-commit
 - git-rebase
 - gnus
+- hi-lock (M-x highlight-regexp) [ Part of {{{development-version}}} ]
 - image-dired
 - info
 - isearch, occur, query-replace
