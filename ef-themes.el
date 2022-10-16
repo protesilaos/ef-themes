@@ -965,6 +965,10 @@ Helper function for `ef-themes-preview-colors'."
     `(eww-form-submit ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
     `(eww-form-text ((,c :inherit widget-field)))
     `(eww-form-textarea ((,c :inherit eww-form-text)))
+;;;; flymake
+    `(flymake-error ((,c :underline (:style wave :color ,underline-err))))
+    `(flymake-note ((,c :underline (:style wave :color ,underline-info))))
+    `(flymake-warning ((,c :underline (:style wave :color ,underline-warning))))
 ;;;; font-lock
     `(font-lock-builtin-face ((,c :inherit bold :foreground ,builtin)))
     `(font-lock-comment-delimiter-face ((,c :inherit font-lock-comment-face)))
