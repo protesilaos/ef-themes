@@ -143,6 +143,10 @@
       (modeline-warning "#6f306f")
       (modeline-info    "#00445f")
 
+      (underline-err     "#ef0f1f")
+      (underline-warning "#af7f90")
+      (underline-info    "#22afc2")
+
       ;; Mappings
       (err red-warmer)
       (warning magenta)

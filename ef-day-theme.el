@@ -140,6 +140,10 @@
       (modeline-warning "#66008f")
       (modeline-info    "#1f409f")
 
+      (underline-err     "#ef0f1f")
+      (underline-warning "#bf5f00")
+      (underline-info    "#02af52")
+
       ;; Mappings
       (err red-warmer)
       (warning yellow-warmer)
