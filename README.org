@@ -896,7 +896,7 @@ everything most users need.
 - completions
 - consult
 - corfu [ Part of {{{development-version}}} ]
-- custom (M-x customize)
+- custom (=M-x customize=)
 - denote
 - dictionary
 - diff-hl
@@ -920,7 +920,7 @@ everything most users need.
 - git-commit
 - git-rebase
 - gnus
-- hi-lock (M-x highlight-regexp) [ Part of {{{development-version}}} ]
+- hi-lock (=M-x highlight-regexp=) [ Part of {{{development-version}}} ]
 - image-dired
 - info
 - isearch, occur, query-replace
@@ -942,7 +942,7 @@ everything most users need.
 - org-modern
 - outline-mode
 - outline-minor-faces
-- package (M-x list-packages)
+- package (=M-x list-packages=)
 - pulsar
 - pulse
 - rainbow-delimiters
