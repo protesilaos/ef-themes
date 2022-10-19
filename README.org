@@ -432,6 +432,11 @@ file to load the theme of their choice ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de
 (ef-themes-select 'ef-summer)
 #+end_src
 
+When ~ef-themes-select~ is called with a prefix argument (=C-u= by
+default), it first produces a minibuffer prompt to limit the choice to
+dark or light themes, and then shows only the relevant subset.  [This
+is part of {{{development-version}}}.]
+
 #+findex: ef-themes-load-random
 The command ~ef-themes-load-random~ is for those who appreciate a bit of
 serendipity in their life.  When call interactively with =M-x= it loads

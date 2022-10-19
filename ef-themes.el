@@ -349,14 +349,32 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defvar ef-themes--select-theme-history nil)
 
-(defun ef-themes--select-prompt (&optional prompt)
+(defun ef-themes--choose-subset ()
+  "Use `read-multiple-choice' to return `dark' or `light' variant."
+  (intern (cadr (read-multiple-choice
+                 "Variant"
+                 '((?d "dark" "Load a random dark theme")
+                   (?l "light" "Load a random light theme"))
+                 "Limit the variation themes to select."))))
+
+(defun ef-themes--select-prompt (&optional prompt variant)
   "Minibuffer prompt for `ef-themes-select'.
-With optional PROMPT string, use it.  Else use a generic prompt."
-  (intern
-   (completing-read (or prompt "Select Ef Theme: ")
-                    (ef-themes--list-known-themes)
-                    nil t nil
-                    'ef-themes--select-theme-history)))
+With optional PROMPT string, use it.  Else use a generic prompt.
+
+With optional VARIANT, prompt for a subset of themes divided into
+light and dark variants.  Then limit the completion candidates
+accordingly."
+  (let* ((subset (when variant (ef-themes--choose-subset)))
+         (themes (pcase subset
+                   ('dark ef-themes-dark-themes)
+                   ('light ef-themes-light-themes)
+                   (_ (ef-themes--list-known-themes)))))
+    (intern
+     (completing-read
+      (or prompt "Select Ef Theme: ")
+      themes
+      nil t nil
+      'ef-themes--select-theme-history))))
 
 (defun ef-themes--load-theme (theme)
   "Load THEME while disabling other Ef themes.
@@ -366,12 +384,17 @@ Run `ef-themes-post-load-hook'."
   (run-hooks 'ef-themes-post-load-hook))
 
 ;;;###autoload
-(defun ef-themes-select (theme)
+(defun ef-themes-select (theme &optional variant)
   "Load an Ef THEME using minibuffer completion.
-When called from Lisp, THEME is a symbol.
 
-Run `ef-themes-post-load-hook' after loading the theme."
-  (interactive (list (ef-themes--select-prompt)))
+With optional VARIANT as a prefix argument, prompt to limit the
+set of themes to either dark or light variants.
+
+Run `ef-themes-post-load-hook' after loading the theme.
+
+When called from Lisp, THEME is the symbol of a theme.  VARIANT
+is ignored in this scenario."
+  (interactive (list (ef-themes--select-prompt nil current-prefix-arg)))
   (ef-themes--load-theme theme))
 
 (defun ef-themes--toggle-theme-p ()
@@ -420,21 +443,15 @@ respectively.  Else check against the return value of
 ;;;###autoload
 (defun ef-themes-load-random (&optional variant)
   "Load an Ef theme at random, excluding the current one.
-With optional VARIANT as either `light' or `dark', limit the set
-to the relevant themes.
 
-When called interactively, VARIANT is the prefix argument which
-prompts with completion for either `light' or `dark'.
+With optional VARIANT as a prefix argument, prompt to limit the
+set of themes to either dark or light variants.
 
-Run `ef-themes-post-load-hook' after loading the theme."
-  (interactive
-   (list
-    (when current-prefix-arg
-      (intern (cadr (read-multiple-choice
-                     "Variant"
-                     '((?d "dark" "Load a random dark theme")
-                       (?l "light" "Load a random light theme"))
-                     "Limit the variation themes to select."))))))
+Run `ef-themes-post-load-hook' after loading the theme.
+
+When called from Lisp, VARIANT is either the `dark' or `light'
+symbol."
+  (interactive (list (when current-prefix-arg (ef-themes--choose-subset))))
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
          (pick (nth n themes)))
