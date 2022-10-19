@@ -926,6 +926,7 @@ everything most users need.
 - git-rebase
 - gnus
 - hi-lock (=M-x highlight-regexp=)
+- ibuffer [Part of {{{development-version}}}.]
 - image-dired
 - info
 - isearch, occur, query-replace
