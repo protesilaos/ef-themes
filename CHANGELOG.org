@@ -9,6 +9,87 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.8.0 on 2022-10-17
+:PROPERTIES:
+:CUSTOM_ID: h:e28b77ae-7f78-426a-97f6-eb880130b223
+:END:
+
+** Introduced themes for tritanopia
+:PROPERTIES:
+:CUSTOM_ID: h:2ddca7b3-92d7-4bb8-a0f4-03e41d8bdfd6
+:END:
+
+The ~ef-tritanopia-dark~ and ~ef-tritanopia-light~ are optimised to
+use red and cyan hues consistently throughout all interfaces.  This
+means that users with blue-yellow colour deficiency or blindness are
+empowered to use Emacs without compromising on usability.
+
+Read the announcement:
+<https://protesilaos.com/codelog/2022-10-11-ef-themes-tritanopia/>.
+
+These two themes complement what I already provide for users with
+red-green colour deficiency (deuteranopia): ~ef-deuteranopia-dark~,
+~ef-deuteranopia-light~.  Together with the rest of the set (and my
+=modus-themes=), they cover a broad spectrum of preferences and needs
+for legibility.
+
+The deuteranopia or tritanopia themes can be used by anyone, simply on
+the basis of their aesthetics: they look fine and work well (when I
+develop a theme, I use it full-time).
+
+Pictures of all =ef-themes=:
+<https://protesilaos.com/emacs/ef-themes-pictures>.
+
+** Bespoke colours for underlines
+:PROPERTIES:
+:CUSTOM_ID: h:31a6d165-5ee7-4f9d-bbb6-d27c9bb82e52
+:END:
+
+Each theme has a new subset of colours which are optimised for
+colour-coded underlines.  Think about spell checking and code linting.
+These colours are specific to each theme's requirements so that, for
+example, deueteranopia does not use red and green, while tritanopia
+does not rely on yellow and blue.
+
+** Support for new packages or face groups
+:PROPERTIES:
+:CUSTOM_ID: h:4864aa6c-eb9b-4600-8b5e-6533a000b140
+:END:
+
++ corfu
++ hi-lock (=M-x highlight-regexp=)
++ flymake
++ flyspell
++ neotree
+
+** Tweaks to already supported faces
+:PROPERTIES:
+:CUSTOM_ID: h:7853e95c-6346-448d-bfad-1b1c00e87625
+:END:
+
++ The tagging operations of =notmuch= which underline added tags and
+  strike through deleted ones, now use the new colours for underlines.
+  The effect is small, but still constitutes an improvement.
+
++ The background colour of the =company= popup is a bit lighter than
+  before.  This helps the foreground colours be easier to discern.  It
+  also makes it look consistent with =corfu=.
+
+** Use our communication channels
+:PROPERTIES:
+:CUSTOM_ID: h:886e8ac8-0f60-4e69-b07a-31273e570e88
+:END:
+
+This is not a "change log" per se, but it is worth mentioning.  A few
+days ago I was informed of a post on Reddit asking something related
+to my themes.  Please understand that I cannot go around the Internet
+hoping to provide tech support.  Each project of mine has a mailing
+list and two (!) mirrors on GitHub and GitLab.  All are actively
+maintained and supported.  In addition, you are always welcome to
+email me directly.  I reply in a timely fashion and in full (check the
+mailing lists and issue trackers, if you have any doubt).  What I will
+not do is go searching for you on random websites.
+
 * Version 0.7.0 on 2022-10-08
 :PROPERTIES:
 :CUSTOM_ID: h:447f35cd-f741-43e7-b4f3-100d95df9013

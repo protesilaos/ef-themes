@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.7.0
-#+macro:                 release-date 2022-10-08
-#+macro:                 development-version 0.8.0-dev
+#+macro:                 stable-version 0.8.0
+#+macro:                 release-date 2022-10-17
+#+macro:                 development-version 0.9.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -895,7 +895,7 @@ everything most users need.
 - compilation
 - completions
 - consult
-- corfu [ Part of {{{development-version}}} ]
+- corfu
 - custom (=M-x customize=)
 - denote
 - dictionary
@@ -914,13 +914,13 @@ everything most users need.
 - epa
 - eshell
 - eww
-- flymake [ Part of {{{development-version}}} ]
-- flyspell [ Part of {{{development-version}}} ]
+- flymake
+- flyspell
 - font-lock
 - git-commit
 - git-rebase
 - gnus
-- hi-lock (=M-x highlight-regexp=) [ Part of {{{development-version}}} ]
+- hi-lock (=M-x highlight-regexp=)
 - image-dired
 - info
 - isearch, occur, query-replace
@@ -934,7 +934,7 @@ everything most users need.
 - messages
 - mode-line
 - mu4e
-- neotree [ Part of {{{development-version}}} ]
+- neotree
 - notmuch
 - orderless
 - org
