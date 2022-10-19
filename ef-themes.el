@@ -586,7 +586,7 @@ Helper function for `ef-themes-preview-colors'."
     `(ef-themes-ui-variable-pitch ((,c ,@(ef-themes--variable-pitch-ui))))
     `(ef-themes-mark-delete ((,c :inherit error :background ,bg-err)))
     `(ef-themes-mark-select ((,c :inherit success :background ,bg-info)))
-    `(ef-themes-mark-other ((,c (,c :inherit warning :background ,bg-warning))))
+    `(ef-themes-mark-other ((,c :inherit warning :background ,bg-warning)))
 ;;;; all basic faces
 ;;;;; absolute essentials
     `(bold ((,c :weight bold)))
