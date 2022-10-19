@@ -1723,6 +1723,8 @@ Helper function for `ef-themes-preview-colors'."
     `(transient-unreachable ((,c :inherit shadow)))
     `(transient-unreachable-key ((,c :inherit shadow)))
     `(transient-value ((,c :inherit success :background ,bg-info)))
+;;;; trashed
+    `(trashed-restored ((,c :inherit ef-themes-mark-other)))
 ;;;; vc (vc-dir.el, vc-hooks.el)
     `(vc-dir-directory (( )))
     `(vc-dir-file ((,c :foreground ,name)))
