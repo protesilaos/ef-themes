@@ -384,7 +384,7 @@ Run `ef-themes-post-load-hook'."
   (run-hooks 'ef-themes-post-load-hook))
 
 ;;;###autoload
-(defun ef-themes-select (theme &optional variant)
+(defun ef-themes-select (theme &optional _variant)
   "Load an Ef THEME using minibuffer completion.
 
 With optional VARIANT as a prefix argument, prompt to limit the
