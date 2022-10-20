@@ -554,20 +554,13 @@ Helper function for `ef-themes-preview-colors'."
   :package-version '(ef-themes . "0.4.0")
   :group 'ef-themes-faces)
 
-(defface ef-themes-mark-delete nil
-  "Face for deletion marks, such as in Dired."
-  :package-version '(ef-themes . "0.9.0")
-  :group 'ef-themes-faces)
-
-(defface ef-themes-mark-select nil
-  "Face for selection marks, such as in Dired."
-  :package-version '(ef-themes . "0.9.0")
-  :group 'ef-themes-faces)
-
-(defface ef-themes-mark-other nil
-  "Face for other types of marks."
-  :package-version '(ef-themes . "0.9.0")
-  :group 'ef-themes-faces)
+;; This produces `ef-themes-mark-delete' and the like.
+(dolist (scope '(delete select other))
+  (custom-declare-face
+   (intern (format "ef-themes-mark-%s" scope))
+   nil (format "Face for %s marks (e.g. `dired', `trashed')." scope)
+   :package-version '(ef-themes . "0.9.0")
+   :group 'ef-themes-faces))
 
 (defconst ef-themes-faces
   '(
