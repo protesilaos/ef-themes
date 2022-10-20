@@ -919,6 +919,7 @@ everything most users need.
 - epa
 - eshell
 - eww
+- flycheck [Part of {{{development-version}}}.]
 - flymake
 - flyspell
 - font-lock

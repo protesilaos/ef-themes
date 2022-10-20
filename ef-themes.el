@@ -993,6 +993,13 @@ Helper function for `ef-themes-preview-colors'."
     `(eww-form-submit ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
     `(eww-form-text ((,c :inherit widget-field)))
     `(eww-form-textarea ((,c :inherit eww-form-text)))
+;;;; flycheck
+    `(flycheck-error ((,c :underline (:style wave :color ,underline-err))))
+    `(flycheck-fringe-error ((,c :inherit ef-themes-mark-delete)))
+    `(flycheck-fringe-info ((,c :inherit ef-themes-mark-select)))
+    `(flycheck-fringe-warning ((,c :inherit ef-themes-mark-other)))
+    `(flycheck-info ((,c :underline (:style wave :color ,underline-info))))
+    `(flycheck-warning ((,c :underline (:style wave :color ,underline-warning))))
 ;;;; flymake
     `(flymake-error ((,c :underline (:style wave :color ,underline-err))))
     `(flymake-note ((,c :underline (:style wave :color ,underline-info))))
