@@ -1782,6 +1782,10 @@ Helper function for `ef-themes-preview-colors'."
     `(chart-face-color-list
       '( ,red-graph-0-bg ,green-graph-0-bg ,yellow-graph-0-bg ,blue-graph-0-bg ,magenta-graph-0-bg ,cyan-graph-0-bg
          ,red-graph-1-bg ,green-graph-1-bg ,yellow-graph-1-bg ,blue-graph-1-bg ,magenta-graph-1-bg ,cyan-graph-1-bg))
+;;;; flymake fringe indicators
+    `(flymake-error-bitmap '(flymake-double-exclamation-mark ef-themes-mark-delete))
+    `(flymake-warning-bitmap '(exclamation-mark ef-themes-mark-other))
+    `(flymake-note-bitmap '(exclamation-mark ef-themes-mark-select))
 ;;;; ibuffer
     `(ibuffer-deletion-face 'ef-themes-mark-delete)
     `(ibuffer-filter-group-name-face 'bold)
