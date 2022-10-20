@@ -182,7 +182,7 @@
       (mail-0 blue)
       (mail-1 yellow-cooler)
       (mail-2 cyan-cooler)
-      (mail-3 yellow)
+      (mail-3 red-cooler)
       (mail-4 blue-warmer)
       (mail-5 green-warmer)
 
