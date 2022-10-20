@@ -178,7 +178,7 @@
       (mail-0 red)
       (mail-1 green)
       (mail-2 yellow)
-      (mail-3 green-cooler)
+      (mail-3 cyan)
       (mail-4 yellow-cooler)
       (mail-5 blue)
 
