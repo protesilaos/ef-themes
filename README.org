@@ -891,6 +891,7 @@ everything most users need.
 - all-the-icons-ibuffer
 - ansi-color
 - auctex
+- auto-dim-other-buffers [Part of {{{development-version}}}.]
 - bongo
 - bookmark
 - calendar and diary

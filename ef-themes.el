@@ -709,6 +709,8 @@ Helper function for `ef-themes-preview-colors'."
     `(TeX-error-description-help ((,c :inherit success)))
     `(TeX-error-description-tex-said ((,c :inherit success)))
     `(TeX-error-description-warning ((,c :inherit warning)))
+;;;; auto-dim-other-buffers
+    `(auto-dim-other-buffers-face ((,c :background ,bg-inactive)))
 ;;;; bongo
     `(bongo-album-title (( )))
     `(bongo-artist ((,c :foreground ,rainbow-0)))
