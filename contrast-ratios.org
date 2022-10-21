@@ -187,7 +187,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | green-warmer   | #6aad0f |    7.60 |    6.30 |    5.12 |    7.08 |
 | green-cooler   | #00a692 |    6.87 |    5.69 |    4.63 |    6.40 |
 | green-faint    | #61a06c |    6.75 |    5.60 |    4.55 |    6.29 |
-| yellow         | #c48032 |    6.48 |    5.37 |    4.37 |    6.04 |
+| yellow         | #bf9032 |    7.25 |    6.01 |    4.89 |    6.75 |
 | yellow-warmer  | #d1843f |    7.08 |    5.87 |    4.78 |    6.60 |
 | yellow-cooler  | #df8f5a |    8.21 |    6.81 |    5.54 |    7.65 |
 | yellow-faint   | #cf9f8f |    9.01 |    7.47 |    6.07 |    8.39 |
@@ -1189,7 +1189,7 @@ overall design of the project.
 | green-warmer   | #6aad0f |    7.04 |    6.32 |    5.67 |    6.72 |
 | green-cooler   | #00a392 |    6.17 |    5.54 |    4.97 |    5.88 |
 | green-faint    | #61a06c |    6.26 |    5.62 |    5.04 |    5.97 |
-| yellow         | #c48052 |    6.08 |    5.46 |    4.89 |    5.80 |
+| yellow         | #b58a52 |    6.23 |    5.60 |    5.02 |    5.94 |
 | yellow-warmer  | #d1803f |    6.37 |    5.72 |    5.13 |    6.07 |
 | yellow-cooler  | #df8a88 |    7.53 |    6.77 |    6.07 |    7.19 |
 | yellow-faint   | #c0a38a |    8.20 |    7.37 |    6.60 |    7.82 |
