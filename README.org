@@ -975,6 +975,7 @@ everything most users need.
 - which-function-mode
 - whitespace-mode
 - widget
+- writegood-mode [Part of {{{development-version}}}.]
 - woman
 
 ** Implicitly supported packages or face groups

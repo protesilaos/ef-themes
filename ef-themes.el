@@ -1787,6 +1787,10 @@ Helper function for `ef-themes-preview-colors'."
     `(widget-field ((,c :background ,bg-alt :foreground ,fg-main :extend nil)))
     `(widget-inactive ((,c :inherit shadow :background ,bg-dim)))
     `(widget-single-line-field ((,c :inherit widget-field)))
+;;;; writegood-mode
+    `(writegood-duplicates-face ((,c :inherit ef-themes-underline-error)))
+    `(writegood-passive-voice-face ((,c :inherit ef-themes-underline-info)))
+    `(writegood-weasels-face ((,c :inherit ef-themes-underline-warning)))
 ;;;; woman
     `(woman-addition ((,c :foreground ,accent-2)))
     `(woman-bold ((,c :inherit bold :foreground ,accent-0)))
