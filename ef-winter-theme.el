@@ -60,7 +60,7 @@
       (green-warmer    "#6aad0f")
       (green-cooler    "#00a392")
       (green-faint     "#61a06c")
-      (yellow          "#c48052")
+      (yellow          "#b58a52")
       (yellow-warmer   "#d1803f")
       (yellow-cooler   "#df9080")
       (yellow-faint    "#c0a38a")
@@ -146,7 +146,7 @@
 
       ;; Mappings
       (err red-warmer)
-      (warning yellow-warmer)
+      (warning yellow)
       (info green)
 
       (link magenta)
