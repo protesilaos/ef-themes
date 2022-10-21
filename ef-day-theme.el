@@ -146,7 +146,7 @@
 
       ;; Mappings
       (err red-warmer)
-      (warning yellow-warmer)
+      (warning yellow)
       (info green)
 
       (link cyan-warmer)
