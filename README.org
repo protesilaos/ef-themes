@@ -944,6 +944,7 @@ everything most users need.
 - mu4e
 - neotree
 - notmuch
+- olivetti [Part of {{{development-version}}}.]
 - orderless
 - org
 - org-habit

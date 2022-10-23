@@ -1460,6 +1460,8 @@ Helper function for `ef-themes-preview-colors'."
     `(notmuch-tree-no-match-date-face ((,c :inherit shadow)))
     `(notmuch-wash-cited-text ((,c :inherit message-cited-text-1)))
     `(notmuch-wash-toggle-button ((,c :background ,bg-dim :foreground ,fg-alt)))
+;;;; olivetti
+    `(olivetti-fringe (( )))
 ;;;; orderless
     `(orderless-match-face-0 ((,c :inherit bold :foreground ,accent-0)))
     `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))
