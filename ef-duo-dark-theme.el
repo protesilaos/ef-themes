@@ -143,7 +143,7 @@
       (modeline-warning "#dfcf00")
       (modeline-info    "#00e06f")
 
-      (underline-err     "#d02f2f")
+      (underline-err     "#df2f2f")
       (underline-warning "#c0b000")
       (underline-info    "#22b022")
 
