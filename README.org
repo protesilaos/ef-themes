@@ -173,17 +173,24 @@ Everything is in place to set up the package.
 ;; - `ef-themes-preview-colors-current'
 #+end_src
 
-* Themes for red-green color deficiency
+* Themes for red-green or blue-yellow color deficiency
 :PROPERTIES:
 :CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
 :END:
 
-Most items in the =ef-themes= collection are designed to use colors from
-many sides of the spectrum.  Those items generally are inappropriate for
-people with red-green color deficiency or deuteranopia.  We do,
-nonetheless, provide a light and a dark theme that are optimized for
-such users.  The named of the themes are: ~ef-deuteranopia-dark~ and
-~ef-deuteranopia-light~ ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]]).
+Most items in the =ef-themes= collection are designed to use colors
+from many parts of the spectrum.  Those items generally are
+inappropriate for users with red-green or blue-yellow color deficiency
+(deuteranopia and tritanopia, respectively).  We do, nonetheless,
+provide light and dark themes that are optimized for such cases.  The
+names of the themes are:
+
+- ~ef-deuteranopia-dark~ and ~ef-deuteranopia-light~ for red-green
+  color deficiency;
+- ~ef-tritanopia-dark~ and ~ef-tritanopia-light~ for blue-yellow color
+  deficiency;
+
+[[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]].
 
 * Customization options
 :PROPERTIES:
