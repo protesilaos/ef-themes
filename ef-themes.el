@@ -1468,7 +1468,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-agenda-calendar-sexp ((,c :inherit (italic org-agenda-calendar-event))))
     `(org-agenda-clocking ((,c :background ,bg-warning :foreground ,warning)))
     `(org-agenda-column-dateline ((,c :background ,bg-alt)))
-    `(org-agenda-current-time ((,c :foreground ,variable)))
+    `(org-agenda-current-time ((,c :foreground ,fg-main)))
     `(org-agenda-date ((,c :inherit ef-themes-heading-1)))
     `(org-agenda-date-today ((,c :inherit org-agenda-date :underline t)))
     `(org-agenda-date-weekend ((,c :inherit org-agenda-date)))
