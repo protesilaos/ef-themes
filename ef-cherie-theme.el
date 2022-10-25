@@ -101,9 +101,9 @@
       (bg-changed-faint  "#281a00")
       (bg-changed-refine "#484800")
 
-      (bg-removed        "#4a1119")
-      (bg-removed-faint  "#320a0f")
-      (bg-removed-refine "#751a1f")
+      (bg-removed        "#4a111f")
+      (bg-removed-faint  "#320a14")
+      (bg-removed-refine "#751a25")
 
       ;; Graphs
       (red-graph-0-bg     "#b52c2c")
