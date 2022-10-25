@@ -80,7 +80,7 @@
       ;; Basic hues for background values
       (bg-red      "#bd1f30")
       (bg-green    "#20a020")
-      (bg-yellow   "#845020")
+      (bg-yellow   "#847020")
       (bg-blue     "#3633b0")
       (bg-magenta  "#b04fcf")
       (bg-cyan     "#2270be")
