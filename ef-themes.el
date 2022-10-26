@@ -1165,6 +1165,8 @@ Helper function for `ef-themes-preview-colors'."
     `(ibuffer-locked-buffer ((,c :foreground ,warning)))
 ;;;; image-dired
     `(image-dired-thumb-flagged ((,c :background ,err)))
+    `(image-dired-thumb-header-file-name ((,c :inherit bold)))
+    `(image-dired-thumb-header-file-size ((,c :foreground ,info)))
     `(image-dired-thumb-mark ((,c :background ,info)))
 ;;;; info
     `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-0))) ; the capitalization is canonical
