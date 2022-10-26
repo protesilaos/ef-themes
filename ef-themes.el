@@ -974,6 +974,7 @@ Helper function for `ef-themes-preview-colors'."
     `(embark-keybinding-repeat ((,c :inherit bold)))
     `(embark-collect-marked ((,c :inherit ef-themes-mark-select)))
     `(embark-collect-group-title ((,c :inherit bold :foreground ,name)))
+    `(embark-collect-zebra-highlight ((,c :background ,bg-alt)))
 ;;;; epa
     `(epa-field-body (( )))
     `(epa-field-name ((,c :inherit bold :foreground ,fg-dim)))
