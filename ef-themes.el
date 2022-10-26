@@ -1742,6 +1742,10 @@ Helper function for `ef-themes-preview-colors'."
     `(transient-value ((,c :inherit success :background ,bg-info)))
 ;;;; trashed
     `(trashed-restored ((,c :inherit ef-themes-mark-other)))
+;;;; tty-menu
+    `(tty-menu-disabled-face ((,c :background ,bg-alt :foreground ,fg-dim)))
+    `(tty-menu-enabled-face ((,c :background ,bg-alt :foreground ,fg-intense)))
+    `(tty-menu-selected-face ((,c :inherit highlight)))
 ;;;; vc (vc-dir.el, vc-hooks.el)
     `(vc-dir-directory (( )))
     `(vc-dir-file ((,c :foreground ,name)))

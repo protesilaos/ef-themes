@@ -978,6 +978,7 @@ everything most users need.
 - textsec
 - transient
 - trashed [Part of {{{development-version}}}.]
+- tty-menu [Part of {{{development-version}}}.]
 - vc (=vc-dir.el=, =vc-hooks.el=)
 - vertico
 - wgrep
