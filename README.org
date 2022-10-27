@@ -1252,8 +1252,9 @@ matters.
   Philip Kaludercic.
 
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Daniel
-  Mendler, Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg,
-  Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck, Zoltán Király.
+  Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné Guay,
+  Jonas Collberg, Spike-Leung, Steve Molitor, Summer Emacs, Sven
+  Seebeck, Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:

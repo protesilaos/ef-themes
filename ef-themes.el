@@ -456,10 +456,10 @@ symbol."
   (interactive (list (when current-prefix-arg (ef-themes--choose-subset))))
   (let* ((themes (ef-themes--minus-current variant))
          (n (random (length themes)))
-         (pick (nth n themes)))
-    (if (null pick)
-        (ef-themes--load-theme (car themes))
-      (ef-themes--load-theme pick))))
+         (pick (nth n themes))
+         (loaded (if (null pick) (car themes) pick)))
+    (ef-themes--load-theme loaded)
+    (message "Loaded `%s'" loaded)))
 
 (defun ef-themes--preview-colors-render (buffer theme &rest _)
   "Render colors in BUFFER from THEME.
