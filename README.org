@@ -877,6 +877,40 @@ because it otherwise adds too much visual noise to the buffer (email
 addresses stand out more, due to the use of the uncommon =@= caharacter
 but also because they are often enclosed in angled brackets).
 
+* Faces defined by the Ef themes
+:PROPERTIES:
+:CUSTOM_ID: h:34afcc9a-a5f1-4023-b01a-abf5b8a6199d
+:END:
+
+The themes define some faces to make it possible to achieve
+consistency between various groups of faces.  For example, all "marks
+for selection" use the ~ef-themes-mark-select~ face.  If, say, the
+user wants to edit this face to include an underline, the change will
+apply to lots of packages, like Dired, Trashed, Ibuffer.
+
+[[#h:152326a3-9356-4158-8adb-83c42c2ef117][Do-It-Yourself customizations]].
+
+All the faces defined by the themes:
+
++ ~ef-themes-fixed-pitch~
++ ~ef-themes-heading-0~
++ ~ef-themes-heading-1~
++ ~ef-themes-heading-2~
++ ~ef-themes-heading-3~
++ ~ef-themes-heading-4~
++ ~ef-themes-heading-5~
++ ~ef-themes-heading-6~
++ ~ef-themes-heading-7~
++ ~ef-themes-heading-8~
++ ~ef-themes-key-binding~
++ ~ef-themes-mark-delete~
++ ~ef-themes-mark-other~
++ ~ef-themes-mark-select~
++ ~ef-themes-ui-variable-pitch~
++ ~ef-themes-underline-error~
++ ~ef-themes-underline-info~
++ ~ef-themes-underline-warning~
+
 * Supported packages or face groups
 :PROPERTIES:
 :CUSTOM_ID: h:c8d80daf-d039-40c4-bb74-e7814a9b4c79
