@@ -132,7 +132,7 @@
       (bg-warning    "#ffe0aa") ; check with warning
       (bg-info       "#ddf5cc") ; check with info
 
-      (border        "#cdc2bb")
+      (border        "#c8bdb6")
       (cursor        "#cf1f00")
       (fg-intense    "#000000")
 
