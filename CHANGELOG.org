@@ -9,6 +9,200 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.9.0 on 2022-10-28
+:PROPERTIES:
+:CUSTOM_ID: h:b5e83e34-9af3-41b6-a9a1-ab9b3555b2e9
+:END:
+
+** Introduced the 'ef-cherie' and 'ef-cyprus' themes
+:PROPERTIES:
+:CUSTOM_ID: h:877fc5ae-d48d-4f0c-80bf-248501f284eb
+:END:
+
+~ef-cherie~ is a dark theme with mostly pink, magenta, and gold
+colours.  ~ef-cyprus~ is a light theme characterised by green, yellow,
+teal, and red colours.
+
+Read the announcements, which also include screen shots:
+
++ <https://protesilaos.com/codelog/2022-10-25-ef-cherie/>.
++ <https://protesilaos.com/codelog/2022-10-24-ef-cyprus-theme/>.
+
+These themes bring the total number of the collection to 20, split
+into an equal number of light and dark themes.
+
+Note that some themes in the collection are designed as pairs.  Those
+have =-light= or =-dark= in their name.  The others are standalone.
+Regardless, the user can specify any two themes in the value of the
+user option ~ef-themes-to-toggle~ and then switch between them with
+the command ~ef-themes-toggle~.  Or just use the other available
+commands: ~ef-themes-select~ for minibuffer completion and the
+~ef-themes-load-random~ to load one from the collection (with a =C-u=
+prefix argument to limit the set to light or dark themes). The
+official manual explains more.
+
+Will there be more themes?  Time will tell.  Though I think that
+between those and the =modus-themes=, I have covered a very broad
+range of preferences and requirements for accessibility.
+
+** The 'ef-themes-select' optionally limits to light or dark
+:PROPERTIES:
+:CUSTOM_ID: h:caeb1c99-8890-4275-b812-45d5715d071b
+:END:
+
+The command ~ef-themes-select~ can now accept a prefix argument (=C-u=
+with the default key bindings).  It prompts for a selection between
+light or dark themes and then uses minibuffer completion that only
+includes the items of the given set.
+
+Inspect the value of the variables ~ef-themes-dark-themes~,
+~ef-themes-light-themes~ for what is included in each set.
+
+[ Note that the command ~ef-themes-load-random~ has the same behaviour
+  of limiting to a set when it reads a prefix argument. ]
+
+** The 'ef-themes-load-random' reports the theme it loaded
+:PROPERTIES:
+:CUSTOM_ID: h:308296a7-46f8-4524-8c62-9ad720f5fb3d
+:END:
+
+The command ~ef-themes-load-random~ has received a quality-of-life
+improvement to its functionality.  It now prints a message in the echo
+area that includes the name of the theme it loaded.  The user can
+review echo area messages by invoking the ~view-echo-area-messages~
+command, which is bound to =C-h e= by default.
+
+This change makes it easier for the user to remember a theme they
+liked.
+
+Thanks to Federico Stilman for sharing with me the idea of reporting
+the name of the randomly loaded theme.  This information is shared
+with permission, as it was done via a private channel.
+
+** Stylistic refinements
+:PROPERTIES:
+:CUSTOM_ID: h:a9155853-90c1-40a6-8d20-5756cbcdda8f
+:END:
+
++ All themes have palette entries for colour-coded underlines.  Those
+  are used by packages like =flymake= and =flyspell= to highlight
+  errors and warnings.  All dark Ef themes had a bit too intense
+  colours applied to those constructs.  These have now been toned down
+  in order to avoid potential distractions.  They still perform their
+  intended function, without drawing too much attention to themselves.
+
++ Almost all themes have a slightly more pronounced =border= colour.
+  This is used to underline links and to draw the vertical line that
+  separates Emacs windows (among others).  It still is a subtle grey,
+  though it works better than before.
+
++ The =warning= mapping of many themes has been revised to be a more
+  neutral yellow (I define hues as triplets of neutral, warmer,
+  colder).  The previous style was a warmer shade of yellow, which
+  brought it closer to red.  This, in turn, had the unintended effect
+  of making the Org agenda potentially confusing.
+
++ The =mail-3= mapping of some themes has been tweaked to better stand
+  out in its context, without prejudice to the overall character of
+  its theme.  This colour is used by email clients that leverage the
+  built-in =message.el= library (such as Gnus, Mu4e, Notmuch).  In
+  short, if you edit messages with deeply nested quotes, you will have
+  an easier time telling apart those inner levels.
+
+** Support for packages, face groups, or faces
+:PROPERTIES:
+:CUSTOM_ID: h:37e5dd08-ba21-4847-b14d-5aea9046168e
+:END:
+
++ auto-dim-other-buffers :: Added support for this package.  It
+  applies a grey background to inactive windows.
++ consult-separator :: This is the border that divides previews of
+  registers when the user evaluates the following form and then
+  invokes C-x r i: ~(advice-add #'register-preview :override
+  #'consult-register-window)~
++ embark-collect-zebra-highlight :: The default value of this face is
+  technically okay, though it is a neutral grey which does not look
+  right with some of the Ef themes.
++ flycheck :: Added support for this package and covered all its
+  faces.  It looks like ~flymake~ as it leverages the same set of
+  colour-coding that the themes define.
++ flymake :: Expanded support to its fringe indicators.  Those are
+  bitmaps that bring attention to in-buffer colour-coded underlines.
+  They use an appropriate colour coding, like errors being red
+  (depending on the theme---see the deuteranopia and tritanopia
+  implementations).
++ help-key-binding :: This face is now rendered in ~fixed-pitch~
+  (monospaced font) when the user option ~ef-themes-mixed-fonts~ is
+  non-nil.  This user option basically makes spacing-sensitive
+  constructs retain their mono spacing, while all the rest can use a
+  proportionately spaced font (e.g. enable ~variable-pitch-mode~ in
+  Org buffers to see the effect---changes to theme user options
+  require a theme reload).
++ ibuffer :: Added support for this built-in package.  Its marks look
+  the same as those of Dired.
++ image-dired :: Expanded support to two new faces it has for the
+  ~header-line~.  Those are part of Emacs 29.
++ mm-command-output :: This is a built-in face we encounter on
+  occasion in Gnus buffers.
++ olivetti :: Made its ~olivetti-fringe~ face invisible.  We do not
+  want to see the fringes when we enter ~olivetti-mode~ (it centres
+  the contents of the buffer).  Note that the Ef themes do not have
+  visible fringes, anyway, though a user may tweak the ~fringe~ face
+  in their local setup.
++ org-agenda-current-time :: Made this face use the main foreground
+  colour.  It applies to the line that shows the current time in
+  today's Org agend time grid.  The previous mapping to =variable= was
+  giving us decent results, though this was a matter of serendipity:
+  there is a chance that a theme maps an inappropriate colour to
+  =variable= (e.g. red, which will interfere with deadlines).  This
+  new design is just as legible, while it has the upside of reducing
+  colouration where it is not needed, letting other elements get the
+  attention they deserve.
++ trashed :: Added support for this package.  It marks lines like
+  Dired and follows the same stylistic patterns.  Unlike Dired, it has
+  an extra "mark" type (select, delete, restore), which uses
+  appropriate colouration.
++ tty-menu :: This is the set of faces that are used in a text
+  terminal when the ~menu-bar-mode~ is enabled and the user interacts
+  with it via the command ~menu-bar-open~.  Note, however, that the Ef
+  themes are meant to be used either in a graphical Emacs frame or in
+  a text terminal with very good support for colour reproduction.
+  The themes do not look good in a generic terminal.
++ writegood-mode :: Added support for this package.  Its style is
+  consistent with ~flyspell~ as it uses the same colour-coding scheme.
+
+** Faces defined by the Ef themes
+:PROPERTIES:
+:CUSTOM_ID: h:3ade9d4b-858d-4e28-85c4-0cddf046f4ce
+:END:
+
+The themes define some faces to make it possible to achieve
+consistency between various groups of faces.  For example, all "marks
+for selection" use the ~ef-themes-mark-select~ face.  If, say, the
+user wants to edit this face to include an underline, the change will
+apply to lots of packages, like Dired, Trashed, Ibuffer.
+
+All the faces defined by the themes:
+
++ ~ef-themes-fixed-pitch~
++ ~ef-themes-heading-0~
++ ~ef-themes-heading-1~
++ ~ef-themes-heading-2~
++ ~ef-themes-heading-3~
++ ~ef-themes-heading-4~
++ ~ef-themes-heading-5~
++ ~ef-themes-heading-6~
++ ~ef-themes-heading-7~
++ ~ef-themes-heading-8~
++ ~ef-themes-key-binding~
++ ~ef-themes-mark-delete~
++ ~ef-themes-mark-other~
++ ~ef-themes-mark-select~
++ ~ef-themes-ui-variable-pitch~
++ ~ef-themes-underline-error~
++ ~ef-themes-underline-info~
++ ~ef-themes-underline-warning~
+
 * Version 0.8.0 on 2022-10-17
 :PROPERTIES:
 :CUSTOM_ID: h:e28b77ae-7f78-426a-97f6-eb880130b223
