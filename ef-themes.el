@@ -1596,6 +1596,8 @@ Helper function for `ef-themes-preview-colors'."
     `(package-status-installed ((,c :foreground ,fg-alt)))
     `(package-status-new ((,c :inherit success)))
     `(package-status-unsigned ((,c :inherit error)))
+;;;; perspective
+    `(persp-selected-face ((,c :inherit mode-line-emphasis)))
 ;;;; pulsar
     `(pulsar-blue ((,c :background ,bg-blue-subtle)))
     `(pulsar-cyan ((,c :background ,bg-cyan-subtle)))
