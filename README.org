@@ -1283,7 +1283,7 @@ matters.
 + Author/maintainer :: Protesilaos Stavrou.
 
 + Contributions to code or the manual :: Alex Lu, Christopher League,
-  Philip Kaludercic.
+  Philip Kaludercic, Walheimat.
 
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Daniel
   Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné Guay,
