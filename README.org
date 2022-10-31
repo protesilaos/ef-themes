@@ -992,6 +992,7 @@ everything most users need.
 - outline-mode
 - outline-minor-faces
 - package (=M-x list-packages=)
+- perspective
 - pulsar
 - pulse
 - rainbow-delimiters
