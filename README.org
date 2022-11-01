@@ -1350,8 +1350,8 @@ matters.
 
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Daniel
   Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné Guay,
-  Jonas Collberg, Spike-Leung, Steve Molitor, Summer Emacs, Sven
-  Seebeck, Zoltán Király.
+  Jonas Collberg, Saša Janiška, Spike-Leung, Steve Molitor, Summer
+  Emacs, Sven Seebeck, Zoltán Király.
 
 * GNU Free Documentation License
 :PROPERTIES:
