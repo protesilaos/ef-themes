@@ -1210,9 +1210,9 @@ the manual of the =modus-themes= does elaborate on the minutiae).
 Whereas the =ef-themes= do not have such a commitment: they are
 legible, but might go a bit below the desired target in certain cases.
 
-From the user who has already narrowed their search to the Modus and
-Ef themes, the criterion should be the eye test.  If any of those
-items looks good/usable, then that is what matters.  A bit of
+For the user who has already narrowed their search to the Modus and Ef
+themes, the criterion should be the eye test.  If any of those items
+looks good/usable, then that is what matters.  A bit of
 experimentation provides greater insight than tomes on theoretical
 nuances---no value in overthinking it.
 
@@ -1221,10 +1221,10 @@ range of options for users who need varying degrees of legibility.
 The =modus-themes= are the ones with the highest contrast.
 
 I have always maintained the view that (i) there is no such thing as a
-one-size-fits-all for accessibility due to differences in colour
-perception between individuals as well as hardware capabilities, and
-(ii) no theme can handle accessibility on its own, as one needs to
-consider typography as well as environmental factors.
+one-size-fits-all for accessibility due to innate differences in
+colour perception between individuals as well as hardware
+capabilities, and (ii) no theme can handle accessibility on its own,
+as one needs to consider typography as well as environmental factors.
 
 [ For my preferred typography, check Iosevka Comfy:
   <https://protesilaos.com/emacs/iosevka-comfy-pictures>. ]
@@ -1236,7 +1236,7 @@ means that the =modus-themes= may appear more minimalist (or "clean")
 once one gets used to their level of contrast.  In general: do not
 trust initial impressions and give the themes a fair chance (if one is
 used to low contrast settings, the =modus-themes= feel hard to get
-utsed to, though this is natural as the eye adapts accordingly).
+used to, though this is natural as the eye adapts accordingly).
 
 The =ef-themes= are more colourful, which can make them more/less
 pleasant to work with, depending on one's subjectivity.  Within the
@@ -1251,7 +1251,7 @@ I cannot possibly say which the "best" is.  This is a subjective
 evaluation.  For me personally, both projects are technically
 excellent in terms of conforming with their stated ends.
 Aesthetically, I like them all, which is why I develop/maintain them.
-I am not prioritising one over the other.
+I am not prioritising one over the others.
 
 Note that I am emphasising legibility, though this should not discount
 the meticulous work that goes into thematic consistency.  I do not
