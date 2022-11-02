@@ -351,11 +351,13 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--choose-subset ()
   "Use `read-multiple-choice' to return `dark' or `light' variant."
-  (intern (cadr (read-multiple-choice
-                 "Variant"
-                 '((?d "dark" "Load a random dark theme")
-                   (?l "light" "Load a random light theme"))
-                 "Limit the variation themes to select."))))
+  (intern
+   (cadr
+    (read-multiple-choice
+     "Variant"
+     '((?d "dark" "Load a random dark theme")
+       (?l "light" "Load a random light theme"))
+     "Limit to the dark or light subset of the Ef themes collection."))))
 
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
