@@ -349,8 +349,6 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
       (symbol-value palette)
     (user-error "No enabled Ef theme could be found")))
 
-(defvar ef-themes--select-theme-history nil)
-
 (defun ef-themes--choose-subset ()
   "Use `read-multiple-choice' to return `dark' or `light' variant."
   (intern (cadr (read-multiple-choice
@@ -358,6 +356,8 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
                  '((?d "dark" "Load a random dark theme")
                    (?l "light" "Load a random light theme"))
                  "Limit the variation themes to select."))))
+
+(defvar ef-themes--select-theme-history nil)
 
 (defun ef-themes--select-prompt (&optional prompt variant)
   "Minibuffer prompt for `ef-themes-select'.
