@@ -165,7 +165,7 @@
       (docstring magenta-faint)
       (string green-cooler)
       (type cyan-cooler)
-      (variable blue)
+      (variable cyan-warmer)
 
       (rx-escape blue-warmer) ; compare with `string'
       (rx-construct red)
