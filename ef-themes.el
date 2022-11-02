@@ -357,7 +357,8 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
                    (?l "light" "Load a random light theme"))
                  "Limit the variation themes to select."))))
 
-(defvar ef-themes--select-theme-history nil)
+(defvar ef-themes--select-theme-history nil
+  "Minibuffer history of `ef-themes--select-prompt'.")
 
 (defun ef-themes--select-prompt (&optional prompt variant)
   "Minibuffer prompt for `ef-themes-select'.
