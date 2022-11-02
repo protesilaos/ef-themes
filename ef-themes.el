@@ -370,6 +370,11 @@ accordingly."
          (themes (pcase subset
                    ('dark ef-themes-dark-themes)
                    ('light ef-themes-light-themes)
+                   ;; NOTE 2022-11-02: This condition made sense when
+                   ;; the code now in `ef-themes--choose-subset' used
+                   ;; `completing-read'.  With `read-multiple-choice'
+                   ;; we never meet this condition, as far as I can
+                   ;; tell.  But it does no harm to keep it here.
                    (_ (ef-themes--list-known-themes)))))
     (intern
      (completing-read
