@@ -1161,11 +1161,13 @@ The above list is non-exhaustive though you get the idea.
 :END:
 
 + No customization options that affect the coloration of individual
-  components!  Either you like them or you don't.  To change the
-  attributes of individual faces, it is better to do it in user-level
-  configurations ([[#h:152326a3-9356-4158-8adb-83c42c2ef117][Do-It-Yourself customizations]]).  Report the issue and
-  we can help with the relevant code.  Providing customizations that
-  refashion a wide set of themes is not maintainable.
+  components like a heading or a construct in the code!  Either you
+  like them or you don't.  To change the attributes of individual
+  faces, it is better to do it in user-level configurations
+  ([[#h:152326a3-9356-4158-8adb-83c42c2ef117][Do-It-Yourself customizations]]).  Report the issue and I can help
+  with the relevant code.  Providing customizations that refashion a
+  wide set of themes is not maintainable due to the sheer magnitude of
+  all the possible combinations.
 
 + Curated list of supported faces ([[#h:c8d80daf-d039-40c4-bb74-e7814a9b4c79][Supported packages or face groups]]).
   I will only cover what I use and/or know is in a well-maintained
@@ -1175,18 +1177,20 @@ The above list is non-exhaustive though you get the idea.
   the theme.
 
 + Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
-  standard).  Use my =modus-themes= package (also built into Emacs 28 or
-  higher) if you need top-class accessibility.
+  standard).  Emphasis on "minimum" as themes can always have more
+  contrast.  Use my =modus-themes= package (also built into Emacs 28
+  or higher) if you need top-class accessibility in this regard.
 
-+ If two elements are functionally different, the theme must render this
-  fact conspicuous ([[#h:b59f315c-6d25-4225-b99b-c06594fa3bf0][Let Org tags inherit the heading color?]]).
++ If two elements are functionally distinct, the theme must render
+  this fact conspicuous ([[#h:b59f315c-6d25-4225-b99b-c06594fa3bf0][Let Org tags inherit the heading color?]]).
 
 + Respect the decisions of the upstream package provider or, else, do
-  not make weird things with faces.  We only override the design choice
-  of a package if it is necessary.
+  not make weird things with faces.  I only override the design choice
+  of a package if it is absolutely necessary and then still try to
+  conform with the principle of least surprise.
 
 + When there is an inescapable trade-off between usability and
-  aesthetics, we will always opt for the former, without prejudice to
+  aesthetics, I will always opt for the former, without prejudice to
   the aforementioned principles.
 
 ** Minimal VS maximal scope
@@ -1204,8 +1208,8 @@ necessity.  The =modus-themes= are such because:
    day using FOO package, it needs to be perfectly legible, otherwise
    the whole theme fails to deliver on its promise.
 
-The =ef-themes= can afford to be minimal because they do not have such a
-lofty accessibility target.
+The =ef-themes= can afford to be more minimal because they do not have
+such a lofty accessibility target.
 
 * FAQ
 :PROPERTIES:
