@@ -278,12 +278,12 @@ Combinations of those symbols are expressed in any order.
 
 In user configuration files the form may look like this:
 
-    (setq modus-themes-region \\='(intense no-extend))
+    (setq ef-themes-region \\='(intense no-extend))
 
 Other examples:
 
-    (setq modus-themes-region \\='(intense))
-    (setq modus-themes-region \\='(intense no-extend neutral))"
+    (setq ef-themes-region \\='(intense))
+    (setq ef-themes-region \\='(intense no-extend neutral))"
   :group 'ef-themes
   :package-version '(ef-themes . "0.10.0")
   :type '(set :tag "Properties" :greedy t

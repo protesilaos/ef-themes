@@ -399,14 +399,14 @@ Combinations of those symbols are expressed in any order.
 In user configuration files the form may look like this:
 
 #+begin_src emacs-lisp
-(setq modus-themes-region '(intense no-extend))
+(setq ef-themes-region '(intense no-extend))
 #+end_src
 
 Other examples:
 
 #+begin_src emacs-lisp
-(setq modus-themes-region '(intense))
-(setq modus-themes-region '(intense no-extend neutral))
+(setq ef-themes-region '(intense))
+(setq ef-themes-region '(intense no-extend neutral))
 #+end_src
 
 * Loading a theme
