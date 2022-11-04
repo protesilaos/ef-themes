@@ -256,7 +256,58 @@ ELPA (by Protesilaos))."
   :type 'boolean
   :link '(info-link "(ef-themes) UI typeface"))
 
+(defcustom ef-themes-region nil
+  "Control the appearance of the `region' face.
+
+The value is a list of symbols.
+
+If nil or an empty list (the default), use a subtle background
+for the region and preserve the color of selected text.
+
+The `no-extend' symbol limits the highlighted area to the end of
+the line, so that it does not reach the edge of the window.
+
+The `neutral' symbol makes the highlighted area's background
+gray (or more gray, depending on the theme).
+
+The `intense' symbol amplifies the intensity of the highlighted
+area's background color.  It also overrides any text color to
+keep it legible.
+
+Combinations of those symbols are expressed in any order.
+
+In user configuration files the form may look like this:
+
+    (setq modus-themes-region \\='(intense no-extend))
+
+Other examples:
+
+    (setq modus-themes-region \\='(intense))
+    (setq modus-themes-region \\='(intense no-extend neutral))"
+  :group 'ef-themes
+  :package-version '(ef-themes . "0.10.0")
+  :type '(set :tag "Properties" :greedy t
+              (const :tag "Do not extend to the edge of the window" no-extend)
+              (const :tag "More neutral/gray background" neutral)
+              (const :tag "More intense background (also override text color)" accented))
+  :link '(info-link "(ef-themes) Style of region highlight"))
+
 ;;; Helpers for user options
+
+(defun ef-themes--warn (option)
+  "Warn that OPTION has changed."
+  (prog1 nil
+    (display-warning
+     'ef-themes
+     (format "`%s' has changed; please read the updated documentation" option)
+     :warning)))
+
+(defun ef-themes--list-or-warn (option)
+  "Return list or nil value of OPTION, else `ef-themes--warn'."
+  (let* ((value (symbol-value option)))
+    (if (or (null value) (listp value))
+        value
+      (ef-themes--warn option))))
 
 (defun ef-themes--fixed-pitch ()
   "Conditional application of `fixed-pitch' inheritance."
@@ -309,6 +360,33 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
           (ef-themes--alist-or-seq properties 'height #'floatp 'unspecified)
           :weight
           (or weight 'unspecified))))
+
+(defun ef-themes--region (bg bgneutral bgintense bgintenseneutral fgintense)
+  "Apply `ef-themes-region' styles.
+
+BG is the default background.  BGNEUTRAL is its gray counterpart.
+BGINTENSE is an amplified variant of BG, while BGINTENSENEUTRAL
+is a more intense neutral background.  FGINTENSE is the
+foreground that is used with any of the intense backgrounds."
+  (let ((properties (ef-themes--list-or-warn 'ef-themes-region)))
+    (list
+     :background
+     (cond
+      ((and (memq 'intense properties) (memq 'neutral properties))
+       bgintenseneutral)
+      ((memq 'intense properties)
+       bgintense)
+      ((memq 'neutral properties)
+       bgneutral)
+      (bg))
+     :foreground
+     (if (memq 'intense properties)
+         fgintense
+       'unspecified)
+     :extend
+     (if (memq 'no-extend properties)
+         nil
+       t))))
 
 ;;; Commands and their helper functions
 
@@ -608,7 +686,7 @@ Helper function for `ef-themes-preview-colors'."
     `(cursor ((,c :background ,cursor)))
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(italic ((,c :slant italic)))
-    `(region ((,c :background ,bg-region)))
+    `(region ((,c ,@(ef-themes--region bg-region bg-alt bg-region-intense bg-active fg-intense))))
     `(vertical-border ((,c :foreground ,border)))
 ;;;;; all other basic faces
     `(button ((,c :foreground ,link :underline ,border)))

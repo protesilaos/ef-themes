@@ -147,6 +147,9 @@
       (underline-warning "#ffafa0")
       (underline-info    "#22ffd2")
 
+      ;; Conditional hues
+      (bg-region-intense "#5f303f")
+
       ;; Mappings
       (err red-warmer)
       (warning magenta)

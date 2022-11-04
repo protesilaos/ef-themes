@@ -368,6 +368,47 @@ will retain the original aesthetic for that level.  For example:
         (t . t))) ; default style for all other levels
 #+end_src
 
+** Style of region highlight
+:PROPERTIES:
+:CUSTOM_ID: h:1d5fa3d8-a769-455a-aac7-5c1b925bb10b
+:END:
+
+[ This user option is part of {{{development-version}}}. ]
+
+#+vindex: ef-themes-region
+The user option ~ef-themes-region~ controls the appearance of the
+~region~ face (the highlighted selection of an area).
+
+The value it accepts is a list of symbols.
+
+If ~nil~ or an empty list (the default), use a subtle background for
+the region and preserve the color of selected text.
+
+The ~no-extend~ symbol limits the highlighted area to the end of the
+line, so that it does not reach the edge of the window.
+
+The ~neutral~ symbol makes the highlighted area's background gray (or
+more gray, depending on the theme).
+
+The ~intense~ symbol amplifies the intensity of the highlighted area's
+background color.  It also overrides any text color to keep it
+legible.
+
+Combinations of those symbols are expressed in any order.
+
+In user configuration files the form may look like this:
+
+#+begin_src emacs-lisp
+(setq modus-themes-region '(intense no-extend))
+#+end_src
+
+Other examples:
+
+#+begin_src emacs-lisp
+(setq modus-themes-region '(intense))
+(setq modus-themes-region '(intense no-extend neutral))
+#+end_src
+
 * Loading a theme
 :PROPERTIES:
 :CUSTOM_ID: h:75d74aea-d17f-497f-a3b8-f0bf4c372de0

@@ -148,6 +148,9 @@
       (underline-warning "#bf5f00")
       (underline-info    "#02af52")
 
+      ;; Conditional hues
+      (bg-region-intense "#dfc2b0")
+
       ;; Mappings
       (err red)
       (warning yellow)
