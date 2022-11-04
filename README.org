@@ -126,6 +126,8 @@ Everything is in place to set up the package.
 :END:
 
 #+begin_src emacs-lisp
+;; Make customisations that affect Emacs faces BEFORE loading a theme
+;; (any change needs a theme re-load to take effect).
 (require 'ef-themes)
 
 ;; If you like two specific themes and want to switch between them, you
@@ -133,9 +135,6 @@ Everything is in place to set up the package.
 ;; `ef-themes-toggle'.  All the themes are included in the variable
 ;; `ef-themes-collection'.
 (setq ef-themes-to-toggle '(ef-summer ef-winter))
-
-;; Make customisations that affect Emacs faces BEFORE loading a theme
-;; (any change needs a theme re-load to take effect).
 
 (setq ef-themes-headings ; read the manual's entry or the doc string
       '((0 . (variable-pitch light 1.9))
@@ -151,6 +150,10 @@ Everything is in place to set up the package.
 ;; They are nil by default...
 (setq ef-themes-mixed-fonts t
       ef-themes-variable-pitch-ui t)
+
+;; Read the doc string or manual for this one.  The symbols can be
+;; combined in any order.
+(setq ef-themes-region '(intense no-extend neutral))
 
 ;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
