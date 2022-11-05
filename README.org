@@ -238,11 +238,11 @@ The user option ~ef-themes-mixed-fonts~ controls whether strictly
 spacing-sensitive constructs inherit from ~fixed-pitch~ (a monospaced
 font family).
 
-By default (a nil value for this user option) no face inherits from
+By default (a ~nil~ value for this user option) no face inherits from
 ~fixed-pitch~: they all use the default font family, regardless of
 whether it is monospaced or not.
 
-When ~ef-themes-mixed-fonts~ is set to a non-nil value, faces such as
+When ~ef-themes-mixed-fonts~ is set to a non-~nil~ value, faces such as
 Org tables, inline code, code blocks, and the like, are rendered in a
 monospaced font at all times.  The user can thus set their default font
 family to a proportionately spaced font without worrying about breaking
@@ -265,8 +265,8 @@ Protesilaos) can be helpful in that regard.
 #+vindex: ef-themes-variable-pitch-ui
 The user option ~ef-themes-variable-pitch-ui~ controls whether the
 elements of the User Interface (UI) use a proportionately spaced font.
-By default (a nil value), all UI elements use the default font family.
-When this user option is set to a non-nil value, all UI elements will
+By default (a ~nil~ value), all UI elements use the default font family.
+When this user option is set to a non-~nil~ value, all UI elements will
 inherit the face ~variable-pitch~ instead thus rendering them in a
 proportionately spaced font.
 
@@ -310,7 +310,7 @@ available properties:
         (t . (variable-pitch))))
 #+end_src
 
-By default (a =nil= value for this variable), all headings have a bold
+By default (a ~nil~ value for this variable), all headings have a bold
 typographic weight, a font family that is the same as the ~default~ face
 (typically monospaced), and a height that is equal to the ~default~
 face's height.
@@ -356,7 +356,7 @@ In user configuration files the form may look like this:
 #+end_src
 
 When defining the styles per heading level, it is possible to
-pass a non-nil value (t) instead of a list of properties.  This
+pass a non-~nil~ value (t) instead of a list of properties.  This
 will retain the original aesthetic for that level.  For example:
 
 #+begin_src emacs-lisp
@@ -881,7 +881,7 @@ Users who were used to the previous design and who generally do not
 configure the user options of =org-modern= may thus notice a change in
 how clocktables (or generally tables with timestamps) are aligned.  The
 simplest solution is to instruct the mode to not prettify timestamps, by
-setting the user option ~org-modern-timestamp~ to nil.  For example, by
+setting the user option ~org-modern-timestamp~ to ~nil~.  For example, by
 adding this to the init file:
 
 #+begin_src emacs-lisp
@@ -915,7 +915,7 @@ consider including this in their setup:
       goto-address-mail-mouse-face 'highlight)
 #+end_src
 
-My personal preference is to set ~goto-address-mail-face~ to nil,
+My personal preference is to set ~goto-address-mail-face~ to ~nil~,
 because it otherwise adds too much visual noise to the buffer (email
 addresses stand out more, due to the use of the uncommon =@= caharacter
 but also because they are often enclosed in angled brackets).
