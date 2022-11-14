@@ -979,6 +979,7 @@ everything most users need.
 - bongo
 - bookmark
 - calendar and diary
+- cider [Part of {{{development-version}}}]
 - change-log and log-view (part of VC)
 - chart
 - company
