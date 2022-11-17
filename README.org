@@ -982,6 +982,7 @@ everything most users need.
 - cider [Part of {{{development-version}}}]
 - change-log and log-view (part of VC)
 - chart
+- clojure-mode [Part of {{{development-version}}}]
 - company
 - compilation
 - completions

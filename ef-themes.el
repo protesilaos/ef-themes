@@ -852,6 +852,8 @@ Helper function for `ef-themes-preview-colors'."
     `(log-view-commit-body (( )))
     `(log-view-file ((,c :inherit bold)))
     `(log-view-message ((,c :inherit shadow)))
+;;;; clojure-mode
+    `(clojure-keyword-face ((,c :inherit font-lock-builtin-face)))
 ;;;; company-mode
     `(company-echo-common ((,c :inherit bold :foreground ,accent-0)))
     `(company-preview ((,c :background ,bg-dim :foreground ,fg-dim)))
