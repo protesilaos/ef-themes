@@ -1000,6 +1000,7 @@ everything most users need.
 - display-fill-column-indicator-mode
 - doom-modeline
 - ediff
+- eglot [Part of {{{development-version}}}]
 - eldoc
 - elfeed
 - embark

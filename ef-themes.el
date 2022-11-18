@@ -1052,6 +1052,8 @@ Helper function for `ef-themes-preview-colors'."
     `(ediff-odd-diff-Ancestor ((,c :inherit ediff-even-diff-Ancestor)))
     `(ediff-odd-diff-B ((,c :inherit ediff-even-diff-B)))
     `(ediff-odd-diff-C ((,c :inherit ediff-even-diff-C)))
+;;;; eglot
+    `(eglot-mode-line ((,c :inherit bold :foreground ,modeline-info)))
 ;;;; eldoc
     ;; NOTE: see https://github.com/purcell/package-lint/issues/187
     (list 'eldoc-highlight-function-argument `((,c :inherit warning :background ,bg-warning)))
