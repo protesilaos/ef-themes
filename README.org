@@ -1874,16 +1874,19 @@ to permit their use in free software.
 
 ** Function index
 :PROPERTIES:
+:INDEX: fn
 :CUSTOM_ID: h:c3fa52c2-988f-40f2-84a8-07699a61867c
 :END:
 
 ** Variable index
 :PROPERTIES:
+:INDEX: vr
 :CUSTOM_ID: h:02b12c7b-22e5-457b-8086-5bf7866db0de
 :END:
 
 ** Concept index
 :PROPERTIES:
+:INDEX: cp
 :CUSTOM_ID: h:c68456c8-ec2b-4d16-93d2-f9fcb18b2fdd
 :END:
 
