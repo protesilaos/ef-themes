@@ -615,11 +615,12 @@ We need to wrap our code in the ~ef-themes-with-colors~ and declare it
 as a function which we then add to the hook.  Here we show the general
 approach of putting those pieces together.
 
-To customize faces we use the built-in ~custom-set-faces~.  The value it
-accepts has the same syntax as that found in =ef-themes.el=,
-specifically the ~ef-themes-faces~ constant.  It thus is easy to copy
-lines from there and tweak them.  Let's pick a couple of font-lock faces
-(used in all programming modes, among others):
+To customize faces in a way that mirrors the Ef themes' source code,
+we use the built-in ~custom-set-faces~.  The value it accepts has the
+same syntax as that found in =ef-themes.el=, specifically the
+~ef-themes-faces~ constant.  It thus is easy to copy lines from there
+and tweak them.  Let's pick a couple of font-lock faces (used in all
+programming modes, among others):
 
 #+begin_src emacs-lisp
 (defun my-ef-themes-custom-faces ()
@@ -723,9 +724,15 @@ also has the benefit that it does not depend on functions such as
 function ~enable-theme~ is called internally by ~load-theme~, so the
 hook works everywhere.
 
+The downside of the theme-agnostic hook is that any functions added to
+it will likely not be able to benefit from macro calls that read the
+active theme, such as ~ef-themes-with-colors~ (the Modus themes have
+an equivalent macro).  Not all Emacs themes have the same
+capabilities.
+
 In this document, we always mention ~ef-themes-post-load-hook~ though
 the user can replace it with ~after-enable-theme-hook~ should they need
-to.
+to (provided they understand the implications).
 
 ** Add support for hl-todo
 :PROPERTIES:
