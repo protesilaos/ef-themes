@@ -254,9 +254,10 @@ A temporary switch to a proportionately spaced font (known in Emacs as
 ~variable-pitch~) can be enabled in the current buffer with the
 activation of the built-in ~variable-pitch-mode~.
 
-To get consistent typography, the user may need to edit the font family
-of the ~fixed-pitch~ face.  The =fontaine= package on GNU ELPA (by
-Protesilaos) can be helpful in that regard.
+To get consistent typography, the user may need to edit the font
+family of the ~fixed-pitch~ and ~variable-pitch~ faces.  The
+=fontaine= package on GNU ELPA (by Protesilaos) can be helpful in this
+regard.
 
 ** UI typeface
 :PROPERTIES:
@@ -278,9 +279,10 @@ In this context, the UI elements are:
 - ~tab-bar-mode~
 - ~tab-line-mode~
 
-To get consistent typography, the user may need to edit the font family
-of the ~variable-pitch~ face.  The =fontaine= package on GNU ELPA (by
-Protesilaos) can be helpful in that regard.
+To get consistent typography, the user may need to edit the font
+family of the ~fixed-pitch~ and ~variable-pitch~ faces.  The
+=fontaine= package on GNU ELPA (by Protesilaos) can be helpful in this
+regard.
 
 ** Option for headings
 :PROPERTIES:
