@@ -366,12 +366,12 @@ will retain the original aesthetic for that level.  For example:
 (setq ef-themes-headings
       '((1 . t)           ; keep the default style
         (2 . (variable-pitch 1.2))
-        (t . (variable-pitch)))) ; style for all other headings
+        (t . (variable-pitch)))) ; style for all unspecified headings
 
 (setq ef-themes-headings
       '((1 . (variable-pitch 1.6))
         (2 . (1.3))
-        (t . t))) ; default style for all other levels
+        (t . t))) ; default style for all unspecified levels
 #+end_src
 
 ** Style of region highlight
