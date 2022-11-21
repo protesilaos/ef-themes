@@ -64,7 +64,7 @@
       (green-warmer    "#80b25f")
       (green-cooler    "#60bf88")
       (green-faint     "#61a06c")
-      (yellow          "#d59c6f")
+      (yellow          "#e5b76f")
       (yellow-warmer   "#ea9955")
       (yellow-cooler   "#f59280")
       (yellow-faint    "#bf9f8f")
