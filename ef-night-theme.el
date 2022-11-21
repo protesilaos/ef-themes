@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-night "Legible dark theme with mostly green, blue, purple colors.")
+  (deftheme ef-night
+    "Legible dark theme with mostly green, blue, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-night-palette
     '(;; Basic tones

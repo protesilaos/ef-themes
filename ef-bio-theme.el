@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-bio "Legible dark theme with green, teal, blue, purple colors.")
+  (deftheme ef-bio
+    "Legible dark theme with green, teal, blue, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-bio-palette
     '(;; Basic tones

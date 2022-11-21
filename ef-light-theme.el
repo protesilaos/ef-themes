@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-light "Legible light theme with blue, magenta, cyan, purple colors.")
+  (deftheme ef-light
+    "Legible light theme with blue, magenta, cyan, purple colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-light-palette
     '(;; Basic tones

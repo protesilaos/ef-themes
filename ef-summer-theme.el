@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-summer "Legible light theme with magenta, purple, gold, cyan colors.")
+  (deftheme ef-summer
+    "Legible light theme with magenta, purple, gold, cyan colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-summer-palette
     '(;; Basic tones

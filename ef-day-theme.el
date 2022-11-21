@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-day "Legible light theme with warm, varied colors (yellow, red, green, purple).")
+  (deftheme ef-day
+    "Legible light theme with warm, varied colors (yellow, red, green, purple)."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-day-palette
     '(;; Basic tones

@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-frost "Legible light theme with blue, cyan, teal, purple colors.")
+  (deftheme ef-frost
+    "Legible light theme with blue, cyan, teal, purple colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-frost-palette
     '(;; Basic tones

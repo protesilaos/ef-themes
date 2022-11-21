@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-autumn "Legible dark theme with warm, varied colors (red, yellow, green, teal).")
+  (deftheme ef-autumn
+    "Legible dark theme with warm, varied colors (red, yellow, green, teal)."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-autumn-palette
     '(;; Basic tones

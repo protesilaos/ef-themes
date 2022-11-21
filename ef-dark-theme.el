@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-dark "Legible dark theme with blue, magenta, cyan, purple colors.")
+  (deftheme ef-dark
+    "Legible dark theme with blue, magenta, cyan, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-dark-palette
     '(;; Basic tones

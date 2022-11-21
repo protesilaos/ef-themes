@@ -40,7 +40,11 @@
   ;; Most of the colors here are defined simply to preserve
   ;; compatibility with the rest of the project.  We don't actually rely
   ;; on them for anything critical.
-  (deftheme ef-duo-dark "Legible dark theme with mostly blue and orange colors.")
+  (deftheme ef-duo-dark
+    "Legible dark theme with mostly blue and orange colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-duo-dark-palette
     '(;; Basic tones

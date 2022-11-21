@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-cherie "Legible dark theme with warm colors (mostly pink, magenta, gold)")
+  (deftheme ef-cherie
+    "Legible dark theme with warm colors (mostly pink, magenta, gold)"
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-cherie-palette
     '(;; Basic tones

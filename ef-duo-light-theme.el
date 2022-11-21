@@ -40,7 +40,11 @@
   ;; Most of the colors here are defined simply to preserve
   ;; compatibility with the rest of the project.  We don't actually rely
   ;; on them for anything critical.
-  (deftheme ef-duo-light "Legible light theme with mostly blue and yellow colors.")
+  (deftheme ef-duo-light
+    "Legible light theme with mostly blue and yellow colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-duo-light-palette
     '(;; Basic tones

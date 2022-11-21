@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-cyprus "Legible light theme with green, yellow, teal, red colors.")
+  (deftheme ef-cyprus
+    "Legible light theme with green, yellow, teal, red colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-cyprus-palette
     '(;; Basic tones

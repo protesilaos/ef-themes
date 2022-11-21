@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-winter "Legible dark theme with magenta, purple, fawn, teal colors.")
+  (deftheme ef-winter
+    "Legible dark theme with magenta, purple, fawn, teal colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-winter-palette
     '(;; Basic tones

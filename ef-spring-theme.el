@@ -37,7 +37,11 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (deftheme ef-spring "Legible light theme with cool, varied colors (green, cyan, red).")
+  (deftheme ef-spring
+    "Legible light theme with cool, varied colors (green, cyan, red)."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-spring-palette
     '(;; Basic tones
