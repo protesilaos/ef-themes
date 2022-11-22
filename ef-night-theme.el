@@ -134,7 +134,7 @@
       (bg-paren      "#664950")
       (bg-err        "#331419") ; check with err
       (bg-warning    "#332613") ; check with warning
-      (bg-info       "#00251f") ; check with info
+      (bg-info       "#002e1f") ; check with info
 
       (border        "#3a4a66")
       (cursor        "#00ccff")

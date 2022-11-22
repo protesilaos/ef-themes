@@ -132,7 +132,7 @@
       (bg-hl-line    "#f9e2b2")
       (bg-region     "#f0d2df")
       (bg-paren      "#8fcfdf")
-      (bg-err        "#ffddee") ; check with err
+      (bg-err        "#ffdde5") ; check with err
       (bg-warning    "#ffe0aa") ; check with warning
       (bg-info       "#ddf5cc") ; check with info
 

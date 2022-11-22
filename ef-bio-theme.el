@@ -132,9 +132,9 @@
       (bg-hl-line    "#00331f")
       (bg-region     "#3a3027")
       (bg-paren      "#664950")
-      (bg-err        "#361400") ; check with err
+      (bg-err        "#381400") ; check with err
       (bg-warning    "#332800") ; check with warning
-      (bg-info       "#132b00") ; check with info
+      (bg-info       "#132f00") ; check with info
 
       (border        "#525959")
       (cursor        "#35f038")
