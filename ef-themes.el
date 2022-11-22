@@ -1287,7 +1287,7 @@ Helper function for `ef-themes-preview-colors'."
     `(isearch-group-1 ((,c :background ,bg-green :foreground ,fg-intense)))
     `(isearch-group-2 ((,c :background ,bg-magenta :foreground ,fg-intense)))
     `(lazy-highlight ((,c :background ,bg-blue :foreground ,fg-intense)))
-    `(match ((,c :background ,bg-alt :foreground ,fg-intense)))
+    `(match ((,c :background ,bg-warning)))
     `(query-replace ((,c :background ,bg-red :foreground ,fg-intense)))
 ;;;; keycast
     `(keycast-command ((,c :inherit bold)))
