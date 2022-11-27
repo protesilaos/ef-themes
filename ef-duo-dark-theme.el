@@ -50,13 +50,13 @@
     '(;; Basic tones
       (bg-main     "#070019")
       (fg-main     "#d0d0d0")
-      (bg-dim      "#1c1926")
+      (bg-dim      "#1d1a26")
       (fg-dim      "#857f8f")
-      (bg-alt      "#262230")
+      (bg-alt      "#2a2739")
       (fg-alt      "#89afef")
 
-      (bg-active   "#363240")
-      (bg-inactive "#140e1c")
+      (bg-active   "#3a3749")
+      (bg-inactive "#13101f")
 
       ;; Basic hues for foreground values
       (red             "#ef656a")
