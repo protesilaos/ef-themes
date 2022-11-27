@@ -50,13 +50,13 @@
     '(;; Basic tones
       (bg-main     "#000a1f")
       (fg-main     "#ddddee")
-      (bg-dim      "#0f1c2d")
+      (bg-dim      "#121f34")
       (fg-dim      "#7f8797")
-      (bg-alt      "#19263a")
+      (bg-alt      "#243145")
       (fg-alt      "#90afef")
 
-      (bg-active   "#30354f")
-      (bg-inactive "#071225")
+      (bg-active   "#344155")
+      (bg-inactive "#0d1429")
 
       ;; Basic hues for foreground values
       (red             "#cf8560")
@@ -133,7 +133,7 @@
       (bg-hover      "#4f4f00")
       (bg-hover-alt  "#00405f")
       (bg-hl-line    "#2e2e1b")
-      (bg-region     "#202d3f")
+      (bg-region     "#223848")
       (bg-paren      "#0f4f9a")
       (bg-err        "#342d09") ; check with err
       (bg-warning    "#292900") ; check with warning
