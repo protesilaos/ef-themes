@@ -97,17 +97,17 @@
       (bg-cyan-subtle     "#004065")
 
       ;; Diffs
-      (bg-added          "#172c0f")
-      (bg-added-faint    "#0a1f00")
-      (bg-added-refine   "#203f10")
+      (bg-added          "#17360f")
+      (bg-added-faint    "#0a2900")
+      (bg-added-refine   "#204810")
 
-      (bg-changed        "#323200")
-      (bg-changed-faint  "#281a00")
-      (bg-changed-refine "#484800")
+      (bg-changed        "#363300")
+      (bg-changed-faint  "#2a1f00")
+      (bg-changed-refine "#4a4a00")
 
-      (bg-removed        "#46120a")
-      (bg-removed-faint  "#330a00")
-      (bg-removed-refine "#6a1a16")
+      (bg-removed        "#4b120a")
+      (bg-removed-faint  "#3a0a00")
+      (bg-removed-refine "#6f1a16")
 
       ;; Graphs
       (red-graph-0-bg     "#b52c2c")
