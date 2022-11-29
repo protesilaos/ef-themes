@@ -1095,7 +1095,7 @@ Helper function for `ef-themes-preview-colors'."
     `(eshell-ls-missing ((,c :inherit error)))
     `(eshell-ls-product ((,c :inherit shadow)))
     `(eshell-ls-readonly ((,c :foreground ,warning)))
-    `(eshell-ls-special ((,c :foreground ,magenta)))
+    `(eshell-ls-special ((,c :foreground ,accent-3)))
     `(eshell-ls-symlink ((,c :inherit link)))
     `(eshell-ls-unreadable ((,c :inherit shadow)))
     `(eshell-prompt ((,c :inherit minibuffer-prompt)))
