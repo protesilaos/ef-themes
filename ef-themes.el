@@ -1600,7 +1600,7 @@ Helper function for `ef-themes-preview-colors'."
     `(org-checkbox ((,c :foreground ,warning)))
     `(org-checkbox-statistics-done ((,c :inherit org-done)))
     `(org-checkbox-statistics-todo ((,c :inherit org-todo)))
-    `(org-clock-overlay ((,c :background ,bg-alt :foreground ,red-cooler)))
+    `(org-clock-overlay ((,c :background ,bg-hover-alt)))
     `(org-code ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-1)))
     `(org-column ((,c :inherit default :background ,bg-alt)))
     `(org-column-title ((,c :inherit (bold default) :underline t :background ,bg-alt)))
