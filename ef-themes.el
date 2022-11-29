@@ -1944,6 +1944,8 @@ Helper function for `ef-themes-preview-colors'."
 
 ;;; Theme macros
 
+;;;; Instantiate an Ef theme
+
 ;;;###autoload
 (defmacro ef-themes-theme (name palette)
   "Bind NAME's color PALETTE around face specs and variables.
@@ -1966,7 +1968,7 @@ Those are stored in `ef-themes-faces' and
        (custom-theme-set-faces ',name ,@ef-themes-faces)
        (custom-theme-set-variables ',name ,@ef-themes-custom-variables))))
 
-;;; Use theme colors
+;;;; Use theme colors
 
 (defmacro ef-themes-with-colors (&rest body)
   "Evaluate BODY with colors from current palette bound."
@@ -1989,6 +1991,8 @@ Those are stored in `ef-themes-faces' and
                       colors))
        (ignore c ,@colors)            ; Silence unused variable warnings
        ,@body)))
+
+;;;; Add themes from package to path
 
 ;;;###autoload
 (when load-file-name
