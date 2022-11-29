@@ -52,7 +52,7 @@
       (bg-alt      "#36322f")
       (fg-alt      "#70a89f")
 
-      (bg-active   "#46423f")
+      (bg-active   "#56524f")
       (bg-inactive "#15140d")
 
       ;; Basic hues for foreground values
