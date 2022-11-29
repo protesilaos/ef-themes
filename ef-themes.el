@@ -1759,12 +1759,6 @@ Helper function for `ef-themes-preview-colors'."
     `(ruler-mode-margins ((,c :inherit ruler-mode-default :foreground ,bg-main)))
     `(ruler-mode-pad ((,c :inherit ruler-mode-default :background ,bg-alt :foreground ,fg-dim)))
     `(ruler-mode-tab-stop ((,c :inherit ruler-mode-default :foreground ,yellow)))
-;;;; selectrum
-    `(selectrum-completion-annotation ((,c :inherit completions-annotations)))
-    `(selectrum-completion-docsig ((,c :inherit completions-annotations)))
-    `(selectrum-current-candidate ((,c :background ,bg-completion)))
-    `(selectrum-group-title ((,c :inherit bold :foreground ,name)))
-    `(selectrum-mouse-highlight ((,c :inherit highlight)))
 ;;;; show-paren-mode
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))

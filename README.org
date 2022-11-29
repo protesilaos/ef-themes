@@ -1057,7 +1057,6 @@ everything most users need.
 - recursion-indicator
 - regexp-builder (re-builder)
 - ruler-mode
-- selectrum
 - shell-script-mode (sh-mode)
 - show-paren-mode
 - shr
