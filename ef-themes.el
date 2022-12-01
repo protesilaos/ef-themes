@@ -1320,7 +1320,6 @@ Helper function for `ef-themes-preview-colors'."
     `(magit-blame-date (( )))
     `(magit-blame-dimmed ((,c :inherit shadow)))
     `(magit-blame-hash (( )))
-    `(magit-blame-heading ((,c :background ,bg-alt :extend t)))
     `(magit-blame-highlight ((,c :background ,bg-active :foreground ,fg-intense)))
     `(magit-blame-name (( )))
     `(magit-blame-summary ((  )))
