@@ -41,10 +41,7 @@
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
   (deftheme ef-deuteranopia-light
-    "Legible light theme, optimized for red-green color deficiency."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme, optimized for red-green color deficiency.")
 
   (defconst ef-deuteranopia-light-palette
     '(;; Basic tones
@@ -206,5 +203,8 @@
   (ef-themes-theme ef-deuteranopia-light ef-deuteranopia-light-palette)
 
   (provide-theme 'ef-deuteranopia-light))
+
+;;;###theme-autoload
+(put 'ef-deuteranopia-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-deuteranopia-light-theme.el ends here

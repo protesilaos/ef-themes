@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-spring
-    "Legible light theme with cool, varied colors (green, cyan, red)."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme with cool, varied colors (green, cyan, red).")
 
   (defconst ef-spring-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-spring ef-spring-palette)
 
   (provide-theme 'ef-spring))
+
+;;;###theme-autoload
+(put 'ef-spring 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-spring-theme.el ends here

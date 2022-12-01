@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-cyprus
-    "Legible light theme with green, yellow, teal, red colors."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme with green, yellow, teal, red colors.")
 
   (defconst ef-cyprus-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-cyprus ef-cyprus-palette)
 
   (provide-theme 'ef-cyprus))
+
+;;;###theme-autoload
+(put 'ef-cyprus 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-cyprus-theme.el ends here

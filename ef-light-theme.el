@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-light
-    "Legible light theme with blue, magenta, cyan, purple colors."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme with blue, magenta, cyan, purple colors.")
 
   (defconst ef-light-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-light ef-light-palette)
 
   (provide-theme 'ef-light))
+
+;;;###theme-autoload
+(put 'ef-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-light-theme.el ends here

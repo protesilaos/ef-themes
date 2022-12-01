@@ -41,10 +41,7 @@
   ;; compatibility with the rest of the project.  We don't actually rely
   ;; on them for anything critical.
   (deftheme ef-duo-light
-    "Legible light theme with mostly blue and yellow colors."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme with mostly blue and yellow colors.")
 
   (defconst ef-duo-light-palette
     '(;; Basic tones
@@ -207,5 +204,8 @@
   (ef-themes-theme ef-duo-light ef-duo-light-palette)
 
   (provide-theme 'ef-duo-light))
+
+;;;###theme-autoload
+(put 'ef-duo-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-duo-light-theme.el ends here

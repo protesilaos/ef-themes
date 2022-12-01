@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-winter
-    "Legible dark theme with magenta, purple, fawn, teal colors."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible dark theme with magenta, purple, fawn, teal colors.")
 
   (defconst ef-winter-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-winter ef-winter-palette)
 
   (provide-theme 'ef-winter))
+
+;;;###theme-autoload
+(put 'ef-winter 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-winter-theme.el ends here

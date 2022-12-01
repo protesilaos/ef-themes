@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-dark
-    "Legible dark theme with blue, magenta, cyan, purple colors."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible dark theme with blue, magenta, cyan, purple colors.")
 
   (defconst ef-dark-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-dark ef-dark-palette)
 
   (provide-theme 'ef-dark))
+
+;;;###theme-autoload
+(put 'ef-dark 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-dark-theme.el ends here

@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-day
-    "Legible light theme with warm, varied colors (yellow, red, green, purple)."
-    :background-mode 'light
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible light theme with warm, varied colors (yellow, red, green, purple).")
 
   (defconst ef-day-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-day ef-day-palette)
 
   (provide-theme 'ef-day))
+
+;;;###theme-autoload
+(put 'ef-day 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-day-theme.el ends here

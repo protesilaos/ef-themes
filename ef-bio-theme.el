@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-bio
-    "Legible dark theme with green, teal, blue, purple colors."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible dark theme with green, teal, blue, purple colors.")
 
   (defconst ef-bio-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-bio ef-bio-palette)
 
   (provide-theme 'ef-bio))
+
+;;;###theme-autoload
+(put 'ef-bio 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-bio-theme.el ends here

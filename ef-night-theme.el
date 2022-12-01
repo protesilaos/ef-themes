@@ -38,10 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-night
-    "Legible dark theme with mostly green, blue, purple colors."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible dark theme with mostly green, blue, purple colors.")
 
   (defconst ef-night-palette
     '(;; Basic tones
@@ -203,5 +200,8 @@
   (ef-themes-theme ef-night ef-night-palette)
 
   (provide-theme 'ef-night))
+
+;;;###theme-autoload
+(put 'ef-night 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-night-theme.el ends here

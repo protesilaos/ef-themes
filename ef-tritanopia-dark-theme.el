@@ -41,10 +41,7 @@
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
   (deftheme ef-tritanopia-dark
-    "Legible dark theme, optimized for blue-yellow color deficiency."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
+    "Legible dark theme, optimized for blue-yellow color deficiency.")
 
   (defconst ef-tritanopia-dark-palette
     '(;; Basic tones
@@ -206,5 +203,8 @@
   (ef-themes-theme ef-tritanopia-dark ef-tritanopia-dark-palette)
 
   (provide-theme 'ef-tritanopia-dark))
+
+;;;###theme-autoload
+(put 'ef-tritanopia-dark 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-tritanopia-dark-theme.el ends here
