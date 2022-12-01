@@ -818,7 +818,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; calendar and diary
     `(calendar-month-header ((,c :inherit bold)))
     `(calendar-today ((,c :inherit bold :underline t)))
-    `(calendar-weekday-header ((,c :foreground ,fg-dim)))
+    `(calendar-weekday-header ((,c :foreground ,fg-alt)))
     `(calendar-weekend-header ((,c :foreground ,err)))
     `(diary ((,c :background ,bg-dim :foreground ,accent-0)))
     `(diary-anniversary ((,c :foreground ,accent-1)))
