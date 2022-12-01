@@ -348,14 +348,12 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
          (style-listp (listp style))
          (properties style)
          (var (when (memq 'variable-pitch properties) 'variable-pitch))
-         (varbold (if var
-                      (append (list 'bold) (list var))
-                    'bold))
          (weight (when style-listp (ef-themes--weight style))))
     (list :inherit
           (cond
            (weight var)
-           (varbold))
+           (var (append (list 'bold) (list var)))
+           ('bold))
           :height
           (ef-themes--alist-or-seq properties 'height #'floatp 'unspecified)
           :weight
