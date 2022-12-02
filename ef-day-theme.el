@@ -158,6 +158,7 @@
       (date cyan-cooler)
       (name yellow)
       (keybind red-warmer)
+      (identifier magenta-faint)
       (prompt yellow)
 
       (builtin red-cooler)

@@ -161,6 +161,7 @@
       (date cyan-cooler)
       (name magenta)
       (keybind red-cooler)
+      (identifier magenta-faint)
       (prompt cyan)
 
       (builtin magenta)

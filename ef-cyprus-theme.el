@@ -158,6 +158,7 @@
       (date yellow-cooler)
       (name green-warmer)
       (keybind red)
+      (identifier green-faint)
       (prompt green)
 
       (builtin green-warmer)

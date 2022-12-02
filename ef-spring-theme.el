@@ -158,6 +158,7 @@
       (date cyan)
       (name green-cooler)
       (keybind magenta-warmer)
+      (identifier magenta-faint)
       (prompt green)
 
       (builtin green)

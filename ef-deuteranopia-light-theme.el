@@ -161,6 +161,7 @@
       (date yellow-cooler)
       (name blue-warmer)
       (keybind yellow-warmer)
+      (identifier cyan-faint)
       (prompt blue)
 
       (builtin cyan)

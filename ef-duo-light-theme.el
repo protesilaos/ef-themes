@@ -162,6 +162,7 @@
       (date cyan-cooler)
       (name blue)
       (keybind blue-cooler)
+      (identifier red-faint)
       (prompt blue)
 
       (builtin cyan-cooler)

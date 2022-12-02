@@ -835,7 +835,7 @@ Helper function for `ef-themes-preview-colors'."
     `(cider-repl-stdout-face ((,c :foreground ,info)))
     `(cider-warning-highlight-face ((,c :inherit ef-themes-underline-warning)))
 ;;;; change-log and log-view (`vc-print-log' and `vc-print-root-log')
-    `(change-log-acknowledgment ((,c :inherit shadow)))
+    `(change-log-acknowledgment ((,c :foreground ,identifier)))
     `(change-log-conditionals ((,c :inherit error)))
     `(change-log-date ((,c :foreground ,date)))
     `(change-log-email ((,c :foreground ,fg-alt)))
@@ -849,7 +849,7 @@ Helper function for `ef-themes-preview-colors'."
     `(log-edit-unknown-header ((,c :inherit shadow)))
     `(log-view-commit-body (( )))
     `(log-view-file ((,c :inherit bold)))
-    `(log-view-message ((,c :inherit shadow)))
+    `(log-view-message ((,c :foreground ,identifier)))
 ;;;; clojure-mode
     `(clojure-keyword-face ((,c :inherit font-lock-builtin-face)))
 ;;;; company-mode
@@ -1147,10 +1147,10 @@ Helper function for `ef-themes-preview-colors'."
     `(git-commit-overlong-summary ((,c :background ,bg-warning :foreground ,warning)))
     `(git-commit-summary ((,c :inherit bold :foreground ,accent-0)))
 ;;;; git-rebase
-    `(git-rebase-comment-hash ((,c :inherit font-lock-comment-face :foreground ,constant)))
+    `(git-rebase-comment-hash ((,c :inherit (bold font-lock-comment-face) :foreground ,identifier)))
     `(git-rebase-comment-heading  ((,c :inherit (bold font-lock-comment-face))))
     `(git-rebase-description ((,c :foreground ,fg-main)))
-    `(git-rebase-hash ((,c :foreground ,constant)))
+    `(git-rebase-hash ((,c :foreground ,identifier)))
 ;;;; gnus
     `(gnus-button ((,c :inherit button)))
     `(gnus-cite-1 ((,c :inherit message-cited-text-1)))
@@ -1348,7 +1348,7 @@ Helper function for `ef-themes-preview-colors'."
     `(magit-diffstat-removed ((,c :inherit error)))
     `(magit-dimmed ((,c :inherit shadow)))
     `(magit-filename ((,c :foreground ,name)))
-    `(magit-hash ((,c :inherit shadow)))
+    `(magit-hash ((,c :foreground ,identifier)))
     `(magit-head ((,c :inherit magit-branch-local)))
     `(magit-header-line ((,c :inherit bold)))
     `(magit-header-line-key ((,c :inherit ef-themes-key-binding)))
