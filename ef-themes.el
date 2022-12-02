@@ -141,7 +141,7 @@ themes that form part of this collection."
 This is a helper variable intended for internal use.")
 
 (defcustom ef-themes-headings nil
-  "Heading styles with optional list of values for levels 0-8.
+  "Heading styles with optional list of values per heading level.
 
 This is an alist that accepts a (KEY . LIST-OF-VALUES)
 combination.  The KEY is either a number, representing the

@@ -299,7 +299,7 @@ Org agenda headings.
 
 This is an alist that accepts a =(KEY . LIST-OF-VALUES)= combination.
 The =KEY= is either a number, representing the heading's level (0
-through 8) or =t=, which pertains to the fallback style.  The named
+through 8) or ~t~, which pertains to the fallback style.  The named
 keys =agenda-date= and =agenda-structure= apply to the Org agenda.
 
 Level 0 is a special heading: it is used for what counts as a document
