@@ -289,27 +289,34 @@ regard.
 :CUSTOM_ID: h:a7a02817-e324-43e9-a7d8-fde024530af6
 :END:
 
+[ Expanded as part of {{{development-version}}}.  It now accepts the
+  =agenda-date= and =agenda-structure= keys for the Org agenda headings. ]
+
 #+vindex: ef-themes-headings
 The user option ~ef-themes-headings~ provides support for individual
-heading styles for levels 0 through 8.
+heading styles for regular heading levels 0 through 8, as well as the
+Org agenda headings.
 
-This is an alist that accepts a =(key . list-of-values)= combination.
-The key is either a number, representing the heading's level (0
-through 8) or =t=, which pertains to the fallback style.
+This is an alist that accepts a =(KEY . LIST-OF-VALUES)= combination.
+The =KEY= is either a number, representing the heading's level (0
+through 8) or =t=, which pertains to the fallback style.  The named
+keys =agenda-date= and =agenda-structure= apply to the Org agenda.
 
 Level 0 is a special heading: it is used for what counts as a document
 title or equivalent, such as the =#+title= construct we find in Org
 files.  Levels 1-8 are regular headings.
 
-The list of values covers symbols that refer to properties, as described
-below.  Here is a complete sample, followed by a presentation of all
-available properties:
+The =LIST-OF-VALUES= covers symbols that refer to properties, as
+described below.  Here is a complete sample with various stylistic
+combinations, followed by a presentation of all available properties:
 
 #+begin_src emacs-lisp
 (setq ef-themes-headings
       '((1 . (light variable-pitch 1.5))
         (2 . (regular 1.3))
         (3 . (1.1))
+        (agenda-date (1.3))
+        (agenda-structure (variable-pitch light 1.8))
         (t . (variable-pitch))))
 #+end_src
 
