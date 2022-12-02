@@ -9,6 +9,142 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.10.0 on 2022-12-02
+:PROPERTIES:
+:CUSTOM_ID: h:763e6cf6-78b4-43a0-a582-7b00ce9210cc
+:END:
+
+** New user option for highlighted region
+:PROPERTIES:
+:CUSTOM_ID: h:4ff356d1-5aad-442c-9dcc-08b78d985714
+:END:
+
+The ~ef-themes-region~ accepts a list of symbols that affect how the
+region looks.  The manual or the variable's doc string describe the
+technicalities.  Here is a sample:
+
+#+begin_src emacs-lisp
+(setq ef-themes-region '(intense no-extend))
+#+end_src
+
+Remember that changes to theme user options must be done before
+loading a theme.  For any subsequent customisation, a theme re-load is
+required.
+
+** The ~ef-themes-headings~ now affects the Org agenda
+:PROPERTIES:
+:CUSTOM_ID: h:e9e5fec6-9566-4b47-be05-ec82dccca7c4
+:END:
+
+Before, the Org agenda headings would inherit from the generic heading
+levels 0 and 1.  This had undesired effects, as users often need a
+taller typeface for prose (e.g. regular Org files), though not
+necessarily for viewing their already well-structured Org agenda.
+
+The ~ef-themes-headings~ can now control the Org agenda date and
+structure headings directly.  A complete example:
+
+#+begin_src emacs-lisp
+(setq ef-themes-headings ; read the manual's entry or the doc string
+      '((0 . (variable-pitch light 1.9))
+        (1 . (variable-pitch light 1.8))
+        (2 . (variable-pitch light 1.7))
+        (3 . (variable-pitch semilight 1.6))
+        (4 . (variable-pitch semilight 1.5))
+        (5 . (variable-pitch regular 1.4))
+        (6 . (variable-pitch regular 1.3))
+        (7 . (variable-pitch 1.2))    ; absence of weight means `bold'
+        (agenda-date . (semilight 1.5))
+        (agenda-structure . (variable-pitch light 1.9))
+        (t . (variable-pitch 1.1))))
+#+end_src
+
+In Org agenda buffers, the "structure" is the type of heading that
+describes the current block of content.  In the generic agenda, it is
+the first line, which reads something like =Week-agenda (W48):=.
+
+Note that Org re-uses heading levels past 8.  This is not the theme's
+work, so heading 9 looks the same as 1.  Check the user options
+~org-level-faces~, ~org-n-level-faces~ for ways to change this.
+
+** Support for more packages
+:PROPERTIES:
+:CUSTOM_ID: h:fb734e02-93fc-4ec1-a941-69b6c1b00835
+:END:
+
++ cider
++ clojure-mode
++ eglot
++ perspective.  Thanks to Walheimat for the contribution.  This was
+  done in pull request 18 on the GitHub mirror:
+  <https://github.com/protesilaos/ef-themes/pull/18>.  The change is
+  below the ~15 line limit.  It does not require copyright assignment
+  to the Free Software Foundation.
++ tree-sitter
+
+** Lots of small tweaks to colour values
+:PROPERTIES:
+:CUSTOM_ID: h:55a1f31f-e99c-463d-8646-dbad95e5279e
+:END:
+
+All themes have enjoyed attention to their details.  The general idea
+is that some colours are fine-tuned to look better in their context.
+In most cases, the change is subtle and can only be noticed when
+comparing samples side-by-side.  Some more noticeable effects:
+
++ All neutral backgrounds that are used for elements such as the
+  ~tab-bar-mode~, the ~header-line~, the mode lines, and the like, are
+  all amplified.  They should now be easier to discern, especially on
+  monitors with inaccurate reproduction of grey values.
+
++ The ~match~ face, which is used by Grep, Occur, and related, now
+  uses a coloured background instead of a neutral grey.  This makes it
+  easier to stand out.  The choice of colour is consistent with the
+  backgrounds used by Isearch for the current and other matches: they
+  do not clash (e.g. a user may perform a search inside an Occur
+  buffer).
+
++ The =M-x calendar= weekdays and weekends are rendered in distinct
+  colours.  Weekends stand out the same way they do in physical
+  calendars and common apps.
+
++ The Org agenda date headings follow the same style as those of the
+  =M-x calendar=.  THIS IS EXPERIMENTAL in the hope of receiving
+  feedback about weekends standing out.  If the community thinks the
+  effect is inappropriate, I will revert this change or, anyhow, adapt
+  accordingly.  Though please give it a fair chance.
+
++ Magit diff hunk headings now use more appropriate shades of grey.
+  The active/current diff hunk heading stands out better, while
+  inactive hunk headings are distinguishable from the diff's context.
+
++ Git/VC commit hashes have a tinted foreground instead of a dim grey.
+  They are thus easier to spot in various contexts, such as Magit
+  rebase operations and =M-x vc-print-root-log=.
+
++ The yellow used for strings in the ~ef-cherie~ theme is now a bit
+  more gold.  This helps strings stand out when placed beside
+  functions.
+
++ The ~ef-night~ heading 4 no longer uses the same red as that of the
+  =TODO= Org keyword.  The previous design was a mistake on my part.
+  Heading levels 6 and 8 are tweaked accordingly.
+
++ The heading level 6 of ~ef-summer~ and ~ef-spring~ are also
+  disambiguated from Org's =TODO=, while retaining their character.
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:3a258d27-6318-43cf-8ade-509d09f066ef
+:END:
+
++ Refined various faces in the interest of consistency and usability.
++ Applied the new theme properties that Emacs 29 can read.  These tell
+  Emacs whether the theme is light or dark and the family it belongs
+  to.
++ Clarified some statements in the manual and/or the various doc
+  strings in the source code.
+
 * Version 0.9.0 on 2022-10-28
 :PROPERTIES:
 :CUSTOM_ID: h:b5e83e34-9af3-41b6-a9a1-ab9b3555b2e9
