@@ -251,7 +251,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | green          | #006f00 |    6.01 |    5.43 |    4.98 |    5.80 |
 | green-warmer   | #557400 |    5.07 |    4.58 |    4.20 |    4.89 |
 | green-cooler   | #00824f |    4.57 |    4.13 |    3.79 |    4.41 |
-| green-faint    | #4f654c |    5.97 |    5.39 |    4.95 |    5.76 |
+| green-faint    | #3a6f48 |    5.55 |    5.01 |    4.60 |    5.36 |
 | yellow         | #a7601f |    4.54 |    4.10 |    3.76 |    4.38 |
 | yellow-warmer  | #bf4400 |    4.87 |    4.40 |    4.04 |    4.70 |
 | yellow-cooler  | #a2604f |    4.56 |    4.11 |    3.77 |    4.40 |
@@ -328,7 +328,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | magenta        | #d369af |    6.41 |    5.31 |    4.32 |    5.72 |
 | magenta-warmer | #e580ea |    8.61 |    7.13 |    5.80 |    7.68 |
 | magenta-cooler | #af85ff |    7.62 |    6.32 |    5.14 |    6.80 |
-| magenta-faint  | #c57faf |    7.03 |    5.83 |    4.74 |    6.27 |
+| magenta-faint  | #c58faf |    7.03 |    5.83 |    4.74 |    6.27 |
 | cyan           | #4fbaef |    9.60 |    7.96 |    6.47 |    8.57 |
 | cyan-warmer    | #6fafff |    9.25 |    7.67 |    6.24 |    8.25 |
 | cyan-cooler    | #1dbfcf |    9.41 |    7.80 |    6.34 |    8.39 |
@@ -790,7 +790,7 @@ work with the overall design of the project.
 | green          | #217a3c |    5.37 |    4.67 |    3.88 |    5.10 |
 | green-warmer   | #4a7d00 |    4.97 |    4.32 |    3.59 |    4.72 |
 | green-cooler   | #008858 |    4.50 |    3.92 |    3.25 |    4.28 |
-| green-faint    | #61756c |    4.92 |    4.28 |    3.55 |    4.67 |
+| green-faint    | #41754c |    5.42 |    4.71 |    3.92 |    5.15 |
 | yellow         | #a45f22 |    4.95 |    4.31 |    3.58 |    4.71 |
 | yellow-warmer  | #b6532f |    4.92 |    4.28 |    3.55 |    4.67 |
 | yellow-cooler  | #b65050 |    4.94 |    4.29 |    3.57 |    4.69 |
@@ -802,7 +802,7 @@ work with the overall design of the project.
 | magenta        | #ba35af |    4.98 |    4.33 |    3.60 |    4.73 |
 | magenta-warmer | #cf25aa |    4.67 |    4.06 |    3.37 |    4.43 |
 | magenta-cooler | #6052cf |    5.82 |    5.07 |    4.21 |    5.53 |
-| magenta-faint  | #bf3580 |    5.20 |    4.52 |    3.76 |    4.94 |
+| magenta-faint  | #af569f |    4.51 |    3.92 |    3.26 |    4.29 |
 | cyan           | #1f6fbf |    5.14 |    4.47 |    3.71 |    4.88 |
 | cyan-warmer    | #3f6faf |    5.12 |    4.45 |    3.70 |    4.86 |
 | cyan-cooler    | #1f77bb |    4.76 |    4.14 |    3.44 |    4.52 |
@@ -997,7 +997,7 @@ work with the overall design of the project.
 | magenta        | #ba35af |    4.57 |    4.05 |    3.58 |    4.29 |
 | magenta-warmer | #cb1aaa |    4.51 |    4.00 |    3.54 |    4.23 |
 | magenta-cooler | #8e44f3 |    4.51 |    3.99 |    3.54 |    4.23 |
-| magenta-faint  | #bf3580 |    4.77 |    4.23 |    3.74 |    4.48 |
+| magenta-faint  | #a45392 |    4.55 |    4.03 |    3.57 |    4.27 |
 | cyan           | #1f6fbf |    4.71 |    4.18 |    3.70 |    4.42 |
 | cyan-warmer    | #3f6faf |    4.69 |    4.16 |    3.68 |    4.40 |
 | cyan-cooler    | #0f7b8f |    4.53 |    4.01 |    3.55 |    4.25 |
@@ -1115,7 +1115,7 @@ work with the overall design of the project.
 | green          | #057800 |    5.28 |    4.67 |    4.36 |    4.94 |
 | green-warmer   | #4f7d0f |    4.56 |    4.03 |    3.77 |    4.27 |
 | green-cooler   | #007f6f |    4.57 |    4.04 |    3.78 |    4.28 |
-| green-faint    | #61756c |    4.57 |    4.04 |    3.77 |    4.27 |
+| green-faint    | #41754c |    5.03 |    4.45 |    4.16 |    4.71 |
 | yellow         | #a45f22 |    4.60 |    4.07 |    3.80 |    4.30 |
 | yellow-warmer  | #b8532f |    4.52 |    3.99 |    3.73 |    4.23 |
 | yellow-cooler  | #b65050 |    4.58 |    4.05 |    3.79 |    4.29 |
