@@ -193,7 +193,7 @@
       (rainbow-3 cyan)
       (rainbow-4 magenta)
       (rainbow-5 blue-warmer)
-      (rainbow-6 red-warmer)
+      (rainbow-6 red-cooler)
       (rainbow-7 cyan-cooler)
       (rainbow-8 yellow-cooler))
     "The `ef-summer' palette.")
