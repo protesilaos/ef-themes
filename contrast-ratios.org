@@ -1046,7 +1046,7 @@ work with the overall design of the project.
 | red            | #f48359 |    7.43 |    6.07 |    5.10 |    6.95 |
 | red-warmer     | #ff7560 |    7.18 |    5.87 |    4.93 |    6.72 |
 | red-cooler     | #ff85aa |    8.28 |    6.77 |    5.69 |    7.75 |
-| red-faint      | #e47f72 |    6.83 |    5.58 |    4.69 |    6.39 |
+| red-faint      | #e07a9a |    6.69 |    5.46 |    4.59 |    6.26 |
 | green          | #60b444 |    7.31 |    5.97 |    5.02 |    6.84 |
 | green-warmer   | #a0c27f |    9.48 |    7.75 |    6.51 |    8.87 |
 | green-cooler   | #60bf88 |    8.39 |    6.85 |    5.76 |    7.85 |
@@ -1111,7 +1111,7 @@ work with the overall design of the project.
 | red            | #c3303a |    5.12 |    4.53 |    4.23 |    4.80 |
 | red-warmer     | #d03033 |    4.69 |    4.15 |    3.88 |    4.39 |
 | red-cooler     | #c01f5f |    5.41 |    4.78 |    4.47 |    5.06 |
-| red-faint      | #c24552 |    4.57 |    4.04 |    3.77 |    4.28 |
+| red-faint      | #a24568 |    5.43 |    4.80 |    4.49 |    5.09 |
 | green          | #057800 |    5.28 |    4.67 |    4.36 |    4.94 |
 | green-warmer   | #4f7d0f |    4.56 |    4.03 |    3.77 |    4.27 |
 | green-cooler   | #007f6f |    4.57 |    4.04 |    3.78 |    4.28 |

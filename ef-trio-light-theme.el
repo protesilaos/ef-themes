@@ -56,7 +56,7 @@
       (red             "#c3303a")
       (red-warmer      "#d03033")
       (red-cooler      "#c01f5f")
-      (red-faint       "#c24552")
+      (red-faint       "#a24568")
       (green           "#057800")
       (green-warmer    "#4f7d0f")
       (green-cooler    "#007f6f")
@@ -158,7 +158,7 @@
       (date cyan-cooler)
       (name blue)
       (keybind magenta-warmer)
-      (identifier green-faint)
+      (identifier red-faint)
       (prompt blue-cooler)
 
       (builtin magenta-cooler)
