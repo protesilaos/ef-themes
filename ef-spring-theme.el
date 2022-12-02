@@ -193,7 +193,7 @@
       (rainbow-3 blue-warmer)
       (rainbow-4 yellow-warmer)
       (rainbow-5 cyan)
-      (rainbow-6 red-warmer)
+      (rainbow-6 magenta)
       (rainbow-7 magenta-cooler)
       (rainbow-8 yellow-cooler))
     "The `ef-spring' palette.")
