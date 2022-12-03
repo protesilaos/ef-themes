@@ -491,7 +491,8 @@ is ignored in this scenario."
 (defun ef-themes--toggle-theme-p ()
   "Return non-nil if `ef-themes-to-toggle' are valid."
   (mapc (lambda (theme)
-          (if (memq theme ef-themes-collection)
+          (if (or (memq theme ef-themes-collection)
+                  (memq theme (ef-themes--list-known-themes)))
               theme
             (user-error "`%s' is not part of `ef-themes-collection'" theme)))
         ef-themes-to-toggle))
