@@ -1052,6 +1052,7 @@ everything most users need.
 - outline-minor-faces
 - package (=M-x list-packages=)
 - perspective
+- powerline [ Part of {{{development-version}}} ]
 - pulsar
 - pulse
 - rainbow-delimiters
@@ -1127,8 +1128,6 @@ unwillingness to be good Emacs citizens:
 
 - ein (Emacs IPython Notebook) :: external dependency that I don't use.
 
-- elfeed-goodies :: depends on =powerline=...
-
 - ement.el :: has an external dependency that I don't use.
 
 - helm :: it is complex and makes inconsiderate use of color.  Prefer
@@ -1142,22 +1141,14 @@ unwillingness to be good Emacs citizens:
 
 - lsp-mode :: has external dependencies that I don't use.
 
-- powerline :: requires too many shades of background and generally
-  violates our expectation of how the mode-line is supposed to look by
-  placing the designated default background in unexpected places.
-
 - solaire :: in principle, it is incompatible with practically every
   theme that is not designed around it.  Emacs does not distinguish
   between "UI" and "syntax" buffers.
-
-- spaceline :: same as =powerline=.
 
 - sx :: has an external dependency that I don't use.
 
 - telega :: has an external dependency that I don't use (I don't even
   have a smartphone).
-
-- telephone-line :: same as =powerline=.
 
 - treemacs :: it has too many dependencies and does too many things.
 
