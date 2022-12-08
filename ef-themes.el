@@ -324,10 +324,6 @@ Other examples:
   (when ef-themes-variable-pitch-ui
     (list :inherit 'variable-pitch)))
 
-(defun ef-themes--key-cdr (key alist)
-  "Get cdr of KEY in ALIST."
-  (cdr (assoc key alist)))
-
 (defun ef-themes--alist-or-seq (properties alist-key seq-pred seq-default)
   "Return value from alist or sequence.
 Check PROPERTIES for an alist value that corresponds to
@@ -348,8 +344,8 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
 
 (defun ef-themes--heading (level)
   "Conditional styles for `ef-themes-headings' per LEVEL heading."
-  (let* ((key (ef-themes--key-cdr level ef-themes-headings))
-         (style (or key (ef-themes--key-cdr t ef-themes-headings)))
+  (let* ((key (alist-get level ef-themes-headings))
+         (style (or key (alist-get t ef-themes-headings)))
          (style-listp (listp style))
          (properties style)
          (var (when (memq 'variable-pitch properties) 'variable-pitch))
