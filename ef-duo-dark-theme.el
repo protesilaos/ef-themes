@@ -100,14 +100,17 @@
       (bg-added          "#002d1f")
       (bg-added-faint    "#001f18")
       (bg-added-refine   "#003b2f")
+      (fg-added          "#a0e0a0")
 
       (bg-changed        "#323200")
       (bg-changed-faint  "#2a2000")
       (bg-changed-refine "#444000")
+      (fg-changed        "#efef80")
 
       (bg-removed        "#3d091f")
       (bg-removed-faint  "#27040f")
       (bg-removed-refine "#5b0f26")
+      (fg-removed        "#ffbfbf")
 
       ;; Graphs
       (red-graph-0-bg     "#b52c2c")
