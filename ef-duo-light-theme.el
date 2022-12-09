@@ -160,6 +160,7 @@
       (link cyan)
       (link-alt green-cooler)
       (date cyan-cooler)
+      (weekend red-faint) ; for M-x calendar and Org agenda
       (name blue)
       (keybind blue-cooler)
       (identifier red-faint)

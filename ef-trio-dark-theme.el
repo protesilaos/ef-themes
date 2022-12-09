@@ -156,6 +156,7 @@
       (link cyan)
       (link-alt magenta)
       (date cyan-cooler)
+      (weekend red-faint) ; for M-x calendar and Org agenda
       (name blue)
       (keybind magenta-warmer)
       (identifier red-faint)
