@@ -1560,7 +1560,7 @@ Helper function for `ef-themes-preview-colors'."
     `(notmuch-crypto-signature-good-key ((,c :inherit success)))
     `(notmuch-crypto-signature-unknown ((,c :inherit warning)))
     `(notmuch-jump-key ((,c :inherit ef-themes-key-binding)))
-    `(notmuch-message-summary-face ((,c :inherit bold :background ,bg-dim)))
+    `(notmuch-message-summary-face ((,c :inherit bold :background ,bg-alt)))
     `(notmuch-search-count ((,c :foreground ,fg-dim)))
     `(notmuch-search-date ((,c :foreground ,date)))
     `(notmuch-search-flagged-face ((,c :foreground ,err)))
