@@ -205,7 +205,10 @@
       (rainbow-8 magenta-faint))
     "The `ef-deuteranopia-dark' palette.")
 
-  (ef-themes-theme ef-deuteranopia-dark ef-deuteranopia-dark-palette)
+  (defvar ef-deuteranopia-dark-palette-overrides nil
+    "Overrides for `ef-deuteranopia-dark-palette'.")
+
+  (ef-themes-theme ef-deuteranopia-dark ef-deuteranopia-dark-palette ef-deuteranopia-dark-palette-overrides)
 
   (provide-theme 'ef-deuteranopia-dark))
 

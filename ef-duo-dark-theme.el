@@ -205,7 +205,10 @@
       (rainbow-8 green-cooler))
     "The `ef-duo-dark' palette.")
 
-  (ef-themes-theme ef-duo-dark ef-duo-dark-palette)
+  (defvar ef-duo-dark-palette-overrides nil
+    "Overrides for `ef-duo-dark-palette'.")
+
+  (ef-themes-theme ef-duo-dark ef-duo-dark-palette ef-duo-dark-palette-overrides)
 
   (provide-theme 'ef-duo-dark))
 

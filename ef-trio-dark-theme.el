@@ -202,7 +202,10 @@
       (rainbow-8 yellow-cooler))
     "The `ef-trio-dark' palette.")
 
-  (ef-themes-theme ef-trio-dark ef-trio-dark-palette)
+  (defvar ef-trio-dark-palette-overrides nil
+    "Overrides for `ef-trio-dark-palette'.")
+
+  (ef-themes-theme ef-trio-dark ef-trio-dark-palette ef-trio-dark-palette-overrides)
 
   (provide-theme 'ef-trio-dark))
 

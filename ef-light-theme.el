@@ -202,7 +202,10 @@
       (rainbow-8 yellow))
     "The `ef-light' palette.")
 
-  (ef-themes-theme ef-light ef-light-palette)
+  (defvar ef-light-palette-overrides nil
+    "Overrides for `ef-light-palette'.")
+
+  (ef-themes-theme ef-light ef-light-palette ef-light-palette-overrides)
 
   (provide-theme 'ef-light))
 

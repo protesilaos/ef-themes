@@ -202,7 +202,10 @@
       (rainbow-8 yellow-cooler))
     "The `ef-summer' palette.")
 
-  (ef-themes-theme ef-summer ef-summer-palette)
+  (defvar ef-summer-palette-overrides nil
+    "Overrides for `ef-summer-palette'.")
+
+  (ef-themes-theme ef-summer ef-summer-palette ef-summer-palette-overrides)
 
   (provide-theme 'ef-summer))
 

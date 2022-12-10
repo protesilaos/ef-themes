@@ -206,7 +206,10 @@
       (rainbow-8 green-cooler))
     "The `ef-duo-light' palette.")
 
-  (ef-themes-theme ef-duo-light ef-duo-light-palette)
+  (defvar ef-duo-light-palette-overrides nil
+    "Overrides for `ef-duo-light-palette'.")
+
+  (ef-themes-theme ef-duo-light ef-duo-light-palette ef-duo-light-palette-overrides)
 
   (provide-theme 'ef-duo-light))
 

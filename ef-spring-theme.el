@@ -202,7 +202,10 @@
       (rainbow-8 yellow-cooler))
     "The `ef-spring' palette.")
 
-  (ef-themes-theme ef-spring ef-spring-palette)
+  (defvar ef-spring-palette-overrides nil
+    "Overrides for `ef-spring-palette'.")
+
+  (ef-themes-theme ef-spring ef-spring-palette ef-spring-palette-overrides)
 
   (provide-theme 'ef-spring))
 

@@ -202,7 +202,10 @@
       (rainbow-8 magenta))
     "The `ef-bio' palette.")
 
-  (ef-themes-theme ef-bio ef-bio-palette)
+  (defvar ef-bio-palette-overrides nil
+    "Overrides for `ef-bio-palette'.")
+
+  (ef-themes-theme ef-bio ef-bio-palette ef-bio-palette-overrides)
 
   (provide-theme 'ef-bio))
 

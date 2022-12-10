@@ -202,7 +202,10 @@
       (rainbow-8 magenta-cooler))
     "The `ef-cherie' palette.")
 
-  (ef-themes-theme ef-cherie ef-cherie-palette)
+  (defvar ef-cherie-palette-overrides nil
+    "Overrides for `ef-cherie-palette'.")
+
+  (ef-themes-theme ef-cherie ef-cherie-palette ef-cherie-palette-overrides)
 
   (provide-theme 'ef-cherie))
 

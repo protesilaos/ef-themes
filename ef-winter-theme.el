@@ -202,7 +202,10 @@
       (rainbow-8 cyan-warmer))
     "The `ef-winter' palette.")
 
-  (ef-themes-theme ef-winter ef-winter-palette)
+  (defvar ef-winter-palette-overrides nil
+    "Overrides for `ef-winter-palette'.")
+
+  (ef-themes-theme ef-winter ef-winter-palette ef-winter-palette-overrides)
 
   (provide-theme 'ef-winter))
 

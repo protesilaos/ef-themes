@@ -202,7 +202,10 @@
       (rainbow-8 yellow))
     "The `ef-autumn' palette.")
 
-  (ef-themes-theme ef-autumn ef-autumn-palette)
+  (defvar ef-autumn-palette-overrides nil
+    "Overrides for `ef-autumn-palette'.")
+
+  (ef-themes-theme ef-autumn ef-autumn-palette ef-autumn-palette-overrides)
 
   (provide-theme 'ef-autumn))
 

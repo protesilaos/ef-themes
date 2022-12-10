@@ -202,7 +202,10 @@
       (rainbow-8 yellow))
     "The `ef-dark' palette.")
 
-  (ef-themes-theme ef-dark ef-dark-palette)
+  (defvar ef-dark-palette-overrides nil
+    "Overrides for `ef-dark-palette'.")
+
+  (ef-themes-theme ef-dark ef-dark-palette ef-dark-palette-overrides)
 
   (provide-theme 'ef-dark))
 

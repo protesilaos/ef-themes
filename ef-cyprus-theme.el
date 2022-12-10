@@ -202,7 +202,10 @@
       (rainbow-8 red))
     "The `ef-cyprus' palette.")
 
-  (ef-themes-theme ef-cyprus ef-cyprus-palette)
+  (defvar ef-cyprus-palette-overrides nil
+    "Overrides for `ef-cyprus-palette'.")
+
+  (ef-themes-theme ef-cyprus ef-cyprus-palette ef-cyprus-palette-overrides)
 
   (provide-theme 'ef-cyprus))
 

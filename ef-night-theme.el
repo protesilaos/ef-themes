@@ -202,7 +202,10 @@
       (rainbow-8 green-warmer))
     "The `ef-night' palette.")
 
-  (ef-themes-theme ef-night ef-night-palette)
+  (defvar ef-night-palette-overrides nil
+    "Overrides for `ef-night-palette'.")
+
+  (ef-themes-theme ef-night ef-night-palette ef-night-palette-overrides)
 
   (provide-theme 'ef-night))
 

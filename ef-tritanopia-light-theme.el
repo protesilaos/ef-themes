@@ -205,7 +205,10 @@
       (rainbow-8 red-faint))
     "The `ef-tritanopia-light' palette.")
 
-  (ef-themes-theme ef-tritanopia-light ef-tritanopia-light-palette)
+  (defvar ef-tritanopia-light-palette-overrides nil
+    "Overrides for `ef-tritanopia-light-palette'.")
+
+  (ef-themes-theme ef-tritanopia-light ef-tritanopia-light-palette ef-tritanopia-light-palette-overrides)
 
   (provide-theme 'ef-tritanopia-light))
 

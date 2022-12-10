@@ -417,6 +417,73 @@ Other examples:
 (setq ef-themes-region '(intense no-extend neutral))
 #+end_src
 
+** Palette overrides
+:PROPERTIES:
+:CUSTOM_ID: h:4b923795-4b23-4345-81e5-d1c108a84b6a
+:END:
+#+cindex: Override color values and semantic color mappings
+
+[ Part of {{{development-version}}}. ]
+
+Each theme defines its own color palette as well as semantic color
+mappings.  The former is the set of color values such as what shade of
+blue to use.  The latter refers to associations between a color value
+and a syntactic construct, such as a =variable= for variables in
+programming modes or =heading-1= for level 1 headings in Org and
+others.
+
+The definition is stored in the variable =ef-NAME-palette=, where
+=NAME= is the specifier of the theme, such as ~ef-summer-palette~ for
+the ~ef-summer~ theme.  Overrides for those associations are specified
+in the variable =ef-NAME-palette-overrides=.
+
+All associations take the form of =(KEY VALUE)= pairs.  For example,
+the ~ef-summer-palette~ contains =(blue-warmer "#5250ef")=.  Semantic
+color mappings are the same, though the =VALUE= is one of the named
+colors of the theme.  For instance, =ef-summer-palette= maps the
+aforementioned =blue-warmer= to =variable= thus =(variable blue-warmer)=.
+
+The easiest way to learn about a theme's definition is to use the
+command ~describe-variable~ (bound to =C-h v= by default) and then
+search for the =ef-NAME-palette=.  The resulting Help buffer will look
+like this:
+
+#+begin_example
+ef-summer-palette is a variable defined in ‘ef-summer-theme.el’.
+
+Its value is shown below.
+
+The ‘ef-summer’ palette.
+
+  This variable may be risky if used as a file-local variable.
+
+Value:
+((bg-main "#fff2f3")
+ (fg-main "#4f4073")
+
+[... Shortened for the purposes of this manual.]
+#+end_example
+
+The user can study this information to identify the overrides they
+wish to make.  Then they can specify them and re-load the theme for
+changes to take effect.  Sample of how to override a color value and a
+semantic mapping:
+
+#+begin_src emacs-lisp
+(setq ef-summer-palette-overrides
+      '((blue-warmer "#5230ff") ; original value is #5250ef
+        (variable cyan))) ; original value is blue-warmer
+#+end_src
+
+The overrides can contain as many associations as the user needs.
+
+Changes to color values are reflected in the preview of the theme's
+palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).  They are shown at the top of the
+buffer.  In the above example, the first instance of =blue-warmer= is
+the override and the second is the original one.
+
+Contact me if you need further help with this.
+
 * Loading a theme
 :PROPERTIES:
 :CUSTOM_ID: h:75d74aea-d17f-497f-a3b8-f0bf4c372de0
@@ -549,6 +616,9 @@ which reflects the given choice, like =ef-summer-preview-colors= for the
 #+findex: ef-themes-preview-colors-current
 The command ~ef-themes-preview-colors-current~ skips the minibuffer
 selection process and just produces a preview for the current Ef theme.
+
+Overrides to color values are reflected in the buffers produced by the
+aforementioned commands ([[#h:4b923795-4b23-4345-81e5-d1c108a84b6a][Palette overrides]]).
 
 * Use colors from the active Ef theme
 :PROPERTIES:

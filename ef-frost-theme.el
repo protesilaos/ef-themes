@@ -202,7 +202,10 @@
       (rainbow-8 cyan-warmer))
     "The `ef-frost' palette.")
 
-  (ef-themes-theme ef-frost ef-frost-palette)
+  (defvar ef-frost-palette-overrides nil
+    "Overrides for `ef-frost-palette'.")
+
+  (ef-themes-theme ef-frost ef-frost-palette ef-frost-palette-overrides)
 
   (provide-theme 'ef-frost))
 

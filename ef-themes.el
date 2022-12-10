@@ -415,15 +415,32 @@ foreground that is used with any of the intense backgrounds."
   "Return first enabled Ef theme."
   (car (ef-themes--list-enabled-themes)))
 
-(defun ef-themes--palette (theme)
-  "Return THEME palette as a symbol."
-  (when theme
-    (intern (format "%s-palette" theme))))
+(defun ef-themes--palette-symbol (theme &optional overrides)
+  "Return THEME palette as a symbol.
+With optional OVERRIDES, return THEME palette overrides as a
+symbol."
+  (when-let ((suffix (cond
+                      ((and theme overrides)
+                       "palette-overrides")
+                      (theme
+                       "palette"))))
+    (intern (format "%s-%s" theme suffix))))
 
-(defun ef-themes--current-theme-palette ()
-  "Return palette of active Ef theme, else produce `user-error'."
-  (if-let* ((palette (ef-themes--palette (ef-themes--current-theme))))
-      (symbol-value palette)
+(defun ef-themes--palette-value (theme &optional overrides)
+  "Return palette value of THEME with optional OVERRIDES."
+  (let ((base-value (symbol-value (ef-themes--palette-symbol theme))))
+    (if overrides
+        (append (symbol-value (ef-themes--palette-symbol theme :overrides)) base-value)
+      base-value)))
+
+(defun ef-themes--current-theme-palette (&optional overrides)
+  "Return palette value of active Ef theme, else produce `user-error'.
+With optional OVERRIDES return palette value plus whatever
+overrides."
+  (if-let ((theme (ef-themes--current-theme)))
+      (if overrides
+          (ef-themes--palette-value theme :overrides)
+        (ef-themes--palette-value theme))
     (user-error "No enabled Ef theme could be found")))
 
 (defun ef-themes--choose-subset ()
@@ -552,7 +569,7 @@ symbol."
 Routine for `ef-themes-preview-colors'."
   (let ((palette (seq-remove (lambda (cell)
                                (symbolp (cadr cell)))
-                             (symbol-value (ef-themes--palette theme))))
+                             (ef-themes--palette-value theme :overrides)))
         (current-buffer buffer)
         (current-theme theme))
     (with-help-window buffer
@@ -1953,17 +1970,20 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; Instantiate an Ef theme
 
 ;;;###autoload
-(defmacro ef-themes-theme (name palette)
+(defmacro ef-themes-theme (name palette &optional overrides)
   "Bind NAME's color PALETTE around face specs and variables.
 Face specifications are passed to `custom-theme-set-faces'.
 While variables are handled by `custom-theme-set-variables'.
 Those are stored in `ef-themes-faces' and
-`ef-themes-custom-variables' respectively."
+`ef-themes-custom-variables' respectively.
+
+Optional OVERRIDES are appended to PALETTE, overriding
+corresponding entries."
   (declare (indent 0))
   (let ((sym (gensym))
         (colors (mapcar #'car (symbol-value palette))))
     `(let* ((c '((class color) (min-colors 256)))
-            (,sym ,palette)
+            (,sym (append ,overrides ,palette))
             ,@(mapcar (lambda (color)
                         (list color
                               `(let* ((value (car (alist-get ',color ,sym))))
@@ -1987,7 +2007,7 @@ Those are stored in `ef-themes-faces' and
          ;; inside a function.
          (colors (mapcar #'car (ef-themes--current-theme-palette))))
     `(let* ((c '((class color) (min-colors 256)))
-            (,sym (ef-themes--current-theme-palette))
+            (,sym (ef-themes--current-theme-palette :overrides))
             ,@(mapcar (lambda (color)
                         (list color
                               `(let* ((value (car (alist-get ',color ,sym))))

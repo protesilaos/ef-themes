@@ -205,7 +205,10 @@
       (rainbow-8 cyan))
     "The `ef-deuteranopia-light' palette.")
 
-  (ef-themes-theme ef-deuteranopia-light ef-deuteranopia-light-palette)
+  (defvar ef-deuteranopia-light-palette-overrides nil
+    "Overrides for `ef-deuteranopia-light-palette'.")
+
+  (ef-themes-theme ef-deuteranopia-light ef-deuteranopia-light-palette ef-deuteranopia-light-palette-overrides)
 
   (provide-theme 'ef-deuteranopia-light))
 

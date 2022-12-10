@@ -202,7 +202,10 @@
       (rainbow-8 green-cooler))
     "The `ef-day' palette.")
 
-  (ef-themes-theme ef-day ef-day-palette)
+  (defvar ef-day-palette-overrides nil
+    "Overrides for `ef-day-palette'.")
+
+  (ef-themes-theme ef-day ef-day-palette ef-day-palette-overrides)
 
   (provide-theme 'ef-day))
 

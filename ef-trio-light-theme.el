@@ -202,7 +202,10 @@
       (rainbow-8 yellow-cooler))
     "The `ef-trio-light' palette.")
 
-  (ef-themes-theme ef-trio-light ef-trio-light-palette)
+  (defvar ef-trio-light-palette-overrides nil
+    "Overrides for `ef-trio-light-palette'.")
+
+  (ef-themes-theme ef-trio-light ef-trio-light-palette ef-trio-light-palette-overrides)
 
   (provide-theme 'ef-trio-light))
 
