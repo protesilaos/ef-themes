@@ -1355,7 +1355,7 @@ Helper function for `ef-themes-preview-colors'."
     `(magit-diff-file-heading ((,c :inherit bold :foreground ,accent-0)))
     `(magit-diff-file-heading-highlight ((,c :inherit magit-diff-file-heading :background ,bg-alt)))
     `(magit-diff-file-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
-    `(magit-diff-hunk-heading ((,c :inherit bold :background ,bg-alt)))
+    `(magit-diff-hunk-heading ((,c :background ,bg-alt)))
     `(magit-diff-hunk-heading-highlight ((,c :inherit bold :background ,bg-active :foreground ,fg-intense)))
     `(magit-diff-hunk-heading-selection ((,c :inherit bold :background ,bg-hover-alt :foreground ,fg-intense)))
     `(magit-diff-hunk-region ((,c :inherit bold)))
