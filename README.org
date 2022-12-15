@@ -1163,6 +1163,7 @@ themes already cover:
 
 - apropos
 - dim-autoload
+- forge
 - hl-todo
 - icomplete
 - ido
