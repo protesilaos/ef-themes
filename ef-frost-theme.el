@@ -200,7 +200,13 @@
       (rainbow-6 green-warmer)
       (rainbow-7 magenta)
       (rainbow-8 cyan-warmer))
-    "The `ef-frost' palette.")
+    "The `ef-frost' palette.
+Color values have the form (COLOR-NAME HEX-VALUE) with the former
+as a symbol and the latter as a string.
+
+Semantic color mappings have the form (MAPPING-NAME COLOR-NAME)
+with both as symbols.  The latter is a color that already exists
+in the palette and is associated with a HEX-VALUE.")
 
   (defvar ef-frost-palette-overrides nil
     "Overrides for `ef-frost-palette'.")

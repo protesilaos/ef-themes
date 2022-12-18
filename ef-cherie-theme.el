@@ -200,7 +200,13 @@
       (rainbow-6 red-cooler)
       (rainbow-7 cyan-warmer)
       (rainbow-8 magenta-cooler))
-    "The `ef-cherie' palette.")
+    "The `ef-cherie' palette.
+Color values have the form (COLOR-NAME HEX-VALUE) with the former
+as a symbol and the latter as a string.
+
+Semantic color mappings have the form (MAPPING-NAME COLOR-NAME)
+with both as symbols.  The latter is a color that already exists
+in the palette and is associated with a HEX-VALUE.")
 
   (defvar ef-cherie-palette-overrides nil
     "Overrides for `ef-cherie-palette'.")
