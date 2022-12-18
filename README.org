@@ -423,7 +423,9 @@ Other examples:
 :END:
 #+cindex: Override color values and semantic color mappings
 
-[ Part of {{{development-version}}}. ]
+[ Part of {{{development-version}}}.  For a video demo of the same
+idea that I implemented in the ~modus-themes~, check:
+https://protesilaos.com/codelog/2022-12-17-modus-themes-v4-demo/. ]
 
 Each theme defines its own color palette as well as semantic color
 mappings.  The former is the set of color values such as what shade of
@@ -436,6 +438,12 @@ The definition is stored in the variable =ef-NAME-palette=, where
 =NAME= is the specifier of the theme, such as ~summer~ for the
 ~ef-summer~ theme.  Overrides for those associations are specified in
 the variable =ef-NAME-palette-overrides=.
+
+#+vindex: ef-themes-common-palette-overrides
+The variable ~ef-themes-common-palette-overrides~ is available for
+shared values.  It is advised to only use this for mappings that do
+not specify a color value directly.  This way, the text remains
+legible by getting the theme-specific color value it needs.
 
 All associations take the form of =(KEY VALUE)= pairs.  For example,
 the ~ef-summer-palette~ contains =(blue-warmer "#5250ef")=.  Semantic

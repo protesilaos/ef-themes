@@ -1969,6 +1969,17 @@ Helper function for `ef-themes-preview-colors'."
 
 ;;;; Instantiate an Ef theme
 
+(defvar ef-themes-common-palette-overrides nil
+  "Set palette overrides for all the Modus themes.
+
+Mirror the elements of a theme's palette, overriding their value.
+The palette variables are named THEME-NAME-palette, while
+individual theme overrides are THEME-NAME-palette-overrides.  The
+THEME-NAME is one of the symbols in `modus-themes-items'.
+
+Individual theme overrides take precedence over these common
+overrides.")
+
 ;;;###autoload
 (defmacro ef-themes-theme (name palette &optional overrides)
   "Bind NAME's color PALETTE around face specs and variables.
@@ -1983,7 +1994,7 @@ corresponding entries."
   (let ((sym (gensym))
         (colors (mapcar #'car (symbol-value palette))))
     `(let* ((c '((class color) (min-colors 256)))
-            (,sym (append ,overrides ,palette))
+            (,sym (append ,overrides ef-themes-common-palette-overrides ,palette))
             ,@(mapcar (lambda (color)
                         (list color
                               `(let* ((value (car (alist-get ',color ,sym))))
