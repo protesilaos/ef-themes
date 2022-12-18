@@ -1975,7 +1975,7 @@ Helper function for `ef-themes-preview-colors'."
 Mirror the elements of a theme's palette, overriding their value.
 The palette variables are named THEME-NAME-palette, while
 individual theme overrides are THEME-NAME-palette-overrides.  The
-THEME-NAME is one of the symbols in `modus-themes-items'.
+THEME-NAME is one of the symbols in `ef-themes-collection'.
 
 Individual theme overrides take precedence over these common
 overrides.")
