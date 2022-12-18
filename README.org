@@ -440,7 +440,7 @@ the variable =ef-NAME-palette-overrides=.
 All associations take the form of =(KEY VALUE)= pairs.  For example,
 the ~ef-summer-palette~ contains =(blue-warmer "#5250ef")=.  Semantic
 color mappings are the same, though the =VALUE= is one of the named
-colors of the theme.  For instance, =ef-summer-palette= maps the
+colors of the theme.  For instance, ~ef-summer-palette~ maps the
 aforementioned =blue-warmer= to =variable= thus =(variable blue-warmer)=.
 
 The easiest way to learn about a theme's definition is to use the
