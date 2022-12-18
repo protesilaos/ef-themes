@@ -433,9 +433,9 @@ programming modes or =heading-1= for level 1 headings in Org and
 others.
 
 The definition is stored in the variable =ef-NAME-palette=, where
-=NAME= is the specifier of the theme, such as ~ef-summer-palette~ for
-the ~ef-summer~ theme.  Overrides for those associations are specified
-in the variable =ef-NAME-palette-overrides=.
+=NAME= is the specifier of the theme, such as ~summer~ for the
+~ef-summer~ theme.  Overrides for those associations are specified in
+the variable =ef-NAME-palette-overrides=.
 
 All associations take the form of =(KEY VALUE)= pairs.  For example,
 the ~ef-summer-palette~ contains =(blue-warmer "#5250ef")=.  Semantic
