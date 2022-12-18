@@ -1970,7 +1970,7 @@ Helper function for `ef-themes-preview-colors'."
 ;;;; Instantiate an Ef theme
 
 (defvar ef-themes-common-palette-overrides nil
-  "Set palette overrides for all the Modus themes.
+  "Set palette overrides for all the Ef themes.
 
 Mirror the elements of a theme's palette, overriding their value.
 The palette variables are named THEME-NAME-palette, while
