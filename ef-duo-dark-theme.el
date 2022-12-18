@@ -212,7 +212,13 @@ with both as symbols.  The latter is a color that already exists
 in the palette and is associated with a HEX-VALUE.")
 
   (defvar ef-duo-dark-palette-overrides nil
-    "Overrides for `ef-duo-dark-palette'.")
+    "Overrides for `ef-duo-dark-palette'.
+
+Mirror the elements of the aforementioned palette, overriding
+their value.
+
+For overrides that are shared across all of the Ef themes,
+refer to `ef-themes-common-palette-overrides'.")
 
   (ef-themes-theme ef-duo-dark ef-duo-dark-palette ef-duo-dark-palette-overrides)
 

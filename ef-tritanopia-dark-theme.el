@@ -212,7 +212,13 @@ with both as symbols.  The latter is a color that already exists
 in the palette and is associated with a HEX-VALUE.")
 
   (defvar ef-tritanopia-dark-palette-overrides nil
-    "Overrides for `ef-tritanopia-dark-palette'.")
+    "Overrides for `ef-tritanopia-dark-palette'.
+
+Mirror the elements of the aforementioned palette, overriding
+their value.
+
+For overrides that are shared across all of the Ef themes,
+refer to `ef-themes-common-palette-overrides'.")
 
   (ef-themes-theme ef-tritanopia-dark ef-tritanopia-dark-palette ef-tritanopia-dark-palette-overrides)
 

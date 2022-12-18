@@ -209,7 +209,13 @@ with both as symbols.  The latter is a color that already exists
 in the palette and is associated with a HEX-VALUE.")
 
   (defvar ef-cherie-palette-overrides nil
-    "Overrides for `ef-cherie-palette'.")
+    "Overrides for `ef-cherie-palette'.
+
+Mirror the elements of the aforementioned palette, overriding
+their value.
+
+For overrides that are shared across all of the Ef themes,
+refer to `ef-themes-common-palette-overrides'.")
 
   (ef-themes-theme ef-cherie ef-cherie-palette ef-cherie-palette-overrides)
 
