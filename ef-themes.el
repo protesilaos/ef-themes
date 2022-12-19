@@ -1710,6 +1710,7 @@ Helper function for `ef-themes-preview-colors'."
     `(package-status-built-in ((,c :foreground ,builtin)))
     `(package-status-dependency ((,c :foreground ,warning)))
     `(package-status-disabled ((,c :inherit error :strike-through t)))
+    `(package-status-from-source ((,c :foreground ,type)))
     `(package-status-held ((,c :foreground ,warning)))
     `(package-status-incompat ((,c :inherit warning)))
     `(package-status-installed ((,c :foreground ,fg-alt)))
