@@ -1,6 +1,6 @@
 ;;; ef-trio-dark-theme.el --- Legible dark theme with magenta, blue, teal colors -*- lexical-binding:t -*-
 
-;; Copyright (C) 2022  Free Software Foundation, Inc.
+;; Copyright (C) 2022-2023  Free Software Foundation, Inc.
 
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
