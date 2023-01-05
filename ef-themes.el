@@ -94,6 +94,26 @@ This is used by the commands `ef-themes-select' and
   :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
 
+(defcustom ef-themes-disable-other-themes t
+  "Disable all other themes when loading a Ef theme.
+
+When the value is non-nil, the commands `ef-themes-toggle' and
+`ef-themes-select' will disable all other themes while loading
+the specified Ef theme.  This is done to ensure that Emacs does
+not blend two or more themes: such blends lead to awkward results
+that undermine the work of the designer.
+
+When the value is nil, the aforementioned commands will only
+disable other themes within the Ef collection.
+
+This option is provided because Emacs themes are not necessarily
+limited to colors/faces: they can consist of an arbitrary set of
+customizations.  Users who use such customization bundles must
+set this variable to a nil value."
+  :group 'ef-themes
+  :package-version '(ef-themes . "0.11.0")
+  :type 'boolean)
+
 (defcustom ef-themes-to-toggle nil
   "Specify two `ef-themes' for `ef-themes-toggle' command.
 The variable `ef-themes-collection' contains the symbols of all
@@ -494,10 +514,21 @@ accordingly."
       nil t nil
       'ef-themes--select-theme-history))))
 
+(defun ef-themes--disable-themes ()
+  "Disable themes per `ef-themes-disable-other-themes'."
+  (mapc #'disable-theme
+        (if ef-themes-disable-other-themes
+            custom-enabled-themes
+          (ef-themes--list-known-themes))))
+
 (defun ef-themes--load-theme (theme)
   "Load THEME while disabling other Ef themes.
-Run `ef-themes-post-load-hook'."
-  (mapc #'disable-theme (ef-themes--list-known-themes))
+Which themes are disabled is determined by the user option
+`ef-themes-disable-other-themes'.
+
+Run the `ef-themes-post-load-hook' as the final step after
+loading the THEME."
+  (ef-themes--disable-themes)
   (load-theme theme :no-confirm)
   (run-hooks 'ef-themes-post-load-hook))
 

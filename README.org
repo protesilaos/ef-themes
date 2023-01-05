@@ -207,6 +207,31 @@ overall character of each theme ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Prin
 All customizations need to be evaluated before loading a theme.  Any
 change thus requires a theme re-load ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Loading a theme]]).
 
+** Disable other themes
+:PROPERTIES:
+:CUSTOM_ID: h:b22371a2-9428-4f83-a3ca-884be559cf1d
+:END:
+
+[ Part of {{{development-version}}}. ]
+
+#+vindex: ef-themes-disable-other-themes
+The user option ~ef-themes-disable-other-themes~ controls which themes
+to disable when loading an Ef theme.
+
+When the value is non-nil, the commands ~ef-themes-toggle~ and
+~ef-themes-select~ will disable all other themes while loading the
+specified Ef theme.  This is done to ensure that Emacs does not blend
+two or more themes: such blends lead to awkward results that undermine
+the work of the designer.
+
+When the value is nil, the aforementioned commands will only disable
+other themes within the Ef collection.
+
+This option is provided because Emacs themes are not necessarily
+limited to colors/faces: they can consist of an arbitrary set of
+customizations.  Users who use such customization bundles must set
+this variable to a nil value.
+
 ** Toggle between two Ef themes
 :PROPERTIES:
 :CUSTOM_ID: h:a58b8e21-0f8f-4763-9b47-185bf7e10043
@@ -499,8 +524,9 @@ Contact me if you need further help with this.
 
 Emacs can load and maintain enabled multiple themes at once.  This
 typically leads to awkward styling and weird combinations.  The theme
-looks broken and the designer's intent is misunderstood.  Before loading
-one of the =ef-themes=, the user is encouraged to disable all others:
+looks broken and the designer's intent is misunderstood.  Before
+loading one of the ~ef-themes~, the user is encouraged to disable all
+others ([[#h:b22371a2-9428-4f83-a3ca-884be559cf1d][Disable other themes]]):
 
 #+begin_src emacs-lisp
 (mapc #'disable-theme custom-enabled-themes)
