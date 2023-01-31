@@ -640,6 +640,8 @@ light/dark theme and then loads an appropriate Ef theme at random:
 :CUSTOM_ID: h:8dd67bf5-879e-46e5-b277-5bac141f53d1
 :END:
 
+[ Updated as part of {{{development-version}}}. ]
+
 #+findex: ef-themes-preview-colors
 The command ~ef-themes-preview-colors~ uses minibuffer completion to
 select an item from the Ef themes and then produces a buffer with
