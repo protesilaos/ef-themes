@@ -421,6 +421,47 @@ foreground that is used with any of the intense backgrounds."
 
 ;;; Commands and their helper functions
 
+(defun ef-themes--retrieve-palette-value (color palette)
+  "Return COLOR from PALETTE.
+Use recursion until COLOR is retrieved as a string.  Refrain from
+doing so if the value of COLOR is not a key in the PALETTE.
+
+Return `unspecified' if the value of COLOR cannot be determined.
+This symbol is accepted by faces and is thus harmless.
+
+This function is used in the macros `ef-themes-theme',
+`ef-themes-with-colors'."
+  (let ((value (car (alist-get color palette))))
+    (cond
+     ((or (stringp value)
+          (eq value 'unspecified))
+      value)
+     ((and (symbolp value)
+           (memq value (mapcar #'car palette)))
+      (ef-themes--retrieve-palette-value value palette))
+     (t
+      'unspecified))))
+
+(defun ef-themes-get-color-value (color &optional overrides)
+  "Return color value of named COLOR for current Ef theme.
+
+COLOR is a symbol that represents a named color entry in the
+palette.
+
+If the value is the name of another color entry in the
+palette (so a mapping), recur until you find the underlying color
+value.
+
+With optional OVERRIDES as a non-nil value, account for palette
+overrides.  Else use the default palette.
+
+If COLOR is not present in the palette, return the `unspecified'
+symbol, which is safe when used as a face attribute's value."
+  (if-let* ((palette (ef-themes--current-theme-palette overrides))
+            (value (ef-themes--retrieve-palette-value color palette)))
+      value
+    'unspecified))
+
 (defun ef-themes--list-enabled-themes ()
   "Return list of `custom-enabled-themes' with ef- prefix."
   (seq-filter
@@ -2012,27 +2053,6 @@ Helper function for `ef-themes-preview-colors'."
   "Custom variables for `ef-themes-theme'.")
 
 ;;; Theme macros
-
-(defun ef-themes--retrieve-palette-value (color palette)
-  "Return COLOR from PALETTE.
-Use recursion until COLOR is retrieved as a string.  Refrain from
-doing so if the value of COLOR is not a key in the PALETTE.
-
-Return `unspecified' if the value of COLOR cannot be determined.
-This symbol is accepted by faces and is thus harmless.
-
-This function is used in the macros `ef-themes-theme',
-`ef-themes-with-colors'."
-  (let ((value (car (alist-get color palette))))
-    (cond
-     ((or (stringp value)
-          (eq value 'unspecified))
-      value)
-     ((and (symbolp value)
-           (memq value (mapcar #'car palette)))
-      (ef-themes--retrieve-palette-value value palette))
-     (t
-      'unspecified))))
 
 ;;;; Instantiate an Ef theme
 

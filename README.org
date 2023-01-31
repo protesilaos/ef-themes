@@ -695,6 +695,61 @@ code that uses ~ef-themes-with-colors~.
 This section documents how the user can further tweak the Ef themes to
 their liking.
 
+** Get a single color from the palette
+:PROPERTIES:
+:CUSTOM_ID: h:cc1633d3-8e83-45b5-b258-804935f9ee0d
+:END:
+
+[ Part of {{{development-version}}}. ]
+
+[[#h:ec0adf54-c037-4c53-81b8-7eab2303794d][The general approach to advanced DIY changes]].
+
+#+findex: ef-themes-get-color-value
+The fuction ~ef-themes-get-color-value~ can be called from Lisp to
+return the value of a color from the active Ef theme palette.  It
+takea a =COLOR= argument and an optional =OVERRIDES=.
+
+=COLOR= is a symbol that represents a named color entry in the
+palette.
+
+[[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]].
+
+If the value is the name of another color entry in the palette (so a
+mapping), this function recurs until it finds the underlying color
+value.
+
+With an optional =OVERRIDES= argument as a non-nil value, it accounts
+for palette overrides.  Else it reads only the default palette.
+
+[[#h:4b923795-4b23-4345-81e5-d1c108a84b6a][Palette overrides]].
+
+If =COLOR= is not present in the palette, this function returns the
+=unspecified= symbol, which is safe when used as a face attribute's
+value.
+
+An example with ~ef-summer~ to show how this function behaves
+with/without overrides and when recursive mappings are introduced.
+
+#+begin_src emacs-lisp
+;; Here we show the recursion of palette mappings.  In general, it is
+;; better for the user to specify named colors to avoid possible
+;; confusion with their configuration, though those still work as
+;; expected.
+(setq ef-themes-common-palette-overrides
+      '((cursor red)
+        (prompt cursor)
+        (variable prompt)))
+
+;; Ignore the overrides and get the original value.
+(ef-themes-get-color-value 'variable)
+;; => "#5250ef"
+
+;; Read from the overrides and deal with any recursion to find the
+;; underlying value.
+(ef-themes-get-color-value 'variable :overrides)
+;; => "#d3303a"
+#+end_src
+
 ** The general approach to advanced DIY changes
 :PROPERTIES:
 :CUSTOM_ID: h:ec0adf54-c037-4c53-81b8-7eab2303794d
