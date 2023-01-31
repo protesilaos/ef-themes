@@ -651,8 +651,26 @@ which reflects the given choice, like =ef-summer-preview-colors= for the
 The command ~ef-themes-preview-colors-current~ skips the minibuffer
 selection process and just produces a preview for the current Ef theme.
 
+When called with a prefix argument (=C-u= with the default key
+bindings), these commands will show a preview of the palette's
+semantic color mappings instead of the named colors.
+
+#+findex: ef-themes-list-colors
+#+findex: ef-themes-list-colors-current
+Aliases for those commands are ~ef-themes-list-colors~ and
+~ef-themes-list-colors-current~.
+
 Overrides to color values are reflected in the buffers produced by the
 aforementioned commands ([[#h:4b923795-4b23-4345-81e5-d1c108a84b6a][Palette overrides]]).
+
+Each row shows a foreground and background coloration using the
+underlying value it references.  For example a line with =#d3303a= (a
+shade of red) will show red text followed by a stripe with that same
+color as a backdrop.
+
+The name of the buffer describes the given Ef theme and what the
+contents are, such as =*ef-summer-list-colors*= for named colors and
+==*ef-summer-list-mappings*= for the semantic color mappings.
 
 * Use colors from the active Ef theme
 :PROPERTIES:
