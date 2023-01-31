@@ -442,7 +442,7 @@ This function is used in the macros `ef-themes-theme',
      (t
       'unspecified))))
 
-(defun ef-themes-get-color-value (color &optional overrides)
+(defun ef-themes-get-color-value (color &optional overrides theme)
   "Return color value of named COLOR for current Ef theme.
 
 COLOR is a symbol that represents a named color entry in the
@@ -455,9 +455,14 @@ value.
 With optional OVERRIDES as a non-nil value, account for palette
 overrides.  Else use the default palette.
 
+With optional THEME as a symbol among `ef-themes-collection', use
+the palette of that item.  Else use the current Ef theme.
+
 If COLOR is not present in the palette, return the `unspecified'
 symbol, which is safe when used as a face attribute's value."
-  (if-let* ((palette (ef-themes--current-theme-palette overrides))
+  (if-let* ((palette (if theme
+                         (ef-themes--palette-value theme overrides)
+                       (ef-themes--current-theme-palette overrides)))
             (value (ef-themes--retrieve-palette-value color palette)))
       value
     'unspecified))
