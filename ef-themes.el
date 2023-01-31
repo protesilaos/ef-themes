@@ -655,14 +655,18 @@ symbol."
     (ef-themes--load-theme loaded)
     (message "Loaded `%s'" loaded)))
 
-(defun ef-themes--preview-colors-render (buffer theme &rest _)
-  "Render colors in BUFFER from THEME.
-Routine for `ef-themes-preview-colors'."
-  (let ((palette (seq-remove (lambda (cell)
-                               (symbolp (cadr cell)))
-                             (ef-themes--palette-value theme :overrides)))
-        (current-buffer buffer)
-        (current-theme theme))
+(defun ef-themes--preview-colors-render (buffer theme &optional mappings &rest _)
+  "Render colors in BUFFER from THEME for `ef-themes-preview-colors'.
+Optional MAPPINGS changes the output to only list the semantic
+color mappings of the palette, instead of its named colors."
+  (let* ((current-palette (ef-themes--palette-value theme mappings))
+         (palette (if mappings
+                      (seq-remove (lambda (cell)
+                                    (stringp (cadr cell)))
+                                  current-palette)
+                    current-palette))
+         (current-buffer buffer)
+         (current-theme theme))
     (with-help-window buffer
       (with-current-buffer standard-output
         (erase-buffer)
@@ -674,9 +678,13 @@ Routine for `ef-themes-preview-colors'."
         (insert " ")
         (dolist (cell palette)
           (let* ((name (car cell))
-                 (color (cadr cell))
-                 (fg (readable-foreground-color color))
-                 (pad (make-string 5 ?\s)))
+                 (color (ef-themes-get-color-value name mappings theme))
+                 (pad (make-string 10 ?\s))
+                 (fg (if (eq color 'unspecified)
+                         (progn
+                           (readable-foreground-color (ef-themes-get-color-value 'bg-main nil theme))
+                           (setq pad (make-string 6 ?\s)))
+                       (readable-foreground-color color))))
             (let ((old-point (point)))
               (insert (format "%s %s" color pad))
               (put-text-property old-point (point) 'face `( :foreground ,color)))
@@ -690,7 +698,7 @@ Routine for `ef-themes-preview-colors'."
             (insert " ")))
         (setq-local revert-buffer-function
                     (lambda (_ignore-auto _noconfirm)
-                      (ef-themes--preview-colors-render current-buffer current-theme)))))))
+                      (ef-themes--preview-colors-render current-buffer current-theme mappings)))))))
 
 (defvar ef-themes--preview-colors-prompt-history '()
   "Minibuffer history for `ef-themes--preview-colors-prompt'.")
@@ -704,22 +712,25 @@ Helper function for `ef-themes-preview-colors'."
      (ef-themes--list-known-themes) nil t nil
      'ef-themes--preview-colors-prompt-history def)))
 
-;;;###autoload
-(defun ef-themes-preview-colors (theme)
-  "Preview palette of the Ef THEME of choice."
-  (interactive (list (intern (ef-themes--preview-colors-prompt))))
+(defun ef-themes-preview-colors (theme &optional mappings)
+  "Preview named colors of the Ef THEME of choice.
+With optional prefix argument for MAPPINGS preview the semantic
+color mappings instead of the named colors."
+  (interactive (list (intern (ef-themes--preview-colors-prompt)) current-prefix-arg))
   (ef-themes--preview-colors-render
-   (format "*%s-preview-colors*" theme)
-   theme))
+   (format (if mappings "*%s-preview-mappings*" "*%s-preview-colors*") theme)
+   theme
+   mappings))
 
-;;;###autoload
-(defun ef-themes-preview-colors-current ()
-  "Call `ef-themes-preview-colors' for the current Ef theme."
-  (interactive)
-  (ef-themes-preview-colors (ef-themes--current-theme)))
 (defalias 'ef-themes-list-colors 'ef-themes-preview-colors
   "Alias of `ef-themes-preview-colors'.")
 
+(defun ef-themes-preview-colors-current (&optional mappings)
+  "Call `ef-themes-list-colors' for the current Ef theme.
+Optional prefix argument MAPPINGS has the same meaning as for
+`ef-themes-list-colors'."
+  (interactive "P")
+  (ef-themes-list-colors (ef-themes--current-theme) mappings))
 
 (defalias 'ef-themes-list-colors-current 'ef-themes-preview-colors-current
   "Alias of `ef-themes-preview-colors-current'.")
