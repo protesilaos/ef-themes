@@ -712,6 +712,12 @@ Helper function for `ef-themes-preview-colors'."
   "Call `ef-themes-preview-colors' for the current Ef theme."
   (interactive)
   (ef-themes-preview-colors (ef-themes--current-theme)))
+(defalias 'ef-themes-list-colors 'ef-themes-preview-colors
+  "Alias of `ef-themes-preview-colors'.")
+
+
+(defalias 'ef-themes-list-colors-current 'ef-themes-preview-colors-current
+  "Alias of `ef-themes-preview-colors-current'.")
 
 ;;; Faces and variables
 
