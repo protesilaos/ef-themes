@@ -135,8 +135,8 @@
       (bg-hl-line    "#2e2e1b")
       (bg-region     "#223848")
       (bg-paren      "#0f4f9a")
-      (bg-err        "#342d09") ; check with err
-      (bg-warning    "#292900") ; check with warning
+      (bg-err        "#342b00") ; check with err
+      (bg-warning    "#32351f") ; check with warning
       (bg-info       "#002252") ; check with info
 
       (border        "#555a64")
@@ -156,7 +156,7 @@
 
       ;; Mappings
       (err yellow-warmer)
-      (warning yellow)
+      (warning yellow-cooler)
       (info blue-cooler)
 
       (link blue)
