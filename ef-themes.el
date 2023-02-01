@@ -1828,7 +1828,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(persp-selected-face ((,c :inherit mode-line-emphasis)))
 ;;;; powerline
     `(powerline-active0 ((,c :background ,fg-dim :foreground ,bg-main)))
-    `(powerline-active1 ((,c :inherit mode-line-active)))
+    `(powerline-active1 ((,c :inherit mode-line)))
     `(powerline-active2 ((,c :inherit mode-line-inactive)))
     `(powerline-inactive0 ((,c :background ,bg-active :foreground ,fg-dim)))
     `(powerline-inactive1 ((,c :background ,bg-main :foreground ,fg-dim)))
