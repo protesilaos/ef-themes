@@ -744,7 +744,7 @@ for palette overrides.  Else it reads only the default palette.
 [[#h:4b923795-4b23-4345-81e5-d1c108a84b6a][Palette overrides]].
 
 With optional =THEME= as a symbol among ~ef-themes-collection~, use
-the palette of that item.  Else use the current Modus theme.
+the palette of that item.  Else use the current Ef theme.
 
 If =COLOR= is not present in the palette, this function returns the
 =unspecified= symbol, which is safe when used as a face attribute's
