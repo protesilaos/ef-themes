@@ -1417,7 +1417,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(query-replace ((,c :background ,bg-red :foreground ,fg-intense)))
 ;;;; keycast
     `(keycast-command ((,c :inherit bold)))
-    `(keycast-key ((,c :background ,bg-accent :foreground ,fg-accent)))
+    `(keycast-key ((,c :inherit bold :background ,bg-hover :foreground ,fg-intense :box (:line-width -1 :color ,fg-dim))))
 ;;;; lin
     `(lin-blue ((,c :background ,bg-blue-subtle)))
     `(lin-cyan ((,c :background ,bg-cyan-subtle)))
