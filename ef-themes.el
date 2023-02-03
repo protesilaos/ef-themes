@@ -1016,6 +1016,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(consult-key ((,c :inherit ef-themes-key-binding)))
     `(consult-imenu-prefix ((,c :inherit shadow)))
     `(consult-line-number ((,c :inherit shadow)))
+    `(consult-line-number-prefix ((,c :inherit shadow)))
     `(consult-separator ((,c :foreground ,border)))
 ;;;; corfu
     `(corfu-current ((,c :background ,bg-completion)))
