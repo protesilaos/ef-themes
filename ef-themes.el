@@ -1013,6 +1013,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(completions-group-title ((,c :inherit bold :foreground ,name)))
 ;;;; consult
     `(consult-async-split ((,c :inherit warning)))
+    `(consult-file ((,c :foreground ,name)))
     `(consult-key ((,c :inherit ef-themes-key-binding)))
     `(consult-imenu-prefix ((,c :inherit shadow)))
     `(consult-line-number ((,c :inherit shadow)))
