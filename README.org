@@ -1183,6 +1183,7 @@ everything most users need.
 - consult
 - corfu
 - custom (=M-x customize=)
+- dashboard [part of {{{development-version}}}]
 - denote
 - dictionary
 - diff-hl
@@ -1585,7 +1586,8 @@ matters.
 + Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Benjamin
   (zealotrush), Daniel Mendler, Federico Stilman, Iris Garcia,
   Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška, Spike-Leung,
-  Steve Molitor, Summer Emacs, Sven Seebeck, Zoltán Király.
+  Steve Molitor, Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán
+  Király.
 
 * GNU Free Documentation License
 :PROPERTIES:

@@ -1042,6 +1042,9 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(custom-group-tag ((,c :inherit bold :foreground ,builtin)))
     `(custom-group-tag-1 ((,c :inherit bold :foreground ,constant)))
     `(custom-variable-tag ((,c :inherit bold :foreground ,variable)))
+;;;;; dashboard
+    `(dashboard-heading ((,c :foreground ,name)))
+    `(dashboard-items-face (( ))) ; use the underlying style of all-the-icons
 ;;;; denote
     `(denote-faces-date ((,c :foreground ,date)))
     `(denote-faces-keywords ((,c :foreground ,name)))
