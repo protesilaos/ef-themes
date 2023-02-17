@@ -491,7 +491,8 @@ symbol, which is safe when used as a face attribute's value."
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
-  (car (ef-themes--list-enabled-themes)))
+  (car (or (ef-themes--list-enabled-themes)
+           (ef-themes--list-known-themes))))
 
 (defun ef-themes--palette-symbol (theme &optional overrides)
   "Return THEME palette as a symbol.
