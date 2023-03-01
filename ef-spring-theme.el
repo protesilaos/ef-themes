@@ -197,7 +197,7 @@
       (prose-metadata fg-dim)
       (prose-metadata-value fg-alt)
       (prose-table fg-alt)
-      (prose-tag fg-alt)
+      (prose-tag magenta-faint)
       (prose-todo red-warmer)
       (prose-verbatim green)
 

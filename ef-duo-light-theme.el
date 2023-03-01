@@ -200,7 +200,7 @@
       (prose-metadata fg-dim)
       (prose-metadata-value fg-alt)
       (prose-table fg-alt)
-      (prose-tag fg-alt)
+      (prose-tag yellow-faint)
       (prose-todo red)
       (prose-verbatim blue-warmer)
 
