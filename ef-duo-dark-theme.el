@@ -127,17 +127,18 @@
       (cyan-graph-1-bg    "#00808f")
 
       ;; Special hues
-      (bg-mode-line  "#352487") (fg-mode-line  "#dedeff")
-      (bg-accent     "#ffb250")
-      (bg-completion "#2f1a5f")
-      (bg-hover      "#664f4a")
-      (bg-hover-secondary  "#264f4a")
-      (bg-hl-line    "#301a4f")
-      (bg-region     "#042a50")
-      (bg-paren      "#2f608e")
-      (bg-err        "#360d09") ; check with err
-      (bg-warning    "#332600") ; check with warning
-      (bg-info       "#002d12") ; check with info
+      (bg-mode-line       "#352487")
+      (fg-mode-line       "#dedeff")
+      (bg-accent          "#ffb250")
+      (bg-completion      "#2f1a5f")
+      (bg-hover           "#664f4a")
+      (bg-hover-secondary "#264f4a")
+      (bg-hl-line         "#301a4f")
+      (bg-region          "#042a50")
+      (bg-paren           "#2f608e")
+      (bg-err             "#360d09") ; check with err
+      (bg-warning         "#332600") ; check with warning
+      (bg-info            "#002d12") ; check with info
 
       (border        "#545f6f")
       (cursor        "#ef6f11")
