@@ -125,7 +125,7 @@
 
       ;; Special hues
       (bg-mode-line  "#b7c7ff") (fg-mode-line  "#151515")
-      (bg-accent     "#0000cc") (fg-accent     "#ffffff")
+      (bg-accent     "#0000cc")
       (bg-completion "#bfe8ff")
       (bg-hover      "#aaeccf")
       (bg-hover-alt  "#ccbfff")
