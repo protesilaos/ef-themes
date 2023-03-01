@@ -132,7 +132,7 @@
 
       (bg-completion "#fadacf")
       (bg-hover      "#b4cfff")
-      (bg-hover-alt  "#aaeccf")
+      (bg-hover-secondary  "#aaeccf")
       (bg-hl-line    "#f9e8c0")
       (bg-region     "#caeafa")
       (bg-paren      "#afbfef")
