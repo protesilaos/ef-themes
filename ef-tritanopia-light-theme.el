@@ -162,8 +162,6 @@
 
       (link cyan)
       (link-alt magenta-cooler)
-      (date cyan-cooler)
-      (weekend red-faint) ; for M-x calendar and Org agenda
       (name magenta)
       (keybind red-cooler)
       (identifier magenta-faint)
@@ -182,6 +180,18 @@
 
       (rx-escape cyan-warmer) ; compare with `string'
       (rx-construct red-warmer)
+
+;;;; Date mappings
+
+      (date-common cyan-cooler)
+      (date-deadline red-warmer)
+      (date-event fg-alt)
+      (date-holiday cyan-warmer)
+      (date-now fg-main)
+      (date-scheduled magenta)
+      (date-weekday cyan)
+      (date-weekend red-faint)
+
 
       (accent-0 cyan)
       (accent-1 red)
