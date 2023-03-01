@@ -189,6 +189,17 @@
       (date-weekday cyan)
       (date-weekend red-faint)
 
+;;;; Prose mappings
+
+      (prose-code green-cooler)
+      (prose-done green)
+      (prose-macro yellow)
+      (prose-metadata fg-dim)
+      (prose-metadata-value fg-alt)
+      (prose-table fg-alt)
+      (prose-tag fg-alt)
+      (prose-todo red-warmer)
+      (prose-verbatim red)
 
       (accent-0 red)
       (accent-1 green-cooler)
