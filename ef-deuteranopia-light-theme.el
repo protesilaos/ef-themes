@@ -181,6 +181,13 @@
       (rx-escape cyan-faint) ; compare with `string'
       (rx-construct blue-warmer)
 
+;;;; Accent mappings
+
+      (accent-0 blue-cooler)
+      (accent-1 yellow-warmer)
+      (accent-2 cyan)
+      (accent-3 yellow-cooler)
+
 ;;;; Date mappings
 
       (date-common yellow-cooler)
@@ -204,10 +211,7 @@
       (prose-todo yellow-warmer)
       (prose-verbatim blue-cooler)
 
-      (accent-0 blue-cooler)
-      (accent-1 yellow-warmer)
-      (accent-2 cyan)
-      (accent-3 yellow-cooler)
+;;;; Mail mappings
 
       (mail-0 blue-warmer)
       (mail-1 yellow-cooler)

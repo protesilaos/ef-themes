@@ -178,6 +178,13 @@
       (rx-escape cyan-warmer) ; compare with `string'
       (rx-construct red)
 
+;;;; Accent mappings
+
+      (accent-0 magenta-warmer)
+      (accent-1 yellow)
+      (accent-2 blue-warmer)
+      (accent-3 red)
+
 ;;;; Date mappings
 
       (date-common magenta)
@@ -201,10 +208,7 @@
       (prose-todo red-warmer)
       (prose-verbatim magenta-warmer)
 
-      (accent-0 magenta-warmer)
-      (accent-1 yellow)
-      (accent-2 blue-warmer)
-      (accent-3 red)
+;;;; Mail mappings
 
       (mail-0 magenta)
       (mail-1 yellow)
