@@ -210,12 +210,14 @@
 
 ;;;; Mail mappings
 
-      (mail-0 blue-warmer)
-      (mail-1 magenta-warmer)
-      (mail-2 green-cooler)
-      (mail-3 magenta-cooler)
-      (mail-4 cyan-cooler)
-      (mail-5 yellow-cooler)
+      (mail-cite-0 blue-warmer)
+      (mail-cite-1 magenta-warmer)
+      (mail-cite-2 green-cooler)
+      (mail-cite-3 magenta-cooler)
+      (mail-part cyan-cooler)
+      (mail-recipient blue)
+      (mail-subject magenta)
+      (mail-other cyan)
 
       (rainbow-0 magenta-warmer)
       (rainbow-1 blue-warmer)
