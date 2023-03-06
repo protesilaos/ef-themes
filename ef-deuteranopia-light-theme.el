@@ -165,6 +165,8 @@
 
 ;;; Mappings
 
+;;;; General mappings
+
       (err yellow-warmer)
       (warning yellow-cooler)
       (info blue-cooler)
@@ -176,6 +178,8 @@
       (identifier cyan-faint)
       (prompt blue)
 
+;;;; Code mappings
+
       (builtin cyan)
       (comment yellow-faint)
       (constant yellow-cooler)
@@ -186,7 +190,6 @@
       (string yellow-warmer)
       (type yellow)
       (variable cyan-cooler)
-
       (rx-escape cyan-faint) ; compare with `string'
       (rx-construct blue-warmer)
 
