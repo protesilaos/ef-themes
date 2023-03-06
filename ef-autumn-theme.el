@@ -41,7 +41,9 @@
     "Legible dark theme with warm, varied colors (red, yellow, green, teal).")
 
   (defconst ef-autumn-palette
-    '(;; Basic tones
+    '(
+;;; Basic values
+
       (bg-main     "#0f0e06")
       (fg-main     "#cfbcba")
       (bg-dim      "#26211d")
@@ -52,7 +54,8 @@
       (bg-active   "#56524f")
       (bg-inactive "#15140d")
 
-      ;; Basic hues for foreground values
+;;; Basic hues for foreground values
+
       (red             "#ef656a")
       (red-warmer      "#f06a3f")
       (red-cooler      "#ff7a7f")
@@ -78,7 +81,8 @@
       (cyan-cooler     "#3dbbb0")
       (cyan-faint      "#82a0af")
 
-      ;; Basic hues for background values
+;;; Basic hues for background values
+
       (bg-red      "#cd2f30")
       (bg-green    "#20a020")
       (bg-yellow   "#9a4f20")
@@ -93,7 +97,8 @@
       (bg-magenta-subtle  "#611062")
       (bg-cyan-subtle     "#004065")
 
-      ;; Diffs
+;;; Diffs
+
       (bg-added          "#17360f")
       (bg-added-faint    "#0a2900")
       (bg-added-refine   "#204810")
@@ -109,7 +114,8 @@
       (bg-removed-refine "#6f1a16")
       (fg-removed        "#ffbfbf")
 
-      ;; Graphs
+;;; Graphs
+
       (red-graph-0-bg     "#b52c2c")
       (red-graph-1-bg     "#702020")
       (green-graph-0-bg   "#4fd100")
@@ -123,7 +129,8 @@
       (cyan-graph-0-bg    "#47dfea")
       (cyan-graph-1-bg    "#00808f")
 
-      ;; Special hues
+;;; Special hues
+
       (bg-mode-line       "#692a12")
       (fg-mode-line       "#feeeca")
       (bg-accent          "#ffa200")
@@ -149,10 +156,12 @@
       (underline-warning "#c0b000")
       (underline-info    "#22b022")
 
-      ;; Conditional hues
+;;; Conditional hues
+
       (bg-region-intense "#4f4400")
 
-      ;; Mappings
+;;; Mappings
+
       (err red-warmer)
       (warning yellow)
       (info green-cooler)
