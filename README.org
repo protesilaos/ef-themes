@@ -1214,6 +1214,7 @@ everything most users need.
 - image-dired
 - info
 - isearch, occur, query-replace
+- jit-spell [Part of {{{development-version}}}]
 - keycast
 - lin
 - line numbers (~display-line-numbers-mode~ and global variant)
