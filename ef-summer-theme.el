@@ -231,6 +231,8 @@
       (mail-subject magenta-cooler)
       (mail-other magenta)
 
+;;;; Rainbow mappings
+
       (rainbow-0 magenta-warmer)
       (rainbow-1 magenta-cooler)
       (rainbow-2 yellow)
