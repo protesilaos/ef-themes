@@ -9,6 +9,244 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 0.11.0 on 2023-03-13
+
+** New options to override the colour palette
+
+It is now possible to tweak the colour values of each theme's palette
+and to change how named colours are mapped to semantic constructs.
+Concretely, each theme's palette consists of two subsets: (i) named
+colours that associate an arbitrary symbol, like =blue-warmer= to a
+colour value such as =#5250ef=, and (ii) semantic colour mappings that
+assign a named colour to constructs like =date-weekend=.
+
+[ For a video demo of the same idea that I implemented in the
+  ~modus-themes~, check /mutatis mutandis/:
+  https://protesilaos.com/codelog/2022-12-17-modus-themes-v4-demo/. ]
+
+The feature is not as fully fledged as in my ~modus-themes~ because
+the latter have a broader scope than the ~ef-themes~.  Still, it is
+comprehensive and will likely cover the needs of users who want to
+tinker with colours.
+
+** The "preview palette" commands have new aliases
+
+The command ~ef-themes-preview-colors~ can now also be called with
+~ef-themes-list-colors~.  Same for ~ef-themes-preview-colors-current~
+which is also known as ~ef-themes-list-colors-current~.
+
+These new names make it easier to "preview" or "list" the given
+palette entries.
+
+** Palette preview commands can show semantic colour mappings
+
+When called with a prefix argument (=C-u= with default key bindings),
+the commands ~ef-themes-preview-colors~, ~ef-themes-preview-colors-current~
+will produce a buffer with the mappings specified in the given palette
+and in user-defined overrides.  Whereas their normal behaviour without
+the prefix argument is to list all the named colours.
+
+In this context, "named colours" are associations between a symbol and
+a colour value like =(blue-warmer "#5250ef")=, whereas "semantic
+colour mappings" describe associations between an abstract construct
+of the interface and a named colour, such as =(variable blue-warmer)=.
+
+** Automatically disable other themes when loading an Ef theme
+
+The user option ~ef-themes-disable-other-themes~ makes the commands
+that load an Ef theme run ~disable-theme~ on anything that is not part
+of the collection.  These commands are ~ef-themes-select~,
+~ef-themes-toggle~, ~ef-themes-load-random~.
+
+The user option is enabled by default.  The reason is that Emacs will
+blithely blend multiple themes that a user loads, leading to a design
+that ranges from mildly annoying to outright unusable.  It is a bad
+default behaviour that hinders accessibility.
+
+Expert users who know what they are doing when blending themes can
+simply disable this user option (or not use the Ef commands for
+loading a theme).
+
+** Stylistic changes
+
+*** Refined deuteranopia warning colours
+
+[ "Deuteranopia" is the technical term for red-green colour deficiency. ]
+
+This concerns the themes ~ef-deuteranopia-dark~ and
+~ef-deuteranopia-light~.  The slightly adjusted colours help further
+differentiate certain constructs in various contexts, such as the Org
+agenda buffer where =SCHEDULED= and =DEADLINE= items need to be told
+apart.
+
+*** Implemented appropriate colour-coded foregrounds in Magit/diff-mode
+
+~diff-mode~ and Magit diff buffers now affect the text colour of the
+added/removed/changed lines to improve their usability.  Before, the
+combination was of a colour-coded background with the main foreground,
+which could make it a bit harder to track lines.
+
+*** Removed the bold weight from Magit diff hunk headings
+  
+Inactive diff hunk headings do not need to be bold, as they are
+already easy to tell apart from their context.  The added bold is
+useful for the currently selected diff hunk, as it draws attention to
+it.
+
+*** Revised all mail-related semantic colour mappings
+
+Buffers such as those of viewing messages with Notmuch, Mu4e, Gnus
+have more appropriate colour combinations in the interest of avoiding
+exaggerations.  Same for the message composition buffers (e.g. what we
+get with the ~compose-mail~ command and its email-client-specific
+counterparts).
+
+*** The background of Notmuch message headers is more noticeable
+
+The ~notmuch~ email client for Emacs has a thread-based view of
+messages where each email starts with its own header.  The slightly
+more noticeable background makes it easier to discern where a new
+message starts.
+
+*** Added support for the powerline package
+
+I added support for this package because other packages depend on it.
+Note though that I have encountered visual glitches with ~powerline~.
+Those occur while switching themes and require a re-run of the
+Powerline setup with =M-x powerline-reset=.
+
+*** Removed the background colour from ~consult~ lines
+  
+The default value of ~consult-line-number-prefix~ inherits from the
+~line-number~ face.  The Ef themes make the latter inherit from
+~default~ in order to have the lines increase/decrease in font size
+when the user calls the ~text-scale-adjust~ command.  This arrangement
+meant that Consult was implicitly getting the main background which
+caused commands like ~consult-line~ to not be highlighted from their
+absolute beginning but only after the line number.
+
+Thanks to Daniel Mendler for bringing this matter to my attention:
+<https://lists.sr.ht/~protesilaos/ef-themes/%3Cb03413a6-cb77-615d-145d-db4eb710bfca%40daniel-mendler.de%3E>.
+
+*** Defined ~consult-file~ to look the same as file names in Grep buffers
+
+This face is used when the user option ~vertico-group-format~ is set
+to nil.  With this change, we keep things consistent in the common
+workflow of using ~consult-grep~ and exporting to a grep buffer via
+~embark-export~.  The packages involved are ~vertico~, ~consult~,
+~embark~.
+
+Thanks to Daniel Mendler for bringing this matter to my attention:
+<https://lists.sr.ht/~protesilaos/ef-themes/%3Cb03413a6-cb77-615d-145d-db4eb710bfca%40daniel-mendler.de%3E#%3C37f01118-1102-d0a9-ce8d-5101f3d44679@daniel-mendler.de%3E>.
+
+
+*** Made ~eglot-diagnostic-tag-unnecessary-face~ a warning
+
+By default it inherits the ~shadow~ face, which makes it
+counter-intuitive as it dims the text instead of bringing it to our
+attention.  The intent of ~eglot-diagnostic-tag-unnecessary-face~ is
+to highlight unused symbols, so this is better presented as an
+informational warning.
+
+Thanks to Augusto Stoffel for bringing this matter to my attention.
+This was done via a private channel and the information is shared with
+permission.
+
+*** Configured ~dashboard~ icons to retain their underlying colour
+  
+The default value of the ~dashboard-items-face~ made all icons use the
+same colour, detracting from their distinctiveness.  Thanks to Thanos
+Apollo for bringing this matter to my attention.  It was done via a
+private channel and the information is shared with permission.
+
+*** Removed the bold weight from Org agenda deadline/scheduled
+
+This makes agenda buffers less noisy.  The original intent was to
+differentiate current/imminent from past/future items, though I feel
+that was the wrong design.  We first want to deal with current tasks
+and do not want to feel overwhelmed by the design.
+
+*** Removed the bold weight from regular expression constructs
+
+This was used for escaped parentheses and the like.  It was making
+certain strings harder to read, such as:
+
+#+begin_example
+"\\(?:\\.\\(?:m\\(?:kv\\|p4\\)\\|ogg\\|webm\\)\\)"
+#+end_example
+
+*** Retrieve any colour value from the palette
+
+[ This is for do-it-yourself users who need to apply colours in custom
+  code they maintain.  As such, it is a bit technical.  Skip to the
+  next heading if you are not such a user. ]
+
+The fuction ~ef-themes-get-color-value~ can be called from Lisp to
+return the value of a color from the active Ef theme palette.  It
+takea a =COLOR= argument and an optional =OVERRIDES=.
+
+=COLOR= is a symbol that represents a named color entry in the
+palette.
+
+<https://protesilaos.com/emacs/ef-themes#h:8dd67bf5-879e-46e5-b277-5bac141f53d1>
+
+If the value is the name of another color entry in the palette (so a
+mapping), this function recurs until it finds the underlying color
+value.
+
+With an optional =OVERRIDES= argument as a non-nil value, it accounts
+for palette overrides.  Else it reads only the default palette.
+
+<https://protesilaos.com/emacs/ef-themes#h:4b923795-4b23-4345-81e5-d1c108a84b6a>
+
+With optional =THEME= as a symbol among ~ef-themes-collection~, use
+the palette of that item.  Else use the current Ef theme.
+
+If =COLOR= is not present in the palette, this function returns the
+=unspecified= symbol, which is safe when used as a face attribute's
+value.
+
+An example with ~ef-summer~ to show how this function behaves
+with/without overrides and when recursive mappings are introduced.
+
+#+begin_src emacs-lisp
+;; Here we show the recursion of palette mappings.  In general, it is
+;; better for the user to specify named colors to avoid possible
+;; confusion with their configuration, though those still work as
+;; expected.
+(setq ef-themes-common-palette-overrides
+      '((cursor red)
+        (prompt cursor)
+        (variable prompt)))
+
+;; Ignore the overrides and get the original value.
+(ef-themes-get-color-value 'variable)
+;; => "#5250ef"
+
+;; Read from the overrides and deal with any recursion to find the
+;; underlying value.
+(ef-themes-get-color-value 'variable :overrides)
+;; => "#d3303a"
+#+end_src
+
+*** Miscellaneous
+
+- Recalibrated the mouse hover background of the ~ef-frost~ theme to
+  stand out a bit more than before.  This is a minor usability
+  enhancement.
+
+- Revised the ~keycast-key~ face for easier use and thematic
+  consistency.  It has a faint border around it but is otherwise
+  consistent with what was present before.
+
+- Improved how the palette preview is rendered.
+
+- Made several internal tweaks that keep the code clean and reusable.
+
+- Clarified the wording of various statements in the manual.
+
+- Expanded the outline headings of all theme files.
+
 * Version 0.10.0 on 2022-12-02
 :PROPERTIES:
 :CUSTOM_ID: h:763e6cf6-78b4-43a0-a582-7b00ce9210cc

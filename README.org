@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.10.0
-#+macro:                 release-date 2022-12-02
-#+macro:                 development-version 0.11.0-dev
+#+macro:                 stable-version 0.11.0
+#+macro:                 release-date 2023-03-13
+#+macro:                 development-version 1.0.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -211,8 +211,6 @@ change thus requires a theme re-load ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51]
 :PROPERTIES:
 :CUSTOM_ID: h:b22371a2-9428-4f83-a3ca-884be559cf1d
 :END:
-
-[ Part of {{{development-version}}}. ]
 
 #+vindex: ef-themes-disable-other-themes
 The user option ~ef-themes-disable-other-themes~ controls which themes
@@ -448,10 +446,6 @@ Other examples:
 :END:
 #+cindex: Override color values and semantic color mappings
 
-[ Part of {{{development-version}}}.  For a video demo of the same
-idea that I implemented in the ~modus-themes~, check:
-https://protesilaos.com/codelog/2022-12-17-modus-themes-v4-demo/. ]
-
 Each theme defines its own color palette as well as semantic color
 mappings.  The former is the set of color values such as what shade of
 blue to use.  The latter refers to associations between a color value
@@ -640,8 +634,6 @@ light/dark theme and then loads an appropriate Ef theme at random:
 :CUSTOM_ID: h:8dd67bf5-879e-46e5-b277-5bac141f53d1
 :END:
 
-[ Updated as part of {{{development-version}}}. ]
-
 #+findex: ef-themes-preview-colors
 The command ~ef-themes-preview-colors~ uses minibuffer completion to
 select an item from the Ef themes and then produces a buffer with
@@ -719,8 +711,6 @@ their liking.
 :PROPERTIES:
 :CUSTOM_ID: h:cc1633d3-8e83-45b5-b258-804935f9ee0d
 :END:
-
-[ Part of {{{development-version}}}. ]
 
 [[#h:ec0adf54-c037-4c53-81b8-7eab2303794d][The general approach to advanced DIY changes]].
 
@@ -1183,7 +1173,7 @@ everything most users need.
 - consult
 - corfu
 - custom (=M-x customize=)
-- dashboard [part of {{{development-version}}}]
+- dashboard
 - denote
 - dictionary
 - diff-hl
@@ -1214,7 +1204,7 @@ everything most users need.
 - image-dired
 - info
 - isearch, occur, query-replace
-- jit-spell [Part of {{{development-version}}}]
+- jit-spell
 - keycast
 - lin
 - line numbers (~display-line-numbers-mode~ and global variant)
@@ -1236,7 +1226,7 @@ everything most users need.
 - outline-minor-faces
 - package (=M-x list-packages=)
 - perspective
-- powerline [ Part of {{{development-version}}} ]
+- powerline
 - pulsar
 - pulse
 - rainbow-delimiters
