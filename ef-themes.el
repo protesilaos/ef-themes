@@ -1187,6 +1187,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(ediff-odd-diff-C ((,c :inherit ediff-even-diff-C)))
 ;;;; eglot
     `(eglot-mode-line ((,c :inherit bold :foreground ,modeline-info)))
+    `(eglot-diagnostic-tag-unnecessary-face ((,c :inherit ef-themes-underline-info)))
 ;;;; eldoc
     ;; NOTE: see https://github.com/purcell/package-lint/issues/187
     (list 'eldoc-highlight-function-argument `((,c :inherit warning :background ,bg-warning)))
