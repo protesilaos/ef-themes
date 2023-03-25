@@ -534,6 +534,10 @@ overrides."
        (?l "light" "Load a random light theme"))
      "Limit to the dark or light subset of the Ef themes collection."))))
 
+(defun ef-themes--annotate-theme (theme)
+  "Return completion annotation for THEME."
+  (format " -- %s" (car (split-string (get (intern theme) 'theme-documentation) "\\."))))
+
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
 
@@ -553,7 +557,8 @@ accordingly."
                    ;; `completing-read'.  With `read-multiple-choice'
                    ;; we never meet this condition, as far as I can
                    ;; tell.  But it does no harm to keep it here.
-                   (_ (ef-themes--list-known-themes)))))
+                   (_ (ef-themes--list-known-themes))))
+         (completion-extra-properties `(:annotation-function ,#'ef-themes--annotate-theme)))
     (intern
      (completing-read
       (or prompt "Select Ef Theme: ")
@@ -707,7 +712,8 @@ color mappings of the palette, instead of its named colors."
 (defun ef-themes--preview-colors-prompt ()
   "Prompt for Ef theme.
 Helper function for `ef-themes-preview-colors'."
-  (let ((def (format "%s" (ef-themes--current-theme))))
+  (let ((def (format "%s" (ef-themes--current-theme)))
+        (completion-extra-properties `(:annotation-function ,#'ef-themes--annotate-theme)))
     (completing-read
      (format "Use palette from theme [%s]: " def)
      (ef-themes--list-known-themes) nil t nil
