@@ -818,6 +818,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(cursor ((,c :background ,cursor)))
     `(default ((,c :background ,bg-main :foreground ,fg-main)))
     `(italic ((,c :slant italic)))
+    `(menu ((,c :background ,bg-dim :foreground ,fg-main)))
     `(region ((,c ,@(ef-themes--region bg-region bg-alt bg-region-intense bg-active fg-intense))))
     `(vertical-border ((,c :foreground ,border)))
 ;;;;; all other basic faces
