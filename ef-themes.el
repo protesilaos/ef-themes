@@ -541,23 +541,35 @@ overrides."
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
 
+(defun ef-themes--load-subset (subset)
+  "Return the `light' or `dark' SUBSET of the Ef themes.
+If SUBSET is neither `light' nor `dark', return all the known Ef themes."
+  (pcase subset
+    ('dark ef-themes-dark-themes)
+    ('light ef-themes-light-themes)
+    (_ (ef-themes--list-known-themes))))
+
+(defun ef-themes--maybe-prompt-subset (variant)
+  "Helper function for `ef-themes--select-prompt' VARIANT argument."
+  (cond
+   ((null variant))
+   ((or (eq variant 'light) (eq variant 'dark)) variant)
+   (t (ef-themes--choose-subset))))
+
 (defun ef-themes--select-prompt (&optional prompt variant)
   "Minibuffer prompt for `ef-themes-select'.
 With optional PROMPT string, use it.  Else use a generic prompt.
 
-With optional VARIANT, prompt for a subset of themes divided into
-light and dark variants.  Then limit the completion candidates
-accordingly."
-  (let* ((subset (when variant (ef-themes--choose-subset)))
-         (themes (pcase subset
-                   ('dark ef-themes-dark-themes)
-                   ('light ef-themes-light-themes)
-                   ;; NOTE 2022-11-02: This condition made sense when
-                   ;; the code now in `ef-themes--choose-subset' used
-                   ;; `completing-read'.  With `read-multiple-choice'
-                   ;; we never meet this condition, as far as I can
-                   ;; tell.  But it does no harm to keep it here.
-                   (_ (ef-themes--list-known-themes))))
+With optional VARIANT as a non-nil value, prompt for a subset of
+themes divided into light and dark variants.  Then limit the
+completion candidates accordingly.
+
+If VARIANT is either `light' or `dark' then use it directly
+instead of prompting the user for a choice.
+
+When VARIANT is nil, all Ef themes are candidates for completion."
+  (let* ((subset (ef-themes--maybe-prompt-subset variant))
+         (themes (ef-themes--load-subset subset))
          (completion-extra-properties `(:annotation-function ,#'ef-themes--annotate-theme)))
     (intern
      (completing-read
@@ -596,6 +608,40 @@ Run `ef-themes-post-load-hook' after loading the theme.
 When called from Lisp, THEME is the symbol of a theme.  VARIANT
 is ignored in this scenario."
   (interactive (list (ef-themes--select-prompt nil current-prefix-arg)))
+  (ef-themes--load-theme theme))
+
+;;;###autoload
+(defun ef-themes-select-light (theme)
+  "Load a light Ef THEME.
+Run `ef-themes-post-load-hook' after loading the theme.
+
+Also see `ef-themes-select-dark'.
+
+This command is the same as `ef-themes-select' except it only
+prompts for light themes when called interactively.  Calling it
+from Lisp behaves the same as `ef-themes-select' for the THEME
+argument, meaning that it loads the Ef THEME regardless of
+whether it is light or dark."
+  (interactive
+   (list
+    (ef-themes--select-prompt "Select light Ef theme: " 'light)))
+  (ef-themes--load-theme theme))
+
+;;;###autoload
+(defun ef-themes-select-dark (theme)
+  "Load a dark Ef THEME.
+Run `ef-themes-post-load-hook' after loading the theme.
+
+Also see `ef-themes-select-light'.
+
+This command is the same as `ef-themes-select' except it only
+prompts for light themes when called interactively.  Calling it
+from Lisp behaves the same as `ef-themes-select' for the THEME
+argument, meaning that it loads the Ef THEME regardless of
+whether it is light or dark."
+  (interactive
+   (list
+    (ef-themes--select-prompt "Select light Ef theme: " 'dark)))
   (ef-themes--load-theme theme))
 
 (defun ef-themes--toggle-theme-p ()

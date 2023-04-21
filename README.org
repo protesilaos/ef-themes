@@ -171,6 +171,8 @@ Everything is in place to set up the package.
 ;;
 ;; - `ef-themes-toggle'
 ;; - `ef-themes-select'
+;; - `ef-themes-select-dark'
+;; - `ef-themes-select-light'
 ;; - `ef-themes-load-random'
 ;; - `ef-themes-preview-colors'
 ;; - `ef-themes-preview-colors-current'
@@ -586,6 +588,15 @@ file to load the theme of their choice ([[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de
 When ~ef-themes-select~ is called with a prefix argument (=C-u= by
 default), it first produces a minibuffer prompt to limit the choice to
 dark or light themes, and then shows only the relevant subset.
+
+#+findex: ef-themes-select-dark
+#+findex: ef-themes-select-light
+Instead of calling ~ef-themese-select~ with a prefix argument, users
+can invoke either of ~ef-themes-select-dark~, ~ef-themes-select-light~
+commands.  Those behave the same as ~ef-themes-select~ except they
+limit the interaction to dark or light Ef themes, respectively.  [ The
+commands ~ef-themes-select-dark~ and ~ef-themes-select-light~ are part
+of {{{development-version}}}. ]
 
 #+findex: ef-themes-load-random
 The command ~ef-themes-load-random~ is for those who appreciate a bit of
