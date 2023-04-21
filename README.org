@@ -20,7 +20,7 @@
 #+texinfo: @insertcopying
 
 This manual, written by Protesilaos Stavrou, describes the Emacs package
-called =ef-themes=, and provides every other piece of information
+called ~ef-themes~, and provides every other piece of information
 pertinent to it.
 
 The documentation furnished herein corresponds to stable version
@@ -30,7 +30,7 @@ commit, is explicitly marked as such.
 
 Current development target is {{{development-version}}}.
 
-+ Package name (GNU ELPA): =ef-themes=
++ Package name (GNU ELPA): ~ef-themes~
 + Official manual: <https://protesilaos.com/emacs/ef-themes>
 + Change log: <https://protesilaos.com/emacs/ef-themes-changelog>
 + Sample pictures: <https://protesilaos.com/emacs/ef-themes-pictures>
@@ -78,7 +78,7 @@ modify this GNU manual.”
 :CUSTOM_ID: h:400d57a6-3a66-4ebf-b2e1-58a42237e0c2
 :END:
 
-The package is available as =ef-themes=.  Simply do:
+The package is available as ~ef-themes~.  Simply do:
 
 : M-x package-refresh-contents
 : M-x package-install
@@ -183,7 +183,7 @@ Everything is in place to set up the package.
 :CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
 :END:
 
-Most items in the =ef-themes= collection are designed to use colors
+Most items in the ~ef-themes~ collection are designed to use colors
 from many parts of the spectrum.  Those items generally are
 inappropriate for users with red-green or blue-yellow color deficiency
 (deuteranopia and tritanopia, respectively).  We do, nonetheless,
@@ -202,7 +202,7 @@ names of the themes are:
 :CUSTOM_ID: h:db8ba158-22f6-49f7-b2f2-1c8162e690dd
 :END:
 
-The =ef-themes= provide a limited set of user options which tweak
+The ~ef-themes~ provide a limited set of user options which tweak
 secondary aspects of the theme.  No option affects coloration or the
 overall character of each theme ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Principles]]).
 
@@ -885,7 +885,7 @@ manual, especially the sections on enabling and loading the themes, will
 be in a good position to benefit from that hook.
 
 Advanced users who have a need to switch between the Ef themes and other
-items (e.g. my =modus-themes=) will find that such a hook does not meet
+items (e.g. my ~modus-themes~) will find that such a hook does not meet
 their requirements: it only works with the Ef themes and only with the
 aforementioned functions.
 
@@ -963,14 +963,14 @@ The exact color values are taken from the active Ef theme."
 To find the names of the color variables, the user can rely on the
 commands for previewing the palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).
 
-** Make the mode line like the =modus-themes= default
+** Make the mode line like the ~modus-themes~ default
 :PROPERTIES:
 :CUSTOM_ID: h:69ea8788-33b9-42f9-a4f1-92ee22074d2b
 :END:
 
 The Ef themes do not use a =:box= attribute for their mode lines, while
 the active one has an accented background.  Users may prefer the
-approach that my =modus-themes= follow by default, where both active and
+approach that my ~modus-themes~ follow by default, where both active and
 inactive mode lines use shades of gray and have a border around them.
 
 Try something like this, using the approach we have already explained
@@ -1154,7 +1154,7 @@ All the faces defined by the themes:
 :CUSTOM_ID: h:c8d80daf-d039-40c4-bb74-e7814a9b4c79
 :END:
 
-The =ef-themes= will only ever support a curated list of packages based
+The ~ef-themes~ will only ever support a curated list of packages based
 on my judgement ([[#h:ea2eedd7-a473-4826-9b83-31bf3ac2c5f7][Packages that are hard to support]]).  Nevertheless, the
 list of explicitly or implicitly supported packages already covers
 everything most users need.
@@ -1297,7 +1297,7 @@ intervene ([[#h:8e87733c-9fc9-45cd-9b9e-97b11f4f6c05][Explicitly supported packa
 :END:
 
 These are difficult to support due to their (i) incompatibility with the
-design of the =ef-themes=, (ii) complexity or multiple points of entry,
+design of the ~ef-themes~, (ii) complexity or multiple points of entry,
 (iii) external dependencies, (iv) existence of better alternatives in my
 opinion, or (v) inconsiderate use of color out-of-the-box and implicit
 unwillingness to be good Emacs citizens:
@@ -1367,7 +1367,7 @@ The above list is non-exhaustive though you get the idea.
 
 + Minimum contrast ratio of 4.5:1 against the main background (WCAG AA
   standard).  Emphasis on "minimum" as themes can always have more
-  contrast.  Use my =modus-themes= package (also built into Emacs 28
+  contrast.  Use my ~modus-themes~ package (also built into Emacs 28
   or higher) if you need top-class accessibility in this regard.
 
 + If two elements are functionally distinct, the theme must render
@@ -1387,9 +1387,9 @@ The above list is non-exhaustive though you get the idea.
 :CUSTOM_ID: h:fb219b87-ab95-401a-a742-a2fc451bf9f7
 :END:
 
-The =ef-themes= are meant to be minimal in scope, as opposed to my
-=modus-themes= whose accessibility requirements make them maximalist by
-necessity.  The =modus-themes= are such because:
+The ~ef-themes~ are meant to be minimal in scope, as opposed to my
+~modus-themes~ whose accessibility requirements make them maximalist by
+necessity.  The ~modus-themes~ are such because:
 
 1. Accessibility is not a one-size-fits-all.  Customisation options are
    necessary to empower users.
@@ -1397,7 +1397,7 @@ necessity.  The =modus-themes= are such because:
    day using FOO package, it needs to be perfectly legible, otherwise
    the whole theme fails to deliver on its promise.
 
-The =ef-themes= can afford to be more minimal because they do not have
+The ~ef-themes~ can afford to be more minimal because they do not have
 such a lofty accessibility target.
 
 * FAQ
@@ -1421,7 +1421,7 @@ place.
 :END:
 
 No.  For my workflow, accessibility is the most important quality.  The
-=modus-themes= will remain my default choice.
+~modus-themes~ will remain my default choice.
 
 ** Then why develop the ef-themes?
 :PROPERTIES:
@@ -1431,7 +1431,7 @@ No.  For my workflow, accessibility is the most important quality.  The
 Because I think that users deserve "pretty" themes that (i) do make some
 considerations for legibility, and (ii) are not designed on a whimsy.
 
-The =ef-themes= are my answer to those who (i) like my =modus-themes=,
+The ~ef-themes~ are my answer to those who (i) like my ~modus-themes~,
 (ii) want something with a bit more flair, and (iii) are fine with a
 bit more relaxed accessibility target.
 
@@ -1441,10 +1441,10 @@ bit more relaxed accessibility target.
 :END:
 
 The main difference between the two projects is that the
-=modus-themes= are much more strict with maintaining the highest
+~modus-themes~ are much more strict with maintaining the highest
 standard for contrast (I won't delve into the technicalities, though
-the manual of the =modus-themes= does elaborate on the minutiae).
-Whereas the =ef-themes= do not have such a commitment: they are
+the manual of the ~modus-themes~ does elaborate on the minutiae).
+Whereas the ~ef-themes~ do not have such a commitment: they are
 legible, but might go a bit below the desired target in certain cases.
 
 For the user who has already narrowed their search to the Modus and Ef
@@ -1453,9 +1453,9 @@ looks good/usable, then that is what matters.  A bit of
 experimentation provides greater insight than tomes on theoretical
 nuances---no value in overthinking it.
 
-Between the =ef-themes= and the =modus-themes=, I provide a broad
+Between the ~ef-themes~ and the ~modus-themes~, I provide a broad
 range of options for users who need varying degrees of legibility.
-The =modus-themes= are the ones with the highest contrast.
+The ~modus-themes~ are the ones with the highest contrast.
 
 I have always maintained the view that (i) there is no such thing as a
 one-size-fits-all for accessibility due to innate differences in
@@ -1466,18 +1466,18 @@ as one needs to consider typography as well as environmental factors.
 [ For my preferred typography, check Iosevka Comfy:
   <https://protesilaos.com/emacs/iosevka-comfy-pictures>. ]
 
-Technically, the very high contrast of the =modus-themes= demands that
-they are not---and can never be---as colourful as the =ef-themes=.
+Technically, the very high contrast of the ~modus-themes~ demands that
+they are not---and can never be---as colourful as the ~ef-themes~.
 Their colours are less saturated.  In terms of presentation, this
-means that the =modus-themes= may appear more minimalist (or "clean")
+means that the ~modus-themes~ may appear more minimalist (or "clean")
 once one gets used to their level of contrast.  In general: do not
 trust initial impressions and give the themes a fair chance (if one is
-used to low contrast settings, the =modus-themes= feel hard to get
+used to low contrast settings, the ~modus-themes~ feel hard to get
 used to, though this is natural as the eye adapts accordingly).
 
-The =ef-themes= are more colourful, which can make them more/less
+The ~ef-themes~ are more colourful, which can make them more/less
 pleasant to work with, depending on one's subjectivity.  Within the
-=ef-themes=, there is considerable diversity, as each of the 20 items
+~ef-themes~, there is considerable diversity, as each of the 20 items
 has its own character, expressed as a unique colour palette and colour
 mapping.  No two themes are alike.  For example, for light themes
 ~ef-summer~ gives the user a completely different vibe than
@@ -1536,7 +1536,7 @@ they have to look apart even if the difference is small.
 
 The assumption that tags are right-aligned (per Org's default behaviour)
 does not hold, as there exists a user option to disable this effect:
-~org-auto-align-tags~.  The author of the =ef-themes= uses this option
+~org-auto-align-tags~.  The author of the ~ef-themes~ uses this option
 because the way Org performs this alignment using literal spaces does
 not work properly with (i) proportionately spaced fonts, (ii) varying
 heading heights, (iii) different levels of indentation.  Realigning tags
@@ -1549,7 +1549,7 @@ which is undesirable.
 :END:
 
 In general, I am not against the idea of drawing inspiration from other
-themes.  Note though that every item in the =ef-themes= collection is
+themes.  Note though that every item in the ~ef-themes~ collection is
 designed from scratch to work in accordance with the principles of this
 project ([[#h:a6dd030c-6b6c-4992-83e8-3438b4607b51][Principles]]).
 
@@ -1562,7 +1562,7 @@ accordance with the exact values of the aforementioned hues and their
 innate relations.
 
 Copying another project's palette is generally not possible or not
-desirable, not even if that is my =modus-themes= (they, too, have a
+desirable, not even if that is my ~modus-themes~ (they, too, have a
 different set of requirements).
 
 Furthermore, trying to mimic another theme generally is an exercise with
