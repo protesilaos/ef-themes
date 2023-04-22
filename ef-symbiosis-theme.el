@@ -134,11 +134,11 @@
       (bg-mode-line       "#583435")
       (fg-mode-line       "#ffe5f0")
       (bg-accent          "#ffbd0f")
-      (bg-completion      "#0f2d4a")
+      (bg-completion      "#1f334f")
       (bg-hover           "#304477")
       (bg-hover-secondary "#5f3f3a")
-      (bg-hl-line         "#112d37")
-      (bg-region          "#27243f")
+      (bg-hl-line         "#1f2f3f")
+      (bg-region          "#2f2630")
       (bg-paren           "#005f4a")
       (bg-err             "#360d09") ; check with err
       (bg-warning         "#332600") ; check with warning
