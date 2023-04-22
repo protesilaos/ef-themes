@@ -1028,6 +1028,71 @@ work with the overall design of the project.
 | #efd3e4 |     5100 |     1.27 |
 #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
 
+* ef-symbiosis
+:PROPERTIES:
+:CUSTOM_ID: h:0340271b-6038-4c8c-b551-d8727bbcef54
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:95ff9ca7-21e5-472e-b30f-14650c576005
+:END:
+
+| Name           |         | #130911 | #221920 | #372d32 | #191317 |
+|----------------+---------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |   12.67 |   11.09 |    8.60 |   11.87 |
+| fg-dim         | #857f8f |    5.05 |    4.42 |    3.43 |    4.73 |
+| fg-alt         | #89afef |    8.78 |    7.69 |    5.96 |    8.23 |
+| red            | #ef6360 |    6.16 |    5.39 |    4.18 |    5.78 |
+| red-warmer     | #ff7355 |    7.29 |    6.38 |    4.95 |    6.83 |
+| red-cooler     | #fe5a7a |    6.47 |    5.67 |    4.39 |    6.07 |
+| red-faint      | #d56f72 |    5.90 |    5.17 |    4.01 |    5.53 |
+| green          | #0faa26 |    6.32 |    5.54 |    4.29 |    5.93 |
+| green-warmer   | #6aad0f |    7.07 |    6.19 |    4.80 |    6.62 |
+| green-cooler   | #00a692 |    6.39 |    5.59 |    4.34 |    5.99 |
+| green-faint    | #61a06c |    6.28 |    5.50 |    4.26 |    5.89 |
+| yellow         | #bf9032 |    6.75 |    5.90 |    4.58 |    6.32 |
+| yellow-warmer  | #d1843f |    6.59 |    5.77 |    4.47 |    6.18 |
+| yellow-cooler  | #df8a5a |    7.37 |    6.45 |    5.00 |    6.91 |
+| yellow-faint   | #cf9f8f |    8.38 |    7.34 |    5.69 |    7.86 |
+| blue           | #3f95f6 |    6.36 |    5.57 |    4.32 |    5.97 |
+| blue-warmer    | #6a9fff |    7.46 |    6.53 |    5.06 |    6.99 |
+| blue-cooler    | #029fff |    6.89 |    6.03 |    4.68 |    6.46 |
+| blue-faint     | #7a94df |    6.63 |    5.81 |    4.50 |    6.22 |
+| magenta        | #d369af |    5.96 |    5.22 |    4.05 |    5.59 |
+| magenta-warmer | #e580ea |    8.01 |    7.01 |    5.43 |    7.51 |
+| magenta-cooler | #af85ff |    7.09 |    6.21 |    4.81 |    6.65 |
+| magenta-faint  | #c58faf |    7.37 |    6.45 |    5.00 |    6.91 |
+| cyan           | #4fbaef |    8.93 |    7.82 |    6.06 |    8.37 |
+| cyan-warmer    | #6fafff |    8.61 |    7.53 |    5.84 |    8.07 |
+| cyan-cooler    | #1dbfcf |    8.75 |    7.66 |    5.94 |    8.20 |
+| cyan-faint     | #8aa0df |    7.61 |    6.66 |    5.16 |    7.13 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:672228d5-bc05-438f-9f24-caddf0bddee7
+:END:
+
+| Name             |         | #583435 |
+|------------------+---------+---------|
+| modeline-err     | #ff906f |    4.84 |
+| modeline-warning | #dfcf73 |    6.80 |
+| modeline-info    | #7fc82f |    5.21 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
+** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:b87223fb-7689-4cd2-95c0-13a79218980e
+:END:
+
+# bg-main / bg-dim, bg-main / bg-alt
+| #130911 | distance | contrast |
+|---------+----------+----------|
+| #221920 |     2165 |     1.14 |
+| #372d32 |    11159 |     1.47 |
+#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
 * ef-trio-dark
 :PROPERTIES:
 :CUSTOM_ID: h:0b8d9f78-dc10-4b50-9197-90713266ec71
