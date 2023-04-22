@@ -37,8 +37,8 @@
 ;; is the opposite of dystopia (δυστοπία): a good place as opposed to
 ;; a bad place.
 ;;
-;; The backronym of the `ef-themes' is: Extremely Fatigued of Themes
-;; Having Exaggerated Markings, Embellishments, and Sparkles.
+;; The backronym of the `ef-themes' is: Eclectic Fashion in Themes
+;; Hides Exaggerated Markings, Embellishments, and Sparkles.
 
 ;;; Code:
 

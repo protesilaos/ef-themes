@@ -18,3 +18,5 @@ of the eight themes in the collection:
     + GitHub: <https://github.com/protesilaos/ef-themes>
     + GitLab: <https://gitlab.com/protesilaos/ef-themes>
 + Mailing list: <https://lists.sr.ht/~protesilaos/ef-themes>
++ Backronym: Eclectic Fashion in Themes Hides Exaggerated Markings,
+  Embellishments, and Sparkles.
