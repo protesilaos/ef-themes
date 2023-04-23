@@ -62,6 +62,7 @@
     ef-deuteranopia-light
     ef-duo-light
     ef-frost
+    ef-kassio
     ef-light
     ef-spring
     ef-summer
