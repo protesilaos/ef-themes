@@ -167,8 +167,8 @@
       (warning yellow)
       (info green)
 
-      (link blue)
-      (link-alt green-cooler)
+      (link cyan)
+      (link-alt magenta-cooler)
       (name green)
       (keybind yellow-cooler)
       (identifier yellow-faint)
