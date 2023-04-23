@@ -1308,8 +1308,11 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(flycheck-warning ((,c :inherit ef-themes-underline-warning)))
 ;;;; flymake
     `(flymake-error ((,c :inherit ef-themes-underline-error)))
+    `(flymake-error-echo ((,c :inherit error)))
     `(flymake-note ((,c :inherit ef-themes-underline-info)))
+    `(flymake-note-echo ((,c :inherit success)))
     `(flymake-warning ((,c :inherit ef-themes-underline-warning)))
+    `(flymake-warning-echo ((,c :inherit warning)))
 ;;;; flyspell
     `(flyspell-duplicate ((,c :inherit ef-themes-underline-warning)))
     `(flyspell-incorrect ((,c :inherit ef-themes-underline-error)))
