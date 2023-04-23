@@ -77,6 +77,7 @@
     ef-deuteranopia-dark
     ef-duo-dark
     ef-night
+    ef-symbiosis
     ef-trio-dark
     ef-tritanopia-dark
     ef-winter)
