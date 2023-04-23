@@ -1190,7 +1190,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     ;; is for the `vertical-border'.  We want this to be more subtle.
     `(fill-column-indicator ((,c :height 1 :background ,bg-alt :foreground ,bg-alt)))
 ;;;; doom-modeline
-    `(doom-modeline-bar ((,c :background ,bg-accent)))
+    `(doom-modeline-bar ((,c :background ,keybind)))
     `(doom-modeline-bar-inactive ((,c :background ,bg-alt)))
     `(doom-modeline-battery-charging ((,c :foreground ,modeline-info)))
     `(doom-modeline-battery-critical ((,c :underline t :foreground ,modeline-err)))

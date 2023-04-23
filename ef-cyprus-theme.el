@@ -133,7 +133,6 @@
 
       (bg-mode-line       "#c0df6f")
       (fg-mode-line       "#142010")
-      (bg-accent          "#802000")
       (bg-completion      "#e6e4bf")
       (bg-hover           "#efc26f")
       (bg-hover-secondary "#afc0f0")
