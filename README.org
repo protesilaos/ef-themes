@@ -1282,6 +1282,7 @@ themes already cover:
 - hl-todo
 - icomplete
 - ido
+- mct
 - multiple-cursors
 - paren-face
 - sxhkdrc-mode
