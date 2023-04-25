@@ -1466,7 +1466,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(image-dired-thumb-header-file-size ((,c :foreground ,info)))
     `(image-dired-thumb-mark ((,c :background ,info)))
 ;;;; info
-    `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,accent-0))) ; the capitalization is canonical
+    `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-verbatim))) ; the capitalization is canonical
     `(info-header-node ((,c :inherit (shadow bold))))
     `(info-index-match ((,c :inherit match)))
     `(info-menu-header ((,c :inherit bold)))
