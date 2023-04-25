@@ -1951,6 +1951,13 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(reb-match-3 ((,c :background ,bg-yellow :foreground ,fg-intense)))
     `(reb-regexp-grouping-backslash ((,c :inherit font-lock-regexp-grouping-backslash)))
     `(reb-regexp-grouping-construct ((,c :inherit font-lock-regexp-grouping-construct)))
+;;;;; rst-mode
+    `(rst-level-1 ((,c :inherit ef-themes-heading-1)))
+    `(rst-level-2 ((,c :inherit ef-themes-heading-2)))
+    `(rst-level-3 ((,c :inherit ef-themes-heading-3)))
+    `(rst-level-4 ((,c :inherit ef-themes-heading-4)))
+    `(rst-level-5 ((,c :inherit ef-themes-heading-5)))
+    `(rst-level-6 ((,c :inherit ef-themes-heading-6)))
 ;;;; ruler-mode
     `(ruler-mode-column-number ((,c :inherit ruler-mode-default)))
     `(ruler-mode-comment-column ((,c :inherit ruler-mode-default :foreground ,red)))

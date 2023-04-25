@@ -1244,6 +1244,7 @@ everything most users need.
 - rcirc
 - recursion-indicator
 - regexp-builder (re-builder)
+- rst-mode [Part of {{{development-version}}}.]
 - ruler-mode
 - shell-script-mode (sh-mode)
 - show-paren-mode
