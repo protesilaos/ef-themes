@@ -211,7 +211,7 @@
 
       (prose-code cyan-cooler)
       (prose-done green)
-      (prose-macro yellow)
+      (prose-macro green-warmer)
       (prose-metadata fg-dim)
       (prose-metadata-value fg-alt)
       (prose-table fg-alt)
