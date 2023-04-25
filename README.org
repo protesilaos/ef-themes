@@ -1284,6 +1284,7 @@ themes already cover:
 - ido
 - multiple-cursors
 - paren-face
+- sxhkdrc-mode
 - which-key
 - xref
 
