@@ -226,9 +226,9 @@
       (mail-cite-2 green-faint)
       (mail-cite-3 fg-dim)
       (mail-part cyan)
-      (mail-recipient blue-cooler)
-      (mail-subject green-warmer)
-      (mail-other blue)
+      (mail-recipient cyan-warmer)
+      (mail-subject magenta-cooler)
+      (mail-other blue-warmer)
 
 ;;;; Rainbow mappings
 
