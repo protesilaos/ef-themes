@@ -1237,6 +1237,7 @@ everything most users need.
 - outline-minor-faces
 - package (=M-x list-packages=)
 - perspective
+- proced [Part of {{{development-version}}}.]
 - powerline
 - pulsar
 - pulse
