@@ -1216,6 +1216,7 @@ everything most users need.
 - info
 - isearch, occur, query-replace
 - jit-spell
+- jinx [Part of {{{development-version}}}.]
 - keycast
 - lin
 - line numbers (~display-line-numbers-mode~ and global variant)

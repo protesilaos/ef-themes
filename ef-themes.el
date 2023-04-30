@@ -1486,6 +1486,8 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(query-replace ((,c :background ,bg-red :foreground ,fg-intense)))
 ;;;; jit-spell
     `(jit-spell-misspelling ((,c :inherit ef-themes-underline-error)))
+;;;;; jinx
+    `(jinx-misspelled ((,c :inherit ef-themes-underline-error)))
 ;;;; keycast
     `(keycast-command ((,c :inherit bold)))
     `(keycast-key ((,c :inherit bold :background ,bg-hover :foreground ,fg-intense :box (:line-width -1 :color ,fg-dim))))
