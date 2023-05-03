@@ -203,6 +203,7 @@
       (date-event fg-alt)
       (date-holiday blue)
       (date-now fg-main)
+      (date-range fg-alt)
       (date-scheduled yellow)
       (date-weekday cyan)
       (date-weekend red-faint)

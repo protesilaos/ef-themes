@@ -206,6 +206,7 @@
       (date-event fg-alt)
       (date-holiday cyan-warmer)
       (date-now fg-main)
+      (date-range fg-alt)
       (date-scheduled magenta)
       (date-weekday cyan)
       (date-weekend red-faint)
