@@ -119,18 +119,18 @@
 
 ;;; Graphs
 
-      (red-graph-0-bg     "#705c3c")
-      (red-graph-1-bg     "#504420")
-      (green-graph-0-bg   "#4f666f")
-      (green-graph-1-bg   "#204840")
-      (yellow-graph-0-bg  "#c1c00a")
-      (yellow-graph-1-bg  "#6f6f00")
-      (blue-graph-0-bg    "#2fafef")
-      (blue-graph-1-bg    "#1f2f8f")
-      (magenta-graph-0-bg "#7f7f8e")
-      (magenta-graph-1-bg "#4f4f5f")
-      (cyan-graph-0-bg    "#376f9a")
-      (cyan-graph-1-bg    "#00404f")
+      (bg-graph-red-0     "#bf6000")
+      (bg-graph-red-1     "#733500")
+      (bg-graph-green-0   "#6fbf8f")
+      (bg-graph-green-1   "#2f5f4f")
+      (bg-graph-yellow-0  "#c1c00a")
+      (bg-graph-yellow-1  "#7f6640")
+      (bg-graph-blue-0    "#0f90ef")
+      (bg-graph-blue-1    "#1f2f8f")
+      (bg-graph-magenta-0 "#7f7f8e")
+      (bg-graph-magenta-1 "#4f4f5f")
+      (bg-graph-cyan-0    "#376f9a")
+      (bg-graph-cyan-1    "#00404f")
 
 ;;; Special hues
 
