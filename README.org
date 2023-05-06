@@ -245,6 +245,9 @@ includes a list with all relevant symbols.  The user can then switch
 between the two specified themes by invoking the ~ef-themes-toggle~
 command.
 
+[ As part of {{{development-version}}}, the ~ef-themes-collection~ has
+  an alias called ~ef-themes-items~.]
+
 If ~ef-themes-to-toggle~ does not specify two Ef themes, inform the user
 about it while prompting with completion for a theme among our
 collection (this is practically the same as the ~ef-themes-select~

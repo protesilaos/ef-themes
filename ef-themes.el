@@ -84,6 +84,9 @@
     ef-winter)
   "List of symbols with the dark Ef themes.")
 
+(defvaralias 'ef-themes-items 'ef-themes-collection
+  "Alias of `ef-themes-collection'.")
+
 (defconst ef-themes-collection
   (append ef-themes-light-themes ef-themes-dark-themes)
   "Symbols of all the Ef themes.")
