@@ -1080,7 +1080,6 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(consult-imenu-prefix ((,c :inherit shadow)))
     `(consult-line-number ((,c :inherit shadow)))
     `(consult-line-number-prefix ((,c :inherit shadow)))
-    `(consult-preview-cursor ((,c :background ,cursor :foreground ,bg-main)))
     `(consult-separator ((,c :foreground ,border)))
 ;;;; corfu
     `(corfu-current ((,c :background ,bg-completion)))
