@@ -2120,6 +2120,18 @@ Optional prefix argument MAPPINGS has the same meaning as for
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
     `(vertico-group-title ((,c :inherit bold :foreground ,name)))
+;;;;; vterm
+    `(vterm-color-black ((,c :background "gray35" :foreground "black")))
+    `(vterm-color-blue ((,c :background ,blue-warmer :foreground ,blue)))
+    `(vterm-color-cyan ((,c :background ,cyan-cooler :foreground ,cyan)))
+    `(vterm-color-default ((,c :background ,bg-main :foreground ,fg-main)))
+    `(vterm-color-green ((,c :background ,green-cooler :foreground ,green)))
+    `(vterm-color-inverse-video ((,c :background ,bg-main :inverse-video t)))
+    `(vterm-color-magenta ((,c :background ,magenta-cooler :foreground ,magenta)))
+    `(vterm-color-red ((,c :background ,red-warmer :foreground ,red)))
+    `(vterm-color-underline ((,c :underline t)))
+    `(vterm-color-white ((,c :background "white" :foreground "gray65")))
+    `(vterm-color-yellow ((,c :background ,yellow-warmer :foreground ,yellow)))
 ;;;; vundo
     `(vundo-default ((,c :inherit shadow)))
     `(vundo-highlight ((,c :inherit (bold vundo-node) :foreground ,err)))

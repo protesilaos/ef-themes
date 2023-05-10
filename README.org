@@ -1266,6 +1266,7 @@ everything most users need.
 - tty-menu
 - vc (=vc-dir.el=, =vc-hooks.el=)
 - vertico
+- vterm [Part of {{{development-version}}}.]
 - vundo [Part of {{{development-version}}}.]
 - wgrep
 - which-function-mode
