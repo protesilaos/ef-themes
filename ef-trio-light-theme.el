@@ -83,12 +83,12 @@
 
 ;;; Basic hues for background values
 
-      (bg-red      "#ff7f88")
-      (bg-green    "#86df80")
-      (bg-yellow   "#ffc200")
-      (bg-blue     "#cbcfff")
-      (bg-magenta  "#df8fff")
-      (bg-cyan     "#88ccff")
+      (bg-red-intense     "#ff7f88")
+      (bg-green-intense   "#86df80")
+      (bg-yellow-intense  "#ffc200")
+      (bg-blue-intense    "#cbcfff")
+      (bg-magenta-intense "#df8fff")
+      (bg-cyan-intense    "#88ccff")
 
       (bg-red-subtle      "#ffc3bf")
       (bg-green-subtle    "#b9f2c6")
