@@ -1581,27 +1581,27 @@ range of options for users who need varying degrees of legibility.
 The ~modus-themes~ are the ones with the highest contrast.
 
 I have always maintained the view that (i) there is no such thing as a
-one-size-fits-all for accessibility due to innate differences in
-colour perception between individuals as well as hardware
-capabilities, and (ii) no theme can handle accessibility on its own,
-as one needs to consider typography as well as environmental factors.
+one-size-fits-all for accessibility due to innate differences in color
+perception between individuals as well as hardware capabilities, and
+(ii) no theme can handle accessibility on its own, as one needs to
+consider typography as well as environmental factors.
 
 [ For my preferred typography, check Iosevka Comfy:
   <https://protesilaos.com/emacs/iosevka-comfy-pictures>. ]
 
 Technically, the very high contrast of the ~modus-themes~ demands that
-they are not---and can never be---as colourful as the ~ef-themes~.
-Their colours are less saturated.  In terms of presentation, this
-means that the ~modus-themes~ may appear more minimalist (or "clean")
-once one gets used to their level of contrast.  In general: do not
-trust initial impressions and give the themes a fair chance (if one is
-used to low contrast settings, the ~modus-themes~ feel hard to get
-used to, though this is natural as the eye adapts accordingly).
+they are not---and can never be---as colorful as the ~ef-themes~.
+Their colors are less saturated.  In terms of presentation, this means
+that the ~modus-themes~ may appear more minimalist (or "clean") once
+one gets used to their level of contrast.  In general: do not trust
+initial impressions and give the themes a fair chance (if one is used
+to low contrast settings, the ~modus-themes~ feel hard to get used to,
+though this is natural as the eye adapts accordingly).
 
-The ~ef-themes~ are more colourful, which can make them more/less
+The ~ef-themes~ are more colorful, which can make them more/less
 pleasant to work with, depending on one's subjectivity.  Within the
 ~ef-themes~, there is considerable diversity, as each of the 20 items
-has its own character, expressed as a unique colour palette and colour
+has its own character, expressed as a unique color palette and color
 mapping.  No two themes are alike.  For example, for light themes
 ~ef-summer~ gives the user a completely different vibe than
 ~ef-frost~, while for dark themes ~ef-bio~ and ~ef-cherie~ each have
@@ -1618,7 +1618,7 @@ the meticulous work that goes into thematic consistency.  I do not
 write about this topic because it does not really matter to the
 average user.  Consistency is not something that should actively be
 calling for one's attention, though it is "there" for those who wish
-to pay attention.  In short: I am not picking random colours and
+to pay attention.  In short: I am not picking random colors and
 implementing them on a whimsy.  Theme development is not easy.
 
 ** Too many options, what should I do?
