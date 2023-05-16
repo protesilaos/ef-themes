@@ -322,8 +322,7 @@ Other examples:
               (const :tag "More intense background (also override text color)" accented))
   :link '(info-link "(ef-themes) Style of region highlight"))
 
-;; TODO 2022-12-30: Make the palette overrides a `defcustom'
-(defvar ef-themes-common-palette-overrides nil
+(defcustom ef-themes-common-palette-overrides nil
   "Set palette overrides for all the Ef themes.
 
 Mirror the elements of a theme's palette, overriding their value.
@@ -332,7 +331,15 @@ individual theme overrides are THEME-NAME-palette-overrides.  The
 THEME-NAME is one of the symbols in `ef-themes-collection'.
 
 Individual theme overrides take precedence over these common
-overrides.")
+overrides.
+
+To preview the palette entries, use `ef-themes-preview-colors' or
+`ef-themes-preview-colors-current' (read the documentation for
+further details)."
+  :group 'ef-themes
+  :package-version '(ef-themes . "1.0.0")
+  :type '(repeat (list symbol (choice symbol string)))
+  :link '(info-link "(ef-themes) Palette overrides"))
 
 ;;; Helpers for user options
 
