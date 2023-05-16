@@ -451,70 +451,183 @@ Other examples:
 :END:
 #+cindex: Override color values and semantic color mappings
 
-Each theme defines its own color palette as well as semantic color
-mappings.  The former is the set of color values such as what shade of
-blue to use.  The latter refers to associations between a color value
-and a syntactic construct, such as a =variable= for variables in
-programming modes or =heading-1= for level 1 headings in Org and
-others.
+Each Ef theme specifies a color palette that declares named color
+values and semantic color mappings:
 
-The definition is stored in the variable =ef-NAME-palette=, where
-=NAME= is the specifier of the theme, such as ~summer~ for the
-~ef-summer~ theme.  Overrides for those associations are specified in
-the variable =ef-NAME-palette-overrides=.
++ Named colors consist of a symbol and a string that specifies a
+  hexadecimal RGB value.  For example: =(blue-warmer "#5250ef")=.
+
++ The semantic color mappings associate an abstract construct with a
+  given named color from the palette, like =(prose-done green-cooler)=.
+  Both elements of the list are symbols, though the ~cadr~ (value) can
+  be a string that specifies a color, such as =(prose-done "#5250ef")=.
 
 #+vindex: ef-themes-common-palette-overrides
-The variable ~ef-themes-common-palette-overrides~ is available for
-shared values.  It is advised to only use this for mappings that do
-not specify a color value directly.  This way, the text remains
-legible by getting the theme-specific color value it needs.
+Both of those subsets can be overridden, thus refashioning the theme.
+Overrides are either shared, by being stored in the user option
+~ef-themes-common-palette-overrides~, or they are specific to the
+theme they name.  In the latter case, the naming scheme of each
+palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 
-All associations take the form of =(KEY VALUE)= pairs.  For example,
-the ~ef-summer-palette~ contains =(blue-warmer "#5250ef")=.  Semantic
-color mappings are the same, though the =VALUE= is one of the named
-colors of the theme.  For instance, ~ef-summer-palette~ maps the
-aforementioned =blue-warmer= to =variable= thus =(variable blue-warmer)=.
+#+vindex: ef-autumn-palette-overrides
+- ~ef-autumn-palette-overrides~
 
-The easiest way to learn about a theme's definition is to use the
-command ~describe-variable~ (bound to =C-h v= by default) and then
-search for the =ef-NAME-palette=.  The resulting Help buffer will look
-like this:
+#+vindex: ef-bio-palette-overrides
+- ~ef-bio-palette-overrides~
 
-#+begin_example
-ef-summer-palette is a variable defined in ‘ef-summer-theme.el’.
+#+vindex: ef-cherie-palette-overrides
+- ~ef-cherie-palette-overrides~
 
-Its value is shown below.
+#+vindex: ef-cyprus-palette-overrides
+- ~ef-cyprus-palette-overrides~
 
-The ‘ef-summer’ palette.
+#+vindex: ef-dark-palette-overrides
+- ~ef-dark-palette-overrides~
 
-  This variable may be risky if used as a file-local variable.
+#+vindex: ef-day-palette-overrides
+- ~ef-day-palette-overrides~
 
-Value:
-((bg-main "#fff2f3")
- (fg-main "#4f4073")
+#+vindex: ef-deuteranopia-dark-palette-overrides
+- ~ef-deuteranopia-dark-palette-overrides~
 
-[... Shortened for the purposes of this manual.]
-#+end_example
+#+vindex: ef-deuteranopia-light-palette-overrides
+- ~ef-deuteranopia-light-palette-overrides~
 
-The user can study this information to identify the overrides they
-wish to make.  Then they can specify them and re-load the theme for
-changes to take effect.  Sample of how to override a color value and a
-semantic mapping:
+#+vindex: ef-duo-dark-palette-overrides
+- ~ef-duo-dark-palette-overrides~
+
+#+vindex: ef-duo-light-palette-overrides
+- ~ef-duo-light-palette-overrides~
+
+#+vindex: ef-frost-palette-overrides
+- ~ef-frost-palette-overrides~
+
+#+vindex: ef-kassio-palette-overrides
+- ~ef-kassio-palette-overrides~
+
+#+vindex: ef-light-palette-overrides
+- ~ef-light-palette-overrides~
+
+#+vindex: ef-night-palette-overrides
+- ~ef-night-palette-overrides~
+
+#+vindex: ef-spring-palette-overrides
+- ~ef-spring-palette-overrides~
+
+#+vindex: ef-summer-palette-overrides
+- ~ef-summer-palette-overrides~
+
+#+vindex: ef-symbiosis-palette-overrides
+- ~ef-symbiosis-palette-overrides~
+
+#+vindex: ef-trio-dark-palette-overrides
+- ~ef-trio-dark-palette-overrides~
+
+#+vindex: ef-trio-light-palette-overrides
+- ~ef-trio-light-palette-overrides~
+
+#+vindex: ef-tritanopia-dark-palette-overrides
+- ~ef-tritanopia-dark-palette-overrides~
+
+#+vindex: ef-tritanopia-light-palette-overrides
+- ~ef-tritanopia-light-palette-overrides~
+
+#+vindex: ef-winter-palette-overrides
+- ~ef-winter-palette-overrides~
+
+Theme-specific overrides take precedence over the shared ones.  It is
+strongly advised that shared overrides do NOT alter color values, as
+those will not be appropriate for both dark and light themes.  Common
+overrides are best limited to the semantic color mappings as those use
+the color value that corresponds to the active theme (e.g. make the
+cursor =blue-warmer= in all themes, whatever the value of
+=blue-warmer= is in each theme).
+
+The value of any overrides' variable must mirror a theme's palette.
+Palette variables are named after their theme as =THEME-NAME-palette=.
+For example, the ~ef-summer-palette~ is like this:
+
+#+begin_src emacs-lisp
+(defconst ef-summer-palette
+  '(
+;;; Basic values
+
+    (bg-main     "#fff2f3")
+    (fg-main     "#4f4073")
+    (bg-dim      "#f2e4ea")
+    (fg-dim      "#786e74")
+    (bg-alt      "#efd3e4")
+    (fg-alt      "#af4988")
+
+    (bg-active   "#cfb3c4")
+    (bg-inactive "#f7ebee")
+
+;;; Basic hues for foreground values
+
+    (red             "#d3303a")
+    (red-warmer      "#e00033")
+    (red-cooler      "#d50f7f")
+    (red-faint       "#c24552")
+
+    ;; ...
+
+    (blue            "#375ce6")
+    (blue-warmer     "#5250ef")
+    (blue-cooler     "#065fff")
+    (blue-faint      "#6060d0")
+
+    ;; ...
+
+;;; Mappings
+
+    ;; ...
+
+;;;; Code mappings
+
+    (builtin magenta)
+    (comment yellow-faint)
+    (constant red-cooler)
+    (fnname magenta-warmer)
+    (keyword magenta-cooler)
+    (preprocessor green-warmer)
+    (docstring cyan-faint)
+    (string yellow-warmer)
+    (type cyan-warmer)
+    (variable blue-warmer)
+
+    ;; ...
+    ))
+#+end_src
+
+The ~ef-summer-palette-overrides~ targets the entries that need to be
+changed.  For example, to make the cursor orange, use a shade of red
+for comments, and apply a cyan hue to keywords:
 
 #+begin_src emacs-lisp
 (setq ef-summer-palette-overrides
-      '((blue-warmer "#5230ff") ; original value is #5250ef
-        (variable cyan))) ; original value is blue-warmer
+      '((cursor "#ef9050")
+        (comment red-faint)
+        (keyword cyan-cooler)))
 #+end_src
 
-The overrides can contain as many associations as the user needs.
+Changes take effect upon theme reload.  Overrides are removed by
+setting their variable to a ~nil~ value.
 
-Changes to color values are reflected in the preview of the theme's
-palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).  They are shown at the top of the
-buffer.  In the above example, the first instance of =blue-warmer= is
-the override and the second is the original one.
+The common accented foregrounds in each palette follow a predictable
+naming scheme: =HUE{,-warmer,-cooler,-faint,-intense}=.  =HUE= is one
+of the six basic colors: red, green, blue, yellow, magenta, cyan.
 
-Contact me if you need further help with this.
+Named colors that are meant to be used as backgrounds contain =bg= in
+their name, such as =bg-red-intense=.  While special purpose
+foregrounds that are meant to be combined with such backgrounds,
+contain =fg= in their name, such as =fg-removed= which complements
+=bg-removed=.
+
+Named colors can be previewed with the ~ef-themes-preview-colors~
+command.  Changes to color values are reflected in the preview of the
+theme's palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).  They are shown at the top of
+the buffer.  In the above example, the first instance of =blue-warmer=
+is the override and the second is the original one.
 
 * Loading a theme
 :PROPERTIES:
