@@ -9,6 +9,112 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.0.0 on 2023-05-16
+
+This is the first major release of the ~ef-themes~.  The project is in
+a stable state.  I continue to make refinements to it, especially for
+the sort of details that are hard to spot.
+
+** Try the two new themes
+
+The ~ef-kassio~ and ~ef-symbiosis~ provide yet more stylistic
+variation to an already wide collection:
+
+- ~ef-kassio~ is a light theme that harmoniously combines blue and red
+  hues in an overall design that feels earthly and measured.  Its name
+  is a cryptic reference to a place in Greece.
+
+- ~ef-symbiosis~ is a dark theme that balances contrasting cool and
+  warm hues.  Deep and lighter browns blend with vivid greens and
+  neutral blues.  The name of the theme is a reference to the
+  coexistence of hues that could belong to two separate themes, yet
+  feel natural in tandem.
+
+Picture of all the themes: <https://protesilaos.com/emacs/ef-themes-pictures>.
+
+** Commands to switch between only dark or light themes
+
+The ~ef-themes-select-dark~ and ~ef-themes-select-light~ provide
+minibuffer completion that limits the candidates to the respective
+subset.  This makes it easier for users to discover another theme they
+may like.
+
+** Helpful completion annotations
+
+All Ef commands that use minibuffer completion now produce annotations
+that describe in a few words what each theme is about.  For example,
+~ef-deuteranopia-dark~ is presented as a "Legible dark theme,
+optimized for red-green color deficiency".
+
+** Palette overrides
+
+All variables that allow the user to override named colours and
+semantic colour mappings are now declared as user options.
+Concretely, these can now be discovered from the Custom interface.
+
+Palette overrides are not new to this version, though they are
+henceforth considered stable for widespread use.  Consult the manual
+for how to make use of them and how to preview the entries of any
+given theme palette.
+
+To ensure consistency, some symbols in the palette have been renamed.
+For example, graph colours follow the pattern ~bg-graph-red-0~ instead
+of ~red-graph-0-bg~.  Same for intensely coloured backgrounds, which
+are now named like ~bg-red-intense~ rather than ~bg-red~.
+
+** Improved graph colours
+
+All themes have a refined palette subset for graph-related purposes.
+These are encountered, for example, in the ~org-habit~ consistency
+graph.  The differences are subtle, yet important in context to
+improve the usability of the given interfaces.
+
+** Improved graph colours for deuteranopia, tritanopia
+
+I also recalibrated the graph-related colours for the deuteranopia-
+and tritanopia- optimized themes.  This is related to the above, but I
+am writing it separately as it has its own requirements.
+
+The default design of ~org-habit~ expects a colour coding of red,
+yellow, green, blue.  This cannot work for users with either red-green
+or blue-yellow colour deficiency.  The relevant Ef themes have long
+accounted for this requirement, though they now are even better at it.
+
+** Support for new faces and changes to existing ones
+
+- Newly supported packages are: ~jinx~, ~rst-mode~, ~vundo~, ~vterm~.
+  Consult the manual for the full list of supported packages.  Some
+  packages are implicitly covered, because they have reasonable
+  defaults, such as my ~sxhkdrc-mode~.
+
+- The built-in ~menu~, ~scroll-bar~, and ~tool-bar~ faces are now
+  covered.  These only come into effect in certain scenaria, such as
+  an Emacs build done with the Lucid toolkit or a text session that
+  involves usage of the menu bar.
+
+- The built-in ~flymake~ linter has several new faces in Emacs 29 and
+  Emacs 30, which are now fully supported by the themes and styled in
+  the interest of harmony (~flymake~ is available from GNU ELPA for
+  those who want to benefit from the latest features in older versions
+  of Emacs).
+
+- The built-in ~proced~ has several new faces.  All are supported,
+  adding optional extra colour to those buffers without overdoing it.
+
+- Org mode has a new ~org-agenda-calendar-daterange~ face.  It is
+  covered and there also are semantic colour mappings for date ranges.
+
+- Clickable buttons, such as in Custom buffers, are now shown with a
+  three-dimensional effect.  The flat style creates ambiguity between
+  the button and the text fields.  This happens, for example, with
+  =M-x customize-variable= for ~org-capture-templates~ which has lots
+  of button and text field combinations.  The added sense of depth
+  helps with the usability of these buttons because it makes them
+  unambiguous.
+
+- All relevant faces correspond to the semantic colour mappings for
+  ~prose-code~ and ~prose-verbatim~ (useful for palette overrides).
+
 * Version 0.11.0 on 2023-03-13
 
 ** New options to override the colour palette

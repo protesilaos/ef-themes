@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 0.11.0
-#+macro:                 release-date 2023-03-13
-#+macro:                 development-version 1.0.0-dev
+#+macro:                 stable-version 1.0.0
+#+macro:                 release-date 2023-05-16
+#+macro:                 development-version 1.1.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -244,9 +244,6 @@ items in the Ef themes collection.  The variable ~ef-themes-collection~
 includes a list with all relevant symbols.  The user can then switch
 between the two specified themes by invoking the ~ef-themes-toggle~
 command.
-
-[ As part of {{{development-version}}}, the ~ef-themes-collection~ has
-  an alias called ~ef-themes-items~.]
 
 If ~ef-themes-to-toggle~ does not specify two Ef themes, inform the user
 about it while prompting with completion for a theme among our
@@ -710,9 +707,7 @@ dark or light themes, and then shows only the relevant subset.
 Instead of calling ~ef-themese-select~ with a prefix argument, users
 can invoke either of ~ef-themes-select-dark~, ~ef-themes-select-light~
 commands.  Those behave the same as ~ef-themes-select~ except they
-limit the interaction to dark or light Ef themes, respectively.  [ The
-commands ~ef-themes-select-dark~ and ~ef-themes-select-light~ are part
-of {{{development-version}}}. ]
+limit the interaction to dark or light Ef themes, respectively.
 
 #+findex: ef-themes-load-random
 The command ~ef-themes-load-random~ is for those who appreciate a bit of
@@ -1332,7 +1327,7 @@ everything most users need.
 - info
 - isearch, occur, query-replace
 - jit-spell
-- jinx [Part of {{{development-version}}}.]
+- jinx
 - keycast
 - lin
 - line numbers (~display-line-numbers-mode~ and global variant)
@@ -1354,7 +1349,7 @@ everything most users need.
 - outline-minor-faces
 - package (=M-x list-packages=)
 - perspective
-- proced [Part of {{{development-version}}}.]
+- proced
 - powerline
 - pulsar
 - pulse
@@ -1362,7 +1357,7 @@ everything most users need.
 - rcirc
 - recursion-indicator
 - regexp-builder (re-builder)
-- rst-mode [Part of {{{development-version}}}.]
+- rst-mode
 - ruler-mode
 - shell-script-mode (sh-mode)
 - show-paren-mode
@@ -1379,8 +1374,8 @@ everything most users need.
 - tty-menu
 - vc (=vc-dir.el=, =vc-hooks.el=)
 - vertico
-- vterm [Part of {{{development-version}}}.]
-- vundo [Part of {{{development-version}}}.]
+- vterm
+- vundo
 - wgrep
 - which-function-mode
 - whitespace-mode
