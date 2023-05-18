@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 1.0.0
+;; Version: 1.0.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -1235,18 +1235,18 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(doom-modeline-urgent ((,c :inherit bold-italic :foreground ,modeline-err)))
     `(doom-modeline-warning ((,c :inherit bold :foreground ,modeline-warning)))
 ;;;; ediff
-    `(ediff-current-diff-A ((,c :inherit diff-removed)))
-    `(ediff-current-diff-Ancestor ((,c :background ,bg-region))) ; TODO 2022-08-14: Needs review
-    `(ediff-current-diff-B ((,c :inherit diff-added)))
-    `(ediff-current-diff-C ((,c :inherit diff-changed)))
+    `(ediff-current-diff-A ((,c :background ,bg-removed :foreground ,fg-removed)))
+    `(ediff-current-diff-Ancestor ((,c :background ,bg-region)))
+    `(ediff-current-diff-B ((,c :background ,bg-added :foreground ,fg-added)))
+    `(ediff-current-diff-C ((,c :background ,bg-changed :foreground ,fg-changed)))
     `(ediff-even-diff-A ((,c :background ,bg-dim)))
     `(ediff-even-diff-Ancestor ((,c :background ,bg-dim)))
     `(ediff-even-diff-B ((,c :background ,bg-dim)))
     `(ediff-even-diff-C ((,c :background ,bg-dim)))
-    `(ediff-fine-diff-A ((,c :inherit diff-refine-removed)))
-    `(ediff-fine-diff-Ancestor ((,c :inherit diff-refine-cyan)))
-    `(ediff-fine-diff-B ((,c :inherit diff-refine-added)))
-    `(ediff-fine-diff-C ((,c :inherit diff-refine-changed)))
+    `(ediff-fine-diff-A ((,c :background ,bg-removed-refine :foreground ,fg-removed)))
+    `(ediff-fine-diff-Ancestor ((,c :inherit modus-themes-subtle-cyan)))
+    `(ediff-fine-diff-B ((,c :background ,bg-added-refine :foreground ,fg-added)))
+    `(ediff-fine-diff-C ((,c :background ,bg-changed-refine :foreground ,fg-changed)))
     `(ediff-odd-diff-A ((,c :inherit ediff-even-diff-A)))
     `(ediff-odd-diff-Ancestor ((,c :inherit ediff-even-diff-Ancestor)))
     `(ediff-odd-diff-B ((,c :inherit ediff-even-diff-B)))

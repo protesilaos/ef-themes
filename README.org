@@ -1707,7 +1707,7 @@ matters.
   (zealotrush), Daniel Mendler, Federico Stilman, Iris Garcia,
   Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška, Spike-Leung,
   Steve Molitor, Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán
-  Király.
+  Király, goldfita.
 
 * GNU Free Documentation License
 :PROPERTIES:
