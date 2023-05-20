@@ -1474,10 +1474,10 @@ Optional prefix argument MAPPINGS has the same meaning as for
 ;;;; ibuffer
     `(ibuffer-locked-buffer ((,c :foreground ,warning)))
 ;;;; image-dired
-    `(image-dired-thumb-flagged ((,c :background ,err)))
+    `(image-dired-thumb-flagged ((,c :background ,err :box (:line-width -3))))
     `(image-dired-thumb-header-file-name ((,c :inherit bold)))
     `(image-dired-thumb-header-file-size ((,c :foreground ,info)))
-    `(image-dired-thumb-mark ((,c :background ,info)))
+    `(image-dired-thumb-mark ((,c :background ,info :box (:line-width -3))))
 ;;;; info
     `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-verbatim))) ; the capitalization is canonical
     `(info-header-node ((,c :inherit (shadow bold))))
