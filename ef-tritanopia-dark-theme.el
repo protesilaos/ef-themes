@@ -204,7 +204,7 @@
       (date-common cyan-cooler)
       (date-deadline red-warmer)
       (date-event fg-alt)
-      (date-holiday cyan-warmer)
+      (date-holiday red-warmer)
       (date-now fg-main)
       (date-range fg-alt)
       (date-scheduled magenta)

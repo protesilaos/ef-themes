@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 1.0.1
+;; Version: 1.0.2
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -1014,10 +1014,10 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(calendar-today ((,c :inherit bold :underline t)))
     `(calendar-weekday-header ((,c :foreground ,date-weekday)))
     `(calendar-weekend-header ((,c :foreground ,date-weekend)))
-    `(diary ((,c :background ,bg-dim :foreground ,accent-0)))
-    `(diary-anniversary ((,c :foreground ,accent-1)))
+    `(diary ((,c :foreground ,date-common)))
+    `(diary-anniversary ((,c :foreground ,date-holiday)))
     `(diary-time ((,c :foreground ,date-common)))
-    `(holiday ((,c :background ,bg-dim :foreground ,date-holiday)))
+    `(holiday ((,c :foreground ,date-holiday)))
 ;;;; cider
     `(cider-deprecated-face ((,c :background ,bg-warning :foreground ,warning)))
     `(cider-enlightened-face ((,c :box ,warning)))
