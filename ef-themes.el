@@ -603,10 +603,13 @@ Which themes are disabled is determined by the user option
 `ef-themes-disable-other-themes'.
 
 Run the `ef-themes-post-load-hook' as the final step after
-loading the THEME."
+loading the THEME.
+
+Return THEME."
   (ef-themes--disable-themes)
   (load-theme theme :no-confirm)
-  (run-hooks 'ef-themes-post-load-hook))
+  (run-hooks 'ef-themes-post-load-hook)
+  theme)
 
 ;;;###autoload
 (defun ef-themes-select (theme &optional _variant)
