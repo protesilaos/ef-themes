@@ -51,6 +51,8 @@
   "Colorful and legible themes."
   :group 'faces
   :link '(info-link "(ef-themes) Top")
+  :link '(url-link :tag "Homepage" "https://protesilaos.com/emacs/ef-themes")
+  :link '(url-link :tag "Sample pictures" "https://protesilaos.com/emacs/ef-themes-pictures")
   :prefix "ef-themes-"
   :tag "Ef Themes")
 
@@ -809,6 +811,8 @@ Optional prefix argument MAPPINGS has the same meaning as for
   "Faces defined by the Ef themes."
   :group 'ef-themes
   :link '(info-link "(ef-themes) Top")
+  :link '(url-link :tag "Homepage" "https://protesilaos.com/emacs/ef-themes")
+  :link '(url-link :tag "Sample pictures" "https://protesilaos.com/emacs/ef-themes-pictures")
   :prefix "ef-themes-"
   :tag "Ef Themes Faces")
 
