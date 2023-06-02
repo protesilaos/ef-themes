@@ -1338,6 +1338,9 @@ everything most users need.
 - messages
 - mode-line
 - mu4e
+- nerd-icons [Part of {{{development-version}}}.]
+- nerd-icons-dired [Part of {{{development-version}}}.]
+- nerd-icons-ibuffer [Part of {{{development-version}}}.]
 - neotree
 - notmuch
 - olivetti
