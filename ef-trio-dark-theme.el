@@ -231,6 +231,12 @@
       (mail-subject magenta)
       (mail-other cyan)
 
+;;;; Tab mappings
+
+      (bg-tab-bar      bg-alt)
+      (bg-tab-current  bg-main)
+      (bg-tab-other    bg-active)
+
 ;;;; Rainbow mappings
 
       (rainbow-0 magenta-warmer)
