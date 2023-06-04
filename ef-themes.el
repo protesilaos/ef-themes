@@ -1025,6 +1025,18 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(diary-anniversary ((,c :foreground ,date-holiday)))
     `(diary-time ((,c :foreground ,date-common)))
     `(holiday ((,c :foreground ,date-holiday)))
+;;;; centaur-tabs
+    `(centaur-tabs-active-bar-face ((,c :background ,keybind)))
+    `(centaur-tabs-close-mouse-face ((,c :inherit bold :foreground ,err :underline t)))
+    `(centaur-tabs-close-selected ((,c :inherit centaur-tabs-selected)))
+    `(centaur-tabs-close-unselected ((,c :inherit centaur-tabs-unselected)))
+    `(centaur-tabs-modified-marker-selected ((,c :inherit centaur-tabs-selected)))
+    `(centaur-tabs-modified-marker-unselected ((,c :inherit centaur-tabs-unselected)))
+    `(centaur-tabs-default ((,c :background ,bg-main)))
+    `(centaur-tabs-selected ((,c :inherit bold :box (:line-width -2 :color ,bg-tab-current) :background ,bg-tab-current)))
+    `(centaur-tabs-selected-modified ((,c :inherit (italic centaur-tabs-selected))))
+    `(centaur-tabs-unselected ((,c :box (:line-width -2 :color ,bg-tab-other) :background ,bg-tab-other)))
+    `(centaur-tabs-unselected-modified ((,c :inherit (italic centaur-tabs-unselected))))
 ;;;; cider
     `(cider-deprecated-face ((,c :background ,bg-warning :foreground ,warning)))
     `(cider-enlightened-face ((,c :box ,warning)))

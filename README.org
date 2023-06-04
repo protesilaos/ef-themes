@@ -1288,6 +1288,7 @@ everything most users need.
 - cider
 - change-log and log-view (part of VC)
 - chart
+- centaur-tabs [Part of {{{development-version}}}.]
 - clojure-mode
 - company
 - compilation
@@ -1706,11 +1707,11 @@ matters.
 + Contributions to code or the manual :: Alex Lu, Christopher League,
   Philip Kaludercic, Walheimat.
 
-+ Ideas and/or user feedback :: Alan Schmitt, Anthony Chavez, Benjamin
-  (zealotrush), Daniel Mendler, Federico Stilman, Iris Garcia,
-  Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška, Spike-Leung,
-  Steve Molitor, Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán
-  Király, goldfita.
++ Ideas and/or user feedback :: Alan Schmitt, Amo DelBello, Anthony
+  Chavez, Benjamin (zealotrush), Daniel Mendler, Federico Stilman,
+  Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška,
+  Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck, Thanos
+  Apollo, Zoltán Király, goldfita.
 
 * GNU Free Documentation License
 :PROPERTIES:
