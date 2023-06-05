@@ -1305,6 +1305,9 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(epa-validity-high ((,c :inherit success)))
     `(epa-validity-low ((,c :inherit shadow)))
     `(epa-validity-medium ((,c :foreground ,info)))
+;;;;; ert
+    `(ert-test-result-expected ((,c :background ,bg-info :foreground ,info)))
+    `(ert-test-result-unexpected ((,c :background ,bg-err :foreground ,err)))
 ;;;; eshell
     `(eshell-ls-archive ((,c :foreground ,accent-2)))
     `(eshell-ls-backup ((,c :inherit shadow)))
