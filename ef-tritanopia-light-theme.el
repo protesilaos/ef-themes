@@ -234,6 +234,12 @@
       (mail-subject red-warmer)
       (mail-other magenta-cooler)
 
+;;;; Space mappings
+
+      (bg-space unspecified)
+      (fg-space border)
+      (bg-space-err bg-red-intense)
+
 ;;;; Tab mappings
 
       (bg-tab-bar      bg-alt)

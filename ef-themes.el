@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 1.0.2
+;; Version: 1.0.3
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -2221,17 +2221,17 @@ Optional prefix argument MAPPINGS has the same meaning as for
 ;;;; which-function-mode
     `(which-func ((,c :inherit bold :foreground ,fg-intense)))
 ;;;; whitespace-mode
-    `(whitespace-big-indent ((,c :background ,bg-err :foreground ,err)))
-    `(whitespace-empty ((,c :inherit whitespace-big-indent)))
-    `(whitespace-hspace ((,c :inherit whitespace-indentation)))
-    `(whitespace-indentation ((,c :background ,bg-dim :foreground ,fg-dim)))
-    `(whitespace-line ((,c :background ,bg-dim :foreground ,warning)))
-    `(whitespace-newline ((,c :inherit whitespace-indentation)))
-    `(whitespace-space ((,c :inherit whitespace-indentation)))
-    `(whitespace-space-after-tab ((,c :inherit whitespace-space-before-tab)))
-    `(whitespace-space-before-tab ((,c :background ,bg-red-intense)))
-    `(whitespace-tab ((,c :inherit whitespace-indentation)))
-    `(whitespace-trailing ((,c :inherit whitespace-space-before-tab)))
+    `(whitespace-big-indent ((,c :background ,bg-space-err)))
+    `(whitespace-empty ((,c :inherit modus-themes-intense-magenta)))
+    `(whitespace-hspace ((,c :background ,bg-space :foreground ,fg-space)))
+    `(whitespace-indentation ((,c :background ,bg-space :foreground ,fg-space)))
+    `(whitespace-line ((,c :background ,bg-space :foreground ,warning)))
+    `(whitespace-newline ((,c :background ,bg-space :foreground ,fg-space)))
+    `(whitespace-space ((,c :background ,bg-space :foreground ,fg-space)))
+    `(whitespace-space-after-tab ((,c :inherit modus-themes-subtle-magenta)))
+    `(whitespace-space-before-tab ((,c :inherit modus-themes-subtle-cyan)))
+    `(whitespace-tab ((,c :background ,bg-space :foreground ,fg-space)))
+    `(whitespace-trailing ((,c :background ,bg-space-err)))
 ;;;; widget
     `(widget-button ((,c :inherit bold :foreground ,link)))
     `(widget-button-pressed ((,c :inherit widget-button :foreground ,link-alt)))
