@@ -1377,6 +1377,16 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(git-commit-nonempty-second-line ((,c :background ,bg-err :foreground ,err)))
     `(git-commit-overlong-summary ((,c :background ,bg-warning :foreground ,warning)))
     `(git-commit-summary ((,c :inherit bold :foreground ,accent-0)))
+;;;; git-gutter
+    `(git-gutter:added ((,c :background ,bg-added :foreground ,fg-added)))
+    `(git-gutter:deleted ((,c :background ,bg-removed :foreground ,fg-removed)))
+    `(git-gutter:modified ((,c :background ,bg-changed :foreground ,fg-changed)))
+    `(git-gutter:separator ((,c :inherit success)))
+    `(git-gutter:unchanged ((,c :inherit bold)))
+;;;; git-gutter-fr
+    `(git-gutter-fr:added ((,c :background ,bg-added :foreground ,fg-added)))
+    `(git-gutter-fr:deleted ((,c :background ,bg-removed :foreground ,fg-removed)))
+    `(git-gutter-fr:modified ((,c :background ,bg-changed :foreground ,fg-changed)))
 ;;;; git-rebase
     `(git-rebase-comment-hash ((,c :inherit (bold font-lock-comment-face) :foreground ,identifier)))
     `(git-rebase-comment-heading  ((,c :inherit (bold font-lock-comment-face))))

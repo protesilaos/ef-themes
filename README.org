@@ -1321,6 +1321,8 @@ everything most users need.
 - flyspell
 - font-lock
 - git-commit
+- git-gutter [Part of {{{development-version}}}.]
+- git-gutter-fr [Part of {{{development-version}}}.]
 - git-rebase
 - gnus
 - hi-lock (=M-x highlight-regexp=)
