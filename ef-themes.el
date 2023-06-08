@@ -1719,6 +1719,14 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(mode-line-emphasis ((,c :inherit bold :foreground ,modeline-info)))
     `(mode-line-highlight ((,c :inherit highlight)))
     `(mode-line-inactive ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :foreground ,fg-dim)))
+;;;; mood-line
+    `(mood-line-modified ((,c :inherit italic)))
+    `(mood-line-status-error ((,c :inherit error)))
+    `(mood-line-status-info ((,c :foreground ,info)))
+    `(mood-line-status-neutral (( )))
+    `(mood-line-status-success ((,c :inherit success)))
+    `(mood-line-status-warning ((,c :inherit warning)))
+    `(mood-line-unimportant ((,c :inherit shadow)))
 ;;;; mu4e
     `(mu4e-attach-number-face ((,c :inherit bold :foreground ,fg-dim)))
     `(mu4e-cited-1-face ((,c :inherit message-cited-text-1)))

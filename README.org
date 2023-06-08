@@ -1341,6 +1341,7 @@ everything most users need.
 - markdown-mode
 - messages
 - mode-line
+- mood-line [Part of {{{development-version}}}.]
 - mu4e
 - nerd-icons [Part of {{{development-version}}}.]
 - nerd-icons-dired [Part of {{{development-version}}}.]
