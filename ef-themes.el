@@ -1131,7 +1131,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(custom-group-tag ((,c :inherit bold :foreground ,builtin)))
     `(custom-group-tag-1 ((,c :inherit bold :foreground ,constant)))
     `(custom-variable-tag ((,c :inherit bold :foreground ,variable)))
-;;;;; dashboard
+;;;; dashboard
     `(dashboard-heading ((,c :foreground ,name)))
     `(dashboard-items-face (( ))) ; use the underlying style of all-the-icons
 ;;;; denote
@@ -1305,7 +1305,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(epa-validity-high ((,c :inherit success)))
     `(epa-validity-low ((,c :inherit shadow)))
     `(epa-validity-medium ((,c :foreground ,info)))
-;;;;; ert
+;;;; ert
     `(ert-test-result-expected ((,c :background ,bg-info :foreground ,info)))
     `(ert-test-result-unexpected ((,c :background ,bg-err :foreground ,err)))
 ;;;; eshell
@@ -1521,7 +1521,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(query-replace ((,c :background ,bg-red-intense :foreground ,fg-intense)))
 ;;;; jit-spell
     `(jit-spell-misspelling ((,c :inherit ef-themes-underline-error)))
-;;;;; jinx
+;;;; jinx
     `(jinx-misspelled ((,c :inherit ef-themes-underline-warning)))
 ;;;; keycast
     `(keycast-command ((,c :inherit bold)))
@@ -1748,7 +1748,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(mu4e-url-number-face ((,c :inherit shadow)))
     `(mu4e-view-body-face (( )))
     `(mu4e-warning-face ((,c :inherit warning)))
-;;;;; nerd-icons
+;;;; nerd-icons
     `(nerd-icons-blue ((,c :foreground ,blue-cooler)))
     `(nerd-icons-blue-alt ((,c :foreground ,blue-warmer)))
     `(nerd-icons-cyan ((,c :foreground ,cyan)))
@@ -1977,7 +1977,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(package-status-unsigned ((,c :inherit error)))
 ;;;; perspective
     `(persp-selected-face ((,c :inherit mode-line-emphasis)))
-;;;;; proced
+;;;; proced
     `(proced-cpu ((,c :foreground ,keyword)))
     `(proced-emacs-pid ((,c :foreground ,identifier :underline t)))
     `(proced-executable ((,c :foreground ,name)))
@@ -2049,7 +2049,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(reb-match-3 ((,c :background ,bg-yellow-intense :foreground ,fg-intense)))
     `(reb-regexp-grouping-backslash ((,c :inherit font-lock-regexp-grouping-backslash)))
     `(reb-regexp-grouping-construct ((,c :inherit font-lock-regexp-grouping-construct)))
-;;;;; rst-mode
+;;;; rst-mode
     `(rst-level-1 ((,c :inherit ef-themes-heading-1)))
     `(rst-level-2 ((,c :inherit ef-themes-heading-2)))
     `(rst-level-3 ((,c :inherit ef-themes-heading-3)))
@@ -2195,7 +2195,7 @@ Optional prefix argument MAPPINGS has the same meaning as for
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
     `(vertico-group-title ((,c :inherit bold :foreground ,name)))
-;;;;; vterm
+;;;; vterm
     `(vterm-color-black ((,c :background "gray35" :foreground "black")))
     `(vterm-color-blue ((,c :background ,blue-warmer :foreground ,blue)))
     `(vterm-color-cyan ((,c :background ,cyan-cooler :foreground ,cyan)))
