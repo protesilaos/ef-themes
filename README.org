@@ -4,9 +4,9 @@
 #+language:              en
 #+options:               ':t toc:nil author:t email:t num:t
 #+startup:               content
-#+macro:                 stable-version 1.0.0
-#+macro:                 release-date 2023-05-16
-#+macro:                 development-version 1.1.0-dev
+#+macro:                 stable-version 1.1.0
+#+macro:                 release-date 2023-06-08
+#+macro:                 development-version 1.2.0-dev
 #+export_file_name:      ef-themes.texi
 #+texinfo_filename:      ef-themes.info
 #+texinfo_dir_category:  Emacs misc features
@@ -1288,7 +1288,7 @@ everything most users need.
 - cider
 - change-log and log-view (part of VC)
 - chart
-- centaur-tabs [Part of {{{development-version}}}.]
+- centaur-tabs
 - clojure-mode
 - company
 - compilation
@@ -1313,7 +1313,7 @@ everything most users need.
 - elfeed
 - embark
 - epa
-- ert [Part of {{{development-version}}}.]
+- ert
 - eshell
 - eww
 - flycheck
@@ -1321,8 +1321,8 @@ everything most users need.
 - flyspell
 - font-lock
 - git-commit
-- git-gutter [Part of {{{development-version}}}.]
-- git-gutter-fr [Part of {{{development-version}}}.]
+- git-gutter
+- git-gutter-fr
 - git-rebase
 - gnus
 - hi-lock (=M-x highlight-regexp=)
@@ -1341,11 +1341,11 @@ everything most users need.
 - markdown-mode
 - messages
 - mode-line
-- mood-line [Part of {{{development-version}}}.]
+- mood-line
 - mu4e
-- nerd-icons [Part of {{{development-version}}}.]
-- nerd-icons-dired [Part of {{{development-version}}}.]
-- nerd-icons-ibuffer [Part of {{{development-version}}}.]
+- nerd-icons
+- nerd-icons-dired
+- nerd-icons-ibuffer
 - neotree
 - notmuch
 - olivetti

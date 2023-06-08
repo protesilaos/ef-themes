@@ -9,13 +9,174 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.1.0 on 2023-06-08
+:PROPERTIES:
+:CUSTOM_ID: h:b2b71029-dbb2-4fef-9640-f1767ea8c1d9
+:END:
+
+This release introduces several minor refinements to the project,
+while adding support for more third-party packages or built-in face
+groups.
+
+** Tabs have their own semantic colour mappings
+:PROPERTIES:
+:CUSTOM_ID: h:6c23ad2b-2380-40d1-8c47-1ce68bf3a036
+:END:
+
+The Ef themes are designed to abstract away common patterns based on
+the semantics of the elements involved.  For example, all strings in
+programming modes use the =string= colour that each theme defines in
+its palette.  This allows the themes to share the same code base yet
+remain distinct from each other.
+
+Colours used for ~tab-bar-mode~, ~tab-line-mode~, and related are now
+part of this design.  The new semantic mappings are =bg-tab-bar=,
+=bg-tab-current=, =bg-tab-other=.
+
+[ A theme palette can have user-defined overrides (e.g. tweak the
+  main background).  Consult the manual for the technicalities or
+  contact me if there is any doubt. ]
+
+** Added support for the ~centaur-tabs~ package
+:PROPERTIES:
+:CUSTOM_ID: h:ad42585e-dabf-4efd-af2a-e54c08f69bc1
+:END:
+
+The aforementioned semantic colours are applied to the faces of the
+~centaur-tabs~.  Using it with the themes now works as expected,
+instead of defaulting to its own dark background colour (a default
+that doesn't work with most themes, anyway).
+
+Thanks to Amo DelBello for bringing this matter to my attention in
+issue 21 on the GitHub mirror: <https://github.com/protesilaos/ef-themes/issues/21>.
+
+** Covered the ~nerd-icons~, ~nerd-icons-dired~, ~nerd-icons-ibuffer~ packages
+:PROPERTIES:
+:CUSTOM_ID: h:2b4a40b8-7aa0-40dc-b370-48ed9a60e734
+:END:
+
+These are a new family of packages that are gaining traction in the
+Emacs milieu (for instance, the ~doom-modeline~ now uses the Nerd
+icons, which must be installed with =M-x nerd-icons-install-fonts=).
+
+Their colours are now consistent with all the Ef themes.
+
+** Tweaked the colouration of the ~all-the-icons~ glyphs
+:PROPERTIES:
+:CUSTOM_ID: h:6ab59190-505b-4ab4-a7fe-950a40f587fd
+:END:
+
+I refined some of the colours in use to introduce greater variety and
+amplify certain values while avoiding exaggerations.  In short, they
+should look nice and pretty.
+
+** The ~whitespace-mode~ indicators are much more subtle
+:PROPERTIES:
+:CUSTOM_ID: h:7bea24eb-54a7-49f0-899f-28e231c48eaa
+:END:
+
+The previous style involved the use of a dim grey background.  While
+this is good to spot invisible characters quickly, it is bad for users
+who want to run ~whitespace-mode~ at all times (e.g. for Python which
+is space-sensitive).
+
+We thus remove the backgrounds by default but provide the option to
+reinstate them via palette overrides (as documented at length in the
+manual).  To this end, we have new semantic colour mappings for
+ordinary negative space and its invisible characters:
+
+- =bg-space=
+- =fg-space=
+- =bg-space-err=
+
+** Ediff faces no longer have an implicit dependency on diff-mode
+:PROPERTIES:
+:CUSTOM_ID: h:e5d24c78-b0d3-4926-9272-e5e96d584e3e
+:END:
+
+I made a mistake where the Ediff faces would inherit the styles of
+their ~diff-mode~ counterparts.  This usually works, such as when
+~ediff~ is invoked from ~magit~, though it will not do the right thing
+if the user invokes some Ediff command directly without first loading
+~diff-mode~.
+
+This no longer happens.  Ediff always works.  Stylistically,
+everything looks the same.
+
+** The ~git-gutter~ and ~git-gutter-fr~ packages are supported
+:PROPERTIES:
+:CUSTOM_ID: h:b8dd12ff-27a5-4182-bc01-ea2293769de5
+:END:
+
+These now use the appropriate colours defined by the Ef themes.  This
+is especially important for themese that do not use the generic
+red-green colour coding scheme.
+
+** image-dired marked items are easier to spot
+:PROPERTIES:
+:CUSTOM_ID: h:3ea60dda-5cd6-4918-9dd3-4f3caaa3aa62
+:END:
+
+With ~image-dired~ the user can apply selection or deletion marks to
+image thumbnails.  Those marks are colour-coded the same way they are
+in Dired (the exact hues depend on the theme to account for
+accessibility, e.g. for deuteranopia or tritanopia).  Sometimes the
+colour of the mark is obscured by the same colour found in the
+thumbnail.  To make the mark stand out, a border is drawn around it,
+making the selection unambiguous.
+
+** Holidays and diary entries are more distinct and have no background
+:PROPERTIES:
+:CUSTOM_ID: h:02699fbb-1b31-4116-84e6-387bf27bf658
+:END:
+
+The holidays and diary entries that are found in the =M-x calendar= or
+=M-x diary= buffers no longer use a subtle background colour.  The old
+design was not consistent with similar patterns established by the
+themes, such as how a date/timestamp should be represented.
+
+Furthermore, the given constructs are assigned to contrasting hues to
+stand apart from each other and also be easy spot in their context
+(especially holidays in the Calendar view).
+
+** The ~mood-line~ is covered by the themes
+:PROPERTIES:
+:CUSTOM_ID: h:d16978a0-3112-4df7-85d4-344010f2027d
+:END:
+
+This is a package that refashions the Emacs mode line.  It is
+conceptually similar to the ~doom-modeline~.
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:caae4b9d-fb03-4a04-a476-6993763eecbc
+:END:
+
+- Added links in the Custom User Interface to the ~ef-themes~ web
+  pages for the manual and sample pictures, respectively.  Those links
+  are visible when perusing the various =M-x customize= buffers where
+  entries related to the Ef themes are present.
+
+- Made ~ef-themes--load-theme~ return the =THEME= argument it operates
+  on.  The intent is to allow other functions that call this one to
+  capture the return value for their purposes.
+
+- Extended support for the built-in ERT faces, which are used in
+  regression tests of Emacs Lisp code.
+
 * Version 1.0.0 on 2023-05-16
+:PROPERTIES:
+:CUSTOM_ID: h:3ea1104e-6aad-4add-91b1-055776a24ef9
+:END:
 
 This is the first major release of the ~ef-themes~.  The project is in
 a stable state.  I continue to make refinements to it, especially for
 the sort of details that are hard to spot.
 
 ** Try the two new themes
+:PROPERTIES:
+:CUSTOM_ID: h:ad61985a-1bdb-425f-a615-ed036f9f7abb
+:END:
 
 The ~ef-kassio~ and ~ef-symbiosis~ provide yet more stylistic
 variation to an already wide collection:
@@ -33,6 +194,9 @@ variation to an already wide collection:
 Picture of all the themes: <https://protesilaos.com/emacs/ef-themes-pictures>.
 
 ** Commands to switch between only dark or light themes
+:PROPERTIES:
+:CUSTOM_ID: h:26279724-ed70-4fc8-a432-e1a01c6c7835
+:END:
 
 The ~ef-themes-select-dark~ and ~ef-themes-select-light~ provide
 minibuffer completion that limits the candidates to the respective
@@ -40,6 +204,9 @@ subset.  This makes it easier for users to discover another theme they
 may like.
 
 ** Helpful completion annotations
+:PROPERTIES:
+:CUSTOM_ID: h:a3ef5b3f-686f-4295-92d0-96cffeaa0e9f
+:END:
 
 All Ef commands that use minibuffer completion now produce annotations
 that describe in a few words what each theme is about.  For example,
@@ -47,6 +214,9 @@ that describe in a few words what each theme is about.  For example,
 optimized for red-green color deficiency".
 
 ** Palette overrides
+:PROPERTIES:
+:CUSTOM_ID: h:5f150190-ab94-40b8-a6ec-f787173330f3
+:END:
 
 All variables that allow the user to override named colours and
 semantic colour mappings are now declared as user options.
@@ -63,6 +233,9 @@ of ~red-graph-0-bg~.  Same for intensely coloured backgrounds, which
 are now named like ~bg-red-intense~ rather than ~bg-red~.
 
 ** Improved graph colours
+:PROPERTIES:
+:CUSTOM_ID: h:f4dd0c13-a3cb-4d7e-ac7e-82ed1b734979
+:END:
 
 All themes have a refined palette subset for graph-related purposes.
 These are encountered, for example, in the ~org-habit~ consistency
@@ -70,6 +243,9 @@ graph.  The differences are subtle, yet important in context to
 improve the usability of the given interfaces.
 
 ** Improved graph colours for deuteranopia, tritanopia
+:PROPERTIES:
+:CUSTOM_ID: h:ddd9bffa-52d4-4325-9050-b9bbd91b984e
+:END:
 
 I also recalibrated the graph-related colours for the deuteranopia-
 and tritanopia- optimized themes.  This is related to the above, but I
@@ -81,6 +257,9 @@ or blue-yellow colour deficiency.  The relevant Ef themes have long
 accounted for this requirement, though they now are even better at it.
 
 ** Support for new faces and changes to existing ones
+:PROPERTIES:
+:CUSTOM_ID: h:fd57dbdc-9439-4426-a757-25797e20bfd2
+:END:
 
 - Newly supported packages are: ~jinx~, ~rst-mode~, ~vundo~, ~vterm~.
   Consult the manual for the full list of supported packages.  Some
@@ -116,8 +295,14 @@ accounted for this requirement, though they now are even better at it.
   ~prose-code~ and ~prose-verbatim~ (useful for palette overrides).
 
 * Version 0.11.0 on 2023-03-13
+:PROPERTIES:
+:CUSTOM_ID: h:be78917e-04b6-4958-a95c-848aa6fa279c
+:END:
 
 ** New options to override the colour palette
+:PROPERTIES:
+:CUSTOM_ID: h:9762796a-81d0-4881-a6cb-e7f1260afa23
+:END:
 
 It is now possible to tweak the colour values of each theme's palette
 and to change how named colours are mapped to semantic constructs.
@@ -136,6 +321,9 @@ comprehensive and will likely cover the needs of users who want to
 tinker with colours.
 
 ** The "preview palette" commands have new aliases
+:PROPERTIES:
+:CUSTOM_ID: h:73465a48-bce1-4751-a2e1-e8c9cb830dc3
+:END:
 
 The command ~ef-themes-preview-colors~ can now also be called with
 ~ef-themes-list-colors~.  Same for ~ef-themes-preview-colors-current~
@@ -145,6 +333,9 @@ These new names make it easier to "preview" or "list" the given
 palette entries.
 
 ** Palette preview commands can show semantic colour mappings
+:PROPERTIES:
+:CUSTOM_ID: h:a9e984b8-89ee-48d3-9449-be07c864b148
+:END:
 
 When called with a prefix argument (=C-u= with default key bindings),
 the commands ~ef-themes-preview-colors~, ~ef-themes-preview-colors-current~
@@ -158,6 +349,9 @@ colour mappings" describe associations between an abstract construct
 of the interface and a named colour, such as =(variable blue-warmer)=.
 
 ** Automatically disable other themes when loading an Ef theme
+:PROPERTIES:
+:CUSTOM_ID: h:49e1285d-2659-413b-8dee-9a057dc83dc8
+:END:
 
 The user option ~ef-themes-disable-other-themes~ makes the commands
 that load an Ef theme run ~disable-theme~ on anything that is not part
@@ -174,8 +368,14 @@ simply disable this user option (or not use the Ef commands for
 loading a theme).
 
 ** Stylistic changes
+:PROPERTIES:
+:CUSTOM_ID: h:6d601455-7ca7-414d-b3fd-8608a2705f09
+:END:
 
 *** Refined deuteranopia warning colours
+:PROPERTIES:
+:CUSTOM_ID: h:33a54098-b884-4e29-a7e2-3407d81a9657
+:END:
 
 [ "Deuteranopia" is the technical term for red-green colour deficiency. ]
 
@@ -186,6 +386,9 @@ agenda buffer where =SCHEDULED= and =DEADLINE= items need to be told
 apart.
 
 *** Implemented appropriate colour-coded foregrounds in Magit/diff-mode
+:PROPERTIES:
+:CUSTOM_ID: h:1840766d-a047-4c7d-88e0-5a94497a32d9
+:END:
 
 ~diff-mode~ and Magit diff buffers now affect the text colour of the
 added/removed/changed lines to improve their usability.  Before, the
@@ -193,6 +396,9 @@ combination was of a colour-coded background with the main foreground,
 which could make it a bit harder to track lines.
 
 *** Removed the bold weight from Magit diff hunk headings
+:PROPERTIES:
+:CUSTOM_ID: h:740c12ec-e4d5-4603-8ada-cecfa2337548
+:END:
   
 Inactive diff hunk headings do not need to be bold, as they are
 already easy to tell apart from their context.  The added bold is
@@ -200,6 +406,9 @@ useful for the currently selected diff hunk, as it draws attention to
 it.
 
 *** Revised all mail-related semantic colour mappings
+:PROPERTIES:
+:CUSTOM_ID: h:fa172499-9d84-4fe5-8a24-53c5d5d26a0c
+:END:
 
 Buffers such as those of viewing messages with Notmuch, Mu4e, Gnus
 have more appropriate colour combinations in the interest of avoiding
@@ -208,6 +417,9 @@ get with the ~compose-mail~ command and its email-client-specific
 counterparts).
 
 *** The background of Notmuch message headers is more noticeable
+:PROPERTIES:
+:CUSTOM_ID: h:7d08186c-56a1-417d-bda9-29cb75dbbcd0
+:END:
 
 The ~notmuch~ email client for Emacs has a thread-based view of
 messages where each email starts with its own header.  The slightly
@@ -215,6 +427,9 @@ more noticeable background makes it easier to discern where a new
 message starts.
 
 *** Added support for the powerline package
+:PROPERTIES:
+:CUSTOM_ID: h:6ab392cc-ffe9-4e7e-98a1-5c409ea3a03e
+:END:
 
 I added support for this package because other packages depend on it.
 Note though that I have encountered visual glitches with ~powerline~.
@@ -222,6 +437,9 @@ Those occur while switching themes and require a re-run of the
 Powerline setup with =M-x powerline-reset=.
 
 *** Removed the background colour from ~consult~ lines
+:PROPERTIES:
+:CUSTOM_ID: h:af3dfe52-d639-4be5-9d38-47960c0cdc0e
+:END:
   
 The default value of ~consult-line-number-prefix~ inherits from the
 ~line-number~ face.  The Ef themes make the latter inherit from
@@ -235,6 +453,9 @@ Thanks to Daniel Mendler for bringing this matter to my attention:
 <https://lists.sr.ht/~protesilaos/ef-themes/%3Cb03413a6-cb77-615d-145d-db4eb710bfca%40daniel-mendler.de%3E>.
 
 *** Defined ~consult-file~ to look the same as file names in Grep buffers
+:PROPERTIES:
+:CUSTOM_ID: h:5986048b-c986-47ac-b245-604576d6a206
+:END:
 
 This face is used when the user option ~vertico-group-format~ is set
 to nil.  With this change, we keep things consistent in the common
@@ -247,6 +468,9 @@ Thanks to Daniel Mendler for bringing this matter to my attention:
 
 
 *** Made ~eglot-diagnostic-tag-unnecessary-face~ a warning
+:PROPERTIES:
+:CUSTOM_ID: h:3ac315a8-dbf6-42a3-8d5f-004ebee5b5fb
+:END:
 
 By default it inherits the ~shadow~ face, which makes it
 counter-intuitive as it dims the text instead of bringing it to our
@@ -259,6 +483,9 @@ This was done via a private channel and the information is shared with
 permission.
 
 *** Configured ~dashboard~ icons to retain their underlying colour
+:PROPERTIES:
+:CUSTOM_ID: h:966dcdfe-35a0-4d27-b247-776d7b33c974
+:END:
   
 The default value of the ~dashboard-items-face~ made all icons use the
 same colour, detracting from their distinctiveness.  Thanks to Thanos
@@ -266,6 +493,9 @@ Apollo for bringing this matter to my attention.  It was done via a
 private channel and the information is shared with permission.
 
 *** Removed the bold weight from Org agenda deadline/scheduled
+:PROPERTIES:
+:CUSTOM_ID: h:6c4f8194-9e1b-45ad-8111-1e056af5a98c
+:END:
 
 This makes agenda buffers less noisy.  The original intent was to
 differentiate current/imminent from past/future items, though I feel
@@ -273,6 +503,9 @@ that was the wrong design.  We first want to deal with current tasks
 and do not want to feel overwhelmed by the design.
 
 *** Removed the bold weight from regular expression constructs
+:PROPERTIES:
+:CUSTOM_ID: h:1bd90c6d-e5bd-45c1-9a65-7ed0a59abc7d
+:END:
 
 This was used for escaped parentheses and the like.  It was making
 certain strings harder to read, such as:
@@ -282,6 +515,9 @@ certain strings harder to read, such as:
 #+end_example
 
 *** Retrieve any colour value from the palette
+:PROPERTIES:
+:CUSTOM_ID: h:b5f75284-36fa-49e4-a571-44d4430933be
+:END:
 
 [ This is for do-it-yourself users who need to apply colours in custom
   code they maintain.  As such, it is a bit technical.  Skip to the
@@ -336,6 +572,9 @@ with/without overrides and when recursive mappings are introduced.
 #+end_src
 
 *** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:baa3408f-b6a6-473e-86a6-a152aabf65b8
+:END:
 
 - Recalibrated the mouse hover background of the ~ef-frost~ theme to
   stand out a bit more than before.  This is a minor usability
