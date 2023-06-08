@@ -550,7 +550,9 @@ overrides."
 
 (defun ef-themes--annotate-theme (theme)
   "Return completion annotation for THEME."
-  (format " -- %s" (car (split-string (get (intern theme) 'theme-documentation) "\\."))))
+  (let ((doc (get (intern theme) 'theme-documentation)))
+    (when doc ;; A completion annotation function may return nil
+      (concat " -- " (car (split-string doc "\\."))))))
 
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
@@ -652,13 +654,13 @@ Run `ef-themes-post-load-hook' after loading the theme.
 Also see `ef-themes-select-light'.
 
 This command is the same as `ef-themes-select' except it only
-prompts for light themes when called interactively.  Calling it
+prompts for dark themes when called interactively.  Calling it
 from Lisp behaves the same as `ef-themes-select' for the THEME
 argument, meaning that it loads the Ef THEME regardless of
 whether it is light or dark."
   (interactive
    (list
-    (ef-themes--select-prompt "Select light Ef theme: " 'dark)))
+    (ef-themes--select-prompt "Select dark Ef theme: " 'dark)))
   (ef-themes--load-theme theme))
 
 (defun ef-themes--toggle-theme-p ()
