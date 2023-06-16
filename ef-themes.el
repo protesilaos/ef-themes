@@ -2240,6 +2240,15 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(wgrep-reject-face ((,c :background ,bg-err :foreground ,err)))
 ;;;; which-function-mode
     `(which-func ((,c :inherit bold :foreground ,fg-intense)))
+;;;; which-key
+    `(which-key-command-description-face ((,c :foreground ,fg-main)))
+    `(which-key-group-description-face ((,c :foreground ,keyword)))
+    `(which-key-highlighted-command-face ((,c :foreground ,warning :underline t)))
+    `(which-key-key-face ((,c :inherit ef-themes-key-binding)))
+    `(which-key-local-map-description-face ((,c :foreground ,fg-main)))
+    `(which-key-note-face ((,c :inherit shadow)))
+    `(which-key-separator-face ((,c :inherit shadow)))
+    `(which-key-special-key-face ((,c :inherit error)))
 ;;;; whitespace-mode
     `(whitespace-big-indent ((,c :background ,bg-space-err)))
     `(whitespace-empty ((,c :inherit modus-themes-intense-magenta)))

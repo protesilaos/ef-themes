@@ -1386,6 +1386,7 @@ everything most users need.
 - vundo
 - wgrep
 - which-function-mode
+- which-key [Part of {{{development-version}}}]
 - whitespace-mode
 - widget
 - writegood-mode
@@ -1410,7 +1411,6 @@ themes already cover:
 - multiple-cursors
 - paren-face
 - sxhkdrc-mode
-- which-key
 - xref
 
 Note that "implicitly supported" does not mean that they always fit in
