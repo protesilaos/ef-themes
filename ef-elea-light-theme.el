@@ -100,18 +100,18 @@
 ;;; Diffs
 
       (bg-added          "#c7e8ba")
-      (bg-added-faint    "#e0f3d0")
+      (bg-added-faint    "#def0cb")
       (bg-added-refine   "#bed9b0")
       (fg-added          "#005000")
 
-      (bg-changed        "#ffe5b9")
-      (bg-changed-faint  "#ffefc5")
-      (bg-changed-refine "#ffd09f")
+      (bg-changed        "#f5e8b0")
+      (bg-changed-faint  "#f5f2bf")
+      (bg-changed-refine "#f0df9a")
       (fg-changed        "#553d00")
 
-      (bg-removed        "#f2d0d0")
-      (bg-removed-faint  "#f0e0ca")
-      (bg-removed-refine "#efb4b4")
+      (bg-removed        "#f2d0c6")
+      (bg-removed-faint  "#f0e0c0")
+      (bg-removed-refine "#efbfbd")
       (fg-removed        "#8f1313")
 
 ;;; Graphs
