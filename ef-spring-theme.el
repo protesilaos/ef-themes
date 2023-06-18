@@ -104,9 +104,9 @@
       (bg-added-refine   "#b3efcf")
       (fg-added          "#005000")
 
-      (bg-changed        "#ffdfb9")
-      (bg-changed-faint  "#ffefcb")
-      (bg-changed-refine "#ffcfa0")
+      (bg-changed        "#f0e8bd")
+      (bg-changed-faint  "#f5efcb")
+      (bg-changed-refine "#efd299")
       (fg-changed        "#553d00")
 
       (bg-removed        "#ffd6e0")
