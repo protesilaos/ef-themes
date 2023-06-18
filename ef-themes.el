@@ -63,6 +63,7 @@
     ef-day
     ef-deuteranopia-light
     ef-duo-light
+    ef-elea-light
     ef-frost
     ef-kassio
     ef-light
@@ -79,6 +80,7 @@
     ef-dark
     ef-deuteranopia-dark
     ef-duo-dark
+    ef-elea-dark
     ef-night
     ef-symbiosis
     ef-trio-dark
