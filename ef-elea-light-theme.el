@@ -170,7 +170,7 @@
       (link green)
       (link-alt magenta)
       (name green-warmer)
-      (keybind magenta-cooler)
+      (keybind magenta)
       (identifier magenta-faint)
       (prompt magenta)
 
