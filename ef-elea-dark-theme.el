@@ -218,7 +218,7 @@
       (prose-table fg-alt)
       (prose-tag cyan-faint)
       (prose-todo red-warmer)
-      (prose-verbatim green-warmer)
+      (prose-verbatim cyan-cooler)
 
 ;;;; Mail mappings
 
