@@ -198,7 +198,7 @@
 
 ;;;; Date mappings
 
-      (date-common green-faint)
+      (date-common green-cooler)
       (date-deadline red)
       (date-event fg-alt)
       (date-holiday magenta-warmer)
