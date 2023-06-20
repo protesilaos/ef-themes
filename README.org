@@ -137,15 +137,15 @@ Everything is in place to set up the package.
 (setq ef-themes-to-toggle '(ef-summer ef-winter))
 
 (setq ef-themes-headings ; read the manual's entry or the doc string
-      '((0 . (variable-pitch light 1.9))
-        (1 . (variable-pitch light 1.8))
-        (2 . (variable-pitch regular 1.7))
-        (3 . (variable-pitch regular 1.6))
-        (4 . (variable-pitch regular 1.5))
-        (5 . (variable-pitch 1.4)) ; absence of weight means `bold'
-        (6 . (variable-pitch 1.3))
-        (7 . (variable-pitch 1.2))
-        (t . (variable-pitch 1.1))))
+      '((0 variable-pitch light 1.9)
+        (1 variable-pitch light 1.8)
+        (2 variable-pitch regular 1.7)
+        (3 variable-pitch regular 1.6)
+        (4 variable-pitch regular 1.5)
+        (5 variable-pitch 1.4) ; absence of weight means `bold'
+        (6 variable-pitch 1.3)
+        (7 variable-pitch 1.2)
+        (t variable-pitch 1.1)))
 
 ;; They are nil by default...
 (setq ef-themes-mixed-fonts t
@@ -334,12 +334,12 @@ combinations, followed by a presentation of all available properties:
 
 #+begin_src emacs-lisp
 (setq ef-themes-headings
-      '((1 . (light variable-pitch 1.5))
-        (2 . (regular 1.3))
-        (3 . (1.1))
-        (agenda-date . (1.3))
-        (agenda-structure . (variable-pitch light 1.8))
-        (t . (variable-pitch))))
+      '((1 light variable-pitch 1.5)
+        (2 regular 1.3)
+        (3 1.1)
+        (agenda-date 1.3)
+        (agenda-structure variable-pitch light 1.8)
+        (t variable-pitch)))
 #+end_src
 
 By default (a ~nil~ value for this variable), all headings have a bold
@@ -381,25 +381,25 @@ In user configuration files the form may look like this:
 
 #+begin_src emacs-lisp
 (setq ef-themes-headings
-      '((1 . (light variable-pitch 1.5))
-        (2 . (regular 1.3))
-        (3 . (1.1))
-        (t . (variable-pitch))))
+      '((1 light variable-pitch 1.5)
+        (2 regular 1.3)
+        (3 1.1)
+        (t variable-pitch)))
 #+end_src
 
-When defining the styles per heading level, it is possible to
-pass a non-~nil~ value (t) instead of a list of properties.  This
-will retain the original aesthetic for that level.  For example:
+When defining the styles per heading level, it is possible to pass a
+non-~nil~ non-list value (e.g. ~t~) instead of a list of properties.
+This will retain the original aesthetic for that level.  For example:
 
 #+begin_src emacs-lisp
 (setq ef-themes-headings
       '((1 . t)           ; keep the default style
-        (2 . (variable-pitch 1.2))
-        (t . (variable-pitch)))) ; style for all unspecified headings
+        (2 variable-pitch 1.2)
+        (t variable-pitch))) ; style for all unspecified headings
 
 (setq ef-themes-headings
-      '((1 . (variable-pitch 1.6))
-        (2 . (1.3))
+      '((1 variable-pitch 1.6)
+        (2 1.3)
         (t . t))) ; default style for all unspecified levels
 #+end_src
 
@@ -786,7 +786,7 @@ color as a backdrop.
 
 The name of the buffer describes the given Ef theme and what the
 contents are, such as =*ef-summer-list-colors*= for named colors and
-==*ef-summer-list-mappings*= for the semantic color mappings.
+=*ef-summer-list-mappings*= for the semantic color mappings.
 
 * Use colors from the active Ef theme
 :PROPERTIES:
