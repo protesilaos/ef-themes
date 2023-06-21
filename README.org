@@ -1709,7 +1709,7 @@ matters.
 + Author/maintainer :: Protesilaos Stavrou.
 
 + Contributions to code or the manual :: Alex Lu, Christopher League,
-  Philip Kaludercic, Walheimat.
+  Eshel Yaron, Philip Kaludercic, Walheimat.
 
 + Ideas and/or user feedback :: Alan Schmitt, Amo DelBello, Anthony
   Chavez, Benjamin (zealotrush), Daniel Mendler, Federico Stilman,
