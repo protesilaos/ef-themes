@@ -135,7 +135,7 @@
       (fg-mode-line       "#ecf0ff")
       (bg-completion      "#37493f")
       (bg-hover           "#894f7a")
-      (bg-hover-secondary "#4f554f")
+      (bg-hover-secondary "#425d4a")
       (bg-hl-line         "#2f413f")
       (bg-region          "#543040")
       (bg-paren           "#3f6f5f")
