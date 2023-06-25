@@ -222,11 +222,11 @@
 
 ;;;; Mail mappings
 
-      (mail-cite-0 green-warmer)
+      (mail-cite-0 cyan-cooler)
       (mail-cite-1 magenta)
-      (mail-cite-2 cyan)
+      (mail-cite-2 green-warmer)
       (mail-cite-3 magenta-cooler)
-      (mail-part blue-faint)
+      (mail-part yellow-cooler)
       (mail-recipient red-faint)
       (mail-subject green-cooler)
       (mail-other green)
