@@ -2240,6 +2240,9 @@ text should not be underlined as well) yet still blend in."
 ;;;; vertico
     `(vertico-current ((,c :background ,bg-completion)))
     `(vertico-group-title ((,c :inherit bold :foreground ,name)))
+;;;; vertico-quick
+    `(vertico-quick1 ((,c :inherit bold :background ,bg-char-0)))
+    `(vertico-quick2 ((,c :inherit bold :background ,bg-char-1)))
 ;;;; vterm
     `(vterm-color-black ((,c :background "gray35" :foreground "black")))
     `(vterm-color-blue ((,c :background ,blue-warmer :foreground ,blue)))
