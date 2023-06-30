@@ -9,6 +9,114 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.2.0 on 2023-06-30
+:PROPERTIES:
+:CUSTOM_ID: h:0fdfd3d0-fb24-42d1-a954-4760225136aa
+:END:
+
+** Enjoy the new "Elea" variants
+:PROPERTIES:
+:CUSTOM_ID: h:2bf490b8-2331-4d8d-892f-81c80a6cc1ff
+:END:
+
+The ~ef-elea-light~ and ~ef-elea-dark~ take inspiration from olives
+and olive trees.  Their background is noticeably more subdued than
+that of other Ef themes, making Elea optimal for times where
+environmental light is neither too high nor too low.
+
+Blog post that announced the new themes and presented their screen
+shots: <https://protesilaos.com/codelog/2023-06-18-ef-elea-dark-light/>.
+
+Those who like primarily green-tinted themes can also try ~ef-spring~
+(light) and ~ef-bio~ (dark).
+
+The ~ef-themes~ collection now consists of 24 items, covering a broad
+range of preferences and legibility needs.  Each theme is tested
+extensively for stylistic consistency, as well as overall
+effectiveness across the full spectrum of interfaces encountered in
+Emacs.
+
+** Support for the ~avy~ package
+:PROPERTIES:
+:CUSTOM_ID: h:e950d855-b4f4-4306-966e-777577b6a995
+:END:
+
+The ~avy~ package is now fully supported by the themes.  This was not
+a trivial task, due to Avy's unique requirement for sufficiently high
+contrast between adjacent coloured background /in addition/ to the
+goal of the themes for comfortably high contrast between each given
+combination of foreground and background.  To make the task even more
+demanding, we have to account for colour deficiency, as in the case of
+the tritanopia-optimised themes: ~ef-tritanopia-light~,
+~ef-tritanopia-dark~ (tritanopia is blue-yellow colour deficiency).
+
+** Support for other Avy-like elements
+:PROPERTIES:
+:CUSTOM_ID: h:f3b5b43d-890e-4bab-b471-da404dbefcfc
+:END:
+
+The ~corfu~ and ~vertico~ packages provide Avy-like commands to select
+a candidate in their respective completion interface.  Those are now
+fully supported, benefitting from the aforementioned work.
+
+** Explicit support for ~which-key~
+:PROPERTIES:
+:CUSTOM_ID: h:59ae9cb3-ca1e-461c-b9d6-72b8f596a123
+:END:
+
+The popular ~which-key~ package was already implicitly supported by
+the themes.  Its faces inherit from standard font-lock faces.  I
+decided to add explicit support in order to override its overall
+style, as its default is too busy, although it technically works.
+This hints at the unseen, yet non-trivial, effort themes require to
+avoid exaggerations (in short: when everything is emphasised, nothing
+stands out; when something indicates a familiar element of the
+interface, it must have an equally familiar styling to minimise
+friction/uncertainty).
+
+** Support for ~csv-mode~
+:PROPERTIES:
+:CUSTOM_ID: h:8174c576-4d62-47e9-88e0-641c790db330
+:END:
+
+The ~csv-mode~ defines the face of a separator character for the
+tabular entries.  Its colour should now be easier to spot.
+
+** Revised the Git summary line
+:PROPERTIES:
+:CUSTOM_ID: h:2fb45808-e218-4d79-ba42-4c07e8f8af3a
+:END:
+
+The colour of the Git commit summary line, both for Magit and VC, is
+now drawn from each theme's semantic =info= colour, whereas before it
+was another accent colour.  The reason for this change is to make the
+summary line always contrast nicely with the overlong summary warning
+(the warning is visible when the length of the summary exceeds the
+specified limit (check each package's configurations)).
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:7e52eb4c-3bf4-4268-a697-421c4d7a5a0f
+:END:
+
++ Completion annotations are not shown for yet-to-be-loaded Ef themes.
+  This avoids errors in ~modus-themes-select~ and related commands
+  that use minibuffer completion.  Thanks to Christopher League for
+  the patch.  The change is small and falls within the limits of what
+  is allowed without assigning copyright to the Free Software
+  Foundation.  This case was discussed in issue 22 on the GitHub
+  mirror: <https://github.com/protesilaos/ef-themes/issues/22>.
+
++ The documentation of ~ef-themes-headings~ uses simpler list
+  constructs.  There is no user-facing change.  Thanks to Eshel Yaron
+  for the patch, which is within the boundaries of what is possible
+  with copyright assignment to the Free Software Foundation:
+  <https://lists.sr.ht/~protesilaos/ef-themes/patches/42030>.
+
++ The manual of the themes, as well as the =contrast-ratios.org= file
+  that is part of the project's Git repository, are reviewed to
+  reflect the current state of the ~ef-themes~.
+
 * Version 1.1.0 on 2023-06-08
 :PROPERTIES:
 :CUSTOM_ID: h:b2b71029-dbb2-4fef-9640-f1767ea8c1d9
