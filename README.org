@@ -1286,9 +1286,9 @@ everything most users need.
 - bookmark
 - calendar and diary
 - cider
+- centaur-tabs
 - change-log and log-view (part of VC)
 - chart
-- centaur-tabs
 - clojure-mode
 - company
 - compilation
