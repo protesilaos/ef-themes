@@ -1296,6 +1296,7 @@ everything most users need.
 - completions
 - consult
 - corfu
+- csv-mode [Part of {{{development-version}}}]
 - custom (=M-x customize=)
 - dashboard
 - denote

@@ -1139,6 +1139,8 @@ text should not be underlined as well) yet still blend in."
 ;;;; corfu-quick
     `(corfu-quick1 ((,c :inherit bold :background ,bg-char-0)))
     `(corfu-quick2 ((,c :inherit bold :background ,bg-char-1)))
+;;;; csv-mode
+    `(csv-separator-face ((,c :foreground ,err)))
 ;;;; custom (M-x customize)
     `(custom-button ((,c :box (:color ,border :style released-button)
                          :background ,bg-active :foreground ,fg-intense)))
