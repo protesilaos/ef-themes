@@ -844,6 +844,15 @@ Optional prefix argument MAPPINGS has the same meaning as for
   :package-version '(ef-themes . "0.4.0")
   :group 'ef-themes-faces)
 
+(defface ef-themes-reset-soft nil
+  "Generic face to set most face properties to nil.
+
+This is intended to be inherited by faces that should not retain
+properties from their context (e.g. an overlay over an underlined
+text should not be underlined as well) yet still blend in."
+  :package-version '(ef-themes . "1.2.0")
+  :group 'ef-themes-faces)
+
 ;; This produces `ef-themes-mark-delete' and the like.
 (dolist (scope '(delete select other))
   (custom-declare-face
@@ -881,6 +890,9 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(ef-themes-underline-error ((,c :underline (:style wave :color ,underline-err))))
     `(ef-themes-underline-info ((,c :underline (:style wave :color ,underline-info))))
     `(ef-themes-underline-warning ((,c :underline (:style wave :color ,underline-warning))))
+    `(ef-themes-reset-soft ((,c :background ,bg-main :foreground ,fg-main
+                                :weight normal :slant normal :strike-through nil
+                                :box nil :underline nil :overline nil :extend nil)))
 ;;;; all basic faces
 ;;;;; absolute essentials
     `(bold ((,c :weight bold)))
@@ -1006,6 +1018,13 @@ Optional prefix argument MAPPINGS has the same meaning as for
     `(TeX-error-description-warning ((,c :inherit warning)))
 ;;;; auto-dim-other-buffers
     `(auto-dim-other-buffers-face ((,c :background ,bg-inactive)))
+;;;; avy
+    `(avy-background-face ((,c :background ,bg-dim :foreground ,fg-dim :extend t)))
+    `(avy-goto-char-timer-face ((,c :inherit bold :background ,bg-active)))
+    `(avy-lead-face ((,c :inherit (bold ef-themes-reset-soft) :background ,bg-char-0)))
+    `(avy-lead-face-0 ((,c :inherit (bold ef-themes-reset-soft) :background ,bg-char-1)))
+    `(avy-lead-face-1 ((,c :inherit ef-themes-reset-soft :background ,bg-inactive)))
+    `(avy-lead-face-2 ((,c :inherit (bold ef-themes-reset-soft) :background ,bg-char-2)))
 ;;;; bongo
     `(bongo-album-title (( )))
     `(bongo-artist ((,c :foreground ,rainbow-0)))

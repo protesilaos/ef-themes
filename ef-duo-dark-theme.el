@@ -158,6 +158,10 @@
       (underline-warning "#c0b000")
       (underline-info    "#22b022")
 
+      (bg-char-0 "#0050af")
+      (bg-char-1 "#7f1f7f")
+      (bg-char-2 "#625a00")
+
 ;;; Conditional hues
 
       (bg-region-intense "#1f2f70")
