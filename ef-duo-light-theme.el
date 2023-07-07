@@ -179,7 +179,7 @@
       (name blue)
       (keybind blue-cooler)
       (identifier red-faint)
-      (prompt blue)
+      (prompt blue-warmer)
 
 ;;;; Code mappings
 

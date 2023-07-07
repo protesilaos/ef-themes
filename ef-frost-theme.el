@@ -176,7 +176,7 @@
       (name cyan-warmer)
       (keybind blue-cooler)
       (identifier magenta-faint)
-      (prompt blue)
+      (prompt cyan)
 
 ;;;; Code mappings
 

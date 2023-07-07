@@ -176,7 +176,7 @@
       (name green-warmer)
       (keybind magenta)
       (identifier magenta-faint)
-      (prompt magenta)
+      (prompt magenta-warmer)
 
 ;;;; Code mappings
 
