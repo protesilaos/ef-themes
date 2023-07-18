@@ -553,9 +553,9 @@ overrides."
 
 (defun ef-themes--annotate-theme (theme)
   "Return completion annotation for THEME."
-  (let ((doc (get (intern theme) 'theme-documentation)))
-    (when doc ;; A completion annotation function may return nil
-      (concat " -- " (car (split-string doc "\\."))))))
+  (when-let ((symbol (intern-soft theme))
+             (doc-string (get symbol 'theme-documentation)))
+    (format " -- %s" (car (split-string doc-string "\\.")))))
 
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
