@@ -226,7 +226,7 @@
 
 ;;;; Mail mappings
 
-      (mail-cite-0 cyan)
+      (mail-cite-0 cyan-cooler)
       (mail-cite-1 magenta)
       (mail-cite-2 green-warmer)
       (mail-cite-3 yellow-cooler)
