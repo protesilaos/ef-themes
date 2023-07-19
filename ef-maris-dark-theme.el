@@ -198,7 +198,7 @@
       (accent-0 blue-cooler)
       (accent-1 green)
       (accent-2 cyan)
-      (accent-3 magenta-cooler)
+      (accent-3 magenta)
 
 ;;;; Date mappings
 
