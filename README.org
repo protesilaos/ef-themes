@@ -1370,6 +1370,7 @@ everything most users need.
 - rst-mode
 - ruler-mode
 - shell-script-mode (sh-mode)
+- shortdoc [Part of {{{development-version}}}.]
 - show-paren-mode
 - shr
 - smerge
@@ -1714,10 +1715,10 @@ matters.
   Eshel Yaron, Philip Kaludercic, Walheimat.
 
 + Ideas and/or user feedback :: Alan Schmitt, Amo DelBello, Anthony
-  Chavez, Benjamin (zealotrush), Daniel Mendler, Federico Stilman,
-  Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška,
-  Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck, Thanos
-  Apollo, Zoltán Király, goldfita.
+  Chavez, Benjamin (zealotrush), Bruno Boal, Daniel Mendler, Federico
+  Stilman, Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Saša
+  Janiška, Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck,
+  Thanos Apollo, Zoltán Király, goldfita.
 
 * GNU Free Documentation License
 :PROPERTIES:

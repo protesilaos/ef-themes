@@ -2124,6 +2124,9 @@ text should not be underlined as well) yet still blend in."
     `(ruler-mode-margins ((,c :inherit ruler-mode-default :foreground ,bg-main)))
     `(ruler-mode-pad ((,c :inherit ruler-mode-default :background ,bg-alt :foreground ,fg-dim)))
     `(ruler-mode-tab-stop ((,c :inherit ruler-mode-default :foreground ,yellow)))
+;;;; shortdoc
+    `(shortdoc-heading ((,c :inherit bold)))
+    `(shortdoc-section (())) ; remove the default's variable-pitch style
 ;;;; show-paren-mode
     `(show-paren-match ((,c :background ,bg-paren :foreground ,fg-intense)))
     `(show-paren-match-expression ((,c :background ,bg-alt)))
