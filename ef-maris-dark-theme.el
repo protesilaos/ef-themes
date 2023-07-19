@@ -76,9 +76,9 @@
       (magenta-warmer  "#fa90ea")
       (magenta-cooler  "#cf90ff")
       (magenta-faint   "#d4aaf0")
-      (cyan            "#20d7d7")
+      (cyan            "#2fd0db")
       (cyan-warmer     "#7fcfdf")
-      (cyan-cooler     "#60dac0")
+      (cyan-cooler     "#65d5a8")
       (cyan-faint      "#99bfcf")
 
 ;;; Basic hues for background values
