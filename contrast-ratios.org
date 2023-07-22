@@ -1047,7 +1047,7 @@ work with the overall design of the project.
 | red-warmer     | #ff7a5f |    6.67 |    5.57 |    4.59 |    6.17 |
 | red-cooler     | #ff7788 |    6.71 |    5.60 |    4.61 |    6.21 |
 | red-faint      | #fca4a4 |    8.94 |    7.46 |    6.15 |    8.27 |
-| green          | #30ba3f |    6.69 |    5.59 |    4.60 |    6.19 |
+| green          | #41bf4f |    7.15 |    5.97 |    4.92 |    6.62 |
 | green-warmer   | #7fce5f |    8.87 |    7.40 |    6.10 |    8.20 |
 | green-cooler   | #30c489 |    7.64 |    6.38 |    5.25 |    7.06 |
 | green-faint    | #a9c99f |    9.39 |    7.84 |    6.46 |    8.69 |
