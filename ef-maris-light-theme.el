@@ -196,9 +196,9 @@
 ;;;; Accent mappings
 
       (accent-0 blue-cooler)
-      (accent-1 green)
+      (accent-1 green-warmer)
       (accent-2 cyan)
-      (accent-3 magenta)
+      (accent-3 red-cooler)
 
 ;;;; Date mappings
 
