@@ -228,11 +228,11 @@
 
       (mail-cite-0 cyan)
       (mail-cite-1 magenta)
-      (mail-cite-2 green-warmer)
+      (mail-cite-2 blue-faint)
       (mail-cite-3 yellow-cooler)
-      (mail-part magenta-cooler)
+      (mail-part green-cooler)
       (mail-recipient blue-warmer)
-      (mail-subject green)
+      (mail-subject green-warmer)
       (mail-other blue)
 
 ;;;; Space mappings
