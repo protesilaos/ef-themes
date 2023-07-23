@@ -136,8 +136,8 @@
       (bg-completion      "#204358")
       (bg-hover           "#684d54")
       (bg-hover-secondary "#49516a")
-      (bg-hl-line         "#313044")
-      (bg-region          "#243760")
+      (bg-hl-line         "#243242")
+      (bg-region          "#183c65")
       (bg-paren           "#6c5d54")
       (bg-err             "#551525") ; check with err
       (bg-warning         "#403f20") ; check with warning
