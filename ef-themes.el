@@ -1037,6 +1037,12 @@ text should not be underlined as well) yet still blend in."
     `(avy-lead-face-0 ((,c :inherit (bold ef-themes-reset-soft) :background ,bg-char-1)))
     `(avy-lead-face-1 ((,c :inherit ef-themes-reset-soft :background ,bg-inactive)))
     `(avy-lead-face-2 ((,c :inherit (bold ef-themes-reset-soft) :background ,bg-char-2)))
+;;;; aw (ace-window)
+    `(aw-background-face ((,c :foreground ,fg-dim)))
+    `(aw-key-face ((,c :inherit ef-themes-key-binding)))
+    `(aw-leading-char-face ((,c :inherit (bold ef-themes-reset-soft) :height 1.5 :foreground ,keybind)))
+    `(aw-minibuffer-leading-char-face ((,c :inherit ef-themes-key-binding)))
+    `(aw-mode-line-face ((,c :inherit bold)))
 ;;;; bongo
     `(bongo-album-title (( )))
     `(bongo-artist ((,c :foreground ,rainbow-0)))

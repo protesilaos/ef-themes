@@ -1275,6 +1275,7 @@ everything most users need.
 :CUSTOM_ID: h:8e87733c-9fc9-45cd-9b9e-97b11f4f6c05
 :END:
 
+- ace-window [Part of {{{development-version}}}.]
 - all basic faces
 - all-the-icons
 - all-the-icons-dired
