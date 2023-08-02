@@ -172,7 +172,7 @@
       (info green)
 
       (link green-cooler)
-      (link-alt cyan-cooler)
+      (link-alt magenta)
       (name green)
       (keybind green)
       (identifier magenta-faint)
