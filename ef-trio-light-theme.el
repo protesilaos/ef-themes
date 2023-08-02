@@ -172,7 +172,7 @@
       (info green)
 
       (link cyan)
-      (link-alt magenta)
+      (link-alt green-warmer)
       (name blue)
       (keybind magenta-warmer)
       (identifier red-faint)
