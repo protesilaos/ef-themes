@@ -188,7 +188,7 @@
       (preprocessor magenta-cooler)
       (docstring cyan-faint)
       (string cyan-cooler)
-      (type green-cooler)
+      (type green)
       (variable cyan)
       (rx-escape yellow) ; compare with `string'
       (rx-construct red)
