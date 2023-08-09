@@ -161,7 +161,7 @@
 
 ;;; Conditional hues
 
-      (bg-region-intense "#3f4f99")
+      (bg-region-intense "#3f4f7e")
 
 ;;; Mappings
 
