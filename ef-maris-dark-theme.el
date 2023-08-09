@@ -1,4 +1,4 @@
-;;; ef-maris-dark-theme.el --- Legible dark theme with blue, cyan, and teal colors -*- lexical-binding:t -*-
+;;; ef-maris-dark-theme.el --- Legible dark theme with blue, cyan, and green colors -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2022-2023  Free Software Foundation, Inc.
 
@@ -38,7 +38,7 @@
   (require 'ef-themes)
 
   (deftheme ef-maris-dark
-    "Legible dark theme with blue, cyan, and teal colors.")
+    "Legible dark theme with blue, cyan, and green colors.")
 
   (defconst ef-maris-dark-palette
     '(
