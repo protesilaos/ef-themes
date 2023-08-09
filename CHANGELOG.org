@@ -9,6 +9,118 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.3.0 on 2023-08-09
+:PROPERTIES:
+:CUSTOM_ID: h:9efcc469-4a83-49b5-a34c-0da68e17fc5f
+:END:
+
+** Try the aquatic "Maris" variants
+:PROPERTIES:
+:CUSTOM_ID: h:9e0f79cf-9042-40ec-b1c9-7ebcb23706c5
+:END:
+
+The ~ef-maris-dark~ and ~ef-maris-light~ are a pair of themes with a
+grey-blue background, combined with blue, cyan, and green accents.
+Much like the "Elea" variants that were published in version 1.2.0 of
+the ~ef-themes~, the "Maris" variants are optimal for those times
+where environmental lighting is neither too bright nor too dim.
+
+The blog post announcing and demonstrating the new themes:
+<https://protesilaos.com/codelog/2023-07-22-ef-maris-dark-light/>.
+
+Screen shots for the entire collection here:
+<https://protesilaos.com/emacs/ef-themes-pictures>.
+
+There now are 26 themes in the ~ef-themes~ package, covering a broad
+range of preferences and needs.  They all are highly legible and
+customisable (consult their manual).
+
+** Shortdoc has consistent typography
+:PROPERTIES:
+:CUSTOM_ID: h:79404e2a-d497-4770-8924-c3c2559e51fd
+:END:
+
+The default built-in ~shortdoc~ face inherit the ~variable-pitch~
+face, which renders the text in the buffer proportionately spaced.  To
+me, this feels out of place.  If the user wants Help and related
+ancillary material to be typeset thus, they can enable
+~variable-pitch-mode~ (e.g. via a hook).
+
+Thanks to Bruno Boal for pointing out that the Ef themes did not cover
+Shortdoc.  The message was conveyed via a private channel and the
+information is shared with permission.
+
+** Key bindings in minibuffer prompts stand out
+:PROPERTIES:
+:CUSTOM_ID: h:6a9cfb9b-75b3-487f-ba88-5460d5f08840
+:END:
+
+Steve Molinor informed me about a case where a key binding was shown
+as part of the minibuffer prompt.  For some Ef themes, the result was
+suboptimal due to the proximity of the colours involved.  I made all
+the requisite tweaks, such that key bindings in prompts will stand out
+(always in accordance with the principle of avoiding exaggerations).
+Affected themes are:
+
+- ~ef-bio-theme~
+- ~ef-deuteranopia-dark-theme~
+- ~ef-duo-light-theme~
+- ~ef-elea-dark-theme~
+- ~ef-elea-light-theme~
+- ~ef-frost-theme~
+- ~ef-night-theme~
+
+This was done in issue 24 on the GitHub mirror:
+<https://github.com/protesilaos/ef-themes/issues/24>.
+
+** The ~ace-window~ package is supported
+:PROPERTIES:
+:CUSTOM_ID: h:eb046bd5-c89a-4a3c-aeaf-4d6441c22e0a
+:END:
+
+The ~ace-window~ package now uses colours that are aligned with the
+active Ef theme.  This is mostly a stylistic consideration, except for
+the deuteranopia- and tritanopia- optimised themes, where the hue
+matters greatly.
+
+** The Ef commands with completion use a "completion table"
+:PROPERTIES:
+:CUSTOM_ID: h:257beca2-8a21-44bf-9e21-822a761f4376
+:END:
+
+[ This is for advanced users or developers. ]
+
+Commands such as ~ef-themes-select~ and ~ef-themes-preview-colors~ use
+the minibuffer to pick a theme among the collection.  In the past, the
+set of candidates did not have any metadata associated with it, so
+Emacs could not tell what it was completing against.
+
+The collection is now annotated with the completion category ~theme~.
+Packages that can use this data include ~consult~, ~embark~, and
+~marginalia~, while the built-in ~completion-category-overrides~ may
+be involved.  For example, one may define a custom annotation function
+for Marginalia, such that the alignment of the doc strings is at
+column 40 instead of the generic default (I do not add any alignment
+at the theme level to keep it agnostic of the completion front-end).
+
+** General refinements
+:PROPERTIES:
+:CUSTOM_ID: h:88d1103e-0e9a-4d52-b692-0714e37daf61
+:END:
+
+- The ~ef-elea-light~ theme's palette entry of ~bg-changed-refine~ is
+  marginally toned down.  This makes it consistent with its context
+  (e.g. in Ediff buffers).
+
+- The ~ef-deuteranopia-light~ theme's palette entry of ~magenta-faint~
+  is desaturated to fit better in its context.  The =M-x calendar= as
+  well as Org agenda buffers that show weekends will now look more
+  consistent.
+
+- The ~ef-bio~ theme's semantic colour mapping of ~link-alt~ is
+  further differentiated from ~link~.  The previous value could be
+  conflated with that of ~link~ in Info buffers.
+
 * Version 1.2.0 on 2023-06-30
 :PROPERTIES:
 :CUSTOM_ID: h:0fdfd3d0-fb24-42d1-a954-4760225136aa
