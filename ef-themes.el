@@ -1154,6 +1154,8 @@ text should not be underlined as well) yet still blend in."
     `(corfu-bar ((,c :background ,fg-main)))
     `(corfu-border ((,c :background ,bg-active)))
     `(corfu-default ((,c :background ,bg-inactive)))
+;;;;; corfu-candidate-overlay
+    `(corfu-candidate-overlay-face ((t :inherit shadow)))
 ;;;; corfu-quick
     `(corfu-quick1 ((,c :inherit bold :background ,bg-char-0)))
     `(corfu-quick2 ((,c :inherit bold :background ,bg-char-1)))

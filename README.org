@@ -1297,6 +1297,7 @@ everything most users need.
 - completions
 - consult
 - corfu
+- corfu-candidate-overlay [Part of {{{development-version}}}]
 - csv-mode
 - custom (=M-x customize=)
 - dashboard
