@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-frost
-    "Legible light theme with blue, cyan, teal, purple colors.")
+    "Legible light theme with blue, cyan, teal, purple colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-frost-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-frost ef-frost-palette ef-frost-palette-overrides)
 
   (provide-theme 'ef-frost))
-
-;;;###theme-autoload
-(put 'ef-frost 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-frost-theme.el ends here

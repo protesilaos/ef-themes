@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-summer
-    "Legible light theme with magenta, purple, gold, cyan colors.")
+    "Legible light theme with magenta, purple, gold, cyan colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-summer-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-summer ef-summer-palette ef-summer-palette-overrides)
 
   (provide-theme 'ef-summer))
-
-;;;###theme-autoload
-(put 'ef-summer 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-summer-theme.el ends here

@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-day
-    "Legible light theme with warm, varied colors (yellow, red, green, purple).")
+    "Legible light theme with warm, varied colors (yellow, red, green, purple)."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-day-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-day ef-day-palette ef-day-palette-overrides)
 
   (provide-theme 'ef-day))
-
-;;;###theme-autoload
-(put 'ef-day 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-day-theme.el ends here

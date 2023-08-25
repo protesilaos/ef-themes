@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-spring
-    "Legible light theme with cool, varied colors (green, cyan, red).")
+    "Legible light theme with cool, varied colors (green, cyan, red)."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-spring-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-spring ef-spring-palette ef-spring-palette-overrides)
 
   (provide-theme 'ef-spring))
-
-;;;###theme-autoload
-(put 'ef-spring 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-spring-theme.el ends here

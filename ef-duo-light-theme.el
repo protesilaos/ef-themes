@@ -40,8 +40,12 @@
   ;; Most of the colors here are defined simply to preserve
   ;; compatibility with the rest of the project.  We don't actually rely
   ;; on them for anything critical.
+;;;###theme-autoload
   (deftheme ef-duo-light
-    "Legible light theme with mostly blue and yellow colors.")
+    "Legible light theme with mostly blue and yellow colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-duo-light-palette
     '(
@@ -289,8 +293,5 @@ further details)."
   (ef-themes-theme ef-duo-light ef-duo-light-palette ef-duo-light-palette-overrides)
 
   (provide-theme 'ef-duo-light))
-
-;;;###theme-autoload
-(put 'ef-duo-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-duo-light-theme.el ends here

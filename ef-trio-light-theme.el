@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-trio-light
-    "Legible light theme with magenta, blue, and teal colors.")
+    "Legible light theme with magenta, blue, and teal colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-trio-light-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-trio-light ef-trio-light-palette ef-trio-light-palette-overrides)
 
   (provide-theme 'ef-trio-light))
-
-;;;###theme-autoload
-(put 'ef-trio-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-trio-light-theme.el ends here

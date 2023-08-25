@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-bio
-    "Legible dark theme with green, teal, blue, purple colors.")
+    "Legible dark theme with green, teal, blue, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-bio-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-bio ef-bio-palette ef-bio-palette-overrides)
 
   (provide-theme 'ef-bio))
-
-;;;###theme-autoload
-(put 'ef-bio 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-bio-theme.el ends here

@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-symbiosis
-    "Legible dark theme with blue, magenta, cyan, purple colors.")
+    "Legible dark theme with blue, magenta, cyan, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-symbiosis-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-symbiosis ef-symbiosis-palette ef-symbiosis-palette-overrides)
 
   (provide-theme 'ef-symbiosis))
-
-;;;###theme-autoload
-(put 'ef-symbiosis 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-symbiosis-theme.el ends here

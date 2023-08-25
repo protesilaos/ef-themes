@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-cyprus
-    "Legible light theme with green, yellow, teal, red colors.")
+    "Legible light theme with green, yellow, teal, red colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-cyprus-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-cyprus ef-cyprus-palette ef-cyprus-palette-overrides)
 
   (provide-theme 'ef-cyprus))
-
-;;;###theme-autoload
-(put 'ef-cyprus 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-cyprus-theme.el ends here

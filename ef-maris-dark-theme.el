@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-maris-dark
-    "Legible dark theme with blue, cyan, and green colors.")
+    "Legible dark theme with blue, cyan, and green colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-maris-dark-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-maris-dark ef-maris-dark-palette ef-maris-dark-palette-overrides)
 
   (provide-theme 'ef-maris-dark))
-
-;;;###theme-autoload
-(put 'ef-maris-dark 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-maris-dark-theme.el ends here

@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-elea-light
-    "Legible light theme with brown, magenta, and green colors.")
+    "Legible light theme with brown, magenta, and green colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-elea-light-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-elea-light ef-elea-light-palette ef-elea-light-palette-overrides)
 
   (provide-theme 'ef-elea-light))
-
-;;;###theme-autoload
-(put 'ef-elea-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-elea-light-theme.el ends here

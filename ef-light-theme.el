@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-light
-    "Legible light theme with blue, magenta, cyan, purple colors.")
+    "Legible light theme with blue, magenta, cyan, purple colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-light-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-light ef-light-palette ef-light-palette-overrides)
 
   (provide-theme 'ef-light))
-
-;;;###theme-autoload
-(put 'ef-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-light-theme.el ends here

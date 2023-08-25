@@ -40,8 +40,12 @@
   ;; Most of the colors here, like the blue and green hues, are defined
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
+;;;###theme-autoload
   (deftheme ef-tritanopia-dark
-    "Legible dark theme, optimized for blue-yellow color deficiency.")
+    "Legible dark theme, optimized for blue-yellow color deficiency."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-tritanopia-dark-palette
     '(
@@ -289,8 +293,5 @@ further details)."
   (ef-themes-theme ef-tritanopia-dark ef-tritanopia-dark-palette ef-tritanopia-dark-palette-overrides)
 
   (provide-theme 'ef-tritanopia-dark))
-
-;;;###theme-autoload
-(put 'ef-tritanopia-dark 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-tritanopia-dark-theme.el ends here

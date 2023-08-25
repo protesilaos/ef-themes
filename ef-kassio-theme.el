@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-kassio
-    "Legible light theme with blue, red, magenta, and earthly colors.")
+    "Legible light theme with blue, red, magenta, and earthly colors."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-kassio-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-kassio ef-kassio-palette ef-kassio-palette-overrides)
 
   (provide-theme 'ef-kassio))
-
-;;;###theme-autoload
-(put 'ef-kassio 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-kassio-theme.el ends here

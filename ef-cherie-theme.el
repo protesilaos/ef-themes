@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-cherie
-    "Legible dark theme with warm colors (mostly pink, magenta, gold)")
+    "Legible dark theme with warm colors (mostly pink, magenta, gold)"
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-cherie-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-cherie ef-cherie-palette ef-cherie-palette-overrides)
 
   (provide-theme 'ef-cherie))
-
-;;;###theme-autoload
-(put 'ef-cherie 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-cherie-theme.el ends here

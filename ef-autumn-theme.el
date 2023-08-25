@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-autumn
-    "Legible dark theme with warm, varied colors (red, yellow, green, teal).")
+    "Legible dark theme with warm, varied colors (red, yellow, green, teal)."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-autumn-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-autumn ef-autumn-palette ef-autumn-palette-overrides)
 
   (provide-theme 'ef-autumn))
-
-;;;###theme-autoload
-(put 'ef-autumn 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-autumn-theme.el ends here

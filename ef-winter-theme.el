@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-winter
-    "Legible dark theme with magenta, purple, fawn, teal colors.")
+    "Legible dark theme with magenta, purple, fawn, teal colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-winter-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-winter ef-winter-palette ef-winter-palette-overrides)
 
   (provide-theme 'ef-winter))
-
-;;;###theme-autoload
-(put 'ef-winter 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-winter-theme.el ends here

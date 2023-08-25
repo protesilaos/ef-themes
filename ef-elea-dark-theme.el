@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-elea-dark
-    "Legible dark theme with brown, magenta, and green colors.")
+    "Legible dark theme with brown, magenta, and green colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-elea-dark-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-elea-dark ef-elea-dark-palette ef-elea-dark-palette-overrides)
 
   (provide-theme 'ef-elea-dark))
-
-;;;###theme-autoload
-(put 'ef-elea-dark 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-elea-dark-theme.el ends here

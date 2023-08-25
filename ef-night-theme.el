@@ -37,8 +37,12 @@
 (eval-and-compile
   (require 'ef-themes)
 
+;;;###theme-autoload
   (deftheme ef-night
-    "Legible dark theme with mostly green, blue, purple colors.")
+    "Legible dark theme with mostly green, blue, purple colors."
+    :background-mode 'dark
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-night-palette
     '(
@@ -286,8 +290,5 @@ further details)."
   (ef-themes-theme ef-night ef-night-palette ef-night-palette-overrides)
 
   (provide-theme 'ef-night))
-
-;;;###theme-autoload
-(put 'ef-night 'theme-properties '(:background-mode dark :kind color-scheme :family ef))
 
 ;;; ef-night-theme.el ends here

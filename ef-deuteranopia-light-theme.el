@@ -40,8 +40,12 @@
   ;; Most of the colors here, like the red and green hues, are defined
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
+;;;###theme-autoload
   (deftheme ef-deuteranopia-light
-    "Legible light theme, optimized for red-green color deficiency.")
+    "Legible light theme, optimized for red-green color deficiency."
+    :background-mode 'light
+    :kind 'color-scheme
+    :family 'ef)
 
   (defconst ef-deuteranopia-light-palette
     '(
@@ -289,8 +293,5 @@ further details)."
   (ef-themes-theme ef-deuteranopia-light ef-deuteranopia-light-palette ef-deuteranopia-light-palette-overrides)
 
   (provide-theme 'ef-deuteranopia-light))
-
-;;;###theme-autoload
-(put 'ef-deuteranopia-light 'theme-properties '(:background-mode light :kind color-scheme :family ef))
 
 ;;; ef-deuteranopia-light-theme.el ends here
