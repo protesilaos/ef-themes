@@ -1284,6 +1284,7 @@ everything most users need.
 - auctex
 - auto-dim-other-buffers
 - avy
+- breadcrumb [Part of {{{development-version}}}]
 - bongo
 - bookmark
 - calendar and diary

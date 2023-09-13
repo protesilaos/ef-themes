@@ -1043,6 +1043,10 @@ text should not be underlined as well) yet still blend in."
     `(aw-leading-char-face ((,c :inherit (bold ef-themes-reset-soft) :height 1.5 :foreground ,keybind)))
     `(aw-minibuffer-leading-char-face ((,c :inherit ef-themes-key-binding)))
     `(aw-mode-line-face ((,c :inherit bold)))
+;;;; breadcrumb
+    `(breadcrumb-face (( )))
+    `(breadcrumb-imenu-leaf-face ((,c :inherit bold :foreground ,fg-intense))) ; same as `which-func'
+    `(breadcrumb-project-leaf-face ((,c :inherit bold)))
 ;;;; bongo
     `(bongo-album-title (( )))
     `(bongo-artist ((,c :foreground ,rainbow-0)))
@@ -2292,7 +2296,7 @@ text should not be underlined as well) yet still blend in."
     `(wgrep-file-face ((,c :foreground ,fg-alt)))
     `(wgrep-reject-face ((,c :background ,bg-err :foreground ,err)))
 ;;;; which-function-mode
-    `(which-func ((,c :inherit bold :foreground ,fg-intense)))
+    `(which-func ((,c :inherit bold :foreground ,fg-intense))) ; same as `breadcrumb-imenu-leaf-face'
 ;;;; which-key
     `(which-key-command-description-face ((,c :foreground ,fg-main)))
     `(which-key-group-description-face ((,c :foreground ,keyword)))
