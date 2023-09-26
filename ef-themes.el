@@ -918,7 +918,7 @@ text should not be underlined as well) yet still blend in."
     `(tool-bar ((,c :background ,bg-dim :foreground ,fg-main)))
     `(vertical-border ((,c :foreground ,border)))
 ;;;;; all other basic faces
-    `(appt-notification ((,c :inherit error)))
+    `(appt-notification ((,c :inherit bold :foreground ,modeline-err)))
     `(button ((,c :foreground ,link :underline ,border)))
     `(child-frame-border ((,c :background ,border)))
     `(comint-highlight-input ((,c :inherit bold)))
