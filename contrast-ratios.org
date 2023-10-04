@@ -754,7 +754,7 @@ work with the overall design of the project.
 | modeline-err     | #ffbfbf |    4.51 |
 | modeline-warning | #dfd443 |    4.57 |
 | modeline-info    | #7fefff |    5.26 |
-#+TBLFM: o$3='(Λ $2 @1$3);%.2f
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
