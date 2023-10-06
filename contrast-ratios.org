@@ -1249,7 +1249,7 @@ work with the overall design of the project.
 | yellow         | #a46110 |    4.52 |    4.05 |    3.48 |    4.27 |
 | yellow-warmer  | #ba5205 |    4.52 |    4.05 |    3.48 |    4.26 |
 | yellow-cooler  | #946830 |    4.54 |    4.06 |    3.49 |    4.28 |
-| yellow-faint   | #9a616a |    4.53 |    4.05 |    3.48 |    4.27 |
+| yellow-faint   | #92616a |    4.69 |    4.20 |    3.61 |    4.43 |
 | blue           | #375cc6 |    5.54 |    4.96 |    4.26 |    5.22 |
 | blue-warmer    | #5f5fdf |    4.64 |    4.15 |    3.56 |    4.37 |
 | blue-cooler    | #265fbf |    5.60 |    5.01 |    4.30 |    5.28 |
