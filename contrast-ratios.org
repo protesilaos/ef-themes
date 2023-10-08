@@ -1183,7 +1183,7 @@ work with the overall design of the project.
 | green-faint    | #a0d26f |    8.21 |    6.65 |    5.03 |    7.42 |
 | yellow         | #e4b53f |    7.55 |    6.12 |    4.63 |    6.82 |
 | yellow-warmer  | #ffa21f |    7.18 |    5.82 |    4.40 |    6.49 |
-| yellow-cooler  | #efa05f |    6.78 |    5.50 |    4.16 |    6.13 |
+| yellow-cooler  | #e7a06f |    6.64 |    5.38 |    4.07 |    6.00 |
 | yellow-faint   | #eac29f |    8.74 |    7.09 |    5.36 |    7.90 |
 | blue           | #57aff6 |    6.10 |    4.94 |    3.74 |    5.51 |
 | blue-warmer    | #98bfff |    7.72 |    6.26 |    4.73 |    6.98 |

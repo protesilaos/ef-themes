@@ -70,7 +70,7 @@
       (green-faint     "#a0d26f")
       (yellow          "#e4b53f")
       (yellow-warmer   "#ffa21f")
-      (yellow-cooler   "#efa05f")
+      (yellow-cooler   "#e7a06f")
       (yellow-faint    "#eac29f")
       (blue            "#57aff6")
       (blue-warmer     "#98bfff")
