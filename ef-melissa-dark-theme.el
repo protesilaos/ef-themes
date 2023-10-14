@@ -180,7 +180,7 @@
       (name yellow)
       (keybind yellow-warmer)
       (identifier red-faint)
-      (prompt yellow-warmer)
+      (prompt green-warmer)
 
 ;;;; Code mappings
 
