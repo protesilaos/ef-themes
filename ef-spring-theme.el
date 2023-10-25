@@ -141,7 +141,6 @@
       (bg-hover           "#ffc09f")
       (bg-hover-secondary "#f0bfff")
       (bg-hl-line         "#f9e0e5")
-      (bg-region          "#d0e6ff")
       (bg-paren           "#7fddd0")
       (bg-err             "#ffe8e0") ; check with err
       (bg-warning         "#ffecba") ; check with warning
@@ -163,10 +162,6 @@
       (bg-char-1 "#ffaaff")
       (bg-char-2 "#dff000")
 
-;;; Conditional hues
-
-      (bg-region-intense "#cfb5f0")
-
 ;;; Mappings
 
 ;;;; General mappings
@@ -181,6 +176,9 @@
       (keybind magenta-warmer)
       (identifier magenta-faint)
       (prompt green)
+
+      (bg-region "#d0e6ff")
+      (fg-region unspecified)
 
 ;;;; Code mappings
 

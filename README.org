@@ -151,10 +151,6 @@ Everything is in place to set up the package.
 (setq ef-themes-mixed-fonts t
       ef-themes-variable-pitch-ui t)
 
-;; Read the doc string or manual for this one.  The symbols can be
-;; combined in any order.
-(setq ef-themes-region '(intense no-extend neutral))
-
 ;; Disable all other themes to avoid awkward blending:
 (mapc #'disable-theme custom-enabled-themes)
 
@@ -403,45 +399,6 @@ This will retain the original aesthetic for that level.  For example:
         (t . t))) ; default style for all unspecified levels
 #+end_src
 
-** Style of region highlight
-:PROPERTIES:
-:CUSTOM_ID: h:1d5fa3d8-a769-455a-aac7-5c1b925bb10b
-:END:
-
-#+vindex: ef-themes-region
-The user option ~ef-themes-region~ controls the appearance of the
-~region~ face (the highlighted selection of an area).
-
-The value it accepts is a list of symbols.
-
-If ~nil~ or an empty list (the default), use a subtle background for
-the region and preserve the color of selected text.
-
-The ~no-extend~ symbol limits the highlighted area to the end of the
-line, so that it does not reach the edge of the window.
-
-The ~neutral~ symbol makes the highlighted area's background gray (or
-more gray, depending on the theme).
-
-The ~intense~ symbol amplifies the intensity of the highlighted area's
-background color.  It also overrides any text color to keep it
-legible.
-
-Combinations of those symbols are expressed in any order.
-
-In user configuration files the form may look like this:
-
-#+begin_src emacs-lisp
-(setq ef-themes-region '(intense no-extend))
-#+end_src
-
-Other examples:
-
-#+begin_src emacs-lisp
-(setq ef-themes-region '(intense))
-(setq ef-themes-region '(intense no-extend neutral))
-#+end_src
-
 ** Palette overrides
 :PROPERTIES:
 :CUSTOM_ID: h:4b923795-4b23-4345-81e5-d1c108a84b6a
@@ -625,6 +582,60 @@ command.  Changes to color values are reflected in the preview of the
 theme's palette ([[#h:8dd67bf5-879e-46e5-b277-5bac141f53d1][Preview theme colors]]).  They are shown at the top of
 the buffer.  In the above example, the first instance of =blue-warmer=
 is the override and the second is the original one.
+
+** Stylistic variants using palette overrides
+:PROPERTIES:
+:CUSTOM_ID: h:df1199d8-eaba-47db-805d-6b568a577bf3
+:END:
+
+[ Part of {{{development-version}}}. ]
+
+This section contains practical examples of overriding the palette of
+the themes ([[#h:4b923795-4b23-4345-81e5-d1c108a84b6a][Palette overrides]]). Users can copy the code to their init
+file, evaluate it, and then re-load the theme for changes to take
+effect. To apply overrides at startup simply define them before the
+call that loads the theme.
+
+*** Make the region more intense
+:PROPERTIES:
+:CUSTOM_ID: h:c8605d37-66e1-42aa-986e-d7514c3af6fe
+:END:
+
+[ Part of {{{development-version}}}. ]
+
+This is one of our practical examples to override the semantic colors
+of the Ef themes ([[#h:df1199d8-eaba-47db-805d-6b568a577bf3][Stylistic variants using palette overrides]]). Here we
+show how to make the region override the underlying text colors(i.e.
+to be more legible) and how to make the background more intense.
+
+[[#h:a5140c9c-18b2-45db-8021-38d0b5074116][Do not extend the region background]].
+
+#+begin_src emacs-lisp
+;; These overrides are common to all Ef themes.  We also provide
+;; theme-specific options, such as `ef-summer-palette-overrides'.
+;;
+;; In general, the theme-specific overrides are better for overriding
+;; color values, such as redefining what `blue-faint' looks like.  The
+;; common overrides are best used for changes to semantic color
+;; mappings, as we show below.
+;;
+;; Use the command `ef-themes-preview-colors' or its variant
+;; `ef-themes-preview-colors-current' to review the available palette
+;; entries.
+
+
+;; Use an intense background combined with the theme's intense
+;; foreground.
+(setq ef-themes-common-palette-overrides
+      '((bg-region bg-magenta-intense)
+        (fg-region fg-intense)))
+
+;; Same idea as above, but less pronounced.
+(setq ef-themes-common-palette-overrides
+      '((bg-region bg-magenta-subtle)
+        (fg-region fg-main)))
+#+end_src
+
 
 * Loading a theme
 :PROPERTIES:
@@ -1029,6 +1040,24 @@ capabilities.
 In this document, we always mention ~ef-themes-post-load-hook~ though
 the user can replace it with ~after-enable-theme-hook~ should they need
 to (provided they understand the implications).
+
+** Do not extend the region background
+:PROPERTIES:
+:CUSTOM_ID: h:a5140c9c-18b2-45db-8021-38d0b5074116
+:END:
+
+By the default, the background of the ~region~ face extends from the
+end of the line to the edge of the window.  To limit it to the end of
+the line, we need to override the face's =:extend= attribute.  Adding
+this to the Emacs configuration file will suffice:
+
+#+begin_src emacs-lisp
+;; Do not extend `region' background past the end of the line.
+(custom-set-faces
+ '(region ((t :extend nil))))
+#+end_src
+
+[[#h:c8605d37-66e1-42aa-986e-d7514c3af6fe][Make the region more intense]].
 
 ** Add support for hl-todo
 :PROPERTIES:
