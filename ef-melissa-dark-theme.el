@@ -53,7 +53,7 @@
       (bg-dim      "#483426")
       (fg-dim      "#90918a")
       (bg-alt      "#59463f")
-      (fg-alt      "#d5af8f")
+      (fg-alt      "#a2c080")
 
       (bg-active   "#79665f")
       (bg-inactive "#3d2e1f")
