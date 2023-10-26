@@ -170,9 +170,9 @@
       (warning yellow-warmer)
       (info green)
 
-      (link yellow-cooler)
+      (link yellow)
       (link-alt magenta-cooler)
-      (name yellow)
+      (name yellow-cooler)
       (keybind yellow-warmer)
       (identifier red-faint)
       (prompt green-warmer)
