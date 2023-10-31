@@ -1742,11 +1742,11 @@ matters.
 + Contributions to code or the manual :: Alex Lu, Christopher League,
   Eshel Yaron, Philip Kaludercic, Walheimat.
 
-+ Ideas and/or user feedback :: Alan Schmitt, Amo DelBello, Anthony
-  Chavez, Benjamin (zealotrush), Bruno Boal, Daniel Mendler, Federico
-  Stilman, Iris Garcia, Jean-Philippe Gagné Guay, Jonas Collberg, Saša
-  Janiška, Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck,
-  Thanos Apollo, Zoltán Király, goldfita.
++ Ideas and/or user feedback :: Adam Porter (alphapapa), Alan Schmitt,
+  Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,
+  Daniel Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné
+  Guay, Jonas Collberg, Saša Janiška, Spike-Leung, Steve Molitor,
+  Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán Király, goldfita.
 
 * GNU Free Documentation License
 :PROPERTIES:
