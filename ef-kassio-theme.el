@@ -222,6 +222,7 @@
       (prose-metadata fg-dim)
       (prose-metadata-value fg-alt)
       (prose-table yellow-faint)
+      (prose-table-formula info)
       (prose-tag magenta-faint)
       (prose-todo red-warmer)
       (prose-verbatim blue-warmer)

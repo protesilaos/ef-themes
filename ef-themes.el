@@ -1902,7 +1902,7 @@ text should not be underlined as well) yet still blend in."
     `(org-drawer ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-metadata)))
     `(org-ellipsis (( ))) ; inherits from the heading's color
     `(org-footnote ((,c :inherit link)))
-    `(org-formula ((,c :inherit ef-themes-fixed-pitch :foreground ,fnname)))
+    `(org-formula ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-table-formula)))
     `(org-headline-done ((,c :inherit org-done)))
     `(org-headline-todo ((,c :inherit org-todo)))
     `(org-hide ((,c :foreground ,bg-main)))
