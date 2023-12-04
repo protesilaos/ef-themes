@@ -1807,6 +1807,8 @@ text should not be underlined as well) yet still blend in."
     `(nerd-icons-red-alt ((,c :foreground ,red-cooler)))
     `(nerd-icons-silver ((,c :foreground "gray50")))
     `(nerd-icons-yellow ((,c :foreground ,yellow)))
+;;;;; nerd-icons-completion
+    `(nerd-icons-completion-dir-face ((,c :foreground ,accent-0)))
 ;;;; nerd-icons-dired
     `(nerd-icons-dired-dir-face ((,c :foreground ,accent-0)))
 ;;;; nerd-icons-ibuffer

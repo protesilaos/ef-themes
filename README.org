@@ -1374,6 +1374,7 @@ everything most users need.
 - mood-line
 - mu4e
 - nerd-icons
+- nerd-icons-completion
 - nerd-icons-dired
 - nerd-icons-ibuffer
 - neotree
