@@ -1131,7 +1131,18 @@ text should not be underlined as well) yet still blend in."
     `(dashboard-items-face (( ))) ; use the underlying style of all-the-icons
 ;;;; denote
     `(denote-faces-date ((,c :foreground ,date-common)))
-    `(denote-faces-keywords ((,c :foreground ,name)))
+    `(denote-faces-delimiter ((,c :inherit shadow)))
+    `(denote-faces-extension ((,c :inherit shadow)))
+    `(denote-faces-keywords ((,c :inherit bold :foreground ,keyword)))
+    `(denote-faces-link ((,c :inherit link)))
+    `(denote-faces-prompt-current-name ((,c :inherit italic :foreground ,fg-changed)))
+    `(denote-faces-prompt-new-name ((,c :inherit italic :foreground ,fg-added)))
+    `(denote-faces-prompt-old-name ((,c :inherit italic :foreground ,fg-removed)))
+    `(denote-faces-signature ((,c :inherit bold :foreground ,string)))
+    `(denote-faces-subdirectory ((,c :inherit bold :foreground ,fg-dim)))
+    `(denote-faces-time ((,c :inherit denote-faces-date)))
+    `(denote-faces-time-delimiter ((,c :inherit shadow)))
+    `(denote-faces-title (( )))
 ;;;; dictionary
     `(dictionary-button-face ((,c :inherit bold)))
     `(dictionary-reference-face ((,c :inherit link)))
