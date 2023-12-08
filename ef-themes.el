@@ -6,7 +6,7 @@
 ;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
 ;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
-;; Version: 1.4.0
+;; Version: 1.4.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -1269,7 +1269,7 @@ text should not be underlined as well) yet still blend in."
     `(ediff-even-diff-B ((,c :background ,bg-dim)))
     `(ediff-even-diff-C ((,c :background ,bg-dim)))
     `(ediff-fine-diff-A ((,c :background ,bg-removed-refine :foreground ,fg-removed)))
-    `(ediff-fine-diff-Ancestor ((,c :inherit modus-themes-subtle-cyan)))
+    `(ediff-fine-diff-Ancestor ((,c :background ,bg-active :foreground ,fg-intense)))
     `(ediff-fine-diff-B ((,c :background ,bg-added-refine :foreground ,fg-added)))
     `(ediff-fine-diff-C ((,c :background ,bg-changed-refine :foreground ,fg-changed)))
     `(ediff-odd-diff-A ((,c :inherit ediff-even-diff-A)))
@@ -2121,14 +2121,14 @@ text should not be underlined as well) yet still blend in."
     `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; tab-bar-mode
-    `(tab-bar ((,c :inherit modus-themes-ui-variable-pitch :background ,bg-tab-bar)))
+    `(tab-bar ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-tab-bar)))
     `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-tab-current :box (:line-width -2 :color ,bg-tab-current) :foreground ,fg-alt)))
     `(tab-bar-tab-group-inactive ((,c :background ,bg-tab-bar :box (:line-width -2 :color ,bg-tab-bar) :foreground ,fg-alt)))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width -2 :color ,bg-tab-current) :background ,bg-tab-current)))
     `(tab-bar-tab-inactive ((,c :box (:line-width -2 :color ,bg-tab-other) :background ,bg-tab-other)))
     `(tab-bar-tab-ungrouped ((,c :inherit tab-bar-tab-inactive)))
 ;;;; tab-line-mode
-    `(tab-line ((,c :inherit modus-themes-ui-variable-pitch :background ,bg-tab-bar :height 0.95)))
+    `(tab-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-tab-bar :height 0.95)))
     `(tab-line-close-highlight ((,c :foreground ,err)))
     `(tab-line-highlight ((,c :inherit highlight)))
     `(tab-line-tab (( )))
@@ -2263,14 +2263,14 @@ text should not be underlined as well) yet still blend in."
     `(which-key-special-key-face ((,c :inherit error)))
 ;;;; whitespace-mode
     `(whitespace-big-indent ((,c :background ,bg-space-err)))
-    `(whitespace-empty ((,c :inherit modus-themes-intense-magenta)))
+    `(whitespace-empty ((,c :background ,bg-space)))
     `(whitespace-hspace ((,c :background ,bg-space :foreground ,fg-space)))
     `(whitespace-indentation ((,c :background ,bg-space :foreground ,fg-space)))
     `(whitespace-line ((,c :background ,bg-space :foreground ,warning)))
     `(whitespace-newline ((,c :background ,bg-space :foreground ,fg-space)))
     `(whitespace-space ((,c :background ,bg-space :foreground ,fg-space)))
-    `(whitespace-space-after-tab ((,c :inherit modus-themes-subtle-magenta)))
-    `(whitespace-space-before-tab ((,c :inherit modus-themes-subtle-cyan)))
+    `(whitespace-space-after-tab ((,c :inherit warning :background ,bg-space)))
+    `(whitespace-space-before-tab ((,c :inherit warning :background ,bg-space)))
     `(whitespace-tab ((,c :background ,bg-space :foreground ,fg-space)))
     `(whitespace-trailing ((,c :background ,bg-space-err)))
 ;;;; widget

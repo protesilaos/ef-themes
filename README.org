@@ -1747,7 +1747,8 @@ matters.
   Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,
   Daniel Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné
   Guay, Jonas Collberg, Saša Janiška, Spike-Leung, Steve Molitor,
-  Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán Király, goldfita.
+  Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán Király, goldfita,
+  marasenna.
 
 * GNU Free Documentation License
 :PROPERTIES:
