@@ -2166,7 +2166,18 @@ text should not be underlined as well) yet still blend in."
     `(transient-heading ((,c :inherit bold)))
     `(transient-inactive-argument ((,c :inherit shadow)))
     `(transient-inactive-value ((,c :inherit shadow)))
-    `(transient-key ((,c :inherit ef-themes-key-binding)))
+    ;; NOTE 2023-12-09 10:30:09 +0200: The new user option
+    ;; `transient-semantic-coloring' is enabled by default.  This is
+    ;; not good for us, because we are making it harder for users who
+    ;; need accessible colors to use the transient interfaces.  I
+    ;; could set that user option to nil, but I think it is less
+    ;; intrusive to enforce uniformity among the relevant faces.
+    ;; Those who want semantic coloring can modify these faces.
+    `(transient-key ((,c :inherit modus-themes-key-binding)))
+    `(transient-key-exit ((,c :inherit modus-themes-key-binding)))
+    `(transient-key-noop ((,c :inherit (shadow modus-themes-key-binding))))
+    `(transient-key-return ((,c :inherit modus-themes-key-binding)))
+    `(transient-key-stay ((,c :inherit modus-themes-key-binding)))
     `(transient-mismatched-key ((,c :underline t)))
     `(transient-nonstandard-key ((,c :underline t)))
     `(transient-pink ((,c :inherit bold :foreground ,magenta)))
