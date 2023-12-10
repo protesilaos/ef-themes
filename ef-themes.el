@@ -2173,11 +2173,11 @@ text should not be underlined as well) yet still blend in."
     ;; could set that user option to nil, but I think it is less
     ;; intrusive to enforce uniformity among the relevant faces.
     ;; Those who want semantic coloring can modify these faces.
-    `(transient-key ((,c :inherit modus-themes-key-binding)))
-    `(transient-key-exit ((,c :inherit modus-themes-key-binding)))
-    `(transient-key-noop ((,c :inherit (shadow modus-themes-key-binding))))
-    `(transient-key-return ((,c :inherit modus-themes-key-binding)))
-    `(transient-key-stay ((,c :inherit modus-themes-key-binding)))
+    `(transient-key ((,c :inherit ef-themes-key-binding)))
+    `(transient-key-exit ((,c :inherit ef-themes-key-binding)))
+    `(transient-key-noop ((,c :inherit (shadow ef-themes-key-binding))))
+    `(transient-key-return ((,c :inherit ef-themes-key-binding)))
+    `(transient-key-stay ((,c :inherit ef-themes-key-binding)))
     `(transient-mismatched-key ((,c :underline t)))
     `(transient-nonstandard-key ((,c :underline t)))
     `(transient-pink ((,c :inherit bold :foreground ,magenta)))
