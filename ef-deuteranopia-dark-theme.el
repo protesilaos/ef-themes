@@ -169,6 +169,8 @@
 
 ;;;; General mappings
 
+      (fringe unspecified)
+
       (err yellow-warmer)
       (warning yellow-cooler)
       (info blue-cooler)

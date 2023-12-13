@@ -868,7 +868,7 @@ text should not be underlined as well) yet still blend in."
     `(elisp-shorthand-font-lock-face ((,c :inherit italic)))
     `(error ((,c :inherit bold :foreground ,err)))
     `(escape-glyph ((,c :foreground ,warning)))
-    `(fringe ((,c :background unspecified)))
+    `(fringe ((,c :background ,fringe)))
     `(header-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-dim)))
     `(header-line-highlight ((,c :inherit highlight)))
     `(help-argument-name ((,c :foreground ,accent-0)))
@@ -1866,7 +1866,7 @@ text should not be underlined as well) yet still blend in."
     `(notmuch-wash-cited-text ((,c :inherit message-cited-text-1)))
     `(notmuch-wash-toggle-button ((,c :background ,bg-dim :foreground ,fg-alt)))
 ;;;; olivetti
-    `(olivetti-fringe (( )))
+    `(olivetti-fringe ((,c :background ,fringe)))
 ;;;; orderless
     `(orderless-match-face-0 ((,c :inherit bold :foreground ,accent-0)))
     `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))

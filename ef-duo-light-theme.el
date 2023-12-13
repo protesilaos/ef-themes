@@ -169,6 +169,8 @@
 
 ;;;; General mappings
 
+      (fringe unspecified)
+
       (err red)
       (warning yellow)
       (info green)
