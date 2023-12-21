@@ -2111,6 +2111,7 @@ text should not be underlined as well) yet still blend in."
     `(shr-h4 ((,c :inherit ef-themes-heading-4)))
     `(shr-h5 ((,c :inherit ef-themes-heading-5)))
     `(shr-h6 ((,c :inherit ef-themes-heading-6)))
+    `(shr-mark ((,c :inherit match)))
     `(shr-selected-link ((,c :inherit link :background ,bg-dim)))
 ;;;; smerge
     `(smerge-base ((,c :inherit diff-changed)))
