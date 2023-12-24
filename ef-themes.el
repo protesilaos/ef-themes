@@ -860,6 +860,7 @@ text should not be underlined as well) yet still blend in."
     `(vertical-border ((,c :foreground ,border)))
 ;;;;; all other basic faces
     `(appt-notification ((,c :inherit bold :foreground ,modeline-err)))
+    `(blink-matching-paren-offscreen ((,c :background ,bg-paren)))
     `(button ((,c :foreground ,link :underline ,border)))
     `(child-frame-border ((,c :background ,border)))
     `(comint-highlight-input ((,c :inherit bold)))
