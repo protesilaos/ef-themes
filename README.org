@@ -1369,6 +1369,7 @@ everything most users need.
 - man
 - marginalia
 - markdown-mode
+- mct [ Part of {{{development-version}}}. ]
 - messages
 - mode-line
 - mood-line

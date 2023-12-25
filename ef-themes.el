@@ -1705,6 +1705,8 @@ text should not be underlined as well) yet still blend in."
     `(markdown-pre-face ((,c :inherit markdown-code-face)))
     `(markdown-table-face ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-table)))
     `(markdown-url-face ((,c :foreground ,fg-alt)))
+;;;; mct
+    `(mct-highlight-candidate ((,c :background ,bg-completion)))
 ;;;; messages
     `(message-cited-text-1 ((,c :foreground ,mail-cite-0)))
     `(message-cited-text-2 ((,c :foreground ,mail-cite-1)))
