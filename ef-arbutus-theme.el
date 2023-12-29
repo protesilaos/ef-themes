@@ -177,9 +177,9 @@
       (link green-cooler)
       (link-alt magenta-cooler)
       (name red-cooler)
-      (keybind red-cooler)
+      (keybind red)
       (identifier magenta-faint)
-      (prompt red-cooler)
+      (prompt red-faint)
 
       (bg-region "#dbe0c0")
       (fg-region unspecified)
