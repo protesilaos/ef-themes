@@ -59,7 +59,8 @@
 ;;; User options
 
 (defconst ef-themes-light-themes
-  '(ef-cyprus
+  '(ef-arbutus
+    ef-cyprus
     ef-day
     ef-deuteranopia-light
     ef-duo-light

@@ -44,6 +44,71 @@ C1 and C2 are color values written in hexadecimal RGB."
 (defalias #'Δ #'color-distance)
 #+end_src
 
+* ef-arbutus
+:PROPERTIES:
+:CUSTOM_ID: h:60f12c67-b271-42a8-a84d-647c05c1fbda
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:5d174ec6-499c-4343-b625-e64e68f2367a
+:END:
+
+| Name           |         | #ffead8 | #f0d8cf | #e7d2cb | #f7e2d2 |
+|----------------+---------+---------+---------+---------+---------|
+| fg-main        | #393330 |   10.66 |    9.13 |    8.57 |    9.92 |
+| fg-dim         | #6c697f |    4.54 |    3.89 |    3.65 |    4.23 |
+| fg-alt         | #8a5f4a |    4.72 |    4.04 |    3.79 |    4.39 |
+| red            | #b0000f |    6.31 |    5.41 |    5.08 |    5.88 |
+| red-warmer     | #b20f00 |    6.08 |    5.21 |    4.89 |    5.66 |
+| red-cooler     | #aa184f |    6.10 |    5.23 |    4.90 |    5.68 |
+| red-faint      | #8f2f30 |    6.88 |    5.89 |    5.53 |    6.41 |
+| green          | #007000 |    5.43 |    4.65 |    4.36 |    5.05 |
+| green-warmer   | #557000 |    4.86 |    4.17 |    3.91 |    4.53 |
+| green-cooler   | #00704f |    5.25 |    4.50 |    4.22 |    4.89 |
+| green-faint    | #3f714f |    4.89 |    4.19 |    3.93 |    4.55 |
+| yellow         | #906200 |    4.58 |    3.92 |    3.68 |    4.26 |
+| yellow-warmer  | #b44405 |    4.78 |    4.09 |    3.84 |    4.45 |
+| yellow-cooler  | #8a6340 |    4.57 |    3.92 |    3.68 |    4.26 |
+| yellow-faint   | #8d6068 |    4.50 |    3.85 |    3.61 |    4.19 |
+| blue           | #375cc6 |    5.13 |    4.40 |    4.13 |    4.78 |
+| blue-warmer    | #5f55df |    4.68 |    4.01 |    3.76 |    4.35 |
+| blue-cooler    | #265fbf |    5.19 |    4.44 |    4.17 |    4.83 |
+| blue-faint     | #4a659f |    4.93 |    4.22 |    3.96 |    4.59 |
+| magenta        | #a23ea4 |    4.79 |    4.10 |    3.85 |    4.46 |
+| magenta-warmer | #bf2c90 |    4.53 |    3.88 |    3.64 |    4.21 |
+| magenta-cooler | #6448ca |    5.42 |    4.64 |    4.36 |    5.05 |
+| magenta-faint  | #845592 |    4.87 |    4.17 |    3.92 |    4.54 |
+| cyan           | #3f69af |    4.68 |    4.01 |    3.76 |    4.35 |
+| cyan-warmer    | #4060a0 |    5.30 |    4.54 |    4.26 |    4.93 |
+| cyan-cooler    | #0f7688 |    4.54 |    3.89 |    3.65 |    4.23 |
+| cyan-faint     | #546f70 |    4.64 |    3.97 |    3.73 |    4.32 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:d5afeac3-bd21-4e74-b1c4-bf796d554604
+:END:
+
+| Name             |         | #e9a0a0 |
+|------------------+---------+---------|
+| modeline-err     | #900000 |    4.58 |
+| modeline-warning | #70008f |    4.80 |
+| modeline-info    | #00448f |    4.50 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
+** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:3f19c88c-d80a-4f51-83fd-de1239588c61
+:END:
+
+# bg-main / bg-dim, bg-main / bg-alt
+| #ffead8 | distance | contrast |
+|---------+----------+----------|
+| #f0d8cf |     2145 |     1.17 |
+| #e7d2bc |     5653 |     1.26 |
+#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
 * ef-autumn
 :PROPERTIES:
 :CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
