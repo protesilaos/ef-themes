@@ -1358,6 +1358,7 @@ everything most users need.
 - hi-lock (=M-x highlight-regexp=)
 - ibuffer
 - image-dired
+- imenu-list [ Part of {{{development-version}}}. ]
 - info
 - isearch, occur, query-replace
 - jit-spell
@@ -1749,7 +1750,7 @@ matters.
   Daniel Mendler, Federico Stilman, Iris Garcia, Jean-Philippe Gagné
   Guay, Jonas Collberg, Saša Janiška, Spike-Leung, Steve Molitor,
   Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán Király, goldfita,
-  marasenna.
+  marasenna, newhallroad.
 
 * GNU Free Documentation License
 :PROPERTIES:
