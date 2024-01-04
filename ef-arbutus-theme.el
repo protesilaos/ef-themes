@@ -263,7 +263,7 @@
       (rainbow-4 green-warmer)
       (rainbow-5 cyan-cooler)
       (rainbow-6 yellow-cooler)
-      (rainbow-7 magenta)
+      (rainbow-7 red-cooler)
       (rainbow-8 cyan))
     "The `ef-arbutus' palette.
 Color values have the form (COLOR-NAME HEX-VALUE) with the former
