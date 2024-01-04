@@ -1523,10 +1523,10 @@ text should not be underlined as well) yet still blend in."
     `(imenu-list-entry-face-1 ((,c :foreground ,rainbow-2)))
     `(imenu-list-entry-face-2 ((,c :foreground ,rainbow-3)))
     `(imenu-list-entry-face-3 ((,c :foreground ,rainbow-4)))
-    `(imenu-list-entry-subalist-face-0 ((,c :inherit bold :foreground ,rainbow-5 :underline t)))
-    `(imenu-list-entry-subalist-face-1 ((,c :inherit bold :foreground ,rainbow-6 :underline t)))
-    `(imenu-list-entry-subalist-face-2 ((,c :inherit bold :foreground ,rainbow-7 :underline t)))
-    `(imenu-list-entry-subalist-face-3 ((,c :inherit bold :foreground ,rainbow-8 :underline t)))
+    `(imenu-list-entry-subalist-face-0 ((,c :inherit bold :foreground ,rainbow-1 :underline t)))
+    `(imenu-list-entry-subalist-face-1 ((,c :inherit bold :foreground ,rainbow-2 :underline t)))
+    `(imenu-list-entry-subalist-face-2 ((,c :inherit bold :foreground ,rainbow-3 :underline t)))
+    `(imenu-list-entry-subalist-face-3 ((,c :inherit bold :foreground ,rainbow-4 :underline t)))
 ;;;; info
     `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-verbatim))) ; the capitalization is canonical
     `(info-header-node ((,c :inherit (shadow bold))))
