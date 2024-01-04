@@ -145,8 +145,8 @@
       (bg-paren           "#efafbf")
 ;; TODO 2023-12-27:
       (bg-err             "#ffd4b5") ; check with err
-      (bg-warning         "#ffe49f") ; check with warning
-      (bg-info            "#ddf0ac") ; check with info
+      (bg-warning         "#efe48f") ; check with warning
+      (bg-info            "#d0f0bc") ; check with info
 
       (border        "#c0b4a6")
       (cursor        "#208f10")
