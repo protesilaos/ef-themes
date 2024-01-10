@@ -88,7 +88,7 @@
 ;;; Basic hues for background values
 
       (bg-red-intense     "#ff8f88")
-      (bg-green-intense   "#8adf80")
+      (bg-green-intense   "#9adf90")
       (bg-yellow-intense  "#fac200")
       (bg-blue-intense    "#cbcfff")
       (bg-magenta-intense "#df8fff")
@@ -239,6 +239,17 @@
       (mail-recipient magenta-cooler)
       (mail-subject blue-cooler)
       (mail-other cyan)
+
+;;;; Search mappings
+
+      (bg-search-current bg-yellow-intense)
+      (bg-search-lazy bg-blue-intense)
+      (bg-search-replace bg-red-intense)
+
+      (bg-search-rx-group-0 bg-magenta-intense)
+      (bg-search-rx-group-1 bg-green-intense)
+      (bg-search-rx-group-2 bg-red-subtle)
+      (bg-search-rx-group-3 bg-cyan-subtle)
 
 ;;;; Space mappings
 

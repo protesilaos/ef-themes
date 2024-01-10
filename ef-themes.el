@@ -824,6 +824,22 @@ text should not be underlined as well) yet still blend in."
    :package-version '(ef-themes . "0.9.0")
    :group 'ef-themes-faces))
 
+;; This produces `ef-themes-search-current' and the like
+(dolist (scope '(current lazy replace))
+  (custom-declare-face
+   (intern (format "ef-themes-search-%s" scope))
+   nil (format "Search of type %s." scope)
+   :package-version '(ef-themes . "1.5.0")
+   :group 'ef-themes-faces))
+
+;; This produces `ef-themes-search-rx-group-0' and the like
+(dotimes (n 4)
+  (custom-declare-face
+   (intern (format "ef-themes-search-rx-group-%s" n))
+   nil (format "Search regexp group number %s." n)
+   :package-version '(ef-themes . "1.5.0")
+   :group 'ef-themes-faces))
+
 (defconst ef-themes-faces
   '(
 ;;;; internal faces
@@ -842,6 +858,13 @@ text should not be underlined as well) yet still blend in."
     `(ef-themes-mark-delete ((,c :inherit error :background ,bg-err)))
     `(ef-themes-mark-select ((,c :inherit success :background ,bg-info)))
     `(ef-themes-mark-other ((,c :inherit warning :background ,bg-warning)))
+    `(ef-themes-search-current ((,c :background ,bg-search-current :foreground ,fg-intense)))
+    `(ef-themes-search-lazy ((,c :background ,bg-search-lazy :foreground ,fg-intense)))
+    `(ef-themes-search-replace ((,c :background ,bg-search-replace :foreground ,fg-intense)))
+    `(ef-themes-search-rx-group-0 ((,c :background ,bg-search-rx-group-0 :foreground ,fg-intense)))
+    `(ef-themes-search-rx-group-1 ((,c :background ,bg-search-rx-group-1 :foreground ,fg-intense)))
+    `(ef-themes-search-rx-group-2 ((,c :background ,bg-search-rx-group-2 :foreground ,fg-intense)))
+    `(ef-themes-search-rx-group-3 ((,c :background ,bg-search-rx-group-3 :foreground ,fg-intense)))
     `(ef-themes-underline-error ((,c :underline (:style wave :color ,underline-err))))
     `(ef-themes-underline-info ((,c :underline (:style wave :color ,underline-info))))
     `(ef-themes-underline-warning ((,c :underline (:style wave :color ,underline-warning))))
@@ -1544,13 +1567,13 @@ text should not be underlined as well) yet still blend in."
     `(info-title-3 ((,c :inherit ef-themes-heading-3)))
     `(info-title-4 ((,c :inherit ef-themes-heading-4)))
 ;;;; isearch, occur, and the like
-    `(isearch ((,c :background ,bg-yellow-intense :foreground ,fg-intense)))
-    `(isearch-fail ((,c :background ,bg-red-intense :foreground ,fg-intense)))
-    `(isearch-group-1 ((,c :background ,bg-green-intense :foreground ,fg-intense)))
-    `(isearch-group-2 ((,c :background ,bg-magenta-intense :foreground ,fg-intense)))
-    `(lazy-highlight ((,c :background ,bg-blue-intense :foreground ,fg-intense)))
+    `(isearch ((,c :inherit ef-themes-search-current)))
+    `(isearch-fail ((,c :inherit error :background ,bg-err :foreground ,err)))
+    `(isearch-group-1 ((,c :inherit ef-themes-search-rx-group-0)))
+    `(isearch-group-2 ((,c :inherit ef-themes-search-rx-group-1)))
+    `(lazy-highlight ((,c :inherit ef-themes-search-lazy)))
     `(match ((,c :background ,bg-warning)))
-    `(query-replace ((,c :background ,bg-red-intense :foreground ,fg-intense)))
+    `(query-replace ((,c :inherit ef-themes-search-replace)))
 ;;;; jit-spell
     `(jit-spell-misspelling ((,c :inherit ef-themes-underline-error)))
 ;;;; jinx
@@ -2087,10 +2110,10 @@ text should not be underlined as well) yet still blend in."
     `(recursion-indicator-general ((,c :foreground ,modeline-err)))
     `(recursion-indicator-minibuffer ((,c :foreground ,modeline-info)))
 ;;;; regexp-builder (re-builder)
-    `(reb-match-0 ((,c :background ,bg-cyan-intense :foreground ,fg-intense)))
-    `(reb-match-1 ((,c :background ,bg-red-intense :foreground ,fg-intense)))
-    `(reb-match-2 ((,c :background ,bg-magenta-intense :foreground ,fg-intense)))
-    `(reb-match-3 ((,c :background ,bg-yellow-intense :foreground ,fg-intense)))
+    `(reb-match-0 ((,c :inherit ef-themes-search-rx-group-0)))
+    `(reb-match-1 ((,c :inherit ef-themes-search-rx-group-1)))
+    `(reb-match-2 ((,c :inherit ef-themes-search-rx-group-2)))
+    `(reb-match-3 ((,c :inherit ef-themes-search-rx-group-3)))
     `(reb-regexp-grouping-backslash ((,c :inherit font-lock-regexp-grouping-backslash)))
     `(reb-regexp-grouping-construct ((,c :inherit font-lock-regexp-grouping-construct)))
 ;;;; rst-mode

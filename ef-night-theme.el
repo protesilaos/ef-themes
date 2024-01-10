@@ -87,19 +87,19 @@
 
 ;;; Basic hues for background values
 
-      (bg-red-intense     "#cd2f30")
-      (bg-green-intense   "#20a020")
-      (bg-yellow-intense  "#904f30")
-      (bg-blue-intense    "#2f439f")
-      (bg-magenta-intense "#b04fcf")
-      (bg-cyan-intense    "#027080")
+      (bg-red-intense     "#bd1f30")
+      (bg-green-intense   "#107440")
+      (bg-yellow-intense  "#847020")
+      (bg-blue-intense    "#2f5f9f")
+      (bg-magenta-intense "#804fd5")
+      (bg-cyan-intense    "#0280b9")
 
-      (bg-red-subtle      "#6a002a")
-      (bg-green-subtle    "#00422a")
-      (bg-yellow-subtle   "#5a3000")
-      (bg-blue-subtle     "#242679")
-      (bg-magenta-subtle  "#50105a")
-      (bg-cyan-subtle     "#004065")
+      (bg-red-subtle      "#6a102a")
+      (bg-green-subtle    "#00522a")
+      (bg-yellow-subtle   "#5a4000")
+      (bg-blue-subtle     "#243788")
+      (bg-magenta-subtle  "#422e6b")
+      (bg-cyan-subtle     "#00506a")
 
 ;;; Diffs
 
@@ -239,6 +239,17 @@
       (mail-recipient blue-warmer)
       (mail-subject cyan-cooler)
       (mail-other cyan-warmer)
+
+;;;; Search mappings
+
+      (bg-search-current bg-yellow-intense)
+      (bg-search-lazy bg-blue-intense)
+      (bg-search-replace bg-red-intense)
+
+      (bg-search-rx-group-0 bg-magenta-intense)
+      (bg-search-rx-group-1 bg-green-intense)
+      (bg-search-rx-group-2 bg-red-subtle)
+      (bg-search-rx-group-3 bg-cyan-subtle)
 
 ;;;; Space mappings
 
