@@ -169,7 +169,8 @@
 
 ;;;; General mappings
 
-      (fringe unspecified)
+      (bg-fringe unspecified)
+      (fg-fringe unspecified)
 
       (err yellow-warmer)
       (warning yellow-cooler)
