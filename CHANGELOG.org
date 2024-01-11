@@ -9,6 +9,213 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.5.0 on 2024-01-11
+:PROPERTIES:
+:CUSTOM_ID: h:1f0bf8f2-8ed3-48d0-b6a8-725eccf579ff
+:END:
+
+** The new ~ef-arbutus~ and ~ef-rosa~ themes
+:PROPERTIES:
+:CUSTOM_ID: h:f3f15c45-a118-4c14-9be0-7973fe500503
+:END:
+
+The ~ef-arbutus~ theme combines red and green colours against a mild
+light red-pink background. The announcement article contains
+screenshots: <https://protesilaos.com/codelog/2023-12-29-ef-arbutus/>.
+
+The ~ef-rosa~ theme has a deep dark red-brown background with a blend
+of magenta and green foregrounds. Check the blog post for pictures:
+<https://protesilaos.com/codelog/2024-01-06-emacs-ef-rosa/>.
+
+These two new entries bring the total count of the collection to 30.
+
+Remember that you can set the user option ~ef-themes-to-toggle~ to two
+themes in the collection and switch between them with the command
+~ef-themes-toggle~. For example:
+
+#+begin_src emacs-lisp
+(setq ef-themes-to-toggle '(ef-arbutus ef-rosa))
+#+end_src
+
+Otherwise, use the command ~ef-themes-load-random~ (call it with a
+=C-u= prefix argument to limit the result to either dark or light
+themes, else call it from Lisp, like =(ef-themes-load-random 'dark)=).
+
+** Stopped the ~transient~ buffers from trying semantic key colouration
+:PROPERTIES:
+:CUSTOM_ID: h:4a900d7b-4f46-48a2-9d9c-506d3080c554
+:END:
+
+In a recent version of =transient.el=, there is a new user option that
+applies colour-coding to keys (e.g. we see those while using ~magit~):
+~transient-semantic-coloring~. This option is enabled by default,
+changing the previous style that was used as a reference for all my
+designs.
+
+The idea with such colour coding is to indicate when a key continues
+to display the transient, exits with a given action, and the like. For
+our purposes this interface cannot work:
+
+- We need some place to teach users what each colour means, as there
+  are no indicators of any sort to help them (whereas, say, in diff
+  buffers we have the plus and minus signs).
+
+- Not all hues are suitable for highlighting a single character. In
+  light themes, for example, green and yellow colours are TERRIBLE
+  choices for the requirements of this interface where the key must be
+  clearly visible. But when we introduce multiple colours, each with
+  their own meaning, we will not be able to avoid those hues.
+
+- The style of key bindings is not limited to =transient.el=. We find
+  them when we invoke =M-x=, do =M-x describe-bindings=, while using
+  the ~which-key~ package, and many more. If we are to change how
+  =transient.el= shows key bindings, then we have to retain the same
+  visual cues for other contexts. Otherwise, everything is inconsistent.
+
+- All themes must use the same colours to preserve the colour coding,
+  thus removing an important aspect of their presentation.
+
+- This whole paradigm does not work for themes that are optimised for
+  users with colour deficiency, due to the reduced number of suitable
+  hues. With deuteranopia, for example, we can only rely on yellow and
+  blue: since yellow is not optimal for single key highlights against
+  a light backdrop, blue is the only hue that works in such a context.
+
+The ~ef-themes~ will not support this user option. All relevant faces
+use the style of standard key bindings.
+
+Themes can enforce user option values, but I have decided to change
+the faces instead to better communicate my intent. If a user wants
+semantic colouring, they can change the faces to whatever they like.
+
+** The ~evil~ prompts now show the correct colours
+:PROPERTIES:
+:CUSTOM_ID: h:7eb0175d-1afa-48f4-b150-4c8cf55f31e5
+:END:
+
+While using ~evil-mode~, the ex prompts no longer use their generic
+hardcoded red value. They take an appropriate colour from the active
+Ef theme.
+
+** The ~imenu-list~ package is now supported
+:PROPERTIES:
+:CUSTOM_ID: h:10f4d49e-e07e-433b-97ec-f15b50e90a06
+:END:
+
+This package uses the built-in ~imenu~ infrastructure to produce a
+sidebar with points of interest in the buffer. Those headings now use
+the correct colour values.
+
+Thanks to newhallroad for bringing this matter to my attention in
+issue 35 on the GitHub mirror: <https://github.com/protesilaos/ef-themes/issues/35>.
+
+** The ~nerd-icons-completion~ package is covered
+:PROPERTIES:
+:CUSTOM_ID: h:14d2e825-3666-4bda-a03f-4179aaa42a03
+:END:
+
+This package defines a single face for directories/folders. It looks
+like all the other ~nerd-icons~ packages that use that icon, such as
+~nerd-icons-dired~.
+
+Thanks to Ryan Kaskel for the contribution:
+<https://lists.sr.ht/~protesilaos/ef-themes/patches/47379>. The change
+is small. Ryan does not need to assign copyright to the Free Software
+Foundation.
+
+** Completed the coverage of the ~denote~ faces
+:PROPERTIES:
+:CUSTOM_ID: h:431a601e-80d2-49e7-b4ec-7e5cc6b9c1f8
+:END:
+
+The new style ensures better thematic consistency.
+
+These faces are found in Dired buffers when ~denote-dired-mode~ is
+enabled. Same for the default style of the backlinks buffer.
+
+** Changed highlights to avoid conflating "flagged" and "trashed" emails
+:PROPERTIES:
+:CUSTOM_ID: h:34d5ee9d-0447-4295-a325-41ac88aab783
+:END:
+
+This is for email clients such as ~mu4e~ and ~notmuch~. Flagged ad
+trashed emails used to have the same colour, which was a problem when
+the user would try to filter in such a way as to show both at the same
+time.
+
+Thanks to Adam Porter (GitHub user alphapapa) for bringing this matter
+to my attention in issue 32 on the GitHub mirror:
+<https://github.com/protesilaos/ef-themes/issues/32>.
+
+** Support for more specialised faces
+:PROPERTIES:
+:CUSTOM_ID: h:61f67237-3303-4642-afea-7c1477efbb06
+:END:
+
+- ~blink-matching-paren-offscreen~ :: Defined in the built-in
+  =simple.el= to highlight the matching parenthesis in the echo area
+  when it is off screen (Emacs 30).
+
+- ~mct-highlight-candidate~ :: Part of the ~mct~ package to highlight
+  the currently selected completion candidate in the =*Completions*=
+  buffer.
+
+- ~shr-mark~ :: Used by the built-in ~shr~ library (Simple HTML
+  Renderer) to highlight =<mark>= tags (Emacs 29).
+
+** Expanded the semantic colour mappings
+:PROPERTIES:
+:CUSTOM_ID: h:6f4566d2-8683-4edc-8749-3e4821bf8397
+:END:
+
+Each theme defines colours and then maps them to semantic constructs.
+The idea is to not hardcode colour values, but to have an indirection
+that enforces consistency, while keeping things flexible/customisable.
+Users can override palette entries as explained in the manual:
+<https://protesilaos.com/emacs/ef-themes#h:4b923795-4b23-4345-81e5-d1c108a84b6a>.
+
+New semantic colour mappings are:
+
+- =bg-search-current= :: Background colour of the currently matched
+  term of search interfaces, like ~isearch~.
+
+- =bg-search-lazy= ::  This background is used in the same contexts as
+  the above, but for matches other than the current one.
+
+- =bg-search-replace= :: Background of the currently targeted
+  replacement in ~query-replace~ operations or related.
+
+- =bg-search-rx-group-{0..3}=, :: Backgrounds for regular expression
+  groups, such as while using =M-x re-builder=.
+
+- =bg-fringe= and =fg-fringe= :: Applies to the background of the
+  fringe area in Emacs frames. By default, the Ef themes do not use a
+  distinct background there, so this is for those who need it.
+
+- =prose-table-formula= :: Used for formula entries in plain text
+  tables, such as with Org, to distinguish them from the other
+  contents of the table.
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:945d2bbb-01ac-4829-a17b-81055f6951a7
+:END:
+
+- Used the updated ~modus-themes~ formula for the contrast tables of
+  all the Ef themes (stored in the file =contrast-ratios.org= in the
+  project's root directory).
+
+  I made this change in commit =b410fcc= in the ~modus-themes~ repo.
+  The idea is to avoid the use of the ~cl-loop~ and other =cl-=
+  functions that we don't really need (and which also have their own
+  mini language that I find hard to remember/use).
+
+- Tweaked the value of a few accented backgrounds to better fit with
+  each theme's style. These colours may not be spotted anywhere right
+  now, but are nonetheless available to those who use palette
+  overrides (run the command ~ef-themes-preview-colors~ or
+  ~ef-themes-preview-colors-current~ to visualise them).
+
 * Version 1.4.0 on 2023-10-26
 :PROPERTIES:
 :CUSTOM_ID: h:bdacaf4d-35e9-4741-b676-795afe42cf74
@@ -723,7 +930,7 @@ which could make it a bit harder to track lines.
 :PROPERTIES:
 :CUSTOM_ID: h:740c12ec-e4d5-4603-8ada-cecfa2337548
 :END:
-  
+
 Inactive diff hunk headings do not need to be bold, as they are
 already easy to tell apart from their context.  The added bold is
 useful for the currently selected diff hunk, as it draws attention to
@@ -764,7 +971,7 @@ Powerline setup with =M-x powerline-reset=.
 :PROPERTIES:
 :CUSTOM_ID: h:af3dfe52-d639-4be5-9d38-47960c0cdc0e
 :END:
-  
+
 The default value of ~consult-line-number-prefix~ inherits from the
 ~line-number~ face.  The Ef themes make the latter inherit from
 ~default~ in order to have the lines increase/decrease in font size
@@ -810,7 +1017,7 @@ permission.
 :PROPERTIES:
 :CUSTOM_ID: h:966dcdfe-35a0-4d27-b247-776d7b33c974
 :END:
-  
+
 The default value of the ~dashboard-items-face~ made all icons use the
 same colour, detracting from their distinctiveness.  Thanks to Thanos
 Apollo for bringing this matter to my attention.  It was done via a
@@ -1418,7 +1625,7 @@ a private channel.
 + Removed the background colour from the ~line-number-major-tick~,
   ~line-number-minor-tick~ faces.  These are used by the
   ~display-line-numbers-mode~ with something like:
-  
+
   #+begin_src emacs-lisp
   (setq display-line-numbers-major-tick 20
         display-line-numbers-minor-tick 5)
@@ -1525,10 +1732,10 @@ Date: Sun, 02 Oct 2022 15:18:28 +0300
 >> Commit: Protesilaos Stavrou <info@protesilaos.com>
 >>
 >>     Add ef-bio theme
->>     
+>>
 >>     Read the announcement, which also includes screen shots:
 >>     <https://protesilaos.com/codelog/2022-10-02-ef-themes-bio-theme/>.
->>     
+>>
 >>     Enjoy your new theme :)
 >
 > Out of curiosity, what is your long-term plan for ef-themes?  Do you
