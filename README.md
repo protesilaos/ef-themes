@@ -11,10 +11,8 @@ users who want something with a bit more flair than the `modus-themes`
 + Official manual: <https://protesilaos.com/emacs/ef-themes>
 + Change log: <https://protesilaos.com/emacs/ef-themes-changelog>
 + Sample pictures: <https://protesilaos.com/emacs/ef-themes-pictures>
-+ Git repo on SourceHut: <https://git.sr.ht/~protesilaos/ef-themes>
-  - Mirrors:
-    + GitHub: <https://github.com/protesilaos/ef-themes>
-    + GitLab: <https://gitlab.com/protesilaos/ef-themes>
-+ Mailing list: <https://lists.sr.ht/~protesilaos/ef-themes>
++ Git repositories:
+  + GitHub: <https://github.com/protesilaos/ef-themes>
+  + GitLab: <https://gitlab.com/protesilaos/ef-themes>
 + Backronym: Eclectic Fashion in Themes Hides Exaggerated Markings,
   Embellishments, and Sparkles.
