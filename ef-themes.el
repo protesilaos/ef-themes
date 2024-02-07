@@ -1113,6 +1113,7 @@ text should not be underlined as well) yet still blend in."
     `(completions-common-part ((,c :inherit bold :foreground ,accent-0)))
     `(completions-first-difference ((,c :inherit bold :foreground ,accent-1)))
     `(completions-group-title ((,c :inherit bold :foreground ,name)))
+    `(completions-highlight ((,c :background ,bg-completion)))
 ;;;; consult
     `(consult-async-split ((,c :inherit warning)))
     `(consult-file ((,c :foreground ,name)))
