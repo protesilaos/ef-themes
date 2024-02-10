@@ -3,9 +3,8 @@
 ;; Copyright (C) 2022-2024  Free Software Foundation, Inc.
 
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
-;; Maintainer: Ef-Themes Development <~protesilaos/ef-themes@lists.sr.ht>
+;; Maintainer: Protesilaos Stavrou <info@protesilaos.com>
 ;; URL: https://git.sr.ht/~protesilaos/ef-themes
-;; Mailing-List: https://lists.sr.ht/~protesilaos/ef-themes
 ;; Version: 1.5.1
 ;; Package-Requires: ((emacs "27.1"))
 ;; Keywords: faces, theme, accessibility
