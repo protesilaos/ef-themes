@@ -1424,7 +1424,7 @@ everything most users need.
 - widget
 - writegood-mode
 - woman
-+ ztree [ Part of {{{development-version}}}. ]
+- ztree [ Part of {{{development-version}}}. ]
 
 ** Implicitly supported packages or face groups
 :PROPERTIES:
