@@ -2358,6 +2358,10 @@ text should not be underlined as well) yet still blend in."
     `(widget-field ((,c :background ,bg-alt :foreground ,fg-main :extend nil)))
     `(widget-inactive ((,c :inherit shadow :background ,bg-dim)))
     `(widget-single-line-field ((,c :inherit widget-field)))
+;;;; window-divider-mode
+    `(window-divider ((,c :foreground ,border)))
+    `(window-divider-first-pixel ((,c :foreground ,bg-inactive)))
+    `(window-divider-last-pixel ((,c :foreground ,bg-inactive)))
 ;;;; writegood-mode
     `(writegood-duplicates-face ((,c :inherit ef-themes-underline-error)))
     `(writegood-passive-voice-face ((,c :inherit ef-themes-underline-info)))

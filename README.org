@@ -1423,6 +1423,7 @@ everything most users need.
 - which-key
 - whitespace-mode
 - widget
+- window-divider-mode [ Part of {{{development-version}}}. ]
 - writegood-mode
 - woman
 - ztree [ Part of {{{development-version}}}. ]
