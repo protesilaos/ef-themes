@@ -344,13 +344,14 @@ further details)."
   (when ef-themes-variable-pitch-ui
     (list :inherit 'variable-pitch)))
 
-(defun ef-themes--alist-or-seq (properties alist-key seq-pred seq-default)
-  "Return value from alist or sequence.
+(defun ef-themes--property-lookup (properties alist-key list-pred default)
+  "Return value from property alist or list.
 Check PROPERTIES for an alist value that corresponds to
 ALIST-KEY.  If no alist is present, search the PROPERTIES
-sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
+list given LIST-PRED, using DEFAULT as a fallback."
   (if-let* ((val (or (alist-get alist-key properties)
-                     (seq-find seq-pred properties seq-default)))
+                     (seq-filter (lambda (x) (funcall list-pred x)) properties)
+                     default))
             ((listp val)))
       (car val)
     val))
@@ -368,15 +369,18 @@ sequence given SEQ-PRED, using SEQ-DEFAULT as a fallback."
          (style (or key (alist-get t ef-themes-headings)))
          (style-listp (listp style))
          (properties style)
-         (var (when (memq 'variable-pitch properties) 'variable-pitch))
+         (var (when (and style-listp (memq 'variable-pitch properties)) 'variable-pitch))
          (weight (when style-listp (ef-themes--weight style))))
     (list :inherit
           (cond
+           ((not style-listp) 'bold)
            (weight var)
            (var (append (list 'bold) (list var)))
-           ('bold))
+           (t 'bold))
           :height
-          (ef-themes--alist-or-seq properties 'height #'floatp 'unspecified)
+          (if style-listp
+              (ef-themes--property-lookup properties 'height #'floatp 'unspecified)
+            'unspecified)
           :weight
           (or weight 'unspecified))))
 
