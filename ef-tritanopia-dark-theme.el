@@ -78,7 +78,7 @@
       (blue-warmer     "#6a88ff")
       (blue-cooler     "#029fff")
       (blue-faint      "#6a84af")
-      (magenta         "#b2608f")
+      (magenta         "#b0648f")
       (magenta-warmer  "#c560aa")
       (magenta-cooler  "#a6699f")
       (magenta-faint   "#c590af")

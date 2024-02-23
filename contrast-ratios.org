@@ -1850,7 +1850,7 @@ overall design of the project.
 | blue-warmer    | #6a88ff |    6.20 |    4.97 |    4.11 |    5.65 |
 | blue-cooler    | #029fff |    6.98 |    5.59 |    4.63 |    6.36 |
 | blue-faint     | #6a84af |    5.22 |    4.18 |    3.46 |    4.75 |
-| magenta        | #b2608f |    4.68 |    3.75 |    3.10 |    4.27 |
+| magenta        | #b0648f |    4.78 |    3.82 |    3.17 |    4.35 |
 | magenta-warmer | #c560aa |    5.31 |    4.25 |    3.52 |    4.84 |
 | magenta-cooler | #a6699f |    4.85 |    3.88 |    3.22 |    4.42 |
 | magenta-faint  | #c590af |    7.53 |    6.03 |    4.99 |    6.86 |
