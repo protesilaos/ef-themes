@@ -179,7 +179,7 @@
       (identifier magenta-faint)
       (prompt cyan-warmer)
 
-      (bg-region "#222f40")
+      (bg-region "#253146")
       (fg-region unspecified)
 
 ;;;; Code mappings
