@@ -141,9 +141,9 @@
       (bg-hover-secondary "#493737")
       (bg-hl-line         "#002255")
       (bg-paren           "#664950")
-      (bg-err             "#331419") ; check with err
-      (bg-warning         "#332613") ; check with warning
-      (bg-info            "#002e1f") ; check with info
+      (bg-err             "#471014") ; check with err
+      (bg-warning         "#3b2f04") ; check with warning
+      (bg-info            "#103512") ; check with info
 
       (border        "#3a4a66")
       (cursor        "#00ccff")

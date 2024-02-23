@@ -144,9 +144,9 @@
       (bg-hover-secondary "#5e3e5b")
       (bg-hl-line         "#3f1515")
       (bg-paren           "#2f5f7a")
-      (bg-err             "#3a0f0f") ; check with err
-      (bg-warning         "#371430") ; check with warning
-      (bg-info            "#00253a") ; check with info
+      (bg-err             "#451212") ; check with err
+      (bg-warning         "#40173d") ; check with warning
+      (bg-info            "#00354f") ; check with info
 
       (border        "#555564")
       (cursor        "#fd3333")
@@ -172,7 +172,7 @@
       (fg-fringe unspecified)
 
       (err red-warmer)
-      (warning magenta)
+      (warning magenta-warmer)
       (info cyan)
 
       (link cyan)
