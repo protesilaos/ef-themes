@@ -182,7 +182,7 @@
       (identifier magenta-faint)
       (prompt cyan)
 
-      (bg-region "#202d3f")
+      (bg-region "#293140")
       (fg-region unspecified)
 
 ;;;; Code mappings
