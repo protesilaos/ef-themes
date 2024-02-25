@@ -1745,7 +1745,7 @@ matters.
 + Author/maintainer :: Protesilaos Stavrou.
 
 + Contributions to code or the manual :: Alex Lu, Christopher League,
-  Eshel Yaron, Philip Kaludercic, Ryan Kaskel, Walheimat.
+  Eshel Yaron, Gautier Ponsinet, Philip Kaludercic, Ryan Kaskel, Walheimat.
 
 + Ideas and/or user feedback :: Adam Porter (alphapapa), Alan Schmitt,
   Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,
