@@ -1568,6 +1568,8 @@ text should not be underlined as well) yet still blend in."
                   :background "white" :foreground "#af6f00" :inverse-video t)
                  (((class color) (min-colors 88) (background dark))
                   :background "black" :foreground "#faea00" :inverse-video t)))
+;;;; highlight-indentation mode
+    `(highlight-indentation-face ((,c :background ,bg-dim)))
 ;;;; ibuffer
     `(ibuffer-locked-buffer ((,c :foreground ,warning)))
 ;;;; image-dired

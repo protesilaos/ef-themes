@@ -1356,6 +1356,7 @@ everything most users need.
 - git-rebase
 - gnus
 - hi-lock (=M-x highlight-regexp=)
+- highlight-indentation
 - ibuffer
 - image-dired
 - imenu-list [ Part of {{{development-version}}}. ]
