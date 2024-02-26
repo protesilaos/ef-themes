@@ -1789,7 +1789,7 @@ text should not be underlined as well) yet still blend in."
     `(message-header-xheader ((,c :inherit message-header-other)))
     `(message-header-other ((,c :foreground ,mail-other)))
     `(message-mml ((,c :foreground ,mail-part)))
-    `(message-separator ((,c :background ,bg-active)))
+    `(message-separator ((,c :background ,bg-inactive :foreground ,fg-main)))
 ;;;; mode-line
     `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
     `(mode-line-active ((,c :inherit mode-line)))
