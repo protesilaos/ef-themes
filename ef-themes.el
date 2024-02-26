@@ -1838,6 +1838,7 @@ text should not be underlined as well) yet still blend in."
     `(mu4e-replied-face ((,c :foreground ,info)))
     `(mu4e-special-header-value-face ((,c :inherit message-header-subject)))
     `(mu4e-system-face ((,c :inherit italic)))
+    `(mu4e-thread-fold-face ((,c :foreground ,border)))
     `(mu4e-title-face (( )))
     `(mu4e-trashed-face ((,c :foreground ,err)))
     `(mu4e-unread-face ((,c :inherit bold)))
