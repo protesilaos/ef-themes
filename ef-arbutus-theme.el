@@ -102,7 +102,6 @@
 
 ;;; Diffs
 
-;; TODO 2023-12-27:
       (bg-added          "#d0e6b0")
       (bg-added-faint    "#e2efc0")
       (bg-added-refine   "#bbd799")
@@ -142,7 +141,6 @@
       (bg-hover-secondary "#f5bfc5")
       (bg-hl-line         "#fad8bf")
       (bg-paren           "#efafbf")
-;; TODO 2023-12-27:
       (bg-err             "#ffd4b5") ; check with err
       (bg-warning         "#efe48f") ; check with warning
       (bg-info            "#d0f0bc") ; check with info
