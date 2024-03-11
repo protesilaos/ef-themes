@@ -4,9 +4,9 @@
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
 #+startup: content
-#+macro: stable-version 1.5.0
-#+macro: release-date 2024-01-11
-#+macro: development-version 1.6.0-dev
+#+macro: stable-version 1.6.0
+#+macro: release-date 2024-03-11
+#+macro: development-version 1.7.0-dev
 #+export_file_name: ef-themes.texi
 #+texinfo_filename: ef-themes.info
 #+texinfo_dir_category: Emacs misc features
@@ -1341,10 +1341,10 @@ everything most users need.
 - elfeed
 - embark
 - epa
-- erc [ Part of {{{development-version}}}. ]
+- erc
 - ert
 - eshell
-- evil [ Part of {{{development-version}}}. ]
+- evil
 - eww
 - flycheck
 - flymake
@@ -1356,10 +1356,10 @@ everything most users need.
 - git-rebase
 - gnus
 - hi-lock (=M-x highlight-regexp=)
-- highlight-indentation [ Part of {{{development-version}}}. ]
+- highlight-indentation
 - ibuffer
 - image-dired
-- imenu-list [ Part of {{{development-version}}}. ]
+- imenu-list
 - info
 - isearch, occur, query-replace
 - jit-spell
@@ -1371,7 +1371,7 @@ everything most users need.
 - man
 - marginalia
 - markdown-mode
-- mct [ Part of {{{development-version}}}. ]
+- mct
 - messages
 - mode-line
 - mood-line
@@ -1424,10 +1424,10 @@ everything most users need.
 - which-key
 - whitespace-mode
 - widget
-- window-divider-mode [ Part of {{{development-version}}}. ]
+- window-divider-mode
 - writegood-mode
 - woman
-- ztree [ Part of {{{development-version}}}. ]
+- ztree
 
 ** Implicitly supported packages or face groups
 :PROPERTIES:
