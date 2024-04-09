@@ -647,9 +647,6 @@ a tone.  Blue is okay.
 :CUSTOM_ID: h:d25270b3-c82b-41d3-8cea-9a1e01e9af92
 :END:
 
-Most of these are not actually used. We just define the entire palette
-to make it work with the overall design of the project.
-
 | Name           |         | #232025 | #322f34 | #3b393e | #2a272c |
 |----------------+---------+---------+---------+---------+---------|
 | fg-main        | #efd5c5 |   11.49 |    9.42 |    8.15 |   10.52 |
@@ -715,10 +712,6 @@ to make it work with the overall design of the project.
 :CUSTOM_ID: h:3730662d-f752-4180-983b-371e32c2a82e
 :END:
 
-Most of these are not actually used.  The theme primarily maps the
-blue/cyan and yellow hues.  We just define the entire palette to make it
-work with the overall design of the project.
-
 | Name           |         | #070019 | #1d1a26 | #2a2739 | #13101f |
 |----------------+---------+---------+---------+---------+---------|
 | fg-main        | #d0d0d0 |   13.31 |   11.09 |    9.40 |   12.14 |
@@ -783,10 +776,6 @@ work with the overall design of the project.
 :PROPERTIES:
 :CUSTOM_ID: h:2feec2e7-adc3-4e11-a046-6842e89de0e7
 :END:
-
-Most of these are not actually used.  The theme primarily maps the
-blue/cyan and yellow hues.  We just define the entire palette to make it
-work with the overall design of the project.
 
 | Name           |         | #fff8f0 | #f6ece8 | #e7e0da | #f9f2ef |
 |----------------+---------+---------+---------+---------+---------|
@@ -1502,9 +1491,6 @@ work with the overall design of the project.
 :PROPERTIES:
 :CUSTOM_ID: h:f6fc19ec-672b-4b0d-9d6a-a7fd7d49cfd5
 :END:
-
-Most of these are not actually used. We just define the entire palette
-to make it work with the overall design of the project.
 
 | Name           |         | #f3eddf | #e6d3d0 | #d7c6c5 | #f1e4da |
 |----------------+---------+---------+---------+---------+---------|
