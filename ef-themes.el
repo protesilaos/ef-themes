@@ -69,6 +69,7 @@
     ef-light
     ef-maris-light
     ef-melissa-light
+    ef-reverie
     ef-spring
     ef-summer
     ef-trio-light
@@ -81,6 +82,7 @@
     ef-cherie
     ef-dark
     ef-deuteranopia-dark
+    ef-dream
     ef-duo-dark
     ef-elea-dark
     ef-maris-dark
