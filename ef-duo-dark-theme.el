@@ -36,9 +36,6 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  ;; Most of the colors here are defined simply to preserve
-  ;; compatibility with the rest of the project.  We don't actually rely
-  ;; on them for anything critical.
 ;;;###theme-autoload
   (deftheme ef-duo-dark
     "Legible dark theme with mostly blue and orange colors."
