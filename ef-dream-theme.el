@@ -104,7 +104,7 @@
 
       (bg-added          "#304a4f")
       (bg-added-faint    "#16383f")
-      (bg-added-refine   "#336f6f")
+      (bg-added-refine   "#2f6767")
       (fg-added          "#a0d0f0")
 
       (bg-changed        "#51512f")
@@ -114,7 +114,7 @@
 
       (bg-removed        "#5a3142")
       (bg-removed-faint  "#4a2034")
-      (bg-removed-refine "#772a4b")
+      (bg-removed-refine "#782a4a")
       (fg-removed        "#f0bfcf")
 
 ;;; Graphs
