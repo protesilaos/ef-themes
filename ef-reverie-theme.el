@@ -138,7 +138,7 @@
       (fg-mode-line       "#523044")
       (bg-completion      "#efc7d8")
       (bg-hover           "#ddc97f")
-      (bg-hover-secondary "#d4d4da")
+      (bg-hover-secondary "#d0c4e4")
       (bg-hl-line         "#e7d9e0")
       (bg-paren           "#bf9fbf")
       (bg-err             "#ffc4d4") ; check with err
