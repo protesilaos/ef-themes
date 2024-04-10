@@ -104,17 +104,17 @@
 
       (bg-added          "#b7ecd0")
       (bg-added-faint    "#cef3d2")
-      (bg-added-refine   "#a0d0c0")
+      (bg-added-refine   "#a4d4c4")
       (fg-added          "#0f443f")
 
       (bg-changed        "#f5e690")
       (bg-changed-faint  "#f5edaf")
-      (bg-changed-refine "#edd082")
+      (bg-changed-refine "#eed284")
       (fg-changed        "#553d00")
 
       (bg-removed        "#f8c3bf")
       (bg-removed-faint  "#fed8d0")
-      (bg-removed-refine "#f0a0b9")
+      (bg-removed-refine "#f9a8bd")
       (fg-removed        "#801530")
 
 ;;; Graphs
