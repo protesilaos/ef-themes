@@ -219,7 +219,7 @@
 ;;;; Prose mappings
 
       (prose-code blue-warmer)
-      (prose-done cyan-warmer)
+      (prose-done cyan-cooler)
       (prose-macro green-cooler)
       (prose-metadata fg-dim)
       (prose-metadata-value fg-alt)
