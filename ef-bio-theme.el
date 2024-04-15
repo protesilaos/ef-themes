@@ -189,7 +189,7 @@
       (constant blue)
       (fnname green-warmer)
       (keyword green-cooler)
-      (preprocessor green)
+      (preprocessor cyan-cooler)
       (docstring green-faint)
       (string magenta-cooler)
       (type cyan-warmer)
