@@ -195,7 +195,7 @@
       (type green-faint)
       (variable magenta)
       (rx-escape cyan-cooler) ; compare with `string'
-      (rx-construct red-cooler)
+      (rx-construct red-warmer)
 
 ;;;; Accent mappings
 
