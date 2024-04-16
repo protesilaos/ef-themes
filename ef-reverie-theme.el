@@ -113,7 +113,7 @@
       (fg-changed        "#553d00")
 
       (bg-removed        "#f8c3bf")
-      (bg-removed-faint  "#fed8d0")
+      (bg-removed-faint  "#f4d8d0")
       (bg-removed-refine "#f9a8bd")
       (fg-removed        "#801530")
 
