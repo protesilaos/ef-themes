@@ -86,19 +86,19 @@
 
 ;;; Basic hues for background values
 
-      (bg-red-intense     "#bd1f30")
-      (bg-green-intense   "#107840")
-      (bg-yellow-intense  "#847020")
-      (bg-blue-intense    "#2f5f9f")
-      (bg-magenta-intense "#b05fcf")
+      (bg-red-intense     "#a02f50")
+      (bg-green-intense   "#30682f")
+      (bg-yellow-intense  "#8f665f")
+      (bg-blue-intense    "#4f509f")
+      (bg-magenta-intense "#885997")
       (bg-cyan-intense    "#0280b9")
 
-      (bg-red-subtle      "#6a192f")
+      (bg-red-subtle      "#682a33")
       (bg-green-subtle    "#2f502f")
       (bg-yellow-subtle   "#5a4020")
       (bg-blue-subtle     "#3a3980")
       (bg-magenta-subtle  "#553977")
-      (bg-cyan-subtle     "#305060")
+      (bg-cyan-subtle     "#22526a")
 
 ;;; Diffs
 
