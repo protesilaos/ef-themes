@@ -185,7 +185,7 @@
 ;;;; Code mappings
 
       (builtin cyan)
-      (comment yellow-faint)
+      (comment red-faint)
       (constant blue)
       (fnname cyan-cooler)
       (keyword blue-warmer)
