@@ -172,7 +172,7 @@
       (warning yellow-warmer)
       (info green)
 
-      (link green)
+      (link green-cooler)
       (link-alt magenta-cooler)
       (name magenta-warmer)
       (keybind magenta-warmer)
