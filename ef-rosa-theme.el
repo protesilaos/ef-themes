@@ -237,7 +237,7 @@
       (mail-cite-3 yellow-cooler)
       (mail-part magenta-cooler)
       (mail-recipient magenta)
-      (mail-subject green-cooler)
+      (mail-subject green)
       (mail-other magenta-warmer)
 
 ;;;; Search mappings
