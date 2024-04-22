@@ -1053,7 +1053,7 @@ a tone.  Blue is okay.
 | yellow         | #9a6012 |    4.91 |    4.25 |    3.78 |    4.60 |
 | yellow-warmer  | #b6530f |    4.70 |    4.08 |    3.62 |    4.41 |
 | yellow-cooler  | #a04646 |    5.75 |    4.99 |    4.43 |    5.40 |
-| yellow-faint   | #a65d6a |    4.53 |    3.93 |    3.49 |    4.25 |
+| yellow-faint   | #7a5f2f |    5.68 |    4.92 |    4.37 |    5.33 |
 | blue           | #3c3bbe |    7.77 |    6.74 |    5.98 |    7.29 |
 | blue-warmer    | #4250ef |    5.49 |    4.76 |    4.23 |    5.15 |
 | blue-cooler    | #065fff |    4.87 |    4.22 |    3.75 |    4.57 |
