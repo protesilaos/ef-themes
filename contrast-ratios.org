@@ -595,7 +595,7 @@ overall design of the project.
 | yellow         | #805d00 |    5.57 |    4.93 |    4.07 |    5.26 |
 | yellow-warmer  | #965000 |    5.63 |    4.98 |    4.11 |    5.32 |
 | yellow-cooler  | #765040 |    6.48 |    5.74 |    4.73 |    6.13 |
-| yellow-faint   | #776d6a |    4.64 |    4.11 |    3.39 |    4.39 |
+| yellow-faint   | #77604a |    5.45 |    4.83 |    3.98 |    5.16 |
 | blue           | #375cd8 |    5.26 |    4.66 |    3.84 |    4.98 |
 | blue-warmer    | #4250ef |    5.35 |    4.73 |    3.91 |    5.06 |
 | blue-cooler    | #065fff |    4.74 |    4.20 |    3.46 |    4.48 |

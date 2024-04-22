@@ -73,7 +73,7 @@
       (yellow          "#805d00")
       (yellow-warmer   "#965000")
       (yellow-cooler   "#765040")
-      (yellow-faint    "#776d6a")
+      (yellow-faint    "#77604a")
       (blue            "#375cd8")
       (blue-warmer     "#4250ef")
       (blue-cooler     "#065fff")
