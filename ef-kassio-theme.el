@@ -185,7 +185,7 @@
 ;;;; Code mappings
 
       (builtin magenta)
-      (comment green-faint)
+      (comment cyan-faint)
       (constant magenta-cooler)
       (fnname magenta-warmer)
       (keyword blue)
