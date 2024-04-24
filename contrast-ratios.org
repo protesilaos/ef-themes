@@ -667,7 +667,7 @@ a tone.  Blue is okay.
 | blue           | #57b0ff |    6.94 |    5.69 |    4.92 |    6.36 |
 | blue-warmer    | #80aadf |    6.69 |    5.49 |    4.74 |    6.13 |
 | blue-cooler    | #12b4ff |    6.90 |    5.65 |    4.89 |    6.31 |
-| blue-faint     | #9ac3ff |    8.91 |    7.30 |    6.31 |    8.16 |
+| blue-faint     | #a0a0cf |    6.46 |    5.29 |    4.58 |    5.91 |
 | magenta        | #ffaacf |    9.12 |    7.48 |    6.47 |    8.35 |
 | magenta-warmer | #f498c0 |    7.74 |    6.34 |    5.49 |    7.09 |
 | magenta-cooler | #d0b0ff |    8.69 |    7.12 |    6.16 |    7.96 |
