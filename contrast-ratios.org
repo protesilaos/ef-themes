@@ -805,7 +805,7 @@ a tone.  Blue is okay.
 | cyan           | #1f6fbf |    4.88 |    4.43 |    3.94 |    4.65 |
 | cyan-warmer    | #3f6faf |    4.86 |    4.41 |    3.92 |    4.62 |
 | cyan-cooler    | #1f77bb |    4.52 |    4.10 |    3.64 |    4.30 |
-| cyan-faint     | #406f90 |    5.12 |    4.64 |    4.13 |    4.87 |
+| cyan-faint     | #3f70a0 |    4.94 |    4.48 |    3.98 |    4.70 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
 ** Special colours against the modeline

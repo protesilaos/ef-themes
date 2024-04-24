@@ -80,7 +80,7 @@
       (magenta-cooler  "#6052cf")
       (magenta-faint   "#af569f")
       (cyan            "#1f6fbf")
-      (cyan-warmer     "#3f6faf")
+      (cyan-warmer     "#3f70a0")
       (cyan-cooler     "#1f77bb")
       (cyan-faint      "#406f90")
 
