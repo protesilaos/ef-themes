@@ -453,7 +453,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | green          | #007a0a |    5.15 |    4.61 |    4.25 |    4.87 |
 | green-warmer   | #5a7400 |    4.96 |    4.44 |    4.10 |    4.69 |
 | green-cooler   | #0f7f5f |    4.62 |    4.13 |    3.82 |    4.37 |
-| green-faint    | #61756c |    4.57 |    4.09 |    3.78 |    4.32 |
+| green-faint    | #617540 |    4.73 |    4.23 |    3.91 |    4.47 |
 | yellow         | #a45a22 |    4.80 |    4.29 |    3.97 |    4.54 |
 | yellow-warmer  | #b75515 |    4.51 |    4.04 |    3.73 |    4.27 |
 | yellow-cooler  | #aa4f30 |    5.04 |    4.51 |    4.16 |    4.77 |
