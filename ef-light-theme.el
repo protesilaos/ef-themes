@@ -74,7 +74,7 @@
       (blue            "#375cd8")
       (blue-warmer     "#4250ef")
       (blue-cooler     "#065fff")
-      (blue-faint      "#6060d0")
+      (blue-faint      "#4f54ba")
       (magenta         "#ba35af")
       (magenta-warmer  "#cf25aa")
       (magenta-cooler  "#6052cf")
@@ -308,7 +308,7 @@
 ;;;; Rainbow mappings
 
       (rainbow-0 green-cooler)
-      (rainbow-1 blue)
+      (rainbow-1 blue-faint)
       (rainbow-2 magenta-warmer)
       (rainbow-3 cyan-cooler)
       (rainbow-4 yellow-cooler)
