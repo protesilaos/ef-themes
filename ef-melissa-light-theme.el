@@ -60,14 +60,14 @@
 ;;; Basic hues for foreground values
 
       (red             "#ba2d2f")
-      (red-warmer      "#b21f00")
-      (red-cooler      "#c03f3f")
+      (red-warmer      "#c74400")
+      (red-cooler      "#c02945")
       (red-faint       "#b05350")
       (green           "#007a0a")
       (green-warmer    "#5a7400")
       (green-cooler    "#008250")
       (green-faint     "#61756c")
-      (yellow          "#a46110")
+      (yellow          "#a26310")
       (yellow-warmer   "#ba5205")
       (yellow-cooler   "#946830")
       (yellow-faint    "#7f6f1a")
