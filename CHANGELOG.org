@@ -9,6 +9,206 @@ project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
+* Version 1.7.0 on 2024-04-28
+:PROPERTIES:
+:CUSTOM_ID: h:c5de16f9-1f16-46b9-b9fa-07b9b6b9bcfc
+:END:
+
+This version contains minor refinements for many of the themes in the
+collection. It also introduces two new themes which, according to
+private feedback I have received, are already well received.
+
+** Experience the ~ef-dream~ and ~ef-reverie~ themes
+:PROPERTIES:
+:CUSTOM_ID: h:a6160334-8fca-4d2c-9a16-6163f5fb051c
+:END:
+
+Both themes revolve around the use of gold tones and subtle
+complementary colours.
+
+I announced them here: <https://protesilaos.com/codelog/2024-04-09-emacs-ef-dream-reverie-themes/>.
+
+The ~ef-themes~ now cover a wide range of tastes, all while conforming
+with a high legibility standard (minimum WCAG AA, though many qualify
+for WCAG AAA).
+
+** Refinements for some themes
+:PROPERTIES:
+:CUSTOM_ID: h:889befd9-24c1-4fba-86f4-330eee02030e
+:END:
+
+These are small changes that improve the consistency of the given
+theme.
+
+*** ef-bio
+:PROPERTIES:
+:CUSTOM_ID: h:e98052b9-af8f-4360-8c88-5cfb093a40bb
+:END:
+
+The =preprocessor= semantic palette mapping uses a cyan-green colour
+instead of a vibrant green. This is to better differentiate elements
+in code, while remaining faithful to the style of the theme.
+
+*** ef-cyprus
+:PROPERTIES:
+:CUSTOM_ID: h:5f9e7d77-fa2b-444a-9d0d-1704e3450ec9
+:END:
+
+The =preprocessor= semantic palette mapping is redefined from a faint
+yellow to a firebrick red. This is to ensure that the various
+combinations of elements in code are easy to tell apart while
+remaining pleasant to look at.
+
+*** ef-day
+:PROPERTIES:
+:CUSTOM_ID: h:281a61e3-7a46-4940-b20e-3d0e7507e2d0
+:END:
+
+The =green-faint= value has reduced contribution from the blue channel
+of light, making it more green-yellow as a result. This colour is only
+used for comments: it achieves the two-fold goal of (i) applying
+subtle colouration to comments while (ii) making them sufficiently
+distinct from their context.
+
+*** ef-dark
+:PROPERTIES:
+:CUSTOM_ID: h:8328c714-247f-4917-8de1-97674aea88f8
+:END:
+
+The value of the =preprocessor= is a bit darker red than its former
+brighter variant. This is to improve the visuals in files that include
+a high concentration of preprocessor constructs.
+
+*** ef-duo-light
+:PROPERTIES:
+:CUSTOM_ID: h:ee767a74-ae4f-49b2-916f-a4a2100d63ec
+:END:
+
+- The =cyan-warmer= entry in the palette is a bit less blue and more
+  green. The change is imperceptible on its own (from =#3f6faf= to
+  =#3f70a0=). The effect is more noticeable in the context of other
+  constructs, such as in an Org document that combines headings of
+  varying levels, with code and verbatim inline elements, as well as
+  links.
+
+- The =comment= semantic palette mapping uses a slightly more orange
+  value. This is done for stylistic consistency with the rest of the
+  theme, while making comments a bit easier to spot.
+
+*** ef-duo-dark
+:PROPERTIES:
+:CUSTOM_ID: h:8c50cfdd-acfd-4240-b8d3-41bdfbc215ec
+:END:
+
+As with its light counterpart, the =comment= entry in the palette uses
+a slightly different colour value. The effect is subtle and only
+appreciated in context.
+
+*** ef-frost
+:PROPERTIES:
+:CUSTOM_ID: h:ed7e4bfd-23e0-4acf-9621-ba0a97d92796
+:END:
+
+The =yellow-faint= palette entry is considerably more yellow than its
+previous value. The reason for this change is to make comments and
+tags in Org headings stand out more when compared to some other subtle
+elements. The exact value of this yellow still feels ice-cold, like
+the rest of the theme.
+
+*** ef-kassio
+:PROPERTIES:
+:CUSTOM_ID: h:4fb0d0a7-0086-4625-9b4e-2e5eb599997e
+:END:
+
+The =comment= semantic palette mapping uses a slightly more cyan
+value. Comments are easier to tell apart from their context, while
+retaining the spirit of their original design.
+
+*** ef-light
+:PROPERTIES:
+:CUSTOM_ID: h:a149da6b-716c-41ba-a25e-3784742ea0e8
+:END:
+
+- The =blue= entry in the palette is darker than before. This makes
+  the links it is applied to easier to spot in their context.
+
+- The =blue-faint= is a bit less purple/indigo than before. It is now
+  applied to level 1 headings (such as in Org) instead of the previous
+  =blue= value. Combined with the above it makes it easier to
+  differentiate various elements that are rendered in some shade of
+  blue (like Org verbatim and links).
+
+- The =preprocessor= semantic palette mapping uses a slightly darker
+  red than before, to better fit in with the rest of the theme.
+
+*** ef-melissa-light
+:PROPERTIES:
+:CUSTOM_ID: h:962a86e6-4ac2-42ad-9a37-6b3500cb700b
+:END:
+
+The =red-warmer=, =red-cooler=, and =yellow= palette entries are
+revised in concert to (i) retain the overall balance of the theme
+while (ii) making those colours easier to tell apart.
+
+*** ef-rosa
+:PROPERTIES:
+:CUSTOM_ID: h:4748d0cc-8e65-43f7-a243-ab138e24ddc0
+:END:
+
+- Links use a different shade of green. It makes for a slightly better
+  fit in the context of other elements.
+
+- The =green= value is less saturated. It better complements the
+  colours it is combined with, such as pink and magenta.
+
+- The =mail-subject= semantic palette mapping uses the aforementioned
+  =green=, as it makes for a better fit in that context.
+
+- The =comment= semantic palette mapping has a faint green value.
+  Comments are a bit easier to spot, while they better contribute to
+  the aesthetics of the theme.
+
+*** ef-summer
+:PROPERTIES:
+:CUSTOM_ID: h:b72deac5-c44a-4438-865e-54878d4bec65
+:END:
+
+The =preprocessor= semantic palette mapping has a shade of green that
+has greater contribution from the blue channel of light. The first
+impression is the same as before, though the exact value is a better
+fit for the theme.
+
+*** ef-symbiosis
+:PROPERTIES:
+:CUSTOM_ID: h:ece435c8-6f85-412d-a270-1691952a2db5
+:END:
+
+The =preprocessor= semantic palette mapping is less intense than
+before to make sure there is no impression of exaggeration when there
+is a high concentration of it on the screen.
+
+** All light themes use slightly different graph colours
+:PROPERTIES:
+:CUSTOM_ID: h:e2417812-d142-48c2-81e7-d459209b8cd9
+:END:
+
+This is a subset of the palette that is used in some special cases
+such as the ~org-habit~ consistency graph. The change covers the
+lighter green and blue values, which are now easier to spot in their
+context.
+
+** The ~doom-modeline~ no longer uses ~bold-italic~
+:PROPERTIES:
+:CUSTOM_ID: h:3c13879e-0aa7-4a85-b3dd-d2a8460bde59
+:END:
+
+There were two instances where the ~bold-italic~ face was applied.
+This could break icons, by clipping their top. We revert to only using
+the ~bold~ face.
+
+Thanks to Filippo Argiolas for bringing this matter to my attention in
+issue 42: <https://github.com/protesilaos/ef-themes/issues/42>.
+
 * Version 1.6.0 on 2024-03-11
 :PROPERTIES:
 :CUSTOM_ID: h:f3311a84-ba62-4130-bb5a-2c5be694e494
