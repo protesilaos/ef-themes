@@ -441,12 +441,19 @@ symbol, which is safe when used as a face attribute's value."
      (string-prefix-p "ef-" (symbol-name theme)))
    custom-enabled-themes))
 
-(defun ef-themes--enable-themes ()
-  "Enable all Ef themes."
-  (mapc (lambda (theme)
-          (unless (memq theme custom-known-themes)
-            (load-theme theme :no-confirm :no-enable)))
-        ef-themes-collection))
+(defun ef-themes--enable-themes (&optional subset)
+  "Enable all Ef themes.
+With optional SUBSET as a symbol of `light' or `dark', enable only those
+themes."
+  (let ((themes (cond
+                 ((eq subset 'dark) ef-themes-dark-themes)
+                 ((eq subset 'light) ef-themes-light-themes)
+                 (t ef-themes-collection))))
+    (mapc
+     (lambda (theme)
+       (unless (memq theme custom-known-themes)
+         (load-theme theme :no-confirm :no-enable)))
+     themes)))
 
 (defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
@@ -520,12 +527,7 @@ overrides."
 (defun ef-themes--load-subset (subset)
   "Return the `light' or `dark' SUBSET of the Ef themes.
 If SUBSET is neither `light' nor `dark', return all the known Ef themes."
-  (ef-themes--completion-table
-   'theme
-   (pcase subset
-     ('dark ef-themes-dark-themes)
-     ('light ef-themes-light-themes)
-     (_ (ef-themes--list-known-themes)))))
+  (ef-themes--completion-table 'theme (ef-themes--enable-themes subset)))
 
 (defun ef-themes--maybe-prompt-subset (variant)
   "Helper function for `ef-themes--select-prompt' VARIANT argument."
