@@ -2418,7 +2418,9 @@ text should not be underlined as well) yet still blend in."
     `(ibuffer-deletion-face 'ef-themes-mark-delete)
     `(ibuffer-filter-group-name-face 'bold)
     `(ibuffer-marked-face 'ef-themes-mark-select)
-    `(ibuffer-title-face 'default))
+    `(ibuffer-title-face 'default)
+;;; pdf-tools
+    `(pdf-view-midnight-colors '(,fg-main . ,bg-dim)))
   "Custom variables for `ef-themes-theme'.")
 
 ;;; Theme macros

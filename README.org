@@ -1390,6 +1390,7 @@ everything most users need.
 - outline-mode
 - outline-minor-faces
 - package (=M-x list-packages=)
+- pdf-tools [ Part of {{{development-version}}}. ]
 - perspective
 - proced
 - powerline
