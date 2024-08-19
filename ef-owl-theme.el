@@ -103,7 +103,7 @@
 ;;; Diffs
 
       (bg-added          "#304a4f")
-      (bg-added-faint    "#16383f")
+      (bg-added-faint    "#1a3640")
       (bg-added-refine   "#2f6767")
       (fg-added          "#a0d0f0")
 
