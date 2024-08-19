@@ -421,6 +421,9 @@ Overrides are either shared, by being stored in the user option
 theme they name.  In the latter case, the naming scheme of each
 palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 
+#+vindex: ef-arbutus-palette-overrides
+- ~ef-arbutus-palette-overrides~
+
 #+vindex: ef-autumn-palette-overrides
 - ~ef-autumn-palette-overrides~
 
@@ -445,11 +448,23 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 #+vindex: ef-deuteranopia-light-palette-overrides
 - ~ef-deuteranopia-light-palette-overrides~
 
+#+vindex: ef-dream-palette-overrides
+- ~ef-dream-palette-overrides~
+
 #+vindex: ef-duo-dark-palette-overrides
 - ~ef-duo-dark-palette-overrides~
 
 #+vindex: ef-duo-light-palette-overrides
 - ~ef-duo-light-palette-overrides~
+
+#+vindex: ef-eagle-palette-overrides
+- ~ef-eagle-palette-overrides~
+
+#+vindex: ef-elea-dark-palette-overrides
+- ~ef-elea-dark-palette-overrides~
+
+#+vindex: ef-elea-light-palette-overrides
+- ~ef-elea-light-palette-overrides~
 
 #+vindex: ef-frost-palette-overrides
 - ~ef-frost-palette-overrides~
@@ -460,8 +475,29 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 #+vindex: ef-light-palette-overrides
 - ~ef-light-palette-overrides~
 
+#+vindex: ef-maris-dark-palette-overrides
+- ~ef-maris-dark-palette-overrides~
+
+#+vindex: ef-maris-light-palette-overrides
+- ~ef-maris-light-palette-overrides~
+
+#+vindex: ef-melissa-dark-palette-overrides
+- ~ef-melissa-dark-palette-overrides~
+
+#+vindex: ef-melissa-light-palette-overrides
+- ~ef-melissa-light-palette-overrides~
+
 #+vindex: ef-night-palette-overrides
 - ~ef-night-palette-overrides~
+
+#+vindex: ef-owl-palette-overrides
+- ~ef-owl-palette-overrides~
+
+#+vindex: ef-reverie-palette-overrides
+- ~ef-reverie-palette-overrides~
+
+#+vindex: ef-rosa-palette-overrides
+- ~ef-rosa-palette-overrides~
 
 #+vindex: ef-spring-palette-overrides
 - ~ef-spring-palette-overrides~
