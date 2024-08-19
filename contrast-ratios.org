@@ -1547,6 +1547,71 @@ a tone.  Blue is okay.
 | #242e39 |    10245 |     1.42 |
 #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
 
+* ef-owl
+:PROPERTIES:
+:CUSTOM_ID: h:1593749c-d874-4252-ac78-7345b67bc16f
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:e6f75663-0cea-43d7-b503-9460417ad620
+:END:
+
+| Name           |         | #292c2f | #393c3f | #404245 | #333539 |
+|----------------+---------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |    9.10 |    7.20 |    6.54 |    7.97 |
+| fg-dim         | #857f8f |    3.63 |    2.87 |    2.61 |    3.18 |
+| fg-alt         | #aab9af |    6.87 |    5.43 |    4.93 |    6.01 |
+| red            | #d67869 |    4.51 |    3.57 |    3.24 |    3.95 |
+| red-warmer     | #df885f |    5.23 |    4.14 |    3.76 |    4.58 |
+| red-cooler     | #e4959f |    6.08 |    4.81 |    4.37 |    5.32 |
+| red-faint      | #eba0af |    6.81 |    5.38 |    4.89 |    5.96 |
+| green          | #70bb70 |    6.04 |    4.77 |    4.34 |    5.28 |
+| green-warmer   | #98c06f |    6.76 |    5.34 |    4.85 |    5.91 |
+| green-cooler   | #67bb97 |    6.11 |    4.83 |    4.38 |    5.34 |
+| green-faint    | #9fb3a7 |    6.34 |    5.01 |    4.55 |    5.55 |
+| yellow         | #c09f6f |    5.64 |    4.46 |    4.05 |    4.93 |
+| yellow-warmer  | #d1a45f |    6.14 |    4.86 |    4.41 |    5.38 |
+| yellow-cooler  | #cf9f90 |    6.03 |    4.76 |    4.33 |    5.27 |
+| yellow-faint   | #cbb0a0 |    6.86 |    5.42 |    4.92 |    6.00 |
+| blue           | #8fa4e5 |    5.76 |    4.55 |    4.13 |    5.04 |
+| blue-warmer    | #a0a0ef |    5.86 |    4.63 |    4.21 |    5.13 |
+| blue-cooler    | #72aff0 |    6.09 |    4.81 |    4.37 |    5.33 |
+| blue-faint     | #aabae0 |    7.23 |    5.71 |    5.19 |    6.32 |
+| magenta        | #e5a0ea |    7.05 |    5.57 |    5.06 |    6.17 |
+| magenta-warmer | #d389af |    5.33 |    4.21 |    3.82 |    4.66 |
+| magenta-cooler | #cfa0e8 |    6.58 |    5.20 |    4.73 |    5.76 |
+| magenta-faint  | #e0bbdf |    8.25 |    6.52 |    5.93 |    7.22 |
+| cyan           | #8fb8ea |    6.83 |    5.40 |    4.90 |    5.98 |
+| cyan-warmer    | #99bfd0 |    7.17 |    5.66 |    5.14 |    6.27 |
+| cyan-cooler    | #7ac4b7 |    6.96 |    5.50 |    5.00 |    6.09 |
+| cyan-faint     | #a2c5d8 |    7.70 |    6.09 |    5.53 |    6.74 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+
+** Special colours against the modeline
+:PROPERTIES:
+:CUSTOM_ID: h:a2526c91-5f18-4ae7-acab-e2c827db5811
+:END:
+
+| Name             |         | #5b637e |
+|------------------+---------+---------|
+| modeline-err     | #ffd2ff |    4.51 |
+| modeline-warning | #e4e947 |    4.54 |
+| modeline-info    | #8defff |    4.51 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f
+
+** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:24e7a52b-26bb-4f7b-b5e8-51b84ba56f30
+:END:
+
+# bg-main / bg-dim, bg-main / bg-alt
+| #292c2f | distance | contrast |
+|---------+----------+----------|
+| #393c3f |     2322 |     1.27 |
+| #404245 |     4490 |     1.39 |
+#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
 * ef-reverie
 :PROPERTIES:
 :CUSTOM_ID: h:eea07b9c-81ea-4158-b7d6-79dcc8217b8b

@@ -89,6 +89,7 @@
     ef-maris-dark
     ef-melissa-dark
     ef-night
+    ef-owl
     ef-rosa
     ef-symbiosis
     ef-trio-dark
