@@ -63,6 +63,7 @@
     ef-day
     ef-deuteranopia-light
     ef-duo-light
+    ef-eagle
     ef-elea-light
     ef-frost
     ef-kassio
