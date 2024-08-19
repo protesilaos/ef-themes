@@ -458,7 +458,7 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 - ~ef-duo-light-palette-overrides~
 
 #+vindex: ef-eagle-palette-overrides
-- ~ef-eagle-palette-overrides~
+- ~ef-eagle-palette-overrides~ [ Part of {{{development-version}}}. ]
 
 #+vindex: ef-elea-dark-palette-overrides
 - ~ef-elea-dark-palette-overrides~
@@ -491,7 +491,7 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 - ~ef-night-palette-overrides~
 
 #+vindex: ef-owl-palette-overrides
-- ~ef-owl-palette-overrides~
+- ~ef-owl-palette-overrides~ [ Part of {{{development-version}}}. ]
 
 #+vindex: ef-reverie-palette-overrides
 - ~ef-reverie-palette-overrides~
