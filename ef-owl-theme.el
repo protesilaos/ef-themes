@@ -185,7 +185,7 @@
 ;;;; Code mappings
 
       (builtin blue)
-      (comment yellow-faint)
+      (comment magenta-faint)
       (constant green)
       (fnname yellow-cooler)
       (keyword cyan-warmer)
@@ -235,7 +235,7 @@
       (mail-cite-1 green-cooler)
       (mail-cite-2 blue-warmer)
       (mail-cite-3 yellow-cooler)
-      (mail-part magenta-faint)
+      (mail-part magenta)
       (mail-recipient cyan-warmer)
       (mail-subject blue-cooler)
       (mail-other cyan-cooler)
