@@ -1581,7 +1581,7 @@ a tone.  Blue is okay.
 | magenta        | #e5a0ea |    7.05 |    5.57 |    5.06 |    6.17 |
 | magenta-warmer | #d389af |    5.33 |    4.21 |    3.82 |    4.66 |
 | magenta-cooler | #cfa0e8 |    6.58 |    5.20 |    4.73 |    5.76 |
-| magenta-faint  | #e0bbdf |    8.25 |    6.52 |    5.93 |    7.22 |
+| magenta-faint  | #e0c0d7 |    8.49 |    6.71 |    6.09 |    7.43 |
 | cyan           | #8fb8ea |    6.83 |    5.40 |    4.90 |    5.98 |
 | cyan-warmer    | #99bfd0 |    7.17 |    5.66 |    5.14 |    6.27 |
 | cyan-cooler    | #7ac4b7 |    6.96 |    5.50 |    5.00 |    6.09 |
