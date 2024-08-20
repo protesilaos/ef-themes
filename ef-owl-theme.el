@@ -186,8 +186,8 @@
 
       (builtin blue)
       (comment magenta-faint)
-      (fnname yellow-cooler)
       (constant yellow-cooler)
+      (fnname green)
       (keyword cyan-warmer)
       (preprocessor cyan-cooler)
       (docstring green-faint)
