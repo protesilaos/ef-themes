@@ -309,12 +309,12 @@
 
       (rainbow-0 green-cooler)
       (rainbow-1 blue)
-      (rainbow-2 magenta-warmer)
-      (rainbow-3 cyan-cooler)
+      (rainbow-2 cyan-cooler)
+      (rainbow-3 magenta-cooler)
       (rainbow-4 yellow-cooler)
-      (rainbow-5 magenta-cooler)
-      (rainbow-6 red-cooler)
-      (rainbow-7 green-warmer)
+      (rainbow-5 green-warmer)
+      (rainbow-6 magenta-warmer)
+      (rainbow-7 cyan-warmer)
       (rainbow-8 yellow))
     "The `ef-owl' palette.
 Color values have the form (COLOR-NAME HEX-VALUE) with the former
