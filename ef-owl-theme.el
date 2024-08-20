@@ -218,7 +218,7 @@
 
 ;;;; Prose mappings
 
-      (prose-code magenta-warmer)
+      (prose-code green-warmer)
       (prose-done green)
       (prose-macro green-cooler)
       (prose-metadata fg-dim)
