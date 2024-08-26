@@ -2,12 +2,15 @@
 #+author: Protesilaos Stavrou
 #+email: info@protesilaos.com
 #+options: ':nil toc:nil num:nil author:nil email:nil
+#+startup: content
 
 This document contains the release notes for each tagged commit on the
-project's main git repository: <https://git.sr.ht/~protesilaos/ef-themes>.
+project's main git repository: <https://github.com/protesilaos/ef-themes>.
 
 The newest release is at the top.  For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
+
+#+toc: headlines 1 insert TOC here, with one headline level
 
 * Version 1.7.0 on 2024-04-28
 :PROPERTIES:
