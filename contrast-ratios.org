@@ -1568,7 +1568,7 @@ a tone.  Blue is okay.
 | red-faint      | #eba0af |    6.81 |    5.38 |    4.89 |    5.96 |
 | green          | #70bb70 |    6.04 |    4.77 |    4.34 |    5.28 |
 | green-warmer   | #98c06f |    6.76 |    5.34 |    4.85 |    5.91 |
-| green-cooler   | #67bb97 |    6.11 |    4.83 |    4.38 |    5.34 |
+| green-cooler   | #60bd90 |    6.14 |    4.85 |    4.41 |    5.37 |
 | green-faint    | #9fb3a7 |    6.34 |    5.01 |    4.55 |    5.55 |
 | yellow         | #c09f6f |    5.64 |    4.46 |    4.05 |    4.93 |
 | yellow-warmer  | #d1a45f |    6.14 |    4.86 |    4.41 |    5.38 |
@@ -1577,14 +1577,14 @@ a tone.  Blue is okay.
 | blue           | #80a4e0 |    5.55 |    4.39 |    3.99 |    4.86 |
 | blue-warmer    | #a0a0ef |    5.86 |    4.63 |    4.21 |    5.13 |
 | blue-cooler    | #72aff0 |    6.09 |    4.81 |    4.37 |    5.33 |
-| blue-faint     | #aabae0 |    7.23 |    5.71 |    5.19 |    6.32 |
+| blue-faint     | #aab2df |    6.78 |    5.36 |    4.87 |    5.93 |
 | magenta        | #e5a0ea |    7.05 |    5.57 |    5.06 |    6.17 |
 | magenta-warmer | #d389af |    5.33 |    4.21 |    3.82 |    4.66 |
 | magenta-cooler | #cfa0e8 |    6.58 |    5.20 |    4.73 |    5.76 |
 | magenta-faint  | #e5bbd7 |    8.31 |    6.56 |    5.96 |    7.27 |
 | cyan           | #8fb8ea |    6.83 |    5.40 |    4.90 |    5.98 |
 | cyan-warmer    | #99bfd0 |    7.17 |    5.66 |    5.14 |    6.27 |
-| cyan-cooler    | #7ac4b7 |    6.96 |    5.50 |    5.00 |    6.09 |
+| cyan-cooler    | #7ac0b9 |    6.73 |    5.32 |    4.83 |    5.89 |
 | cyan-faint     | #a2c5d8 |    7.70 |    6.09 |    5.53 |    6.74 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
 
