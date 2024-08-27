@@ -185,17 +185,17 @@
 ;;;; Code mappings
 
       (builtin blue)
-      (comment magenta-faint)
+      (comment blue-faint)
       (constant yellow-cooler)
-      (fnname green)
+      (fnname green-cooler)
       (keyword cyan-warmer)
-      (preprocessor cyan-cooler)
+      (preprocessor green-warmer)
       (docstring green-faint)
-      (string green-cooler)
+      (string cyan-cooler)
       (type magenta-cooler)
       (variable blue-warmer)
-      (rx-escape blue-cooler) ; compare with `string'
-      (rx-construct red-warmer)
+      (rx-escape yellow) ; compare with `string'
+      (rx-construct red)
 
 ;;;; Accent mappings
 
