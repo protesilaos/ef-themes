@@ -174,7 +174,7 @@
 
       (link yellow-cooler)
       (link-alt cyan-faint)
-      (name red-warmer)
+      (name green)
       (keybind red-warmer)
       (identifier cyan-faint)
       (prompt yellow-warmer)
