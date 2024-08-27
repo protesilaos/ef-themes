@@ -199,7 +199,7 @@
 
 ;;;; Accent mappings
 
-      (accent-0 cyan-warmer)
+      (accent-0 cyan-cooler)
       (accent-1 yellow-cooler)
       (accent-2 red)
       (accent-3 green)
