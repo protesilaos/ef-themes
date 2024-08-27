@@ -49,12 +49,12 @@
 
       (bg-main     "#292c2f")
       (fg-main     "#d0d0d0")
-      (bg-dim      "#393c3f")
+      (bg-dim      "#373b3d")
       (fg-dim      "#857f8f")
-      (bg-alt      "#404245")
+      (bg-alt      "#40474b")
       (fg-alt      "#aab9af")
 
-      (bg-active   "#606265")
+      (bg-active   "#60676b")
       (bg-inactive "#333539")
 
 ;;; Basic hues for foreground values
