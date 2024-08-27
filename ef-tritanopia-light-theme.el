@@ -245,6 +245,7 @@
 
 ;;;; Search mappings
 
+      (bg-search-match bg-warning)
       (bg-search-current bg-red-intense)
       (bg-search-lazy bg-cyan-intense)
       (bg-search-replace bg-magenta-intense)

@@ -834,11 +834,11 @@ text should not be underlined as well) yet still blend in."
    :group 'ef-themes-faces))
 
 ;; This produces `ef-themes-search-current' and the like
-(dolist (scope '(current lazy replace))
+(dolist (scope '(current lazy replace match))
   (custom-declare-face
    (intern (format "ef-themes-search-%s" scope))
    nil (format "Search of type %s." scope)
-   :package-version '(ef-themes . "1.5.0")
+   :package-version '(ef-themes . "1.8.0")
    :group 'ef-themes-faces))
 
 ;; This produces `ef-themes-search-rx-group-0' and the like
@@ -874,6 +874,7 @@ text should not be underlined as well) yet still blend in."
     `(ef-themes-search-rx-group-1 ((,c :background ,bg-search-rx-group-1 :foreground ,fg-intense)))
     `(ef-themes-search-rx-group-2 ((,c :background ,bg-search-rx-group-2 :foreground ,fg-intense)))
     `(ef-themes-search-rx-group-3 ((,c :background ,bg-search-rx-group-3 :foreground ,fg-intense)))
+    `(ef-themes-search-match ((,c :background ,bg-search-match)))
     `(ef-themes-underline-error ((,c :underline (:style wave :color ,underline-err))))
     `(ef-themes-underline-info ((,c :underline (:style wave :color ,underline-info))))
     `(ef-themes-underline-warning ((,c :underline (:style wave :color ,underline-warning))))
@@ -1610,7 +1611,7 @@ text should not be underlined as well) yet still blend in."
     `(isearch-group-1 ((,c :inherit ef-themes-search-rx-group-0)))
     `(isearch-group-2 ((,c :inherit ef-themes-search-rx-group-1)))
     `(lazy-highlight ((,c :inherit ef-themes-search-lazy)))
-    `(match ((,c :background ,bg-warning)))
+    `(match ((,c :inherit ef-themes-search-match)))
     `(query-replace ((,c :inherit ef-themes-search-replace)))
 ;;;; jit-spell
     `(jit-spell-misspelling ((,c :inherit ef-themes-underline-error)))
