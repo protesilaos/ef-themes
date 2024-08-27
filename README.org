@@ -4,9 +4,9 @@
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
 #+startup: content
-#+macro: stable-version 1.7.0
-#+macro: release-date 2024-04-28
-#+macro: development-version 1.8.0-dev
+#+macro: stable-version 1.8.0
+#+macro: release-date 2024-08-27
+#+macro: development-version 1.9.0-dev
 #+export_file_name: ef-themes.texi
 #+texinfo_filename: ef-themes.info
 #+texinfo_dir_category: Emacs misc features
@@ -458,7 +458,7 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 - ~ef-duo-light-palette-overrides~
 
 #+vindex: ef-eagle-palette-overrides
-- ~ef-eagle-palette-overrides~ [ Part of {{{development-version}}}. ]
+- ~ef-eagle-palette-overrides~
 
 #+vindex: ef-elea-dark-palette-overrides
 - ~ef-elea-dark-palette-overrides~
@@ -491,7 +491,7 @@ palette variable is =THEME-NAME-palette-overrides=, thus yielding:
 - ~ef-night-palette-overrides~
 
 #+vindex: ef-owl-palette-overrides
-- ~ef-owl-palette-overrides~ [ Part of {{{development-version}}}. ]
+- ~ef-owl-palette-overrides~
 
 #+vindex: ef-reverie-palette-overrides
 - ~ef-reverie-palette-overrides~
@@ -1426,7 +1426,7 @@ everything most users need.
 - outline-mode
 - outline-minor-faces
 - package (=M-x list-packages=)
-- pdf-tools [ Part of {{{development-version}}}. ]
+- pdf-tools
 - perspective
 - proced
 - powerline

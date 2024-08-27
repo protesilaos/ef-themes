@@ -12,6 +12,100 @@ the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
 
+* Version 1.8.0 on 2024-08-27
+:PROPERTIES:
+:CUSTOM_ID: h:b00cf88f-791c-4d58-a3e7-56677b1ff448
+:END:
+
+The ~ef-themes~ package is in a stable state. The collection covers a
+wide spectrum of tastes while maintaining a high standard of legibility.
+I have made a few quality-of-life refinements and added two exciting
+new themes.
+
+** Enjoy the ~ef-eagle~ and ~ef-owl~ themes
+:PROPERTIES:
+:CUSTOM_ID: h:7790dd2e-bcea-4f1e-b591-50bc38ec3a11
+:END:
+
+These are the two new members of the collection. Both draw inspiration
+from the large predatory birds I encounter in my mountains. Both
+themes avoid the use of highly saturated colours.
+
+- ~ef-eagle~ is a light theme with varying shades of brown and
+  complementary colours.
+
+- ~ef-owl~ is a dark theme with varying shades of silverblue and
+  complementary colours.
+
+The announcement I made on my blog about these two themes includes
+pictures of them: <https://protesilaos.com/codelog/2024-08-19-ef-eagle-and-owl-themes/>.
+
+** The "midnight" mode of ~pdf-tools~ is supported
+:PROPERTIES:
+:CUSTOM_ID: h:24d42d8f-afec-4936-99f9-d780060b65cc
+:END:
+
+The ~pdf-tools~ package provides the ~pdf-view-midnight-minor-mode~,
+which applies dark colours to the document. Those colours will now be
+taken from the active theme, resulting in a more consistent reading
+experience.
+
+** Org checkboxes are monospaced if needed
+:PROPERTIES:
+:CUSTOM_ID: h:9a19b8b1-a853-4ee4-b520-42e6ae7f6f7a
+:END:
+
+When the user sets the option ~ef-themes-mixed-fonts~ to a non-nil
+value, the Org checkboxes will be rendered in a monospaced font
+(technically, they inherit the ~fixed-pitch~ face). This is done to
+preserve the alignment of items when ~variable-pitch-mode~ is enabled
+(or the user sets a proportionately spaced font as their default).
+
+Remember that the point of "mixed fonts" is to use monospacing for
+those elements that are space-sensitive, like code blocks and tables.
+
+Thanks to Gautier Ponsinet for making the Org checkboxes conform with
+this design. The change is small and thus does not require copyright
+assignment to the Free Software Foundation.
+
+** The ~elisp-shorthand-font-lock-face~ is now easier to spot
+:PROPERTIES:
+:CUSTOM_ID: h:80d4a3a9-558e-4147-aea6-1512f0320653
+:END:
+
+This is a way for Emacs packages to define so-called "shorthands" of
+short prefixes in symbols that are aliases for longer ones. For
+example, =my-long-package-name-prefix= may be expressed as =mlp= in
+the source code. These shorthands will now use a style that is not
+found anywhere else in Elisp code, making them stand out more.
+
+** A better "alt" foreground for ~ef-melissa-light~ and ~ef-melissa-dark~
+:PROPERTIES:
+:CUSTOM_ID: h:02f6005b-2f72-4d51-a327-5f8eddcf1da0
+:END:
+
+The themes define an alternative foreground colour which is used for
+ancillary elements such as Org property drawers. For
+~ef-melissa-light~ and ~ef-melissa-dark~ this colour is easier to tell
+apart from the colour used for comments. It still retains the same
+pleasant quality of being easy-to-read without calling too much
+attention to itself.
+
+** The new ~bg-search-match~ semantic colour mapping
+:PROPERTIES:
+:CUSTOM_ID: h:340b496a-1e19-453f-9b02-768a79023dd5
+:END:
+
+Each theme has a palette that defines named colours and semantic
+mappings. These are useful for my purposes while developing the
+themes, but also for users who have the option to override the palette
+(check the manual for further details).
+
+The ~bg-search-match~ is used for "matches" that are persistent in
+search results, such as in Occur and Grep buffers. The colour in use
+is the same as it was before, except that the user can now modify it
+directly.
+
 * Version 1.7.0 on 2024-04-28
 :PROPERTIES:
 :CUSTOM_ID: h:c5de16f9-1f16-46b9-b9fa-07b9b6b9bcfc
