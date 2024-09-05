@@ -1386,6 +1386,7 @@ everything most users need.
 - flymake
 - flyspell
 - font-lock
+- forge [ Part of {{{development-version}}}. ]
 - git-commit
 - git-gutter
 - git-gutter-fr
@@ -1477,7 +1478,6 @@ themes already cover:
 
 - apropos
 - dim-autoload
-- forge
 - hl-todo
 - icomplete
 - ido
