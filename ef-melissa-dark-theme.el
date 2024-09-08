@@ -39,7 +39,7 @@
 ;;;###theme-autoload
   (deftheme ef-melissa-dark
     "Legible dark theme with warm colors (yellow, red, green, cyan)."
-    :background-mode 'light
+    :background-mode 'dark
     :kind 'color-scheme
     :family 'ef)
 
