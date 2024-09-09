@@ -39,7 +39,7 @@
 ;;;###theme-autoload
   (deftheme ef-rosa
     "Legible dark theme with magenta and green colors."
-    :background-mode 'light
+    :background-mode 'dark
     :kind 'color-scheme
     :family 'ef)
 
