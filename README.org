@@ -106,7 +106,7 @@ mkdir manual-packages
 cd manual-packages
 
 # Clone this repo, naming it "ef-themes"
-git clone https://git.sr.ht/~protesilaos/ef-themes ef-themes
+git clone https://github.com/protesilaos/ef-themes ef-themes
 #+end_src
 
 Finally, in your =init.el= (or equivalent) evaluate this:
