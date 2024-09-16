@@ -310,7 +310,7 @@
 
       (rainbow-0 green-cooler)
       (rainbow-1 blue-faint)
-      (rainbow-2 magenta-warmer)
+      (rainbow-2 magenta)
       (rainbow-3 cyan-cooler)
       (rainbow-4 yellow-cooler)
       (rainbow-5 magenta-cooler)
