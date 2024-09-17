@@ -93,12 +93,12 @@
       (bg-magenta-intense "#df9fff")
       (bg-cyan-intense    "#88cfd0")
 
-      (bg-red-subtle      "#ffc6bf")
-      (bg-green-subtle    "#c4f2af")
-      (bg-yellow-subtle   "#f0f07f")
-      (bg-blue-subtle     "#ccdfff")
-      (bg-magenta-subtle  "#fad3ff")
-      (bg-cyan-subtle     "#bfefff")
+      (bg-red-subtle      "#ffceb0")
+      (bg-green-subtle    "#cbf09f")
+      (bg-yellow-subtle   "#f4ed7e")
+      (bg-blue-subtle     "#cce4f2")
+      (bg-magenta-subtle  "#fad6ef")
+      (bg-cyan-subtle     "#bfefef")
 
 ;;; Diffs
 

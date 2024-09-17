@@ -94,9 +94,9 @@
       (bg-cyan-intense    "#a0ddd0")
 
       (bg-red-subtle      "#efcabf")
-      (bg-green-subtle    "#c8e8aa")
+      (bg-green-subtle    "#c3e6a0")
       (bg-yellow-subtle   "#efe07f")
-      (bg-blue-subtle     "#ccdee8")
+      (bg-blue-subtle     "#c7dbe8")
       (bg-magenta-subtle  "#e3d0e7")
       (bg-cyan-subtle     "#bfe0d0")
 
