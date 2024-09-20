@@ -1392,6 +1392,7 @@ everything most users need.
 - git-gutter-fr
 - git-rebase
 - gnus
+- hexl-mode [ Part of {{{development-version}}}. ]
 - hi-lock (=M-x highlight-regexp=)
 - highlight-indentation
 - ibuffer

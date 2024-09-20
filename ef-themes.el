@@ -1557,6 +1557,9 @@ text should not be underlined as well) yet still blend in."
     `(gnus-summary-normal-undownloaded ((,c :foreground ,warning)))
     `(gnus-summary-normal-unread (( )))
     `(gnus-summary-selected ((,c :inherit highlight)))
+;;;; hexl-mode
+    `(hexl-address-region ((,c :foreground ,constant)))
+    `(hexl-ascii-region ((,c :foreground ,variable)))
 ;;;; hi-lock (M-x highlight-regexp)
     ;; NOTE 2022-10-16 We hardcode color values.  We have to do this
     ;; as the themes lack entries in their palette for such an edge
