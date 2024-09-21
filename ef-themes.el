@@ -1140,7 +1140,7 @@ text should not be underlined as well) yet still blend in."
     `(corfu-current ((,c :background ,bg-completion)))
     `(corfu-bar ((,c :background ,fg-main)))
     `(corfu-border ((,c :background ,bg-active)))
-    `(corfu-default ((,c :background ,bg-inactive)))
+    `(corfu-default ((,c :inherit ef-themes-fixed-pitch :background ,bg-inactive)))
 ;;;;; corfu-candidate-overlay
     `(corfu-candidate-overlay-face ((t :inherit shadow)))
 ;;;; corfu-quick
