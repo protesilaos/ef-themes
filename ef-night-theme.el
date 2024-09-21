@@ -192,7 +192,7 @@
       (preprocessor red-faint)
       (docstring cyan-faint)
       (string blue-cooler)
-      (type magenta-cooler)
+      (type magenta-faint)
       (variable cyan-warmer)
       (rx-escape green) ; compare with `string'
       (rx-construct magenta-warmer)
