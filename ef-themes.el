@@ -968,8 +968,8 @@ text should not be underlined as well) yet still blend in."
     `(all-the-icons-dired-dir-face ((,c :foreground ,accent-0)))
 ;;;; all-the-icons-ibuffer
     `(all-the-icons-ibuffer-dir-face ((,c :foreground ,accent-0)))
-    `(all-the-icons-ibuffer-file-face ((,c :foreground ,name)))
-    `(all-the-icons-ibuffer-mode-face ((,c :foreground ,constant)))
+    `(all-the-icons-ibuffer-file-face ((,c :foreground ,docstring)))
+    `(all-the-icons-ibuffer-mode-face ((,c :foreground ,type)))
     `(all-the-icons-ibuffer-size-face ((,c :foreground ,variable)))
 ;;;; ansi-color
     ;; Those are in Emacs28.
@@ -1917,8 +1917,8 @@ text should not be underlined as well) yet still blend in."
     `(nerd-icons-dired-dir-face ((,c :foreground ,accent-0)))
 ;;;; nerd-icons-ibuffer
     `(nerd-icons-ibuffer-dir-face ((,c :foreground ,accent-0)))
-    `(nerd-icons-ibuffer-file-face ((,c :foreground ,name)))
-    `(nerd-icons-ibuffer-mode-face ((,c :foreground ,constant)))
+    `(nerd-icons-ibuffer-file-face ((,c :foreground ,docstring)))
+    `(nerd-icons-ibuffer-mode-face ((,c :foreground ,type)))
     `(nerd-icons-ibuffer-size-face ((,c :foreground ,variable)))
 ;;;; neotree
     `(neo-banner-face ((,c :foreground ,accent-0)))
