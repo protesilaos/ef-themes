@@ -2415,6 +2415,10 @@ text should not be underlined as well) yet still blend in."
     `(window-divider ((,c :foreground ,border)))
     `(window-divider-first-pixel ((,c :foreground ,bg-inactive)))
     `(window-divider-last-pixel ((,c :foreground ,bg-inactive)))
+;;;; window-tool-bar-mode
+    `(window-tool-bar-button ((,c :inherit ef-themes-button)))
+    `(window-tool-bar-button-hover ((,c :inherit (highlight ef-themes-button))))
+    `(window-tool-bar-button-disabled ((,c :inherit ef-themes-button :background ,bg-dim :foreground ,fg-dim)))
 ;;;; writegood-mode
     `(writegood-duplicates-face ((,c :inherit ef-themes-underline-error)))
     `(writegood-passive-voice-face ((,c :inherit ef-themes-underline-info)))

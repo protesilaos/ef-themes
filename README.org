@@ -1464,6 +1464,7 @@ everything most users need.
 - whitespace-mode
 - widget
 - window-divider-mode
+- window-tool-bar-mode [ Part of {{{development-version}}}. ]
 - writegood-mode
 - woman
 - ztree
