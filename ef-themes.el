@@ -852,9 +852,18 @@ text should not be underlined as well) yet still blend in."
    :package-version '(ef-themes . "1.5.0")
    :group 'ef-themes-faces))
 
+(defface ef-themes-button nil
+  "Face to style all graphical buttons uniformly."
+  :package-version '(ef-themes . "1.9.0")
+  :group 'ef-themes-faces)
+
 (defconst ef-themes-faces
   '(
 ;;;; internal faces
+    `(ef-themes-button ((,c :inherit variable-pitch
+                            :box (:line-width 1 :color ,border :style released-button)
+                            :background ,bg-active
+                            :foreground ,fg-intense)))
     `(ef-themes-fixed-pitch ((,c ,@(ef-themes--fixed-pitch))))
     `(ef-themes-heading-0 ((,c ,@(ef-themes--heading 0) :foreground ,rainbow-0)))
     `(ef-themes-heading-1 ((,c ,@(ef-themes--heading 1) :foreground ,rainbow-1)))
@@ -914,7 +923,7 @@ text should not be underlined as well) yet still blend in."
     `(help-key-binding ((,c :inherit (bold ef-themes-fixed-pitch) :foreground ,keybind)))
     `(highlight ((,c :background ,bg-hover :foreground ,fg-intense)))
     `(hl-line ((,c :background ,bg-hl-line)))
-    `(icon-button ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense))) ; same as `custom-button'
+    `(icon-button ((,c :inherit ef-themes-button)))
     `(link ((,c :foreground ,link :underline ,border)))
     `(link-visited ((,c :foreground ,link-alt :underline ,border)))
     `(minibuffer-prompt ((,c :foreground ,prompt)))
@@ -1403,7 +1412,7 @@ text should not be underlined as well) yet still blend in."
     `(eww-form-checkbox ((,c :inherit eww-form-text)))
     `(eww-form-file ((,c :inherit eww-form-submit)))
     `(eww-form-select ((,c :inherit eww-form-submit)))
-    `(eww-form-submit ((,c :box ,fg-dim :background ,bg-active :foreground ,fg-intense)))
+    `(eww-form-submit ((,c :inherit ef-themes-button)))
     `(eww-form-text ((,c :inherit widget-field)))
     `(eww-form-textarea ((,c :inherit eww-form-text)))
 ;;;; flycheck
