@@ -1347,11 +1347,10 @@ text should not be underlined as well) yet still blend in."
     `(elfeed-search-unread-count-face (( )))
     `(elfeed-search-unread-title-face ((,c :inherit bold :foreground ,fg-main)))
 ;;;; embark
+    `(embark-collect-group-title ((,c :inherit bold :foreground ,name)))
     `(embark-keybinding ((,c :inherit ef-themes-key-binding)))
     `(embark-keybinding-repeat ((,c :inherit bold)))
-    `(embark-collect-marked ((,c :inherit ef-themes-mark-select)))
-    `(embark-collect-group-title ((,c :inherit bold :foreground ,name)))
-    `(embark-collect-zebra-highlight ((,c :background ,bg-alt)))
+    `(embark-selected ((,c :inherit ef-themes-mark-select)))
 ;;;; epa
     `(epa-field-body (( )))
     `(epa-field-name ((,c :inherit bold :foreground ,fg-dim)))
