@@ -1791,9 +1791,9 @@ matters.
 + Ideas and/or user feedback :: Adam Porter (alphapapa), Alan Schmitt,
   Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,
   Daniel Mendler, Federico Stilman, Filippo Argiolas, Iris Garcia,
-  Jean-Philippe Gagné Guay, Jonas Collberg, Saša Janiška, Spike-Leung,
-  Steve Molitor, Summer Emacs, Sven Seebeck, Thanos Apollo, Zoltán
-  Király, goldfita, marasenna, newhallroad.
+  Jean-Philippe Gagné Guay, Len Trigg, Jonas Collberg, Saša Janiška,
+  Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck, Thanos
+  Apollo, Zoltán Király, goldfita, marasenna, newhallroad.
 
 * GNU Free Documentation License
 :PROPERTIES:
