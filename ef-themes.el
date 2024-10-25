@@ -482,11 +482,11 @@ themes."
   "Return THEME palette as a symbol.
 With optional OVERRIDES, return THEME palette overrides as a
 symbol."
-  (when-let ((suffix (cond
-                      ((and theme overrides)
-                       "palette-overrides")
-                      (theme
-                       "palette"))))
+  (when-let* ((suffix (cond
+                       ((and theme overrides)
+                        "palette-overrides")
+                       (theme
+                        "palette"))))
     (intern (format "%s-%s" theme suffix))))
 
 (defun ef-themes--palette-value (theme &optional overrides)
@@ -502,7 +502,7 @@ symbol."
   "Return palette value of active Ef theme, else produce `user-error'.
 With optional OVERRIDES return palette value plus whatever
 overrides."
-  (if-let ((theme (ef-themes--current-theme)))
+  (if-let* ((theme (ef-themes--current-theme)))
       (if overrides
           (ef-themes--palette-value theme :overrides)
         (ef-themes--palette-value theme))
@@ -520,8 +520,8 @@ overrides."
 
 (defun ef-themes--annotate-theme (theme)
   "Return completion annotation for THEME."
-  (when-let ((symbol (intern-soft theme))
-             (doc-string (get symbol 'theme-documentation)))
+  (when-let* ((symbol (intern-soft theme))
+              (doc-string (get symbol 'theme-documentation)))
     (format " -- %s"
             (propertize
              (car (split-string doc-string "\\."))
