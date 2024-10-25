@@ -589,6 +589,8 @@ Return THEME."
   (run-hooks 'ef-themes-post-load-hook)
   theme)
 
+;;;; Select a theme using minibuffer completion
+
 ;;;###autoload
 (defun ef-themes-select (theme &optional _variant)
   "Load an Ef THEME using minibuffer completion.
@@ -646,6 +648,8 @@ whether it is light or dark."
             (user-error "`%s' is not part of `ef-themes-collection'" theme)))
         ef-themes-to-toggle))
 
+;;;; Toggle between two themes
+
 ;;;###autoload
 (defun ef-themes-toggle ()
   "Toggle between the two `ef-themes-to-toggle'.
@@ -666,6 +670,8 @@ Run `ef-themes-post-load-hook' after loading the theme."
      (ef-themes--select-prompt
       (concat "Set two `ef-themes-to-toggle'; "
               "switching to theme selection for now: ")))))
+
+;;;; Load a theme at random
 
 (defun ef-themes--minus-current (&optional variant)
   "Return list of Ef themes minus the current one.
@@ -699,6 +705,9 @@ symbol."
          (loaded (if (null pick) (car themes) pick)))
     (ef-themes-load-theme loaded)
     (message "Loaded `%s'" loaded)))
+
+
+;;;; Preview a theme palette
 
 (defun ef-themes--preview-colors-render (buffer theme &optional mappings &rest _)
   "Render colors in BUFFER from THEME for `ef-themes-preview-colors'.
