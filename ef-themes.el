@@ -570,7 +570,12 @@ When VARIANT is nil, all Ef themes are candidates for completion."
             custom-enabled-themes
           (ef-themes--list-known-themes))))
 
-(defun ef-themes--load-theme (theme)
+(define-obsolete-function-alias
+  'ef-themes--load-theme
+  'ef-themes-load-theme
+  "1.9.0")
+
+(defun ef-themes-load-theme (theme)
   "Load THEME while disabling other Ef themes.
 Which themes are disabled is determined by the user option
 `ef-themes-disable-other-themes'.
@@ -596,7 +601,7 @@ Run `ef-themes-post-load-hook' after loading the theme.
 When called from Lisp, THEME is the symbol of a theme.  VARIANT
 is ignored in this scenario."
   (interactive (list (ef-themes--select-prompt nil current-prefix-arg)))
-  (ef-themes--load-theme theme))
+  (ef-themes-load-theme theme))
 
 ;;;###autoload
 (defun ef-themes-select-light (theme)
@@ -613,7 +618,7 @@ whether it is light or dark."
   (interactive
    (list
     (ef-themes--select-prompt "Select light Ef theme: " 'light)))
-  (ef-themes--load-theme theme))
+  (ef-themes-load-theme theme))
 
 ;;;###autoload
 (defun ef-themes-select-dark (theme)
@@ -630,7 +635,7 @@ whether it is light or dark."
   (interactive
    (list
     (ef-themes--select-prompt "Select dark Ef theme: " 'dark)))
-  (ef-themes--load-theme theme))
+  (ef-themes-load-theme theme))
 
 (defun ef-themes--toggle-theme-p ()
   "Return non-nil if `ef-themes-to-toggle' are valid."
@@ -655,9 +660,9 @@ Run `ef-themes-post-load-hook' after loading the theme."
             (one (car themes))
             (two (cadr themes)))
       (if (eq (car custom-enabled-themes) one)
-          (ef-themes--load-theme two)
-        (ef-themes--load-theme one))
-    (ef-themes--load-theme
+          (ef-themes-load-theme two)
+        (ef-themes-load-theme one))
+    (ef-themes-load-theme
      (ef-themes--select-prompt
       (concat "Set two `ef-themes-to-toggle'; "
               "switching to theme selection for now: ")))))
@@ -692,7 +697,7 @@ symbol."
          (n (random (length themes)))
          (pick (nth n themes))
          (loaded (if (null pick) (car themes) pick)))
-    (ef-themes--load-theme loaded)
+    (ef-themes-load-theme loaded)
     (message "Loaded `%s'" loaded)))
 
 (defun ef-themes--preview-colors-render (buffer theme &optional mappings &rest _)
