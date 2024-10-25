@@ -247,6 +247,26 @@ command).
 This command is in addition to the other ways of loading a theme, either
 with minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
 
+** Rotate among a list of Ef themes
+:PROPERTIES:
+:CUSTOM_ID: h:96bc23ed-40b2-43b4-ba47-b6a5c350563d
+:END:
+
+[ This is part of {{{development-version}}}. ]
+
+#+vindex: ef-themes-to-rotate
+#+findex: ef-themes-rotate
+The user option ~ef-themes-to-rotate~ defines a list of Ef themes that
+can be used in rotation. The command ~ef-themes-rotate~ reads from
+that list and switches to the next item. If the next item is the
+current one, it moves to the one after.
+
+Possible values for ~ef-themes-to-rotate~ are any of the themes
+specified in value of the variable ~ef-themes-items~.
+
+This command is in addition to the other ways of loading a theme, either
+with minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe97][Commands to load an Ef theme]]).
+
 ** Enable mixed fonts
 :PROPERTIES:
 :CUSTOM_ID: h:621d3bb9-5967-4f97-b253-7470bba9168c
@@ -713,9 +733,12 @@ example:
 The commands mentioned herein call ~ef-themes-post-load-hook~ at the
 end.  This is for advanced users who want to trigger some code after an
 Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).  The same goes
-for ~ef-themes-toggle~ ([[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]).
+for ~ef-themes-toggle~ and ~ef-themes-rotate~ [ The ~ef-themes-rotate~
+is part of {{{development-version}}} ].
 
-[[#h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d][A theme-agnostic hook for theme loading]].
+- [[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]
+- [[#h:96bc23ed-40b2-43b4-ba47-b6a5c350563d][Rotate among a list of Ef themes]]
+- [[#h:1dbea3c9-de9a-4bb4-b540-654bea70ba4d][A theme-agnostic hook for theme loading]].
 
 #+findex: ef-themes-select
 The themes can also be loaded interactively.  The command

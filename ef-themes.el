@@ -150,6 +150,14 @@ themes that form part of this collection."
   :package-version '(ef-themes . "0.3.0")
   :group 'ef-themes)
 
+(defcustom ef-themes-to-rotate ef-themes-items
+  "List of Ef themes to rotate among, per `modus-themes-rotate'."
+  :type `(repeat (choice
+                  :tag "A theme among the `ef-themes-items'"
+                  ,@(mapcar (lambda (theme) (list 'const theme)) ef-themes-items)))
+  :package-version '(modus-themes . "1.9.0")
+  :group 'ef-themes)
+
 (defconst ef-themes-weights
   '( thin ultralight extralight light semilight regular medium
      semibold bold heavy extrabold ultrabold)
@@ -526,6 +534,10 @@ overrides."
         `(metadata (category . ,category))
       (complete-with-action action candidates string pred))))
 
+(defun ef-themes--ef-p (theme)
+  "Return non-nil if THEME name has an ef- prefix."
+  (string-prefix-p "ef-" (symbol-name theme)))
+
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
 
@@ -706,6 +718,41 @@ symbol."
     (ef-themes-load-theme loaded)
     (message "Loaded `%s'" loaded)))
 
+;;;; Rotate through a list of themes
+
+(defun ef-themes--rotate (themes)
+  "Rotate THEMES rightward such that the car is moved to the end."
+  (if (proper-list-p themes)
+      (let* ((index (seq-position themes (ef-themes--current-theme)))
+             (offset (1+ index)))
+        (append (nthcdr offset themes) (take offset themes)))
+    (error "The `%s' is not a list" themes)))
+
+(defun ef-themes--rotate-p (themes)
+  "Return a new theme among THEMES if it is possible to rotate to it."
+  (if-let* ((new-theme (car (ef-themes--rotate themes))))
+      (if (eq new-theme (ef-themes--current-theme))
+          (car (ef-themes--rotate-p (ef-themes--rotate themes)))
+        new-theme)
+    (error "Cannot determine a theme among `%s'" themes)))
+
+;;;###autoload
+(defun ef-themes-rotate (themes)
+  "Rotate to the next theme among THEMES.
+When called interactively THEMES is the value of `ef-themes-to-rotate'.
+
+If the current theme is already the next in line, then move to the one
+after.  Perform the rotation rightwards, such that the first element in
+the list becomes the last.  Do not modify THEMES in the process."
+  (interactive (list ef-themes-to-rotate))
+  (unless (proper-list-p themes)
+    "This is not a list of themes: `%s'" themes)
+  (let ((candidate (ef-themes--rotate-p themes)))
+    (if (ef-themes--ef-p candidate)
+        (progn
+          (message "Rotating to `%s'" (propertize (symbol-name candidate) 'face 'success))
+          (ef-themes-load-theme candidate))
+      (user-error "`%s' is not part of the Ef collection" candidate))))
 
 ;;;; Preview a theme palette
 
