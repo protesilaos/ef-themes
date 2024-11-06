@@ -2138,16 +2138,6 @@ text should not be underlined as well) yet still blend in."
     `(org-habit-overdue-future-face ((,c :background ,bg-graph-red-1)))
     `(org-habit-ready-face ((,c :background ,bg-graph-green-0 :foreground "black"))) ; special case
     `(org-habit-ready-future-face ((,c :background ,bg-graph-green-1)))
-;;;; org-modern
-    `(org-modern-date-active ((,c :inherit (ef-themes-fixed-pitch org-modern-label) :background ,bg-alt)))
-    `(org-modern-date-inactive ((,c :inherit (ef-themes-fixed-pitch org-modern-label) :background ,bg-dim :foreground ,fg-dim)))
-    `(org-modern-done ((,c :inherit org-modern-label :background ,bg-info :foreground ,info)))
-    `(org-modern-priority ((,c :inherit (org-modern-label org-priority) :background ,bg-dim)))
-    `(org-modern-statistics ((,c :inherit org-modern-label :background ,bg-dim)))
-    `(org-modern-tag ((,c :inherit (org-modern-label org-tag) :background ,bg-dim)))
-    `(org-modern-time-active ((,c :inherit (ef-themes-fixed-pitch org-modern-label) :background ,bg-active :foreground ,fg-intense)))
-    `(org-modern-time-inactive ((,c :inherit (org-modern-label org-modern-date-inactive))))
-    `(org-modern-todo ((,c :inherit org-modern-label :background ,bg-err :foreground ,err)))
 ;;;; outline-mode
     `(outline-1 ((,c :inherit ef-themes-heading-1)))
     `(outline-2 ((,c :inherit ef-themes-heading-2)))
