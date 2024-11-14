@@ -208,13 +208,15 @@
 
       (date-common green-faint)
       (date-deadline red-cooler)
+      (date-deadline-subtle red-faint)
       (date-event fg-alt)
       (date-holiday yellow-warmer)
       (date-now fg-main)
       (date-range fg-alt)
       (date-scheduled yellow)
+      (date-scheduled-subtle yellow-faint)
       (date-weekday green-cooler)
-      (date-weekend red-cooler)
+      (date-weekend red)
 
 ;;;; Prose mappings
 

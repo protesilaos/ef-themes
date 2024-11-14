@@ -211,11 +211,13 @@
 
       (date-common yellow-cooler)
       (date-deadline yellow-warmer)
+      (date-deadline-subtle red-faint)
       (date-event fg-alt)
       (date-holiday cyan-warmer)
       (date-now fg-main)
       (date-range fg-alt)
       (date-scheduled yellow-cooler)
+      (date-scheduled-subtle yellow-faint)
       (date-weekday cyan)
       (date-weekend magenta-faint)
 

@@ -208,11 +208,13 @@
 
       (date-common magenta-cooler)
       (date-deadline magenta)
+      (date-deadline-subtle red-faint)
       (date-event fg-alt)
       (date-holiday green)
       (date-now fg-main)
       (date-range fg-alt)
       (date-scheduled yellow-cooler)
+      (date-scheduled-subtle yellow-faint)
       (date-weekday magenta-cooler)
       (date-weekend red-cooler)
 
