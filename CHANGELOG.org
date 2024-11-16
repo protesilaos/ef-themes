@@ -7,10 +7,173 @@
 This document contains the release notes for each tagged commit on the
 project's main git repository: <https://github.com/protesilaos/ef-themes>.
 
-The newest release is at the top.  For further details, please consult
+The newest release is at the top. For further details, please consult
 the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
+
+* Version 1.9.0 on 2024-11-16
+:PROPERTIES:
+:CUSTOM_ID: h:3c1baf6a-69f1-4109-9a5e-b587beda56bc
+:END:
+
+This version introduces several small refinements to an already
+comprehensive basis.
+
+** No interference with ~org-modern~
+:PROPERTIES:
+:CUSTOM_ID: h:4e0013a0-6ee5-44bc-96e0-f6fbfe5aa58e
+:END:
+
+The ~org-modern~ package is not meant to be touched by a theme. This
+is what I am doing with the ~modus-themes~, but I forgot to remove the
+changes made by the ~ef-themes~.
+
+Thanks to Daniel Mendler, author of ~org-modern~, for bringing this
+matter to my attention. This was done in issue 48:
+<https://github.com/protesilaos/ef-themes/issues/48>.
+
+** Colour refinements for several themes
+:PROPERTIES:
+:CUSTOM_ID: h:e50f8982-6f8e-4c98-ad1d-5f70a5e19108
+:END:
+
+I document those, though most of them will not be noticeable, unless
+on a side-by-side comparison.
+
+- The ~ef-day~ palette value for =green-warmer= has a marginally
+  greater contribution from the red channel of light, making it a tiny
+  bit "warmer". The =green-faint= is made less warm. In context, these
+  tweaks make certain elements easier to tell apart, while retaining
+  the character of the theme.
+
+- The ~ef-reverie~ value for =blue-faint= is less saturated, so its
+  blue impression is diminished. It still performs its role in all the
+  relevant contexts, only now it does it better by not competing with
+  other shades of blue.
+
+- The ~ef-light~ value for =fg-dim= is much less intense, though still
+  within the desired contrast range. This way, it works better in
+  context. The "added" background colours (used in ~diff-mode~, Ediff,
+  Magit, etc.) are a little bit more intense to be more harmonious
+  with other elements in a diff output. The =blue-faint= has lower
+  contribution from the blue channel of light in the interest of not
+  interfering with other blue hues, while still looking alright
+  itself. The semantic palette mapping for links now uses the
+  =blue-warmer= colour instead of =blue=, as the former is less
+  ambiguous in context. The =fg-alt= is recalibrated to be closer to a
+  grey value, improving its use in several places. The =red-cooler=
+  value is redone to not be conflated with magenta: it now delivers a
+  rosy red impression. Lastly, the =rainbow-2= mapping uses =magenta=
+  instead of =magenta-warmer= for consistency in all relevant
+  situations.
+
+- The ~ef-night~ semantic colour mapping of =preprocessor= is toned
+  down in intensity to remove what was a stylistic exaggeration. The
+  =variable= mapping is tweaked to use =cyan-warmer= instead of the
+  =cyan= colour, as the former is slightly more suited to the role due
+  to how it combines with other colours. The =type= semantic mapping
+  is bound to a less intense shade of magenta, making it not overpower
+  other constructs in a competition for attention. Finally, the value
+  of the =magenta-faint= colour has a greater contribution from the
+  blue channel of light to shift its hue slightly closer to purple.
+
+- The ~ef-deuteranopia-light~ palette entry for =red-faint= is more
+  yellow to be discernible where needed. Similarly, the =cyan-cooler=
+  has a reduced contribution from the red channel of light.
+
+  [ Note that the "deuteranopia" and "tritanopia" themes define all
+    colours in the palette to be consistent with the overall project,
+    but only use hues that are appropriate for red-green and blue-yellow
+    colour deficiency, respectively. ]
+
+- The "subtle" backgrounds of all themes (e.g. =bg-red-subtle=) are
+  redone to feel more natural in the context of their respective
+  theme. Before, some values were a bit exaggerated and/or not aligned
+  with the overall aesthetic. Still, the changes are small: do not
+  expect your preferred theme to be refashioned.
+
+** More accurate faces for Org agenda dates
+:PROPERTIES:
+:CUSTOM_ID: h:4a7e91bb-4661-4b89-a0c1-d321f07c30c1
+:END:
+
+The faces used by Org agenda to style events with a scheduled date or
+deadline are redesigned to better complement the semantics of what is
+on display. Pressing tasks stand out more, while those that do not
+require immediate attention are rendered in a more subtle style.
+
+Thanks to Adam Porter (aka GitHub alphapapa) for suggesting this
+revision and discussing the technicalities with me. This was done in
+issue 102 of the Modus themes repository (but the principles apply to
+the Ef themes as well): <https://github.com/protesilaos/modus-themes/issues/102>.
+
+** The ~forge~ package is fully supported
+:PROPERTIES:
+:CUSTOM_ID: h:53ab2d2a-6dac-460e-baa5-0b0ed286e0a4
+:END:
+
+All of its faces will now look consistent in context as they get the
+appropriate colours of the active Ef theme.
+
+Thanks to Len Trigg for reporting that some attributes were not
+suitable for the intended purpose of certain Forge faces. I fixed
+those accordingly. This was done in issue 47:
+<https://github.com/protesilaos/ef-themes/issues/47>.
+
+** Support for the ~tldr~ package
+:PROPERTIES:
+:CUSTOM_ID: h:af882be2-c75f-455e-97ab-4b8661ee0dab
+:END:
+
+This makes it look consistent with the rest of the theme.
+
+** Support for the built-in ~window-tool-bar-mode~
+:PROPERTIES:
+:CUSTOM_ID: h:9330925f-1b6c-4e58-93e6-8c35b3e09eb4
+:END:
+
+This is a mode available in Emacs 30. Its faces will look right at all
+times.
+
+** Support for the built-in ~hexl-mode~
+:PROPERTIES:
+:CUSTOM_ID: h:eb519edb-0764-436c-be84-50e9453b6140
+:END:
+
+Instead of using shades of grey backgrounds, the themes use carefully
+chosen foreground values that are easier to spot.
+
+** The ~embark~ faces are brought up-to-date
+:PROPERTIES:
+:CUSTOM_ID: h:43da4e08-96ab-4a3f-9f90-654dfa23a420
+:END:
+
+Old symbols are removed and the current ones are added in their stead.
+
+** Miscellaneous
+:PROPERTIES:
+:CUSTOM_ID: h:cae41822-d05a-42b5-b0e8-e6e42dc9bc73
+:END:
+
+- The =:background-mode= property of the ~ef-melissa-dark~ theme is
+  set to the correct symbol. Thanks to Pedro Cunha for making the
+  change in pull request 46: <https://github.com/protesilaos/ef-themes/pull/46>.
+  The change is small, so Pedro does not need to assign copyright to
+  the Free Software Foundation.
+
+- Graphical buttons inherit the ~ef-themes-button~ face, which makes
+  it easier to ensure theme-wide consistency for all relevant faces.
+
+- The ~all-the-icons~ faces for Ibuffer use different colours that
+  refine how everything looks in context.
+
+- The popup produced by the ~corfu~ and ~company~ packages will use a
+  monospaced font (inherit from ~fixed-pitch~) if the user option
+  ~ef-themes-mixed-fonts~ is set to a non-nil value.
+
+- The annotation function used by the command ~ef-themes-select~ or
+  related now uses the ~completions-annotations~ face, as it should.
 
 * Version 1.8.0 on 2024-08-27
 :PROPERTIES:

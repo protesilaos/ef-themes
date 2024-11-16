@@ -4,9 +4,9 @@
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
 #+startup: content
-#+macro: stable-version 1.8.0
-#+macro: release-date 2024-08-27
-#+macro: development-version 1.9.0-dev
+#+macro: stable-version 1.9.0
+#+macro: release-date 2024-11-16
+#+macro: development-version 1.10.0-dev
 #+export_file_name: ef-themes.texi
 #+texinfo_filename: ef-themes.info
 #+texinfo_dir_category: Emacs misc features
@@ -251,8 +251,6 @@ with minibuffer completion or at random ([[#h:58345e8c-2bec-459c-872c-a85a29e9fe
 :PROPERTIES:
 :CUSTOM_ID: h:96bc23ed-40b2-43b4-ba47-b6a5c350563d
 :END:
-
-[ This is part of {{{development-version}}}. ]
 
 #+vindex: ef-themes-to-rotate
 #+findex: ef-themes-rotate
@@ -733,8 +731,7 @@ example:
 The commands mentioned herein call ~ef-themes-post-load-hook~ at the
 end.  This is for advanced users who want to trigger some code after an
 Ef theme is loaded ([[#h:5b74bd9e-e7f2-46b3-af2e-7c45b2e69245][Use colors from the active Ef theme]]).  The same goes
-for ~ef-themes-toggle~ and ~ef-themes-rotate~ [ The ~ef-themes-rotate~
-is part of {{{development-version}}} ].
+for ~ef-themes-toggle~ and ~ef-themes-rotate~.
 
 - [[#h:a58b8e21-0f8f-4763-9b47-185bf7e10043][Toggle between two Ef themes]]
 - [[#h:96bc23ed-40b2-43b4-ba47-b6a5c350563d][Rotate among a list of Ef themes]]
@@ -1409,13 +1406,13 @@ everything most users need.
 - flymake
 - flyspell
 - font-lock
-- forge [ Part of {{{development-version}}}. ]
+- forge
 - git-commit
 - git-gutter
 - git-gutter-fr
 - git-rebase
 - gnus
-- hexl-mode [ Part of {{{development-version}}}. ]
+- hexl-mode
 - hi-lock (=M-x highlight-regexp=)
 - highlight-indentation
 - ibuffer
@@ -1473,7 +1470,7 @@ everything most users need.
 - tempel
 - term
 - textsec
-- tldr [ Part of {{{development-version}}}. ]
+- tldr
 - transient
 - trashed
 - tree-sitter
@@ -1488,7 +1485,7 @@ everything most users need.
 - whitespace-mode
 - widget
 - window-divider-mode
-- window-tool-bar-mode [ Part of {{{development-version}}}. ]
+- window-tool-bar-mode
 - writegood-mode
 - woman
 - ztree
