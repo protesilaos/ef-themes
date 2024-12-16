@@ -755,6 +755,7 @@ the list becomes the last.  Do not modify THEMES in the process."
       (user-error "`%s' is not part of the Ef collection" candidate))))
 
 ;;;; Preview a theme palette
+
 (defun ef-themes--list-colors-get-mappings (palette)
   "Get the semantic palette entries in PALETTE.
 PALETTE is the value of a variable like `ef-summer-palette'."
