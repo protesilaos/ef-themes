@@ -151,11 +151,11 @@ themes that form part of this collection."
   :group 'ef-themes)
 
 (defcustom ef-themes-to-rotate ef-themes-items
-  "List of Ef themes to rotate among, per `modus-themes-rotate'."
+  "List of Ef themes to rotate among, per `ef-themes-rotate'."
   :type `(repeat (choice
                   :tag "A theme among the `ef-themes-items'"
                   ,@(mapcar (lambda (theme) (list 'const theme)) ef-themes-items)))
-  :package-version '(modus-themes . "1.9.0")
+  :package-version '(ef-themes . "1.9.0")
   :group 'ef-themes)
 
 (defconst ef-themes-weights
