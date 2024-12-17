@@ -104,6 +104,9 @@
   (append ef-themes-light-themes ef-themes-dark-themes)
   "Symbols of all the Ef themes.")
 
+(defvaralias 'ef-themes-after-load-theme-hook 'ef-themes-post-load-hook
+  "Alias for `ef-themes-post-load-hook'.")
+
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
 This is used by the commands `ef-themes-select' and
