@@ -656,12 +656,13 @@ whether it is light or dark."
 
 (defun ef-themes--toggle-theme-p ()
   "Return non-nil if `ef-themes-to-toggle' are valid."
-  (mapc (lambda (theme)
-          (if (or (memq theme ef-themes-collection)
-                  (memq theme (ef-themes--list-known-themes)))
-              theme
-            (user-error "`%s' is not part of `ef-themes-collection'" theme)))
-        ef-themes-to-toggle))
+  (condition-case nil
+      (dolist (theme ef-themes-to-toggle)
+        (or (memq theme ef-themes-collection)
+            (memq theme (ef-themes--list-known-themes))
+            (error "`%s' is not part of `ef-themes-collection'" theme)))
+    (error nil)
+    (:success ef-themes-to-toggle)))
 
 ;;;; Toggle between two themes
 
