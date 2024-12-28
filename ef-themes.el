@@ -1086,6 +1086,7 @@ text should not be underlined as well) yet still blend in."
     `(TeX-error-description-warning ((,c :inherit warning)))
 ;;;; auto-dim-other-buffers
     `(auto-dim-other-buffers-face ((,c :background ,bg-inactive)))
+    `(auto-dim-other-buffers-hide-face ((,c :foreground ,bg-inactive :background ,bg-inactive)))
 ;;;; avy
     `(avy-background-face ((,c :background ,bg-dim :foreground ,fg-dim :extend t)))
     `(avy-goto-char-timer-face ((,c :inherit bold :background ,bg-active)))
