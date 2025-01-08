@@ -782,7 +782,8 @@ PALETTE is the value of a variable like `ef-summer-palette'."
                            (color (ef-themes-get-color-value name mappings theme))) ; resolve a semantic mapping
                 (list name
                       (vector
-                       (if (symbolp value)
+                       (if (and (symbolp value)
+                                (not (eq value 'unspecified)))
                            "Yes"
                          "")
                        name-string
