@@ -1465,6 +1465,7 @@ everything most users need.
 - show-paren-mode
 - shr
 - smerge
+- spacious-padding [ Part of {{{development-version}}}. ]
 - tab-bar-mode
 - tab-line-mode
 - tempel
