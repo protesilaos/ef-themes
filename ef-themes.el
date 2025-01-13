@@ -1632,6 +1632,8 @@ text should not be underlined as well) yet still blend in."
     `(gnus-summary-normal-undownloaded ((,c :foreground ,warning)))
     `(gnus-summary-normal-unread (( )))
     `(gnus-summary-selected ((,c :inherit highlight)))
+;;;; helpful-mode
+    `(helpful-heading ((,c :inherit ef-themes-heading-1)))
 ;;;; hexl-mode
     `(hexl-address-region ((,c :foreground ,constant)))
     `(hexl-ascii-region ((,c :foreground ,variable)))
