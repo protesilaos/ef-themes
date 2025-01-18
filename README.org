@@ -1412,6 +1412,7 @@ everything most users need.
 - git-gutter-fr
 - git-rebase
 - gnus
+- helpful [ Part of {{{development-version}}}. ]
 - hexl-mode
 - hi-lock (=M-x highlight-regexp=)
 - highlight-indentation
