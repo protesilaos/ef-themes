@@ -2083,7 +2083,7 @@ text should not be underlined as well) yet still blend in."
     `(org-clock-overlay ((,c :background ,bg-hover-secondary)))
     `(org-code ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-code)))
     `(org-column ((,c :inherit default :background ,bg-alt)))
-    `(org-column-title ((,c :inherit (bold default) :underline t :background ,bg-alt)))
+    `(org-column-title ((,c :inherit (ef-themes-fixed-pitch bold default) :underline t :background ,bg-alt)))
     `(org-date ((,c :inherit ef-themes-fixed-pitch :foreground ,date-common)))
     `(org-date-selected ((,c :foreground ,date-common :inverse-video t)))
     `(org-dispatcher-highlight ((,c :inherit warning :background ,bg-warning)))
