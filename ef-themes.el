@@ -2293,7 +2293,7 @@ text should not be underlined as well) yet still blend in."
     `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; spacious-padding
-    `(spacious-padding-subtle-mode-line-active ((,c :foreground ,keybind)))
+    `(spacious-padding-subtle-mode-line-active ((,c :foreground ,accent-0)))
     `(spacious-padding-subtle-mode-line-inactive ((,c :foreground ,border)))
 ;;;; tab-bar-mode
     `(tab-bar ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-tab-bar)))
