@@ -416,8 +416,7 @@ This function is used in the macros `ef-themes-theme',
      ((or (stringp value)
           (eq value 'unspecified))
       value)
-     ((and (symbolp value)
-           (memq value (mapcar #'car palette)))
+     ((and (symbolp value) value)
       (ef-themes--retrieve-palette-value value palette))
      (t
       'unspecified))))
