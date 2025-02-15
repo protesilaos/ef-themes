@@ -1416,6 +1416,7 @@ everything most users need.
 - hexl-mode
 - hi-lock (=M-x highlight-regexp=)
 - highlight-indentation
+- howm [ Part of {{{development-version}}}. ]
 - ibuffer
 - image-dired
 - imenu-list
