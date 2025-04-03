@@ -55,7 +55,8 @@
       (fg-alt      "#89afef")
 
       (bg-active   "#4b3f47")
-      (bg-inactive "#191317")
+;;      (bg-inactive "#191317")
+      (bg-inactive "#072d42")  ;; used for org-block
 
 ;;; Basic hues for foreground values
 
@@ -181,21 +182,21 @@
       (identifier yellow-faint)
       (prompt cyan)
 
-      (bg-region "#3f2f40")
+      (bg-region "#e0b000")
       (fg-region unspecified)
 
 ;;;; Code mappings
 
       (builtin orange-warmer)
       (comment fg-dim)
-      (constant red)
+      (constant red-warmer)
       (fnname cyan)
-      (keyword green-warmer)
-      (preprocessor red)
+      (keyword "#d1fa71")
+      (preprocessor "grey57")
       (docstring fg-dim)
       (string yellow-faint)
       (type cyan-warmer)
-      (variable blue-warmer)
+      (variable "#96d9f1")
       (rx-escape green-cooler) ; compare with `string'
       (rx-construct red)
 
