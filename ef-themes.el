@@ -91,6 +91,7 @@
     ef-night
     ef-owl
     ef-rosa
+    ef-smyx
     ef-symbiosis
     ef-trio-dark
     ef-tritanopia-dark
