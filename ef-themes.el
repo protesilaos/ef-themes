@@ -2161,6 +2161,25 @@ text should not be underlined as well) yet still blend in."
     `(org-verbatim ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-verbatim)))
     `(org-verse ((,c :inherit org-block)))
     `(org-warning ((,c :inherit warning)))
+;;;; org-modern
+    `(org-modern-date-inactive ((,c :background ,bg-inactive :foreground ,date-now )))
+    `(org-modern-date-active ((,c :background ,bg-active :foreground ,date-now )))
+    `(org-modern-time-inactive ((,c :background ,bg-inactive :foreground ,date-now )))
+    `(org-modern-active-active ((,c :background ,bg-active :foreground ,date-now )))
+    `(org-modern-todo ((,c :background ,bg-main :foreground ,prose-todo )))
+    `(org-modern-done ((,c :background ,bg-main :foreground ,prose-done )))
+    `(org-modern-priority ((,c :background ,bg-main :foreground ,prose-tag )))
+    `(org-modern-tag ((,c :background ,bg-main :foreground ,prose-tag )))
+    `(org-modern-habit ((,c :background ,bg-graph-green-0 :foreground ,"black")))
+    `(org-modern-horizontal-rule ((,c :background ,bg-main )))
+    ;; WIP
+    ;;`(org-modern-symbol ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-label ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-block-name ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-progress-complete ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-progress-incomplete ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-internal-target ((,c :background ,bg-main :foreground ,prose-done )))
+    ;;`(org-modern-radio-target ((,c :background ,bg-main :foreground ,prose-done )))
 ;;;; org-habit
     `(org-habit-alert-face ((,c :background ,bg-graph-yellow-0 :foreground "black"))) ; special case
     `(org-habit-alert-future-face ((,c :background ,bg-graph-yellow-1)))
