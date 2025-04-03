@@ -141,7 +141,7 @@
       (bg-completion      "#1f334f")
       (bg-hover           "#304477")
       (bg-hover-secondary "#5f3f3a")
-      (bg-hl-line         "#1f2f3f")
+      (bg-hl-line         "#064e70")
       (bg-paren           "#005f4a")
       (bg-err             "#461309") ; check with err
       (bg-warning         "#3a3104") ; check with warning
