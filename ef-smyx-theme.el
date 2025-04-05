@@ -55,8 +55,7 @@
       (fg-alt      "#89afef")
 
       (bg-active   "#4b3f47")
-;;      (bg-inactive "#191317")
-      (bg-inactive "#072d42")  ;; used for org-block
+      (bg-inactive "#191317")
 
 ;;; Basic hues for foreground values
 
@@ -183,7 +182,8 @@
       (prompt cyan)
 
       (bg-region "#e0b000")
-      (fg-region unspecified)
+      (fg-region fg-intense)
+      ;;(fg-region unspecified)
 
 ;;;; Code mappings
 
