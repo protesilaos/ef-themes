@@ -95,7 +95,10 @@
     ef-symbiosis
     ef-trio-dark
     ef-tritanopia-dark
-    ef-winter)
+    ef-winter
+    ef-dark-gray
+    ef-light-gray
+    )
   "List of symbols with the dark Ef themes.")
 
 (defvaralias 'ef-themes-items 'ef-themes-collection
