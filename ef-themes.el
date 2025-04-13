@@ -68,6 +68,7 @@
     ef-frost
     ef-kassio
     ef-light
+    ef-light-gray
     ef-maris-light
     ef-melissa-light
     ef-reverie
@@ -82,6 +83,7 @@
     ef-bio
     ef-cherie
     ef-dark
+    ef-dark-gray
     ef-deuteranopia-dark
     ef-dream
     ef-duo-dark
@@ -95,10 +97,7 @@
     ef-symbiosis
     ef-trio-dark
     ef-tritanopia-dark
-    ef-winter
-    ef-dark-gray
-    ef-light-gray
-    )
+    ef-winter)
   "List of symbols with the dark Ef themes.")
 
 (defvaralias 'ef-themes-items 'ef-themes-collection
