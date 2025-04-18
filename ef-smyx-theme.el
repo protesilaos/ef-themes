@@ -47,7 +47,7 @@
     '(
 ;;; Basic values
 
-      (bg-main     "#282828")
+      (bg-main     "#060606")
       (fg-main     "#f7f7f7")
       (bg-dim      "#221920")
       (fg-dim      "#857f8f")
@@ -181,7 +181,7 @@
       (identifier yellow-faint)
       (prompt cyan)
 
-      (bg-region "#e0b000")
+      (bg-region "#282b3d")
       (fg-region fg-intense)
       ;;(fg-region unspecified)
 
