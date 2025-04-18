@@ -2405,7 +2405,7 @@ text should not be underlined as well) yet still blend in."
     `(transient-key-noop ((,c :inherit (shadow ef-themes-key-binding))))
     `(transient-key-recurse ((,c :inherit ef-themes-key-binding)))
     `(transient-key-return ((,c :inherit ef-themes-key-binding)))
-    `(transient-key-stay ((,c :inherit ef-themes-key-binding)))
+    `(transient-key-stack ((,c :inherit ef-themes-key-binding)))
     `(transient-key-stay ((,c :inherit ef-themes-key-binding)))
     `(transient-mismatched-key ((,c :underline t)))
     `(transient-nonstandard-key ((,c :underline t)))
