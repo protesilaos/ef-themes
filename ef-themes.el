@@ -2095,6 +2095,8 @@ text should not be underlined as well) yet still blend in."
     `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))
     `(orderless-match-face-2 ((,c :inherit bold :foreground ,accent-2)))
     `(orderless-match-face-3 ((,c :inherit bold :foreground ,accent-3)))
+;;; emacs mobile These are improvements to the theme sees well in the mobile version of Emacs 
+    `(modifier-bar-mode ((,c :foreground ,fg-main)))
 ;;;; org
     `(org-agenda-calendar-daterange ((,c :foreground ,date-range)))
     `(org-agenda-calendar-event ((,c :foreground ,date-event)))
