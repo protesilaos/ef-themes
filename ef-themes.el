@@ -1242,6 +1242,12 @@ text should not be underlined as well) yet still blend in."
     `(corfu-quick2 ((,c :inherit bold :background ,bg-char-1)))
 ;;;; csv-mode
     `(csv-separator-face ((,c :foreground ,err)))
+;;; cfw
+     `(cfw:face-default-content ((,c :foreground ,fg-dim)))
+    `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
+     `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
+      `(cfw:face-toolbar ((,c :background ,bg-alt :foreground ,fg-main)))
+     `(cfw:face-toolbar-button-off ((,c :foreground ,fg-dim :weight bold)))
 ;;;; custom (M-x customize)
     `(custom-button ((,c :box (:color ,border :style released-button)
                          :background ,bg-active :foreground ,fg-intense)))
