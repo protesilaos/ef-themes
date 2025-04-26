@@ -1474,6 +1474,7 @@ everything most users need.
 - term
 - textsec
 - tldr
+- tmr [ Part of {{{development-version}}}. ]
 - transient
 - trashed
 - tree-sitter
