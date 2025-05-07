@@ -4,9 +4,9 @@
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
 #+startup: content
-#+macro: stable-version 1.9.0
-#+macro: release-date 2024-11-16
-#+macro: development-version 1.10.0-dev
+#+macro: stable-version 1.10.0
+#+macro: release-date 2025-04-29
+#+macro: development-version 1.11.0-dev
 #+export_file_name: ef-themes.texi
 #+texinfo_filename: ef-themes.info
 #+texinfo_dir_category: Emacs misc features
@@ -1412,11 +1412,11 @@ everything most users need.
 - git-gutter-fr
 - git-rebase
 - gnus
-- helpful [ Part of {{{development-version}}}. ]
+- helpful
 - hexl-mode
 - hi-lock (=M-x highlight-regexp=)
 - highlight-indentation
-- howm [ Part of {{{development-version}}}. ]
+- howm
 - ibuffer
 - image-dired
 - imenu-list
@@ -1467,13 +1467,14 @@ everything most users need.
 - show-paren-mode
 - shr
 - smerge
-- spacious-padding [ Part of {{{development-version}}}. ]
+- spacious-padding
 - tab-bar-mode
 - tab-line-mode
 - tempel
 - term
 - textsec
 - tldr
+- tmr
 - transient
 - trashed
 - tree-sitter
@@ -1809,8 +1810,9 @@ matters.
 + Author/maintainer :: Protesilaos Stavrou.
 
 + Contributions to code or the manual :: Alex Lu, Christopher League,
-  Eshel Yaron, Gautier Ponsinet, John Haman, Oleksii (Alex) Koval,
-  Pedro Cunha, Philip Kaludercic, Ryan Kaskel, Walheimat.
+  Eshel Yaron, Gautier Ponsinet, John Haman, Kevin Fleming, Oleksii
+  (Alex) Koval, Leilei332, Pedro Cunha, Philip Kaludercic, Ryan
+  Kaskel, Walheimat.
 
 + Ideas and/or user feedback :: Adam Porter (alphapapa), Alan Schmitt,
   Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,

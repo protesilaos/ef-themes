@@ -5,7 +5,7 @@
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
 ;; Maintainer: Protesilaos Stavrou <info@protesilaos.com>
 ;; URL: https://github.com/protesilaos/ef-themes
-;; Version: 1.9.0
+;; Version: 1.10.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -1006,6 +1006,25 @@ text should not be underlined as well) yet still blend in."
     `(tooltip ((,c :background ,bg-alt :foreground ,fg-intense)))
     `(trailing-whitespace ((,c :background ,bg-red-intense :foreground ,fg-intense)))
     `(warning ((,c :inherit bold :foreground ,warning)))
+;;;; adoc-mode
+    `(adoc-code-face ((,c :inherit font-lock-constant-face)))
+    `(adoc-command-face ((,c :foreground ,prose-macro)))
+    `(adoc-complex-replacement-face ((,c :background ,bg-magenta-subtle :foreground ,magenta)))
+    `(adoc-emphasis-face ((,c (:inherit bold))))
+    `(adoc-gen-face ((,c :foreground ,blue)))
+    `(adoc-meta-face ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-metadata)))
+    `(adoc-meta-hide-face ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-metadata)))
+    `(adoc-replacement-face ((,c :inherit font-lock-escape-face)))
+    `(adoc-secondary-text-face ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-metadata-value)))
+    `(adoc-table-face ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-table)))
+    `(adoc-title-0-face ((,c :inherit ef-themes-heading-0)))
+    `(adoc-title-1-face ((,c :inherit ef-themes-heading-1)))
+    `(adoc-title-2-face ((,c :inherit ef-themes-heading-2)))
+    `(adoc-title-3-face ((,c :inherit ef-themes-heading-3)))
+    `(adoc-title-4-face ((,c :inherit ef-themes-heading-4)))
+    `(adoc-title-5-face ((,c :inherit ef-themes-heading-5)))
+    `(adoc-typewriter-face ((,c :foreground ,prose-verbatim)))
+    `(adoc-verbatim-face ((,c :foreground ,prose-verbatim)))
 ;;;; all-the-icons
     `(all-the-icons-blue ((,c :foreground ,blue-cooler)))
     `(all-the-icons-blue-alt ((,c :foreground ,blue-warmer)))
@@ -1628,7 +1647,7 @@ text should not be underlined as well) yet still blend in."
     `(gnus-summary-low-ticked ((,c :inherit italic :foreground ,err)))
     `(gnus-summary-low-undownloaded ((,c :inherit italic :foreground ,warning)))
     `(gnus-summary-low-unread ((,c :inherit italic)))
-    `(gnus-summary-normal-ancient (( )))
+    `(gnus-summary-normal-ancient ((,c :foreground ,fg-dim)))
     `(gnus-summary-normal-read ((,c :inherit shadow)))
     `(gnus-summary-normal-ticked ((,c :foreground ,err)))
     `(gnus-summary-normal-undownloaded ((,c :foreground ,warning)))
@@ -2384,6 +2403,14 @@ text should not be underlined as well) yet still blend in."
     `(tldr-description ((,c :inherit font-lock-doc-face)))
     `(tldr-introduction ((,c :inherit font-lock-comment-face)))
     `(tldr-title ((,c :inherit bold)))
+;;;; tmr
+    `(tmr-mode-line-active ((,c :inherit bold :foreground ,modeline-info)))
+    `(tmr-mode-line-soon ((,c :inherit bold :foreground ,modeline-warning)))
+    `(tmr-mode-line-urgent ((,c :inherit bold :foreground ,modeline-err)))
+    `(tmr-tabulated-description ((,c :foreground ,docstring)))
+    `(tmr-tabulated-end-time ((,c :foreground ,date-deadline)))
+    `(tmr-tabulated-remaining-time ((,c :foreground ,date-scheduled)))
+    `(tmr-tabulated-start-time ((,c :foreground ,date-common)))
 ;;;; transient
     `(transient-active-infix ((,c :background ,bg-active :foreground ,fg-intense)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
@@ -2408,7 +2435,7 @@ text should not be underlined as well) yet still blend in."
     `(transient-key-noop ((,c :inherit (shadow ef-themes-key-binding))))
     `(transient-key-recurse ((,c :inherit ef-themes-key-binding)))
     `(transient-key-return ((,c :inherit ef-themes-key-binding)))
-    `(transient-key-stay ((,c :inherit ef-themes-key-binding)))
+    `(transient-key-stack ((,c :inherit ef-themes-key-binding)))
     `(transient-key-stay ((,c :inherit ef-themes-key-binding)))
     `(transient-mismatched-key ((,c :underline t)))
     `(transient-nonstandard-key ((,c :underline t)))
