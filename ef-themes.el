@@ -1242,7 +1242,7 @@ text should not be underlined as well) yet still blend in."
     `(corfu-quick2 ((,c :inherit bold :background ,bg-char-1)))
 ;;;; csv-mode
     `(csv-separator-face ((,c :foreground ,err)))
-;;; cfw
+;;; calfw
      `(cfw:face-default-content ((,c :foreground ,fg-dim)))
      `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
      `(cfw:face-day-title ((,c :background ,bg-main)))
