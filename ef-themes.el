@@ -1245,6 +1245,8 @@ text should not be underlined as well) yet still blend in."
 ;;; cfw
      `(cfw:face-default-content ((,c :foreground ,fg-dim)))
      `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
+     `(cfw:face-day-title ((,c :background ,bg-main)))
+     `(cfw:face-grid ((,c :background ,bg-main)))
      `(cfw:face-default-day ((,c :background ,bg-main :foreground ,fg-main)))
      `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
      `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
