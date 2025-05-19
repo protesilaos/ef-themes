@@ -446,12 +446,13 @@ symbol, which is safe when used as a face attribute's value."
       value
     'unspecified))
 
+(defun ef-themes--ef-p (theme)
+  "Return non-nil if THEME name has an ef- prefix."
+  (string-prefix-p "ef-" (symbol-name theme)))
+
 (defun ef-themes--list-enabled-themes ()
   "Return list of `custom-enabled-themes' with ef- prefix."
-  (seq-filter
-   (lambda (theme)
-     (string-prefix-p "ef-" (symbol-name theme)))
-   custom-enabled-themes))
+  (seq-filter #'ef-themes--ef-p custom-enabled-themes))
 
 (defun ef-themes--enable-themes (&optional subset)
   "Enable all Ef themes.
@@ -470,10 +471,7 @@ themes."
 (defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
   (ef-themes--enable-themes)
-  (seq-filter
-   (lambda (theme)
-     (string-prefix-p "ef-" (symbol-name theme)))
-   custom-known-themes))
+  (seq-filter #'ef-themes--ef-p custom-known-themes))
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
@@ -535,10 +533,6 @@ overrides."
     (if (eq action 'metadata)
         `(metadata (category . ,category))
       (complete-with-action action candidates string pred))))
-
-(defun ef-themes--ef-p (theme)
-  "Return non-nil if THEME name has an ef- prefix."
-  (string-prefix-p "ef-" (symbol-name theme)))
 
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
