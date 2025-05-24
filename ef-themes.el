@@ -109,8 +109,9 @@
 
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
-This is used by the commands `ef-themes-select' and
-`ef-themes-load-random'."
+This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
+`ef-themes-load-random', `ef-themes-select', as well as the function
+`ef-themes-load-theme'."
   :type 'hook
   :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
