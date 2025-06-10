@@ -978,6 +978,7 @@ text should not be underlined as well) yet still blend in."
     `(escape-glyph ((,c :foreground ,warning)))
     `(fringe ((,c :background ,bg-fringe :foreground ,fg-fringe)))
     `(header-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-dim)))
+    `(header-line-inactive ((,c :inherit (ef-themes-ui-variable-pitch shadow))))
     `(header-line-highlight ((,c :inherit highlight)))
     `(help-argument-name ((,c :foreground ,accent-0)))
     `(help-key-binding ((,c :inherit (bold ef-themes-fixed-pitch) :foreground ,keybind)))
