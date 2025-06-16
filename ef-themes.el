@@ -2331,6 +2331,8 @@ text should not be underlined as well) yet still blend in."
     `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; spacious-padding
+    `(spacious-padding-line-active ((,c :foreground ,accent-0)))
+    `(spacious-padding-line-inactive ((,c :foreground ,border)))
     `(spacious-padding-subtle-mode-line-active ((,c :foreground ,accent-0)))
     `(spacious-padding-subtle-mode-line-inactive ((,c :foreground ,border)))
 ;;;; tab-bar-mode
