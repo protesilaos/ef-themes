@@ -2198,6 +2198,8 @@ text should not be underlined as well) yet still blend in."
 ;;;; package (M-x list-packages)
     `(package-description ((,c :foreground ,docstring)))
     `(package-help-section-name ((,c :inherit bold)))
+    `(package-mark-delete-line ((,c :inherit ef-themes-mark-delete)))
+    `(package-mark-install-line ((,c :inherit ef-themes-mark-select)))
     `(package-name ((,c :inherit link)))
     `(package-status-available ((,c :foreground ,date-common)))
     `(package-status-avail-obso ((,c :inherit error)))
