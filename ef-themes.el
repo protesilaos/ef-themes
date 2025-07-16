@@ -41,7 +41,7 @@
 
 ;;; Code:
 
-
+
 
 (require 'seq)
 (eval-when-compile (require 'subr-x))
@@ -1243,17 +1243,17 @@ text should not be underlined as well) yet still blend in."
 ;;;; csv-mode
     `(csv-separator-face ((,c :foreground ,err)))
 ;;; calfw
-     `(cfw:face-default-content ((,c :foreground ,fg-dim)))
-     `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
-     `(cfw:face-day-title ((,c :background ,bg-main)))
-     `(cfw:face-grid ((,c :background ,bg-main)))
-     `(cfw:face-default-day ((,c :background ,bg-main :foreground ,fg-main)))
-     `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
-     `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
-     `(cfw:face-select ((,c :background ,bg-active :weight bold)))
-     `(cfw:face-saturday ((,c :foreground ,fg-main :weight bold)))
-     `(cfw:face-toolbar ((,c :background ,bg-main :foreground ,fg-main)))
-     `(cfw:face-toolbar-button-off ((,c :foreground ,fg-dim :weight bold)))
+    `(cfw:face-default-content ((,c :foreground ,fg-dim)))
+    `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
+    `(cfw:face-day-title ((,c :background ,bg-main)))
+    `(cfw:face-grid ((,c :background ,bg-main)))
+    `(cfw:face-default-day ((,c :background ,bg-main :foreground ,fg-main)))
+    `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
+    `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
+    `(cfw:face-select ((,c :background ,bg-active :weight bold)))
+    `(cfw:face-saturday ((,c :foreground ,fg-main :weight bold)))
+    `(cfw:face-toolbar ((,c :background ,bg-main :foreground ,fg-main)))
+    `(cfw:face-toolbar-button-off ((,c :foreground ,fg-dim :weight bold)))
 ;;;; custom (M-x customize)
     `(custom-button ((,c :box (:color ,border :style released-button)
                          :background ,bg-active :foreground ,fg-intense)))
@@ -2107,8 +2107,6 @@ text should not be underlined as well) yet still blend in."
     `(orderless-match-face-1 ((,c :inherit bold :foreground ,accent-1)))
     `(orderless-match-face-2 ((,c :inherit bold :foreground ,accent-2)))
     `(orderless-match-face-3 ((,c :inherit bold :foreground ,accent-3)))
-;;; emacs mobile These are improvements to the theme sees well in the mobile version of Emacs 
-    `(modifier-bar-mode ((,c :foreground ,fg-main)))
 ;;;; org
     `(org-agenda-calendar-daterange ((,c :foreground ,date-range)))
     `(org-agenda-calendar-event ((,c :foreground ,date-event)))
