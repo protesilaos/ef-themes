@@ -1244,9 +1244,10 @@ text should not be underlined as well) yet still blend in."
     `(csv-separator-face ((,c :foreground ,err)))
 ;;; calfw
     `(cfw:face-default-content ((,c :foreground ,fg-dim)))
+    `(cfw:face-today-title ((,c :foreground ,red-warmer :inherit bold :background ,bg-main)))
     `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
     `(cfw:face-day-title ((,c :background ,bg-main)))
-    `(cfw:face-grid ((,c :background ,bg-main)))
+    `(cfw:face-grid ((,c :background ,bg-main :foreground ,fg-main)))
     `(cfw:face-default-day ((,c :background ,bg-main :foreground ,fg-main)))
     `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
     `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
