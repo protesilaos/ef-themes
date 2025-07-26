@@ -5,7 +5,7 @@
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
 ;; Maintainer: Protesilaos Stavrou <info@protesilaos.com>
 ;; URL: https://github.com/protesilaos/ef-themes
-;; Version: 1.9.0
+;; Version: 1.10.0
 ;; Package-Requires: ((emacs "28.1"))
 ;; Keywords: faces, theme, accessibility
 
@@ -109,8 +109,9 @@
 
 (defcustom ef-themes-post-load-hook nil
   "Hook that runs after loading an Ef theme.
-This is used by the commands `ef-themes-select' and
-`ef-themes-load-random'."
+This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
+`ef-themes-load-random', `ef-themes-select', as well as the function
+`ef-themes-load-theme'."
   :type 'hook
   :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
@@ -446,12 +447,13 @@ symbol, which is safe when used as a face attribute's value."
       value
     'unspecified))
 
+(defun ef-themes--ef-p (theme)
+  "Return non-nil if THEME name has an ef- prefix."
+  (string-prefix-p "ef-" (symbol-name theme)))
+
 (defun ef-themes--list-enabled-themes ()
   "Return list of `custom-enabled-themes' with ef- prefix."
-  (seq-filter
-   (lambda (theme)
-     (string-prefix-p "ef-" (symbol-name theme)))
-   custom-enabled-themes))
+  (seq-filter #'ef-themes--ef-p custom-enabled-themes))
 
 (defun ef-themes--enable-themes (&optional subset)
   "Enable all Ef themes.
@@ -470,10 +472,7 @@ themes."
 (defun ef-themes--list-known-themes ()
   "Return list of `custom-known-themes' with ef- prefix."
   (ef-themes--enable-themes)
-  (seq-filter
-   (lambda (theme)
-     (string-prefix-p "ef-" (symbol-name theme)))
-   custom-known-themes))
+  (seq-filter #'ef-themes--ef-p custom-known-themes))
 
 (defun ef-themes--current-theme ()
   "Return first enabled Ef theme."
@@ -535,10 +534,6 @@ overrides."
     (if (eq action 'metadata)
         `(metadata (category . ,category))
       (complete-with-action action candidates string pred))))
-
-(defun ef-themes--ef-p (theme)
-  "Return non-nil if THEME name has an ef- prefix."
-  (string-prefix-p "ef-" (symbol-name theme)))
 
 (defvar ef-themes--select-theme-history nil
   "Minibuffer history of `ef-themes--select-prompt'.")
@@ -983,6 +978,7 @@ text should not be underlined as well) yet still blend in."
     `(escape-glyph ((,c :foreground ,warning)))
     `(fringe ((,c :background ,bg-fringe :foreground ,fg-fringe)))
     `(header-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-dim)))
+    `(header-line-inactive ((,c :inherit (ef-themes-ui-variable-pitch shadow))))
     `(header-line-highlight ((,c :inherit highlight)))
     `(help-argument-name ((,c :foreground ,accent-0)))
     `(help-key-binding ((,c :inherit (bold ef-themes-fixed-pitch) :foreground ,keybind)))
@@ -1657,7 +1653,7 @@ text should not be underlined as well) yet still blend in."
     `(gnus-summary-low-ticked ((,c :inherit italic :foreground ,err)))
     `(gnus-summary-low-undownloaded ((,c :inherit italic :foreground ,warning)))
     `(gnus-summary-low-unread ((,c :inherit italic)))
-    `(gnus-summary-normal-ancient (( )))
+    `(gnus-summary-normal-ancient ((,c :foreground ,fg-dim)))
     `(gnus-summary-normal-read ((,c :inherit shadow)))
     `(gnus-summary-normal-ticked ((,c :foreground ,err)))
     `(gnus-summary-normal-undownloaded ((,c :foreground ,warning)))
@@ -2215,6 +2211,8 @@ text should not be underlined as well) yet still blend in."
 ;;;; package (M-x list-packages)
     `(package-description ((,c :foreground ,docstring)))
     `(package-help-section-name ((,c :inherit bold)))
+    `(package-mark-delete-line ((,c :inherit ef-themes-mark-delete)))
+    `(package-mark-install-line ((,c :inherit ef-themes-mark-select)))
     `(package-name ((,c :inherit link)))
     `(package-status-available ((,c :foreground ,date-common)))
     `(package-status-avail-obso ((,c :inherit error)))
@@ -2348,6 +2346,8 @@ text should not be underlined as well) yet still blend in."
     `(smerge-refined-removed ((,c :inherit diff-refine-removed)))
     `(smerge-upper ((,c :inherit diff-removed)))
 ;;;; spacious-padding
+    `(spacious-padding-line-active ((,c :foreground ,accent-0)))
+    `(spacious-padding-line-inactive ((,c :foreground ,border)))
     `(spacious-padding-subtle-mode-line-active ((,c :foreground ,accent-0)))
     `(spacious-padding-subtle-mode-line-inactive ((,c :foreground ,border)))
 ;;;; tab-bar-mode
@@ -2355,6 +2355,7 @@ text should not be underlined as well) yet still blend in."
     `(tab-bar-tab-group-current ((,c :inherit bold :background ,bg-tab-current :box (:line-width -2 :color ,bg-tab-current) :foreground ,fg-alt)))
     `(tab-bar-tab-group-inactive ((,c :background ,bg-tab-bar :box (:line-width -2 :color ,bg-tab-bar) :foreground ,fg-alt)))
     `(tab-bar-tab ((,c :inherit bold :box (:line-width -2 :color ,bg-tab-current) :background ,bg-tab-current)))
+    `(tab-bar-tab-highlight ((,c :inherit highlight)))
     `(tab-bar-tab-inactive ((,c :box (:line-width -2 :color ,bg-tab-other) :background ,bg-tab-other)))
     `(tab-bar-tab-ungrouped ((,c :inherit tab-bar-tab-inactive)))
 ;;;; tab-line-mode
@@ -2394,6 +2395,14 @@ text should not be underlined as well) yet still blend in."
     `(tldr-description ((,c :inherit font-lock-doc-face)))
     `(tldr-introduction ((,c :inherit font-lock-comment-face)))
     `(tldr-title ((,c :inherit bold)))
+;;;; tmr
+    `(tmr-mode-line-active ((,c :inherit bold :foreground ,modeline-info)))
+    `(tmr-mode-line-soon ((,c :inherit bold :foreground ,modeline-warning)))
+    `(tmr-mode-line-urgent ((,c :inherit bold :foreground ,modeline-err)))
+    `(tmr-tabulated-description ((,c :foreground ,docstring)))
+    `(tmr-tabulated-end-time ((,c :foreground ,date-deadline)))
+    `(tmr-tabulated-remaining-time ((,c :foreground ,date-scheduled)))
+    `(tmr-tabulated-start-time ((,c :foreground ,date-common)))
 ;;;; transient
     `(transient-active-infix ((,c :background ,bg-active :foreground ,fg-intense)))
     `(transient-amaranth ((,c :inherit bold :foreground ,yellow-warmer)))
