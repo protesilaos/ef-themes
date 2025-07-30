@@ -1735,6 +1735,7 @@ text should not be underlined as well) yet still blend in."
 ;;;; info
     `(Info-quoted ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-verbatim))) ; the capitalization is canonical
     `(info-header-node ((,c :inherit (shadow bold))))
+    `(info-header-xref ((,c :foreground ,link)))
     `(info-index-match ((,c :inherit match)))
     `(info-menu-header ((,c :inherit bold)))
     `(info-menu-star ((,c :foreground ,red)))
