@@ -698,13 +698,16 @@ respectively.  Else check against the return value of
     (delete (ef-themes--current-theme) themes)))
 
 ;;;###autoload
-(defun ef-themes-load-random (&optional variant)
+(defun ef-themes-load-random (&optional variant silent)
   "Load an Ef theme at random, excluding the current one.
 
 With optional VARIANT as a prefix argument, prompt to limit the
 set of themes to either dark or light variants.
 
 Run `ef-themes-post-load-hook' after loading the theme.
+
+Print the name of the new theme, unless optional argument SILENT is
+non-nil.
 
 When called from Lisp, VARIANT is either the `dark' or `light'
 symbol."
@@ -714,7 +717,8 @@ symbol."
          (pick (nth n themes))
          (loaded (if (null pick) (car themes) pick)))
     (ef-themes-load-theme loaded)
-    (message "Loaded `%s'" loaded)))
+    (unless silent
+      (message "Loaded `%s'" loaded))))
 
 ;;;; Rotate through a list of themes
 
