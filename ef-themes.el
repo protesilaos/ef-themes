@@ -698,13 +698,16 @@ respectively.  Else check against the return value of
     (delete (ef-themes--current-theme) themes)))
 
 ;;;###autoload
-(defun ef-themes-load-random (&optional variant)
+(defun ef-themes-load-random (&optional variant silent)
   "Load an Ef theme at random, excluding the current one.
 
 With optional VARIANT as a prefix argument, prompt to limit the
 set of themes to either dark or light variants.
 
 Run `ef-themes-post-load-hook' after loading the theme.
+
+Print the name of the new theme, unless optional argument SILENT is
+non-nil.
 
 When called from Lisp, VARIANT is either the `dark' or `light'
 symbol."
@@ -714,7 +717,8 @@ symbol."
          (pick (nth n themes))
          (loaded (if (null pick) (car themes) pick)))
     (ef-themes-load-theme loaded)
-    (message "Loaded `%s'" loaded)))
+    (unless silent
+      (message "Loaded `%s'" loaded))))
 
 ;;;; Rotate through a list of themes
 
@@ -735,20 +739,24 @@ symbol."
     (error "Cannot determine a theme among `%s'" themes)))
 
 ;;;###autoload
-(defun ef-themes-rotate (themes)
+(defun ef-themes-rotate (themes &optional silent)
   "Rotate to the next theme among THEMES.
 When called interactively THEMES is the value of `ef-themes-to-rotate'.
 
 If the current theme is already the next in line, then move to the one
 after.  Perform the rotation rightwards, such that the first element in
-the list becomes the last.  Do not modify THEMES in the process."
+the list becomes the last.  Do not modify THEMES in the process.
+
+Print the name of the new theme, unless optional argument SILENT is
+non-nil."
   (interactive (list ef-themes-to-rotate))
   (unless (proper-list-p themes)
     "This is not a list of themes: `%s'" themes)
   (let ((candidate (ef-themes--rotate-p themes)))
     (if (ef-themes--ef-p candidate)
         (progn
-          (message "Rotating to `%s'" (propertize (symbol-name candidate) 'face 'success))
+          (unless silent
+            (message "Rotating to `%s'" (propertize (symbol-name candidate) 'face 'success)))
           (ef-themes-load-theme candidate))
       (user-error "`%s' is not part of the Ef collection" candidate))))
 
