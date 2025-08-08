@@ -1812,7 +1812,7 @@ matters.
 + Contributions to code or the manual :: Alex Lu, Christopher League,
   Eshel Yaron, Gautier Ponsinet, John Haman, Kevin Fleming, Oleksii
   (Alex) Koval, Leilei332, Pedro Cunha, Philip Kaludercic, Ryan
-  Kaskel, Walheimat.
+  Kaskel, Sean Devlin, Walheimat.
 
 + Ideas and/or user feedback :: Adam Porter (alphapapa), Alan Schmitt,
   Amo DelBello, Anthony Chavez, Benjamin (zealotrush), Bruno Boal,
