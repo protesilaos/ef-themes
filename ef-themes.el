@@ -1946,12 +1946,20 @@ text should not be underlined as well) yet still blend in."
     `(message-mml ((,c :foreground ,mail-part)))
     `(message-separator ((,c :background ,bg-dim :foreground ,fg-main)))
 ;;;; mode-line
-    `(mode-line ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)))
+    `(mode-line
+      ((default :inherit ef-themes-ui-variable-pitch :background ,bg-mode-line :foreground ,fg-mode-line)
+       (((supports :box t))
+        :box ,border)
+       (t :underline ,border)))
     `(mode-line-active ((,c :inherit mode-line)))
     `(mode-line-buffer-id ((,c :inherit bold)))
     `(mode-line-emphasis ((,c :inherit bold :foreground ,modeline-info)))
     `(mode-line-highlight ((,c :inherit highlight)))
-    `(mode-line-inactive ((,c :inherit ef-themes-ui-variable-pitch :background ,bg-alt :foreground ,fg-dim)))
+    `(mode-line-inactive
+      ((default :inherit ef-themes-ui-variable-pitch :background ,bg-alt :foreground ,fg-dim)
+       (((supports :box t))
+        :box ,border)
+       (t :underline ,border)))
 ;;;; mood-line
     `(mood-line-modified ((,c :inherit italic)))
     `(mood-line-status-error ((,c :inherit error)))
