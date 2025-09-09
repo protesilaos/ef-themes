@@ -1144,7 +1144,10 @@ text should not be underlined as well) yet still blend in."
     `(bookmark-menu-bookmark ((,c :inherit bold)))
 ;;;; calendar and diary
     `(calendar-month-header ((,c :inherit bold)))
-    `(calendar-today ((,c :inherit bold :underline t)))
+    `(calendar-today
+      ((default :foreground ,date-common :inverse-video t)
+       (((supports :box t))
+        :box (:line-width (-1 . -1) :color ,fg-main))))
     `(calendar-weekday-header ((,c :foreground ,date-weekday)))
     `(calendar-weekend-header ((,c :foreground ,date-weekend)))
     `(diary ((,c :foreground ,date-common)))
