@@ -2149,7 +2149,7 @@ text should not be underlined as well) yet still blend in."
     `(org-column ((,c :inherit default :background ,bg-alt)))
     `(org-column-title ((,c :inherit (ef-themes-fixed-pitch bold default) :underline t :background ,bg-alt)))
     `(org-date ((,c :inherit ef-themes-fixed-pitch :foreground ,date-common)))
-    `(org-date-selected ((,c :foreground ,date-common :inverse-video t)))
+    `(org-date-selected ((,c :inherit calendar-today)))
     `(org-dispatcher-highlight ((,c :inherit warning :background ,bg-warning)))
     `(org-document-info ((,c :foreground ,prose-metadata-value)))
     `(org-document-info-keyword ((,c :inherit ef-themes-fixed-pitch :foreground ,prose-metadata)))
