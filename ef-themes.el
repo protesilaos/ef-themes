@@ -1250,10 +1250,22 @@ text should not be underlined as well) yet still blend in."
 ;;;; csv-mode
     `(csv-separator-face ((,c :foreground ,err)))
 ;;;; custom (M-x customize)
-    `(custom-button ((,c :box (:color ,border :style released-button)
-                         :background ,bg-active :foreground ,fg-intense)))
-    `(custom-button-mouse ((,c :inherit (highlight custom-button))))
-    `(custom-button-pressed ((,c :inherit (secondary-selection custom-button))))
+    `(custom-button
+      ((default :inherit variable-pitch :background ,bg-active :foreground ,fg-intense)
+       (((supports :box t))
+        :box (:line-width 1 :color ,border :style released-button))
+       (t :underline ,border)))
+    `(custom-button-mouse
+      ((default :inherit variable-pitch :background ,bg-hover :foreground ,fg-intense)
+       (((supports :box t))
+        :box (:line-width 1 :color ,border :style released-button))
+       (t :underline ,border)))
+    `(custom-button-pressed
+      ((default :inherit variable-pitch :background ,bg-main :foreground ,fg-intense)
+       (((supports :box t))
+        :box (:line-width 1 :color ,border :style pressed-button))
+       (t :underline ,border)))
+
     `(custom-changed ((,c :background ,bg-changed)))
     `(custom-comment ((,c :inherit shadow)))
     `(custom-comment-tag ((,c :inherit (bold shadow))))
