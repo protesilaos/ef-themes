@@ -12,6 +12,91 @@ the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
 
+* Version 1.11.0 on 2025-09-25
+:PROPERTIES:
+:CUSTOM_ID: h:e402f5e0-4911-426e-9e77-e50ba01593f8
+:END:
+
+This version introduces minor refinements to a stable package.
+
+** Support for faces added to Emacs 31
+:PROPERTIES:
+:CUSTOM_ID: h:bc6a0cd6-d28c-44be-92b0-edee8fd10ec7
+:END:
+
+Emacs 31 is the current development target of Emacs. The new faces are
+~header-line-inactive~, ~package-mark-delete-face~, ~package-mark-install-face~,
+~minibuffer-nonselected~.
+
+** Mode lines are a bit easier to spot
+:PROPERTIES:
+:CUSTOM_ID: h:9a4f39cc-96c1-494d-966f-a8aaa0c99ac1
+:END:
+
+The active and inactive mode lines now have a subtle box/border around
+them on graphical Emacs. In non-graphical sessions, an underline is
+applied instead. This makes mode lines easier to stand out even when
+the buffer is showing a background that is of a similar colour to
+their own background.
+
+** The Custom interface buttons are more refined
+:PROPERTIES:
+:CUSTOM_ID: h:b56e656b-34d8-4124-8fa9-47c1697534ab
+:END:
+
+These are the buttons that appear in the Custom buffers that we reach
+through various means such as =M-x customize=. Like with the mode
+lines, they use a box/border around where possible, else fall back to
+an underline.
+
+** The current date in the =M-x calendar= always looks the same
+:PROPERTIES:
+:CUSTOM_ID: h:f8547b47-6b4e-4483-8596-c381bcf469b0
+:END:
+
+Before, it would look different if the Calendar was produced via =M-x
+calendar= as opposed to the Org date selection interface. This is
+because they apply different faces to the current date. Those are now
+reworked to look the same.
+
+** Notmuch message summary headers have clear dividers
+:PROPERTIES:
+:CUSTOM_ID: h:d07f2314-8b34-4cf7-a745-a362f5695a1e
+:END:
+
+In the Notmuch email client, the messages in a thread can be
+collapsed/minimised to just a heading. Those used to have only a
+subtle background, which would be enough to differentiate them from
+the body of the email but not from each other when all were collapsed.
+Now the themes add an overline to each heading, if supported by the
+underlying display engine (i.e. graphical Emacs), which should make it
+easier to spot them.
+
+** Links in the header line of Info buffers do not have an underline
+:PROPERTIES:
+:CUSTOM_ID: h:e79167ed-9fac-4bfb-96af-8558ea2d5594
+:END:
+
+This is because the header line has a distinct background already, so
+we want to avoid exaggerations.
+
+** The commands ~ef-themes-rotate~ and ~ef-themes-load-random~ can be silent
+:PROPERTIES:
+:CUSTOM_ID: h:3dc317e5-5e00-4528-8a2e-38c26940e0bc
+:END:
+
+They now accept an optional =SILENT= parameter that inhibits the
+message they otherwise print. Thanks to Sean Devlin for the
+contribution in pull request 59: <https://github.com/protesilaos/ef-themes/pull/59>.
+
+Note that any function can be silenced with something like this:
+
+#+begin_src emacs-lisp
+(defun my-wrapper-of-some-function ()
+  (let ((inhibit-message t))
+    (some-function)))
+#+end_src
+
 * Version 1.10.0 on 2025-04-29
 :PROPERTIES:
 :CUSTOM_ID: h:728b510a-3e93-433f-9c3c-582f716321f9
