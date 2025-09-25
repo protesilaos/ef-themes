@@ -41,7 +41,7 @@
 
 ;;; Code:
 
-
+
 
 (require 'seq)
 (eval-when-compile (require 'subr-x))
@@ -1250,6 +1250,19 @@ text should not be underlined as well) yet still blend in."
     `(corfu-quick2 ((,c :inherit bold :background ,bg-char-1)))
 ;;;; csv-mode
     `(csv-separator-face ((,c :foreground ,err)))
+;;; calfw
+    `(cfw:face-default-content ((,c :foreground ,fg-dim)))
+    `(cfw:face-today-title ((,c :foreground ,red-warmer :inherit bold :background ,bg-main)))
+    `(cfw:face-holiday ((,c :inherit bold :foreground ,fg-main)))
+    `(cfw:face-day-title ((,c :background ,bg-main)))
+    `(cfw:face-grid ((,c :background ,bg-main :foreground ,fg-main)))
+    `(cfw:face-default-day ((,c :background ,bg-main :foreground ,fg-main)))
+    `(cfw:face-toolbar ((,c :foreground ,fg-main :background ,bg-main)))
+    `(cfw:face-header ((,c :foreground ,fg-main :weight bold)))
+    `(cfw:face-select ((,c :background ,bg-active :weight bold)))
+    `(cfw:face-saturday ((,c :foreground ,fg-main :weight bold)))
+    `(cfw:face-toolbar ((,c :background ,bg-main :foreground ,fg-main)))
+    `(cfw:face-toolbar-button-off ((,c :foreground ,fg-dim :weight bold)))
 ;;;; custom (M-x customize)
     `(custom-button
       ((default :inherit variable-pitch :background ,bg-active :foreground ,fg-intense)
