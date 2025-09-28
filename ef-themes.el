@@ -157,6 +157,12 @@ further details)."
     (provide-theme theme)
     (load-theme theme t t)))
 
+;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
+;; we want to do it before each theme is loaded so that all commands
+;; work as intended.
+(dolist (theme ef-themes-items)
+  (add-to-list 'modus-themes-registered-items theme))
+
 ;;;; Add themes from package to path
 
 ;;;###autoload
