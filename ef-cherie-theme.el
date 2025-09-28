@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-cherie-palette
+  (defconst ef-cherie-palette
     (append ef-themes-common-palette-overrides ef-cherie-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark purple-black theme with warm colors (mostly pink, magenta, gold)."
     dark
     modus-vivendi-palette
-    ef-themes-cherie-palette
+    ef-cherie-palette
     ef-cherie-palette-overrides))
 
 ;;; ef-cherie-theme.el ends here

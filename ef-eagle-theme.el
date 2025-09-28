@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-eagle-palette
+  (defconst ef-eagle-palette
     (append ef-themes-common-palette-overrides ef-eagle-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light beige theme with brown, red, and desatured colors."
     light
     modus-operandi-palette
-    ef-themes-eagle-palette
+    ef-eagle-palette
     ef-eagle-palette-overrides))
 
 ;;; ef-eagle-theme.el ends here

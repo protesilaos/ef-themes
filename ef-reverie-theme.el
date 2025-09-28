@@ -215,7 +215,7 @@ further details)."
     :type '(repeat (list symbol (choice symbol string)))
     :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-reverie-palette
+  (defconst ef-reverie-palette
     (append ef-themes-common-palette-overrides ef-reverie-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light cream theme with gold and nuanced colors."
     light
     modus-operandi-palette
-    ef-themes-reverie-palette
+    ef-reverie-palette
     ef-reverie-palette-overrides))
 
 ;;; ef-reverie-theme.el ends here

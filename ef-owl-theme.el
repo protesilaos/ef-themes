@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-owl-palette
+  (defconst ef-owl-palette
     (append ef-themes-common-palette-overrides ef-owl-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark grey theme with blue, cyan, magenta and desaturated colors."
     BG
     MODUS-palette
-    ef-themes-owl-palette
+    ef-owl-palette
     ef-owl-palette-overrides))
 
 ;;; ef-owl-theme.el ends here

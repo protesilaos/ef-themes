@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-elea-dark-palette
+  (defconst ef-elea-dark-palette
     (append ef-themes-common-palette-overrides ef-elea-dark-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark green theme with brown, magenta, and green colors."
     dark
     modus-vivendi-palette
-    ef-themes-elea-dark-palette
+    ef-elea-dark-palette
     ef-elea-dark-palette-overrides))
 
 ;;; ef-elea-dark-theme.el ends here

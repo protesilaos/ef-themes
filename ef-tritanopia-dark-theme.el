@@ -218,7 +218,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-tritanopia-dark-palette
+  (defconst ef-tritanopia-dark-palette
     (append ef-themes-common-palette-overrides ef-tritanopia-dark-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -227,7 +227,7 @@ further details)."
     "Legible dark theme, optimized for blue-yellow color deficiency."
     dark
     modus-vivendi-tritanopia-palette
-    ef-themes-tritanopia-dark-palette
+    ef-tritanopia-dark-palette
     ef-tritanopia-dark-palette-overrides))
 
 ;;; ef-tritanopia-dark-theme.el ends here

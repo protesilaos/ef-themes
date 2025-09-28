@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-symbiosis-palette
+  (defconst ef-symbiosis-palette
     (append ef-themes-common-palette-overrides ef-symbiosis-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark brown-black theme with blue, green, cyan, gold colors."
     dark
     modus-vivendi-palette
-    ef-themes-symbiosis-palette
+    ef-symbiosis-palette
     ef-symbiosis-palette-overrides))
 
 ;;; ef-symbiosis-theme.el ends here

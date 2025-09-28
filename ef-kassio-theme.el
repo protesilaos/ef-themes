@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-kassio-palette
+  (defconst ef-kassio-palette
     (append ef-themes-common-palette-overrides ef-kassio-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light grey theme with blue, red, magenta, and earthly colors."
     light
     modus-operandi-palette
-    ef-themes-kassio-palette
+    ef-kassio-palette
     ef-kassio-palette-overrides))
 
 ;;; ef-kassio-theme.el ends here

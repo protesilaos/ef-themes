@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-dream-palette
+  (defconst ef-dream-palette
     (append ef-themes-common-palette-overrides ef-dream-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark purple grey theme with gold and nuanced colors."
     dark
     modus-vivendi-palette
-    ef-themes-dream-palette
+    ef-dream-palette
     ef-dream-palette-overrides))
 
 ;;; ef-dream-theme.el ends here

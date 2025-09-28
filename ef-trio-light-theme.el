@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-trio-light-palette
+  (defconst ef-trio-light-palette
     (append ef-themes-common-palette-overrides ef-trio-light-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light purple grey theme with magenta, blue, and teal colors."
     light
     modus-operandi-palette
-    ef-themes-trio-light-palette
+    ef-trio-light-palette
     ef-trio-light-palette-overrides))
 
 ;;; ef-trio-light-theme.el ends here

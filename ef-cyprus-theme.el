@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-cyprus-palette
+  (defconst ef-cyprus-palette
     (append ef-themes-common-palette-overrides ef-cyprus-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light ochre theme with green, yellow, teal, red colors."
     light
     modus-operandi-palette
-    ef-themes-cyprus-palette
+    ef-cyprus-palette
     ef-cyprus-palette-overrides))
 
 ;;; ef-cyprus-theme.el ends here

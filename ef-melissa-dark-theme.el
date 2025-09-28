@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-melissa-dark-palette
+  (defconst ef-melissa-dark-palette
     (append ef-themes-common-palette-overrides ef-melissa-dark-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark honeybee theme with warm colors (yellow, red, green, cyan)."
     dark
     modus-vivendi-palette
-    ef-themes-melissa-dark-palette
+    ef-melissa-dark-palette
     ef-melissa-dark-palette-overrides))
 
 ;;; ef-melissa-dark-theme.el ends here

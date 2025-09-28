@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-rosa-palette
+  (defconst ef-rosa-palette
     (append ef-themes-common-palette-overrides ef-rosa-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible dark rosewood theme with magenta and green colors."
     dark
     modus-vivendi-palette
-    ef-themes-rosa-palette
+    ef-rosa-palette
     ef-rosa-palette-overrides))
 
 ;;; ef-rosa-theme.el ends here

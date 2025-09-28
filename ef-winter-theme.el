@@ -214,7 +214,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-winter-palette
+  (defconst ef-winter-palette
     (append ef-themes-common-palette-overrides ef-winter-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -223,7 +223,7 @@ further details)."
     "Legible dark purple-black theme with magenta, purple, fawn, teal colors."
     dark
     modus-vivendi-palette
-    ef-themes-winter-palette
+    ef-winter-palette
     ef-winter-palette-overrides))
 
 ;;; ef-winter-theme.el ends here

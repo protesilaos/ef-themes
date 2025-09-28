@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-maris-light-palette
+  (defconst ef-maris-light-palette
     (append ef-themes-common-palette-overrides ef-maris-light-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light marine theme with blue, cyan, and green colors."
     light
     modus-operandi-palette
-    ef-themes-maris-light-palette
+    ef-maris-light-palette
     ef-maris-light-palette-overrides))
 
 ;;; ef-maris-light-theme.el ends here

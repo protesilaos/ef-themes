@@ -215,7 +215,7 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (defconst ef-themes-spring-palette
+  (defconst ef-spring-palette
     (append ef-themes-common-palette-overrides ef-spring-partial ef-themes-palette-common))
 
   (modus-themes-theme
@@ -224,7 +224,7 @@ further details)."
     "Legible light floral theme with cool, varied colors (green, cyan, red)."
     light
     modus-operandi-palette
-    ef-themes-spring-palette
+    ef-spring-palette
     ef-spring-palette-overrides))
 
 ;;; ef-spring-theme.el ends here
