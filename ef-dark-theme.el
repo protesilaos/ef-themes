@@ -36,137 +36,83 @@
 (eval-and-compile
   (require 'ef-themes)
 
-;;;###theme-autoload
-  (deftheme ef-dark
-    "Legible dark theme with blue, magenta, cyan, purple colors."
-    :background-mode 'dark
-    :kind 'color-scheme
-    :family 'ef)
-
-  (defconst ef-dark-palette
-    '(
-;;; Basic values
-
-      (bg-main     "#000000")
-      (fg-main     "#d0d0d0")
-      (bg-dim      "#1a1a1a")
-      (fg-dim      "#857f8f")
-      (bg-alt      "#2b2b2b")
-      (fg-alt      "#89afef")
-
-      (bg-active   "#4b4b4b")
+  (defconst ef-dark-partial
+    '((cursor "#ff76ff")
+      (bg-main "#000000")
+      (bg-dim "#1a1a1a")
+      (bg-alt "#2b2b2b")
+      (fg-main "#d0d0d0")
+      (fg-dim "#857f8f")
+      (fg-alt "#89afef")
+      (bg-active "#4b4b4b")
       (bg-inactive "#121212")
+      (border "#4f4f5f")
 
-;;; Basic hues for foreground values
+      (red "#ef6560")
+      (red-warmer "#f47360")
+      (red-cooler "#ff5a7a")
+      (red-faint "#d56f72")
+      (green "#0faa26")
+      (green-warmer "#6aad0f")
+      (green-cooler "#00a692")
+      (green-faint "#61a06c")
+      (yellow "#bf9032")
+      (yellow-warmer "#d1843f")
+      (yellow-cooler "#df8a5a")
+      (yellow-faint "#cf9f8f")
+      (blue "#3f95f6")
+      (blue-warmer "#6a9fff")
+      (blue-cooler "#029fff")
+      (blue-faint "#7a94df")
+      (magenta "#d369af")
+      (magenta-warmer "#e580ea")
+      (magenta-cooler "#af85ff")
+      (magenta-faint "#c58faf")
+      (cyan "#4fbaef")
+      (cyan-warmer "#6fafff")
+      (cyan-cooler "#1dbfcf")
+      (cyan-faint "#8aa0df")
 
-      (red             "#ef6560")
-      (red-warmer      "#f47360")
-      (red-cooler      "#ff5a7a")
-      (red-faint       "#d56f72")
-      (green           "#0faa26")
-      (green-warmer    "#6aad0f")
-      (green-cooler    "#00a692")
-      (green-faint     "#61a06c")
-      (yellow          "#bf9032")
-      (yellow-warmer   "#d1843f")
-      (yellow-cooler   "#df8a5a")
-      (yellow-faint    "#cf9f8f")
-      (blue            "#3f95f6")
-      (blue-warmer     "#6a9fff")
-      (blue-cooler     "#029fff")
-      (blue-faint      "#7a94df")
-      (magenta         "#d369af")
-      (magenta-warmer  "#e580ea")
-      (magenta-cooler  "#af85ff")
-      (magenta-faint   "#c58faf")
-      (cyan            "#4fbaef")
-      (cyan-warmer     "#6fafff")
-      (cyan-cooler     "#1dbfcf")
-      (cyan-faint      "#8aa0df")
-
-;;; Basic hues for background values
-
-      (bg-red-intense     "#b02930")
-      (bg-green-intense   "#337133")
-      (bg-yellow-intense  "#8f5040")
-      (bg-blue-intense    "#4648d0")
+      (bg-red-intense "#b02930")
+      (bg-green-intense "#337133")
+      (bg-yellow-intense "#8f5040")
+      (bg-blue-intense "#4648d0")
       (bg-magenta-intense "#804fdd")
-      (bg-cyan-intense    "#2270cf")
+      (bg-cyan-intense "#2270cf")
 
-      (bg-red-subtle      "#72002a")
-      (bg-green-subtle    "#00422a")
-      (bg-yellow-subtle   "#603000")
-      (bg-blue-subtle     "#2f2f74")
-      (bg-magenta-subtle  "#572060")
-      (bg-cyan-subtle     "#004065")
+      (bg-red-subtle "#72002a")
+      (bg-green-subtle "#00422a")
+      (bg-yellow-subtle "#603000")
+      (bg-blue-subtle "#2f2f74")
+      (bg-magenta-subtle "#572060")
+      (bg-cyan-subtle "#004065")
 
-;;; Diffs
+      (bg-added "#00381f")
+      (bg-added-faint "#002910")
+      (bg-added-refine "#034f2f")
+      (fg-added "#a0e0a0")
 
-      (bg-added          "#00381f")
-      (bg-added-faint    "#002910")
-      (bg-added-refine   "#034f2f")
-      (fg-added          "#a0e0a0")
-
-      (bg-changed        "#363300")
-      (bg-changed-faint  "#2a1f00")
+      (bg-changed "#363300")
+      (bg-changed-faint "#2a1f00")
       (bg-changed-refine "#4a4a00")
-      (fg-changed        "#efef80")
+      (fg-changed "#efef80")
 
-      (bg-removed        "#4f1119")
-      (bg-removed-faint  "#380a0f")
+      (bg-removed "#4f1119")
+      (bg-removed-faint "#380a0f")
       (bg-removed-refine "#781a1f")
-      (fg-removed        "#ffbfbf")
+      (fg-removed "#ffbfbf")
 
-;;; Graphs
-
-      (bg-graph-red-0     "#b52c2c")
-      (bg-graph-red-1     "#702020")
-      (bg-graph-green-0   "#0fed00")
-      (bg-graph-green-1   "#007800")
-      (bg-graph-yellow-0  "#f1e00a")
-      (bg-graph-yellow-1  "#b08940")
-      (bg-graph-blue-0    "#2fafef")
-      (bg-graph-blue-1    "#1f2f8f")
-      (bg-graph-magenta-0 "#bf94fe")
-      (bg-graph-magenta-1 "#5f509f")
-      (bg-graph-cyan-0    "#47dfea")
-      (bg-graph-cyan-1    "#00808f")
-
-;;; Special hues
-
-      (bg-mode-line       "#2a2a75")
-      (fg-mode-line       "#e0e0ff")
-      (bg-completion      "#0f2d4a")
-      (bg-hover           "#004a5f")
+      (bg-mode-line-active "#2a2a75")
+      (fg-mode-line-active "#e0e0ff")
+      (bg-completion "#0f2d4a")
+      (bg-hover "#004a5f")
       (bg-hover-secondary "#551f5a")
-      (bg-hl-line         "#002435")
-      (bg-paren           "#20577a")
-      (bg-err             "#461210") ; check with err
-      (bg-warning         "#3a3004") ; check with warning
-      (bg-info            "#10350a") ; check with info
-
-      (border        "#4f4f5f")
-      (cursor        "#ff76ff")
-      (fg-intense    "#ffffff")
-
-      (modeline-err     "#ff80af")
-      (modeline-warning "#dfcf33")
-      (modeline-info    "#2fc82f")
-
-      (underline-err     "#df2f2f")
-      (underline-warning "#c0b000")
-      (underline-info    "#22b022")
-
-      (bg-char-0 "#0050af")
-      (bg-char-1 "#7f1f7f")
-      (bg-char-2 "#625a00")
-
-;;; Mappings
-
-;;;; General mappings
-
-      (bg-fringe unspecified)
-      (fg-fringe unspecified)
+      (bg-hl-line "#002435")
+      (bg-paren-match "#20577a")
+      (bg-region "#2a234a")
+      (bg-err "#461210") ; check with err
+      (bg-warning "#3a3004") ; check with warning
+      (bg-info "#10350a") ; check with info
 
       (err red-warmer)
       (warning yellow)
@@ -178,12 +124,7 @@
       (keybind blue-cooler)
       (identifier magenta-faint)
       (prompt green-cooler)
-
-      (bg-region "#2a234a")
-      (fg-region unspecified)
-
-;;;; Code mappings
-
+      
       (builtin magenta)
       (comment yellow-faint)
       (constant blue-cooler)
@@ -197,14 +138,10 @@
       (rx-escape green-warmer) ; compare with `string'
       (rx-construct red)
 
-;;;; Accent mappings
-
       (accent-0 blue)
       (accent-1 magenta-warmer)
       (accent-2 green-cooler)
       (accent-3 red)
-
-;;;; Date mappings
 
       (date-common green-cooler)
       (date-deadline red-warmer)
@@ -218,8 +155,6 @@
       (date-weekday cyan)
       (date-weekend red-faint)
 
-;;;; Prose mappings
-
       (prose-code magenta-warmer)
       (prose-done green)
       (prose-macro green-cooler)
@@ -231,8 +166,6 @@
       (prose-todo red-warmer)
       (prose-verbatim blue)
 
-;;;; Mail mappings
-
       (mail-cite-0 blue)
       (mail-cite-1 magenta-warmer)
       (mail-cite-2 green-cooler)
@@ -241,8 +174,6 @@
       (mail-recipient blue-warmer)
       (mail-subject blue-cooler)
       (mail-other cyan)
-
-;;;; Search mappings
 
       (bg-search-match bg-warning)
       (bg-search-current bg-yellow-intense)
@@ -254,61 +185,7 @@
       (bg-search-rx-group-2 bg-red-subtle)
       (bg-search-rx-group-3 bg-cyan-subtle)
 
-;;;; Space mappings
-
-      (bg-space unspecified)
-      (fg-space border)
       (bg-space-err bg-yellow-intense)
-
-;;;; Tab mappings
-
-      (bg-tab-bar      bg-alt)
-      (bg-tab-current  bg-main)
-      (bg-tab-other    bg-active)
-
-;;;; Terminal mappings
-
-      (bg-term-black           "black")
-      (fg-term-black           "black")
-      (bg-term-black-bright    "gray35")
-      (fg-term-black-bright    "gray35")
-
-      (bg-term-red             red)
-      (fg-term-red             red)
-      (bg-term-red-bright      red-warmer)
-      (fg-term-red-bright      red-warmer)
-
-      (bg-term-green           green)
-      (fg-term-green           green)
-      (bg-term-green-bright    green-warmer)
-      (fg-term-green-bright    green-warmer)
-
-      (bg-term-yellow          yellow)
-      (fg-term-yellow          yellow)
-      (bg-term-yellow-bright   yellow-cooler)
-      (fg-term-yellow-bright   yellow-cooler)
-
-      (bg-term-blue            blue)
-      (fg-term-blue            blue)
-      (bg-term-blue-bright     blue-cooler)
-      (fg-term-blue-bright     blue-cooler)
-
-      (bg-term-magenta         magenta)
-      (fg-term-magenta         magenta)
-      (bg-term-magenta-bright  magenta-cooler)
-      (fg-term-magenta-bright  magenta-cooler)
-
-      (bg-term-cyan            cyan-warmer)
-      (fg-term-cyan            cyan-warmer)
-      (bg-term-cyan-bright     cyan-cooler)
-      (fg-term-cyan-bright     cyan-cooler)
-
-      (bg-term-white           "gray65")
-      (fg-term-white           "gray65")
-      (bg-term-white-bright    "white")
-      (fg-term-white-bright    "white")
-
-;;;; Rainbow mappings
 
       (rainbow-0 green-cooler)
       (rainbow-1 blue)
@@ -319,13 +196,7 @@
       (rainbow-6 red-cooler)
       (rainbow-7 green-warmer)
       (rainbow-8 yellow))
-    "The `ef-dark' palette.
-Color values have the form (COLOR-NAME HEX-VALUE) with the former
-as a symbol and the latter as a string.
-
-Semantic color mappings have the form (MAPPING-NAME COLOR-NAME)
-with both as symbols.  The latter is a color that already exists
-in the palette and is associated with a HEX-VALUE.")
+    "Legible dark theme with blue, magenta, cyan, purple colors.")
 
   (defcustom ef-dark-palette-overrides nil
     "Overrides for `ef-dark-palette'.
@@ -344,8 +215,16 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-  (ef-themes-theme ef-dark ef-dark-palette ef-dark-palette-overrides)
+  (defconst ef-themes-dark-palette
+    (append ef-themes-common-palette-overrides ef-dark-partial ef-themes-palette-common))
 
-  (provide-theme 'ef-dark))
+  (modus-themes-theme
+    ef-dark
+    ef-themes
+    "Legible dark theme with blue, magenta, cyan, purple colors."
+    dark
+    modus-vivendi-palette
+    ef-themes-dark-palette
+    ef-themes-dark-palette-overrides))
 
 ;;; ef-dark-theme.el ends here
