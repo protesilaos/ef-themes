@@ -106,7 +106,8 @@
   "Symbols of all the Ef themes.")
 
 (defconst ef-themes-palette-common
-  '((bg-line-number-active unspecified)
+  '((bg-diff-context bg-dim)
+    (bg-line-number-active unspecified)
     (bg-line-number-inactive unspecified)
     (bg-mode-line-inactive bg-alt)
     (bg-space unspecified)
