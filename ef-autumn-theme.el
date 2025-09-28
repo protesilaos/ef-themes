@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-autumn-palette
-    ef-themes-autumn-palette-overrides))
+    ef-autumn-palette-overrides))
 
 ;;; ef-autumn-theme.el ends here

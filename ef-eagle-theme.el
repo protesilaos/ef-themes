@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-eagle-palette
-    ef-themes-eagle-palette-overrides))
+    ef-eagle-palette-overrides))
 
 ;;; ef-eagle-theme.el ends here

@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-bio-palette
-    ef-themes-bio-palette-overrides))
+    ef-bio-palette-overrides))
 
 ;;; ef-bio-theme.el ends here

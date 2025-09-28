@@ -228,6 +228,6 @@ further details)."
     dark
     modus-vivendi-deuteranopia-palette
     ef-themes-deuteranopia-dark-palette
-    ef-themes-deuteranopia-dark-palette-overrides))
+    ef-deuteranopia-dark-palette-overrides))
 
 ;;; ef-deuteranopia-dark-theme.el ends here

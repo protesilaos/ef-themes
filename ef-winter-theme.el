@@ -224,6 +224,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-winter-palette
-    ef-themes-winter-palette-overrides))
+    ef-winter-palette-overrides))
 
 ;;; ef-winter-theme.el ends here

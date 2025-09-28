@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-trio-light-palette
-    ef-themes-trio-light-palette-overrides))
+    ef-trio-light-palette-overrides))
 
 ;;; ef-trio-light-theme.el ends here

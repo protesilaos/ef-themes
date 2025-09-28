@@ -228,6 +228,6 @@ further details)."
     light
     modus-operandi-deuteranopia-palette
     ef-themes-deuteranopia-light-palette
-    ef-themes-deuteranopia-light-palette-overrides))
+    ef-deuteranopia-light-palette-overrides))
 
 ;;; ef-deuteranopia-light-theme.el ends here

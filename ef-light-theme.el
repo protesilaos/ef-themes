@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-light-palette
-    ef-themes-light-palette-overrides))
+    ef-light-palette-overrides))
 
 ;;; ef-light-theme.el ends here

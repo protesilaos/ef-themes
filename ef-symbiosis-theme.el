@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-symbiosis-palette
-    ef-themes-symbiosis-palette-overrides))
+    ef-symbiosis-palette-overrides))
 
 ;;; ef-symbiosis-theme.el ends here

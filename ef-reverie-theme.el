@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-reverie-palette
-    ef-themes-reverie-palette-overrides))
+    ef-reverie-palette-overrides))
 
 ;;; ef-reverie-theme.el ends here

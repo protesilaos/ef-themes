@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-trio-dark-palette
-    ef-themes-trio-dark-palette-overrides))
+    ef-trio-dark-palette-overrides))
 
 ;;; ef-trio-dark-theme.el ends here

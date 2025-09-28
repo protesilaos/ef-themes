@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-melissa-light-palette
-    ef-themes-melissa-light-palette-overrides))
+    ef-melissa-light-palette-overrides))
 
 ;;; ef-melissa-light-theme.el ends here

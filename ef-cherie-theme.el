@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-cherie-palette
-    ef-themes-cherie-palette-overrides))
+    ef-cherie-palette-overrides))
 
 ;;; ef-cherie-theme.el ends here

@@ -228,6 +228,6 @@ further details)."
     light
     modus-operandi-tritanopia-palette
     ef-themes-tritanopia-light-palette
-    ef-themes-tritanopia-light-palette-overrides))
+    ef-tritanopia-light-palette-overrides))
 
 ;;; ef-tritanopia-light-theme.el ends here

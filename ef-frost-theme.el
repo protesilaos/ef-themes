@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-frost-palette
-    ef-themes-frost-palette-overrides))
+    ef-frost-palette-overrides))
 
 ;;; ef-frost-theme.el ends here

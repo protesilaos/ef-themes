@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-cyprus-palette
-    ef-themes-cyprus-palette-overrides))
+    ef-cyprus-palette-overrides))
 
 ;;; ef-cyprus-theme.el ends here

@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-elea-light-palette
-    ef-themes-elea-light-palette-overrides))
+    ef-elea-light-palette-overrides))
 
 ;;; ef-elea-light-theme.el ends here

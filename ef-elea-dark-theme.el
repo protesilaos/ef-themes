@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-elea-dark-palette
-    ef-themes-elea-dark-palette-overrides))
+    ef-elea-dark-palette-overrides))
 
 ;;; ef-elea-dark-theme.el ends here

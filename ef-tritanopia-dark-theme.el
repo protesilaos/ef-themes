@@ -228,6 +228,6 @@ further details)."
     dark
     modus-vivendi-tritanopia-palette
     ef-themes-tritanopia-dark-palette
-    ef-themes-tritanopia-dark-palette-overrides))
+    ef-tritanopia-dark-palette-overrides))
 
 ;;; ef-tritanopia-dark-theme.el ends here

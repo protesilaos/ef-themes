@@ -224,6 +224,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-summer-palette
-    ef-themes-summer-palette-overrides))
+    ef-summer-palette-overrides))
 
 ;;; ef-summer-theme.el ends here

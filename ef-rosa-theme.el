@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-rosa-palette
-    ef-themes-rosa-palette-overrides))
+    ef-rosa-palette-overrides))
 
 ;;; ef-rosa-theme.el ends here

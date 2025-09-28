@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-maris-dark-palette
-    ef-themes-maris-dark-palette-overrides))
+    ef-maris-dark-palette-overrides))
 
 ;;; ef-maris-dark-theme.el ends here

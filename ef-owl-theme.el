@@ -225,6 +225,6 @@ further details)."
     BG
     MODUS-palette
     ef-themes-owl-palette
-    ef-themes-owl-palette-overrides))
+    ef-owl-palette-overrides))
 
 ;;; ef-owl-theme.el ends here

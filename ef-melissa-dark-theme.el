@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-melissa-dark-palette
-    ef-themes-melissa-dark-palette-overrides))
+    ef-melissa-dark-palette-overrides))
 
 ;;; ef-melissa-dark-theme.el ends here

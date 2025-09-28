@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-maris-light-palette
-    ef-themes-maris-light-palette-overrides))
+    ef-maris-light-palette-overrides))
 
 ;;; ef-maris-light-theme.el ends here

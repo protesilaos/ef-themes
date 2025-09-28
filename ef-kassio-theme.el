@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-kassio-palette
-    ef-themes-kassio-palette-overrides))
+    ef-kassio-palette-overrides))
 
 ;;; ef-kassio-theme.el ends here

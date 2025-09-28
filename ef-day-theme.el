@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-day-palette
-    ef-themes-day-palette-overrides))
+    ef-day-palette-overrides))
 
 ;;; ef-day-theme.el ends here

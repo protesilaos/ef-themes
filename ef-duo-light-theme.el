@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-duo-light-palette
-    ef-themes-duo-light-palette-overrides))
+    ef-duo-light-palette-overrides))
 
 ;;; ef-duo-light-theme.el ends here

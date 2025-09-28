@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-dream-palette
-    ef-themes-dream-palette-overrides))
+    ef-dream-palette-overrides))
 
 ;;; ef-dream-theme.el ends here

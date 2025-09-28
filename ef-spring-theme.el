@@ -225,6 +225,6 @@ further details)."
     light
     modus-operandi-palette
     ef-themes-spring-palette
-    ef-themes-spring-palette-overrides))
+    ef-spring-palette-overrides))
 
 ;;; ef-spring-theme.el ends here

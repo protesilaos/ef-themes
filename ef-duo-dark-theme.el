@@ -225,6 +225,6 @@ further details)."
     dark
     modus-vivendi-palette
     ef-themes-duo-dark-palette
-    ef-themes-duo-dark-palette-overrides))
+    ef-duo-dark-palette-overrides))
 
 ;;; ef-duo-dark-theme.el ends here
