@@ -47,6 +47,12 @@
 (require 'modus-themes)
 (eval-when-compile (require 'subr-x))
 
+;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
+;; we want to do it before each theme is loaded so that all commands
+;; work as intended.
+(dolist (theme ef-themes-items)
+  (add-to-list 'modus-themes-registered-items theme))
+
 (defgroup ef-themes ()
   "Colorful and legible themes."
   :group 'faces
@@ -152,11 +158,6 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
-;; we want to do it before each theme is loaded so that all commands
-;; work as intended.
-(dolist (theme ef-themes-items)
-  (add-to-list 'modus-themes-registered-items theme))
 
 ;;;; Add themes from package to path
 
