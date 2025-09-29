@@ -140,6 +140,8 @@
 (defvaralias 'ef-themes-to-rotate 'modus-themes-to-rotate "2.0.0")
 (defvaralias 'ef-themes-to-toggle 'modus-themes-to-toggle "2.0.0")
 (defvaralias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui "2.0.0")
+(defvaralias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook)
+(defvaralias 'ef-themes-post-load-hook 'modus-themes-post-load-hook)
 
 ;;;; User options
 
@@ -171,25 +173,6 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-(defvaralias 'ef-themes-after-load-theme-hook 'ef-themes-post-load-hook
-  "Alias for `ef-themes-post-load-hook'.")
-
-(defcustom ef-themes-post-load-hook nil
-  "Hook that runs after loading an Ef theme.
-This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
-`ef-themes-load-random', `ef-themes-select', as well as the function
-`ef-themes-load-theme'."
-  :type 'hook
-  :package-version '(ef-themes . "0.2.0")
-  :group 'ef-themes)
-
-;;;; Helper functions
-
-(defun ef-themes-load-theme (theme)
-  "Call `modus-themes-load-theme' for THEME.
-Use the `ef-themes-after-load-theme-hook' with it."
-  (modus-themes-load-theme theme 'ef-themes-after-load-theme-hook))
-
 ;;;; Commands
 
 ;;;###autoload
@@ -208,7 +191,7 @@ Run `ef-themes-after-load-theme-hook' after loading a theme."
   (if-let* ((theme (modus-themes-load-random-subr background-mode 'ef-themes)))
       (progn
         (message "Loading `%s'" theme)
-        (ef-themes-load-theme theme))
+        (modus-themes-load-theme theme))
     (error "Could not find a theme to load at random")))
 
 ;;;###autoload
@@ -239,7 +222,7 @@ Disable other themes per `ef-themes-disable-other-themes'."
      "Select Ef theme"
      (modus-themes-get-all-known-themes 'ef-themes)
      'ef-themes-select-history)))
-  (ef-themes-load-theme theme))
+  (modus-themes-load-theme theme))
 
 ;;;; Add themes from package to path
 
