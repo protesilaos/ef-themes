@@ -47,22 +47,7 @@
 (require 'modus-themes)
 (eval-when-compile (require 'subr-x))
 
-;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
-;; we want to do it before each theme is loaded so that all commands
-;; work as intended.
-(dolist (theme ef-themes-items)
-  (add-to-list 'modus-themes-registered-items theme))
-
-(defgroup ef-themes ()
-  "Colorful and legible themes."
-  :group 'faces
-  :link '(info-link "(ef-themes) Top")
-  :link '(url-link :tag "Homepage" "https://protesilaos.com/emacs/ef-themes")
-  :link '(url-link :tag "Sample pictures" "https://protesilaos.com/emacs/ef-themes-pictures")
-  :prefix "ef-themes-"
-  :tag "Ef Themes")
-
-;;; User options
+;;;; Basics for building on top of Modus
 
 (defconst ef-themes-light-themes
   '(ef-arbutus
@@ -110,6 +95,12 @@
 (defconst ef-themes-items
   (append ef-themes-light-themes ef-themes-dark-themes)
   "Symbols of all the Ef themes.")
+
+;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
+;; we want to do it before each theme is loaded so that all commands
+;; work as intended.
+(dolist (theme ef-themes-items)
+  (add-to-list 'modus-themes-registered-items theme))
 
 (defconst ef-themes-palette-common
   '((bg-diff-context bg-dim)
