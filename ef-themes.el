@@ -237,13 +237,13 @@ further details)."
 ;;;; Limit the Modus themes to only Ef themes
 
 ;;;###autoload
-(define-minor-mode ef-themes-only-modus-derivatives-mode
+(define-minor-mode ef-themes-take-over-modus-themes-mode
   "When enabled, all Modus themes commands consider only Ef themes."
   :global t
   :init-value nil)
 
-(cl-defmethod modus-themes-get-themes (&context (ef-themes-only-modus-derivatives-mode (eql t)))
-  (modus-themes-get-all-known-themes 'ef-themes))`
+(cl-defmethod modus-themes-get-themes (&context (ef-themes-take-over-modus-themes-mode (eql t)))
+  (modus-themes-get-all-known-themes 'ef-themes))
 
 ;;;; Add themes from package to path
 
