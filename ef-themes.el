@@ -158,6 +158,18 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
+(defvaralias 'ef-themes-after-load-theme-hook 'ef-themes-post-load-hook
+  "Alias for `ef-themes-post-load-hook'.")
+
+(defcustom ef-themes-post-load-hook nil
+  "Hook that runs after loading an Ef theme.
+This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
+`ef-themes-load-random', `ef-themes-select', as well as the function
+`ef-themes-load-theme'."
+  :type 'hook
+  :package-version '(ef-themes . "0.2.0")
+  :group 'ef-themes)
+
 
 ;;;; Add themes from package to path
 
