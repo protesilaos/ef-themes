@@ -173,56 +173,19 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-;;;; Commands
+;;;; Limit the Modus themes to only Ef themes
 
 ;;;###autoload
-(defun ef-themes-load-random (&optional background-mode)
-  "Load an Ef theme at random, excluding the current one.
+(define-minor-mode ef-themes-only-modus-derivatives-mode
+  "When enabled, all Modus themes commands consider only Ef themes."
+  :global t
+  :init-value nil
+  (if ef-themes-only-modus-derivatives-mode
+      (modus-themes-only-modus-derivatives-mode -1)
+    (modus-themes-only-modus-derivatives-mode 1)))
 
-With optional BACKGROUND-MODE as a prefix argument, prompt to limit the
-set of themes to either dark or light variants.  When called from Lisp,
-BACKGROUND-MODE is either the `dark' or `light' symbol.
-
-Run `ef-themes-after-load-theme-hook' after loading a theme."
-  (interactive
-   (list
-    (when current-prefix-arg
-      (modus-themes-background-mode-prompt))))
-  (if-let* ((theme (modus-themes-load-random-subr background-mode 'ef-themes)))
-      (progn
-        (message "Loading `%s'" theme)
-        (modus-themes-load-theme theme))
-    (error "Could not find a theme to load at random")))
-
-;;;###autoload
-(defun ef-themes-load-random-dark ()
-  "Load a random dark theme."
-  (declare (interactive-only t))
-  (interactive)
-  (ef-themes-load-random 'dark))
-
-;;;###autoload
-(defun ef-themes-load-random-light ()
-  "Load a random light theme."
-  (declare (interactive-only t))
-  (interactive)
-  (ef-themes-load-random 'light))
-
-(defvar ef-themes-select-history nil
-  "Minibuffer history for `ef-themes-select'.")
-
-;;;###autoload
-(defun ef-themes-select (theme)
-  "Load a Ef THEME using minibuffer completion.
-Run `ef-themes-after-load-theme-hook' after loading the theme.
-Disable other themes per `ef-themes-disable-other-themes'."
-  (interactive
-   (list
-    (modus-themes-select-prompt
-     "Select Ef theme"
-     (modus-themes-get-all-known-themes 'ef-themes)
-     'ef-themes-select-history)))
-  (modus-themes-load-theme theme))
+(cl-defmethod modus-themes-get-themes (&context (ef-themes-only-modus-derivatives-mode (eql t)))
+  (modus-themes-get-all-known-themes 'ef-themes))
 
 ;;;; Add themes from package to path
 
