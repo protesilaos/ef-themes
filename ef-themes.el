@@ -130,6 +130,28 @@
     (fg-heading-8 rainbow-8))
   "Common palette mappings for the Ef themes.")
 
+;;;; Compatibility with older versions of the Ef themes
+
+(defalias 'ef-themes-rotate 'modus-themes-rotate "2.0.0")
+(defalias 'ef-themes-toggle 'modus-themes-toggle "2.0.0")
+(defvaralias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes "2.0.0")
+(defvaralias 'ef-themes-headings 'modus-themes-headings "2.0.0")
+(defvaralias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts "2.0.0")
+(defvaralias 'ef-themes-to-rotate 'modus-themes-to-rotate "2.0.0")
+(defvaralias 'ef-themes-to-toggle 'modus-themes-to-toggle "2.0.0")
+(defvaralias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui "2.0.0")
+
+;;;; User options
+
+(defgroup ef-themes ()
+  "Colorful and legible themes."
+  :group 'faces
+  :link '(info-link "(ef-themes) Top")
+  :link '(url-link :tag "Homepage" "https://protesilaos.com/emacs/ef-themes")
+  :link '(url-link :tag "Sample pictures" "https://protesilaos.com/emacs/ef-themes-pictures")
+  :prefix "ef-themes-"
+  :tag "Ef Themes")
+
 (defcustom ef-themes-common-palette-overrides nil
   "Set palette overrides for all the Ef themes.
 
