@@ -195,6 +195,9 @@
 (define-obsolete-variable-alias 'ef-themes-to-toggle 'modus-themes-to-toggle
   "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
+(define-obsolete-variable-alias 'ef-themes-common-palette-overrides 'modus-themes-common-palette-overrides
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+
 (define-obsolete-variable-alias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui
   "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
@@ -203,36 +206,6 @@
 
 (define-obsolete-variable-alias 'ef-themes-post-load-hook 'modus-themes-post-load-hook
   "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
-
-;;;; User options
-
-(defgroup ef-themes ()
-  "Colorful and legible themes."
-  :group 'faces
-  :link '(info-link "(ef-themes) Top")
-  :link '(url-link :tag "Homepage" "https://protesilaos.com/emacs/ef-themes")
-  :link '(url-link :tag "Sample pictures" "https://protesilaos.com/emacs/ef-themes-pictures")
-  :prefix "ef-themes-"
-  :tag "Ef Themes")
-
-(defcustom ef-themes-common-palette-overrides nil
-  "Set palette overrides for all the Ef themes.
-
-Mirror the elements of a theme's palette, overriding their value.
-The palette variables are named THEME-NAME-palette, while
-individual theme overrides are THEME-NAME-palette-overrides.  The
-THEME-NAME is one of the symbols in `ef-themes-collection'.
-
-Individual theme overrides take precedence over these common
-overrides.
-
-To preview the palette entries, use `ef-themes-preview-colors' or
-`ef-themes-preview-colors-current' (read the documentation for
-further details)."
-  :group 'ef-themes
-  :package-version '(ef-themes . "1.0.0")
-  :type '(repeat (list symbol (choice symbol string)))
-  :link '(info-link "(ef-themes) Palette overrides"))
 
 ;;;; Limit the Modus themes to only Ef themes
 
