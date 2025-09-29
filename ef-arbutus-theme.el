@@ -220,7 +220,7 @@ further details)."
 
   (modus-themes-theme
     ef-arbutus
-    modus-themes
+    ef-themes
     "Legible light pink theme with red and green colors."
     light
     modus-operandi-palette
