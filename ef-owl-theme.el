@@ -222,8 +222,8 @@ further details)."
     ef-owl
     ef-themes
     "Legible dark grey theme with blue, cyan, magenta and desaturated colors."
-    BG
-    MODUS-palette
+    dark
+    modus-vivendi-palette
     ef-owl-palette
     ef-owl-palette-overrides))
 
