@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-arbutus-palette
-    (append ef-themes-common-palette-overrides ef-arbutus-palette ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-arbutus-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-arbutus
