@@ -96,11 +96,53 @@
   (append ef-themes-light-themes ef-themes-dark-themes)
   "Symbols of all the Ef themes.")
 
-;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
-;; we want to do it before each theme is loaded so that all commands
-;; work as intended.
-(dolist (theme ef-themes-items)
-  (add-to-list 'modus-themes-registered-items theme))
+(defconst ef-themes-with-properties
+  '((ef-arbutus ef-themes "Legible light pink theme with red and green colors." light modus-operandi-palette ef-arbutus-palette ef-arbutus-palette-overrides)
+    (ef-autumn ef-themes "Legible dark brown-black theme with warm colors (red, yellow, green, teal)." dark modus-vivendi-palette ef-autumn-palette ef-autumn-palette-overrides)
+    (ef-bio ef-themes "Legible dark green-black theme with green, teal, blue, purple colors." dark modus-vivendi-palette ef-bio-palette ef-bio-palette-overrides)
+    (ef-cherie ef-themes "Legible dark purple-black theme with warm colors (mostly pink, magenta, gold)." dark modus-vivendi-palette ef-cherie-palette ef-cherie-palette-overrides)
+    (ef-cyprus ef-themes "Legible light ochre theme with green, yellow, teal, red colors." light modus-operandi-palette ef-cyprus-palette ef-cyprus-palette-overrides)
+    (ef-dark ef-themes "Legible dark theme with blue, magenta, cyan, purple colors." dark modus-vivendi-palette ef-dark-palette ef-dark-palette-overrides)
+    (ef-day ef-themes "Legible light sandy theme with warm, varied colors (yellow, red, green, purple)." light modus-operandi-palette ef-day-palette ef-day-palette-overrides)
+    (ef-deuteranopia-dark ef-themes "Legible dark theme, optimized for red-green color deficiency." dark modus-vivendi-deuteranopia-palette ef-deuteranopia-dark-palette ef-deuteranopia-dark-palette-overrides)
+    (ef-deuteranopia-light ef-themes "Legible light theme, optimized for red-green color deficiency." light modus-operandi-deuteranopia-palette ef-deuteranopia-light-palette ef-deuteranopia-light-palette-overrides)
+    (ef-dream ef-themes "Legible dark purple grey theme with gold and nuanced colors." dark modus-vivendi-palette ef-dream-palette ef-dream-palette-overrides)
+    (ef-duo-dark ef-themes "Legible dark theme with mostly blue and orange colors." dark modus-vivendi-palette ef-duo-dark-palette ef-duo-dark-palette-overrides)
+    (ef-duo-light ef-themes "Legible light theme with mostly blue and yellow colors." light modus-operandi-palette ef-duo-light-palette ef-duo-light-palette-overrides)
+    (ef-eagle ef-themes "Legible light beige theme with brown, red, and desatured colors." light modus-operandi-palette ef-eagle-palette ef-eagle-palette-overrides)
+    (ef-elea-dark ef-themes "Legible dark green theme with brown, magenta, and green colors." dark modus-vivendi-palette ef-elea-dark-palette ef-elea-dark-palette-overrides)
+    (ef-elea-light ef-themes "Legible light green theme with brown, magenta, and green colors." light modus-operandi-palette ef-elea-light-palette ef-elea-light-palette-overrides)
+    (ef-frost ef-themes "Legible light cool theme with blue, cyan, teal, purple colors." light modus-operandi-palette ef-frost-palette ef-frost-palette-overrides)
+    (ef-kassio ef-themes "Legible light grey theme with blue, red, magenta, and earthly colors." light modus-operandi-palette ef-kassio-palette ef-kassio-palette-overrides)
+    (ef-light ef-themes "Legible light theme with blue, magenta, cyan, purple colors." light modus-operandi-palette ef-light-palette ef-light-palette-overrides)
+    (ef-maris-dark ef-themes "Legible dark marine theme with blue, cyan, and green colors." dark modus-vivendi-palette ef-maris-dark-palette ef-maris-dark-palette-overrides)
+    (ef-maris-light ef-themes "Legible light marine theme with blue, cyan, and green colors." light modus-operandi-palette ef-maris-light-palette ef-maris-light-palette-overrides)
+    (ef-melissa-dark ef-themes "Legible dark honeybee theme with warm colors (yellow, red, green, cyan)." dark modus-vivendi-palette ef-melissa-dark-palette ef-melissa-dark-palette-overrides)
+    (ef-melissa-light ef-themes "Legible light honeybee theme with warm colors (yellow, red, green, cyan)." light modus-operandi-palette ef-melissa-light-palette ef-melissa-light-palette-overrides)
+    (ef-night ef-themes "Legible dark sky blue theme with mostly green, blue, purple colors." dark modus-vivendi-palette ef-night-palette ef-night-palette-overrides)
+    (ef-owl ef-themes "Legible dark grey theme with blue, cyan, magenta and desaturated colors." dark modus-vivendi-palette ef-owl-palette ef-owl-palette-overrides)
+    (ef-reverie ef-themes "Legible light cream theme with gold and nuanced colors." light modus-operandi-palette ef-reverie-palette ef-reverie-palette-overrides)
+    (ef-rosa ef-themes "Legible dark rosewood theme with magenta and green colors." dark modus-vivendi-palette ef-rosa-palette ef-rosa-palette-overrides)
+    (ef-spring ef-themes "Legible light floral theme with cool, varied colors (green, cyan, red)." light modus-operandi-palette ef-spring-palette ef-spring-palette-overrides)
+    (ef-summer ef-themes "Legible light warm pink theme with magenta, purple, gold, cyan colors." light modus-operandi-palette ef-summer-palette ef-summer-palette-overrides)
+    (ef-symbiosis ef-themes "Legible dark brown-black theme with blue, green, cyan, gold colors." dark modus-vivendi-palette ef-symbiosis-palette ef-symbiosis-palette-overrides)
+    (ef-trio-dark ef-themes "Legible dark purple grey theme with magenta, blue, teal colors." dark modus-vivendi-palette ef-trio-dark-palette ef-trio-dark-palette-overrides)
+    (ef-trio-light ef-themes "Legible light purple grey theme with magenta, blue, and teal colors." light modus-operandi-palette ef-trio-light-palette ef-trio-light-palette-overrides)
+    (ef-tritanopia-dark ef-themes "Legible dark theme, optimized for blue-yellow color deficiency." dark modus-vivendi-tritanopia-palette ef-tritanopia-dark-palette ef-tritanopia-dark-palette-overrides)
+    (ef-tritanopia-light ef-themes "Legible light theme, optimized for blue-yellow color deficiency." light modus-operandi-tritanopia-palette ef-tritanopia-light-palette ef-tritanopia-light-palette-overrides)
+    (ef-winter ef-themes "Legible dark purple-black theme with magenta, purple, fawn, teal colors." dark modus-vivendi-palette ef-winter-palette ef-winter-palette-overrides)))
+
+(defvar ef-themes--declared-p nil)
+
+(defun ef-themes-declare-themes ()
+  "Declare the Ef themes."
+  (unless ef-themes--declared-p
+    (dolist (theme ef-themes-with-properties)
+      (apply #'modus-themes-declare theme)
+      (modus-themes-register (car theme)))
+    (setq ef-themes--declared-p t)))
+
+(ef-themes-declare-themes)
 
 (defconst ef-themes-palette-common
   '((bg-diff-context bg-dim)
