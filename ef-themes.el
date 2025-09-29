@@ -132,16 +132,35 @@
 
 ;;;; Compatibility with older versions of the Ef themes
 
-(defalias 'ef-themes-rotate 'modus-themes-rotate "2.0.0")
-(defalias 'ef-themes-toggle 'modus-themes-toggle "2.0.0")
-(defvaralias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes "2.0.0")
-(defvaralias 'ef-themes-headings 'modus-themes-headings "2.0.0")
-(defvaralias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts "2.0.0")
-(defvaralias 'ef-themes-to-rotate 'modus-themes-to-rotate "2.0.0")
-(defvaralias 'ef-themes-to-toggle 'modus-themes-to-toggle "2.0.0")
-(defvaralias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui "2.0.0")
-(defvaralias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook)
-(defvaralias 'ef-themes-post-load-hook 'modus-themes-post-load-hook)
+(defalias 'ef-themes-rotate 'modus-themes-rotate
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defalias 'ef-themes-toggle 'modus-themes-toggle
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-headings 'modus-themes-headings
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-to-rotate 'modus-themes-to-rotate
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-to-toggle 'modus-themes-to-toggle
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+
+(defvaralias 'ef-themes-post-load-hook 'modus-themes-post-load-hook
+  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
 
 ;;;; User options
 
