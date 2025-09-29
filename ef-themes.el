@@ -170,6 +170,13 @@ This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
   :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
 
+;;;; Helper functions
+
+(defun ef-themes-load-theme (theme)
+  "Call `modus-themes-load-theme' for THEME.
+Use the `ef-themes-after-load-theme-hook' with it."
+  (modus-themes-load-theme theme 'ef-themes-after-load-theme-hook))
+
 ;;;; Commands
 
 ;;;###autoload
@@ -188,7 +195,7 @@ Run `ef-themes-after-load-theme-hook' after loading a theme."
   (if-let* ((theme (modus-themes-load-random-subr background-mode 'ef-themes)))
       (progn
         (message "Loading `%s'" theme)
-        (modus-themes-load-theme theme 'ef-themes-after-load-theme-hook))
+        (ef-themes-load-theme theme))
     (error "Could not find a theme to load at random")))
 
 ;;;###autoload
