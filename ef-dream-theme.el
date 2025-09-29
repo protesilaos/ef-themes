@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-dream-partial
+  (defconst ef-dream-palette-partial
     '((cursor "#f3c09a")
       (bg-main "#232025")
       (bg-dim "#322f34")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-dream-palette
-    (append ef-themes-common-palette-overrides ef-dream-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-dream-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-dream

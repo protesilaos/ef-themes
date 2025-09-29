@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-maris-dark-partial
+  (defconst ef-maris-dark-palette-partial
     '((cursor "#8fdfff")
       (bg-main "#131c2b")
       (bg-dim "#1d2c39")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-maris-dark-palette
-    (append ef-themes-common-palette-overrides ef-maris-dark-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-maris-dark-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-maris-dark

@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-duo-light-partial
+  (defconst ef-duo-light-palette-partial
     '((cursor "#1144ff")
       (bg-main "#fff8f0")
       (bg-dim "#f6ece8")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-duo-light-palette
-    (append ef-themes-common-palette-overrides ef-duo-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-duo-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-duo-light

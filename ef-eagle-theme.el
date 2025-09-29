@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-eagle-partial
+  (defconst ef-eagle-palette-partial
     '((cursor "#774400")
       (bg-main "#f1ecd0")
       (bg-dim "#e4dbc0")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-eagle-palette
-    (append ef-themes-common-palette-overrides ef-eagle-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-eagle-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-eagle

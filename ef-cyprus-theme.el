@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-cyprus-partial
+  (defconst ef-cyprus-palette-partial
     '((cursor "#007f00")
       (bg-main "#fcf7ef")
       (bg-dim "#f0ece0")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-cyprus-palette
-    (append ef-themes-common-palette-overrides ef-cyprus-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-cyprus-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-cyprus

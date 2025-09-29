@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-spring-partial
+  (defconst ef-spring-palette-partial
     '((cursor "#bf005f")
       (bg-main "#f6fff9")
       (bg-dim "#e8f0f0")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-spring-palette
-    (append ef-themes-common-palette-overrides ef-spring-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-spring-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-spring

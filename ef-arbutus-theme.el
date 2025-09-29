@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-arbutus-partial
+  (defconst ef-arbutus-palette-partial
     '((cursor "#208f10")
       (bg-main "#ffead8")
       (bg-dim "#f0d8cf")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-arbutus-palette
-    (append ef-themes-common-palette-overrides ef-arbutus-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-arbutus-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-arbutus

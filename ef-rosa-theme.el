@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-rosa-partial
+  (defconst ef-rosa-palette-partial
     '((cursor "#ef607a")
       (bg-main "#322023")
       (bg-dim "#432e32")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-rosa-palette
-    (append ef-themes-common-palette-overrides ef-rosa-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-rosa-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-rosa

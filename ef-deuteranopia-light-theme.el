@@ -39,7 +39,7 @@
   ;; Most of the colors here, like the red and green hues, are defined
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
-  (defconst ef-deuteranopia-light-partial
+  (defconst ef-deuteranopia-light-palette-partial
     '((cursor "#0000bb")
       (bg-main "#f5f5ff")
       (bg-dim "#e8e8ea")
@@ -219,7 +219,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-deuteranopia-light-palette
-    (append ef-themes-common-palette-overrides ef-deuteranopia-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-deuteranopia-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-deuteranopia-light

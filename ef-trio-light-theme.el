@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-trio-light-partial
+  (defconst ef-trio-light-palette-partial
     '((cursor "#4f45ff")
       (bg-main "#f8f5ff")
       (bg-dim "#ebe7f1")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-trio-light-palette
-    (append ef-themes-common-palette-overrides ef-trio-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-trio-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-trio-light

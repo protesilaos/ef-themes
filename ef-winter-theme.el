@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-winter-partial
+  (defconst ef-winter-palette-partial
     '((cursor "#ff6ff0")
       (bg-main "#0f0b15")
       (bg-dim "#1d202f")
@@ -215,7 +215,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-winter-palette
-    (append ef-themes-common-palette-overrides ef-winter-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-winter-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-winter

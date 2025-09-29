@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-melissa-light-partial
+  (defconst ef-melissa-light-palette-partial
     '((cursor "#a07f00")
       (bg-main "#fff6d8")
       (bg-dim "#f5e9cb")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-melissa-light-palette
-    (append ef-themes-common-palette-overrides ef-melissa-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-melissa-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-melissa-light

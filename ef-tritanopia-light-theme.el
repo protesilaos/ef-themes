@@ -39,7 +39,7 @@
   ;; Most of the colors here, like the blue and green hues, are defined
   ;; simply to preserve compatibility with the rest of the project.  We
   ;; don't actually rely on them for anything critical.
-  (defconst ef-tritanopia-light-partial
+  (defconst ef-tritanopia-light-palette-partial
     '((cursor "#bb0000")
       (bg-main "#fff9f9")
       (bg-dim "#efecec")
@@ -219,7 +219,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-tritanopia-light-palette
-    (append ef-themes-common-palette-overrides ef-tritanopia-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-tritanopia-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-tritanopia-light

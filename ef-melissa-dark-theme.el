@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-melissa-dark-partial
+  (defconst ef-melissa-dark-palette-partial
     '((cursor "#f9cf7a")
       (bg-main "#352718")
       (bg-dim "#483426")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-melissa-dark-palette
-    (append ef-themes-common-palette-overrides ef-melissa-dark-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-melissa-dark-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-melissa-dark

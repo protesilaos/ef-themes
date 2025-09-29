@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-elea-light-partial
+  (defconst ef-elea-light-palette-partial
     '((cursor "#770080")
       (bg-main "#edf5e2")
       (bg-dim "#e3e9d6")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-elea-light-palette
-    (append ef-themes-common-palette-overrides ef-elea-light-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-elea-light-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-elea-light

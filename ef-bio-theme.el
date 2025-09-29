@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-bio-partial
+  (defconst ef-bio-palette-partial
     '((cursor "#35f038")
       (bg-main "#111111")
       (bg-dim "#222522")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-bio-palette
-    (append ef-themes-common-palette-overrides ef-bio-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-bio-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-bio

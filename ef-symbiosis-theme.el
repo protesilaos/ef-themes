@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-symbiosis-partial
+  (defconst ef-symbiosis-palette-partial
     '((cursor "#f0af7f")
       (bg-main "#130911")
       (bg-dim "#221920")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-symbiosis-palette
-    (append ef-themes-common-palette-overrides ef-symbiosis-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-symbiosis-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-symbiosis

@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-kassio-partial
+  (defconst ef-kassio-palette-partial
     '((cursor "#d06f30")
       (bg-main "#fff7f7")
       (bg-dim "#efe7e7")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-kassio-palette
-    (append ef-themes-common-palette-overrides ef-kassio-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-kassio-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-kassio

@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-autumn-partial
+  (defconst ef-autumn-palette-partial
     '((cursor "#ffaa33")
       (bg-main "#0f0e06")
       (bg-dim "#26211d")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-autumn-palette
-    (append ef-themes-common-palette-overrides ef-autumn-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-autumn-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-autumn

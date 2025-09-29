@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-frost-partial
+  (defconst ef-frost-palette-partial
     '((cursor "#0055bb")
       (bg-main "#fcffff")
       (bg-dim "#eaefef")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-frost-palette
-    (append ef-themes-common-palette-overrides ef-frost-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-frost-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-frost

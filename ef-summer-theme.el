@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-summer-partial
+  (defconst ef-summer-palette-partial
     '((cursor "#cf0090")
       (bg-main "#fff2f3")
       (bg-dim "#f2e4ea")
@@ -215,7 +215,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-summer-palette
-    (append ef-themes-common-palette-overrides ef-summer-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-summer-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-summer

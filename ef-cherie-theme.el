@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-cherie-partial
+  (defconst ef-cherie-palette-partial
     '((cursor "#ff5aaf")
       (bg-main "#190a0f")
       (bg-dim "#291f26")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-cherie-palette
-    (append ef-themes-common-palette-overrides ef-cherie-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-cherie-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-cherie

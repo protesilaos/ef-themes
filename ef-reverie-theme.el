@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-reverie-partial
+  (defconst ef-reverie-palette-partial
     '((cursor "#9d5744")
       (bg-main "#f3eddf")
       (bg-dim "#e5d6d4")
@@ -216,7 +216,7 @@ further details)."
     :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-reverie-palette
-    (append ef-themes-common-palette-overrides ef-reverie-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-reverie-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-reverie

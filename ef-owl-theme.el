@@ -36,7 +36,7 @@
 (eval-and-compile
   (require 'ef-themes)
 
-  (defconst ef-owl-partial
+  (defconst ef-owl-palette-partial
     '((cursor "#afe6ef")
       (bg-main "#292c2f")
       (bg-dim "#373b3d")
@@ -216,7 +216,7 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
   (defconst ef-owl-palette
-    (append ef-themes-common-palette-overrides ef-owl-partial ef-themes-palette-common))
+    (append ef-themes-common-palette-overrides ef-owl-palette-partial ef-themes-palette-common))
 
   (modus-themes-theme
     ef-owl
