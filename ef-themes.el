@@ -152,12 +152,6 @@ further details)."
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(ef-themes) Palette overrides"))
 
-(dolist (theme modus-themes-items)
-  (unless (custom-theme-p theme)
-    (custom-declare-theme theme 'modus-themes)
-    (provide-theme theme)
-    (load-theme theme t t)))
-
 ;; NOTE 2025-09-28: The `modus-themes-theme' macro also does this, but
 ;; we want to do it before each theme is loaded so that all commands
 ;; work as intended.
