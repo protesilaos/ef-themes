@@ -240,13 +240,10 @@ further details)."
 (define-minor-mode ef-themes-only-modus-derivatives-mode
   "When enabled, all Modus themes commands consider only Ef themes."
   :global t
-  :init-value nil
-  (if ef-themes-only-modus-derivatives-mode
-      (modus-themes-only-modus-derivatives-mode -1)
-    (modus-themes-only-modus-derivatives-mode 1)))
+  :init-value nil)
 
 (cl-defmethod modus-themes-get-themes (&context (ef-themes-only-modus-derivatives-mode (eql t)))
-  (modus-themes-get-all-known-themes 'ef-themes))
+  (modus-themes-get-all-known-themes 'ef-themes))`
 
 ;;;; Add themes from package to path
 
