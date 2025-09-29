@@ -170,6 +170,40 @@ This is used by the commands `ef-themes-toggle', `ef-themes-rotate',
   :package-version '(ef-themes . "0.2.0")
   :group 'ef-themes)
 
+;;;; Commands
+
+;;;###autoload
+(defun ef-themes-load-random (&optional background-mode)
+  "Load an Ef theme at random, excluding the current one.
+
+With optional BACKGROUND-MODE as a prefix argument, prompt to limit the
+set of themes to either dark or light variants.  When called from Lisp,
+BACKGROUND-MODE is either the `dark' or `light' symbol.
+
+Run `ef-themes-after-load-theme-hook' after loading a theme."
+  (interactive
+   (list
+    (when current-prefix-arg
+      (modus-themes-background-mode-prompt))))
+  (if-let* ((theme (modus-themes-load-random-subr background-mode 'ef-themes)))
+      (progn
+        (message "Loading `%s'" theme)
+        (modus-themes-load-theme theme 'ef-themes-after-load-theme-hook))
+    (error "Could not find a theme to load at random")))
+
+;;;###autoload
+(defun ef-themes-load-random-dark ()
+  "Load a random dark theme."
+  (declare (interactive-only t))
+  (interactive)
+  (ef-themes-load-random 'dark))
+
+;;;###autoload
+(defun ef-themes-load-random-light ()
+  "Load a random light theme."
+  (declare (interactive-only t))
+  (interactive)
+  (ef-themes-load-random 'light))
 
 ;;;; Add themes from package to path
 
