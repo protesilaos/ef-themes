@@ -174,35 +174,35 @@
 
 ;;;; Compatibility with older versions of the Ef themes
 
-(defalias 'ef-themes-rotate 'modus-themes-rotate
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-function-alias 'ef-themes-rotate 'modus-themes-rotate
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defalias 'ef-themes-toggle 'modus-themes-toggle
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-function-alias 'ef-themes-toggle 'modus-themes-toggle
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-headings 'modus-themes-headings
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-headings 'modus-themes-headings
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-to-rotate 'modus-themes-to-rotate
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-to-rotate 'modus-themes-to-rotate
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-to-toggle 'modus-themes-to-toggle
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-to-toggle 'modus-themes-to-toggle
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
-(defvaralias 'ef-themes-post-load-hook 'modus-themes-post-load-hook
-  "Ef now builds on Modus, enable `ef-themes-only-modus-derivatives-mode'")
+(define-obsolete-variable-alias 'ef-themes-post-load-hook 'modus-themes-post-load-hook
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
 
 ;;;; User options
 
