@@ -203,6 +203,22 @@ Run `ef-themes-after-load-theme-hook' after loading a theme."
   (interactive)
   (ef-themes-load-random 'light))
 
+(defvar ef-themes-select-history nil
+  "Minibuffer history for `ef-themes-select'.")
+
+;;;###autoload
+(defun ef-themes-select (theme)
+  "Load a Ef THEME using minibuffer completion.
+Run `ef-themes-after-load-theme-hook' after loading the theme.
+Disable other themes per `ef-themes-disable-other-themes'."
+  (interactive
+   (list
+    (modus-themes-select-prompt
+     "Select Ef theme"
+     (modus-themes-get-all-known-themes 'ef-themes)
+     'ef-themes-select-history)))
+  (ef-themes-load-theme theme))
+
 ;;;; Add themes from package to path
 
 ;;;###autoload
