@@ -156,6 +156,8 @@
     (border-mode-line-active border)
     (border-mode-line-inactive border)
     (fg-line-number-active accent-0)
+    (fg-link-symbolic fg-alt)
+    (underline-link-symbolic fg-alt)
     (fg-mode-line-inactive fg-dim)
     (fg-region unspecified)
     (fg-space border)

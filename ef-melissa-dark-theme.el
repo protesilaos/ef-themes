@@ -118,8 +118,8 @@
       (warning yellow-warmer)
       (info green)
 
-      (link yellow)
-      (link-alt magenta-cooler)
+      (fg-link yellow)
+      (fg-link-alt magenta-cooler)
       (name yellow-cooler)
       (keybind yellow-warmer)
       (identifier red-faint)

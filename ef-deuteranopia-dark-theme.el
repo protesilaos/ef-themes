@@ -121,8 +121,8 @@
       (warning yellow-cooler)
       (info blue-cooler)
 
-      (link blue)
-      (link-alt yellow-cooler)
+      (fg-link blue)
+      (fg-link-alt yellow-cooler)
       (name blue-warmer)
       (keybind yellow-warmer)
       (identifier cyan-faint)

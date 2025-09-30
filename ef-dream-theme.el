@@ -118,8 +118,8 @@
       (warning yellow-warmer)
       (info cyan)
 
-      (link yellow-cooler)
-      (link-alt cyan-warmer)
+      (fg-link yellow-cooler)
+      (fg-link-alt cyan-warmer)
       (name cyan-warmer)
       (keybind cyan)
       (identifier yellow-cooler)
