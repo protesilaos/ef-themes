@@ -177,37 +177,37 @@
 ;;;; Compatibility with older versions of the Ef themes
 
 (define-obsolete-function-alias 'ef-themes-rotate 'modus-themes-rotate
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-function-alias 'ef-themes-toggle 'modus-themes-toggle
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-disable-other-themes 'modus-themes-disable-other-themes
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-headings 'modus-themes-headings
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-mixed-fonts 'modus-themes-mixed-fonts
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-to-rotate 'modus-themes-to-rotate
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-to-toggle 'modus-themes-to-toggle
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-common-palette-overrides 'modus-themes-common-palette-overrides
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-variable-pitch-ui 'modus-themes-variable-pitch-ui
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-after-load-theme-hook 'modus-themes-after-load-theme-hook
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 (define-obsolete-variable-alias 'ef-themes-post-load-hook 'modus-themes-post-load-hook
-  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'")
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'; enable `ef-themes-take-over-modus-themes-mode'.")
 
 ;;;; Limit the Modus themes to only Ef themes
 
