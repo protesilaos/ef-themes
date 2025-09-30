@@ -145,24 +145,27 @@
 (ef-themes-declare-themes)
 
 (defconst ef-themes-palette-common
-  '((bg-diff-context bg-dim)
-    (bg-line-number-active unspecified)
-    (bg-line-number-inactive unspecified)
-    (bg-mode-line-inactive bg-alt)
-    (bg-space unspecified)
+  '((fringe unspecified)
+    (fg-region unspecified)
+
+    (bg-diff-context bg-dim)
+
     (bg-tab-bar bg-alt)
     (bg-tab-current bg-main)
     (bg-tab-other bg-active)
-    (border-mode-line-active border)
-    (border-mode-line-inactive border)
-    (fg-line-number-active accent-0)
-    (underline-link border)
+
     (fg-link-symbolic fg-alt)
+    (underline-link border)
     (underline-link-symbolic border)
+
+    (border-mode-line-active border)
+    (bg-mode-line-inactive bg-alt)
     (fg-mode-line-inactive fg-dim)
-    (fg-region unspecified)
-    (fg-space border)
-    (fringe unspecified)
+    (border-mode-line-inactive border)
+
+    (bg-line-number-active unspecified)
+    (fg-line-number-active accent-0)
+    (bg-line-number-inactive unspecified)
 
     (bg-prominent-err bg-err)
     (bg-prominent-warning bg-warning)
@@ -170,6 +173,14 @@
     (fg-prominent-err err)
     (fg-prominent-warning warning)
     (fg-prominent-note info)
+
+    (bg-space unspecified)
+    (fg-space border)
+
+    (fg-completion-match-0 accent-0)
+    (fg-completion-match-1 accent-1)
+    (fg-completion-match-2 accent-2)
+    (fg-completion-match-3 accent-3)
 
     (fg-heading-0 rainbow-0)
     (fg-heading-1 rainbow-1)
