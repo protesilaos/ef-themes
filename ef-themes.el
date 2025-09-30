@@ -164,6 +164,13 @@
     (fg-space border)
     (fringe unspecified)
 
+    (bg-prominent-err bg-err)
+    (bg-prominent-warning bg-warning)
+    (bg-prominent-note bg-info)
+    (fg-prominent-err err)
+    (fg-prominent-warning warning)
+    (fg-prominent-note info)
+
     (fg-heading-0 rainbow-0)
     (fg-heading-1 rainbow-1)
     (fg-heading-2 rainbow-2)
