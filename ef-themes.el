@@ -177,6 +177,11 @@
     (bg-space unspecified)
     (fg-space border)
 
+    (bg-active-argument bg-warning)
+    (fg-active-argument warning)
+    (bg-active-value bg-info)
+    (fg-active-value info)
+
     (fg-completion-match-0 accent-0)
     (fg-completion-match-1 accent-1)
     (fg-completion-match-2 accent-2)
