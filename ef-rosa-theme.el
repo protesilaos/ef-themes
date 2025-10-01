@@ -108,7 +108,7 @@
       (bg-hover "#3f6a50")
       (bg-hover-secondary "#6a4f5f")
       (bg-hl-line "#42352f")
-      (bg-paren-match-match "#7c454f")
+      (bg-paren-match "#7c454f")
       (bg-region "#45524a")
       (bg-err "#551a07") ; check with err
       (bg-warning "#4f3f13") ; check with warning
@@ -124,7 +124,7 @@
       (keybind magenta-warmer)
       (identifier green-faint)
       (prompt cyan-cooler)
-      
+
       (builtin magenta-cooler)
       (comment green-faint)
       (constant green-cooler)

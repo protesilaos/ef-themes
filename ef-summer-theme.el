@@ -109,7 +109,7 @@
       (bg-hover "#b4cfff")
       (bg-hover-secondary "#aaeccf")
       (bg-hl-line "#ffd6e5")
-      (bg-paren-match-match "#9fc0ef")
+      (bg-paren-match "#9fc0ef")
       (bg-region "#eecfff")
       (bg-err "#ffd0e6") ; check with err
       (bg-warning "#ffe5ba") ; check with warning
