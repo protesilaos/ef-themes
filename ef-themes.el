@@ -242,7 +242,10 @@
   :init-value nil)
 
 (cl-defmethod modus-themes-get-themes (&context (ef-themes-take-over-modus-themes-mode (eql t)))
-  (modus-themes-get-all-known-themes 'ef-themes))
+  (if-let* ((themes (modus-themes-get-all-known-themes 'ef-themes))
+            (sorted-themes (modus-themes-sort themes 'light)))
+      sorted-themes
+    ef-themes-items))
 
 ;;;; Add themes from package to path
 
