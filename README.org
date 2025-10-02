@@ -127,7 +127,8 @@ As part of {{{development-version}}}, the ~ef-themes~ are built on top
 of the ~modus-themes~. This means that all customisation is done via
 the Modus user options. Furthermore, all theme-loading commands are
 those of Modus, provided the ~ef-themes-take-over-modus-themes-mode~
-is enabled.
+is enabled (or enable ~modus-themes-include-derivatives-mode~ instead
+to blend Ef and Modus into one collection).
 
 #+begin_src emacs-lisp
 (use-package ef-themes

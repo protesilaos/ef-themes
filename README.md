@@ -11,7 +11,8 @@ Starting with version `2.0.0`, the `ef-themes` are built on top of the
 `modus-themes`. This means that all customisation options of the Modus
 themes apply to the Ef themes. Same for all Modus commands that load a
 theme. Enable `ef-themes-take-over-modus-themes-mode` to set up this
-arrangement.
+arrangement (or enable `modus-themes-include-derivatives-mode` instead
+to blend Ef and Modus into one collection).
 
 + Package name (GNU ELPA): `ef-themes`
 + Official manual: <https://protesilaos.com/emacs/ef-themes>
