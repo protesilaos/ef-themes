@@ -243,8 +243,9 @@
 
 (cl-defmethod modus-themes-get-themes (&context (ef-themes-take-over-modus-themes-mode (eql t)))
   (if-let* ((themes (modus-themes-get-all-known-themes 'ef-themes))
-            (sorted-themes (modus-themes-sort themes 'light)))
-      sorted-themes
+            (sorted-a-z (sort themes #'string-lessp))
+            (sorted-light-dark (modus-themes-sort sorted-a-z 'light)))
+      sorted-light-dark
     ef-themes-items))
 
 ;;;; Add themes from package to path
