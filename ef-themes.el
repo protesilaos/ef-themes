@@ -43,7 +43,6 @@
 
 
 
-(require 'seq)
 (require 'modus-themes)
 (eval-when-compile (require 'subr-x))
 
