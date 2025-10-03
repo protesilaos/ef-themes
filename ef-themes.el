@@ -48,6 +48,19 @@
 
 ;;;; Basics for building on top of Modus
 
+(defgroup ef-themes ()
+  "Colorful and legible themes.
+The `ef-themes' are built on top of the `modus-themes'.  To make all the
+Modus commands that operate on a theme only consider Ef themes, enable the
+`ef-themes-take-over-modus-themes-mode'.  Or, if you prefer to blend Ef
+and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
+  :group 'faces
+  :group 'modus-themes
+  :link '(info-link "(ef-themes) Top")
+  :link '(info-link "(modus-themes) Top")
+  :prefix "ef-themes-"
+  :tag "Ef Themes")
+
 (defconst ef-themes-light-themes
   '(ef-arbutus
     ef-cyprus
