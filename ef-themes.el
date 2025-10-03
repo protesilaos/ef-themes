@@ -331,6 +331,7 @@ prefer to blend Ef and Modus into a single group, enable
   :init-value nil)
 
 (cl-defmethod modus-themes-get-themes (&context (ef-themes-take-over-modus-themes-mode (eql t)))
+  "Return list of Ef themes, per `ef-themes-take-over-modus-themes-mode'."
   (if-let* ((themes (modus-themes-get-all-known-themes 'ef-themes))
             (sorted-a-z (sort themes #'string-lessp))
             (sorted-light-dark (modus-themes-sort sorted-a-z 'light)))
