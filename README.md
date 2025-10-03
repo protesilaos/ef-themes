@@ -40,5 +40,10 @@ to blend Ef and Modus into one collection).
   :config
   ;; All customisations here.
   (setq modus-themes-mixed-fonts t)
-  (setq modus-themes-italic-constructs t))
+  (setq modus-themes-italic-constructs t)
+
+  ;; Finally, load your theme of choice (or a random one with
+  ;; `modus-themes-load-random', `modus-themes-load-random-dark',
+  ;; `modus-themes-load-random-light').
+  (modus-themes-load-theme 'ef-summer))
 ```

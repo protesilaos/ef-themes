@@ -144,8 +144,14 @@ to blend Ef and Modus into one collection).
    ("C-<f5>" . modus-themes-select)
    ("M-<f5>" . modus-themes-load-random))
   :config
+  ;; All customisations here.
   (setq modus-themes-mixed-fonts t)
-  (setq modus-themes-italic-constructs t))
+  (setq modus-themes-italic-constructs t)
+
+  ;; Finally, load your theme of choice (or a random one with
+  ;; `modus-themes-load-random', `modus-themes-load-random-dark',
+  ;; `modus-themes-load-random-light').
+  (modus-themes-load-theme 'ef-summer))
 #+end_src
 
 * Themes for red-green or blue-yellow color deficiency
