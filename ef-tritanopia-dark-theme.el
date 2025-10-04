@@ -178,7 +178,7 @@
       (mail-subject red-warmer)
       (mail-other magenta-cooler)
 
-      (bg-search-match bg-warning)
+      (bg-search-static bg-warning)
       (bg-search-current bg-red-intense)
       (bg-search-lazy bg-cyan-intense)
       (bg-search-replace bg-magenta-intense)
