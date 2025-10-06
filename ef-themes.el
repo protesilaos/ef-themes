@@ -212,6 +212,22 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 
 ;;;; Compatibility with older versions of the Ef themes
 
+(define-obsolete-function-alias 'ef-themes-load-theme 'modus-themes-load-theme
+  "Since version 2.0.0, `ef-themes' derive from the `modus-themes'.
+You can configure the `ef-themes' via the user options of the
+`modus-themes'.
+
+To make all the Modus commands that operate on a theme consider only Ef
+themes, enable `ef-themes-take-over-modus-themes-mode'.  Or, if you
+prefer to blend Ef and Modus into a single group, enable
+`modus-themes-include-derivatives-mode' instead.
+
+Alternatively, use the commands `ef-themes-rotate', `ef-themes-select',
+`ef-themes-load-random', `ef-themes-load-random-dark',
+`ef-themes-load-random-light', `ef-themes-list-colors',
+`ef-themes-list-colors-current'.  They are all designed to only consider
+Ef themes.")
+
 (define-obsolete-function-alias 'ef-themes-toggle 'modus-themes-toggle
   "Since version 2.0.0, `ef-themes' derive from the `modus-themes'.
 You can configure the `ef-themes' via the user options of the
