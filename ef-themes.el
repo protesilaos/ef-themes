@@ -219,14 +219,15 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 If IS-FUNCTION is non-nil, use the appropriate calls for functions, else
 assume this is a variable."
   (let ((our-symbol (intern (format "%s-%s" prefix suffix)))
-        (modus-symbol (intern (format "modus-themes-%s" suffix))))
-    (funcall
-     (if is-function
-         #'defalias
-       #'defvaralias)
-     our-symbol
-     modus-symbol
-     (format "`%s' is an alias for `%s'.
+        (modus-symbol (intern-soft (format "modus-themes-%s" suffix))))
+    (when (symbolp modus-symbol)
+      (funcall
+       (if is-function
+           #'defalias
+         #'defvaralias)
+       our-symbol
+       modus-symbol
+       (format "`%s' is an alias for `%s'.
 Since version 2.0.0, `ef-themes' derive from the `modus-themes'.
 You can configure the `ef-themes' via the user options of the
 `modus-themes'.
@@ -240,7 +241,7 @@ Alternatively, use the commands `ef-themes-rotate', `ef-themes-select',
 `ef-themes-load-random', `ef-themes-load-random-dark',
 `ef-themes-load-random-light', `ef-themes-list-colors',
 `ef-themes-list-colors-current'.  They are all designed to only consider
-Ef themes." our-symbol modus-symbol))))
+Ef themes." our-symbol modus-symbol)))))
 
 ;; FIXME 2025-10-07: How best to handle a possible `ef-themes-toggle'?
 ;; Should we keep the `ef-themes-to-toggle'? And how about the same
