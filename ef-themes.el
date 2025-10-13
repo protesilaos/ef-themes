@@ -156,7 +156,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 
 (ef-themes-declare-themes)
 
-(defvar ef-themes-palette-common
+(defconst ef-themes-palette-common
   '((fringe unspecified)
     (fg-region unspecified)
 
