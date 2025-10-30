@@ -128,12 +128,14 @@
     (comment blue-faint)
     (constant yellow-cooler)
     (fnname green-cooler)
+    (fnname-call green-faint)
     (keyword cyan-warmer)
     (preprocessor green-warmer)
     (docstring green-faint)
     (string cyan-cooler)
     (type magenta-cooler)
     (variable blue-warmer)
+    (variable-use blue-faint)
     (rx-escape yellow) ; compare with `string'
     (rx-construct red)
 
