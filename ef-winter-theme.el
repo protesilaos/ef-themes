@@ -42,7 +42,7 @@
     (bg-alt "#2a2f42")
     (fg-main "#b8c6d5")
     (fg-dim "#807c9f")
-    (fg-alt "#bf8f8f")
+    (fg-alt "#bf8a9f")
     (bg-active "#4a4f62")
     (bg-inactive "#19181f")
     (border "#4a4955")
