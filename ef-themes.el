@@ -262,6 +262,9 @@ Ef themes." our-symbol modus-symbol)))))
 
 (ef-themes-define-option-aliases)
 
+(defalias 'ef-themes-with-colors 'modus-themes-with-colors
+  "Alias for `modus-themes-with-colors.")
+
 ;;;; Limit the Modus themes to only Ef themes
 
 ;;;###autoload
