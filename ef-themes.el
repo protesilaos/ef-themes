@@ -252,7 +252,7 @@ Ef themes." our-symbol modus-symbol)))))
   "Define aliases for the user options of the Modus themes."
   (unless ef-themes--aliased-p
     (dolist (suffix '( disable-other-themes to-toggle to-rotate after-load-theme-hook
-                       italic-constructs bold-constructs variable-pitch-ui mixed-fonts
+                       post-load-hook italic-constructs bold-constructs variable-pitch-ui mixed-fonts
                        headings completions prompts common-palette-overrides))
       (ef-themes-define-alias "ef-themes" suffix))
     (setq ef-themes--aliased-p t)))
