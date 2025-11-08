@@ -248,9 +248,6 @@ Alternatively, use the commands `ef-themes-rotate', `ef-themes-select',
 `ef-themes-list-colors-current'.  They are all designed to only consider
 Ef themes." our-symbol modus-symbol)))))
 
-;; FIXME 2025-10-07: How best to handle a possible `ef-themes-toggle'?
-;; Should we keep the `ef-themes-to-toggle'? And how about the same
-;; for rotation?
 (defun ef-themes-define-option-aliases ()
   "Define aliases for the user options of the Modus themes."
   (unless ef-themes--aliased-p
@@ -287,6 +284,9 @@ Ef themes."
     ef-themes-items))
 
 ;;;; Convenience commands
+
+;;;###autoload (autoload 'ef-themes-toggle "ef-themes")
+(modus-themes-define-derivative-command ef-themes toggle)
 
 ;;;###autoload (autoload 'ef-themes-rotate "ef-themes")
 (modus-themes-define-derivative-command ef-themes rotate)
