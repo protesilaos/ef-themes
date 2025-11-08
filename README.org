@@ -123,12 +123,10 @@ Everything is in place to set up the package.
 :CUSTOM_ID: h:ac76ded0-af9b-4566-aff9-75142ef2d4ef
 :END:
 
-As part of {{{development-version}}}, the ~ef-themes~ are built on top
-of the ~modus-themes~. This means that all customisation is done via
-the Modus user options. Furthermore, all theme-loading commands are
-those of Modus, provided the ~ef-themes-take-over-modus-themes-mode~
-is enabled (or enable ~modus-themes-include-derivatives-mode~ instead
-to blend Ef and Modus into one collection).
+Starting with version =2.0.0= (currently {{{development-version}}}),
+the ~ef-themes~ are built on top of the ~modus-themes~. This means
+that all customisation is done via the Modus user options ([[#h:db8ba158-22f6-49f7-b2f2-1c8162e690dd][Customisation options]]).
+Furthermore, all theme-loading commands are those of Modus ([[#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e][Working with other Modus themes or taking over Modus]]).
 
 #+begin_src emacs-lisp
 (use-package ef-themes
@@ -154,39 +152,163 @@ to blend Ef and Modus into one collection).
   (modus-themes-load-theme 'ef-summer))
 #+end_src
 
-* Themes for red-green or blue-yellow color deficiency
+* Working with other Modus themes or taking over Modus
 :PROPERTIES:
-:CUSTOM_ID: h:c8c3f312-692f-45d0-b490-78b501c99d41
+:CUSTOM_ID: h:6585235a-5219-4f78-9dd5-6a64d87d1b6e
 :END:
 
-Most items in the ~ef-themes~ collection are designed to use colors
-from many parts of the spectrum.  Those items generally are
-inappropriate for users with red-green or blue-yellow color deficiency
-(deuteranopia and tritanopia, respectively).  We do, nonetheless,
-provide light and dark themes that are optimized for such cases.  The
-names of the themes are:
+Starting version =2.0.0=, the Ef themes are built on top of the Modus
+themes. This means that they inherit the comprehensive infrastructure
+of Modus and all of its wide face/package coverage. To make the change
+easier for existing users, we provide aliases for user options and
+commands.
 
-- ~ef-deuteranopia-dark~ and ~ef-deuteranopia-light~ for red-green
-  color deficiency;
-- ~ef-tritanopia-dark~ and ~ef-tritanopia-light~ for blue-yellow color
-  deficiency;
+** Loading only Ef themes with the convenience wrappers we provide
+:PROPERTIES:
+:CUSTOM_ID: h:95df9646-b8dc-4c44-a582-9ba01e561b59
+:END:
 
-[[#h:75d74aea-d17f-497f-a3b8-f0bf4c372de0][Loading a theme]].
+All the old commands Ef provided for loading one of its themes will
+still work as before, meaning that they will only ever show and load a
+theme that belongs to the Ef collection ([[#h:6c8abcaf-c0fa-4fb1-a9c0-f1dcf71c7d73][Combining core Modus themes with all their derivatives]]).
 
-* Customisation options
+Internally, these commands are now using the Modus infrastructure and
+are then limiting the set of themes to the Ef collection. They are
+thus convenience wrappers around the equivalent Modus commands.
+
+#+findex: ef-themes-toggle
+- ~ef-themes-toggle~
+
+#+findex: ef-themes-rotate
+- ~ef-themes-rotate~
+
+#+findex: ef-themes-select
+- ~ef-themes-select~
+
+#+findex: ef-themes-load-random
+- ~ef-themes-load-random~
+
+#+findex: ef-themes-load-random-dark
+- ~ef-themes-load-random-dark~
+
+#+findex: ef-themes-load-random-light
+- ~ef-themes-load-random-light~
+
+#+findex: ef-themes-list-colors
+#+findex: ef-themes-list-colors-current
+Additionally, the commands ~ef-themes-list-colors~ and
+~ef-themes-list-colors-current~ use the relevant Modus functionality
+under the hood while working only with Ef themes.
+
+Depending on their needs, users may prefer to take over Modus
+completely, instead of relying on these convenience wrapper commands
+([[#h:86bbfef9-2a34-44fb-abdc-f384882f6a42][Taking over the Modus commands altogether]]).
+
+** Combining core Modus themes with all their derivatives
+:PROPERTIES:
+:CUSTOM_ID: h:6c8abcaf-c0fa-4fb1-a9c0-f1dcf71c7d73
+:END:
+
+#+findex: modus-themes-include-derivatives-mode
+The minor mode ~modus-themes-include-derivatives-mode~ makes all the
+theme-loading commands that Modus defines consider all core and
+derivative themes. This means that something like ~modus-themes-select~
+will offer ~modus-operandi~ and ~ef-summer~ as two of the many
+possible candidates.
+
+In this scenario, the Modus and Ef collections become part of a larger
+family of themes as opposed to only considering one or the other
+([[#h:95df9646-b8dc-4c44-a582-9ba01e561b59][Loading only Ef themes with the convenience wrappers we provide]]).
+Enable ~modus-themes-include-derivatives-mode~ and then access them
+all with the following commands:
+
+#+findex: modus-themes-toggle
+- ~modus-themes-toggle~
+
+#+findex: modus-themes-rotate
+- ~modus-themes-rotate~
+
+#+findex: modus-themes-select
+- ~modus-themes-select~
+
+#+findex: modus-themes-load-random
+- ~modus-themes-load-random~
+
+#+findex: modus-themes-load-random-dark
+- ~modus-themes-load-random-dark~
+
+#+findex: modus-themes-load-random-light
+- ~modus-themes-load-random-light~
+
+#+findex: modus-themes-list-colors
+#+findex: modus-themes-preview-colors
+- ~modus-themes-list-colors~ (alias ~modus-themes-preview-colors~)
+
+#+findex: modus-themes-list-colors-current
+- ~modus-themes-list-colors-current~ (alias ~modus-themes-preview-colors-current~)
+
+Consult the manual of the Modus themes for further details and/or read
+the documentation string of each command.
+
+** Taking over the Modus commands altogether
+:PROPERTIES:
+:CUSTOM_ID: h:86bbfef9-2a34-44fb-abdc-f384882f6a42
+:END:
+
+#+findex: ef-themes-take-over-modus-themes-mode
+The minor mode ~ef-themes-take-over-modus-themes-mode~ makes all Modus
+commands that load a theme consider only Ef themes. This is the
+opposite of allowing different theme collections to be blended
+together ([[#h:6c8abcaf-c0fa-4fb1-a9c0-f1dcf71c7d73][Combining core Modus themes with all their derivatives]]).
+It effectively is the same as using one of the convenience wrapper
+commands we already provide ([[#h:95df9646-b8dc-4c44-a582-9ba01e561b59][Loading only Ef themes with the convenience wrappers we provide]]).
+
+This minor mode exists to accommodate the needs of users who install
+both the Modus and Ef theme packages (and possibly other Modus
+derivatives). They can maintain a single/shared configuration and then
+decide when to enable ~ef-themes-take-over-modus-themes-mode~ to
+switch to using just the Ef themes. In this scenario, a key binding
+to, say, ~modus-themes-rotate~ does not need to be updated: it
+internally reads only Ef themes. When ~ef-themes-take-over-modus-themes-mode~
+is disabled, that same key binding will revert to doing what it did
+before (load only a core Modus theme or Modus plus derivatives if
+~modus-themes-include-derivatives-mode~ is enabled).
+
+** Customisation options for compatibility with Modus
 :PROPERTIES:
 :CUSTOM_ID: h:db8ba158-22f6-49f7-b2f2-1c8162e690dd
 :END:
 
-Consult the Modus themes manual for all customisation options.
+Consult the Modus themes manual for all customisation options. All the
+user options defined by the Ef themes prior to their version =2.0.0=
+(i.e. before building on top of the Modus themes) are now aliases for
+the equivalent Modus options. We do this for backward compatibility.
+Concretely:
+
+| Old name                           | Is alias for CURRENT NAME             |
+|------------------------------------+---------------------------------------|
+| ef-themes-disable-other-themes     | modus-themes-disable-other-themes     |
+| ef-themes-to-toggle                | modus-themes-to-toggle                |
+| ef-themes-to-rotate                | modus-themes-to-rotate                |
+| ef-themes-after-load-theme-hook    | modus-themes-after-load-theme-hook    |
+| ef-themes-italic-constructs        | modus-themes-italic-constructs        |
+| ef-themes-bold-constructs          | modus-themes-bold-constructs          |
+| ef-themes-variable-pitch-ui        | modus-themes-variable-pitch-ui        |
+| ef-themes-mixed-fonts              | modus-themes-mixed-fonts              |
+| ef-themes-headings                 | modus-themes-headings                 |
+| ef-themes-completions              | modus-themes-completions              |
+| ef-themes-prompts                  | modus-themes-prompts                  |
+| ef-themes-common-palette-overrides | modus-themes-common-palette-overrides |
 
 * Loading a theme
 :PROPERTIES:
 :CUSTOM_ID: h:75d74aea-d17f-497f-a3b8-f0bf4c372de0
 :END:
 
-Consult the Modus themes manual for all commands that load a theme. Or
+Consult the Modus themes manual for all commands that load a theme. We
+also explain the relevant commands and user options ([[#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e][Working with other Modus themes or taking over Modus]]). Or
 check the sample configuration to quickly get started ([[#h:ac76ded0-af9b-4566-aff9-75142ef2d4ef][Sample configuration]]).
+
 * Acknowledgements
 :PROPERTIES:
 :CUSTOM_ID: h:5d8753d2-cc10-44a7-9467-dcd62157718b
