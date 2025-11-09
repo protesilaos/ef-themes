@@ -12,6 +12,175 @@ the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
 
+* Version 2.0.0 on 2025-11-09
+:PROPERTIES:
+:CUSTOM_ID: h:c9a336a7-60f9-491e-9d15-884042c4252d
+:END:
+
+The Ef themes are now derived from my Modus themes. This means that
+they inherit the wide face coverage and extensive customisability of
+Modus, while retaining their stylistic flair.
+
+The Ef themes no longer provide any user options of their own. Each of
+the options we had before is now an alias for the Modus equivalent. As
+part of this transition, the Ef themes actually gain new customisation
+options, which are documented herein.
+
+Furthermore, the Ef themes do not define any commands to load a theme.
+What we had before is once again an alias for the equivalent Modus
+command.
+
+The manual of the Ef themes describes these compatibility
+arrangements. Further documentation and code samples are available in
+the manual of the Modus themes:
+
+- Info page :: Evaluate  ~(info "(modus-themes) Top")~.
+- Weg page :: Visit <https://protesilaos.com/emacs/modus-themes>.
+
+** Old user options and hooks are mere aliases for Modus options
+:PROPERTIES:
+:CUSTOM_ID: h:09e9f839-8fa1-4d43-873c-91998adcf652
+:END:
+
+| Old name                           | Is alias for CURRENT NAME             |
+|------------------------------------+---------------------------------------|
+| ef-themes-disable-other-themes     | modus-themes-disable-other-themes     |
+| ef-themes-to-toggle                | modus-themes-to-toggle                |
+| ef-themes-to-rotate                | modus-themes-to-rotate                |
+| ef-themes-italic-constructs        | modus-themes-italic-constructs        |
+| ef-themes-bold-constructs          | modus-themes-bold-constructs          |
+| ef-themes-variable-pitch-ui        | modus-themes-variable-pitch-ui        |
+| ef-themes-mixed-fonts              | modus-themes-mixed-fonts              |
+| ef-themes-headings                 | modus-themes-headings                 |
+| ef-themes-completions              | modus-themes-completions              |
+| ef-themes-prompts                  | modus-themes-prompts                  |
+| ef-themes-common-palette-overrides | modus-themes-common-palette-overrides |
+| ef-themes-post-load-hook           | modus-themes-after-load-theme-hook    |
+| ef-themes-after-load-theme-hook    | modus-themes-after-load-theme-hook    |
+
+Please read their respective documentation strings.
+
+If you use Ef and possibly other Modus derivatives, you may prefer to
+switch all your user options to the Modus ones. This way you can keep
+a unified configuration for all your themes.
+
+** Fewer bold and italic faces by default, more as an opt-in clause
+:PROPERTIES:
+:CUSTOM_ID: h:86dc4817-c48d-4f42-bb16-36608962d41e
+:END:
+
+In the past, the Ef themes did not provide an option to disable the
+extensive use of a bold font weight and italic font slant. Whereas now
+those are controlled by the user options ~modus-themes-bold-constructs~
+and ~modus-themes-italic-constructs~. By default, when they are ~nil~,
+bold and italics are used only when necessary. Set these user options
+to ~t~ to have bold and italics in more places.
+
+** Loading only Ef themes with the convenience wrappers we provide
+:PROPERTIES:
+:CUSTOM_ID: h:00ba7745-7d69-4e96-b81a-b0269d83ce0f
+:END:
+
+All the old commands Ef provided for loading one of its themes will
+still work as before, meaning that they will only ever show and load a
+theme that belongs to the Ef collection.
+
+Internally, these commands are now using the Modus infrastructure and
+are then limiting the set of themes to the Ef collection. They are
+thus convenience wrappers around the equivalent Modus commands.
+
+- ~ef-themes-toggle~
+- ~ef-themes-rotate~
+- ~ef-themes-select~
+- ~ef-themes-load-random~
+- ~ef-themes-load-random-dark~
+- ~ef-themes-load-random-light~
+
+Additionally, the commands ~ef-themes-list-colors~ and
+~ef-themes-list-colors-current~ use the relevant Modus functionality
+under the hood while working only with the Ef themes.
+
+** Combining core Modus themes with all their derivatives
+:PROPERTIES:
+:CUSTOM_ID: h:a51893c3-9a52-4707-8a1e-3ff4642de6cf
+:END:
+
+The minor mode ~modus-themes-include-derivatives-mode~ makes all the
+theme-loading commands that Modus defines consider all core and
+derivative themes. This means that something like ~modus-themes-select~
+will offer ~modus-operandi~ and ~ef-summer~ as two of the many
+possible candidates.
+
+In this scenario, the Modus and Ef collections become part of a larger
+family of themes as opposed to only considering one or the other
+([[#h:00ba7745-7d69-4e96-b81a-b0269d83ce0f][Loading only Ef themes with the convenience wrappers we provide]]).
+Enable ~modus-themes-include-derivatives-mode~ and then access them
+all with the following commands:
+
+- ~modus-themes-toggle~
+- ~modus-themes-rotate~
+- ~modus-themes-select~
+- ~modus-themes-load-random~
+- ~modus-themes-load-random-dark~
+- ~modus-themes-load-random-light~
+- ~modus-themes-list-colors~
+- ~modus-themes-list-colors-current~
+
+Consult the manual of the Modus themes for further details and/or read
+the documentation string of each command.
+
+** Taking over the Modus commands altogether
+:PROPERTIES:
+:CUSTOM_ID: h:7a83bada-a707-4b04-b4a5-fabca1ff245f
+:END:
+
+The minor mode ~ef-themes-take-over-modus-themes-mode~ makes all Modus
+commands that load a theme consider only Ef themes. This is the
+opposite of allowing different theme collections to be blended
+together ([[#h:a51893c3-9a52-4707-8a1e-3ff4642de6cf][Combining core Modus themes with all their derivatives]]).
+It effectively is the same as using one of the convenience wrapper
+commands we already provide ([[#h:00ba7745-7d69-4e96-b81a-b0269d83ce0f][Loading only Ef themes with the convenience wrappers we provide]]).
+
+This minor mode exists to accommodate the needs of users who install
+both the Modus and Ef theme packages (and possibly other Modus
+derivatives). They can maintain a single/shared configuration and then
+decide when to enable ~ef-themes-take-over-modus-themes-mode~ to
+switch to using just the Ef themes.
+
+For example, in the morning the user only wants to consider the Modus
+themes, but during the evening they only likee the Ef themes. In this
+scenario, a key binding to, say, ~modus-themes-rotate~ does not need
+to be updated: it internally reads only Ef themes when
+~ef-themes-take-over-modus-themes-mode~ is enable. When this minor
+mode is disabled, that same key binding will revert to doing what it
+did before (load only a core Modus theme or Modus plus derivatives if
+~modus-themes-include-derivatives-mode~ is enabled).
+
+** More semantic palette mappings
+:PROPERTIES:
+:CUSTOM_ID: h:7bc489b4-18ab-41d8-8537-f50b9f4c592c
+:END:
+
+Modus has always had a more comprehensive palette than Ef. Now they
+are on par. Concretely, this means that users can customise more of
+the theme's style to their liking. Use the commands that list/preview
+a palette to learn about all the available options.
+
+The manual of the Modus themes covers the palette and user-defined
+overrides at great length. It also includes code samples that you can
+use as a starting point. And if something is unclear, you are welcome
+to contact me.
+
+** Many more faces are covered
+:PROPERTIES:
+:CUSTOM_ID: h:db1afef9-d83b-4c6c-aed1-f6fb419e725b
+:END:
+
+The wide face/package coverage of Modus is now inherited by the Ef
+themes. If some interface you are using does not look right, then the
+underlying faces are probably not supported yet. Contact me and I will
+take care of it right away.
+
 * Version 1.11.0 on 2025-09-25
 :PROPERTIES:
 :CUSTOM_ID: h:e402f5e0-4911-426e-9e77-e50ba01593f8
@@ -167,7 +336,7 @@ tabulated view. Plus, users can sort by column.
 
 - Extended support for ~adoc-mode~ courtesy of Leilei332. This was
   done in pull request 52: <https://github.com/protesilaos/ef-themes/pull/52>.
-  
+
   The change is within the ~15-line limit, meaning that its author does
   not need to assign copyright to the Free Software Foundation.
 

@@ -4,9 +4,9 @@
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
 #+startup: content
-#+macro: stable-version 1.11.0
-#+macro: release-date 2025-09-25
-#+macro: development-version 2.0.0-dev
+#+macro: stable-version 2.0.0
+#+macro: release-date 2025-11-09
+#+macro: development-version 2.1.0-dev
 #+export_file_name: ef-themes.texi
 #+texinfo_filename: ef-themes.info
 #+texinfo_dir_category: Emacs misc features
@@ -123,10 +123,10 @@ Everything is in place to set up the package.
 :CUSTOM_ID: h:ac76ded0-af9b-4566-aff9-75142ef2d4ef
 :END:
 
-Starting with version =2.0.0= (currently {{{development-version}}}),
-the ~ef-themes~ are built on top of the ~modus-themes~. This means
-that all customisation is done via the Modus user options ([[#h:db8ba158-22f6-49f7-b2f2-1c8162e690dd][Customisation options]]).
-Furthermore, all theme-loading commands are those of Modus ([[#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e][Working with other Modus themes or taking over Modus]]).
+Starting with version =2.0.0=, the ~ef-themes~ are built on top of the
+~modus-themes~. This means that all customisation is done via the
+Modus user options ([[#h:db8ba158-22f6-49f7-b2f2-1c8162e690dd][Customisation options]]). Furthermore, all
+theme-loading commands are those of Modus ([[#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e][Working with other Modus themes or taking over Modus]]).
 
 #+begin_src emacs-lisp
 (use-package ef-themes
