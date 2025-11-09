@@ -259,6 +259,9 @@ Ef themes." our-symbol modus-symbol)))))
 
 (ef-themes-define-option-aliases)
 
+(defalias 'ef-themes-load-theme 'modus-themes-load-theme
+  "Alias for `modus-themes-load-theme'.")
+
 (defalias 'ef-themes-with-colors 'modus-themes-with-colors
   "Alias for `modus-themes-with-colors.")
 
