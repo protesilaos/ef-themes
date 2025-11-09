@@ -31,7 +31,11 @@ to blend Ef and Modus into one collection).
   ;; This makes the Modus commands listed below consider only the Ef
   ;; themes.  For an alternative that includes Modus and all
   ;; derivative themes (like Ef), enable the
-  ;; `modus-themes-include-derivatives-mode' instead.
+  ;; `modus-themes-include-derivatives-mode' instead.  The manual of
+  ;; the Ef themes has a section that explains all the possibilities:
+  ;;
+  ;; - Evaluate `(info "(ef-themes) Working with other Modus themes or taking over Modus")'
+  ;; - Visit <https://protesilaos.com/emacs/ef-themes#h:6585235a-5219-4f78-9dd5-6a64d87d1b6e>
   (ef-themes-take-over-modus-themes-mode 1)
   :bind
   (("<f5>" . modus-themes-rotate)
