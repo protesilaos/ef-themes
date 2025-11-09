@@ -248,7 +248,8 @@ all with the following commands:
 - ~modus-themes-list-colors-current~ (alias ~modus-themes-preview-colors-current~)
 
 Consult the manual of the Modus themes for further details and/or read
-the documentation string of each command.
+the documentation string of each command. Evaluate ~(info "(modus-themes) Top")~
+or visit <https://protesilaos.com/emacs/modus-themes>.
 
 ** Taking over the Modus commands altogether
 :PROPERTIES:
