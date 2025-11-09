@@ -1,6 +1,6 @@
 ;;; ef-bio-theme.el --- Legible dark theme with green, teal, blue, purple colors -*- lexical-binding:t -*-
 
-;; Copyright (C) 2022-2024  Free Software Foundation, Inc.
+;; Copyright (C) 2022-2025  Free Software Foundation, Inc.
 
 ;; Author: Protesilaos Stavrou <info@protesilaos.com>
 ;; Maintainer: Protesilaos Stavrou <info@protesilaos.com>
