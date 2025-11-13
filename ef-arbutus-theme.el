@@ -122,7 +122,7 @@
     (name red-cooler)
     (keybind red)
     (identifier magenta-faint)
-    (prompt red-faint)
+    (fg-prompt red-faint)
 
     (builtin green-cooler)
     (comment fg-dim)

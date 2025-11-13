@@ -123,7 +123,7 @@
     (name magenta)
     (keybind cyan-cooler)
     (identifier magenta-faint)
-    (prompt magenta-warmer)
+    (fg-prompt magenta-warmer)
 
     (builtin magenta-warmer)
     (comment yellow-faint)

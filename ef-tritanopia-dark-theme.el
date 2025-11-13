@@ -125,7 +125,7 @@
     (name magenta)
     (keybind red-cooler)
     (identifier magenta-faint)
-    (prompt cyan)
+    (fg-prompt cyan)
 
     (builtin magenta)
     (comment red-faint)

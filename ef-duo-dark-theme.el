@@ -122,8 +122,8 @@
     (name blue)
     (keybind blue-cooler)
     (identifier red-faint)
-    (prompt yellow)
-    
+    (fg-prompt yellow)
+
     (builtin cyan)
     (comment red-faint)
     (constant blue)

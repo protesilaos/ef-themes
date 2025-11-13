@@ -122,8 +122,8 @@
     (name green)
     (keybind green)
     (identifier magenta-faint)
-    (prompt cyan-cooler)
-    
+    (fg-prompt cyan-cooler)
+
     (builtin green)
     (comment yellow-faint)
     (constant blue)

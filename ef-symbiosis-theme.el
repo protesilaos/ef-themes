@@ -122,7 +122,7 @@
     (name blue)
     (keybind yellow-cooler)
     (identifier yellow-faint)
-    (prompt cyan)
+    (fg-prompt cyan)
 
     (builtin blue)
     (comment fg-dim)

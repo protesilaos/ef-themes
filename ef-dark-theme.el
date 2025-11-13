@@ -122,8 +122,8 @@
     (name blue-warmer)
     (keybind blue-cooler)
     (identifier magenta-faint)
-    (prompt green-cooler)
-    
+    (fg-prompt green-cooler)
+
     (builtin magenta)
     (comment yellow-faint)
     (constant blue-cooler)
