@@ -304,6 +304,12 @@ Ef themes."
 ;;;###autoload (autoload 'ef-themes-select "ef-themes")
 (modus-themes-define-derivative-command ef-themes select)
 
+;;;###autoload (autoload 'ef-themes-select-dark "ef-themes")
+(modus-themes-define-derivative-command ef-themes select-dark)
+
+;;;###autoload (autoload 'ef-themes-select-light "ef-themes")
+(modus-themes-define-derivative-command ef-themes select-light)
+
 ;;;###autoload (autoload 'ef-themes-load-random "ef-themes")
 (modus-themes-define-derivative-command ef-themes load-random)
 

@@ -189,6 +189,12 @@ thus convenience wrappers around the equivalent Modus commands.
 #+findex: ef-themes-select
 - ~ef-themes-select~
 
+#+findex: ef-themes-select-dark
+- ~ef-themes-select-dark~ [ Part of {{{development-version}}}. ]
+
+#+findex: ef-themes-select-light
+- ~ef-themes-select-light~ [ Part of {{{development-version}}}. ]
+
 #+findex: ef-themes-load-random
 - ~ef-themes-load-random~
 
