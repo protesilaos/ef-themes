@@ -108,17 +108,18 @@
     (bg-hover-secondary "#425d4a")
     (bg-hl-line "#2f413f")
     (bg-paren-match "#3f6f5f")
-    (bg-region "#543040")
     (bg-err "#551525") ; check with err
     (bg-warning "#424223") ; check with warning
     (bg-info "#104420") ; check with info
+    (bg-region "#543040")))
 
-    (err red-warmer)
+(defconst ef-elea-dark-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green-cooler)
 
     (fg-link green-warmer)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name green)
     (keybind magenta)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type cyan)
     (variable magenta)
     (variable-use magenta-faint)
-    (rx-escape magenta-cooler) ; compare with `string'
+    (rx-backslash magenta-cooler) ; compare with `string'
     (rx-construct red)
 
     (accent-0 green-cooler)
@@ -156,16 +157,16 @@
     (date-weekday cyan-cooler)
     (date-weekend red-faint)
 
-    (prose-code magenta)
+    (fg-prose-code magenta)
     (prose-done green-warmer)
-    (prose-macro magenta-cooler)
+    (fg-prose-macro magenta-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag cyan-faint)
     (prose-todo red-warmer)
-    (prose-verbatim cyan-cooler)
+    (fg-prose-verbatim cyan-cooler)
 
     (mail-cite-0 cyan-cooler)
     (mail-cite-1 magenta)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta)
     (rainbow-6 green)
     (rainbow-7 yellow-cooler)
-    (rainbow-8 blue-faint))
-  "Legible dark green theme with brown, magenta, and green colors.")
+    (rainbow-8 blue-faint)))
 
 (defcustom ef-elea-dark-palette-overrides nil
   "Overrides for `ef-elea-dark-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-elea-dark-palette
-  (append ef-themes-common-palette-overrides ef-elea-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-elea-dark-palette-partial
+   nil
+   nil
+   (append ef-elea-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-elea-dark
  'ef-themes
  "Legible dark green theme with brown, magenta, and green colors."
  'dark
- 'modus-vivendi-palette
  'ef-elea-dark-palette
+ nil
  'ef-elea-dark-palette-overrides
  'ef-themes-custom-faces)
 

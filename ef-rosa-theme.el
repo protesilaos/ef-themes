@@ -108,17 +108,18 @@
     (bg-hover-secondary "#6a4f5f")
     (bg-hl-line "#42352f")
     (bg-paren-match "#7c454f")
-    (bg-region "#45524a")
     (bg-err "#551a07") ; check with err
     (bg-warning "#4f3f13") ; check with warning
     (bg-info "#0f4312") ; check with info
+    (bg-region "#45524a")))
 
-    (err red-warmer)
+(defconst ef-rosa-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
-    (link green-cooler)
-    (link-alt magenta-cooler)
+    (fg-link green-cooler)
+    (fg-link-visited magenta-cooler)
     (name magenta-warmer)
     (keybind magenta-warmer)
     (identifier green-faint)
@@ -136,7 +137,7 @@
     (type cyan-warmer)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape red-cooler) ; compare with `string'
+    (rx-backslash red-cooler) ; compare with `string'
     (rx-construct blue-cooler)
 
     (accent-0 green-warmer)
@@ -156,16 +157,16 @@
     (date-weekday magenta-cooler)
     (date-weekend red-cooler)
 
-    (prose-code magenta-warmer)
+    (fg-prose-code magenta-warmer)
     (prose-done green-cooler)
-    (prose-macro red-cooler)
+    (fg-prose-macro red-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim cyan-cooler)
+    (fg-prose-verbatim cyan-cooler)
 
     (mail-cite-0 green-warmer)
     (mail-cite-1 cyan-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 red-cooler)
     (rainbow-6 green)
     (rainbow-7 yellow-warmer)
-    (rainbow-8 cyan-cooler))
-  "Legible dark rosewood theme with magenta and green colors.")
+    (rainbow-8 cyan-cooler)))
 
 (defcustom ef-rosa-palette-overrides nil
   "Overrides for `ef-rosa-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-rosa-palette
-  (append ef-themes-common-palette-overrides ef-rosa-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-rosa-palette-partial
+   nil
+   nil
+   (append ef-rosa-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-rosa
  'ef-themes
  "Legible dark rosewood theme with magenta and green colors."
  'dark
- 'modus-vivendi-palette
  'ef-rosa-palette
+ nil
  'ef-rosa-palette-overrides
  'ef-themes-custom-faces)
 

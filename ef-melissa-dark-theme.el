@@ -108,17 +108,18 @@
     (bg-hover-secondary "#5a661f")
     (bg-hl-line "#4f311f")
     (bg-paren-match "#5f6f1f")
-    (bg-region "#443a4f")
     (bg-err "#571a05") ; check with err
     (bg-warning "#4e4310") ; check with warning
     (bg-info "#2f4302") ; check with info
+    (bg-region "#443a4f")))
 
-    (err red-warmer)
+(defconst ef-melissa-dark-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
     (fg-link yellow)
-    (fg-link-alt magenta-cooler)
+    (fg-link-visited magenta-cooler)
     (name yellow-cooler)
     (keybind yellow-warmer)
     (identifier red-faint)
@@ -136,7 +137,7 @@
     (type green-cooler)
     (variable cyan)
     (variable-use cyan-faint)
-    (rx-escape green) ; compare with `string'
+    (rx-backslash green) ; compare with `string'
     (rx-construct magenta-cooler)
 
     (accent-0 yellow-warmer)
@@ -156,16 +157,16 @@
     (date-weekday green-warmer)
     (date-weekend red-cooler)
 
-    (prose-code yellow-warmer)
+    (fg-prose-code yellow-warmer)
     (prose-done green)
-    (prose-macro green-warmer)
+    (fg-prose-macro green-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim red)
+    (fg-prose-verbatim red)
 
     (mail-cite-0 yellow-warmer)
     (mail-cite-1 blue-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta)
     (rainbow-6 green-cooler)
     (rainbow-7 magenta-warmer)
-    (rainbow-8 cyan-cooler))
-  "Legible dark honeybee theme with warm colors (yellow, red, green, cyan).")
+    (rainbow-8 cyan-cooler)))
 
 (defcustom ef-melissa-dark-palette-overrides nil
   "Overrides for `ef-melissa-dark-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-melissa-dark-palette
-  (append ef-themes-common-palette-overrides ef-melissa-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-melissa-dark-palette-partial
+   nil
+   nil
+   (append ef-melissa-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-melissa-dark
  'ef-themes
  "Legible dark honeybee theme with warm colors (yellow, red, green, cyan)."
  'dark
- 'modus-vivendi-palette
  'ef-melissa-dark-palette
+ nil
  'ef-melissa-dark-palette-overrides
  'ef-themes-custom-faces)
 

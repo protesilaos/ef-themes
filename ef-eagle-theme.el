@@ -108,17 +108,18 @@
     (bg-hover-secondary "#c5d8a2")
     (bg-hl-line "#ecdfba")
     (bg-paren-match "#9fd0cc")
-    (bg-region "#ddc5af")
     (bg-err "#f2d4b5") ; check with err
     (bg-warning "#e7de80") ; check with warning
     (bg-info "#cdeeb0") ; check with info
+    (bg-region "#ddc5af")))
 
-    (err red-warmer)
+(defconst ef-eagle-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
     (fg-link yellow-cooler)
-    (fg-link-alt cyan-faint)
+    (fg-link-visited cyan-faint)
     (name green)
     (keybind red-warmer)
     (identifier cyan-faint)
@@ -136,7 +137,7 @@
     (type green)
     (variable cyan)
     (variable-use cyan-faint)
-    (rx-escape magenta-warmer) ; compare with `string'
+    (rx-backslash magenta-warmer) ; compare with `string'
     (rx-construct blue-cooler)
 
     (accent-0 red)
@@ -156,16 +157,16 @@
     (date-weekday red)
     (date-weekend cyan)
 
-    (prose-code green-cooler)
+    (fg-prose-code green-cooler)
     (prose-done green-warmer)
-    (prose-macro blue)
+    (fg-prose-macro blue)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim red-cooler)
+    (fg-prose-verbatim red-cooler)
 
     (mail-cite-0 red)
     (mail-cite-1 yellow)
@@ -196,8 +197,7 @@
     (rainbow-5 red-cooler)
     (rainbow-6 blue-faint)
     (rainbow-7 yellow-warmer)
-    (rainbow-8 green))
-  "Legible light beige theme with brown, red, and desatured colors.")
+    (rainbow-8 green)))
 
 (defcustom ef-eagle-palette-overrides nil
   "Overrides for `ef-eagle-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-eagle-palette
-  (append ef-themes-common-palette-overrides ef-eagle-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-eagle-palette-partial
+   nil
+   nil
+   (append ef-eagle-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-eagle
  'ef-themes
  "Legible light beige theme with brown, red, and desatured colors."
  'light
- 'modus-operandi-palette
  'ef-eagle-palette
+ nil
  'ef-eagle-palette-overrides
  'ef-themes-custom-faces)
 

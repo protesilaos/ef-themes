@@ -108,17 +108,18 @@
     (bg-hover-secondary "#aaeccf")
     (bg-hl-line "#f9e8c0")
     (bg-paren-match "#afbfef")
-    (bg-region "#caeafa")
     (bg-err "#ffdfe6") ; check with err
     (bg-warning "#ffe5ba") ; check with warning
     (bg-info "#cff5d0") ; check with info
+    (bg-region "#caeafa")))
 
-    (err red)
+(defconst ef-duo-light-palette-mappings-partial
+  '((err red)
     (warning yellow)
     (info green)
 
     (fg-link cyan)
-    (fg-link-alt green-cooler)
+    (fg-link-visited green-cooler)
     (name blue)
     (keybind blue-cooler)
     (identifier red-faint)
@@ -136,7 +137,7 @@
     (type blue-cooler)
     (variable magenta-cooler)
     (variable-use magenta-faint)
-    (rx-escape cyan) ; compare with `string'
+    (rx-backslash cyan) ; compare with `string'
     (rx-construct red-warmer)
 
     (accent-0 blue-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow-warmer)
+    (fg-prose-code yellow-warmer)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag yellow-faint)
     (prose-todo red)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 blue)
     (mail-cite-1 yellow-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 green-warmer)
     (rainbow-6 cyan-warmer)
     (rainbow-7 yellow)
-    (rainbow-8 green-cooler))
-  "Legible light theme with mostly blue and yellow colors.")
+    (rainbow-8 green-cooler)))
 
 (defcustom ef-duo-light-palette-overrides nil
   "Overrides for `ef-duo-light-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-duo-light-palette
-  (append ef-themes-common-palette-overrides ef-duo-light-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-duo-light-palette-partial
+   nil
+   nil
+   (append ef-duo-light-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-duo-light
  'ef-themes
  "Legible light theme with mostly blue and yellow colors."
  'light
- 'modus-operandi-palette
  'ef-duo-light-palette
+ nil
  'ef-duo-light-palette-overrides
  'ef-themes-custom-faces)
 

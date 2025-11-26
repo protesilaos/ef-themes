@@ -109,17 +109,18 @@
     (bg-hover-secondary "#44196f")
     (bg-hl-line "#003045")
     (bg-paren-match "#2f608e")
-    (bg-region "#342464")
     (bg-err "#44101a") ; check with err
     (bg-warning "#393312") ; check with warning
     (bg-info "#0f3518") ; check with info
+    (bg-region "#342464")))
 
-    (err red-warmer)
+(defconst ef-winter-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
-    (link magenta)
-    (link-alt cyan-warmer)
+    (fg-link magenta)
+    (fg-link-visited cyan-warmer)
     (name magenta)
     (keybind cyan-cooler)
     (identifier magenta-faint)
@@ -137,7 +138,7 @@
     (type cyan)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape green) ; compare with `string'
+    (rx-backslash green) ; compare with `string'
     (rx-construct blue)
 
     (accent-0 magenta-cooler)
@@ -157,16 +158,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow)
+    (fg-prose-code yellow)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag cyan-faint)
     (prose-todo red-warmer)
-    (prose-verbatim magenta-cooler)
+    (fg-prose-verbatim magenta-cooler)
 
     (mail-cite-0 magenta-cooler)
     (mail-cite-1 yellow-cooler)
@@ -195,8 +196,7 @@
     (rainbow-5 magenta-warmer)
     (rainbow-6 green-cooler)
     (rainbow-7 yellow-cooler)
-    (rainbow-8 cyan-warmer))
-  "Legible dark purple-black theme with magenta, purple, fawn, teal colors.")
+    (rainbow-8 cyan-warmer)))
 
 (defcustom ef-winter-palette-overrides nil
   "Overrides for `ef-winter-palette'.
@@ -216,15 +216,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-winter-palette
-  (append ef-themes-common-palette-overrides ef-winter-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-winter-palette-partial
+   nil
+   nil
+   (append ef-winter-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-winter
  'ef-themes
  "Legible dark purple-black theme with magenta, purple, fawn, teal colors."
  'dark
- 'modus-vivendi-palette
  'ef-winter-palette
+ nil
  'ef-winter-palette-overrides
  'ef-themes-custom-faces)
 

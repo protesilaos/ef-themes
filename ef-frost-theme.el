@@ -108,17 +108,18 @@
     (bg-hover-secondary "#aae0bf")
     (bg-hl-line "#dff6e4")
     (bg-paren-match "#cab0ef")
-    (bg-region "#d4eaf3")
     (bg-err "#ffdfda") ; check with err
     (bg-warning "#ffe9bf") ; check with warning
     (bg-info "#ccefcf") ; check with info
+    (bg-region "#d4eaf3")))
 
-    (err red)
+(defconst ef-frost-palette-mappings-partial
+  '((err red)
     (warning yellow-cooler)
     (info green)
 
     (fg-link cyan)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name cyan-warmer)
     (keybind blue-cooler)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type magenta-cooler)
     (variable cyan-warmer)
     (variable-use cyan-faint)
-    (rx-escape yellow-cooler) ; compare with `string'
+    (rx-backslash yellow-cooler) ; compare with `string'
     (rx-construct red-cooler)
 
     (accent-0 blue-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code green-cooler)
+    (fg-prose-code green-cooler)
     (prose-done green)
-    (prose-macro magenta-warmer)
+    (fg-prose-macro magenta-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag yellow-faint)
     (prose-todo red)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 blue)
     (mail-cite-1 cyan-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 blue-warmer)
     (rainbow-6 green-warmer)
     (rainbow-7 magenta)
-    (rainbow-8 cyan-warmer))
-  "Legible light cool theme with blue, cyan, teal, purple colors.")
+    (rainbow-8 cyan-warmer)))
 
 (defcustom ef-frost-palette-overrides nil
   "Overrides for `ef-frost-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-frost-palette
-  (append ef-themes-common-palette-overrides ef-frost-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-frost-palette-partial
+   nil
+   nil
+   (append ef-frost-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-frost
  'ef-themes
  "Legible light cool theme with blue, cyan, teal, purple colors."
  'light
- 'modus-operandi-palette
  'ef-frost-palette
+ nil
  'ef-frost-palette-overrides
  'ef-themes-custom-faces)
 

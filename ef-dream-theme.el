@@ -108,17 +108,18 @@
     (bg-hover-secondary "#665f7a")
     (bg-hl-line "#412f4f")
     (bg-paren-match "#885566")
-    (bg-region "#544a50")
     (bg-err "#501a2d") ; check with err
     (bg-warning "#4e3930") ; check with warning
     (bg-info "#0f3f4f") ; check with info
+    (bg-region "#544a50")))
 
-    (err magenta-warmer)
+(defconst ef-dream-palette-mappings-partial
+  '((err magenta-warmer)
     (warning yellow-warmer)
     (info cyan)
 
     (fg-link yellow-cooler)
-    (fg-link-alt cyan-warmer)
+    (fg-link-visited cyan-warmer)
     (name cyan-warmer)
     (keybind cyan)
     (identifier yellow-cooler)
@@ -136,7 +137,7 @@
     (type green-faint)
     (variable magenta)
     (variable-use magenta-faint)
-    (rx-escape cyan-cooler) ; compare with `string'
+    (rx-backslash cyan-cooler) ; compare with `string'
     (rx-construct red-cooler)
 
     (accent-0 yellow-cooler)
@@ -156,16 +157,16 @@
     (date-weekday magenta)
     (date-weekend blue-faint)
 
-    (prose-code blue-warmer)
+    (fg-prose-code blue-warmer)
     (prose-done cyan-warmer)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo yellow-warmer)
-    (prose-verbatim magenta-warmer)
+    (fg-prose-verbatim magenta-warmer)
 
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 red-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 green-cooler)
     (rainbow-6 cyan)
     (rainbow-7 yellow)
-    (rainbow-8 red-faint))
-  "Legible dark purple grey theme with gold and nuanced colors.")
+    (rainbow-8 red-faint)))
 
 (defcustom ef-dream-palette-overrides nil
   "Overrides for `ef-dream-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-dream-palette
-  (append ef-themes-common-palette-overrides ef-dream-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-dream-palette-partial
+   nil
+   nil
+   (append ef-dream-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-dream
  'ef-themes
  "Legible dark purple grey theme with gold and nuanced colors."
  'dark
- 'modus-vivendi-palette
  'ef-dream-palette
+ nil
  'ef-dream-palette-overrides
  'ef-themes-custom-faces)
 

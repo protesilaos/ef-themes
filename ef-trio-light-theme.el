@@ -108,17 +108,18 @@
     (bg-hover-secondary "#b4cfff")
     (bg-hl-line "#cfe6ff")
     (bg-paren-match "#dfadaf")
-    (bg-region "#eed0ff")
     (bg-err "#ffdfe6") ; check with err
     (bg-warning "#ffe5bf") ; check with warning
     (bg-info "#d0efdf") ; check with info
+    (bg-region "#eed0ff")))
 
-    (err red-warmer)
+(defconst ef-trio-light-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
-    (link cyan)
-    (link-alt green-warmer)
+    (fg-link cyan)
+    (fg-link-visited green-warmer)
     (name blue)
     (keybind magenta-warmer)
     (identifier red-faint)
@@ -136,7 +137,7 @@
     (type cyan-cooler)
     (variable cyan-warmer)
     (variable-use cyan-faint)
-    (rx-escape blue-warmer) ; compare with `string'
+    (rx-backslash blue-warmer) ; compare with `string'
     (rx-construct red)
 
     (accent-0 magenta-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code green-cooler)
+    (fg-prose-code green-cooler)
     (prose-done green)
-    (prose-macro blue-warmer)
+    (fg-prose-macro blue-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag magenta-faint)
     (prose-todo red-warmer)
-    (prose-verbatim magenta-warmer)
+    (fg-prose-verbatim magenta-warmer)
 
     (mail-cite-0 blue-warmer)
     (mail-cite-1 magenta-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 green-warmer)
     (rainbow-6 magenta-cooler)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 yellow-cooler))
-  "Legible light purple grey theme with magenta, blue, and teal colors.")
+    (rainbow-8 yellow-cooler)))
 
 (defcustom ef-trio-light-palette-overrides nil
   "Overrides for `ef-trio-light-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-trio-light-palette
-  (append ef-themes-common-palette-overrides ef-trio-light-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-trio-light-palette-partial
+   nil
+   nil
+   (append ef-trio-light-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-trio-light
  'ef-themes
  "Legible light purple grey theme with magenta, blue, and teal colors."
  'light
- 'modus-operandi-palette
  'ef-trio-light-palette
+ nil
  'ef-trio-light-palette-overrides
  'ef-themes-custom-faces)
 

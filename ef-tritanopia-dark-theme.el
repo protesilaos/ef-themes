@@ -111,17 +111,18 @@
     (bg-hover-secondary "#5e3e5b")
     (bg-hl-line "#3f1515")
     (bg-paren-match "#2f5f7a")
-    (bg-region "#293140")
     (bg-err "#451212") ; check with err
     (bg-warning "#40173d") ; check with warning
     (bg-info "#00354f") ; check with info
+    (bg-region "#293140")))
 
-    (err red-warmer)
+(defconst ef-tritanopia-dark-palette-mappings-partial
+  '((err red-warmer)
     (warning magenta-warmer)
     (info cyan)
 
-    (link cyan)
-    (link-alt magenta-cooler)
+    (fg-link cyan)
+    (fg-link-visited magenta-cooler)
     (name magenta)
     (keybind red-cooler)
     (identifier magenta-faint)
@@ -139,7 +140,7 @@
     (type cyan-warmer)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape cyan-cooler) ; compare with `string'
+    (rx-backslash cyan-cooler) ; compare with `string'
     (rx-construct red)
 
     (accent-0 cyan)
@@ -159,16 +160,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code red)
+    (fg-prose-code red)
     (prose-done cyan)
-    (prose-macro cyan-warmer)
+    (fg-prose-macro cyan-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag fg-alt)
     (prose-todo red-warmer)
-    (prose-verbatim cyan)
+    (fg-prose-verbatim cyan)
 
     (mail-cite-0 cyan)
     (mail-cite-1 red-cooler)
@@ -199,8 +200,7 @@
     (rainbow-5 magenta)
     (rainbow-6 cyan-faint)
     (rainbow-7 magenta-faint)
-    (rainbow-8 red-faint))
-  "Legible dark theme, optimized for blue-yellow color deficiency.")
+    (rainbow-8 red-faint)))
 
 (defcustom ef-tritanopia-dark-palette-overrides nil
   "Overrides for `ef-tritanopia-dark-palette'.
@@ -220,15 +220,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-tritanopia-dark-palette
-  (append ef-themes-common-palette-overrides ef-tritanopia-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-tritanopia-dark-palette-partial
+   nil
+   nil
+   (append ef-tritanopia-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-tritanopia-dark
  'ef-themes
  "Legible dark theme, optimized for blue-yellow color deficiency."
  'dark
- 'modus-vivendi-tritanopia-palette
  'ef-tritanopia-dark-palette
+ nil
  'ef-tritanopia-dark-palette-overrides
  'ef-themes-custom-faces)
 

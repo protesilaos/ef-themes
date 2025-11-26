@@ -109,17 +109,18 @@
     (bg-hover-secondary "#aaeccf")
     (bg-hl-line "#ffd6e5")
     (bg-paren-match "#9fc0ef")
-    (bg-region "#eecfff")
     (bg-err "#ffd0e6") ; check with err
     (bg-warning "#ffe5ba") ; check with warning
     (bg-info "#bbefda") ; check with info
+    (bg-region "#eecfff")))
 
-    (err red-warmer)
+(defconst ef-summer-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green-cooler)
 
-    (link blue)
-    (link-alt green-cooler)
+    (fg-link blue)
+    (fg-link-visited green-cooler)
     (name magenta-warmer)
     (keybind red-cooler)
     (identifier magenta-faint)
@@ -137,7 +138,7 @@
     (type cyan-warmer)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape cyan-cooler) ; compare with `string'
+    (rx-backslash cyan-cooler) ; compare with `string'
     (rx-construct red-cooler)
 
     (accent-0 magenta-cooler)
@@ -157,16 +158,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow)
+    (fg-prose-code yellow)
     (prose-done green-cooler)
-    (prose-macro cyan-cooler)
+    (fg-prose-macro cyan-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim magenta-cooler)
+    (fg-prose-verbatim magenta-cooler)
 
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 magenta)
@@ -195,8 +196,7 @@
     (rainbow-5 blue-warmer)
     (rainbow-6 red-cooler)
     (rainbow-7 cyan-cooler)
-    (rainbow-8 yellow-cooler))
-  "Legible light warm pink theme with magenta, purple, gold, cyan colors.")
+    (rainbow-8 yellow-cooler)))
 
 (defcustom ef-summer-palette-overrides nil
   "Overrides for `ef-summer-palette'.
@@ -216,15 +216,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-summer-palette
-  (append ef-themes-common-palette-overrides ef-summer-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-summer-palette-partial
+   nil
+   nil
+   (append ef-summer-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-summer
  'ef-themes
  "Legible light warm pink theme with magenta, purple, gold, cyan colors."
  'light
- 'modus-operandi-palette
  'ef-summer-palette
+ nil
  'ef-summer-palette-overrides
  'ef-themes-custom-faces)
 

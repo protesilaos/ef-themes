@@ -108,17 +108,18 @@
     (bg-hover-secondary "#55345a")
     (bg-hl-line "#302a3a")
     (bg-paren-match "#2f6c4a")
-    (bg-region "#3f1324")
     (bg-err "#461204") ; check with err
     (bg-warning "#353504") ; check with warning
     (bg-info "#1f3b0a") ; check with info
+    (bg-region "#3f1324")))
 
-    (err red-warmer)
+(defconst ef-autumn-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green-cooler)
 
     (fg-link yellow)
-    (fg-link-alt cyan-cooler)
+    (fg-link-visited cyan-cooler)
     (name green-warmer)
     (keybind red-warmer)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type green)
     (variable cyan-warmer)
     (variable-use cyan-faint)
-    (rx-escape green-cooler) ; compare with `string'
+    (rx-backslash green-cooler) ; compare with `string'
     (rx-construct magenta-cooler)
 
     (accent-0 green-cooler)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow-warmer)
+    (fg-prose-code yellow-warmer)
     (prose-done green-cooler)
-    (prose-macro cyan-cooler)
+    (fg-prose-macro cyan-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag fg-alt)
     (prose-todo red-warmer)
-    (prose-verbatim green-cooler)
+    (fg-prose-verbatim green-cooler)
 
     (mail-cite-0 yellow-warmer)
     (mail-cite-1 green-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 blue)
     (rainbow-6 red-cooler)
     (rainbow-7 green)
-    (rainbow-8 yellow))
-  "Legible dark brown-black theme with warm colors (red, yellow, green, teal).")
+    (rainbow-8 yellow)))
 
 (defcustom ef-autumn-palette-overrides nil
   "Overrides for `ef-autumn-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-autumn-palette
-  (append ef-themes-common-palette-overrides ef-autumn-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-autumn-palette-partial
+   nil
+   nil
+   (append ef-autumn-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-autumn
  'ef-themes
  "Legible dark brown-black theme with warm colors (red, yellow, green, teal)."
  'dark
- 'modus-vivendi-palette
  'ef-autumn-palette
+ nil
  'ef-autumn-palette-overrides
  'ef-themes-custom-faces)
 

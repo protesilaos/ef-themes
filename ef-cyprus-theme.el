@@ -108,17 +108,18 @@
     (bg-hover-secondary "#afc0f0")
     (bg-hl-line "#f0e0d4")
     (bg-paren-match "#9fcfdf")
-    (bg-region "#e0e7e5")
     (bg-err "#ffd4bf") ; check with err
     (bg-warning "#f0e8ba") ; check with warning
     (bg-info "#d0efbf") ; check with info
+    (bg-region "#e0e7e5")))
 
-    (err red-warmer)
+(defconst ef-cyprus-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
     (fg-link yellow)
-    (fg-link-alt cyan)
+    (fg-link-visited cyan)
     (name green-warmer)
     (keybind red)
     (identifier green-faint)
@@ -136,7 +137,7 @@
     (type blue-warmer)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape magenta-cooler) ; compare with `string'
+    (rx-backslash magenta-cooler) ; compare with `string'
     (rx-construct cyan-cooler)
 
     (accent-0 green)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code red-cooler)
+    (fg-prose-code red-cooler)
     (prose-done green)
-    (prose-macro cyan-cooler)
+    (fg-prose-macro cyan-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim green)
+    (fg-prose-verbatim green)
 
     (mail-cite-0 green-warmer)
     (mail-cite-1 yellow-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta)
     (rainbow-6 yellow-cooler)
     (rainbow-7 cyan-cooler)
-    (rainbow-8 red))
-  "Legible light ochre theme with green, yellow, teal, red colors.")
+    (rainbow-8 red)))
 
 (defcustom ef-cyprus-palette-overrides nil
   "Overrides for `ef-cyprus-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-cyprus-palette
-  (append ef-themes-common-palette-overrides ef-cyprus-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-cyprus-palette-partial
+   nil
+   nil
+   (append ef-cyprus-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-cyprus
  'ef-themes
  "Legible light ochre theme with green, yellow, teal, red colors."
  'light
- 'modus-operandi-palette
  'ef-cyprus-palette
+ nil
  'ef-cyprus-palette-overrides
  'ef-themes-custom-faces)
 

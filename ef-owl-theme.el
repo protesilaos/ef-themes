@@ -108,17 +108,18 @@
     (bg-hover-secondary "#415960")
     (bg-hl-line "#344255")
     (bg-paren-match "#706069")
-    (bg-region "#404f66")
     (bg-err "#4f231f") ; check with err
     (bg-warning "#3f3c2f") ; check with warning
     (bg-info "#104032") ; check with info
+    (bg-region "#404f66")))
 
-    (err red-warmer)
+(defconst ef-owl-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
-    (link cyan-warmer)
-    (link-alt yellow-cooler)
+    (fg-link cyan-warmer)
+    (fg-link-visited yellow-cooler)
     (name blue)
     (keybind green-cooler)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type magenta-cooler)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape yellow) ; compare with `string'
+    (rx-backslash yellow) ; compare with `string'
     (rx-construct red)
 
     (accent-0 cyan-cooler)
@@ -156,16 +157,16 @@
     (date-weekday cyan-cooler)
     (date-weekend red-faint)
 
-    (prose-code green-warmer)
+    (fg-prose-code green-warmer)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag cyan-faint)
     (prose-todo red-warmer)
-    (prose-verbatim blue)
+    (fg-prose-verbatim blue)
 
     (mail-cite-0 cyan)
     (mail-cite-1 green-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 green-warmer)
     (rainbow-6 magenta-warmer)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 yellow))
-  "Legible dark grey theme with blue, cyan, magenta and desaturated colors.")
+    (rainbow-8 yellow)))
 
 (defcustom ef-owl-palette-overrides nil
   "Overrides for `ef-owl-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-owl-palette
-  (append ef-themes-common-palette-overrides ef-owl-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-owl-palette-partial
+   nil
+   nil
+   (append ef-owl-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-owl
  'ef-themes
  "Legible dark grey theme with blue, cyan, magenta and desaturated colors."
  'dark
- 'modus-vivendi-palette
  'ef-owl-palette
+ nil
  'ef-owl-palette-overrides
  'ef-themes-custom-faces)
 

@@ -111,17 +111,18 @@
     (bg-hover-secondary "#eda9dc")
     (bg-hl-line "#ffdadf")
     (bg-paren-match "#8fc0cf")
-    (bg-region "#dadadf")
     (bg-err "#ffbfca") ; check with err
     (bg-warning "#efcae6") ; check with warning
     (bg-info "#cfdfef") ; check with info
+    (bg-region "#dadadf")))
 
-    (err red-warmer)
+(defconst ef-tritanopia-light-palette-mappings-partial
+  '((err red-warmer)
     (warning magenta)
     (info cyan)
 
-    (link cyan)
-    (link-alt magenta-cooler)
+    (fg-link cyan)
+    (fg-link-visited magenta-cooler)
     (name magenta)
     (keybind red-cooler)
     (identifier magenta-faint)
@@ -139,7 +140,7 @@
     (type cyan-warmer)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape cyan-warmer) ; compare with `string'
+    (rx-backslash cyan-warmer) ; compare with `string'
     (rx-construct red-warmer)
 
     (accent-0 cyan)
@@ -159,16 +160,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code red)
+    (fg-prose-code red)
     (prose-done cyan)
-    (prose-macro cyan-warmer)
+    (fg-prose-macro cyan-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag fg-alt)
     (prose-todo red-warmer)
-    (prose-verbatim cyan)
+    (fg-prose-verbatim cyan)
 
     (mail-cite-0 cyan-cooler)
     (mail-cite-1 red-cooler)
@@ -199,8 +200,7 @@
     (rainbow-5 magenta)
     (rainbow-6 cyan-faint)
     (rainbow-7 magenta-faint)
-    (rainbow-8 red-faint))
-  "Legible light theme, optimized for blue-yellow color deficiency.")
+    (rainbow-8 red-faint)))
 
 (defcustom ef-tritanopia-light-palette-overrides nil
   "Overrides for `ef-tritanopia-light-palette'.
@@ -220,15 +220,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-tritanopia-light-palette
-  (append ef-themes-common-palette-overrides ef-tritanopia-light-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-tritanopia-light-palette-partial
+   nil
+   nil
+   (append ef-tritanopia-light-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-tritanopia-light
  'ef-themes
  "Legible light theme, optimized for blue-yellow color deficiency."
  'light
- 'modus-operandi-tritanopia-palette
  'ef-tritanopia-light-palette
+ nil
  'ef-tritanopia-light-palette-overrides
  'ef-themes-custom-faces)
 

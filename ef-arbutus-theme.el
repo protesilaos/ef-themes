@@ -108,17 +108,18 @@
     (bg-hover-secondary "#f5bfc5")
     (bg-hl-line "#fad8bf")
     (bg-paren-match "#efafbf")
-    (bg-region "#dbe0c0")
     (bg-err "#ffd4b5") ; check with err
     (bg-warning "#efe48f") ; check with warning
     (bg-info "#d0f0bc") ; check with info
+    (bg-region "#dbe0c0")))
 
-    (err red-warmer)
+(defconst ef-arbutus-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
     (fg-link green-cooler)
-    (fg-link-alt magenta-cooler)
+    (fg-link-visited magenta-cooler)
     (name red-cooler)
     (keybind red)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type red)
     (variable red-cooler)
     (variable-use red-faint)
-    (rx-escape yellow-warmer) ; compare with `string'
+    (rx-backslash yellow-warmer) ; compare with `string'
     (rx-construct cyan-cooler)
 
     (accent-0 green)
@@ -156,16 +157,16 @@
     (date-weekday green-cooler)
     (date-weekend red)
 
-    (prose-code magenta-warmer)
+    (fg-prose-code magenta-warmer)
     (prose-done green)
-    (prose-macro yellow-warmer)
+    (fg-prose-macro yellow-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag cyan-faint)
     (prose-todo yellow-warmer)
-    (prose-verbatim blue-cooler)
+    (fg-prose-verbatim blue-cooler)
 
     (mail-cite-0 green-cooler)
     (mail-cite-1 green-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 cyan-cooler)
     (rainbow-6 yellow-cooler)
     (rainbow-7 red-cooler)
-    (rainbow-8 cyan))
-  "Legible light pink theme with red and green colors.")
+    (rainbow-8 cyan)))
 
 (defcustom ef-arbutus-palette-overrides nil
   "Overrides for `ef-arbutus-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-arbutus-palette
-  (append ef-themes-common-palette-overrides ef-arbutus-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-arbutus-palette-partial
+   nil
+   nil
+   (append ef-arbutus-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-arbutus
  'ef-themes
  "Legible light pink theme with red and green colors."
  'light
- 'modus-operandi-palette
  'ef-arbutus-palette
+ nil
  'ef-arbutus-palette-overrides
  'ef-themes-custom-faces)
 

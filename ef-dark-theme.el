@@ -108,17 +108,18 @@
     (bg-hover-secondary "#551f5a")
     (bg-hl-line "#002435")
     (bg-paren-match "#20577a")
-    (bg-region "#2a234a")
     (bg-err "#461210") ; check with err
     (bg-warning "#3a3004") ; check with warning
     (bg-info "#10350a") ; check with info
+    (bg-region "#2a234a")))
 
-    (err red-warmer)
+(defconst ef-dark-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
     (fg-link cyan)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name blue-warmer)
     (keybind blue-cooler)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type green-cooler)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape green-warmer) ; compare with `string'
+    (rx-backslash green-warmer) ; compare with `string'
     (rx-construct red)
 
     (accent-0 blue)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code magenta-warmer)
+    (fg-prose-code magenta-warmer)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim blue)
+    (fg-prose-verbatim blue)
 
     (mail-cite-0 blue)
     (mail-cite-1 magenta-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta-cooler)
     (rainbow-6 red-cooler)
     (rainbow-7 green-warmer)
-    (rainbow-8 yellow))
-  "Legible dark theme with blue, magenta, cyan, purple colors.")
+    (rainbow-8 yellow)))
 
 (defcustom ef-dark-palette-overrides nil
   "Overrides for `ef-dark-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-dark-palette
-  (append ef-themes-common-palette-overrides ef-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-dark-palette-partial
+   nil
+   nil
+   (append ef-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-dark
  'ef-themes
  "Legible dark theme with blue, magenta, cyan, purple colors."
  'dark
- 'modus-vivendi-palette
  'ef-dark-palette
+ nil
  'ef-dark-palette-overrides
  'ef-themes-custom-faces)
 

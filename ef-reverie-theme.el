@@ -108,17 +108,18 @@
     (bg-hover-secondary "#d0c4e4")
     (bg-hl-line "#e7d9e0")
     (bg-paren-match "#bf9fbf")
-    (bg-region "#e0d0ba")
     (bg-err "#ffc4d4") ; check with err
     (bg-warning "#f0e0a4") ; check with warning
     (bg-info "#dddef0") ; check with info
+    (bg-region "#e0d0ba")))
 
-    (err magenta-warmer)
+(defconst ef-reverie-palette-mappings-partial
+  '((err magenta-warmer)
     (warning yellow-warmer)
     (info cyan)
 
-    (link yellow-cooler)
-    (link-alt cyan-warmer)
+    (fg-link yellow-cooler)
+    (fg-link-visited cyan-warmer)
     (name cyan-warmer)
     (keybind cyan)
     (identifier yellow-cooler)
@@ -136,7 +137,7 @@
     (type green-faint)
     (variable magenta)
     (variable-use magenta-faint)
-    (rx-escape cyan-cooler) ; compare with `string'
+    (rx-backslash cyan-cooler) ; compare with `string'
     (rx-construct red-warmer)
 
     (accent-0 yellow)
@@ -156,16 +157,16 @@
     (date-weekday magenta)
     (date-weekend blue-faint)
 
-    (prose-code blue-warmer)
+    (fg-prose-code blue-warmer)
     (prose-done cyan-cooler)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo yellow-warmer)
-    (prose-verbatim magenta-warmer)
+    (fg-prose-verbatim magenta-warmer)
 
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 red-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 green-cooler)
     (rainbow-6 cyan)
     (rainbow-7 yellow)
-    (rainbow-8 red-faint))
-  "Legible light cream theme with gold and nuanced colors.")
+    (rainbow-8 red-faint)))
 
 (defcustom ef-reverie-palette-overrides nil
   "Overrides for `ef-reverie-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-reverie-palette
-  (append ef-themes-common-palette-overrides ef-reverie-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-reverie-palette-partial
+   nil
+   nil
+   (append ef-reverie-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-reverie
  'ef-themes
  "Legible light cream theme with gold and nuanced colors."
  'light
- 'modus-operandi-palette
  'ef-reverie-palette
+ nil
  'ef-reverie-palette-overrides
  'ef-themes-custom-faces)
 

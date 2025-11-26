@@ -108,17 +108,18 @@
     (bg-hover-secondary "#66364f")
     (bg-hl-line "#401f33")
     (bg-paren-match "#3f5f75")
-    (bg-region "#232f3f")
     (bg-err "#461017") ; check with err
     (bg-warning "#3a3004") ; check with warning
     (bg-info "#00352a") ; check with info
+    (bg-region "#232f3f")))
 
-    (err red-warmer)
+(defconst ef-cherie-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
     (fg-link magenta-cooler)
-    (fg-link-alt yellow)
+    (fg-link-visited yellow)
     (name yellow-cooler)
     (keybind yellow-warmer)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type magenta-warmer)
     (variable magenta-cooler)
     (variable-use magenta-faint)
-    (rx-escape cyan-warmer) ; compare with `string'
+    (rx-backslash cyan-warmer) ; compare with `string'
     (rx-construct red)
 
     (accent-0 magenta-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow)
+    (fg-prose-code yellow)
     (prose-done green)
-    (prose-macro blue-warmer)
+    (fg-prose-macro blue-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim magenta-warmer)
+    (fg-prose-verbatim magenta-warmer)
 
     (mail-cite-0 magenta)
     (mail-cite-1 yellow)
@@ -196,8 +197,7 @@
     (rainbow-5 blue-warmer)
     (rainbow-6 red-cooler)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 magenta-cooler))
-  "Legible dark purple-black theme with warm colors (mostly pink, magenta, gold).")
+    (rainbow-8 magenta-cooler)))
 
 (defcustom ef-cherie-palette-overrides nil
   "Overrides for `ef-cherie-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-cherie-palette
-  (append ef-themes-common-palette-overrides ef-cherie-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-cherie-palette-partial
+   nil
+   nil
+   (append ef-cherie-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-cherie
  'ef-themes
  "Legible dark purple-black theme with warm colors (mostly pink, magenta, gold)."
  'dark
- 'modus-vivendi-palette
  'ef-cherie-palette
+ nil
  'ef-cherie-palette-overrides
  'ef-themes-custom-faces)
 

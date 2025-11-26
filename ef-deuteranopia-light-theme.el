@@ -111,17 +111,18 @@
     (bg-hover-secondary "#afafef")
     (bg-hl-line "#f3e0d5")
     (bg-paren-match "#8fc0cf")
-    (bg-region "#dadadf")
     (bg-err "#f0e0a0") ; check with err
     (bg-warning "#e3ea9a") ; check with warning
     (bg-info "#d0dfff") ; check with info
+    (bg-region "#dadadf")))
 
-    (err yellow-warmer)
+(defconst ef-deuteranopia-light-palette-mappings-partial
+  '((err yellow-warmer)
     (warning yellow-cooler)
     (info blue-cooler)
 
     (fg-link blue)
-    (fg-link-alt yellow-cooler)
+    (fg-link-visited yellow-cooler)
     (name blue-warmer)
     (keybind yellow-warmer)
     (identifier cyan-faint)
@@ -139,7 +140,7 @@
     (type yellow)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape cyan-faint) ; compare with `string'
+    (rx-backslash cyan-faint) ; compare with `string'
     (rx-construct blue-warmer)
 
     (accent-0 blue-cooler)
@@ -159,16 +160,16 @@
     (date-weekday cyan)
     (date-weekend magenta-faint)
 
-    (prose-code yellow-warmer)
+    (fg-prose-code yellow-warmer)
     (prose-done blue-cooler)
-    (prose-macro cyan)
+    (fg-prose-macro cyan)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag green-faint)
     (prose-todo yellow-warmer)
-    (prose-verbatim blue-cooler)
+    (fg-prose-verbatim blue-cooler)
 
     (mail-cite-0 blue-warmer)
     (mail-cite-1 yellow-cooler)
@@ -199,8 +200,7 @@
     (rainbow-5 yellow-warmer)
     (rainbow-6 blue-faint)
     (rainbow-7 yellow-faint)
-    (rainbow-8 cyan))
-  "Legible light theme, optimized for red-green color deficiency.")
+    (rainbow-8 cyan)))
 
 (defcustom ef-deuteranopia-light-palette-overrides nil
   "Overrides for `ef-deuteranopia-light-palette'.
@@ -220,15 +220,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-deuteranopia-light-palette
-  (append ef-themes-common-palette-overrides ef-deuteranopia-light-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-deuteranopia-light-palette-partial
+   nil
+   nil
+   (append ef-deuteranopia-light-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-deuteranopia-light
  'ef-themes
  "Legible light theme, optimized for red-green color deficiency."
  'light
- 'modus-operandi-deuteranopia-palette
  'ef-deuteranopia-light-palette
+ nil
  'ef-deuteranopia-light-palette-overrides
  'ef-themes-custom-faces)
 

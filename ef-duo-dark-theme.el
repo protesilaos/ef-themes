@@ -108,17 +108,18 @@
     (bg-hover-secondary "#264f4a")
     (bg-hl-line "#301a4f")
     (bg-paren-match "#2f608e")
-    (bg-region "#042a50")
     (bg-err "#461210") ; check with err
     (bg-warning "#3a3004") ; check with warning
     (bg-info "#10350a") ; check with info
+    (bg-region "#042a50")))
 
-    (err red)
+(defconst ef-duo-dark-palette-mappings-partial
+  '((err red)
     (warning yellow)
     (info green)
 
     (fg-link cyan-warmer)
-    (fg-link-alt green-cooler)
+    (fg-link-visited green-cooler)
     (name blue)
     (keybind blue-cooler)
     (identifier red-faint)
@@ -136,7 +137,7 @@
     (type blue-cooler)
     (variable magenta-cooler)
     (variable-use magenta-faint)
-    (rx-escape magenta-cooler) ; compare with `string'
+    (rx-backslash magenta-cooler) ; compare with `string'
     (rx-construct blue)
 
     (accent-0 blue-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code yellow-warmer)
+    (fg-prose-code yellow-warmer)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag yellow-faint)
     (prose-todo red)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 cyan)
     (mail-cite-1 yellow-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 yellow)
     (rainbow-6 blue-cooler)
     (rainbow-7 red-cooler)
-    (rainbow-8 green-cooler))
-  "Legible dark theme with mostly blue and orange colors.")
+    (rainbow-8 green-cooler)))
 
 (defcustom ef-duo-dark-palette-overrides nil
   "Overrides for `ef-duo-dark-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-duo-dark-palette
-  (append ef-themes-common-palette-overrides ef-duo-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-duo-dark-palette-partial
+   nil
+   nil
+   (append ef-duo-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-duo-dark
  'ef-themes
  "Legible dark theme with mostly blue and orange colors."
  'dark
- 'modus-vivendi-palette
  'ef-duo-dark-palette
+ nil
  'ef-duo-dark-palette-overrides
  'ef-themes-custom-faces)
 

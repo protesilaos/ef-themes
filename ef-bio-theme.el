@@ -108,17 +108,18 @@
     (bg-hover-secondary "#003e5f")
     (bg-hl-line "#00331f")
     (bg-paren-match "#664950")
-    (bg-region "#3a3027")
     (bg-err "#48100f") ; check with err
     (bg-warning "#3b3400") ; check with warning
     (bg-info "#1a3b0f") ; check with info
+    (bg-region "#3a3027")))
 
-    (err red)
+(defconst ef-bio-palette-mappings-partial
+  '((err red)
     (warning yellow-cooler)
     (info green)
 
     (fg-link green-cooler)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name green)
     (keybind green)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type cyan-warmer)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape yellow-cooler) ; compare with `string'
+    (rx-backslash yellow-cooler) ; compare with `string'
     (rx-construct green)
 
     (accent-0 green-cooler)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code blue-warmer)
+    (fg-prose-code blue-warmer)
     (prose-done green)
-    (prose-macro magenta-warmer)
+    (fg-prose-macro magenta-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag yellow-faint)
     (prose-todo red)
-    (prose-verbatim green-cooler)
+    (fg-prose-verbatim green-cooler)
 
     (mail-cite-0 green-cooler)
     (mail-cite-1 blue-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 yellow-cooler)
     (rainbow-6 blue)
     (rainbow-7 cyan)
-    (rainbow-8 magenta))
-  "Legible dark green-black theme with green, teal, blue, purple colors.")
+    (rainbow-8 magenta)))
 
 (defcustom ef-bio-palette-overrides nil
   "Overrides for `ef-bio-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-bio-palette
-  (append ef-themes-common-palette-overrides ef-bio-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-bio-palette-partial
+   nil
+   nil
+   (append ef-bio-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-bio
  'ef-themes
  "Legible dark green-black theme with green, teal, blue, purple colors."
  'dark
- 'modus-vivendi-palette
  'ef-bio-palette
+ nil
  'ef-bio-palette-overrides
  'ef-themes-custom-faces)
 

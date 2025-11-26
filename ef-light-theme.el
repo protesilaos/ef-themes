@@ -108,17 +108,18 @@
     (bg-hover-secondary "#ccbfff")
     (bg-hl-line "#e4efd8")
     (bg-paren-match "#dfa0f3")
-    (bg-region "#bfefff")
     (bg-err "#ffd5ea") ; check with err
     (bg-warning "#ffeabb") ; check with warning
     (bg-info "#d0efda") ; check with info
+    (bg-region "#bfefff")))
 
-    (err red-warmer)
+(defconst ef-light-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
     (fg-link blue-warmer)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name magenta-cooler)
     (keybind blue-cooler)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type green-cooler)
     (variable cyan-cooler)
     (variable-use cyan-faint)
-    (rx-escape green-cooler) ; compare with `string'
+    (rx-backslash green-cooler) ; compare with `string'
     (rx-construct magenta)
 
     (accent-0 blue-warmer)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code magenta-warmer)
+    (fg-prose-code magenta-warmer)
     (prose-done green)
-    (prose-macro green-cooler)
+    (fg-prose-macro green-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula err)
     (prose-tag green-faint)
     (prose-todo red-warmer)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 blue-warmer)
     (mail-cite-1 magenta)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta-cooler)
     (rainbow-6 red-cooler)
     (rainbow-7 green-cooler)
-    (rainbow-8 yellow))
-  "Legible light theme with blue, magenta, cyan, purple colors.")
+    (rainbow-8 yellow)))
 
 (defcustom ef-light-palette-overrides nil
   "Overrides for `ef-light-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-light-palette
-  (append ef-themes-common-palette-overrides ef-light-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-light-palette-partial
+   nil
+   nil
+   (append ef-light-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-light
  'ef-themes
  "Legible light theme with blue, magenta, cyan, purple colors."
  'light
- 'modus-operandi-palette
  'ef-light-palette
+ nil
  'ef-light-palette-overrides
  'ef-themes-custom-faces)
 

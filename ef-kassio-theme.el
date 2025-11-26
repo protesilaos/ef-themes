@@ -108,17 +108,18 @@
     (bg-hover-secondary "#efd5ff")
     (bg-hl-line "#f2e5d9")
     (bg-paren-match "#b0dffa")
-    (bg-region "#dfe4f4")
     (bg-err "#ffdde5") ; check with err
     (bg-warning "#ffe0aa") ; check with warning
     (bg-info "#ddf5cc") ; check with info
+    (bg-region "#dfe4f4")))
 
-    (err red-warmer)
+(defconst ef-kassio-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green)
 
     (fg-link blue)
-    (fg-link-alt magenta)
+    (fg-link-visited magenta)
     (name magenta)
     (keybind red)
     (identifier yellow-cooler)
@@ -136,7 +137,7 @@
     (type red)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape cyan-cooler) ; compare with `string'
+    (rx-backslash cyan-cooler) ; compare with `string'
     (rx-construct red-cooler)
 
     (accent-0 blue)
@@ -156,16 +157,16 @@
     (date-weekday blue)
     (date-weekend red)
 
-    (prose-code magenta-warmer)
+    (fg-prose-code magenta-warmer)
     (prose-done green-warmer)
-    (prose-macro magenta-cooler)
+    (fg-prose-macro magenta-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table yellow-faint)
     (prose-table-formula info)
     (prose-tag magenta-faint)
     (prose-todo red-warmer)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 magenta-warmer)
@@ -196,8 +197,7 @@
     (rainbow-5 magenta-warmer)
     (rainbow-6 red-cooler)
     (rainbow-7 cyan-cooler)
-    (rainbow-8 green-cooler))
-  "Legible light grey theme with blue, red, magenta, and earthly colors.")
+    (rainbow-8 green-cooler)))
 
 (defcustom ef-kassio-palette-overrides nil
   "Overrides for `ef-kassio-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-kassio-palette
-  (append ef-themes-common-palette-overrides ef-kassio-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-kassio-palette-partial
+   nil
+   nil
+   (append ef-kassio-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-kassio
  'ef-themes
  "Legible light grey theme with blue, red, magenta, and earthly colors."
  'light
- 'modus-operandi-palette
  'ef-kassio-palette
+ nil
  'ef-kassio-palette-overrides
  'ef-themes-custom-faces)
 

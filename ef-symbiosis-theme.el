@@ -108,17 +108,18 @@
     (bg-hover-secondary "#5f3f3a")
     (bg-hl-line "#1f2f3f")
     (bg-paren-match "#005f4a")
-    (bg-region "#3f2f40")
     (bg-err "#461309") ; check with err
     (bg-warning "#3a3104") ; check with warning
     (bg-info "#163505") ; check with info
+    (bg-region "#3f2f40")))
 
-    (err red-warmer)
+(defconst ef-symbiosis-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
-    (link cyan)
-    (link-alt magenta-cooler)
+    (fg-link cyan)
+    (fg-link-visited magenta-cooler)
     (name blue)
     (keybind yellow-cooler)
     (identifier yellow-faint)
@@ -136,7 +137,7 @@
     (type green-cooler)
     (variable blue-warmer)
     (variable-use blue-faint)
-    (rx-escape green-cooler) ; compare with `string'
+    (rx-backslash green-cooler) ; compare with `string'
     (rx-construct red)
 
     (accent-0 cyan)
@@ -156,16 +157,16 @@
     (date-weekday yellow-cooler)
     (date-weekend blue)
 
-    (prose-code cyan-cooler)
+    (fg-prose-code cyan-cooler)
     (prose-done green)
-    (prose-macro green-warmer)
+    (fg-prose-macro green-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag magenta-faint)
     (prose-todo red)
-    (prose-verbatim blue-warmer)
+    (fg-prose-verbatim blue-warmer)
 
     (mail-cite-0 yellow-cooler)
     (mail-cite-1 blue-faint)
@@ -196,8 +197,7 @@
     (rainbow-5 green-cooler)
     (rainbow-6 red-faint)
     (rainbow-7 yellow)
-    (rainbow-8 cyan-warmer))
-  "Legible dark brown-black theme with blue, green, cyan, gold colors.")
+    (rainbow-8 cyan-warmer)))
 
 (defcustom ef-symbiosis-palette-overrides nil
   "Overrides for `ef-symbiosis-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-symbiosis-palette
-  (append ef-themes-common-palette-overrides ef-symbiosis-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-symbiosis-palette-partial
+   nil
+   nil
+   (append ef-symbiosis-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-symbiosis
  'ef-themes
  "Legible dark brown-black theme with blue, green, cyan, gold colors."
  'dark
- 'modus-vivendi-palette
  'ef-symbiosis-palette
+ nil
  'ef-symbiosis-palette-overrides
  'ef-themes-custom-faces)
 

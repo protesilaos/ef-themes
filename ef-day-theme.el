@@ -108,17 +108,18 @@
     (bg-hover-secondary "#febccf")
     (bg-hl-line "#f9e2b2")
     (bg-paren-match "#8fcfdf")
-    (bg-region "#f0d2df")
     (bg-err "#ffdde5") ; check with err
     (bg-warning "#ffe0aa") ; check with warning
     (bg-info "#ddf5cc") ; check with info
+    (bg-region "#f0d2df")))
 
-    (err red-warmer)
+(defconst ef-day-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
     (fg-link cyan-warmer)
-    (fg-link-alt green-warmer)
+    (fg-link-visited green-warmer)
     (name yellow)
     (keybind red-warmer)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type green-cooler)
     (variable magenta-cooler)
     (variable-use magenta-faint)
-    (rx-escape blue) ; compare with `string'
+    (rx-backslash blue) ; compare with `string'
     (rx-construct magenta-warmer)
 
     (accent-0 red)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code green-cooler)
+    (fg-prose-code green-cooler)
     (prose-done green)
-    (prose-macro yellow)
+    (fg-prose-macro yellow)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag yellow-faint)
     (prose-todo red-warmer)
-    (prose-verbatim red)
+    (fg-prose-verbatim red)
 
     (mail-cite-0 red)
     (mail-cite-1 green-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 yellow-cooler)
     (rainbow-6 magenta-cooler)
     (rainbow-7 red-cooler)
-    (rainbow-8 green-cooler))
-  "Legible light sandy theme with warm, varied colors (yellow, red, green, purple).")
+    (rainbow-8 green-cooler)))
 
 (defcustom ef-day-palette-overrides nil
   "Overrides for `ef-day-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-day-palette
-  (append ef-themes-common-palette-overrides ef-day-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-day-palette-partial
+   nil
+   nil
+   (append ef-day-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-day
  'ef-themes
  "Legible light sandy theme with warm, varied colors (yellow, red, green, purple)."
  'light
- 'modus-operandi-palette
  'ef-day-palette
+ nil
  'ef-day-palette-overrides
  'ef-themes-custom-faces)
 

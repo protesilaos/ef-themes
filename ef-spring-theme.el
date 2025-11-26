@@ -108,17 +108,18 @@
     (bg-hover-secondary "#f0bfff")
     (bg-hl-line "#f9e0e5")
     (bg-paren-match "#7fddd0")
-    (bg-region "#d0e6ff")
     (bg-err "#ffe8e0") ; check with err
     (bg-warning "#ffecba") ; check with warning
     (bg-info "#ccf5dd") ; check with info
+    (bg-region "#d0e6ff")))
 
-    (err red-warmer)
+(defconst ef-spring-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow)
     (info green)
 
-    (link cyan-cooler)
-    (link-alt yellow-cooler)
+    (fg-link cyan-cooler)
+    (fg-link-visited yellow-cooler)
     (name green-cooler)
     (keybind magenta-warmer)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type magenta-cooler)
     (variable cyan)
     (variable-use cyan-faint)
-    (rx-escape cyan) ; compare with `string'
+    (rx-backslash cyan) ; compare with `string'
     (rx-construct magenta-warmer)
 
     (accent-0 green)
@@ -156,16 +157,16 @@
     (date-weekday cyan)
     (date-weekend red-faint)
 
-    (prose-code red-cooler)
+    (fg-prose-code red-cooler)
     (prose-done green)
-    (prose-macro blue)
+    (fg-prose-macro blue)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula info)
     (prose-tag magenta-faint)
     (prose-todo red-warmer)
-    (prose-verbatim green)
+    (fg-prose-verbatim green)
 
     (mail-cite-0 green)
     (mail-cite-1 yellow-cooler)
@@ -196,8 +197,7 @@
     (rainbow-5 cyan)
     (rainbow-6 magenta)
     (rainbow-7 magenta-cooler)
-    (rainbow-8 yellow-cooler))
-  "Legible light floral theme with cool, varied colors (green, cyan, red).")
+    (rainbow-8 yellow-cooler)))
 
 (defcustom ef-spring-palette-overrides nil
   "Overrides for `ef-spring-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-spring-palette
-  (append ef-themes-common-palette-overrides ef-spring-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-spring-palette-partial
+   nil
+   nil
+   (append ef-spring-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-spring
  'ef-themes
  "Legible light floral theme with cool, varied colors (green, cyan, red)."
  'light
- 'modus-operandi-palette
  'ef-spring-palette
+ nil
  'ef-spring-palette-overrides
  'ef-themes-custom-faces)
 

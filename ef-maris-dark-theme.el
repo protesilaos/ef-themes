@@ -108,17 +108,18 @@
     (bg-hover-secondary "#49516a")
     (bg-hl-line "#243242")
     (bg-paren-match "#6c5d54")
-    (bg-region "#183c65")
     (bg-err "#551327") ; check with err
     (bg-warning "#403f22") ; check with warning
     (bg-info "#104324") ; check with info
+    (bg-region "#183c65")))
 
-    (err red-warmer)
+(defconst ef-maris-dark-palette-mappings-partial
+  '((err red-warmer)
     (warning yellow-warmer)
     (info green-cooler)
 
     (fg-link blue)
-    (fg-link-alt magenta-cooler)
+    (fg-link-visited magenta-cooler)
     (name blue)
     (keybind blue-cooler)
     (identifier magenta-faint)
@@ -136,7 +137,7 @@
     (type green)
     (variable cyan)
     (variable-use cyan-faint)
-    (rx-escape yellow) ; compare with `string'
+    (rx-backslash yellow) ; compare with `string'
     (rx-construct red)
 
     (accent-0 blue-cooler)
@@ -156,16 +157,16 @@
     (date-weekday cyan-warmer)
     (date-weekend red-faint)
 
-    (prose-code cyan)
+    (fg-prose-code cyan)
     (prose-done green-cooler)
-    (prose-macro magenta-cooler)
+    (fg-prose-macro magenta-cooler)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
     (prose-table-formula warning)
     (prose-tag cyan-faint)
     (prose-todo red-cooler)
-    (prose-verbatim green-warmer)
+    (fg-prose-verbatim green-warmer)
 
     (mail-cite-0 cyan-cooler)
     (mail-cite-1 magenta)
@@ -196,8 +197,7 @@
     (rainbow-5 blue-cooler)
     (rainbow-6 magenta)
     (rainbow-7 cyan-cooler)
-    (rainbow-8 yellow-cooler))
-  "Legible dark marine theme with blue, cyan, and green colors.")
+    (rainbow-8 yellow-cooler)))
 
 (defcustom ef-maris-dark-palette-overrides nil
   "Overrides for `ef-maris-dark-palette'.
@@ -217,15 +217,19 @@ further details)."
   :link '(info-link "(ef-themes) Palette overrides"))
 
 (defconst ef-maris-dark-palette
-  (append ef-themes-common-palette-overrides ef-maris-dark-palette-partial ef-themes-palette-common))
+  (modus-themes-generate-palette
+   ef-maris-dark-palette-partial
+   nil
+   nil
+   (append ef-maris-dark-palette-mappings-partial ef-themes-palette-common)))
 
 (modus-themes-theme
  'ef-maris-dark
  'ef-themes
  "Legible dark marine theme with blue, cyan, and green colors."
  'dark
- 'modus-vivendi-palette
  'ef-maris-dark-palette
+ nil
  'ef-maris-dark-palette-overrides
  'ef-themes-custom-faces)
 
