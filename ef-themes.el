@@ -173,6 +173,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 
     (fg-link-symbolic fg-alt)
     (underline-link border)
+    (underline-link-visited border)
     (underline-link-symbolic border)
 
     (border-mode-line-active border)
