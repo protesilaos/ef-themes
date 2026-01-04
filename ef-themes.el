@@ -74,6 +74,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     ef-light
     ef-maris-light
     ef-melissa-light
+    ef-orange
     ef-reverie
     ef-spring
     ef-summer
@@ -90,6 +91,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     ef-dream
     ef-duo-dark
     ef-elea-dark
+    ef-fig
     ef-maris-dark
     ef-melissa-dark
     ef-night
@@ -129,6 +131,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-eagle ef-themes "Legible light beige theme with brown, red, and desatured colors." light ef-eagle-palette nil ef-eagle-palette-overrides)
     (ef-elea-dark ef-themes "Legible dark green theme with brown, magenta, and green colors." dark ef-elea-dark-palette nil ef-elea-dark-palette-overrides)
     (ef-elea-light ef-themes "Legible light green theme with brown, magenta, and green colors." light ef-elea-light-palette nil ef-elea-light-palette-overrides)
+    (ef-fig ef-themes "Legible dark theme with warm green, yellow, and magenta colors." light ef-fig-palette nil ef-fig-palette-overrides)
     (ef-frost ef-themes "Legible light cool theme with blue, cyan, teal, purple colors." light ef-frost-palette nil ef-frost-palette-overrides)
     (ef-kassio ef-themes "Legible light grey theme with blue, red, magenta, and earthly colors." light ef-kassio-palette nil ef-kassio-palette-overrides)
     (ef-light ef-themes "Legible light theme with blue, magenta, cyan, purple colors." light ef-light-palette nil ef-light-palette-overrides)
@@ -137,6 +140,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-melissa-dark ef-themes "Legible dark honeybee theme with warm colors (yellow, red, green, cyan)." dark ef-melissa-dark-palette nil ef-melissa-dark-palette-overrides)
     (ef-melissa-light ef-themes "Legible light honeybee theme with warm colors (yellow, red, green, cyan)." light ef-melissa-light-palette nil ef-melissa-light-palette-overrides)
     (ef-night ef-themes "Legible dark sky blue theme with mostly green, blue, purple colors." dark ef-night-palette nil ef-night-palette-overrides)
+    (ef-orange ef-themes "Legible light theme with orange, yellow, and green colors." light ef-orange-palette nil ef-orange-palette-overrides)
     (ef-owl ef-themes "Legible dark grey theme with blue, cyan, magenta and desaturated colors." dark ef-owl-palette nil ef-owl-palette-overrides)
     (ef-reverie ef-themes "Legible light cream theme with gold and nuanced colors." light ef-reverie-palette nil ef-reverie-palette-overrides)
     (ef-rosa ef-themes "Legible dark rosewood theme with magenta and green colors." dark ef-rosa-palette nil ef-rosa-palette-overrides)
