@@ -131,7 +131,7 @@
     (fnname yellow-cooler)
     (fnname-call red-faint)
     (keyword green-warmer)
-    (preprocessor red-cooler)
+    (preprocessor red-warmer)
     (docstring magenta-faint)
     (string green)
     (type red-cooler)
