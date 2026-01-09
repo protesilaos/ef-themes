@@ -172,7 +172,7 @@
     (mail-cite-1 green-cooler)
     (mail-cite-2 magenta-cooler)
     (mail-cite-3 magenta-warmer)
-    (mail-part yellow-warmer)
+    (mail-part yellow-faint)
     (mail-recipient magenta)
     (mail-subject green-warmer)
     (mail-other red-cooler)
