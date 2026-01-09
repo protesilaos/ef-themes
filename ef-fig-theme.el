@@ -168,13 +168,13 @@
     (prose-todo red)
     (fg-prose-verbatim yellow-warmer)
 
-    (mail-cite-0 yellow-cooler)
-    (mail-cite-1 green-cooler)
-    (mail-cite-2 magenta-cooler)
+    (mail-cite-0 green-warmer)
+    (mail-cite-1 yellow-cooler)
+    (mail-cite-2 cyan-faint)
     (mail-cite-3 magenta-warmer)
     (mail-part yellow-faint)
     (mail-recipient magenta)
-    (mail-subject green-warmer)
+    (mail-subject magenta-cooler)
     (mail-other red-cooler)
 
     (bg-search-static bg-warning)
