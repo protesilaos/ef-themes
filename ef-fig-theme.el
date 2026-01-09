@@ -122,7 +122,7 @@
     (fg-link-visited magenta-cooler)
     (name green-warmer)
     (keybind green)
-    (identifier magenta-faint)
+    (identifier red-faint)
     (fg-prompt red-cooler)
 
     (builtin magenta)
