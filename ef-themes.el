@@ -131,7 +131,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-eagle ef-themes "Legible light beige theme with brown, red, and desatured colors." light ef-eagle-palette nil ef-eagle-palette-overrides)
     (ef-elea-dark ef-themes "Legible dark green theme with brown, magenta, and green colors." dark ef-elea-dark-palette nil ef-elea-dark-palette-overrides)
     (ef-elea-light ef-themes "Legible light green theme with brown, magenta, and green colors." light ef-elea-light-palette nil ef-elea-light-palette-overrides)
-    (ef-fig ef-themes "Legible dark theme with warm green, yellow, and magenta colors." light ef-fig-palette nil ef-fig-palette-overrides)
+    (ef-fig ef-themes "Legible dark theme with warm green, yellow, and magenta colors." dark ef-fig-palette nil ef-fig-palette-overrides)
     (ef-frost ef-themes "Legible light cool theme with blue, cyan, teal, purple colors." light ef-frost-palette nil ef-frost-palette-overrides)
     (ef-kassio ef-themes "Legible light grey theme with blue, red, magenta, and earthly colors." light ef-kassio-palette nil ef-kassio-palette-overrides)
     (ef-light ef-themes "Legible light theme with blue, magenta, cyan, purple colors." light ef-light-palette nil ef-light-palette-overrides)
