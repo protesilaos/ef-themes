@@ -103,15 +103,15 @@
 
     (bg-mode-line-active "#57602e")
     (fg-mode-line-active "#c8c597")
-    (bg-completion "#604e3f")
+    (bg-completion "#503e6f")
     (bg-hover "#7f5a60")
     (bg-hover-secondary "#6a4f6f")
-    (bg-hl-line "#413f2f")
-    (bg-paren-match "#7e3f84")
+    (bg-hl-line "#47275f")
+    (bg-paren-match "#5e5f54")
     (bg-err "#552407") ; check with err
     (bg-warning "#55421e") ; check with warning
     (bg-info "#3e4200") ; check with info
-    (bg-region "#64523e")))
+    (bg-region "#643270")))
 
 (defconst ef-fig-palette-mappings-partial
   '((err red)
