@@ -116,7 +116,7 @@
 (defconst ef-orange-palette-mappings-partial
   '((err red-warmer)
     (warning yellow)
-    (info green)
+    (info green-warmer)
 
     (fg-link green-warmer)
     (fg-link-visited red-faint)
