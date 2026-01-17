@@ -182,10 +182,10 @@
     (bg-search-lazy bg-green-intense)
     (bg-search-replace bg-red-intense)
 
-    (bg-search-rx-group-0 bg-magenta-intense)
-    (bg-search-rx-group-1 bg-green-intense)
-    (bg-search-rx-group-2 bg-red-subtle)
-    (bg-search-rx-group-3 bg-cyan-subtle)
+    (bg-search-rx-group-0 bg-yellow-intense)
+    (bg-search-rx-group-1 bg-magenta-intense)
+    (bg-search-rx-group-2 bg-green-subtle)
+    (bg-search-rx-group-3 bg-blue-subtle)
 
     (bg-space-err bg-yellow-intense)
 
