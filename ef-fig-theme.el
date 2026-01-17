@@ -178,13 +178,13 @@
     (mail-other red-cooler)
 
     (bg-search-static bg-warning)
-    (bg-search-current bg-magenta-intense)
-    (bg-search-lazy bg-green-subtle)
+    (bg-search-current bg-yellow-intense)
+    (bg-search-lazy bg-magenta-intense)
     (bg-search-replace bg-red-intense)
 
-    (bg-search-rx-group-0 bg-cyan-intense)
+    (bg-search-rx-group-0 bg-green-intense)
     (bg-search-rx-group-1 bg-yellow-intense)
-    (bg-search-rx-group-2 bg-red-subtle)
+    (bg-search-rx-group-2 bg-magenta-subtle)
     (bg-search-rx-group-3 bg-cyan-subtle)
 
     (bg-space-err bg-red-intense)
