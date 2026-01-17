@@ -107,7 +107,7 @@
     (bg-hover "#7f5a60")
     (bg-hover-secondary "#6a4f6f")
     (bg-hl-line "#47275f")
-    (bg-paren-match "#5e5f54")
+    (bg-paren-match "#3e592f")
     (bg-err "#552407") ; check with err
     (bg-warning "#55421e") ; check with warning
     (bg-info "#3e4200") ; check with info
