@@ -36,7 +36,7 @@
 (require 'ef-themes)
 
 (defconst ef-fig-palette-partial
-  '((cursor "#cad45a")
+  '((cursor "#e0646a")
     (bg-main "#3b2043")
     (bg-dim "#432e4e")
     (bg-alt "#4a385e")
