@@ -137,8 +137,8 @@
     (type red-cooler)
     (variable yellow-warmer)
     (variable-use yellow-faint)
-    (rx-backslash magenta-cooler) ; compare with `string'
-    (rx-construct magenta-warmer)
+    (rx-backslash yellow-cooler) ; compare with `string'
+    (rx-construct red-warmer)
 
     (accent-0 green-warmer)
     (accent-1 magenta-warmer)
