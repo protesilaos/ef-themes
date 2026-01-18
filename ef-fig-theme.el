@@ -126,7 +126,7 @@
     (fg-prompt red-cooler)
 
     (builtin magenta)
-    (comment cyan-faint)
+    (comment fg-dim)
     (constant magenta-cooler)
     (fnname yellow-cooler)
     (fnname-call red-faint)
