@@ -88,7 +88,7 @@
 
     (bg-added "#3a472f")
     (bg-added-faint "#37382f")
-    (bg-added-refine "#3d6014")
+    (bg-added-refine "#3d6034")
     (fg-added "#a0e0a0")
 
     (bg-changed "#51512f")
