@@ -167,6 +167,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 
 (defconst ef-themes-palette-common
   '((fringe unspecified)
+    (property variable)
     (fg-region unspecified)
 
     (bg-diff-context bg-dim)
