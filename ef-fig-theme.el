@@ -133,8 +133,8 @@
     (keyword green-warmer)
     (preprocessor red-warmer)
     (docstring magenta-faint)
-    (string green)
-    (type red-cooler)
+    (string red-cooler)
+    (type green)
     (variable yellow-warmer)
     (variable-use yellow-faint)
     (rx-backslash yellow-cooler) ; compare with `string'
