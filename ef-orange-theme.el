@@ -173,9 +173,9 @@
     (mail-cite-2 red-cooler)
     (mail-cite-3 fg-alt)
     (mail-part red-faint)
-    (mail-recipient red-warmer)
-    (mail-subject yellow)
-    (mail-other green-warmer)
+    (mail-recipient yellow)
+    (mail-subject red-warmer)
+    (mail-other green-cooler)
 
     (bg-search-static bg-warning)
     (bg-search-current bg-yellow-intense)
