@@ -134,7 +134,7 @@
     (preprocessor red-warmer)
     (docstring magenta-faint)
     (string red-cooler)
-    (type green)
+    (type green-cooler)
     (variable yellow-warmer)
     (variable-use yellow-faint)
     (rx-backslash yellow-cooler) ; compare with `string'
@@ -157,7 +157,7 @@
     (date-weekday yellow-cooler)
     (date-weekend red-cooler)
 
-    (fg-prose-code green)
+    (fg-prose-code green-cooler)
     (prose-done green)
     (fg-prose-macro red-cooler)
     (prose-metadata fg-dim)
