@@ -155,7 +155,7 @@
     (date-scheduled yellow-warmer)
     (date-scheduled-subtle yellow-faint)
     (date-weekday yellow-cooler)
-    (date-weekend red-cooler)
+    (date-weekend red)
 
     (fg-prose-code green-cooler)
     (prose-done green)
