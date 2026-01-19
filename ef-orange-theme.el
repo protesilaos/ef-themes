@@ -123,7 +123,7 @@
     (name yellow)
     (keybind red-warmer)
     (identifier yellow-faint)
-    (fg-prompt yellow)
+    (fg-prompt green)
 
     (builtin red)
     (comment fg-dim)
