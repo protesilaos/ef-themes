@@ -174,7 +174,7 @@
     (mail-cite-3 magenta-warmer)
     (mail-part yellow-faint)
     (mail-recipient red-cooler)
-    (mail-subject green-cooler)
+    (mail-subject green)
     (mail-other magenta-cooler)
 
     (bg-search-static bg-warning)
