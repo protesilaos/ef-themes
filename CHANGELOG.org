@@ -12,6 +12,27 @@ the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
 
+* Version 2.1.0 on 2026-01-27
+:PROPERTIES:
+:CUSTOM_ID: h:4b48d1fa-02df-49e3-bf7f-6e3f04c7e84f
+:END:
+
+This version introduces two carefully designed, legible and colourful
+themes: ~ef-orange~ (light) and ~ef-fig~ (dark). Both draw inspiration
+from the fruits they are name after.
+
+The convenience commands ~ef-themes-select-dark~ and
+~ef-themes-select-light~ use the minibuffer to select+load an Ef theme
+that is either dark or light, respectively. The more general command
+is ~ef-themes-select~.
+
+All screen shots of the themes are updated to reflect their current
+status: <https://protesilaos.com/emacs/ef-themes-pictures>.
+
+Remember that since version =2.0.0=, the ~ef-themes~ are built on top
+of my ~modus-themes~. This means that most of the changes happen to
+Modus and are inherited by Ef.
+
 * Version 2.0.0 on 2025-11-09
 :PROPERTIES:
 :CUSTOM_ID: h:c9a336a7-60f9-491e-9d15-884042c4252d
