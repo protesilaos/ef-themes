@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-maris-dark-palette
  nil
- 'ef-maris-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-maris-dark-palette-overrides)
 
 ;;; ef-maris-dark-theme.el ends here

@@ -229,7 +229,6 @@ further details)."
  'light
  'ef-summer-palette
  nil
- 'ef-summer-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-summer-palette-overrides)
 
 ;;; ef-summer-theme.el ends here

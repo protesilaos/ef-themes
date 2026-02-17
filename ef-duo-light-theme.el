@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-duo-light-palette
  nil
- 'ef-duo-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-duo-light-palette-overrides)
 
 ;;; ef-duo-light-theme.el ends here

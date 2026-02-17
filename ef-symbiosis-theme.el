@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-symbiosis-palette
  nil
- 'ef-symbiosis-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-symbiosis-palette-overrides)
 
 ;;; ef-symbiosis-theme.el ends here

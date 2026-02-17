@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-day-palette
  nil
- 'ef-day-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-day-palette-overrides)
 
 ;;; ef-day-theme.el ends here

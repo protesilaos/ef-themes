@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-orange-palette
  nil
- 'ef-orange-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-orange-palette-overrides)
 
 ;;; ef-orange-theme.el ends here

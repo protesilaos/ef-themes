@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-eagle-palette
  nil
- 'ef-eagle-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-eagle-palette-overrides)
 
 ;;; ef-eagle-theme.el ends here

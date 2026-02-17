@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-arbutus-palette
  nil
- 'ef-arbutus-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-arbutus-palette-overrides)
 
 ;;; ef-arbutus-theme.el ends here

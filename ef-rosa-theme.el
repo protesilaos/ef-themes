@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-rosa-palette
  nil
- 'ef-rosa-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-rosa-palette-overrides)
 
 ;;; ef-rosa-theme.el ends here

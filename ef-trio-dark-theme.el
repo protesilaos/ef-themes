@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-trio-dark-palette
  nil
- 'ef-trio-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-trio-dark-palette-overrides)
 
 ;;; ef-trio-dark-theme.el ends here

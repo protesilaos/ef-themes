@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-trio-light-palette
  nil
- 'ef-trio-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-trio-light-palette-overrides)
 
 ;;; ef-trio-light-theme.el ends here

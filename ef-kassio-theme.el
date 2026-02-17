@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-kassio-palette
  nil
- 'ef-kassio-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-kassio-palette-overrides)
 
 ;;; ef-kassio-theme.el ends here

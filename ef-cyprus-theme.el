@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-cyprus-palette
  nil
- 'ef-cyprus-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-cyprus-palette-overrides)
 
 ;;; ef-cyprus-theme.el ends here

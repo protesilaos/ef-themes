@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-dream-palette
  nil
- 'ef-dream-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-dream-palette-overrides)
 
 ;;; ef-dream-theme.el ends here

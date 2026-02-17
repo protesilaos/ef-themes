@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-melissa-light-palette
  nil
- 'ef-melissa-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-melissa-light-palette-overrides)
 
 ;;; ef-melissa-light-theme.el ends here

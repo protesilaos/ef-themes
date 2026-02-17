@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-maris-light-palette
  nil
- 'ef-maris-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-maris-light-palette-overrides)
 
 ;;; ef-maris-light-theme.el ends here

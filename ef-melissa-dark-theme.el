@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-melissa-dark-palette
  nil
- 'ef-melissa-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-melissa-dark-palette-overrides)
 
 ;;; ef-melissa-dark-theme.el ends here

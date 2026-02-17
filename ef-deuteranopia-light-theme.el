@@ -233,7 +233,6 @@ further details)."
  'light
  'ef-deuteranopia-light-palette
  nil
- 'ef-deuteranopia-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-deuteranopia-light-palette-overrides)
 
 ;;; ef-deuteranopia-light-theme.el ends here

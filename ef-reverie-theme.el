@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-reverie-palette
  nil
- 'ef-reverie-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-reverie-palette-overrides)
 
 ;;; ef-reverie-theme.el ends here

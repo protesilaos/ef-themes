@@ -233,7 +233,6 @@ further details)."
  'dark
  'ef-tritanopia-dark-palette
  nil
- 'ef-tritanopia-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-tritanopia-dark-palette-overrides)
 
 ;;; ef-tritanopia-dark-theme.el ends here

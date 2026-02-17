@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-owl-palette
  nil
- 'ef-owl-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-owl-palette-overrides)
 
 ;;; ef-owl-theme.el ends here

@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-autumn-palette
  nil
- 'ef-autumn-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-autumn-palette-overrides)
 
 ;;; ef-autumn-theme.el ends here

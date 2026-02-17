@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-night-palette
  nil
- 'ef-night-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-night-palette-overrides)
 
 ;;; ef-night-theme.el ends here

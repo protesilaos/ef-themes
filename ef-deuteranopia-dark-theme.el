@@ -233,7 +233,6 @@ further details)."
  'dark
  'ef-deuteranopia-dark-palette
  nil
- 'ef-deuteranopia-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-deuteranopia-dark-palette-overrides)
 
 ;;; ef-deuteranopia-dark-theme.el ends here

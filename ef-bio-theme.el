@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-bio-palette
  nil
- 'ef-bio-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-bio-palette-overrides)
 
 ;;; ef-bio-theme.el ends here

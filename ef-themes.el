@@ -110,11 +110,6 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
   (append ef-themes-light-themes ef-themes-dark-themes)
   "Symbols of all the Ef themes.")
 
-(defconst ef-themes-custom-faces
-  '(
-    `(magit-section-highlight ((,c :background ,bg-alt)))
-    `(magit-diff-file-heading-highlight ((,c :inherit magit-diff-file-heading :background ,bg-alt)))))
-
 (defconst ef-themes-with-properties
   '((ef-arbutus ef-themes "Legible light pink theme with red and green colors." light ef-arbutus-palette nil ef-arbutus-palette-overrides)
     (ef-autumn ef-themes "Legible dark brown-black theme with warm colors (red, yellow, green, teal)." dark ef-autumn-palette nil ef-autumn-palette-overrides)

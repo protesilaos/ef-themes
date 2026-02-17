@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-elea-light-palette
  nil
- 'ef-elea-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-elea-light-palette-overrides)
 
 ;;; ef-elea-light-theme.el ends here

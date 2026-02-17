@@ -233,7 +233,6 @@ further details)."
  'light
  'ef-tritanopia-light-palette
  nil
- 'ef-tritanopia-light-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-tritanopia-light-palette-overrides)
 
 ;;; ef-tritanopia-light-theme.el ends here

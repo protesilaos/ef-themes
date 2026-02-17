@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-duo-dark-palette
  nil
- 'ef-duo-dark-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-duo-dark-palette-overrides)
 
 ;;; ef-duo-dark-theme.el ends here

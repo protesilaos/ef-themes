@@ -229,7 +229,6 @@ further details)."
  'dark
  'ef-winter-palette
  nil
- 'ef-winter-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-winter-palette-overrides)
 
 ;;; ef-winter-theme.el ends here

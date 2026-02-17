@@ -230,7 +230,6 @@ further details)."
  'dark
  'ef-cherie-palette
  nil
- 'ef-cherie-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-cherie-palette-overrides)
 
 ;;; ef-cherie-theme.el ends here

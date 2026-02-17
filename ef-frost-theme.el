@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-frost-palette
  nil
- 'ef-frost-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-frost-palette-overrides)
 
 ;;; ef-frost-theme.el ends here

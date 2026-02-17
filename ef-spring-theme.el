@@ -230,7 +230,6 @@ further details)."
  'light
  'ef-spring-palette
  nil
- 'ef-spring-palette-overrides
- 'ef-themes-custom-faces)
+ 'ef-spring-palette-overrides)
 
 ;;; ef-spring-theme.el ends here
