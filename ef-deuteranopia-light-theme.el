@@ -47,7 +47,7 @@
     (fg-dim "#70627f")
     (fg-alt "#196f70")
     (bg-active "#b3b3c0")
-    (bg-inactive "#efeff5")
+    (bg-inactive "#e4e4f0")
     (border "#bcbcd0")
 
     (red "#d3303a")
