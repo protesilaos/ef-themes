@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-owl
-  "Legible dark theme with blue, cyan, magenta and desaturated colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-owl-palette-partial
   '((cursor "#afe6ef")
     (bg-main "#292c2f")

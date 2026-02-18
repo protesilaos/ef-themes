@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-tritanopia-dark
-  "Legible dark theme, optimized for blue-yellow color deficiency."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 ;; Most of the colors here, like the blue and green hues, are defined
 ;; simply to preserve compatibility with the rest of the project.  We
 ;; don't actually rely on them for anything critical.

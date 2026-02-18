@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-trio-dark
-  "Legible dark theme with magenta, blue, teal colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-trio-dark-palette-partial
   '((cursor "#ff99ff")
     (bg-main "#160f0f")

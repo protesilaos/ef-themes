@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-arbutus
-  "Legible light theme with red and green colors."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-arbutus-palette-partial
   '((cursor "#208f10")
     (bg-main "#ffead8")

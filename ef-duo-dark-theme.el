@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-duo-dark
-  "Legible dark theme with mostly blue and orange colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-duo-dark-palette-partial
   '((cursor "#ef6f11")
     (bg-main "#070019")

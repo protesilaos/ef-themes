@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-autumn
-  "Legible dark theme with warm, varied colors (red, yellow, green, teal)."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-autumn-palette-partial
   '((cursor "#ffaa33")
     (bg-main "#0f0e06")

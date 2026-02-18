@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-kassio
-  "Legible light theme with blue, red, magenta, and earthly colors."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-kassio-palette-partial
   '((cursor "#d06f30")
     (bg-main "#fff7f7")

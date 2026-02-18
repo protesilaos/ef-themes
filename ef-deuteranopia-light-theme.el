@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-deuteranopia-light
-  "Legible light theme, optimized for red-green color deficiency."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 ;; Most of the colors here, like the red and green hues, are defined
 ;; simply to preserve compatibility with the rest of the project.  We
 ;; don't actually rely on them for anything critical.

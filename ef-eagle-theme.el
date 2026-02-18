@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-eagle
-  "Legible light theme with brown, red, and desatured colors."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-eagle-palette-partial
   '((cursor "#774400")
     (bg-main "#f1ecd0")

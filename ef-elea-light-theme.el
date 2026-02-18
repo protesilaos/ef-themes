@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-elea-light
-  "Legible light theme with brown, magenta, and green colors."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-elea-light-palette-partial
   '((cursor "#770080")
     (bg-main "#edf5e2")

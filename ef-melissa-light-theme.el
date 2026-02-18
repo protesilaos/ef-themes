@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-melissa-light
-  "Legible light theme with warm colors (yellow, red, green, cyan)."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-melissa-light-palette-partial
   '((cursor "#a07f00")
     (bg-main "#fff6d8")

@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-bio
-  "Legible dark theme with green, teal, blue, purple colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-bio-palette-partial
   '((cursor "#35f038")
     (bg-main "#111111")

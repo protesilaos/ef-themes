@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-symbiosis
-  "Legible dark theme with blue, green, cyan, gold colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-symbiosis-palette-partial
   '((cursor "#f0af7f")
     (bg-main "#130911")

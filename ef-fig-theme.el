@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-fig
-  "Legible dark theme with warm green, yellow, and magenta colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-fig-palette-partial
   '((cursor "#e0646a")
     (bg-main "#3b2043")

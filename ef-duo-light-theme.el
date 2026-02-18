@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-duo-light
-  "Legible light theme with mostly blue and yellow colors."
-  :background-mode 'light
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-duo-light-palette-partial
   '((cursor "#1144ff")
     (bg-main "#fff8f0")

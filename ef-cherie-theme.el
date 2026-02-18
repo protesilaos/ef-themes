@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-cherie
-  "Legible dark theme with warm colors (mostly pink, magenta, gold)."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-cherie-palette-partial
   '((cursor "#ff5aaf")
     (bg-main "#190a0f")

@@ -35,13 +35,6 @@
 
 (require 'ef-themes)
 
-;;;###theme-autoload
-(deftheme ef-dream
-  "Legible dark theme with gold and nuanced colors."
-  :background-mode 'dark
-  :kind 'color-scheme
-  :family 'ef)
-
 (defconst ef-dream-palette-partial
   '((cursor "#f3c09a")
     (bg-main "#232025")
