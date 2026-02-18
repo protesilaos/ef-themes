@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-spring
+  "Legible light theme with cool, varied colors (green, cyan, red)."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-spring-palette-partial
   '((cursor "#bf005f")
     (bg-main "#f6fff9")

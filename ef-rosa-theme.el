@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-rosa
+  "Legible dark theme with magenta and green colors."
+  :background-mode 'dark
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-rosa-palette-partial
   '((cursor "#ef607a")
     (bg-main "#322023")

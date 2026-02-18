@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-night
+  "Legible dark theme with mostly green, blue, purple colors."
+  :background-mode 'dark
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-night-palette-partial
   '((cursor "#00ccff")
     (bg-main "#000e17")

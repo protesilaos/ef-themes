@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-maris-light
+  "Legible light theme with blue, cyan, and green colors."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-maris-light-palette-partial
   '((cursor "#036f99")
     (bg-main "#edf4f8")

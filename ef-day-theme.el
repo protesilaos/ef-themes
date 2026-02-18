@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-day
+  "Legible light theme with warm, varied colors (yellow, red, green, purple)."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-day-palette-partial
   '((cursor "#cf1f00")
     (bg-main "#fff5ea")

@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-orange
+  " Legible light theme with orange, yellow, and green colors."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-orange-palette-partial
   '((cursor "#cf5f00")
     (bg-main "#ffedc9")

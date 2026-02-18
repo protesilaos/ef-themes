@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-dark
+  "Legible dark theme with blue, magenta, cyan, purple colors."
+  :background-mode 'dark
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-dark-palette-partial
   '((cursor "#ff76ff")
     (bg-main "#000000")

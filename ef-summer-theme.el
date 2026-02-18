@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-summer
+  "Legible light theme with magenta, purple, gold, cyan colors."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-summer-palette-partial
   '((cursor "#cf0090")
     (bg-main "#fff2f3")

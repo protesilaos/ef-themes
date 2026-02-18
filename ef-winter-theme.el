@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-winter
+  "Legible dark theme with magenta, purple, fawn, teal colors."
+  :background-mode 'dark
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-winter-palette-partial
   '((cursor "#ff6ff0")
     (bg-main "#0f0b15")

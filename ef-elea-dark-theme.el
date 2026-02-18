@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-elea-dark
+  "Legible dark theme with brown, magenta, and green colors."
+  :background-mode 'dark
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-elea-dark-palette-partial
   '((cursor "#ef7fa8")
     (bg-main "#222524")

@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-trio-light
+  "Legible light theme with magenta, blue, and teal colors."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-trio-light-palette-partial
   '((cursor "#4f45ff")
     (bg-main "#f8f5ff")

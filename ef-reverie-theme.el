@@ -35,6 +35,13 @@
 
 (require 'ef-themes)
 
+;;;###theme-autoload
+(deftheme ef-reverie
+  "Legible light theme with gold and nuanced colors."
+  :background-mode 'light
+  :kind 'color-scheme
+  :family 'ef)
+
 (defconst ef-reverie-palette-partial
   '((cursor "#9d5744")
     (bg-main "#f3eddf")
