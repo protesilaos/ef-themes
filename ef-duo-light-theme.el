@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-duo-light-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-duo-light
  'ef-themes

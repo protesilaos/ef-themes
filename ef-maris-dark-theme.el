@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-maris-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-maris-dark
  'ef-themes

@@ -226,6 +226,7 @@ further details)."
    nil
    (append ef-deuteranopia-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-deuteranopia-dark
  'ef-themes

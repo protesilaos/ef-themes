@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-eagle-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-eagle
  'ef-themes

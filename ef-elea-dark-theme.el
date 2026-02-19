@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-elea-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-elea-dark
  'ef-themes

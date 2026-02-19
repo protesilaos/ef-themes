@@ -226,6 +226,7 @@ further details)."
    nil
    (append ef-tritanopia-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-tritanopia-dark
  'ef-themes

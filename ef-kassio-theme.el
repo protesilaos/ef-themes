@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-kassio-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-kassio
  'ef-themes

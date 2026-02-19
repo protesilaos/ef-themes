@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-autumn-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-autumn
  'ef-themes

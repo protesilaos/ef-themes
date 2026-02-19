@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-trio-light-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-trio-light
  'ef-themes

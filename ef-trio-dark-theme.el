@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-trio-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-trio-dark
  'ef-themes

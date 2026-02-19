@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-melissa-dark-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-melissa-dark
  'ef-themes

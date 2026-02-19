@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-rosa-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-rosa
  'ef-themes

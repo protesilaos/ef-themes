@@ -223,6 +223,7 @@ further details)."
    nil
    (append ef-dream-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-dream
  'ef-themes

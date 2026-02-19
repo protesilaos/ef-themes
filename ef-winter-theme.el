@@ -222,6 +222,7 @@ further details)."
    nil
    (append ef-winter-palette-mappings-partial ef-themes-palette-common)))
 
+;;;###theme-autoload
 (modus-themes-theme
  'ef-winter
  'ef-themes
