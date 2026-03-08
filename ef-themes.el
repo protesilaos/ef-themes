@@ -266,22 +266,18 @@ Alternatively, use the commands `ef-themes-rotate', `ef-themes-select',
 `ef-themes-list-colors-current'.  They are all designed to only consider
 Ef themes." our-symbol modus-symbol)))))
 
-(defun ef-themes-define-option-aliases ()
+(defun ef-themes-define-compatibility-aliases ()
   "Define aliases for the user options of the Modus themes."
   (unless ef-themes--aliased-p
-    (dolist (suffix '( disable-other-themes to-toggle to-rotate after-load-theme-hook
+    (dolist (user-option-suffix '( disable-other-themes to-toggle to-rotate after-load-theme-hook
                        post-load-hook italic-constructs bold-constructs variable-pitch-ui mixed-fonts
                        headings completions prompts common-palette-overrides))
-      (ef-themes-define-alias "ef-themes" suffix))
+      (ef-themes-define-alias "ef-themes" user-option-suffix))
+    (dolist (function-suffix '(load-theme with-colors get-color-value))
+      (ef-themes-define-alias "ef-themes" function-suffix :is-function))
     (setq ef-themes--aliased-p t)))
 
-(ef-themes-define-option-aliases)
-
-(defalias 'ef-themes-load-theme 'modus-themes-load-theme
-  "Alias for `modus-themes-load-theme'.")
-
-(defalias 'ef-themes-with-colors 'modus-themes-with-colors
-  "Alias for `modus-themes-with-colors.")
+(ef-themes-define-compatibility-aliases)
 
 ;;;; Limit the Modus themes to only Ef themes
 
