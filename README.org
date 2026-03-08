@@ -341,7 +341,7 @@ matters.
   Daniel Mendler, Federico Stilman, Filippo Argiolas, Iris Garcia,
   Jean-Philippe Gagné Guay, Len Trigg, Jonas Collberg, Saša Janiška,
   Spike-Leung, Steve Molitor, Summer Emacs, Sven Seebeck, Thanos
-  Apollo, Zoltán Király, goldfita, marasenna, newhallroad.
+  Apollo, Zoltán Király, aikrahguzar, goldfita, marasenna, newhallroad.
 
 * GNU Free Documentation License
 :PROPERTIES:

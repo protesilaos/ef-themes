@@ -194,9 +194,9 @@
     (rainbow-2 yellow-cooler)
     (rainbow-3 blue-warmer)
     (rainbow-4 magenta)
-    (rainbow-5 green)
+    (rainbow-5 cyan)
     (rainbow-6 yellow)
-    (rainbow-7 cyan)
+    (rainbow-7 red-cooler)
     (rainbow-8 green-warmer)))
 
 (defcustom ef-night-palette-overrides nil

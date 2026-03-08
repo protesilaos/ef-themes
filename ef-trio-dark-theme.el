@@ -194,10 +194,10 @@
     (rainbow-2 green-cooler)
     (rainbow-3 magenta)
     (rainbow-4 cyan)
-    (rainbow-5 green-warmer)
+    (rainbow-5 yellow-cooler)
     (rainbow-6 magenta-cooler)
     (rainbow-7 cyan-warmer)
-    (rainbow-8 yellow-cooler)))
+    (rainbow-8 green-warmer)))
 
 (defcustom ef-trio-dark-palette-overrides nil
   "Overrides for `ef-trio-dark-palette'.
