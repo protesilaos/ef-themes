@@ -104,6 +104,7 @@
     (bg-mode-line-active "#ddb4ff")
     (fg-mode-line-active "#241f48")
     (bg-completion "#f4cfff")
+    (bg-popup "#e7dcff")
     (bg-hover "#aaeccf")
     (bg-hover-secondary "#b4cfff")
     (bg-hl-line "#cfe6ff")
