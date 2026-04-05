@@ -233,4 +233,6 @@ further details)."
  nil
  'ef-summer-palette-overrides)
 
+(provide 'ef-summer-theme)
+
 ;;; ef-summer-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-maris-dark-palette-overrides)
 
+(provide 'ef-maris-dark-theme)
+
 ;;; ef-maris-dark-theme.el ends here

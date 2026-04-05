@@ -237,4 +237,6 @@ further details)."
  nil
  'ef-deuteranopia-light-palette-overrides)
 
+(provide 'ef-deuteranopia-light-theme)
+
 ;;; ef-deuteranopia-light-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-melissa-dark-palette-overrides)
 
+(provide 'ef-melissa-dark-theme)
+
 ;;; ef-melissa-dark-theme.el ends here

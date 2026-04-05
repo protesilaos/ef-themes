@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-arbutus-palette-overrides)
 
+(provide 'ef-arbutus-theme)
+
 ;;; ef-arbutus-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-elea-light-palette-overrides)
 
+(provide 'ef-elea-light-theme)
+
 ;;; ef-elea-light-theme.el ends here

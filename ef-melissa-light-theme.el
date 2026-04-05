@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-melissa-light-palette-overrides)
 
+(provide 'ef-melissa-light-theme)
+
 ;;; ef-melissa-light-theme.el ends here

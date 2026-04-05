@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-dark-palette-overrides)
 
+(provide 'ef-dark-theme)
+
 ;;; ef-dark-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-bio-palette-overrides)
 
+(provide 'ef-bio-theme)
+
 ;;; ef-bio-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-duo-dark-palette-overrides)
 
+(provide 'ef-duo-dark-theme)
+
 ;;; ef-duo-dark-theme.el ends here

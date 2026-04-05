@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-elea-dark-palette-overrides)
 
+(provide 'ef-elea-dark-theme)
+
 ;;; ef-elea-dark-theme.el ends here

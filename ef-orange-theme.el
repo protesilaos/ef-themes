@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-orange-palette-overrides)
 
+(provide 'ef-orange-theme)
+
 ;;; ef-orange-theme.el ends here

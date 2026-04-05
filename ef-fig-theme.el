@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-fig-palette-overrides)
 
+(provide 'ef-fig-theme)
+
 ;;; ef-fig-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-cherie-palette-overrides)
 
+(provide 'ef-cherie-theme)
+
 ;;; ef-cherie-theme.el ends here

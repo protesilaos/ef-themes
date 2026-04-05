@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-cyprus-palette-overrides)
 
+(provide 'ef-cyprus-theme)
+
 ;;; ef-cyprus-theme.el ends here

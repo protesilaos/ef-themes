@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-autumn-palette-overrides)
 
+(provide 'ef-autumn-theme)
+
 ;;; ef-autumn-theme.el ends here

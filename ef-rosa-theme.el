@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-rosa-palette-overrides)
 
+(provide 'ef-rosa-theme)
+
 ;;; ef-rosa-theme.el ends here

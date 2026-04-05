@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-spring-palette-overrides)
 
+(provide 'ef-spring-theme)
+
 ;;; ef-spring-theme.el ends here

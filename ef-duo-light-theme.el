@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-duo-light-palette-overrides)
 
+(provide 'ef-duo-light-theme)
+
 ;;; ef-duo-light-theme.el ends here

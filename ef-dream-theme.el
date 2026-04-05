@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-dream-palette-overrides)
 
+(provide 'ef-dream-theme)
+
 ;;; ef-dream-theme.el ends here

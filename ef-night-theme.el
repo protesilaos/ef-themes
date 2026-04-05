@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-night-palette-overrides)
 
+(provide 'ef-night-theme)
+
 ;;; ef-night-theme.el ends here

@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-owl-palette-overrides)
 
+(provide 'ef-owl-theme)
+
 ;;; ef-owl-theme.el ends here

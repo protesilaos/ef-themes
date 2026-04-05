@@ -233,4 +233,6 @@ further details)."
  nil
  'ef-winter-palette-overrides)
 
+(provide 'ef-winter-theme)
+
 ;;; ef-winter-theme.el ends here

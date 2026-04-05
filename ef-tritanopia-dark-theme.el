@@ -237,4 +237,6 @@ further details)."
  nil
  'ef-tritanopia-dark-palette-overrides)
 
+(provide 'ef-tritanopia-dark-theme)
+
 ;;; ef-tritanopia-dark-theme.el ends here

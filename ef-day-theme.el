@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-day-palette-overrides)
 
+(provide 'ef-day-theme)
+
 ;;; ef-day-theme.el ends here

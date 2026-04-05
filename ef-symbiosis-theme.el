@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-symbiosis-palette-overrides)
 
+(provide 'ef-symbiosis-theme)
+
 ;;; ef-symbiosis-theme.el ends here

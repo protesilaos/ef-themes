@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-reverie-palette-overrides)
 
+(provide 'ef-reverie-theme)
+
 ;;; ef-reverie-theme.el ends here

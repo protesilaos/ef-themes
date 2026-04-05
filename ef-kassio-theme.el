@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-kassio-palette-overrides)
 
+(provide 'ef-kassio-theme)
+
 ;;; ef-kassio-theme.el ends here

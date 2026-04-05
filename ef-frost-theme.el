@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-frost-palette-overrides)
 
+(provide 'ef-frost-theme)
+
 ;;; ef-frost-theme.el ends here

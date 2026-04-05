@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-trio-light-palette-overrides)
 
+(provide 'ef-trio-light-theme)
+
 ;;; ef-trio-light-theme.el ends here

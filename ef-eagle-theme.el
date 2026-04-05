@@ -234,4 +234,6 @@ further details)."
  nil
  'ef-eagle-palette-overrides)
 
+(provide 'ef-eagle-theme)
+
 ;;; ef-eagle-theme.el ends here
