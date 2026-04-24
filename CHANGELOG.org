@@ -1,5 +1,5 @@
 #+title: Change log of the Ef Themes
-#+author: Protesilaos Stavrou
+#+author: Protesilaos
 #+email: info@protesilaos.com
 #+options: ':nil toc:nil num:nil author:nil email:nil
 #+startup: content
@@ -2671,7 +2671,7 @@ plans with the =ef-themes= and how maintainable the project is:
 <https://lists.gnu.org/archive/html/emacs-devel/2022-10/msg00060.html>.
 
 #+begin_example message
-From: Protesilaos Stavrou <info@protesilaos.com>
+From: Protesilaos <info@protesilaos.com>
 To: Philip Kaludercic <philipk@posteo.net>, emacs-devel@gnu.org
 Subject: Re: [elpa] externals/ef-themes b6fc326946: Add ef-bio theme
 Date: Sun, 02 Oct 2022 15:18:28 +0300
@@ -2683,8 +2683,8 @@ Date: Sun, 02 Oct 2022 15:18:28 +0300
 >
 >> branch: externals/ef-themes
 >> commit b6fc32694646c65adbf1ed6d3d7bfddf55e16273
->> Author: Protesilaos Stavrou <info@protesilaos.com>
->> Commit: Protesilaos Stavrou <info@protesilaos.com>
+>> Author: Protesilaos <info@protesilaos.com>
+>> Commit: Protesilaos <info@protesilaos.com>
 >>
 >>     Add ef-bio theme
 >>
@@ -2879,7 +2879,7 @@ scale and will make things unmaintainable.
 #+begin_src diff
 From 30506843a9692c6539de79d819b63f328dbb5638 Mon Sep 17 00:00:00 2001
 Message-Id: <30506843a9692c6539de79d819b63f328dbb5638.1663662345.git.info@protesilaos.com>
-From: Protesilaos Stavrou <info@protesilaos.com>
+From: Protesilaos <info@protesilaos.com>
 Date: Tue, 20 Sep 2022 11:25:15 +0300
 Subject: [PATCH] Add user option for intense region
 
@@ -3152,7 +3152,7 @@ on those resources:
 #+begin_src diff
 From 35f3ee6b9c5a8f15615be1ef75e58c8b27e3b633 Mon Sep 17 00:00:00 2001
 Message-Id: <35f3ee6b9c5a8f15615be1ef75e58c8b27e3b633.1663904476.git.info@protesilaos.com>
-From: Protesilaos Stavrou <info@protesilaos.com>
+From: Protesilaos <info@protesilaos.com>
 Date: Fri, 23 Sep 2022 06:07:12 +0300
 Subject: [PATCH] Revise base backgrounds in all dark themes (DRAFT)
 

@@ -1,5 +1,5 @@
 #+title: ef-themes: colorful and legible themes
-#+author: Protesilaos Stavrou
+#+author: Protesilaos
 #+email: info@protesilaos.com
 #+language: en
 #+options: ':t toc:nil author:t email:t num:t
@@ -13,13 +13,13 @@
 #+texinfo_dir_title: Ef-Themes: (ef-themes)
 #+texinfo_dir_desc: Colorful and legible themes
 #+texinfo_header: @set MAINTAINERSITE @uref{https://protesilaos.com,maintainer webpage}
-#+texinfo_header: @set MAINTAINER Protesilaos Stavrou
+#+texinfo_header: @set MAINTAINER Protesilaos
 #+texinfo_header: @set MAINTAINEREMAIL @email{info@protesilaos.com}
 #+texinfo_header: @set MAINTAINERCONTACT @uref{mailto:info@protesilaos.com,contact the maintainer}
 
 #+texinfo: @insertcopying
 
-This manual, written by Protesilaos Stavrou, describes the Emacs package
+This manual, written by Protesilaos, describes the Emacs package
 called ~ef-themes~, and provides every other piece of information
 pertinent to it.
 
@@ -329,7 +329,7 @@ check the sample configuration to quickly get started ([[#h:ac76ded0-af9b-4566-a
 This project is meant to be a collective effort.  Every bit of help
 matters.
 
-+ Author/maintainer :: Protesilaos Stavrou.
++ Author/maintainer :: Protesilaos.
 
 + Contributions to code or the manual :: Alex Lu, Christopher League,
   Eshel Yaron, Gautier Ponsinet, John Haman, Kevin Fleming, Oleksii

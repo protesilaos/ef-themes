@@ -1,5 +1,5 @@
 #+title: Ef themes: contrast ratios of the main colours
-#+author: Protesilaos Stavrou (https://protesilaos.com)
+#+author: Protesilaos (https://protesilaos.com)
 #+startup: content indent
 
 Check this files Git history for updates.
