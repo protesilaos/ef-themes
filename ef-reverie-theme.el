@@ -228,7 +228,7 @@ further details)."
 (modus-themes-theme
  'ef-reverie
  'ef-themes
- "Legible light cream theme with gold and nuanced colors."
+ "Legible light lavender theme with gold and nuanced colors."
  'light
  'ef-reverie-palette
  nil

@@ -137,7 +137,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-night ef-themes "Legible dark sky blue theme with mostly green, blue, purple colors." dark ef-night-palette nil ef-night-palette-overrides)
     (ef-orange ef-themes "Legible light theme with orange, yellow, and green colors." light ef-orange-palette nil ef-orange-palette-overrides)
     (ef-owl ef-themes "Legible dark grey theme with blue, cyan, magenta and desaturated colors." dark ef-owl-palette nil ef-owl-palette-overrides)
-    (ef-reverie ef-themes "Legible light cream theme with gold and nuanced colors." light ef-reverie-palette nil ef-reverie-palette-overrides)
+    (ef-reverie ef-themes "Legible light lavender theme with gold and nuanced colors." light ef-reverie-palette nil ef-reverie-palette-overrides)
     (ef-rosa ef-themes "Legible dark rosewood theme with magenta and green colors." dark ef-rosa-palette nil ef-rosa-palette-overrides)
     (ef-spring ef-themes "Legible light floral theme with cool, varied colors (green, cyan, red)." light ef-spring-palette nil ef-spring-palette-overrides)
     (ef-summer ef-themes "Legible light warm pink theme with magenta, purple, gold, cyan colors." light ef-summer-palette nil ef-summer-palette-overrides)
