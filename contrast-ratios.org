@@ -54,36 +54,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:5d174ec6-499c-4343-b625-e64e68f2367a
 :END:
 
-| Name           |         | #ffead8 | #f0d8cf | #e7d2cb | #f7e2d2 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #393330 |   10.66 |    9.13 |    8.57 |    9.92 |
-| fg-dim         | #6e678f |    4.50 |    3.86 |    3.62 |    4.19 |
-| fg-alt         | #8a5f4a |    4.72 |    4.04 |    3.79 |    4.39 |
-| red            | #b0000f |    6.31 |    5.41 |    5.08 |    5.88 |
-| red-warmer     | #b20f00 |    6.08 |    5.21 |    4.89 |    5.66 |
-| red-cooler     | #aa184f |    6.10 |    5.23 |    4.90 |    5.68 |
-| red-faint      | #8f2f30 |    6.88 |    5.89 |    5.53 |    6.41 |
-| green          | #007000 |    5.43 |    4.65 |    4.36 |    5.05 |
-| green-warmer   | #557000 |    4.86 |    4.17 |    3.91 |    4.53 |
-| green-cooler   | #00704f |    5.25 |    4.50 |    4.22 |    4.89 |
-| green-faint    | #3f712f |    4.98 |    4.27 |    4.01 |    4.64 |
-| yellow         | #906200 |    4.58 |    3.92 |    3.68 |    4.26 |
-| yellow-warmer  | #b44405 |    4.78 |    4.09 |    3.84 |    4.45 |
-| yellow-cooler  | #8a6340 |    4.57 |    3.92 |    3.68 |    4.26 |
-| yellow-faint   | #8d6068 |    4.50 |    3.85 |    3.61 |    4.19 |
-| blue           | #375cc6 |    5.13 |    4.40 |    4.13 |    4.78 |
-| blue-warmer    | #5f55df |    4.68 |    4.01 |    3.76 |    4.35 |
-| blue-cooler    | #265fbf |    5.19 |    4.44 |    4.17 |    4.83 |
-| blue-faint     | #4a659f |    4.93 |    4.22 |    3.96 |    4.59 |
-| magenta        | #a23ea4 |    4.79 |    4.10 |    3.85 |    4.46 |
-| magenta-warmer | #bf2c90 |    4.53 |    3.88 |    3.64 |    4.21 |
-| magenta-cooler | #6448ca |    5.42 |    4.64 |    4.36 |    5.05 |
-| magenta-faint  | #845592 |    4.87 |    4.17 |    3.92 |    4.54 |
-| cyan           | #3f69af |    4.68 |    4.01 |    3.76 |    4.35 |
-| cyan-warmer    | #4060a0 |    5.30 |    4.54 |    4.26 |    4.93 |
-| cyan-cooler    | #0f7688 |    4.54 |    3.89 |    3.65 |    4.23 |
-| cyan-faint     | #546f70 |    4.64 |    3.97 |    3.73 |    4.32 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #ffead8 | #f0d8cf | #e7d2cb |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #393330 |   10.66 |    9.13 |    8.57 |
+| fg-dim         | #6e678f |    4.50 |    3.86 |    3.62 |
+| fg-alt         | #8a5f4a |    4.72 |    4.04 |    3.79 |
+| red            | #b0000f |    6.31 |    5.41 |    5.08 |
+| red-warmer     | #b20f00 |    6.08 |    5.21 |    4.89 |
+| red-cooler     | #aa184f |    6.10 |    5.23 |    4.90 |
+| red-faint      | #8f2f30 |    6.88 |    5.89 |    5.53 |
+| green          | #007000 |    5.43 |    4.65 |    4.36 |
+| green-warmer   | #557000 |    4.86 |    4.17 |    3.91 |
+| green-cooler   | #00704f |    5.25 |    4.50 |    4.22 |
+| green-faint    | #3f712f |    4.98 |    4.27 |    4.01 |
+| yellow         | #906200 |    4.58 |    3.92 |    3.68 |
+| yellow-warmer  | #b44405 |    4.78 |    4.09 |    3.84 |
+| yellow-cooler  | #8a6340 |    4.57 |    3.92 |    3.68 |
+| yellow-faint   | #8d6068 |    4.50 |    3.85 |    3.61 |
+| blue           | #375cc6 |    5.13 |    4.40 |    4.13 |
+| blue-warmer    | #5f55df |    4.68 |    4.01 |    3.76 |
+| blue-cooler    | #265fbf |    5.19 |    4.44 |    4.17 |
+| blue-faint     | #4a659f |    4.93 |    4.22 |    3.96 |
+| magenta        | #a23ea4 |    4.79 |    4.10 |    3.85 |
+| magenta-warmer | #bf2c90 |    4.53 |    3.88 |    3.64 |
+| magenta-cooler | #6448ca |    5.42 |    4.64 |    4.36 |
+| magenta-faint  | #845592 |    4.87 |    4.17 |    3.92 |
+| cyan           | #3f69af |    4.68 |    4.01 |    3.76 |
+| cyan-warmer    | #4060a0 |    5.30 |    4.54 |    4.26 |
+| cyan-cooler    | #0f7688 |    4.54 |    3.89 |    3.65 |
+| cyan-faint     | #546f70 |    4.64 |    3.97 |    3.73 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -107,36 +107,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:85f29c2d-ae5c-4bb8-94bf-ac43543c8539
 :END:
 
-| Name           |         | #0f0e06 | #26211d | #36322f | #15140d |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #cfbcba |   10.64 |    8.77 |    6.99 |   10.16 |
-| fg-dim         | #887c8a |    4.88 |    4.02 |    3.20 |    4.66 |
-| fg-alt         | #70a89f |    7.18 |    5.91 |    4.71 |    6.85 |
-| red            | #ef656a |    6.21 |    5.11 |    4.07 |    5.92 |
-| red-warmer     | #f26f25 |    6.52 |    5.37 |    4.28 |    6.22 |
-| red-cooler     | #f07f7f |    7.41 |    6.11 |    4.86 |    7.07 |
-| red-faint      | #df7f7f |    6.89 |    5.68 |    4.52 |    6.57 |
-| green          | #2fa526 |    6.02 |    4.96 |    3.95 |    5.74 |
-| green-warmer   | #64aa0f |    6.72 |    5.54 |    4.41 |    6.41 |
-| green-cooler   | #00b066 |    6.82 |    5.62 |    4.47 |    6.51 |
-| green-faint    | #5f9f6f |    6.15 |    5.07 |    4.04 |    5.87 |
-| yellow         | #c48702 |    6.28 |    5.17 |    4.12 |    5.99 |
-| yellow-warmer  | #d0730f |    5.66 |    4.66 |    3.71 |    5.40 |
-| yellow-cooler  | #df8f6f |    7.64 |    6.30 |    5.02 |    7.29 |
-| yellow-faint   | #cf9f7f |    8.21 |    6.77 |    5.39 |    7.84 |
-| blue           | #379cf6 |    6.68 |    5.50 |    4.38 |    6.37 |
-| blue-warmer    | #6a88ff |    6.06 |    4.99 |    3.98 |    5.78 |
-| blue-cooler    | #029fff |    6.82 |    5.62 |    4.48 |    6.51 |
-| blue-faint     | #6a84af |    5.10 |    4.20 |    3.34 |    4.86 |
-| magenta        | #d570af |    6.23 |    5.13 |    4.09 |    5.95 |
-| magenta-warmer | #e580ea |    7.93 |    6.53 |    5.20 |    7.57 |
-| magenta-cooler | #af8aff |    7.28 |    6.00 |    4.78 |    6.95 |
-| magenta-faint  | #c590af |    7.35 |    6.06 |    4.83 |    7.02 |
-| cyan           | #4fb0cf |    7.78 |    6.41 |    5.10 |    7.42 |
-| cyan-warmer    | #6fafff |    8.52 |    7.02 |    5.59 |    8.13 |
-| cyan-cooler    | #3dbbb0 |    8.23 |    6.78 |    5.40 |    7.85 |
-| cyan-faint     | #82a0af |    7.00 |    5.76 |    4.59 |    6.68 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #0f0e06 | #26211d | #36322f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #cfbcba |   10.64 |    8.77 |    6.99 |
+| fg-dim         | #887c8a |    4.88 |    4.02 |    3.20 |
+| fg-alt         | #70a89f |    7.18 |    5.91 |    4.71 |
+| red            | #ef656a |    6.21 |    5.11 |    4.07 |
+| red-warmer     | #f26f25 |    6.52 |    5.37 |    4.28 |
+| red-cooler     | #f07f7f |    7.41 |    6.11 |    4.86 |
+| red-faint      | #df7f7f |    6.89 |    5.68 |    4.52 |
+| green          | #2fa526 |    6.02 |    4.96 |    3.95 |
+| green-warmer   | #64aa0f |    6.72 |    5.54 |    4.41 |
+| green-cooler   | #00b066 |    6.82 |    5.62 |    4.47 |
+| green-faint    | #5f9f6f |    6.15 |    5.07 |    4.04 |
+| yellow         | #c48702 |    6.28 |    5.17 |    4.12 |
+| yellow-warmer  | #d0730f |    5.66 |    4.66 |    3.71 |
+| yellow-cooler  | #df8f6f |    7.64 |    6.30 |    5.02 |
+| yellow-faint   | #cf9f7f |    8.21 |    6.77 |    5.39 |
+| blue           | #379cf6 |    6.68 |    5.50 |    4.38 |
+| blue-warmer    | #6a88ff |    6.06 |    4.99 |    3.98 |
+| blue-cooler    | #029fff |    6.82 |    5.62 |    4.48 |
+| blue-faint     | #6a84af |    5.10 |    4.20 |    3.34 |
+| magenta        | #d570af |    6.23 |    5.13 |    4.09 |
+| magenta-warmer | #e580ea |    7.93 |    6.53 |    5.20 |
+| magenta-cooler | #af8aff |    7.28 |    6.00 |    4.78 |
+| magenta-faint  | #c590af |    7.35 |    6.06 |    4.83 |
+| cyan           | #4fb0cf |    7.78 |    6.41 |    5.10 |
+| cyan-warmer    | #6fafff |    8.52 |    7.02 |    5.59 |
+| cyan-cooler    | #3dbbb0 |    8.23 |    6.78 |    5.40 |
+| cyan-faint     | #82a0af |    7.00 |    5.76 |    4.59 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -160,33 +160,33 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:669d758b-9d7b-441d-bd56-bc15a1bc27e4
 :END:
 
-| Name           |         | #111111 | #222522 | #303230 | #161916 |
-|----------------+---------+---------+---------+---------+---------|
-| red            | #ef6560 |    6.03 |    4.94 |    4.12 |    5.66 |
-| red-warmer     | #f47360 |    6.72 |    5.51 |    4.60 |    6.30 |
-| red-cooler     | #ff778f |    7.45 |    6.11 |    5.10 |    7.00 |
-| red-faint      | #d56f72 |    5.71 |    4.68 |    3.91 |    5.36 |
-| green          | #3fb83f |    7.32 |    6.00 |    5.01 |    6.87 |
-| green-warmer   | #7fc500 |    8.89 |    7.29 |    6.09 |    8.35 |
-| green-cooler   | #00c089 |    8.00 |    6.57 |    5.48 |    7.51 |
-| green-faint    | #7fc07f |    8.77 |    7.19 |    6.00 |    8.23 |
-| yellow         | #d4aa02 |    8.59 |    7.04 |    5.88 |    8.06 |
-| yellow-warmer  | #e09a0f |    7.91 |    6.49 |    5.42 |    7.43 |
-| yellow-cooler  | #cfc04f |   10.17 |    8.34 |    6.96 |    9.54 |
-| yellow-faint   | #b7a07f |    7.51 |    6.16 |    5.14 |    7.05 |
-| blue           | #37aff6 |    7.76 |    6.36 |    5.31 |    7.28 |
-| blue-warmer    | #78afff |    8.43 |    6.91 |    5.77 |    7.91 |
-| blue-cooler    | #32cfef |   10.17 |    8.34 |    6.96 |    9.54 |
-| blue-faint     | #6ab4cf |    8.13 |    6.67 |    5.57 |    7.63 |
-| magenta        | #d38faf |    7.48 |    6.14 |    5.12 |    7.02 |
-| magenta-warmer | #e490df |    8.41 |    6.90 |    5.76 |    7.90 |
-| magenta-cooler | #af9fff |    8.30 |    6.81 |    5.68 |    7.79 |
-| magenta-faint  | #caa5bf |    8.67 |    7.11 |    5.94 |    8.14 |
-| cyan           | #6fc5ef |    9.81 |    8.05 |    6.71 |    9.21 |
-| cyan-warmer    | #7fcfdf |   10.69 |    8.77 |    7.32 |   10.04 |
-| cyan-cooler    | #5dc0aa |    8.62 |    7.07 |    5.90 |    8.09 |
-| cyan-faint     | #7fb4cf |    8.39 |    6.88 |    5.74 |    7.88 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #111111 | #222522 | #303230 |
+|----------------+---------+---------+---------+---------|
+| red            | #ef6560 |    6.03 |    4.94 |    4.12 |
+| red-warmer     | #f47360 |    6.72 |    5.51 |    4.60 |
+| red-cooler     | #ff778f |    7.45 |    6.11 |    5.10 |
+| red-faint      | #d56f72 |    5.71 |    4.68 |    3.91 |
+| green          | #3fb83f |    7.32 |    6.00 |    5.01 |
+| green-warmer   | #7fc500 |    8.89 |    7.29 |    6.09 |
+| green-cooler   | #00c089 |    8.00 |    6.57 |    5.48 |
+| green-faint    | #7fc07f |    8.77 |    7.19 |    6.00 |
+| yellow         | #d4aa02 |    8.59 |    7.04 |    5.88 |
+| yellow-warmer  | #e09a0f |    7.91 |    6.49 |    5.42 |
+| yellow-cooler  | #cfc04f |   10.17 |    8.34 |    6.96 |
+| yellow-faint   | #b7a07f |    7.51 |    6.16 |    5.14 |
+| blue           | #37aff6 |    7.76 |    6.36 |    5.31 |
+| blue-warmer    | #78afff |    8.43 |    6.91 |    5.77 |
+| blue-cooler    | #32cfef |   10.17 |    8.34 |    6.96 |
+| blue-faint     | #6ab4cf |    8.13 |    6.67 |    5.57 |
+| magenta        | #d38faf |    7.48 |    6.14 |    5.12 |
+| magenta-warmer | #e490df |    8.41 |    6.90 |    5.76 |
+| magenta-cooler | #af9fff |    8.30 |    6.81 |    5.68 |
+| magenta-faint  | #caa5bf |    8.67 |    7.11 |    5.94 |
+| cyan           | #6fc5ef |    9.81 |    8.05 |    6.71 |
+| cyan-warmer    | #7fcfdf |   10.69 |    8.77 |    7.32 |
+| cyan-cooler    | #5dc0aa |    8.62 |    7.07 |    5.90 |
+| cyan-faint     | #7fb4cf |    8.39 |    6.88 |    5.74 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -210,36 +210,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:2a58ddd5-05ff-4aab-b2e4-c5e6b4ad4749
 :END:
 
-| Name           |         | #190a0f | #291f26 | #392a2f | #1e1216 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d3cfcf |   12.45 |   10.31 |    8.79 |   11.79 |
-| fg-dim         | #808898 |    5.40 |    4.47 |    3.81 |    5.11 |
-| fg-alt         | #bf9cdf |    8.28 |    6.85 |    5.84 |    7.84 |
-| red            | #ff7359 |    7.19 |    5.95 |    5.08 |    6.81 |
-| red-warmer     | #ff656f |    6.73 |    5.57 |    4.75 |    6.37 |
-| red-cooler     | #ff78aa |    7.80 |    6.46 |    5.51 |    7.39 |
-| red-faint      | #e47f72 |    6.94 |    5.75 |    4.90 |    6.57 |
-| green          | #60b444 |    7.43 |    6.15 |    5.24 |    7.03 |
-| green-warmer   | #80b25f |    7.74 |    6.41 |    5.47 |    7.33 |
-| green-cooler   | #60bf88 |    8.52 |    7.06 |    6.02 |    8.07 |
-| green-faint    | #61a06c |    6.19 |    5.12 |    4.37 |    5.86 |
-| yellow         | #e5b76f |   10.38 |    8.60 |    7.33 |    9.83 |
-| yellow-warmer  | #ea9955 |    8.41 |    6.97 |    5.94 |    7.97 |
-| yellow-cooler  | #f59280 |    8.52 |    7.06 |    6.02 |    8.07 |
-| yellow-faint   | #bf9f8f |    7.85 |    6.50 |    5.54 |    7.43 |
-| blue           | #8fa5f6 |    8.14 |    6.74 |    5.74 |    7.70 |
-| blue-warmer    | #a897ef |    7.64 |    6.32 |    5.39 |    7.23 |
-| blue-cooler    | #7fa5ff |    8.00 |    6.62 |    5.65 |    7.57 |
-| blue-faint     | #7f9ab4 |    6.58 |    5.45 |    4.65 |    6.23 |
-| magenta        | #ef80bf |    7.80 |    6.46 |    5.50 |    7.38 |
-| magenta-warmer | #f470df |    7.54 |    6.24 |    5.32 |    7.14 |
-| magenta-cooler | #df7fff |    7.89 |    6.54 |    5.57 |    7.47 |
-| magenta-faint  | #cc9bcf |    8.39 |    6.95 |    5.92 |    7.94 |
-| cyan           | #8fbaef |    9.56 |    7.92 |    6.75 |    9.05 |
-| cyan-warmer    | #9ac0e4 |   10.11 |    8.37 |    7.14 |    9.57 |
-| cyan-cooler    | #8fcfdf |   11.14 |    9.22 |    7.86 |   10.54 |
-| cyan-faint     | #aac0cf |   10.21 |    8.46 |    7.21 |    9.67 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #190a0f | #291f26 | #392a2f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d3cfcf |   12.45 |   10.31 |    8.79 |
+| fg-dim         | #808898 |    5.40 |    4.47 |    3.81 |
+| fg-alt         | #bf9cdf |    8.28 |    6.85 |    5.84 |
+| red            | #ff7359 |    7.19 |    5.95 |    5.08 |
+| red-warmer     | #ff656f |    6.73 |    5.57 |    4.75 |
+| red-cooler     | #ff78aa |    7.80 |    6.46 |    5.51 |
+| red-faint      | #e47f72 |    6.94 |    5.75 |    4.90 |
+| green          | #60b444 |    7.43 |    6.15 |    5.24 |
+| green-warmer   | #80b25f |    7.74 |    6.41 |    5.47 |
+| green-cooler   | #60bf88 |    8.52 |    7.06 |    6.02 |
+| green-faint    | #61a06c |    6.19 |    5.12 |    4.37 |
+| yellow         | #e5b76f |   10.38 |    8.60 |    7.33 |
+| yellow-warmer  | #ea9955 |    8.41 |    6.97 |    5.94 |
+| yellow-cooler  | #f59280 |    8.52 |    7.06 |    6.02 |
+| yellow-faint   | #bf9f8f |    7.85 |    6.50 |    5.54 |
+| blue           | #8fa5f6 |    8.14 |    6.74 |    5.74 |
+| blue-warmer    | #a897ef |    7.64 |    6.32 |    5.39 |
+| blue-cooler    | #7fa5ff |    8.00 |    6.62 |    5.65 |
+| blue-faint     | #7f9ab4 |    6.58 |    5.45 |    4.65 |
+| magenta        | #ef80bf |    7.80 |    6.46 |    5.50 |
+| magenta-warmer | #f470df |    7.54 |    6.24 |    5.32 |
+| magenta-cooler | #df7fff |    7.89 |    6.54 |    5.57 |
+| magenta-faint  | #cc9bcf |    8.39 |    6.95 |    5.92 |
+| cyan           | #8fbaef |    9.56 |    7.92 |    6.75 |
+| cyan-warmer    | #9ac0e4 |   10.11 |    8.37 |    7.14 |
+| cyan-cooler    | #8fcfdf |   11.14 |    9.22 |    7.86 |
+| cyan-faint     | #aac0cf |   10.21 |    8.46 |    7.21 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -263,36 +263,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:4330b001-f03b-470c-b255-b948e61cf41f
 :END:
 
-| Name           |         | #fcf7ef | #f0ece0 | #e5e3d8 | #f8f3ea |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #242521 |   14.46 |   13.06 |   11.98 |   13.95 |
-| fg-dim         | #59786f |    4.54 |    4.10 |    3.76 |    4.38 |
-| fg-alt         | #7f475a |    6.67 |    6.02 |    5.53 |    6.44 |
-| red            | #9f0d0f |    7.76 |    7.00 |    6.42 |    7.48 |
-| red-warmer     | #dd0020 |    4.81 |    4.34 |    3.98 |    4.64 |
-| red-cooler     | #ca3400 |    4.92 |    4.44 |    4.08 |    4.75 |
-| red-faint      | #b05350 |    4.69 |    4.23 |    3.88 |    4.52 |
-| green          | #006f00 |    6.01 |    5.43 |    4.98 |    5.80 |
-| green-warmer   | #557400 |    5.07 |    4.58 |    4.20 |    4.89 |
-| green-cooler   | #00824f |    4.57 |    4.13 |    3.79 |    4.41 |
-| green-faint    | #3a6f48 |    5.55 |    5.01 |    4.60 |    5.36 |
-| yellow         | #a7601f |    4.54 |    4.10 |    3.76 |    4.38 |
-| yellow-warmer  | #bf4400 |    4.87 |    4.40 |    4.04 |    4.70 |
-| yellow-cooler  | #a2604f |    4.56 |    4.11 |    3.77 |    4.40 |
-| yellow-faint   | #8f6f4a |    4.34 |    3.92 |    3.59 |    4.18 |
-| blue           | #375cc6 |    5.61 |    5.07 |    4.65 |    5.41 |
-| blue-warmer    | #444fcf |    6.03 |    5.45 |    5.00 |    5.82 |
-| blue-cooler    | #065fbf |    5.80 |    5.23 |    4.80 |    5.59 |
-| blue-faint     | #4a659f |    5.39 |    4.87 |    4.46 |    5.20 |
-| magenta        | #9a456f |    5.70 |    5.15 |    4.72 |    5.50 |
-| magenta-warmer | #bf456a |    4.61 |    4.16 |    3.82 |    4.44 |
-| magenta-cooler | #8448aa |    5.64 |    5.10 |    4.68 |    5.45 |
-| magenta-faint  | #804f60 |    6.14 |    5.55 |    5.09 |    5.93 |
-| cyan           | #1f70af |    4.93 |    4.45 |    4.08 |    4.76 |
-| cyan-warmer    | #3f6faf |    4.80 |    4.33 |    3.97 |    4.63 |
-| cyan-cooler    | #007a9f |    4.60 |    4.15 |    3.81 |    4.43 |
-| cyan-faint     | #4f677f |    5.50 |    4.97 |    4.56 |    5.31 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fcf7ef | #f0ece0 | #e5e3d8 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #242521 |   14.46 |   13.06 |   11.98 |
+| fg-dim         | #59786f |    4.54 |    4.10 |    3.76 |
+| fg-alt         | #7f475a |    6.67 |    6.02 |    5.53 |
+| red            | #9f0d0f |    7.76 |    7.00 |    6.42 |
+| red-warmer     | #dd0020 |    4.81 |    4.34 |    3.98 |
+| red-cooler     | #ca3400 |    4.92 |    4.44 |    4.08 |
+| red-faint      | #b05350 |    4.69 |    4.23 |    3.88 |
+| green          | #006f00 |    6.01 |    5.43 |    4.98 |
+| green-warmer   | #557400 |    5.07 |    4.58 |    4.20 |
+| green-cooler   | #00824f |    4.57 |    4.13 |    3.79 |
+| green-faint    | #3a6f48 |    5.55 |    5.01 |    4.60 |
+| yellow         | #a7601f |    4.54 |    4.10 |    3.76 |
+| yellow-warmer  | #bf4400 |    4.87 |    4.40 |    4.04 |
+| yellow-cooler  | #a2604f |    4.56 |    4.11 |    3.77 |
+| yellow-faint   | #8f6f4a |    4.34 |    3.92 |    3.59 |
+| blue           | #375cc6 |    5.61 |    5.07 |    4.65 |
+| blue-warmer    | #444fcf |    6.03 |    5.45 |    5.00 |
+| blue-cooler    | #065fbf |    5.80 |    5.23 |    4.80 |
+| blue-faint     | #4a659f |    5.39 |    4.87 |    4.46 |
+| magenta        | #9a456f |    5.70 |    5.15 |    4.72 |
+| magenta-warmer | #bf456a |    4.61 |    4.16 |    3.82 |
+| magenta-cooler | #8448aa |    5.64 |    5.10 |    4.68 |
+| magenta-faint  | #804f60 |    6.14 |    5.55 |    5.09 |
+| cyan           | #1f70af |    4.93 |    4.45 |    4.08 |
+| cyan-warmer    | #3f6faf |    4.80 |    4.33 |    3.97 |
+| cyan-cooler    | #007a9f |    4.60 |    4.15 |    3.81 |
+| cyan-faint     | #4f677f |    5.50 |    4.97 |    4.56 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -316,36 +316,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:bdc5d5b7-4d1a-4e3d-8333-01a96164f4d8
 :END:
 
-| Name           |         | #000000 | #1a1a1a | #2b2b2b | #121212 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d0d0d0 |   13.62 |   11.28 |    9.18 |   12.15 |
-| fg-dim         | #807f9f |    5.45 |    4.52 |    3.68 |    4.87 |
-| fg-alt         | #89afef |    9.44 |    7.83 |    6.37 |    8.42 |
-| red            | #ef6560 |    6.70 |    5.55 |    4.52 |    5.98 |
-| red-warmer     | #f47360 |    7.47 |    6.19 |    5.04 |    6.66 |
-| red-cooler     | #ff5a7a |    7.00 |    5.80 |    4.72 |    6.24 |
-| red-faint      | #d56f72 |    6.35 |    5.26 |    4.28 |    5.66 |
-| green          | #0faa26 |    6.80 |    5.63 |    4.58 |    6.06 |
-| green-warmer   | #6aad0f |    7.60 |    6.30 |    5.12 |    6.78 |
-| green-cooler   | #00a692 |    6.87 |    5.69 |    4.63 |    6.13 |
-| green-faint    | #61a06c |    6.75 |    5.60 |    4.55 |    6.02 |
-| yellow         | #bf9032 |    7.25 |    6.01 |    4.89 |    6.47 |
-| yellow-warmer  | #d1843f |    7.08 |    5.87 |    4.78 |    6.32 |
-| yellow-cooler  | #df8f5a |    8.21 |    6.81 |    5.54 |    7.33 |
-| yellow-faint   | #cf9f8f |    9.01 |    7.47 |    6.07 |    8.04 |
-| blue           | #3f95f6 |    6.84 |    5.67 |    4.61 |    6.10 |
-| blue-warmer    | #6a9fff |    8.02 |    6.64 |    5.40 |    7.15 |
-| blue-cooler    | #029fff |    7.41 |    6.14 |    4.99 |    6.61 |
-| blue-faint     | #7a94df |    7.13 |    5.91 |    4.81 |    6.36 |
-| magenta        | #d369af |    6.41 |    5.31 |    4.32 |    5.72 |
-| magenta-warmer | #e580ea |    8.61 |    7.13 |    5.80 |    7.68 |
-| magenta-cooler | #af85ff |    7.62 |    6.32 |    5.14 |    6.80 |
-| magenta-faint  | #c58faf |    7.03 |    5.83 |    4.74 |    6.27 |
-| cyan           | #4fbaef |    9.60 |    7.96 |    6.47 |    8.57 |
-| cyan-warmer    | #6fafff |    9.25 |    7.67 |    6.24 |    8.25 |
-| cyan-cooler    | #1dbfcf |    9.41 |    7.80 |    6.34 |    8.39 |
-| cyan-faint     | #8aa0df |    8.17 |    6.77 |    5.51 |    7.29 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #000000 | #1a1a1a | #2b2b2b |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |   13.62 |   11.28 |    9.18 |
+| fg-dim         | #807f9f |    5.45 |    4.52 |    3.68 |
+| fg-alt         | #89afef |    9.44 |    7.83 |    6.37 |
+| red            | #ef6560 |    6.70 |    5.55 |    4.52 |
+| red-warmer     | #f47360 |    7.47 |    6.19 |    5.04 |
+| red-cooler     | #ff5a7a |    7.00 |    5.80 |    4.72 |
+| red-faint      | #d56f72 |    6.35 |    5.26 |    4.28 |
+| green          | #0faa26 |    6.80 |    5.63 |    4.58 |
+| green-warmer   | #6aad0f |    7.60 |    6.30 |    5.12 |
+| green-cooler   | #00a692 |    6.87 |    5.69 |    4.63 |
+| green-faint    | #61a06c |    6.75 |    5.60 |    4.55 |
+| yellow         | #bf9032 |    7.25 |    6.01 |    4.89 |
+| yellow-warmer  | #d1843f |    7.08 |    5.87 |    4.78 |
+| yellow-cooler  | #df8f5a |    8.21 |    6.81 |    5.54 |
+| yellow-faint   | #cf9f8f |    9.01 |    7.47 |    6.07 |
+| blue           | #3f95f6 |    6.84 |    5.67 |    4.61 |
+| blue-warmer    | #6a9fff |    8.02 |    6.64 |    5.40 |
+| blue-cooler    | #029fff |    7.41 |    6.14 |    4.99 |
+| blue-faint     | #7a94df |    7.13 |    5.91 |    4.81 |
+| magenta        | #d369af |    6.41 |    5.31 |    4.32 |
+| magenta-warmer | #e580ea |    8.61 |    7.13 |    5.80 |
+| magenta-cooler | #af85ff |    7.62 |    6.32 |    5.14 |
+| magenta-faint  | #c58faf |    7.92 |    6.57 |    5.34 |
+| cyan           | #4fbaef |    9.60 |    7.96 |    6.47 |
+| cyan-warmer    | #6fafff |    9.25 |    7.67 |    6.24 |
+| cyan-cooler    | #1dbfcf |    9.41 |    7.80 |    6.34 |
+| cyan-faint     | #8aa0df |    8.17 |    6.77 |    5.51 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -369,36 +369,36 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:36958e2f-8e19-47d8-ba3e-16fd7c8df3e4
 :END:
 
-| Name           |         | #fff5ea | #f2e9db | #e9e0d8 | #f7efe6 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #584141 |    8.68 |    7.77 |    7.17 |    8.21 |
-| fg-dim         | #63728f |    4.50 |    4.03 |    3.72 |    4.26 |
-| fg-alt         | #8f5f4a |    5.00 |    4.47 |    4.13 |    4.72 |
-| red            | #ba2d2f |    5.57 |    4.98 |    4.60 |    5.26 |
-| red-warmer     | #ce3f00 |    4.50 |    4.03 |    3.72 |    4.25 |
-| red-cooler     | #cf2f4f |    4.67 |    4.18 |    3.86 |    4.42 |
-| red-faint      | #b05350 |    4.64 |    4.16 |    3.84 |    4.39 |
-| green          | #007a0a |    5.15 |    4.61 |    4.25 |    4.87 |
-| green-warmer   | #5f7200 |    5.01 |    4.48 |    4.14 |    4.74 |
-| green-cooler   | #0f7f5f |    4.62 |    4.13 |    3.82 |    4.37 |
-| green-faint    | #527545 |    4.89 |    4.38 |    4.04 |    4.62 |
-| yellow         | #a45a22 |    4.80 |    4.29 |    3.97 |    4.54 |
-| yellow-warmer  | #b75515 |    4.51 |    4.04 |    3.73 |    4.27 |
-| yellow-cooler  | #aa4f30 |    5.04 |    4.51 |    4.16 |    4.77 |
-| yellow-faint   | #9a625a |    4.57 |    4.09 |    3.78 |    4.32 |
-| blue           | #375cc6 |    5.56 |    4.97 |    4.59 |    5.26 |
-| blue-warmer    | #5f5fdf |    4.66 |    4.17 |    3.85 |    4.40 |
-| blue-cooler    | #265fbf |    5.62 |    5.03 |    4.64 |    5.31 |
-| blue-faint     | #4a659f |    5.34 |    4.78 |    4.41 |    5.05 |
-| magenta        | #ca3e54 |    4.51 |    4.03 |    3.72 |    4.26 |
-| magenta-warmer | #cb2f80 |    4.58 |    4.10 |    3.79 |    4.33 |
-| magenta-cooler | #8448aa |    5.59 |    5.00 |    4.62 |    5.29 |
-| magenta-faint  | #a04450 |    5.67 |    5.08 |    4.69 |    5.37 |
-| cyan           | #3f60af |    5.57 |    4.98 |    4.60 |    5.26 |
-| cyan-warmer    | #3f6faf |    4.75 |    4.25 |    3.93 |    4.49 |
-| cyan-cooler    | #0f7b8f |    4.59 |    4.11 |    3.79 |    4.34 |
-| cyan-faint     | #4f6f8f |    4.87 |    4.36 |    4.03 |    4.61 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff5ea | #f2e9db | #e9e0d8 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #584141 |    8.68 |    7.77 |    7.17 |
+| fg-dim         | #63728f |    4.50 |    4.03 |    3.72 |
+| fg-alt         | #8f5f4a |    5.00 |    4.47 |    4.13 |
+| red            | #ba2d2f |    5.57 |    4.98 |    4.60 |
+| red-warmer     | #ce3f00 |    4.50 |    4.03 |    3.72 |
+| red-cooler     | #cf2f4f |    4.67 |    4.18 |    3.86 |
+| red-faint      | #b05350 |    4.64 |    4.16 |    3.84 |
+| green          | #007a0a |    5.15 |    4.61 |    4.25 |
+| green-warmer   | #5f7200 |    5.01 |    4.48 |    4.14 |
+| green-cooler   | #0f7f5f |    4.62 |    4.13 |    3.82 |
+| green-faint    | #527545 |    4.89 |    4.38 |    4.04 |
+| yellow         | #a45a22 |    4.80 |    4.29 |    3.97 |
+| yellow-warmer  | #b75515 |    4.51 |    4.04 |    3.73 |
+| yellow-cooler  | #aa4f30 |    5.04 |    4.51 |    4.16 |
+| yellow-faint   | #9a625a |    4.57 |    4.09 |    3.78 |
+| blue           | #375cc6 |    5.56 |    4.97 |    4.59 |
+| blue-warmer    | #5f5fdf |    4.66 |    4.17 |    3.85 |
+| blue-cooler    | #265fbf |    5.62 |    5.03 |    4.64 |
+| blue-faint     | #4a659f |    5.34 |    4.78 |    4.41 |
+| magenta        | #ca3e54 |    4.51 |    4.03 |    3.72 |
+| magenta-warmer | #cb2f80 |    4.58 |    4.10 |    3.79 |
+| magenta-cooler | #8448aa |    5.59 |    5.00 |    4.62 |
+| magenta-faint  | #a04450 |    5.67 |    5.08 |    4.69 |
+| cyan           | #3f60af |    5.57 |    4.98 |    4.60 |
+| cyan-warmer    | #3f6faf |    4.75 |    4.25 |    3.93 |
+| cyan-cooler    | #0f7b8f |    4.59 |    4.11 |    3.79 |
+| cyan-faint     | #4f6f8f |    4.87 |    4.36 |    4.03 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -426,36 +426,36 @@ Most of these are not actually used.  The theme only maps the blues and
 yellows.  We just define the entire palette to make it work with the
 overall design of the project.
 
-| Name           |         | #000a1f | #121f34 | #243145 | #0d1429 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #ddddee |   14.72 |   12.31 |    9.78 |   13.62 |
-| fg-dim         | #7f8797 |    5.47 |    4.57 |    3.63 |    5.06 |
-| fg-alt         | #90afef |    9.00 |    7.52 |    5.98 |    8.32 |
-| red            | #cf8560 |    6.75 |    5.65 |    4.48 |    6.25 |
-| red-warmer     | #e47360 |    6.51 |    5.44 |    4.32 |    6.02 |
-| red-cooler     | #cf7a7a |    6.32 |    5.28 |    4.20 |    5.85 |
-| red-faint      | #b57f82 |    5.95 |    4.97 |    3.95 |    5.50 |
-| green          | #3faa26 |    6.57 |    5.50 |    4.37 |    6.08 |
-| green-warmer   | #7aad0f |    7.35 |    6.14 |    4.88 |    6.80 |
-| green-cooler   | #3fa672 |    6.50 |    5.43 |    4.32 |    6.01 |
-| green-faint    | #61a06c |    6.35 |    5.31 |    4.22 |    5.88 |
-| yellow         | #aa9f32 |    7.26 |    6.07 |    4.82 |    6.71 |
-| yellow-warmer  | #cfaf00 |    9.20 |    7.70 |    6.11 |    8.51 |
-| yellow-cooler  | #bfaf7a |    9.06 |    7.57 |    6.02 |    8.38 |
-| yellow-faint   | #af9a6a |    7.20 |    6.02 |    4.78 |    6.66 |
-| blue           | #3f90f0 |    6.07 |    5.08 |    4.04 |    5.62 |
-| blue-warmer    | #6a9fff |    7.54 |    6.31 |    5.01 |    6.98 |
-| blue-cooler    | #009fff |    6.96 |    5.82 |    4.63 |    6.44 |
-| blue-faint     | #7a94df |    6.71 |    5.61 |    4.45 |    6.20 |
-| magenta        | #b379bf |    6.02 |    5.04 |    4.00 |    5.57 |
-| magenta-warmer | #af80ea |    6.68 |    5.58 |    4.44 |    6.18 |
-| magenta-cooler | #9f95ff |    7.73 |    6.46 |    5.13 |    7.15 |
-| magenta-faint  | #c59fcf |    8.69 |    7.26 |    5.77 |    8.04 |
-| cyan           | #5faaef |    7.98 |    6.67 |    5.30 |    7.38 |
-| cyan-warmer    | #7fafff |    8.91 |    7.46 |    5.92 |    8.25 |
-| cyan-cooler    | #0db0ff |    8.16 |    6.82 |    5.42 |    7.55 |
-| cyan-faint     | #8aa0df |    7.69 |    6.43 |    5.11 |    7.11 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #000a1f | #121f34 | #243145 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #ddddee |   14.72 |   12.31 |    9.78 |
+| fg-dim         | #7f8797 |    5.47 |    4.57 |    3.63 |
+| fg-alt         | #90afef |    9.00 |    7.52 |    5.98 |
+| red            | #cf8560 |    6.75 |    5.65 |    4.48 |
+| red-warmer     | #e47360 |    6.51 |    5.44 |    4.32 |
+| red-cooler     | #cf7a7a |    6.32 |    5.28 |    4.20 |
+| red-faint      | #b57f82 |    5.95 |    4.97 |    3.95 |
+| green          | #3faa26 |    6.57 |    5.50 |    4.37 |
+| green-warmer   | #7aad0f |    7.35 |    6.14 |    4.88 |
+| green-cooler   | #3fa672 |    6.50 |    5.43 |    4.32 |
+| green-faint    | #61a06c |    6.35 |    5.31 |    4.22 |
+| yellow         | #aa9f32 |    7.26 |    6.07 |    4.82 |
+| yellow-warmer  | #cfaf00 |    9.20 |    7.70 |    6.11 |
+| yellow-cooler  | #bfaf7a |    9.06 |    7.57 |    6.02 |
+| yellow-faint   | #af9a6a |    7.20 |    6.02 |    4.78 |
+| blue           | #3f90f0 |    6.07 |    5.08 |    4.04 |
+| blue-warmer    | #6a9fff |    7.54 |    6.31 |    5.01 |
+| blue-cooler    | #009fff |    6.96 |    5.82 |    4.63 |
+| blue-faint     | #7a94df |    6.71 |    5.61 |    4.45 |
+| magenta        | #b379bf |    6.02 |    5.04 |    4.00 |
+| magenta-warmer | #af80ea |    6.68 |    5.58 |    4.44 |
+| magenta-cooler | #9f95ff |    7.73 |    6.46 |    5.13 |
+| magenta-faint  | #c59fcf |    8.69 |    7.26 |    5.77 |
+| cyan           | #5faaef |    7.98 |    6.67 |    5.30 |
+| cyan-warmer    | #7fafff |    8.91 |    7.46 |    5.92 |
+| cyan-cooler    | #0db0ff |    8.16 |    6.82 |    5.42 |
+| cyan-faint     | #8aa0df |    7.69 |    6.43 |    5.11 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -483,36 +483,36 @@ Most of these are not actually used.  The theme only maps the blues and
 yellows.  We just define the entire palette to make it work with the
 overall design of the project.
 
-| Name           |         | #f5f5ff | #e8e8ea | #d3d3e0 | #efeff5 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #1a1a2f |   15.73 |   13.92 |   11.49 |   14.87 |
-| fg-dim         | #70627f |    5.18 |    4.59 |    3.78 |    4.90 |
-| fg-alt         | #196f70 |    5.46 |    4.84 |    3.99 |    5.17 |
-| red            | #d3303a |    4.56 |    4.03 |    3.33 |    4.31 |
-| red-warmer     | #e00033 |    4.60 |    4.07 |    3.36 |    4.35 |
-| red-cooler     | #d50f7f |    4.61 |    4.08 |    3.37 |    4.36 |
-| red-faint      | #a04852 |    5.47 |    4.84 |    4.00 |    5.17 |
-| green          | #217a3c |    4.95 |    4.39 |    3.62 |    4.68 |
-| green-warmer   | #4a7d00 |    4.59 |    4.06 |    3.35 |    4.34 |
-| green-cooler   | #008058 |    4.58 |    4.06 |    3.35 |    4.34 |
-| green-faint    | #61756c |    4.54 |    4.02 |    3.32 |    4.29 |
-| yellow         | #805d00 |    5.57 |    4.93 |    4.07 |    5.26 |
-| yellow-warmer  | #965000 |    5.63 |    4.98 |    4.11 |    5.32 |
-| yellow-cooler  | #765040 |    6.48 |    5.74 |    4.73 |    6.13 |
-| yellow-faint   | #77604a |    5.45 |    4.83 |    3.98 |    5.16 |
-| blue           | #375cd8 |    5.26 |    4.66 |    3.84 |    4.98 |
-| blue-warmer    | #4250ef |    5.35 |    4.73 |    3.91 |    5.06 |
-| blue-cooler    | #065fff |    4.74 |    4.20 |    3.46 |    4.48 |
-| blue-faint     | #6060d0 |    4.75 |    4.20 |    3.47 |    4.49 |
-| magenta        | #ba35af |    4.60 |    4.07 |    3.36 |    4.35 |
-| magenta-warmer | #cf25aa |    4.31 |    3.82 |    3.15 |    4.08 |
-| magenta-cooler | #6052cf |    5.38 |    4.76 |    3.93 |    5.09 |
-| magenta-faint  | #9f5080 |    4.93 |    4.36 |    3.60 |    4.66 |
-| cyan           | #1f6fbf |    4.75 |    4.20 |    3.47 |    4.49 |
-| cyan-warmer    | #3f6faf |    4.72 |    4.18 |    3.45 |    4.47 |
-| cyan-cooler    | #1477b2 |    4.50 |    3.98 |    3.29 |    4.25 |
-| cyan-faint     | #506fa0 |    4.70 |    4.16 |    3.44 |    4.45 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #f5f5ff | #e8e8ea | #d3d3e0 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #1a1a2f |   15.73 |   13.92 |   11.49 |
+| fg-dim         | #70627f |    5.18 |    4.59 |    3.78 |
+| fg-alt         | #196f70 |    5.46 |    4.84 |    3.99 |
+| red            | #d3303a |    4.56 |    4.03 |    3.33 |
+| red-warmer     | #e00033 |    4.60 |    4.07 |    3.36 |
+| red-cooler     | #d50f7f |    4.61 |    4.08 |    3.37 |
+| red-faint      | #a04852 |    5.47 |    4.84 |    4.00 |
+| green          | #217a3c |    4.95 |    4.39 |    3.62 |
+| green-warmer   | #4a7d00 |    4.59 |    4.06 |    3.35 |
+| green-cooler   | #008058 |    4.58 |    4.06 |    3.35 |
+| green-faint    | #61756c |    4.54 |    4.02 |    3.32 |
+| yellow         | #805d00 |    5.57 |    4.93 |    4.07 |
+| yellow-warmer  | #965000 |    5.63 |    4.98 |    4.11 |
+| yellow-cooler  | #765040 |    6.48 |    5.74 |    4.73 |
+| yellow-faint   | #77604a |    5.45 |    4.83 |    3.98 |
+| blue           | #375cd8 |    5.26 |    4.66 |    3.84 |
+| blue-warmer    | #4250ef |    5.35 |    4.73 |    3.91 |
+| blue-cooler    | #065fff |    4.74 |    4.20 |    3.46 |
+| blue-faint     | #6060d0 |    4.75 |    4.20 |    3.47 |
+| magenta        | #ba35af |    4.60 |    4.07 |    3.36 |
+| magenta-warmer | #cf25aa |    4.31 |    3.82 |    3.15 |
+| magenta-cooler | #6052cf |    5.38 |    4.76 |    3.93 |
+| magenta-faint  | #9f5080 |    4.93 |    4.36 |    3.60 |
+| cyan           | #1f6fbf |    4.75 |    4.20 |    3.47 |
+| cyan-warmer    | #3f6faf |    4.72 |    4.18 |    3.45 |
+| cyan-cooler    | #1477b2 |    4.50 |    3.98 |    3.29 |
+| cyan-faint     | #506fa0 |    4.70 |    4.16 |    3.44 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -536,36 +536,36 @@ overall design of the project.
 :CUSTOM_ID: h:d25270b3-c82b-41d3-8cea-9a1e01e9af92
 :END:
 
-| Name           |         | #232025 | #322f34 | #3b393e | #2a272c |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #efd5c5 |   11.49 |    9.42 |    8.15 |   10.52 |
-| fg-dim         | #8f8886 |    4.62 |    3.79 |    3.28 |    4.23 |
-| fg-alt         | #b0a0cf |    6.73 |    5.51 |    4.77 |    6.16 |
-| red            | #ff6f6f |    5.94 |    4.87 |    4.21 |    5.44 |
-| red-warmer     | #ff7a5f |    6.29 |    5.15 |    4.46 |    5.76 |
-| red-cooler     | #e47980 |    5.63 |    4.61 |    3.99 |    5.15 |
-| red-faint      | #f3a0a0 |    7.93 |    6.50 |    5.62 |    7.26 |
-| green          | #51b04f |    5.88 |    4.82 |    4.17 |    5.38 |
-| green-warmer   | #7fce5f |    8.35 |    6.85 |    5.92 |    7.65 |
-| green-cooler   | #3fc489 |    7.26 |    5.95 |    5.14 |    6.64 |
-| green-faint    | #a9c99f |    8.85 |    7.25 |    6.27 |    8.10 |
-| yellow         | #c0b24f |    7.45 |    6.11 |    5.28 |    6.82 |
-| yellow-warmer  | #d09950 |    6.40 |    5.25 |    4.54 |    5.86 |
-| yellow-cooler  | #deb07a |    8.12 |    6.66 |    5.76 |    7.44 |
-| yellow-faint   | #caa89f |    7.37 |    6.04 |    5.22 |    6.75 |
-| blue           | #57b0ff |    6.94 |    5.69 |    4.92 |    6.36 |
-| blue-warmer    | #80aadf |    6.69 |    5.49 |    4.74 |    6.13 |
-| blue-cooler    | #12b4ff |    6.90 |    5.65 |    4.89 |    6.31 |
-| blue-faint     | #a0a0cf |    6.46 |    5.29 |    4.58 |    5.91 |
-| magenta        | #ffaacf |    9.12 |    7.48 |    6.47 |    8.35 |
-| magenta-warmer | #f498c0 |    7.74 |    6.34 |    5.49 |    7.09 |
-| magenta-cooler | #d0b0ff |    8.69 |    7.12 |    6.16 |    7.96 |
-| magenta-faint  | #e3b0c0 |    8.61 |    7.06 |    6.10 |    7.89 |
-| cyan           | #6fb3c0 |    6.81 |    5.58 |    4.83 |    6.24 |
-| cyan-warmer    | #8fcfd0 |    9.20 |    7.54 |    6.52 |    8.42 |
-| cyan-cooler    | #65c5a8 |    7.74 |    6.35 |    5.49 |    7.09 |
-| cyan-faint     | #99bfcf |    8.21 |    6.73 |    5.82 |    7.51 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #232025 | #322f34 | #3b393e |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #efd5c5 |   11.49 |    9.42 |    8.15 |
+| fg-dim         | #8f8886 |    4.62 |    3.79 |    3.28 |
+| fg-alt         | #b0a0cf |    6.73 |    5.51 |    4.77 |
+| red            | #ff6f6f |    5.94 |    4.87 |    4.21 |
+| red-warmer     | #ff7a5f |    6.29 |    5.15 |    4.46 |
+| red-cooler     | #e47980 |    5.63 |    4.61 |    3.99 |
+| red-faint      | #f3a0a0 |    7.93 |    6.50 |    5.62 |
+| green          | #51b04f |    5.88 |    4.82 |    4.17 |
+| green-warmer   | #7fce5f |    8.35 |    6.85 |    5.92 |
+| green-cooler   | #3fc489 |    7.26 |    5.95 |    5.14 |
+| green-faint    | #a9c99f |    8.85 |    7.25 |    6.27 |
+| yellow         | #c0b24f |    7.45 |    6.11 |    5.28 |
+| yellow-warmer  | #d09950 |    6.40 |    5.25 |    4.54 |
+| yellow-cooler  | #deb07a |    8.12 |    6.66 |    5.76 |
+| yellow-faint   | #caa89f |    7.37 |    6.04 |    5.22 |
+| blue           | #57b0ff |    6.94 |    5.69 |    4.92 |
+| blue-warmer    | #80aadf |    6.69 |    5.49 |    4.74 |
+| blue-cooler    | #12b4ff |    6.90 |    5.65 |    4.89 |
+| blue-faint     | #a0a0cf |    6.46 |    5.29 |    4.58 |
+| magenta        | #ffaacf |    9.12 |    7.48 |    6.47 |
+| magenta-warmer | #f498c0 |    7.74 |    6.34 |    5.49 |
+| magenta-cooler | #d0b0ff |    8.69 |    7.12 |    6.16 |
+| magenta-faint  | #e3b0c0 |    8.61 |    7.06 |    6.10 |
+| cyan           | #6fb3c0 |    6.81 |    5.58 |    4.83 |
+| cyan-warmer    | #8fcfd0 |    9.20 |    7.54 |    6.52 |
+| cyan-cooler    | #65c5a8 |    7.74 |    6.35 |    5.49 |
+| cyan-faint     | #99bfcf |    8.21 |    6.73 |    5.82 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -589,36 +589,36 @@ overall design of the project.
 :CUSTOM_ID: h:3730662d-f752-4180-983b-371e32c2a82e
 :END:
 
-| Name           |         | #070019 | #1d1a26 | #2a2739 | #13101f |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d0d0d0 |   13.31 |   11.09 |    9.40 |   12.14 |
-| fg-dim         | #857f8f |    5.31 |    4.42 |    3.75 |    4.84 |
-| fg-alt         | #89afef |    9.23 |    7.69 |    6.52 |    8.42 |
-| red            | #ef656a |    6.59 |    5.49 |    4.66 |    6.01 |
-| red-warmer     | #f47360 |    7.30 |    6.08 |    5.16 |    6.66 |
-| red-cooler     | #ef798f |    7.63 |    6.35 |    5.39 |    6.96 |
-| red-faint      | #d08f72 |    7.68 |    6.40 |    5.42 |    7.00 |
-| green          | #1fa526 |    6.32 |    5.27 |    4.47 |    5.77 |
-| green-warmer   | #50a22f |    6.40 |    5.33 |    4.52 |    5.84 |
-| green-cooler   | #00b982 |    8.08 |    6.73 |    5.71 |    7.37 |
-| green-faint    | #61a06c |    6.60 |    5.50 |    4.66 |    6.02 |
-| yellow         | #c48702 |    6.66 |    5.55 |    4.71 |    6.07 |
-| yellow-warmer  | #d0730f |    6.00 |    5.00 |    4.24 |    5.48 |
-| yellow-cooler  | #df805f |    7.22 |    6.02 |    5.10 |    6.59 |
-| yellow-faint   | #9f8f6a |    6.46 |    5.38 |    4.57 |    5.89 |
-| blue           | #379cf6 |    7.09 |    5.90 |    5.01 |    6.46 |
-| blue-warmer    | #6f80ff |    6.07 |    5.06 |    4.29 |    5.53 |
-| blue-cooler    | #029fff |    7.24 |    6.03 |    5.12 |    6.60 |
-| blue-faint     | #8a9fdf |    7.92 |    6.60 |    5.60 |    7.23 |
-| magenta        | #d369af |    6.26 |    5.22 |    4.43 |    5.71 |
-| magenta-warmer | #e580ea |    8.41 |    7.01 |    5.95 |    7.67 |
-| magenta-cooler | #af85ff |    7.45 |    6.21 |    5.26 |    6.80 |
-| magenta-faint  | #c57faf |    6.87 |    5.72 |    4.86 |    6.27 |
-| cyan           | #5faaef |    8.29 |    6.91 |    5.86 |    7.56 |
-| cyan-warmer    | #7fafff |    9.26 |    7.72 |    6.55 |    8.45 |
-| cyan-cooler    | #0dafdf |    8.03 |    6.69 |    5.67 |    7.32 |
-| cyan-faint     | #8aa0df |    7.99 |    6.66 |    5.65 |    7.29 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #070019 | #1d1a26 | #2a2739 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |   13.31 |   11.09 |    9.40 |
+| fg-dim         | #857f8f |    5.31 |    4.42 |    3.75 |
+| fg-alt         | #89afef |    9.23 |    7.69 |    6.52 |
+| red            | #ef656a |    6.59 |    5.49 |    4.66 |
+| red-warmer     | #f47360 |    7.30 |    6.08 |    5.16 |
+| red-cooler     | #ef798f |    7.63 |    6.35 |    5.39 |
+| red-faint      | #d08f72 |    7.68 |    6.40 |    5.42 |
+| green          | #1fa526 |    6.32 |    5.27 |    4.47 |
+| green-warmer   | #50a22f |    6.40 |    5.33 |    4.52 |
+| green-cooler   | #00b982 |    8.08 |    6.73 |    5.71 |
+| green-faint    | #61a06c |    6.60 |    5.50 |    4.66 |
+| yellow         | #c48702 |    6.66 |    5.55 |    4.71 |
+| yellow-warmer  | #d0730f |    6.00 |    5.00 |    4.24 |
+| yellow-cooler  | #df805f |    7.22 |    6.02 |    5.10 |
+| yellow-faint   | #9f8f6a |    6.46 |    5.38 |    4.57 |
+| blue           | #379cf6 |    7.09 |    5.90 |    5.01 |
+| blue-warmer    | #6f80ff |    6.07 |    5.06 |    4.29 |
+| blue-cooler    | #029fff |    7.24 |    6.03 |    5.12 |
+| blue-faint     | #8a9fdf |    7.92 |    6.60 |    5.60 |
+| magenta        | #d369af |    6.26 |    5.22 |    4.43 |
+| magenta-warmer | #e580ea |    8.41 |    7.01 |    5.95 |
+| magenta-cooler | #af85ff |    7.45 |    6.21 |    5.26 |
+| magenta-faint  | #c57faf |    6.87 |    5.72 |    4.86 |
+| cyan           | #5faaef |    8.29 |    6.91 |    5.86 |
+| cyan-warmer    | #7fafff |    9.26 |    7.72 |    6.55 |
+| cyan-cooler    | #0dafdf |    8.03 |    6.69 |    5.67 |
+| cyan-faint     | #8aa0df |    7.99 |    6.66 |    5.65 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -642,36 +642,36 @@ overall design of the project.
 :CUSTOM_ID: h:2feec2e7-adc3-4e11-a046-6842e89de0e7
 :END:
 
-| Name           |         | #fff8f0 | #f6ece8 | #e7e0da | #f9f2ef |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #222222 |   15.10 |   13.70 |   12.18 |   14.38 |
-| fg-dim         | #63728f |    4.60 |    4.17 |    3.71 |    4.38 |
-| fg-alt         | #856f4a |    4.56 |    4.14 |    3.68 |    4.34 |
-| red            | #cc3333 |    4.88 |    4.42 |    3.93 |    4.64 |
-| red-warmer     | #dd1100 |    4.80 |    4.35 |    3.87 |    4.57 |
-| red-cooler     | #c04440 |    4.81 |    4.37 |    3.88 |    4.58 |
-| red-faint      | #a2403f |    5.97 |    5.41 |    4.81 |    5.68 |
-| green          | #217a3c |    5.09 |    4.62 |    4.11 |    4.85 |
-| green-warmer   | #4a7d00 |    4.72 |    4.28 |    3.80 |    4.49 |
-| green-cooler   | #008058 |    4.71 |    4.28 |    3.80 |    4.49 |
-| green-faint    | #61756c |    4.67 |    4.24 |    3.76 |    4.44 |
-| yellow         | #8a5d00 |    5.47 |    4.96 |    4.41 |    5.20 |
-| yellow-warmer  | #9f4a00 |    5.77 |    5.24 |    4.65 |    5.49 |
-| yellow-cooler  | #8f5a3a |    5.40 |    4.90 |    4.35 |    5.14 |
-| yellow-faint   | #765640 |    6.28 |    5.69 |    5.06 |    5.98 |
-| blue           | #375cd8 |    5.41 |    4.91 |    4.36 |    5.15 |
-| blue-warmer    | #4250ef |    5.50 |    4.99 |    4.43 |    5.23 |
-| blue-cooler    | #065fff |    4.88 |    4.42 |    3.93 |    4.64 |
-| blue-faint     | #6060d0 |    4.88 |    4.43 |    3.94 |    4.65 |
-| magenta        | #ba35af |    4.73 |    4.29 |    3.81 |    4.50 |
-| magenta-warmer | #cf25aa |    4.43 |    4.02 |    3.57 |    4.22 |
-| magenta-cooler | #6052cf |    5.53 |    5.02 |    4.46 |    5.26 |
-| magenta-faint  | #bf3580 |    4.94 |    4.48 |    3.98 |    4.70 |
-| cyan           | #1f6fbf |    4.88 |    4.43 |    3.94 |    4.65 |
-| cyan-warmer    | #3f6faf |    4.86 |    4.41 |    3.92 |    4.62 |
-| cyan-cooler    | #1f77bb |    4.52 |    4.10 |    3.64 |    4.30 |
-| cyan-faint     | #3f70a0 |    4.94 |    4.48 |    3.98 |    4.70 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff8f0 | #f6ece8 | #e7e0da |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #222222 |   15.10 |   13.70 |   12.18 |
+| fg-dim         | #63728f |    4.60 |    4.17 |    3.71 |
+| fg-alt         | #856f4a |    4.56 |    4.14 |    3.68 |
+| red            | #cc3333 |    4.88 |    4.42 |    3.93 |
+| red-warmer     | #dd1100 |    4.80 |    4.35 |    3.87 |
+| red-cooler     | #c04440 |    4.81 |    4.37 |    3.88 |
+| red-faint      | #a2403f |    5.97 |    5.41 |    4.81 |
+| green          | #217a3c |    5.09 |    4.62 |    4.11 |
+| green-warmer   | #4a7d00 |    4.72 |    4.28 |    3.80 |
+| green-cooler   | #008058 |    4.71 |    4.28 |    3.80 |
+| green-faint    | #61756c |    4.67 |    4.24 |    3.76 |
+| yellow         | #8a5d00 |    5.47 |    4.96 |    4.41 |
+| yellow-warmer  | #9f4a00 |    5.77 |    5.24 |    4.65 |
+| yellow-cooler  | #8f5a3a |    5.40 |    4.90 |    4.35 |
+| yellow-faint   | #765640 |    6.28 |    5.69 |    5.06 |
+| blue           | #375cd8 |    5.41 |    4.91 |    4.36 |
+| blue-warmer    | #4250ef |    5.50 |    4.99 |    4.43 |
+| blue-cooler    | #065fff |    4.88 |    4.42 |    3.93 |
+| blue-faint     | #6060d0 |    4.88 |    4.43 |    3.94 |
+| magenta        | #ba35af |    4.73 |    4.29 |    3.81 |
+| magenta-warmer | #cf25aa |    4.43 |    4.02 |    3.57 |
+| magenta-cooler | #6052cf |    5.53 |    5.02 |    4.46 |
+| magenta-faint  | #bf3580 |    4.94 |    4.48 |    3.98 |
+| cyan           | #1f6fbf |    4.88 |    4.43 |    3.94 |
+| cyan-warmer    | #3f6faf |    4.86 |    4.41 |    3.92 |
+| cyan-cooler    | #1f77bb |    4.52 |    4.10 |    3.64 |
+| cyan-faint     | #3f70a0 |    4.94 |    4.48 |    3.98 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -695,36 +695,36 @@ overall design of the project.
 :CUSTOM_ID: h:564803b1-08f9-47cc-a01c-738108701cce
 :END:
 
-| Name           |         | #f1ecd0 | #e4dbc0 | #cec8ae | #e7e3ca |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #231a1f |   14.24 |   12.26 |   10.09 |   13.11 |
-| fg-dim         | #685f53 |    5.27 |    4.53 |    3.73 |    4.85 |
-| fg-alt         | #524874 |    6.95 |    5.99 |    4.92 |    6.40 |
-| red            | #882000 |    7.83 |    6.74 |    5.55 |    7.21 |
-| red-warmer     | #9a0000 |    7.43 |    6.40 |    5.26 |    6.84 |
-| red-cooler     | #8f0038 |    7.93 |    6.83 |    5.62 |    7.30 |
-| red-faint      | #702f1f |    8.34 |    7.18 |    5.91 |    7.68 |
-| green          | #226022 |    6.38 |    5.50 |    4.52 |    5.87 |
-| green-warmer   | #3a7800 |    5.44 |    4.69 |    3.86 |    5.01 |
-| green-cooler   | #006e50 |    5.62 |    4.83 |    3.98 |    5.17 |
-| green-faint    | #42573f |    6.62 |    5.70 |    4.69 |    6.09 |
-| yellow         | #6b4500 |    7.13 |    6.13 |    5.05 |    6.56 |
-| yellow-warmer  | #843300 |    7.19 |    6.19 |    5.09 |    6.62 |
-| yellow-cooler  | #775228 |    5.84 |    5.03 |    4.14 |    5.37 |
-| yellow-faint   | #6a5937 |    5.70 |    4.91 |    4.04 |    5.24 |
-| blue           | #113384 |    9.64 |    8.30 |    6.83 |    8.87 |
-| blue-warmer    | #3a3da0 |    7.49 |    6.45 |    5.31 |    6.90 |
-| blue-cooler    | #000080 |   13.46 |   11.58 |    9.53 |   12.38 |
-| blue-faint     | #2f3460 |    9.91 |    8.53 |    7.02 |    9.12 |
-| magenta        | #822478 |    7.14 |    6.14 |    5.05 |    6.57 |
-| magenta-warmer | #960f4f |    7.12 |    6.13 |    5.04 |    6.55 |
-| magenta-cooler | #50119f |    9.18 |    7.90 |    6.50 |    8.45 |
-| magenta-faint  | #603a6f |    7.57 |    6.51 |    5.36 |    6.96 |
-| cyan           | #125a7f |    6.32 |    5.44 |    4.47 |    5.81 |
-| cyan-warmer    | #4a5d90 |    5.41 |    4.66 |    3.83 |    4.98 |
-| cyan-cooler    | #00676f |    5.57 |    4.79 |    3.94 |    5.12 |
-| cyan-faint     | #304f60 |    7.31 |    6.30 |    5.18 |    6.73 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #f1ecd0 | #e4dbc0 | #cec8ae |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #231a1f |   14.24 |   12.26 |   10.09 |
+| fg-dim         | #685f53 |    5.27 |    4.53 |    3.73 |
+| fg-alt         | #524874 |    6.95 |    5.99 |    4.92 |
+| red            | #882000 |    7.83 |    6.74 |    5.55 |
+| red-warmer     | #9a0000 |    7.43 |    6.40 |    5.26 |
+| red-cooler     | #8f0038 |    7.93 |    6.83 |    5.62 |
+| red-faint      | #702f1f |    8.34 |    7.18 |    5.91 |
+| green          | #226022 |    6.38 |    5.50 |    4.52 |
+| green-warmer   | #3a7800 |    4.56 |    3.93 |    3.23 |
+| green-cooler   | #006e50 |    5.27 |    4.54 |    3.73 |
+| green-faint    | #42573f |    6.62 |    5.70 |    4.69 |
+| yellow         | #6b4500 |    7.13 |    6.13 |    5.05 |
+| yellow-warmer  | #843300 |    7.19 |    6.19 |    5.09 |
+| yellow-cooler  | #775228 |    5.84 |    5.03 |    4.14 |
+| yellow-faint   | #6a5937 |    5.70 |    4.91 |    4.04 |
+| blue           | #113384 |    9.64 |    8.30 |    6.83 |
+| blue-warmer    | #3a3da0 |    7.49 |    6.45 |    5.31 |
+| blue-cooler    | #000080 |   13.46 |   11.58 |    9.53 |
+| blue-faint     | #2f3460 |    9.91 |    8.53 |    7.02 |
+| magenta        | #822478 |    7.14 |    6.14 |    5.05 |
+| magenta-warmer | #960f4f |    7.12 |    6.13 |    5.04 |
+| magenta-cooler | #50119f |    9.18 |    7.90 |    6.50 |
+| magenta-faint  | #603a6f |    7.57 |    6.51 |    5.36 |
+| cyan           | #125a7f |    6.32 |    5.44 |    4.47 |
+| cyan-warmer    | #4a5d90 |    5.41 |    4.66 |    3.83 |
+| cyan-cooler    | #00676f |    5.57 |    4.79 |    3.94 |
+| cyan-faint     | #304f60 |    7.31 |    6.30 |    5.18 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -748,36 +748,36 @@ overall design of the project.
 :CUSTOM_ID: h:8228a3a0-74c8-401d-8cd6-a33c59d64a94
 :END:
 
-| Name           |         | #222524 | #303332 | #3e4140 | #2b2e2d |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #eaf2ef |   13.58 |   11.21 |    9.06 |   12.04 |
-| fg-dim         | #969faf |    5.80 |    4.79 |    3.87 |    5.14 |
-| fg-alt         | #8fcfbb |    8.70 |    7.18 |    5.80 |    7.71 |
-| red            | #ff656a |    5.39 |    4.45 |    3.60 |    4.78 |
-| red-warmer     | #ff7a5f |    6.04 |    4.98 |    4.03 |    5.36 |
-| red-cooler     | #fa7f88 |    6.23 |    5.14 |    4.16 |    5.52 |
-| red-faint      | #eba8a8 |    7.88 |    6.50 |    5.26 |    6.99 |
-| green          | #7fc87f |    7.71 |    6.36 |    5.15 |    6.84 |
-| green-warmer   | #7fca5a |    7.73 |    6.38 |    5.16 |    6.86 |
-| green-cooler   | #50cf89 |    7.83 |    6.46 |    5.22 |    6.94 |
-| green-faint    | #a9c99f |    8.50 |    7.02 |    5.67 |    7.54 |
-| yellow         | #cac85f |    8.79 |    7.26 |    5.87 |    7.80 |
-| yellow-warmer  | #e0b02f |    7.67 |    6.33 |    5.12 |    6.80 |
-| yellow-cooler  | #cfb27f |    7.60 |    6.28 |    5.08 |    6.74 |
-| yellow-faint   | #cac89f |    9.04 |    7.46 |    6.03 |    8.01 |
-| blue           | #57aff6 |    6.53 |    5.39 |    4.36 |    5.79 |
-| blue-warmer    | #78afff |    6.90 |    5.70 |    4.61 |    6.12 |
-| blue-cooler    | #62cfef |    8.61 |    7.11 |    5.74 |    7.63 |
-| blue-faint     | #6ab4ef |    6.91 |    5.71 |    4.61 |    6.13 |
-| magenta        | #f59acf |    7.66 |    6.32 |    5.11 |    6.79 |
-| magenta-warmer | #fa90ea |    7.54 |    6.23 |    5.03 |    6.69 |
-| magenta-cooler | #cfaaff |    7.99 |    6.59 |    5.33 |    7.08 |
-| magenta-faint  | #d0b9f0 |    8.75 |    7.22 |    5.84 |    7.76 |
-| cyan           | #6fcfd2 |    8.49 |    7.01 |    5.67 |    7.53 |
-| cyan-warmer    | #7fcfdf |    8.76 |    7.23 |    5.84 |    7.77 |
-| cyan-cooler    | #60d5c2 |    8.68 |    7.17 |    5.80 |    7.70 |
-| cyan-faint     | #99bfcf |    7.88 |    6.51 |    5.26 |    6.99 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #222524 | #303332 | #3e4140 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #eaf2ef |   13.58 |   11.21 |    9.06 |
+| fg-dim         | #969faf |    5.80 |    4.79 |    3.87 |
+| fg-alt         | #8fcfbb |    8.70 |    7.18 |    5.80 |
+| red            | #ff656a |    5.39 |    4.45 |    3.60 |
+| red-warmer     | #ff7a5f |    6.04 |    4.98 |    4.03 |
+| red-cooler     | #fa7f88 |    6.23 |    5.14 |    4.16 |
+| red-faint      | #eba8a8 |    7.88 |    6.50 |    5.26 |
+| green          | #7fc87f |    7.71 |    6.36 |    5.15 |
+| green-warmer   | #7fca5a |    7.73 |    6.38 |    5.16 |
+| green-cooler   | #50cf89 |    7.83 |    6.46 |    5.22 |
+| green-faint    | #a9c99f |    8.50 |    7.02 |    5.67 |
+| yellow         | #cac85f |    8.79 |    7.26 |    5.87 |
+| yellow-warmer  | #e0b02f |    7.67 |    6.33 |    5.12 |
+| yellow-cooler  | #cfb27f |    7.60 |    6.28 |    5.08 |
+| yellow-faint   | #cac89f |    9.04 |    7.46 |    6.03 |
+| blue           | #57aff6 |    6.53 |    5.39 |    4.36 |
+| blue-warmer    | #78afff |    6.90 |    5.70 |    4.61 |
+| blue-cooler    | #62cfef |    8.61 |    7.11 |    5.74 |
+| blue-faint     | #6ab4ef |    6.91 |    5.71 |    4.61 |
+| magenta        | #f59acf |    7.66 |    6.32 |    5.11 |
+| magenta-warmer | #fa90ea |    7.54 |    6.23 |    5.03 |
+| magenta-cooler | #cfaaff |    7.99 |    6.59 |    5.33 |
+| magenta-faint  | #d0b9f0 |    8.75 |    7.22 |    5.84 |
+| cyan           | #6fcfd2 |    8.49 |    7.01 |    5.67 |
+| cyan-warmer    | #7fcfdf |    8.76 |    7.23 |    5.84 |
+| cyan-cooler    | #60d5c2 |    8.68 |    7.17 |    5.80 |
+| cyan-faint     | #99bfcf |    7.88 |    6.51 |    5.26 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -801,36 +801,36 @@ overall design of the project.
 :CUSTOM_ID: h:8cc6238b-e968-4703-a205-58b026f7b3bb
 :END:
 
-| Name           |         | #edf5e2 | #e3e9d6 | #d0d7ca | #e8eddc |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #221321 |   15.86 |   14.28 |   12.05 |   14.86 |
-| fg-dim         | #746470 |    4.94 |    4.45 |    3.75 |    4.63 |
-| fg-alt         | #60622a |    5.72 |    5.15 |    4.35 |    5.36 |
-| red            | #c3303a |    4.93 |    4.44 |    3.75 |    4.62 |
-| red-warmer     | #d00000 |    5.10 |    4.59 |    3.87 |    4.77 |
-| red-cooler     | #b02440 |    5.91 |    5.32 |    4.49 |    5.54 |
-| red-faint      | #894852 |    6.03 |    5.43 |    4.58 |    5.65 |
-| green          | #1f601f |    6.82 |    6.14 |    5.18 |    6.39 |
-| green-warmer   | #355500 |    7.65 |    6.89 |    5.82 |    7.17 |
-| green-cooler   | #007047 |    5.50 |    4.96 |    4.18 |    5.16 |
-| green-faint    | #306630 |    6.11 |    5.50 |    4.64 |    5.73 |
-| yellow         | #9a501f |    5.30 |    4.77 |    4.03 |    4.96 |
-| yellow-warmer  | #b04300 |    5.14 |    4.63 |    3.91 |    4.82 |
-| yellow-cooler  | #88541f |    5.63 |    5.07 |    4.27 |    5.27 |
-| yellow-faint   | #7f4f4a |    6.01 |    5.41 |    4.57 |    5.63 |
-| blue           | #375cc6 |    5.35 |    4.81 |    4.06 |    5.01 |
-| blue-warmer    | #444fcf |    5.75 |    5.17 |    4.37 |    5.38 |
-| blue-cooler    | #162f8f |   10.21 |    9.19 |    7.76 |    9.57 |
-| blue-faint     | #3a5099 |    6.73 |    6.06 |    5.11 |    6.31 |
-| magenta        | #80308f |    6.85 |    6.17 |    5.21 |    6.42 |
-| magenta-warmer | #9f356a |    5.88 |    5.29 |    4.47 |    5.51 |
-| magenta-cooler | #5032aa |    7.89 |    7.10 |    6.00 |    7.39 |
-| magenta-faint  | #6a4a9f |    6.07 |    5.46 |    4.61 |    5.68 |
-| cyan           | #1f70af |    4.70 |    4.23 |    3.57 |    4.40 |
-| cyan-warmer    | #3f6faf |    4.57 |    4.12 |    3.47 |    4.28 |
-| cyan-cooler    | #00677f |    5.78 |    5.20 |    4.39 |    5.41 |
-| cyan-faint     | #4f677f |    5.24 |    4.72 |    3.98 |    4.91 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #edf5e2 | #e3e9d6 | #d0d7ca |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #221321 |   15.86 |   14.28 |   12.05 |
+| fg-dim         | #746470 |    4.94 |    4.45 |    3.75 |
+| fg-alt         | #60622a |    5.72 |    5.15 |    4.35 |
+| red            | #c3303a |    4.93 |    4.44 |    3.75 |
+| red-warmer     | #d00000 |    5.10 |    4.59 |    3.87 |
+| red-cooler     | #b02440 |    5.91 |    5.32 |    4.49 |
+| red-faint      | #894852 |    6.03 |    5.43 |    4.58 |
+| green          | #1f601f |    6.82 |    6.14 |    5.18 |
+| green-warmer   | #355500 |    7.65 |    6.89 |    5.82 |
+| green-cooler   | #007047 |    5.50 |    4.96 |    4.18 |
+| green-faint    | #306630 |    6.11 |    5.50 |    4.64 |
+| yellow         | #9a501f |    5.30 |    4.77 |    4.03 |
+| yellow-warmer  | #b04300 |    5.14 |    4.63 |    3.91 |
+| yellow-cooler  | #88541f |    5.63 |    5.07 |    4.27 |
+| yellow-faint   | #7f4f4a |    6.01 |    5.41 |    4.57 |
+| blue           | #375cc6 |    5.35 |    4.81 |    4.06 |
+| blue-warmer    | #444fcf |    5.75 |    5.17 |    4.37 |
+| blue-cooler    | #162f8f |   10.21 |    9.19 |    7.76 |
+| blue-faint     | #3a5099 |    6.73 |    6.06 |    5.11 |
+| magenta        | #80308f |    6.85 |    6.17 |    5.21 |
+| magenta-warmer | #9f356a |    5.88 |    5.29 |    4.47 |
+| magenta-cooler | #5032aa |    7.89 |    7.10 |    6.00 |
+| magenta-faint  | #6a4a9f |    6.07 |    5.46 |    4.61 |
+| cyan           | #1f70af |    4.70 |    4.23 |    3.57 |
+| cyan-warmer    | #3f6faf |    4.57 |    4.12 |    3.47 |
+| cyan-cooler    | #00677f |    5.78 |    5.20 |    4.39 |
+| cyan-faint     | #4f677f |    5.24 |    4.72 |    3.98 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -854,36 +854,36 @@ overall design of the project.
 :CUSTOM_ID: h:92ad50c8-2bb8-4400-9192-503bec4c0e7e
 :END:
 
-| Name           |         | #3b2043 | #432e4e | #4a385e | #4a384e |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #e4d3e1 |    9.98 |    8.45 |    7.28 |    7.48 |
-| fg-dim         | #9d9d9d |    5.25 |    4.45 |    3.84 |    3.94 |
-| fg-alt         | #c6a4cf |    6.52 |    5.53 |    4.76 |    4.89 |
-| red            | #ef797f |    5.23 |    4.43 |    3.82 |    3.92 |
-| red-warmer     | #ff7f5f |    5.74 |    4.86 |    4.19 |    4.30 |
-| red-cooler     | #e088af |    5.64 |    4.78 |    4.12 |    4.23 |
-| red-faint      | #e89f84 |    6.60 |    5.59 |    4.82 |    4.94 |
-| green          | #7fbb3f |    6.16 |    5.22 |    4.50 |    4.62 |
-| green-warmer   | #aad05a |    8.06 |    6.83 |    5.89 |    6.04 |
-| green-cooler   | #79d081 |    7.57 |    6.41 |    5.53 |    5.67 |
-| green-faint    | #a2b799 |    6.63 |    5.62 |    4.84 |    4.97 |
-| yellow         | #e4c53f |    8.39 |    7.10 |    6.12 |    6.28 |
-| yellow-warmer  | #f2a85f |    7.15 |    6.06 |    5.22 |    5.36 |
-| yellow-cooler  | #eec27f |    8.59 |    7.28 |    6.27 |    6.44 |
-| yellow-faint   | #d8c09f |    8.12 |    6.88 |    5.93 |    6.08 |
-| blue           | #57aff6 |    6.02 |    5.10 |    4.39 |    4.51 |
-| blue-warmer    | #78b2ff |    6.52 |    5.53 |    4.76 |    4.89 |
-| blue-cooler    | #62cff7 |    8.00 |    6.78 |    5.84 |    5.99 |
-| blue-faint     | #9fbfdf |    7.46 |    6.32 |    5.45 |    5.59 |
-| magenta        | #ffb2d6 |    8.54 |    7.24 |    6.24 |    6.40 |
-| magenta-warmer | #f28fdf |    6.63 |    5.62 |    4.84 |    4.97 |
-| magenta-cooler | #afb1ff |    7.16 |    6.07 |    5.23 |    5.37 |
-| magenta-faint  | #c59fcf |    6.27 |    5.31 |    4.57 |    4.69 |
-| cyan           | #5fc0dc |    6.83 |    5.78 |    4.98 |    5.11 |
-| cyan-warmer    | #7fc5df |    7.43 |    6.30 |    5.43 |    5.57 |
-| cyan-cooler    | #80dfbf |    8.97 |    7.60 |    6.55 |    6.72 |
-| cyan-faint     | #99bfcf |    7.27 |    6.16 |    5.30 |    5.44 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #3b2043 | #432e4e | #4a385e |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #e4d3e1 |    9.98 |    8.45 |    7.28 |
+| fg-dim         | #9d9d9d |    5.25 |    4.45 |    3.84 |
+| fg-alt         | #c6a4cf |    6.52 |    5.53 |    4.76 |
+| red            | #ef797f |    5.23 |    4.43 |    3.82 |
+| red-warmer     | #ff7f5f |    5.74 |    4.86 |    4.19 |
+| red-cooler     | #e088af |    5.64 |    4.78 |    4.12 |
+| red-faint      | #e89f84 |    6.60 |    5.59 |    4.82 |
+| green          | #7fbb3f |    6.16 |    5.22 |    4.50 |
+| green-warmer   | #aad05a |    8.06 |    6.83 |    5.89 |
+| green-cooler   | #79d081 |    7.57 |    6.41 |    5.53 |
+| green-faint    | #a2b799 |    6.63 |    5.62 |    4.84 |
+| yellow         | #e4c53f |    8.39 |    7.10 |    6.12 |
+| yellow-warmer  | #f2a85f |    7.15 |    6.06 |    5.22 |
+| yellow-cooler  | #eec27f |    8.59 |    7.28 |    6.27 |
+| yellow-faint   | #d8c09f |    8.12 |    6.88 |    5.93 |
+| blue           | #57aff6 |    6.02 |    5.10 |    4.39 |
+| blue-warmer    | #78b2ff |    6.52 |    5.53 |    4.76 |
+| blue-cooler    | #62cff7 |    8.00 |    6.78 |    5.84 |
+| blue-faint     | #9fbfdf |    7.46 |    6.32 |    5.45 |
+| magenta        | #ffb2d6 |    8.54 |    7.24 |    6.24 |
+| magenta-warmer | #f28fdf |    6.63 |    5.62 |    4.84 |
+| magenta-cooler | #afb1ff |    7.16 |    6.07 |    5.23 |
+| magenta-faint  | #c59fcf |    6.27 |    5.31 |    4.57 |
+| cyan           | #5fc0dc |    6.83 |    5.78 |    4.98 |
+| cyan-warmer    | #7fc5df |    7.43 |    6.30 |    5.43 |
+| cyan-cooler    | #80dfbf |    8.97 |    7.60 |    6.55 |
+| cyan-faint     | #99bfcf |    7.27 |    6.16 |    5.30 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -907,36 +907,36 @@ overall design of the project.
 :CUSTOM_ID: h:043da298-8374-461c-80f0-648b81be0920
 :END:
 
-| Name           |         | #fcffff | #eaefef | #d7dbdb | #f7f9f9 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #232323 |   15.63 |   13.54 |   11.26 |   14.87 |
-| fg-dim         | #66657f |    5.60 |    4.85 |    4.03 |    5.32 |
-| fg-alt         | #204f9a |    7.89 |    6.84 |    5.68 |    7.51 |
-| red            | #c42d2f |    5.55 |    4.81 |    4.00 |    5.28 |
-| red-warmer     | #d03003 |    5.09 |    4.41 |    3.66 |    4.84 |
-| red-cooler     | #cf2f4f |    5.01 |    4.34 |    3.61 |    4.76 |
-| red-faint      | #9a4366 |    6.20 |    5.37 |    4.47 |    5.90 |
-| green          | #008a00 |    4.51 |    3.90 |    3.25 |    4.29 |
-| green-warmer   | #468400 |    4.58 |    3.97 |    3.30 |    4.36 |
-| green-cooler   | #00845f |    4.68 |    4.05 |    3.37 |    4.45 |
-| green-faint    | #51753c |    5.28 |    4.57 |    3.80 |    5.02 |
-| yellow         | #aa6100 |    4.73 |    4.09 |    3.40 |    4.50 |
-| yellow-warmer  | #b6532f |    4.89 |    4.24 |    3.53 |    4.66 |
-| yellow-cooler  | #996c4f |    4.53 |    3.92 |    3.26 |    4.31 |
-| yellow-faint   | #804f4f |    6.63 |    5.74 |    4.78 |    6.31 |
-| blue           | #004fc0 |    7.25 |    6.28 |    5.22 |    6.90 |
-| blue-warmer    | #4244ef |    6.32 |    5.47 |    4.55 |    6.01 |
-| blue-cooler    | #065fff |    5.11 |    4.42 |    3.68 |    4.86 |
-| blue-faint     | #375cc8 |    5.92 |    5.13 |    4.27 |    5.63 |
-| magenta        | #aa44c5 |    4.81 |    4.17 |    3.46 |    4.58 |
-| magenta-warmer | #c0469a |    4.56 |    3.95 |    3.28 |    4.34 |
-| magenta-cooler | #7f5ae0 |    4.70 |    4.07 |    3.39 |    4.47 |
-| magenta-faint  | #605f9f |    5.75 |    4.98 |    4.14 |    5.47 |
-| cyan           | #1f6fbf |    5.11 |    4.43 |    3.68 |    4.87 |
-| cyan-warmer    | #3a6dd2 |    4.86 |    4.21 |    3.50 |    4.62 |
-| cyan-cooler    | #007a85 |    5.07 |    4.39 |    3.65 |    4.82 |
-| cyan-faint     | #305f9f |    6.40 |    5.54 |    4.61 |    6.09 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fcffff | #eaefef | #d7dbdb |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #232323 |   15.63 |   13.54 |   11.26 |
+| fg-dim         | #66657f |    5.60 |    4.85 |    4.03 |
+| fg-alt         | #204f9a |    7.89 |    6.84 |    5.68 |
+| red            | #c42d2f |    5.55 |    4.81 |    4.00 |
+| red-warmer     | #d03003 |    5.09 |    4.41 |    3.66 |
+| red-cooler     | #cf2f4f |    5.01 |    4.34 |    3.61 |
+| red-faint      | #9a4366 |    6.20 |    5.37 |    4.47 |
+| green          | #008a00 |    4.51 |    3.90 |    3.25 |
+| green-warmer   | #468400 |    4.58 |    3.97 |    3.30 |
+| green-cooler   | #00845f |    4.68 |    4.05 |    3.37 |
+| green-faint    | #51753c |    5.28 |    4.57 |    3.80 |
+| yellow         | #aa6100 |    4.73 |    4.09 |    3.40 |
+| yellow-warmer  | #b6532f |    4.89 |    4.24 |    3.53 |
+| yellow-cooler  | #996c4f |    4.53 |    3.92 |    3.26 |
+| yellow-faint   | #804f4f |    6.63 |    5.74 |    4.78 |
+| blue           | #004fc0 |    7.25 |    6.28 |    5.22 |
+| blue-warmer    | #4244ef |    6.32 |    5.47 |    4.55 |
+| blue-cooler    | #065fff |    5.11 |    4.42 |    3.68 |
+| blue-faint     | #375cc8 |    5.92 |    5.13 |    4.27 |
+| magenta        | #aa44c5 |    4.81 |    4.17 |    3.46 |
+| magenta-warmer | #c0469a |    4.56 |    3.95 |    3.28 |
+| magenta-cooler | #7f5ae0 |    4.70 |    4.07 |    3.39 |
+| magenta-faint  | #605f9f |    5.75 |    4.98 |    4.14 |
+| cyan           | #1f6fbf |    5.11 |    4.43 |    3.68 |
+| cyan-warmer    | #3a6dd2 |    4.86 |    4.21 |    3.50 |
+| cyan-cooler    | #007a85 |    5.07 |    4.39 |    3.65 |
+| cyan-faint     | #305f9f |    6.40 |    5.54 |    4.61 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -960,36 +960,36 @@ overall design of the project.
 :CUSTOM_ID: h:8a313d2d-5bfe-4472-aaae-f1d369f38303
 :END:
 
-| Name           |         | #fff7f7 | #efe7e7 | #e0dbdb | #f9eff3 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #201f36 |   15.18 |   13.16 |   11.69 |   14.24 |
-| fg-dim         | #776f79 |    4.59 |    3.98 |    3.54 |    4.31 |
-| fg-alt         | #af4988 |    4.82 |    4.18 |    3.71 |    4.52 |
-| red            | #b00234 |    6.85 |    5.94 |    5.28 |    6.43 |
-| red-warmer     | #e00033 |    4.72 |    4.09 |    3.63 |    4.43 |
-| red-cooler     | #d5305f |    4.50 |    3.91 |    3.47 |    4.23 |
-| red-faint      | #af3f5f |    5.38 |    4.66 |    4.14 |    5.05 |
-| green          | #217a3c |    5.08 |    4.41 |    3.92 |    4.77 |
-| green-warmer   | #4a7d00 |    4.71 |    4.08 |    3.63 |    4.42 |
-| green-cooler   | #008358 |    4.54 |    3.93 |    3.49 |    4.26 |
-| green-faint    | #61756c |    4.66 |    4.04 |    3.59 |    4.37 |
-| yellow         | #9a6012 |    4.91 |    4.25 |    3.78 |    4.60 |
-| yellow-warmer  | #b6530f |    4.70 |    4.08 |    3.62 |    4.41 |
-| yellow-cooler  | #a04646 |    5.75 |    4.99 |    4.43 |    5.40 |
-| yellow-faint   | #7a5f2f |    5.68 |    4.92 |    4.37 |    5.33 |
-| blue           | #3c3bbe |    7.77 |    6.74 |    5.98 |    7.29 |
-| blue-warmer    | #4250ef |    5.49 |    4.76 |    4.23 |    5.15 |
-| blue-cooler    | #065fff |    4.87 |    4.22 |    3.75 |    4.57 |
-| blue-faint     | #6060d0 |    4.88 |    4.23 |    3.75 |    4.57 |
-| magenta        | #a01f64 |    6.92 |    6.00 |    5.33 |    6.49 |
-| magenta-warmer | #9f248a |    6.43 |    5.58 |    4.95 |    6.03 |
-| magenta-cooler | #7022bf |    7.45 |    6.46 |    5.74 |    6.99 |
-| magenta-faint  | #954f90 |    5.24 |    4.54 |    4.03 |    4.91 |
-| cyan           | #2f5f9f |    6.11 |    5.30 |    4.70 |    5.73 |
-| cyan-warmer    | #3f6faf |    4.85 |    4.20 |    3.73 |    4.55 |
-| cyan-cooler    | #1077ab |    4.68 |    4.06 |    3.61 |    4.39 |
-| cyan-faint     | #506fa0 |    4.83 |    4.19 |    3.72 |    4.53 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff7f7 | #efe7e7 | #e0dbdb |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #201f36 |   15.18 |   13.16 |   11.69 |
+| fg-dim         | #776f79 |    4.59 |    3.98 |    3.54 |
+| fg-alt         | #af4988 |    4.82 |    4.18 |    3.71 |
+| red            | #b00234 |    6.85 |    5.94 |    5.28 |
+| red-warmer     | #e00033 |    4.72 |    4.09 |    3.63 |
+| red-cooler     | #d5305f |    4.50 |    3.91 |    3.47 |
+| red-faint      | #af3f5f |    5.38 |    4.66 |    4.14 |
+| green          | #217a3c |    5.08 |    4.41 |    3.92 |
+| green-warmer   | #4a7d00 |    4.71 |    4.08 |    3.63 |
+| green-cooler   | #008358 |    4.54 |    3.93 |    3.49 |
+| green-faint    | #61756c |    4.66 |    4.04 |    3.59 |
+| yellow         | #9a6012 |    4.91 |    4.25 |    3.78 |
+| yellow-warmer  | #b6530f |    4.70 |    4.08 |    3.62 |
+| yellow-cooler  | #a04646 |    5.75 |    4.99 |    4.43 |
+| yellow-faint   | #7a5f2f |    5.68 |    4.92 |    4.37 |
+| blue           | #3c3bbe |    7.77 |    6.74 |    5.98 |
+| blue-warmer    | #4250ef |    5.49 |    4.76 |    4.23 |
+| blue-cooler    | #065fff |    4.87 |    4.22 |    3.75 |
+| blue-faint     | #6060d0 |    4.88 |    4.23 |    3.75 |
+| magenta        | #a01f64 |    6.92 |    6.00 |    5.33 |
+| magenta-warmer | #9f248a |    6.43 |    5.58 |    4.95 |
+| magenta-cooler | #7022bf |    7.45 |    6.46 |    5.74 |
+| magenta-faint  | #954f90 |    5.24 |    4.54 |    4.03 |
+| cyan           | #2f5f9f |    6.11 |    5.30 |    4.70 |
+| cyan-warmer    | #3f6faf |    4.85 |    4.20 |    3.73 |
+| cyan-cooler    | #1077ab |    4.68 |    4.06 |    3.61 |
+| cyan-faint     | #506fa0 |    4.83 |    4.19 |    3.72 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1013,36 +1013,36 @@ overall design of the project.
 :CUSTOM_ID: h:fa4269da-7941-4b53-a523-e2edd86d457e
 :END:
 
-| Name           |         | #ffffff | #efefef | #dbdbdb | #f9f9f9 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #202020 |   16.29 |   14.17 |   11.77 |   15.48 |
-| fg-dim         | #68759f |    4.53 |    3.94 |    3.27 |    4.30 |
-| fg-alt         | #397a70 |    5.01 |    4.36 |    3.62 |    4.76 |
-| red            | #d3303a |    4.94 |    4.29 |    3.57 |    4.69 |
-| red-warmer     | #e00033 |    4.98 |    4.33 |    3.60 |    4.73 |
-| red-cooler     | #d51272 |    5.05 |    4.39 |    3.65 |    4.80 |
-| red-faint      | #c24552 |    4.92 |    4.28 |    3.55 |    4.67 |
-| green          | #217a3c |    5.37 |    4.67 |    3.88 |    5.10 |
-| green-warmer   | #4a7d00 |    4.97 |    4.32 |    3.59 |    4.72 |
-| green-cooler   | #008858 |    4.50 |    3.92 |    3.25 |    4.28 |
-| green-faint    | #41754c |    5.42 |    4.71 |    3.92 |    5.15 |
-| yellow         | #a45f22 |    4.95 |    4.31 |    3.58 |    4.71 |
-| yellow-warmer  | #b6532f |    4.92 |    4.28 |    3.55 |    4.67 |
-| yellow-cooler  | #b65050 |    4.94 |    4.29 |    3.57 |    4.69 |
-| yellow-faint   | #a65f6a |    4.70 |    4.09 |    3.40 |    4.47 |
-| blue           | #375cd8 |    5.70 |    4.96 |    4.12 |    5.41 |
-| blue-warmer    | #4250ef |    5.79 |    5.04 |    4.18 |    5.50 |
-| blue-cooler    | #065fff |    5.14 |    4.47 |    3.71 |    4.88 |
-| blue-faint     | #4f54aa |    6.60 |    5.74 |    4.77 |    6.27 |
-| magenta        | #ba35af |    4.98 |    4.33 |    3.60 |    4.73 |
-| magenta-warmer | #cf25aa |    4.67 |    4.06 |    3.37 |    4.43 |
-| magenta-cooler | #6052cf |    5.82 |    5.07 |    4.21 |    5.53 |
-| magenta-faint  | #af569f |    4.51 |    3.92 |    3.26 |    4.29 |
-| cyan           | #1f6fbf |    5.14 |    4.47 |    3.71 |    4.88 |
-| cyan-warmer    | #3f6faf |    5.12 |    4.45 |    3.70 |    4.86 |
-| cyan-cooler    | #1f77bb |    4.76 |    4.14 |    3.44 |    4.52 |
-| cyan-faint     | #506fa0 |    5.09 |    4.43 |    3.68 |    4.84 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #ffffff | #efefef | #dbdbdb |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #202020 |   16.29 |   14.17 |   11.77 |
+| fg-dim         | #68759f |    4.53 |    3.94 |    3.27 |
+| fg-alt         | #397a70 |    5.01 |    4.36 |    3.62 |
+| red            | #d3303a |    4.94 |    4.29 |    3.57 |
+| red-warmer     | #e00033 |    4.98 |    4.33 |    3.60 |
+| red-cooler     | #d51272 |    5.05 |    4.39 |    3.65 |
+| red-faint      | #c24552 |    4.92 |    4.28 |    3.55 |
+| green          | #217a3c |    5.37 |    4.67 |    3.88 |
+| green-warmer   | #4a7d00 |    4.97 |    4.32 |    3.59 |
+| green-cooler   | #008858 |    4.50 |    3.92 |    3.25 |
+| green-faint    | #41754c |    5.42 |    4.71 |    3.92 |
+| yellow         | #a45f22 |    4.95 |    4.31 |    3.58 |
+| yellow-warmer  | #b6532f |    4.92 |    4.28 |    3.55 |
+| yellow-cooler  | #b65050 |    4.94 |    4.29 |    3.57 |
+| yellow-faint   | #a65f6a |    4.70 |    4.09 |    3.40 |
+| blue           | #375cd8 |    5.70 |    4.96 |    4.12 |
+| blue-warmer    | #4250ef |    5.79 |    5.04 |    4.18 |
+| blue-cooler    | #065fff |    5.14 |    4.47 |    3.71 |
+| blue-faint     | #4f54aa |    6.60 |    5.74 |    4.77 |
+| magenta        | #ba35af |    4.98 |    4.33 |    3.60 |
+| magenta-warmer | #cf25aa |    4.67 |    4.06 |    3.37 |
+| magenta-cooler | #6052cf |    5.82 |    5.07 |    4.21 |
+| magenta-faint  | #af569f |    4.51 |    3.92 |    3.26 |
+| cyan           | #1f6fbf |    5.14 |    4.47 |    3.71 |
+| cyan-warmer    | #3f6faf |    5.12 |    4.45 |    3.70 |
+| cyan-cooler    | #1f77bb |    4.76 |    4.14 |    3.44 |
+| cyan-faint     | #506fa0 |    5.09 |    4.43 |    3.68 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1066,36 +1066,36 @@ overall design of the project.
 :CUSTOM_ID: h:6dece92c-4e27-40b2-8355-d9e2f6e13499
 :END:
 
-| Name           |         | #131c2b | #1d2c39 | #2a3644 | #1a2331 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #eaedef |   14.53 |   12.14 |   10.45 |   13.44 |
-| fg-dim         | #969faf |    6.41 |    5.35 |    4.61 |    5.93 |
-| fg-alt         | #90a0dc |    6.71 |    5.60 |    4.82 |    6.21 |
-| red            | #ff6f6f |    6.31 |    5.27 |    4.54 |    5.84 |
-| red-warmer     | #ff7a5f |    6.67 |    5.57 |    4.80 |    6.17 |
-| red-cooler     | #ff7788 |    6.71 |    5.60 |    4.82 |    6.21 |
-| red-faint      | #eaa4a4 |    8.42 |    7.03 |    6.05 |    7.79 |
-| green          | #41bf4f |    7.15 |    5.97 |    5.14 |    6.62 |
-| green-warmer   | #7fce5f |    8.87 |    7.40 |    6.37 |    8.20 |
-| green-cooler   | #30c489 |    7.64 |    6.38 |    5.49 |    7.06 |
-| green-faint    | #a9c99f |    9.39 |    7.84 |    6.75 |    8.69 |
-| yellow         | #d0d24f |   10.59 |    8.84 |    7.61 |    9.79 |
-| yellow-warmer  | #f0c060 |   10.10 |    8.44 |    7.26 |    9.34 |
-| yellow-cooler  | #cab27f |    8.29 |    6.92 |    5.96 |    7.67 |
-| yellow-faint   | #cac89f |    9.99 |    8.34 |    7.18 |    9.24 |
-| blue           | #57b0ff |    7.37 |    6.16 |    5.30 |    6.82 |
-| blue-warmer    | #70a0ff |    6.64 |    5.55 |    4.77 |    6.14 |
-| blue-cooler    | #12b4ff |    7.32 |    6.11 |    5.26 |    6.77 |
-| blue-faint     | #9acfff |   10.37 |    8.66 |    7.45 |    9.59 |
-| magenta        | #f59acf |    8.47 |    7.07 |    6.09 |    7.83 |
-| magenta-warmer | #fa90ea |    8.34 |    6.96 |    5.99 |    7.71 |
-| magenta-cooler | #cf90ff |    7.40 |    6.17 |    5.31 |    6.84 |
-| magenta-faint  | #d4aaf0 |    8.80 |    7.34 |    6.32 |    8.13 |
-| cyan           | #2fd0db |    9.09 |    7.59 |    6.53 |    8.40 |
-| cyan-warmer    | #7fcfdf |    9.68 |    8.08 |    6.96 |    8.95 |
-| cyan-cooler    | #65d5a8 |    9.47 |    7.91 |    6.81 |    8.76 |
-| cyan-faint     | #99bfcf |    8.71 |    7.28 |    6.26 |    8.06 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #131c2b | #1d2c39 | #2a3644 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #eaedef |   14.53 |   12.14 |   10.45 |
+| fg-dim         | #969faf |    6.41 |    5.35 |    4.61 |
+| fg-alt         | #90a0dc |    6.71 |    5.60 |    4.82 |
+| red            | #ff6f6f |    6.31 |    5.27 |    4.54 |
+| red-warmer     | #ff7a5f |    6.67 |    5.57 |    4.80 |
+| red-cooler     | #ff7788 |    6.71 |    5.60 |    4.82 |
+| red-faint      | #eaa4a4 |    8.42 |    7.03 |    6.05 |
+| green          | #41bf4f |    7.15 |    5.97 |    5.14 |
+| green-warmer   | #7fce5f |    8.87 |    7.40 |    6.37 |
+| green-cooler   | #30c489 |    7.64 |    6.38 |    5.49 |
+| green-faint    | #a9c99f |    9.39 |    7.84 |    6.75 |
+| yellow         | #d0d24f |   10.59 |    8.84 |    7.61 |
+| yellow-warmer  | #f0c060 |   10.10 |    8.44 |    7.26 |
+| yellow-cooler  | #cab27f |    8.29 |    6.92 |    5.96 |
+| yellow-faint   | #cac89f |    9.99 |    8.34 |    7.18 |
+| blue           | #57b0ff |    7.37 |    6.16 |    5.30 |
+| blue-warmer    | #70a0ff |    6.64 |    5.55 |    4.77 |
+| blue-cooler    | #12b4ff |    7.32 |    6.11 |    5.26 |
+| blue-faint     | #9acfff |   10.37 |    8.66 |    7.45 |
+| magenta        | #f59acf |    8.47 |    7.07 |    6.09 |
+| magenta-warmer | #fa90ea |    8.34 |    6.96 |    5.99 |
+| magenta-cooler | #cf90ff |    7.40 |    6.17 |    5.31 |
+| magenta-faint  | #d4aaf0 |    8.80 |    7.34 |    6.32 |
+| cyan           | #2fd0db |    9.09 |    7.59 |    6.53 |
+| cyan-warmer    | #7fcfdf |    9.68 |    8.08 |    6.96 |
+| cyan-cooler    | #65d5a8 |    9.47 |    7.91 |    6.81 |
+| cyan-faint     | #99bfcf |    8.71 |    7.28 |    6.26 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1119,36 +1119,36 @@ overall design of the project.
 :CUSTOM_ID: h:3e218a03-fba5-44d7-89cf-8e14bb72d888
 :END:
 
-| Name           |         | #edf4f8 | #dce2ef | #cfd8e3 | #e6ecf2 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #151a27 |   15.63 |   13.37 |   12.06 |   14.60 |
-| fg-dim         | #676470 |    5.20 |    4.45 |    4.01 |    4.86 |
-| fg-alt         | #3f4f99 |    6.77 |    5.80 |    5.23 |    6.32 |
-| red            | #c3303a |    4.97 |    4.25 |    3.83 |    4.64 |
-| red-warmer     | #d00000 |    5.13 |    4.39 |    3.96 |    4.79 |
-| red-cooler     | #b02440 |    5.96 |    5.10 |    4.60 |    5.56 |
-| red-faint      | #8b4052 |    6.40 |    5.48 |    4.94 |    5.98 |
-| green          | #007010 |    5.68 |    4.86 |    4.39 |    5.31 |
-| green-warmer   | #3a6f00 |    5.47 |    4.68 |    4.22 |    5.11 |
-| green-cooler   | #007047 |    5.54 |    4.74 |    4.28 |    5.18 |
-| green-faint    | #4a763f |    4.78 |    4.09 |    3.69 |    4.46 |
-| yellow         | #805a1f |    5.56 |    4.76 |    4.29 |    5.19 |
-| yellow-warmer  | #8b4400 |    6.46 |    5.53 |    4.99 |    6.03 |
-| yellow-cooler  | #78542f |    6.08 |    5.20 |    4.69 |    5.68 |
-| yellow-faint   | #7f4f4a |    6.06 |    5.18 |    4.68 |    5.66 |
-| blue           | #375cc6 |    5.39 |    4.61 |    4.16 |    5.03 |
-| blue-warmer    | #444fcf |    5.79 |    4.95 |    4.47 |    5.40 |
-| blue-cooler    | #003faf |    8.11 |    6.94 |    6.26 |    7.57 |
-| blue-faint     | #3a5099 |    6.78 |    5.80 |    5.23 |    6.33 |
-| magenta        | #80308f |    6.90 |    5.91 |    5.33 |    6.45 |
-| magenta-warmer | #9a3a6a |    5.93 |    5.07 |    4.58 |    5.54 |
-| magenta-cooler | #5f2fba |    7.26 |    6.21 |    5.60 |    6.78 |
-| magenta-faint  | #6a4a9f |    6.11 |    5.23 |    4.72 |    5.70 |
-| cyan           | #1f66af |    5.28 |    4.52 |    4.08 |    4.93 |
-| cyan-warmer    | #305675 |    6.96 |    5.96 |    5.37 |    6.50 |
-| cyan-cooler    | #006f70 |    5.39 |    4.61 |    4.16 |    5.03 |
-| cyan-faint     | #3f627f |    5.79 |    4.95 |    4.47 |    5.40 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #edf4f8 | #dce2ef | #cfd8e3 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #151a27 |   15.63 |   13.37 |   12.06 |
+| fg-dim         | #676470 |    5.20 |    4.45 |    4.01 |
+| fg-alt         | #3f4f99 |    6.77 |    5.80 |    5.23 |
+| red            | #c3303a |    4.97 |    4.25 |    3.83 |
+| red-warmer     | #d00000 |    5.13 |    4.39 |    3.96 |
+| red-cooler     | #b02440 |    5.96 |    5.10 |    4.60 |
+| red-faint      | #8b4052 |    6.40 |    5.48 |    4.94 |
+| green          | #007010 |    5.68 |    4.86 |    4.39 |
+| green-warmer   | #3a6f00 |    5.47 |    4.68 |    4.22 |
+| green-cooler   | #007047 |    5.54 |    4.74 |    4.28 |
+| green-faint    | #4a763f |    4.78 |    4.09 |    3.69 |
+| yellow         | #805a1f |    5.56 |    4.76 |    4.29 |
+| yellow-warmer  | #8b4400 |    6.46 |    5.53 |    4.99 |
+| yellow-cooler  | #78542f |    6.08 |    5.20 |    4.69 |
+| yellow-faint   | #7f4f4a |    6.06 |    5.18 |    4.68 |
+| blue           | #375cc6 |    5.39 |    4.61 |    4.16 |
+| blue-warmer    | #444fcf |    5.79 |    4.95 |    4.47 |
+| blue-cooler    | #003faf |    8.11 |    6.94 |    6.26 |
+| blue-faint     | #3a5099 |    6.78 |    5.80 |    5.23 |
+| magenta        | #80308f |    6.90 |    5.91 |    5.33 |
+| magenta-warmer | #9a3a6a |    5.93 |    5.07 |    4.58 |
+| magenta-cooler | #5f2fba |    7.26 |    6.21 |    5.60 |
+| magenta-faint  | #6a4a9f |    6.11 |    5.23 |    4.72 |
+| cyan           | #1f66af |    5.28 |    4.52 |    4.08 |
+| cyan-warmer    | #305675 |    6.96 |    5.96 |    5.37 |
+| cyan-cooler    | #006f70 |    5.39 |    4.61 |    4.16 |
+| cyan-faint     | #3f627f |    5.79 |    4.95 |    4.47 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1172,36 +1172,36 @@ overall design of the project.
 :CUSTOM_ID: h:aa94bffd-ca6e-4ca7-9222-f4afdf9f6188
 :END:
 
-| Name           |         | #352718 | #483426 | #59463f | #3d2e1f |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #e8e4b1 |   11.11 |    9.01 |    6.81 |   10.05 |
-| fg-dim         | #90918a |    4.54 |    3.68 |    2.78 |    4.10 |
-| fg-alt         | #ccaa70 |    6.57 |    5.32 |    4.03 |    5.94 |
-| red            | #ff7f7f |    5.91 |    4.79 |    3.62 |    5.34 |
-| red-warmer     | #ff7f4f |    5.77 |    4.68 |    3.54 |    5.22 |
-| red-cooler     | #ff8f98 |    6.62 |    5.37 |    4.06 |    5.99 |
-| red-faint      | #e89a88 |    6.47 |    5.24 |    3.97 |    5.85 |
-| green          | #6fd560 |    7.81 |    6.33 |    4.79 |    7.06 |
-| green-warmer   | #a0d13a |    8.03 |    6.51 |    4.92 |    7.26 |
-| green-cooler   | #65d590 |    7.89 |    6.39 |    4.84 |    7.13 |
-| green-faint    | #a0d26f |    8.21 |    6.65 |    5.03 |    7.42 |
-| yellow         | #e4b53f |    7.55 |    6.12 |    4.63 |    6.82 |
-| yellow-warmer  | #ffa21f |    7.18 |    5.82 |    4.40 |    6.49 |
-| yellow-cooler  | #e7a06f |    6.64 |    5.38 |    4.07 |    6.00 |
-| yellow-faint   | #eab780 |    7.96 |    6.45 |    4.88 |    7.20 |
-| blue           | #57aff6 |    6.10 |    4.94 |    3.74 |    5.51 |
-| blue-warmer    | #98bfff |    7.72 |    6.26 |    4.73 |    6.98 |
-| blue-cooler    | #62cfef |    8.04 |    6.51 |    4.93 |    7.27 |
-| blue-faint     | #6ab4ef |    6.45 |    5.23 |    3.96 |    5.83 |
-| magenta        | #f0aac5 |    7.74 |    6.27 |    4.75 |    7.00 |
-| magenta-warmer | #fa90aa |    6.62 |    5.37 |    4.06 |    5.99 |
-| magenta-cooler | #c6a2fe |    6.87 |    5.57 |    4.21 |    6.22 |
-| magenta-faint  | #dfcfe0 |    9.72 |    7.88 |    5.96 |    8.79 |
-| cyan           | #6fcad0 |    7.59 |    6.15 |    4.65 |    6.86 |
-| cyan-warmer    | #7fc5df |    7.53 |    6.10 |    4.62 |    6.81 |
-| cyan-cooler    | #70e0cf |    9.11 |    7.38 |    5.59 |    8.24 |
-| cyan-faint     | #99bfcf |    7.36 |    5.97 |    4.51 |    6.65 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #352718 | #483426 | #59463f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #e8e4b1 |   11.11 |    9.01 |    6.81 |
+| fg-dim         | #90918a |    4.54 |    3.68 |    2.78 |
+| fg-alt         | #ccaa70 |    6.57 |    5.32 |    4.03 |
+| red            | #ff7f7f |    5.91 |    4.79 |    3.62 |
+| red-warmer     | #ff7f4f |    5.77 |    4.68 |    3.54 |
+| red-cooler     | #ff8f98 |    6.62 |    5.37 |    4.06 |
+| red-faint      | #e89a88 |    6.47 |    5.24 |    3.97 |
+| green          | #6fd560 |    7.81 |    6.33 |    4.79 |
+| green-warmer   | #a0d13a |    8.03 |    6.51 |    4.92 |
+| green-cooler   | #65d590 |    7.89 |    6.39 |    4.84 |
+| green-faint    | #a0d26f |    8.21 |    6.65 |    5.03 |
+| yellow         | #e4b53f |    7.55 |    6.12 |    4.63 |
+| yellow-warmer  | #ffa21f |    7.18 |    5.82 |    4.40 |
+| yellow-cooler  | #e7a06f |    6.64 |    5.38 |    4.07 |
+| yellow-faint   | #eab780 |    7.96 |    6.45 |    4.88 |
+| blue           | #57aff6 |    6.10 |    4.94 |    3.74 |
+| blue-warmer    | #98bfff |    7.72 |    6.26 |    4.73 |
+| blue-cooler    | #62cfef |    8.04 |    6.51 |    4.93 |
+| blue-faint     | #6ab4ef |    6.45 |    5.23 |    3.96 |
+| magenta        | #f0aac5 |    7.74 |    6.27 |    4.75 |
+| magenta-warmer | #fa90aa |    6.62 |    5.37 |    4.06 |
+| magenta-cooler | #c6a2fe |    6.87 |    5.57 |    4.21 |
+| magenta-faint  | #dfcfe0 |    9.72 |    7.88 |    5.96 |
+| cyan           | #6fcad0 |    7.59 |    6.15 |    4.65 |
+| cyan-warmer    | #7fc5df |    7.53 |    6.10 |    4.62 |
+| cyan-cooler    | #70e0cf |    9.11 |    7.38 |    5.59 |
+| cyan-faint     | #99bfcf |    7.36 |    5.97 |    4.51 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1225,36 +1225,36 @@ overall design of the project.
 :CUSTOM_ID: h:8fd85c99-db72-433b-9a37-954899c2d947
 :END:
 
-| Name           |         | #fff6d8 | #f5e9cb | #e7d7c6 | #f9efd4 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #484431 |    9.05 |    8.11 |    6.96 |    8.54 |
-| fg-dim         | #68708a |    4.55 |    4.07 |    3.49 |    4.29 |
-| fg-alt         | #80431a |    7.10 |    6.36 |    5.46 |    6.70 |
-| red            | #ba2d2f |    5.54 |    4.97 |    4.26 |    5.23 |
-| red-warmer     | #c74400 |    4.57 |    4.09 |    3.51 |    4.31 |
-| red-cooler     | #c02945 |    5.33 |    4.77 |    4.10 |    5.03 |
-| red-faint      | #b05350 |    4.63 |    4.14 |    3.56 |    4.36 |
-| green          | #007a0a |    5.13 |    4.59 |    3.94 |    4.84 |
-| green-warmer   | #5a7400 |    4.94 |    4.42 |    3.80 |    4.66 |
-| green-cooler   | #008250 |    4.51 |    4.04 |    3.47 |    4.25 |
-| green-faint    | #61756c |    4.55 |    4.08 |    3.50 |    4.29 |
-| yellow         | #a16310 |    4.51 |    4.04 |    3.47 |    4.25 |
-| yellow-warmer  | #ba5205 |    4.52 |    4.05 |    3.48 |    4.26 |
-| yellow-cooler  | #946830 |    4.54 |    4.06 |    3.49 |    4.28 |
-| yellow-faint   | #7f6f1a |    4.64 |    4.15 |    3.56 |    4.37 |
-| blue           | #375cc6 |    5.54 |    4.96 |    4.26 |    5.22 |
-| blue-warmer    | #5f5fdf |    4.64 |    4.15 |    3.56 |    4.37 |
-| blue-cooler    | #265fbf |    5.60 |    5.01 |    4.30 |    5.28 |
-| blue-faint     | #4a659f |    5.32 |    4.76 |    4.09 |    5.02 |
-| magenta        | #aa3e74 |    5.32 |    4.77 |    4.09 |    5.02 |
-| magenta-warmer | #b02f80 |    5.45 |    4.88 |    4.19 |    5.14 |
-| magenta-cooler | #6448ca |    5.85 |    5.24 |    4.50 |    5.52 |
-| magenta-faint  | #905ea0 |    4.52 |    4.05 |    3.48 |    4.27 |
-| cyan           | #3f60af |    5.54 |    4.97 |    4.26 |    5.23 |
-| cyan-warmer    | #4060a0 |    5.72 |    5.12 |    4.39 |    5.39 |
-| cyan-cooler    | #0f708a |    5.24 |    4.70 |    4.03 |    4.95 |
-| cyan-faint     | #4f6f8f |    4.85 |    4.35 |    3.73 |    4.58 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff6d8 | #f5e9cb | #e7d7c6 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #484431 |    9.05 |    8.11 |    6.96 |
+| fg-dim         | #68708a |    4.55 |    4.07 |    3.49 |
+| fg-alt         | #80431a |    7.10 |    6.36 |    5.46 |
+| red            | #ba2d2f |    5.54 |    4.97 |    4.26 |
+| red-warmer     | #c74400 |    4.57 |    4.09 |    3.51 |
+| red-cooler     | #c02945 |    5.33 |    4.77 |    4.10 |
+| red-faint      | #b05350 |    4.63 |    4.14 |    3.56 |
+| green          | #007a0a |    5.13 |    4.59 |    3.94 |
+| green-warmer   | #5a7400 |    4.94 |    4.42 |    3.80 |
+| green-cooler   | #008250 |    4.51 |    4.04 |    3.47 |
+| green-faint    | #61756c |    4.55 |    4.08 |    3.50 |
+| yellow         | #a16310 |    4.51 |    4.04 |    3.47 |
+| yellow-warmer  | #ba5205 |    4.52 |    4.05 |    3.48 |
+| yellow-cooler  | #946830 |    4.54 |    4.06 |    3.49 |
+| yellow-faint   | #7f6f1a |    4.64 |    4.15 |    3.56 |
+| blue           | #375cc6 |    5.54 |    4.96 |    4.26 |
+| blue-warmer    | #5f5fdf |    4.64 |    4.15 |    3.56 |
+| blue-cooler    | #265fbf |    5.60 |    5.01 |    4.30 |
+| blue-faint     | #4a659f |    5.32 |    4.76 |    4.09 |
+| magenta        | #aa3e74 |    5.32 |    4.77 |    4.09 |
+| magenta-warmer | #b02f80 |    5.45 |    4.88 |    4.19 |
+| magenta-cooler | #6448ca |    5.85 |    5.24 |    4.50 |
+| magenta-faint  | #905ea0 |    4.52 |    4.05 |    3.48 |
+| cyan           | #3f60af |    5.54 |    4.97 |    4.26 |
+| cyan-warmer    | #4060a0 |    5.72 |    5.12 |    4.39 |
+| cyan-cooler    | #0f708a |    5.24 |    4.70 |    4.03 |
+| cyan-faint     | #4f6f8f |    4.85 |    4.35 |    3.73 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1278,36 +1278,36 @@ overall design of the project.
 :CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
 :END:
 
-| Name           |         | #000e17 | #242e39 | #242e39 | #11141f |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #afbcbf |   10.02 |    7.06 |    7.06 |    9.42 |
-| fg-dim         | #70819f |    4.96 |    3.50 |    3.50 |    4.66 |
-| fg-alt         | #b0a0a0 |    7.80 |    5.50 |    5.50 |    7.33 |
-| red            | #ef656a |    6.27 |    4.42 |    4.42 |    5.89 |
-| red-warmer     | #f47360 |    6.95 |    4.90 |    4.90 |    6.53 |
-| red-cooler     | #ef798f |    7.26 |    5.12 |    5.12 |    6.82 |
-| red-faint      | #d56f72 |    5.90 |    4.16 |    4.16 |    5.55 |
-| green          | #1fa526 |    6.02 |    4.24 |    4.24 |    5.66 |
-| green-warmer   | #50a22f |    6.09 |    4.30 |    4.30 |    5.73 |
-| green-cooler   | #00b672 |    7.38 |    5.20 |    5.20 |    6.94 |
-| green-faint    | #61a06c |    6.28 |    4.43 |    4.43 |    5.90 |
-| yellow         | #c48502 |    6.23 |    4.40 |    4.40 |    5.86 |
-| yellow-warmer  | #e6832f |    7.12 |    5.02 |    5.02 |    6.69 |
-| yellow-cooler  | #df8f6f |    7.72 |    5.44 |    5.44 |    7.25 |
-| yellow-faint   | #cf9f7f |    8.30 |    5.85 |    5.85 |    7.80 |
-| blue           | #379cf6 |    6.74 |    4.75 |    4.75 |    6.34 |
-| blue-warmer    | #6a88ff |    6.12 |    4.31 |    4.31 |    5.75 |
-| blue-cooler    | #029fff |    6.89 |    4.86 |    4.86 |    6.48 |
-| blue-faint     | #7a94df |    6.63 |    4.68 |    4.68 |    6.23 |
-| magenta        | #d570af |    6.29 |    4.44 |    4.44 |    5.92 |
-| magenta-warmer | #e580ea |    8.01 |    5.64 |    5.64 |    7.53 |
-| magenta-cooler | #af8aff |    7.35 |    5.18 |    5.18 |    6.91 |
-| magenta-faint  | #c59fcf |    8.59 |    6.06 |    6.06 |    8.07 |
-| cyan           | #4fb0cf |    7.85 |    5.54 |    5.54 |    7.38 |
-| cyan-warmer    | #6fafff |    8.60 |    6.07 |    6.07 |    8.09 |
-| cyan-cooler    | #3dc0b0 |    8.71 |    6.14 |    6.14 |    8.19 |
-| cyan-faint     | #92b4df |    9.13 |    6.44 |    6.44 |    8.58 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #000e17 | #242e39 | #242e39 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #afbcbf |   10.02 |    7.06 |    7.06 |
+| fg-dim         | #70819f |    4.96 |    3.50 |    3.50 |
+| fg-alt         | #b0a0a0 |    7.80 |    5.50 |    5.50 |
+| red            | #ef656a |    6.27 |    4.42 |    4.42 |
+| red-warmer     | #f47360 |    6.95 |    4.90 |    4.90 |
+| red-cooler     | #ef798f |    7.26 |    5.12 |    5.12 |
+| red-faint      | #d56f72 |    5.90 |    4.16 |    4.16 |
+| green          | #1fa526 |    6.02 |    4.24 |    4.24 |
+| green-warmer   | #50a22f |    6.09 |    4.30 |    4.30 |
+| green-cooler   | #00b672 |    7.38 |    5.20 |    5.20 |
+| green-faint    | #61a06c |    6.28 |    4.43 |    4.43 |
+| yellow         | #c48502 |    6.23 |    4.40 |    4.40 |
+| yellow-warmer  | #e6832f |    7.12 |    5.02 |    5.02 |
+| yellow-cooler  | #df8f6f |    7.72 |    5.44 |    5.44 |
+| yellow-faint   | #cf9f7f |    8.30 |    5.85 |    5.85 |
+| blue           | #379cf6 |    6.74 |    4.75 |    4.75 |
+| blue-warmer    | #6a88ff |    6.12 |    4.31 |    4.31 |
+| blue-cooler    | #029fff |    6.89 |    4.86 |    4.86 |
+| blue-faint     | #7a94df |    6.63 |    4.68 |    4.68 |
+| magenta        | #d570af |    6.29 |    4.44 |    4.44 |
+| magenta-warmer | #e580ea |    8.01 |    5.64 |    5.64 |
+| magenta-cooler | #af8aff |    7.35 |    5.18 |    5.18 |
+| magenta-faint  | #c59fcf |    8.59 |    6.06 |    6.06 |
+| cyan           | #4fb0cf |    7.85 |    5.54 |    5.54 |
+| cyan-warmer    | #6fafff |    8.60 |    6.07 |    6.07 |
+| cyan-cooler    | #3dc0b0 |    8.71 |    6.14 |    6.14 |
+| cyan-faint     | #92b4df |    9.13 |    6.44 |    6.44 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1331,36 +1331,36 @@ overall design of the project.
 :CUSTOM_ID: h:74fddb93-fb8b-47ee-865b-70ac3e798332
 :END:
 
-| Name           |         | #ffedc9 | #f7e5b6 | #e9d0a8 | #efdbac |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #6c4631 |    7.12 |    6.58 |    5.49 |    6.02 |
-| fg-dim         | #6f6a70 |    4.58 |    4.24 |    3.54 |    3.88 |
-| fg-alt         | #8f5f4a |    4.66 |    4.31 |    3.60 |    3.94 |
-| red            | #ba2d2f |    5.20 |    4.81 |    4.01 |    4.39 |
-| red-warmer     | #c13f00 |    4.58 |    4.23 |    3.53 |    3.87 |
-| red-cooler     | #cf2030 |    4.67 |    4.31 |    3.60 |    3.95 |
-| red-faint      | #b04340 |    4.89 |    4.52 |    3.77 |    4.14 |
-| green          | #007a0a |    4.81 |    4.44 |    3.71 |    4.06 |
-| green-warmer   | #5f7200 |    4.68 |    4.32 |    3.61 |    3.95 |
-| green-cooler   | #2f783f |    4.69 |    4.34 |    3.62 |    3.97 |
-| green-faint    | #527545 |    4.56 |    4.22 |    3.52 |    3.86 |
-| yellow         | #a05a22 |    4.57 |    4.23 |    3.53 |    3.87 |
-| yellow-warmer  | #b05115 |    4.51 |    4.17 |    3.48 |    3.82 |
-| yellow-cooler  | #aa4f30 |    4.70 |    4.35 |    3.63 |    3.98 |
-| yellow-faint   | #93604a |    4.54 |    4.20 |    3.50 |    3.84 |
-| blue           | #375cc6 |    5.19 |    4.80 |    4.00 |    4.39 |
-| blue-warmer    | #5f50df |    4.92 |    4.55 |    3.80 |    4.16 |
-| blue-cooler    | #265fbf |    5.25 |    4.85 |    4.05 |    4.44 |
-| blue-faint     | #4a659f |    4.98 |    4.61 |    3.85 |    4.21 |
-| magenta        | #ba3e54 |    4.66 |    4.31 |    3.60 |    3.94 |
-| magenta-warmer | #c32f80 |    4.51 |    4.17 |    3.48 |    3.81 |
-| magenta-cooler | #8448aa |    5.22 |    4.83 |    4.03 |    4.41 |
-| magenta-faint  | #a04450 |    5.30 |    4.90 |    4.09 |    4.48 |
-| cyan           | #467080 |    4.68 |    4.33 |    3.61 |    3.96 |
-| cyan-warmer    | #3f6fa2 |    4.54 |    4.20 |    3.51 |    3.84 |
-| cyan-cooler    | #0f738f |    4.71 |    4.35 |    3.63 |    3.98 |
-| cyan-faint     | #4f6f8f |    4.55 |    4.21 |    3.51 |    3.85 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #ffedc9 | #f7e5b6 | #e9d0a8 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #6c4631 |    7.12 |    6.58 |    5.49 |
+| fg-dim         | #6f6a70 |    4.58 |    4.24 |    3.54 |
+| fg-alt         | #8f5f4a |    4.66 |    4.31 |    3.60 |
+| red            | #ba2d2f |    5.20 |    4.81 |    4.01 |
+| red-warmer     | #c13f00 |    4.58 |    4.23 |    3.53 |
+| red-cooler     | #cf2030 |    4.67 |    4.31 |    3.60 |
+| red-faint      | #b04340 |    4.89 |    4.52 |    3.77 |
+| green          | #007a0a |    4.81 |    4.44 |    3.71 |
+| green-warmer   | #5f7200 |    4.68 |    4.32 |    3.61 |
+| green-cooler   | #2f783f |    4.69 |    4.34 |    3.62 |
+| green-faint    | #527545 |    4.56 |    4.22 |    3.52 |
+| yellow         | #a05a22 |    4.57 |    4.23 |    3.53 |
+| yellow-warmer  | #b05115 |    4.51 |    4.17 |    3.48 |
+| yellow-cooler  | #aa4f30 |    4.70 |    4.35 |    3.63 |
+| yellow-faint   | #93604a |    4.54 |    4.20 |    3.50 |
+| blue           | #375cc6 |    5.19 |    4.80 |    4.00 |
+| blue-warmer    | #5f50df |    4.92 |    4.55 |    3.80 |
+| blue-cooler    | #265fbf |    5.25 |    4.85 |    4.05 |
+| blue-faint     | #4a659f |    4.98 |    4.61 |    3.85 |
+| magenta        | #ba3e54 |    4.66 |    4.31 |    3.60 |
+| magenta-warmer | #c32f80 |    4.51 |    4.17 |    3.48 |
+| magenta-cooler | #8448aa |    5.22 |    4.83 |    4.03 |
+| magenta-faint  | #a04450 |    5.30 |    4.90 |    4.09 |
+| cyan           | #467080 |    4.68 |    4.33 |    3.61 |
+| cyan-warmer    | #3f6fa2 |    4.54 |    4.20 |    3.51 |
+| cyan-cooler    | #0f738f |    4.71 |    4.35 |    3.63 |
+| cyan-faint     | #4f6f8f |    4.55 |    4.21 |    3.51 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1384,36 +1384,36 @@ overall design of the project.
 :CUSTOM_ID: h:e6f75663-0cea-43d7-b503-9460417ad620
 :END:
 
-| Name           |         | #292c2f | #373b3d | #40474b | #333539 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d0d0d0 |    9.10 |    7.34 |    6.13 |    7.97 |
-| fg-dim         | #857f8f |    3.63 |    2.93 |    2.44 |    3.18 |
-| fg-alt         | #aab9af |    6.87 |    5.53 |    4.62 |    6.01 |
-| red            | #d67869 |    4.51 |    3.64 |    3.04 |    3.95 |
-| red-warmer     | #df885f |    5.23 |    4.22 |    3.52 |    4.58 |
-| red-cooler     | #e4959f |    6.08 |    4.90 |    4.10 |    5.32 |
-| red-faint      | #eba0af |    6.81 |    5.49 |    4.58 |    5.96 |
-| green          | #70bb70 |    6.04 |    4.87 |    4.07 |    5.28 |
-| green-warmer   | #98c06f |    6.76 |    5.45 |    4.55 |    5.91 |
-| green-cooler   | #60bd90 |    6.14 |    4.95 |    4.13 |    5.37 |
-| green-faint    | #9fb3a7 |    6.34 |    5.11 |    4.27 |    5.55 |
-| yellow         | #c09f6f |    5.64 |    4.54 |    3.80 |    4.93 |
-| yellow-warmer  | #d1a45f |    6.14 |    4.95 |    4.14 |    5.38 |
-| yellow-cooler  | #cf9f90 |    6.03 |    4.86 |    4.06 |    5.27 |
-| yellow-faint   | #cbb0a0 |    6.86 |    5.53 |    4.62 |    6.00 |
-| blue           | #80a4e0 |    5.55 |    4.48 |    3.74 |    4.86 |
-| blue-warmer    | #a0a0ef |    5.86 |    4.73 |    3.95 |    5.13 |
-| blue-cooler    | #72aff0 |    6.09 |    4.91 |    4.10 |    5.33 |
-| blue-faint     | #aab2df |    6.78 |    5.47 |    4.57 |    5.93 |
-| magenta        | #e5a0ea |    7.05 |    5.68 |    4.75 |    6.17 |
-| magenta-warmer | #d389af |    5.33 |    4.29 |    3.59 |    4.66 |
-| magenta-cooler | #cfa0e8 |    6.58 |    5.31 |    4.43 |    5.76 |
-| magenta-faint  | #e5bbd7 |    8.31 |    6.69 |    5.59 |    7.27 |
-| cyan           | #8fb8ea |    6.83 |    5.50 |    4.60 |    5.98 |
-| cyan-warmer    | #99bfd0 |    7.17 |    5.78 |    4.83 |    6.27 |
-| cyan-cooler    | #7ac0b9 |    6.73 |    5.43 |    4.53 |    5.89 |
-| cyan-faint     | #a2c5d8 |    7.70 |    6.21 |    5.18 |    6.74 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #292c2f | #373b3d | #40474b |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |    9.10 |    7.34 |    6.13 |
+| fg-dim         | #857f8f |    3.63 |    2.93 |    2.44 |
+| fg-alt         | #aab9af |    6.87 |    5.53 |    4.62 |
+| red            | #d67869 |    4.51 |    3.64 |    3.04 |
+| red-warmer     | #df885f |    5.23 |    4.22 |    3.52 |
+| red-cooler     | #e4959f |    6.08 |    4.90 |    4.10 |
+| red-faint      | #eba0af |    6.81 |    5.49 |    4.58 |
+| green          | #70bb70 |    6.04 |    4.87 |    4.07 |
+| green-warmer   | #98c06f |    6.76 |    5.45 |    4.55 |
+| green-cooler   | #60bd90 |    6.14 |    4.95 |    4.13 |
+| green-faint    | #9fb3a7 |    6.34 |    5.11 |    4.27 |
+| yellow         | #c09f6f |    5.64 |    4.54 |    3.80 |
+| yellow-warmer  | #d1a45f |    6.14 |    4.95 |    4.14 |
+| yellow-cooler  | #cf9f90 |    6.03 |    4.86 |    4.06 |
+| yellow-faint   | #cbb0a0 |    6.86 |    5.53 |    4.62 |
+| blue           | #80a4e0 |    5.55 |    4.48 |    3.74 |
+| blue-warmer    | #a0a0ef |    5.86 |    4.73 |    3.95 |
+| blue-cooler    | #72aff0 |    6.09 |    4.91 |    4.10 |
+| blue-faint     | #aab2df |    6.78 |    5.47 |    4.57 |
+| magenta        | #e5a0ea |    7.05 |    5.68 |    4.75 |
+| magenta-warmer | #d389af |    5.33 |    4.29 |    3.59 |
+| magenta-cooler | #cfa0e8 |    6.58 |    5.31 |    4.43 |
+| magenta-faint  | #e5bbd7 |    8.31 |    6.69 |    5.59 |
+| cyan           | #8fb8ea |    6.83 |    5.50 |    4.60 |
+| cyan-warmer    | #99bfd0 |    7.17 |    5.78 |    4.83 |
+| cyan-cooler    | #7ac0b9 |    6.73 |    5.43 |    4.53 |
+| cyan-faint     | #a2c5d8 |    7.70 |    6.21 |    5.18 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1437,36 +1437,36 @@ overall design of the project.
 :CUSTOM_ID: h:f6fc19ec-672b-4b0d-9d6a-a7fd7d49cfd5
 :END:
 
-| Name           |         | #f3eddf | #e5d6d4 | #d9cac8 | #ede4da |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #4f204f |   10.89 |    9.02 |    8.01 |   10.12 |
-| fg-dim         | #6f6877 |    4.59 |    3.80 |    3.37 |    4.26 |
-| fg-alt         | #55447f |    7.14 |    5.91 |    5.25 |    6.63 |
-| red            | #ba2d2f |    5.13 |    4.25 |    3.78 |    4.77 |
-| red-warmer     | #b21f00 |    5.82 |    4.82 |    4.28 |    5.41 |
-| red-cooler     | #a83058 |    5.57 |    4.62 |    4.10 |    5.18 |
-| red-faint      | #a04650 |    5.16 |    4.27 |    3.80 |    4.79 |
-| green          | #007a0a |    4.75 |    3.93 |    3.49 |    4.41 |
-| green-warmer   | #5a7400 |    4.57 |    3.79 |    3.36 |    4.25 |
-| green-cooler   | #008250 |    4.18 |    3.46 |    3.07 |    3.88 |
-| green-faint    | #426340 |    5.82 |    4.82 |    4.28 |    5.41 |
-| yellow         | #87591f |    5.17 |    4.28 |    3.80 |    4.80 |
-| yellow-warmer  | #a05900 |    4.59 |    3.80 |    3.37 |    4.26 |
-| yellow-cooler  | #906045 |    4.56 |    3.78 |    3.35 |    4.24 |
-| yellow-faint   | #7a5c50 |    5.18 |    4.29 |    3.81 |    4.81 |
-| blue           | #375cc6 |    5.13 |    4.25 |    3.77 |    4.76 |
-| blue-warmer    | #5059c0 |    5.09 |    4.22 |    3.75 |    4.73 |
-| blue-cooler    | #265fbf |    5.18 |    4.29 |    3.81 |    4.81 |
-| blue-faint     | #475d80 |    5.72 |    4.74 |    4.21 |    5.31 |
-| magenta        | #9f4e74 |    4.71 |    3.90 |    3.47 |    4.38 |
-| magenta-warmer | #a73080 |    5.33 |    4.41 |    3.92 |    4.95 |
-| magenta-cooler | #7755b4 |    4.81 |    3.98 |    3.54 |    4.46 |
-| magenta-faint  | #97508f |    4.66 |    3.86 |    3.43 |    4.33 |
-| cyan           | #3060af |    5.26 |    4.36 |    3.87 |    4.89 |
-| cyan-warmer    | #4f60a0 |    5.12 |    4.24 |    3.77 |    4.76 |
-| cyan-cooler    | #0b6e8a |    4.98 |    4.13 |    3.66 |    4.63 |
-| cyan-faint     | #456b82 |    4.89 |    4.05 |    3.60 |    4.54 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #f3eddf | #e5d6d4 | #d9cac8 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #4f204f |   10.89 |    9.02 |    8.01 |
+| fg-dim         | #6f6877 |    4.59 |    3.80 |    3.37 |
+| fg-alt         | #55447f |    7.14 |    5.91 |    5.25 |
+| red            | #ba2d2f |    5.13 |    4.25 |    3.78 |
+| red-warmer     | #b21f00 |    5.82 |    4.82 |    4.28 |
+| red-cooler     | #a83058 |    5.57 |    4.62 |    4.10 |
+| red-faint      | #a04650 |    5.16 |    4.27 |    3.80 |
+| green          | #007a0a |    4.75 |    3.93 |    3.49 |
+| green-warmer   | #5a7400 |    4.57 |    3.79 |    3.36 |
+| green-cooler   | #008250 |    4.18 |    3.46 |    3.07 |
+| green-faint    | #426340 |    5.82 |    4.82 |    4.28 |
+| yellow         | #87591f |    5.17 |    4.28 |    3.80 |
+| yellow-warmer  | #a05900 |    4.59 |    3.80 |    3.37 |
+| yellow-cooler  | #906045 |    4.56 |    3.78 |    3.35 |
+| yellow-faint   | #7a5c50 |    5.18 |    4.29 |    3.81 |
+| blue           | #375cc6 |    5.13 |    4.25 |    3.77 |
+| blue-warmer    | #5059c0 |    5.09 |    4.22 |    3.75 |
+| blue-cooler    | #265fbf |    5.18 |    4.29 |    3.81 |
+| blue-faint     | #475d80 |    5.72 |    4.74 |    4.21 |
+| magenta        | #9f4e74 |    4.71 |    3.90 |    3.47 |
+| magenta-warmer | #a73080 |    5.33 |    4.41 |    3.92 |
+| magenta-cooler | #7755b4 |    4.81 |    3.98 |    3.54 |
+| magenta-faint  | #97508f |    4.66 |    3.86 |    3.43 |
+| cyan           | #3060af |    5.26 |    4.36 |    3.87 |
+| cyan-warmer    | #4f60a0 |    5.12 |    4.24 |    3.77 |
+| cyan-cooler    | #0b6e8a |    4.98 |    4.13 |    3.66 |
+| cyan-faint     | #456b82 |    4.89 |    4.05 |    3.60 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1490,36 +1490,36 @@ overall design of the project.
 :CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
 :END:
 
-| Name           |         | #322023 | #432e32 | #4a3842 | #362129 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #e4d3e1 |   10.76 |    8.78 |    7.60 |   10.45 |
-| fg-dim         | #9d9d9d |    5.67 |    4.62 |    4.00 |    5.51 |
-| fg-alt         | #96c4af |    7.91 |    6.45 |    5.59 |    7.69 |
-| red            | #ff707f |    5.76 |    4.70 |    4.07 |    5.60 |
-| red-warmer     | #ff7f5f |    6.19 |    5.05 |    4.37 |    6.01 |
-| red-cooler     | #f0888f |    6.31 |    5.15 |    4.46 |    6.13 |
-| red-faint      | #e89f84 |    7.12 |    5.80 |    5.02 |    6.91 |
-| green          | #5fbb5f |    6.41 |    5.23 |    4.53 |    6.23 |
-| green-warmer   | #8ad05a |    8.23 |    6.71 |    5.81 |    8.00 |
-| green-cooler   | #49d081 |    7.77 |    6.34 |    5.49 |    7.55 |
-| green-faint    | #9aba8b |    7.15 |    5.83 |    5.05 |    6.95 |
-| yellow         | #e4c53f |    9.04 |    7.38 |    6.38 |    8.79 |
-| yellow-warmer  | #f2a85f |    7.71 |    6.29 |    5.45 |    7.50 |
-| yellow-cooler  | #eec26f |    9.21 |    7.51 |    6.50 |    8.95 |
-| yellow-faint   | #d8c09f |    8.75 |    7.14 |    6.18 |    8.50 |
-| blue           | #57aff6 |    6.49 |    5.29 |    4.58 |    6.31 |
-| blue-warmer    | #78b2ff |    7.03 |    5.74 |    4.97 |    6.83 |
-| blue-cooler    | #62cff7 |    8.63 |    7.04 |    6.09 |    8.38 |
-| blue-faint     | #9fbfdf |    8.04 |    6.56 |    5.68 |    7.82 |
-| magenta        | #ffb2d6 |    9.21 |    7.51 |    6.51 |    8.95 |
-| magenta-warmer | #f28fdf |    7.15 |    5.83 |    5.05 |    6.95 |
-| magenta-cooler | #cfb1ff |    8.33 |    6.80 |    5.88 |    8.10 |
-| magenta-faint  | #c59fdf |    6.88 |    5.61 |    4.86 |    6.68 |
-| cyan           | #5fc0dc |    7.36 |    6.00 |    5.20 |    7.15 |
-| cyan-warmer    | #7fc5df |    8.02 |    6.54 |    5.66 |    7.79 |
-| cyan-cooler    | #80dfbf |    9.68 |    7.89 |    6.83 |    9.40 |
-| cyan-faint     | #99bfcf |    7.84 |    6.39 |    5.53 |    7.61 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #322023 | #432e32 | #4a3842 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #e4d3e1 |   10.76 |    8.78 |    7.60 |
+| fg-dim         | #9d9d9d |    5.67 |    4.62 |    4.00 |
+| fg-alt         | #96c4af |    7.91 |    6.45 |    5.59 |
+| red            | #ff707f |    5.76 |    4.70 |    4.07 |
+| red-warmer     | #ff7f5f |    6.19 |    5.05 |    4.37 |
+| red-cooler     | #f0888f |    6.31 |    5.15 |    4.46 |
+| red-faint      | #e89f84 |    7.12 |    5.80 |    5.02 |
+| green          | #5fbb5f |    6.41 |    5.23 |    4.53 |
+| green-warmer   | #8ad05a |    8.23 |    6.71 |    5.81 |
+| green-cooler   | #49d081 |    7.77 |    6.34 |    5.49 |
+| green-faint    | #9aba8b |    7.15 |    5.83 |    5.05 |
+| yellow         | #e4c53f |    9.04 |    7.38 |    6.38 |
+| yellow-warmer  | #f2a85f |    7.71 |    6.29 |    5.45 |
+| yellow-cooler  | #eec26f |    9.21 |    7.51 |    6.50 |
+| yellow-faint   | #d8c09f |    8.75 |    7.14 |    6.18 |
+| blue           | #57aff6 |    6.49 |    5.29 |    4.58 |
+| blue-warmer    | #78b2ff |    7.03 |    5.74 |    4.97 |
+| blue-cooler    | #62cff7 |    8.63 |    7.04 |    6.09 |
+| blue-faint     | #9fbfdf |    8.04 |    6.56 |    5.68 |
+| magenta        | #ffb2d6 |    9.21 |    7.51 |    6.51 |
+| magenta-warmer | #f28fdf |    7.15 |    5.83 |    5.05 |
+| magenta-cooler | #cfb1ff |    8.33 |    6.80 |    5.88 |
+| magenta-faint  | #c59fdf |    6.88 |    5.61 |    4.86 |
+| cyan           | #5fc0dc |    7.36 |    6.00 |    5.20 |
+| cyan-warmer    | #7fc5df |    8.02 |    6.54 |    5.66 |
+| cyan-cooler    | #80dfbf |    9.68 |    7.89 |    6.83 |
+| cyan-faint     | #99bfcf |    7.84 |    6.39 |    5.53 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1543,36 +1543,36 @@ overall design of the project.
 :CUSTOM_ID: h:1e3e257a-6362-46f2-bbe1-f3d4ea71ff57
 :END:
 
-| Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 | #f0f8f4 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #34494a |    9.37 |    8.26 |    7.55 |    8.84 |
-| fg-dim         | #777194 |    4.50 |    3.97 |    3.63 |    4.25 |
-| fg-alt         | #9d5e7a |    4.77 |    4.21 |    3.85 |    4.50 |
-| red            | #c42d2f |    5.47 |    4.82 |    4.41 |    5.16 |
-| red-warmer     | #d03003 |    5.01 |    4.42 |    4.04 |    4.73 |
-| red-cooler     | #cf2f4f |    4.93 |    4.35 |    3.98 |    4.66 |
-| red-faint      | #b64850 |    5.11 |    4.50 |    4.12 |    4.82 |
-| green          | #1a870f |    4.56 |    4.02 |    3.67 |    4.30 |
-| green-warmer   | #4a7d00 |    4.87 |    4.30 |    3.93 |    4.60 |
-| green-cooler   | #007f68 |    4.86 |    4.29 |    3.92 |    4.59 |
-| green-faint    | #61756c |    4.82 |    4.25 |    3.89 |    4.55 |
-| yellow         | #a45f22 |    4.86 |    4.28 |    3.92 |    4.59 |
-| yellow-warmer  | #b6540f |    4.83 |    4.26 |    3.89 |    4.56 |
-| yellow-cooler  | #ae5a30 |    4.78 |    4.22 |    3.86 |    4.52 |
-| yellow-faint   | #876450 |    5.19 |    4.57 |    4.18 |    4.90 |
-| blue           | #375cc6 |    5.87 |    5.17 |    4.73 |    5.54 |
-| blue-warmer    | #5f5fdf |    4.92 |    4.33 |    3.96 |    4.64 |
-| blue-cooler    | #265fbf |    5.93 |    5.23 |    4.78 |    5.60 |
-| blue-faint     | #6a65bf |    4.87 |    4.30 |    3.93 |    4.60 |
-| magenta        | #d5206f |    4.83 |    4.26 |    3.89 |    4.56 |
-| magenta-warmer | #cb26a0 |    4.76 |    4.20 |    3.84 |    4.50 |
-| magenta-cooler | #9435b4 |    6.01 |    5.30 |    4.84 |    5.67 |
-| magenta-faint  | #a04360 |    5.94 |    5.24 |    4.79 |    5.61 |
-| cyan           | #1f6fbf |    5.04 |    4.44 |    4.06 |    4.76 |
-| cyan-warmer    | #3f6faf |    5.02 |    4.42 |    4.04 |    4.74 |
-| cyan-cooler    | #0f7b8f |    4.84 |    4.27 |    3.91 |    4.57 |
-| cyan-faint     | #5f60bf |    5.26 |    4.64 |    4.24 |    4.97 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #34494a |    9.37 |    8.26 |    7.55 |
+| fg-dim         | #777194 |    4.50 |    3.97 |    3.63 |
+| fg-alt         | #9d5e7a |    4.77 |    4.21 |    3.85 |
+| red            | #c42d2f |    5.47 |    4.82 |    4.41 |
+| red-warmer     | #d03003 |    5.01 |    4.42 |    4.04 |
+| red-cooler     | #cf2f4f |    4.93 |    4.35 |    3.98 |
+| red-faint      | #b64850 |    5.11 |    4.50 |    4.12 |
+| green          | #1a870f |    4.56 |    4.02 |    3.67 |
+| green-warmer   | #4a7d00 |    4.87 |    4.30 |    3.93 |
+| green-cooler   | #007f68 |    4.86 |    4.29 |    3.92 |
+| green-faint    | #61756c |    4.82 |    4.25 |    3.89 |
+| yellow         | #a45f22 |    4.86 |    4.28 |    3.92 |
+| yellow-warmer  | #b6540f |    4.83 |    4.26 |    3.89 |
+| yellow-cooler  | #ae5a30 |    4.78 |    4.22 |    3.86 |
+| yellow-faint   | #876450 |    5.19 |    4.57 |    4.18 |
+| blue           | #375cc6 |    5.87 |    5.17 |    4.73 |
+| blue-warmer    | #5f5fdf |    4.92 |    4.33 |    3.96 |
+| blue-cooler    | #265fbf |    5.93 |    5.23 |    4.78 |
+| blue-faint     | #6a65bf |    4.87 |    4.30 |    3.93 |
+| magenta        | #d5206f |    4.83 |    4.26 |    3.89 |
+| magenta-warmer | #cb26a0 |    4.76 |    4.20 |    3.84 |
+| magenta-cooler | #9435b4 |    6.01 |    5.30 |    4.84 |
+| magenta-faint  | #a04360 |    5.94 |    5.24 |    4.79 |
+| cyan           | #1f6fbf |    5.04 |    4.44 |    4.06 |
+| cyan-warmer    | #3f6faf |    5.02 |    4.42 |    4.04 |
+| cyan-cooler    | #0f7b8f |    4.84 |    4.27 |    3.91 |
+| cyan-faint     | #5f60bf |    5.26 |    4.64 |    4.24 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1596,36 +1596,36 @@ overall design of the project.
 :CUSTOM_ID: h:5f7da43e-0853-4fd5-a3e0-a149fc63a855
 :END:
 
-| Name           |         | #fff2f3 | #f2e4ea | #efd3e4 | #f7ebee |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #4f4073 |    8.32 |    7.37 |    6.53 |    7.81 |
-| fg-dim         | #786e74 |    4.50 |    3.99 |    3.53 |    4.22 |
-| fg-alt         | #af4988 |    4.66 |    4.13 |    3.66 |    4.37 |
-| red            | #d3303a |    4.52 |    4.01 |    3.55 |    4.25 |
-| red-warmer     | #e00033 |    4.56 |    4.05 |    3.58 |    4.29 |
-| red-cooler     | #d50f7f |    4.58 |    4.06 |    3.59 |    4.30 |
-| red-faint      | #c24552 |    4.51 |    4.00 |    3.54 |    4.24 |
-| green          | #217a3c |    4.92 |    4.36 |    3.86 |    4.62 |
-| green-warmer   | #4a7d00 |    4.56 |    4.04 |    3.58 |    4.28 |
-| green-cooler   | #007f68 |    4.54 |    4.03 |    3.57 |    4.27 |
-| green-faint    | #61756c |    4.51 |    4.00 |    3.54 |    4.23 |
-| yellow         | #a45f22 |    4.54 |    4.03 |    3.56 |    4.26 |
-| yellow-warmer  | #b6532f |    4.51 |    4.00 |    3.54 |    4.24 |
-| yellow-cooler  | #b65050 |    4.53 |    4.01 |    3.55 |    4.25 |
-| yellow-faint   | #9a5f6a |    4.56 |    4.04 |    3.58 |    4.28 |
-| blue           | #375ce6 |    5.02 |    4.45 |    3.94 |    4.71 |
-| blue-warmer    | #5250ef |    5.13 |    4.55 |    4.03 |    4.82 |
-| blue-cooler    | #065fff |    4.71 |    4.17 |    3.70 |    4.42 |
-| blue-faint     | #6060d0 |    4.72 |    4.18 |    3.70 |    4.43 |
-| magenta        | #ba35af |    4.57 |    4.05 |    3.58 |    4.29 |
-| magenta-warmer | #cb1aaa |    4.51 |    4.00 |    3.54 |    4.23 |
-| magenta-cooler | #8e44f3 |    4.51 |    3.99 |    3.54 |    4.23 |
-| magenta-faint  | #a45392 |    4.55 |    4.03 |    3.57 |    4.27 |
-| cyan           | #1f6fbf |    4.71 |    4.18 |    3.70 |    4.42 |
-| cyan-warmer    | #3f6faf |    4.69 |    4.16 |    3.68 |    4.40 |
-| cyan-cooler    | #0f7b8f |    4.53 |    4.01 |    3.55 |    4.25 |
-| cyan-faint     | #5f60bf |    4.92 |    4.36 |    3.86 |    4.62 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff2f3 | #f2e4ea | #efd3e4 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #4f4073 |    8.32 |    7.37 |    6.53 |
+| fg-dim         | #786e74 |    4.50 |    3.99 |    3.53 |
+| fg-alt         | #af4988 |    4.66 |    4.13 |    3.66 |
+| red            | #d3303a |    4.52 |    4.01 |    3.55 |
+| red-warmer     | #e00033 |    4.56 |    4.05 |    3.58 |
+| red-cooler     | #d50f7f |    4.58 |    4.06 |    3.59 |
+| red-faint      | #c24552 |    4.51 |    4.00 |    3.54 |
+| green          | #217a3c |    4.92 |    4.36 |    3.86 |
+| green-warmer   | #4a7d00 |    4.56 |    4.04 |    3.58 |
+| green-cooler   | #007f68 |    4.54 |    4.03 |    3.57 |
+| green-faint    | #61756c |    4.51 |    4.00 |    3.54 |
+| yellow         | #a45f22 |    4.54 |    4.03 |    3.56 |
+| yellow-warmer  | #b6532f |    4.51 |    4.00 |    3.54 |
+| yellow-cooler  | #b65050 |    4.53 |    4.01 |    3.55 |
+| yellow-faint   | #9a5f6a |    4.56 |    4.04 |    3.58 |
+| blue           | #375ce6 |    5.02 |    4.45 |    3.94 |
+| blue-warmer    | #5250ef |    5.13 |    4.55 |    4.03 |
+| blue-cooler    | #065fff |    4.71 |    4.17 |    3.70 |
+| blue-faint     | #6060d0 |    4.72 |    4.18 |    3.70 |
+| magenta        | #ba35af |    4.57 |    4.05 |    3.58 |
+| magenta-warmer | #cb1aaa |    4.51 |    4.00 |    3.54 |
+| magenta-cooler | #8e44f3 |    4.51 |    3.99 |    3.54 |
+| magenta-faint  | #a45392 |    4.55 |    4.03 |    3.57 |
+| cyan           | #1f6fbf |    4.71 |    4.18 |    3.70 |
+| cyan-warmer    | #3f6faf |    4.69 |    4.16 |    3.68 |
+| cyan-cooler    | #0f7b8f |    4.53 |    4.01 |    3.55 |
+| cyan-faint     | #5f60bf |    4.92 |    4.36 |    3.86 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1649,36 +1649,36 @@ overall design of the project.
 :CUSTOM_ID: h:95ff9ca7-21e5-472e-b30f-14650c576005
 :END:
 
-| Name           |         | #130911 | #221920 | #372d32 | #191317 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d0d0d0 |   12.67 |   11.09 |    8.60 |   11.87 |
-| fg-dim         | #857f8f |    5.05 |    4.42 |    3.43 |    4.73 |
-| fg-alt         | #89afef |    8.78 |    7.69 |    5.96 |    8.23 |
-| red            | #ef6360 |    6.16 |    5.39 |    4.18 |    5.78 |
-| red-warmer     | #ff7355 |    7.29 |    6.38 |    4.95 |    6.83 |
-| red-cooler     | #fe5a7a |    6.47 |    5.67 |    4.39 |    6.07 |
-| red-faint      | #d56f72 |    5.90 |    5.17 |    4.01 |    5.53 |
-| green          | #0faa26 |    6.32 |    5.54 |    4.29 |    5.93 |
-| green-warmer   | #6aad0f |    7.07 |    6.19 |    4.80 |    6.62 |
-| green-cooler   | #00a692 |    6.39 |    5.59 |    4.34 |    5.99 |
-| green-faint    | #61a06c |    6.28 |    5.50 |    4.26 |    5.89 |
-| yellow         | #bf9032 |    6.75 |    5.90 |    4.58 |    6.32 |
-| yellow-warmer  | #d1843f |    6.59 |    5.77 |    4.47 |    6.18 |
-| yellow-cooler  | #df8a5a |    7.37 |    6.45 |    5.00 |    6.91 |
-| yellow-faint   | #cf9f8f |    8.38 |    7.34 |    5.69 |    7.86 |
-| blue           | #3f95f6 |    6.36 |    5.57 |    4.32 |    5.97 |
-| blue-warmer    | #6a9fff |    7.46 |    6.53 |    5.06 |    6.99 |
-| blue-cooler    | #029fff |    6.89 |    6.03 |    4.68 |    6.46 |
-| blue-faint     | #7a94df |    6.63 |    5.81 |    4.50 |    6.22 |
-| magenta        | #d369af |    5.96 |    5.22 |    4.05 |    5.59 |
-| magenta-warmer | #e580ea |    8.01 |    7.01 |    5.43 |    7.51 |
-| magenta-cooler | #af85ff |    7.09 |    6.21 |    4.81 |    6.65 |
-| magenta-faint  | #c58faf |    7.37 |    6.45 |    5.00 |    6.91 |
-| cyan           | #4fbaef |    8.93 |    7.82 |    6.06 |    8.37 |
-| cyan-warmer    | #6fafff |    8.61 |    7.53 |    5.84 |    8.07 |
-| cyan-cooler    | #1dbfcf |    8.75 |    7.66 |    5.94 |    8.20 |
-| cyan-faint     | #8aa0df |    7.61 |    6.66 |    5.16 |    7.13 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #130911 | #221920 | #372d32 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d0d0d0 |   12.67 |   11.09 |    8.60 |
+| fg-dim         | #857f8f |    5.05 |    4.42 |    3.43 |
+| fg-alt         | #89afef |    8.78 |    7.69 |    5.96 |
+| red            | #ef6360 |    6.16 |    5.39 |    4.18 |
+| red-warmer     | #ff7355 |    7.29 |    6.38 |    4.95 |
+| red-cooler     | #fe5a7a |    6.47 |    5.67 |    4.39 |
+| red-faint      | #d56f72 |    5.90 |    5.17 |    4.01 |
+| green          | #0faa26 |    6.32 |    5.54 |    4.29 |
+| green-warmer   | #6aad0f |    7.07 |    6.19 |    4.80 |
+| green-cooler   | #00a692 |    6.39 |    5.59 |    4.34 |
+| green-faint    | #61a06c |    6.28 |    5.50 |    4.26 |
+| yellow         | #bf9032 |    6.75 |    5.90 |    4.58 |
+| yellow-warmer  | #d1843f |    6.59 |    5.77 |    4.47 |
+| yellow-cooler  | #df8a5a |    7.37 |    6.45 |    5.00 |
+| yellow-faint   | #cf9f8f |    8.38 |    7.34 |    5.69 |
+| blue           | #3f95f6 |    6.36 |    5.57 |    4.32 |
+| blue-warmer    | #6a9fff |    7.46 |    6.53 |    5.06 |
+| blue-cooler    | #029fff |    6.89 |    6.03 |    4.68 |
+| blue-faint     | #7a94df |    6.63 |    5.81 |    4.50 |
+| magenta        | #d369af |    5.96 |    5.22 |    4.05 |
+| magenta-warmer | #e580ea |    8.01 |    7.01 |    5.43 |
+| magenta-cooler | #af85ff |    7.09 |    6.21 |    4.81 |
+| magenta-faint  | #c58faf |    7.37 |    6.45 |    5.00 |
+| cyan           | #4fbaef |    8.93 |    7.82 |    6.06 |
+| cyan-warmer    | #6fafff |    8.61 |    7.53 |    5.84 |
+| cyan-cooler    | #1dbfcf |    8.75 |    7.66 |    5.94 |
+| cyan-faint     | #8aa0df |    7.61 |    6.66 |    5.16 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1702,36 +1702,36 @@ overall design of the project.
 :CUSTOM_ID: h:db8a51f5-a28f-422c-a046-b44bc0fdfb24
 :END:
 
-| Name           |         | #160f0f | #2a2228 | #362f35 | #1c1719 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #d8cfd5 |   12.44 |   10.17 |    8.55 |   11.64 |
-| fg-dim         | #908890 |    5.51 |    4.50 |    3.78 |    5.15 |
-| fg-alt         | #afdacf |   12.40 |   10.13 |    8.52 |   11.60 |
-| red            | #f48359 |    7.43 |    6.07 |    5.10 |    6.95 |
-| red-warmer     | #ff7560 |    7.18 |    5.87 |    4.93 |    6.72 |
-| red-cooler     | #ff85aa |    8.28 |    6.77 |    5.69 |    7.75 |
-| red-faint      | #e07a9a |    6.69 |    5.46 |    4.59 |    6.26 |
-| green          | #60b444 |    7.31 |    5.97 |    5.02 |    6.84 |
-| green-warmer   | #a0c27f |    9.48 |    7.75 |    6.51 |    8.87 |
-| green-cooler   | #60bf88 |    8.39 |    6.85 |    5.76 |    7.85 |
-| green-faint    | #61a06c |    6.09 |    4.97 |    4.18 |    5.69 |
-| yellow         | #d4a052 |    8.07 |    6.59 |    5.54 |    7.55 |
-| yellow-warmer  | #ef926f |    8.12 |    6.64 |    5.58 |    7.60 |
-| yellow-cooler  | #ef9680 |    8.42 |    6.88 |    5.79 |    7.88 |
-| yellow-faint   | #c7a07f |    7.90 |    6.45 |    5.43 |    7.39 |
-| blue           | #7fa5f6 |    7.77 |    6.34 |    5.33 |    7.26 |
-| blue-warmer    | #8895ff |    7.02 |    5.74 |    4.82 |    6.57 |
-| blue-cooler    | #72afff |    8.38 |    6.84 |    5.75 |    7.83 |
-| blue-faint     | #7a94df |    6.43 |    5.25 |    4.41 |    6.01 |
-| magenta        | #d37faf |    6.69 |    5.47 |    4.60 |    6.26 |
-| magenta-warmer | #e772df |    7.09 |    5.80 |    4.87 |    6.64 |
-| magenta-cooler | #a698ef |    7.54 |    6.16 |    5.18 |    7.05 |
-| magenta-faint  | #c9addf |    9.49 |    7.75 |    6.52 |    8.88 |
-| cyan           | #8fbaff |    9.59 |    7.83 |    6.59 |    8.97 |
-| cyan-warmer    | #9ac2ff |   10.40 |    8.49 |    7.14 |    9.73 |
-| cyan-cooler    | #8fcfdf |   10.96 |    8.95 |    7.53 |   10.25 |
-| cyan-faint     | #8ac0ef |    9.80 |    8.00 |    6.73 |    9.16 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #160f0f | #2a2228 | #362f35 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #d8cfd5 |   12.44 |   10.17 |    8.55 |
+| fg-dim         | #908890 |    5.51 |    4.50 |    3.78 |
+| fg-alt         | #afdacf |   12.40 |   10.13 |    8.52 |
+| red            | #f48359 |    7.43 |    6.07 |    5.10 |
+| red-warmer     | #ff7560 |    7.18 |    5.87 |    4.93 |
+| red-cooler     | #ff85aa |    8.28 |    6.77 |    5.69 |
+| red-faint      | #e07a9a |    6.69 |    5.46 |    4.59 |
+| green          | #60b444 |    7.31 |    5.97 |    5.02 |
+| green-warmer   | #a0c27f |    9.48 |    7.75 |    6.51 |
+| green-cooler   | #60bf88 |    8.39 |    6.85 |    5.76 |
+| green-faint    | #61a06c |    6.09 |    4.97 |    4.18 |
+| yellow         | #d4a052 |    8.07 |    6.59 |    5.54 |
+| yellow-warmer  | #ef926f |    8.12 |    6.64 |    5.58 |
+| yellow-cooler  | #ef9680 |    8.42 |    6.88 |    5.79 |
+| yellow-faint   | #c7a07f |    7.90 |    6.45 |    5.43 |
+| blue           | #7fa5f6 |    7.77 |    6.34 |    5.33 |
+| blue-warmer    | #8895ff |    7.02 |    5.74 |    4.82 |
+| blue-cooler    | #72afff |    8.38 |    6.84 |    5.75 |
+| blue-faint     | #7a94df |    6.43 |    5.25 |    4.41 |
+| magenta        | #d37faf |    6.69 |    5.47 |    4.60 |
+| magenta-warmer | #e772df |    7.09 |    5.80 |    4.87 |
+| magenta-cooler | #a698ef |    7.54 |    6.16 |    5.18 |
+| magenta-faint  | #c9addf |    9.49 |    7.75 |    6.52 |
+| cyan           | #8fbaff |    9.59 |    7.83 |    6.59 |
+| cyan-warmer    | #9ac2ff |   10.40 |    8.49 |    7.14 |
+| cyan-cooler    | #8fcfdf |   10.96 |    8.95 |    7.53 |
+| cyan-faint     | #8ac0ef |    9.80 |    8.00 |    6.73 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1755,36 +1755,36 @@ overall design of the project.
 :CUSTOM_ID: h:ea3998f4-10ed-4b6e-bd2e-c342860a7597
 :END:
 
-| Name           |         | #f8f5ff | #ebe7f1 | #e3e0e9 | #efeef7 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #4f3363 |    9.82 |    8.68 |    8.11 |    9.19 |
-| fg-dim         | #786e74 |    4.55 |    4.03 |    3.76 |    4.26 |
-| fg-alt         | #3f7668 |    4.87 |    4.31 |    4.02 |    4.56 |
-| red            | #c3303a |    5.12 |    4.53 |    4.23 |    4.80 |
-| red-warmer     | #d03033 |    4.69 |    4.15 |    3.88 |    4.39 |
-| red-cooler     | #c01f5f |    5.41 |    4.78 |    4.47 |    5.06 |
-| red-faint      | #a24568 |    5.43 |    4.80 |    4.49 |    5.09 |
-| green          | #057800 |    5.28 |    4.67 |    4.36 |    4.94 |
-| green-warmer   | #4f7d0f |    4.56 |    4.03 |    3.77 |    4.27 |
-| green-cooler   | #007f6f |    4.57 |    4.04 |    3.78 |    4.28 |
-| green-faint    | #41754c |    5.03 |    4.45 |    4.16 |    4.71 |
-| yellow         | #a45f22 |    4.60 |    4.07 |    3.80 |    4.30 |
-| yellow-warmer  | #b8532f |    4.52 |    3.99 |    3.73 |    4.23 |
-| yellow-cooler  | #b65050 |    4.58 |    4.05 |    3.79 |    4.29 |
-| yellow-faint   | #a05b5f |    4.69 |    4.15 |    3.87 |    4.39 |
-| blue           | #375cd6 |    5.32 |    4.70 |    4.40 |    4.98 |
-| blue-warmer    | #5165e4 |    4.50 |    3.98 |    3.72 |    4.21 |
-| blue-cooler    | #065fbf |    5.74 |    5.07 |    4.74 |    5.37 |
-| blue-faint     | #6060d0 |    4.78 |    4.22 |    3.95 |    4.47 |
-| magenta        | #ad45ba |    4.50 |    3.97 |    3.71 |    4.21 |
-| magenta-warmer | #c035aa |    4.50 |    3.98 |    3.72 |    4.21 |
-| magenta-cooler | #705ae3 |    4.58 |    4.04 |    3.78 |    4.28 |
-| magenta-faint  | #804fb0 |    5.32 |    4.70 |    4.40 |    4.98 |
-| cyan           | #1f6fbf |    4.77 |    4.22 |    3.94 |    4.47 |
-| cyan-warmer    | #3f6faf |    4.75 |    4.20 |    3.92 |    4.45 |
-| cyan-cooler    | #0f7a9d |    4.54 |    4.02 |    3.75 |    4.25 |
-| cyan-faint     | #5f60bf |    4.98 |    4.41 |    4.12 |    4.66 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #f8f5ff | #ebe7f1 | #e3e0e9 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #4f3363 |    9.82 |    8.68 |    8.11 |
+| fg-dim         | #786e74 |    4.55 |    4.03 |    3.76 |
+| fg-alt         | #3f7668 |    4.87 |    4.31 |    4.02 |
+| red            | #c3303a |    5.12 |    4.53 |    4.23 |
+| red-warmer     | #d03033 |    4.69 |    4.15 |    3.88 |
+| red-cooler     | #c01f5f |    5.41 |    4.78 |    4.47 |
+| red-faint      | #a24568 |    5.43 |    4.80 |    4.49 |
+| green          | #057800 |    5.28 |    4.67 |    4.36 |
+| green-warmer   | #4f7d0f |    4.56 |    4.03 |    3.77 |
+| green-cooler   | #007f6f |    4.57 |    4.04 |    3.78 |
+| green-faint    | #41754c |    5.03 |    4.45 |    4.16 |
+| yellow         | #a45f22 |    4.60 |    4.07 |    3.80 |
+| yellow-warmer  | #b8532f |    4.52 |    3.99 |    3.73 |
+| yellow-cooler  | #b65050 |    4.58 |    4.05 |    3.79 |
+| yellow-faint   | #a05b5f |    4.69 |    4.15 |    3.87 |
+| blue           | #375cd6 |    5.32 |    4.70 |    4.40 |
+| blue-warmer    | #5165e4 |    4.50 |    3.98 |    3.72 |
+| blue-cooler    | #065fbf |    5.74 |    5.07 |    4.74 |
+| blue-faint     | #6060d0 |    4.78 |    4.22 |    3.95 |
+| magenta        | #ad45ba |    4.50 |    3.97 |    3.71 |
+| magenta-warmer | #c035aa |    4.50 |    3.98 |    3.72 |
+| magenta-cooler | #705ae3 |    4.58 |    4.04 |    3.78 |
+| magenta-faint  | #804fb0 |    5.32 |    4.70 |    4.40 |
+| cyan           | #1f6fbf |    4.77 |    4.22 |    3.94 |
+| cyan-warmer    | #3f6faf |    4.75 |    4.20 |    3.92 |
+| cyan-cooler    | #0f7a9d |    4.54 |    4.02 |    3.75 |
+| cyan-faint     | #5f60bf |    4.98 |    4.41 |    4.12 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1812,36 +1812,36 @@ Most of these are not actually used.  The theme only maps the reds and
 cyans.  We just define the entire palette to make it work with the
 overall design of the project.
 
-| Name           |         | #15050f | #282026 | #352f2f | #1a1517 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #dfd0d5 |   13.32 |   10.66 |    8.83 |   12.14 |
-| fg-dim         | #908890 |    5.76 |    4.61 |    3.82 |    5.25 |
-| fg-alt         | #afdacf |   12.97 |   10.38 |    8.60 |   11.82 |
-| red            | #cf4f5f |    4.66 |    3.73 |    3.09 |    4.24 |
-| red-warmer     | #df4f4f |    5.06 |    4.05 |    3.36 |    4.61 |
-| red-cooler     | #d24f7f |    4.87 |    3.90 |    3.23 |    4.44 |
-| red-faint      | #b07f7f |    5.84 |    4.67 |    3.87 |    5.32 |
-| green          | #2fa526 |    6.16 |    4.93 |    4.08 |    5.61 |
-| green-warmer   | #64aa0f |    6.88 |    5.51 |    4.56 |    6.27 |
-| green-cooler   | #00b066 |    6.98 |    5.59 |    4.63 |    6.36 |
-| green-faint    | #5f9f6f |    6.29 |    5.04 |    4.17 |    5.74 |
-| yellow         | #c48702 |    6.42 |    5.14 |    4.26 |    5.86 |
-| yellow-warmer  | #d0730f |    5.79 |    4.64 |    3.84 |    5.28 |
-| yellow-cooler  | #df8f6f |    7.82 |    6.26 |    5.19 |    7.13 |
-| yellow-faint   | #cf9f7f |    8.41 |    6.73 |    5.58 |    7.67 |
-| blue           | #379cf6 |    6.84 |    5.47 |    4.53 |    6.23 |
-| blue-warmer    | #6a88ff |    6.20 |    4.97 |    4.11 |    5.65 |
-| blue-cooler    | #029fff |    6.98 |    5.59 |    4.63 |    6.36 |
-| blue-faint     | #6a84af |    5.22 |    4.18 |    3.46 |    4.75 |
-| magenta        | #b0648f |    4.78 |    3.82 |    3.17 |    4.35 |
-| magenta-warmer | #c560aa |    5.31 |    4.25 |    3.52 |    4.84 |
-| magenta-cooler | #a6699f |    4.85 |    3.88 |    3.22 |    4.42 |
-| magenta-faint  | #c590af |    7.53 |    6.03 |    4.99 |    6.86 |
-| cyan           | #3fafcf |    7.77 |    6.22 |    5.16 |    7.09 |
-| cyan-warmer    | #3f9aaf |    6.08 |    4.87 |    4.04 |    5.55 |
-| cyan-cooler    | #4fafaf |    7.62 |    6.10 |    5.06 |    6.95 |
-| cyan-faint     | #82a0af |    7.16 |    5.73 |    4.75 |    6.53 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #15050f | #282026 | #352f2f |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #dfd0d5 |   13.32 |   10.66 |    8.83 |
+| fg-dim         | #908890 |    5.76 |    4.61 |    3.82 |
+| fg-alt         | #afdacf |   12.97 |   10.38 |    8.60 |
+| red            | #cf4f5f |    4.66 |    3.73 |    3.09 |
+| red-warmer     | #df4f4f |    5.06 |    4.05 |    3.36 |
+| red-cooler     | #d24f7f |    4.87 |    3.90 |    3.23 |
+| red-faint      | #b07f7f |    5.84 |    4.67 |    3.87 |
+| green          | #2fa526 |    6.16 |    4.93 |    4.08 |
+| green-warmer   | #64aa0f |    6.88 |    5.51 |    4.56 |
+| green-cooler   | #00b066 |    6.98 |    5.59 |    4.63 |
+| green-faint    | #5f9f6f |    6.29 |    5.04 |    4.17 |
+| yellow         | #c48702 |    6.42 |    5.14 |    4.26 |
+| yellow-warmer  | #d0730f |    5.79 |    4.64 |    3.84 |
+| yellow-cooler  | #df8f6f |    7.82 |    6.26 |    5.19 |
+| yellow-faint   | #cf9f7f |    8.41 |    6.73 |    5.58 |
+| blue           | #379cf6 |    6.84 |    5.47 |    4.53 |
+| blue-warmer    | #6a88ff |    6.20 |    4.97 |    4.11 |
+| blue-cooler    | #029fff |    6.98 |    5.59 |    4.63 |
+| blue-faint     | #6a84af |    5.22 |    4.18 |    3.46 |
+| magenta        | #b0648f |    4.78 |    3.82 |    3.17 |
+| magenta-warmer | #c560aa |    5.31 |    4.25 |    3.52 |
+| magenta-cooler | #a6699f |    4.85 |    3.88 |    3.22 |
+| magenta-faint  | #c590af |    7.53 |    6.03 |    4.99 |
+| cyan           | #3fafcf |    7.77 |    6.22 |    5.16 |
+| cyan-warmer    | #3f9aaf |    6.08 |    4.87 |    4.04 |
+| cyan-cooler    | #4fafaf |    7.62 |    6.10 |    5.06 |
+| cyan-faint     | #82a0af |    7.16 |    5.73 |    4.75 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1869,36 +1869,36 @@ Most of these are not actually used.  The theme only maps the reds and
 cyans.  We just define the entire palette to make it work with the
 overall design of the project.
 
-| Name           |         | #fff9f9 | #efecec | #ddd9d9 | #f7f2f2 |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #1a1a1a |   16.72 |   14.82 |   12.43 |   15.70 |
-| fg-dim         | #756275 |    5.36 |    4.75 |    3.99 |    5.04 |
-| fg-alt         | #194f90 |    7.87 |    6.98 |    5.85 |    7.39 |
-| red            | #aa0010 |    7.42 |    6.58 |    5.52 |    6.97 |
-| red-warmer     | #dd0000 |    4.95 |    4.39 |    3.68 |    4.65 |
-| red-cooler     | #c50f4f |    5.67 |    5.03 |    4.22 |    5.33 |
-| red-faint      | #92454f |    6.33 |    5.61 |    4.71 |    5.94 |
-| green          | #217a3c |    5.15 |    4.57 |    3.83 |    4.84 |
-| green-warmer   | #4a7d00 |    4.77 |    4.23 |    3.55 |    4.48 |
-| green-cooler   | #008058 |    4.77 |    4.23 |    3.55 |    4.48 |
-| green-faint    | #61756c |    4.72 |    4.19 |    3.51 |    4.44 |
-| yellow         | #805d00 |    5.79 |    5.13 |    4.31 |    5.44 |
-| yellow-warmer  | #965000 |    5.86 |    5.19 |    4.36 |    5.50 |
-| yellow-cooler  | #765040 |    6.74 |    5.98 |    5.01 |    6.33 |
-| yellow-faint   | #776d6a |    4.83 |    4.28 |    3.59 |    4.53 |
-| blue           | #375cd8 |    5.47 |    4.85 |    4.07 |    5.14 |
-| blue-warmer    | #4250ef |    5.56 |    4.93 |    4.14 |    5.22 |
-| blue-cooler    | #065fff |    4.93 |    4.37 |    3.67 |    4.63 |
-| blue-faint     | #6060d0 |    4.94 |    4.38 |    3.68 |    4.64 |
-| magenta        | #aa357f |    5.72 |    5.07 |    4.26 |    5.37 |
-| magenta-warmer | #bf256a |    5.47 |    4.85 |    4.07 |    5.13 |
-| magenta-cooler | #af40af |    4.83 |    4.28 |    3.59 |    4.54 |
-| magenta-faint  | #7f4580 |    6.58 |    5.83 |    4.89 |    6.18 |
-| cyan           | #2070af |    5.04 |    4.47 |    3.75 |    4.74 |
-| cyan-warmer    | #2f5faf |    5.97 |    5.29 |    4.44 |    5.61 |
-| cyan-cooler    | #007faa |    4.37 |    3.87 |    3.25 |    4.10 |
-| cyan-faint     | #5f6a90 |    5.11 |    4.53 |    3.80 |    4.79 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #fff9f9 | #efecec | #ddd9d9 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #1a1a1a |   16.72 |   14.82 |   12.43 |
+| fg-dim         | #756275 |    5.36 |    4.75 |    3.99 |
+| fg-alt         | #194f90 |    7.87 |    6.98 |    5.85 |
+| red            | #aa0010 |    7.42 |    6.58 |    5.52 |
+| red-warmer     | #dd0000 |    4.95 |    4.39 |    3.68 |
+| red-cooler     | #c50f4f |    5.67 |    5.03 |    4.22 |
+| red-faint      | #92454f |    6.33 |    5.61 |    4.71 |
+| green          | #217a3c |    5.15 |    4.57 |    3.83 |
+| green-warmer   | #4a7d00 |    4.77 |    4.23 |    3.55 |
+| green-cooler   | #008058 |    4.77 |    4.23 |    3.55 |
+| green-faint    | #61756c |    4.72 |    4.19 |    3.51 |
+| yellow         | #805d00 |    5.79 |    5.13 |    4.31 |
+| yellow-warmer  | #965000 |    5.86 |    5.19 |    4.36 |
+| yellow-cooler  | #765040 |    6.74 |    5.98 |    5.01 |
+| yellow-faint   | #776d6a |    4.83 |    4.28 |    3.59 |
+| blue           | #375cd8 |    5.47 |    4.85 |    4.07 |
+| blue-warmer    | #4250ef |    5.56 |    4.93 |    4.14 |
+| blue-cooler    | #065fff |    4.93 |    4.37 |    3.67 |
+| blue-faint     | #6060d0 |    4.94 |    4.38 |    3.68 |
+| magenta        | #aa357f |    5.72 |    5.07 |    4.26 |
+| magenta-warmer | #bf256a |    5.47 |    4.85 |    4.07 |
+| magenta-cooler | #af40af |    4.83 |    4.28 |    3.59 |
+| magenta-faint  | #7f4580 |    6.58 |    5.83 |    4.89 |
+| cyan           | #2070af |    5.04 |    4.47 |    3.75 |
+| cyan-warmer    | #2f5faf |    5.97 |    5.29 |    4.44 |
+| cyan-cooler    | #007faa |    4.37 |    3.87 |    3.25 |
+| cyan-faint     | #5f6a90 |    5.11 |    4.53 |    3.80 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
@@ -1922,36 +1922,36 @@ overall design of the project.
 :CUSTOM_ID: h:76e0b621-7872-4597-8bdc-6c007e43aff5
 :END:
 
-| Name           |         | #0f0b15 | #1d202f | #2a2f42 | #19181f |
-|----------------+---------+---------+---------+---------+---------|
-| fg-main        | #b8c6d5 |   11.19 |    9.29 |    7.63 |   10.13 |
-| fg-dim         | #807c9f |    4.91 |    4.08 |    3.35 |    4.45 |
-| fg-alt         | #bf8a9f |    6.81 |    5.66 |    4.64 |    6.17 |
-| red            | #f47359 |    6.90 |    5.73 |    4.70 |    6.25 |
-| red-warmer     | #ef6560 |    6.21 |    5.15 |    4.23 |    5.62 |
-| red-cooler     | #ff6a7a |    7.04 |    5.84 |    4.80 |    6.37 |
-| red-faint      | #d56f72 |    5.88 |    4.88 |    4.01 |    5.32 |
-| green          | #29a444 |    6.01 |    4.99 |    4.10 |    5.44 |
-| green-warmer   | #6aad0f |    7.04 |    5.84 |    4.80 |    6.37 |
-| green-cooler   | #00a392 |    6.17 |    5.12 |    4.20 |    5.58 |
-| green-faint    | #61a06c |    6.26 |    5.20 |    4.26 |    5.67 |
-| yellow         | #b58a52 |    6.23 |    5.17 |    4.24 |    5.64 |
-| yellow-warmer  | #d1803f |    6.37 |    5.29 |    4.34 |    5.76 |
-| yellow-cooler  | #df8a88 |    7.53 |    6.25 |    5.13 |    6.82 |
-| yellow-faint   | #c0a38a |    8.20 |    6.81 |    5.59 |    7.42 |
-| blue           | #3f95f6 |    6.34 |    5.26 |    4.32 |    5.74 |
-| blue-warmer    | #6a9fff |    7.43 |    6.17 |    5.06 |    6.73 |
-| blue-cooler    | #029fff |    6.86 |    5.70 |    4.68 |    6.21 |
-| blue-faint     | #7a94df |    6.61 |    5.48 |    4.50 |    5.98 |
-| magenta        | #d369af |    5.94 |    4.93 |    4.05 |    5.38 |
-| magenta-warmer | #e580e0 |    7.87 |    6.54 |    5.36 |    7.13 |
-| magenta-cooler | #af85ea |    6.83 |    5.67 |    4.65 |    6.18 |
-| magenta-faint  | #c57faf |    6.51 |    5.41 |    4.44 |    5.90 |
-| cyan           | #4fbaef |    8.90 |    7.39 |    6.06 |    8.06 |
-| cyan-warmer    | #6fafdf |    8.22 |    6.83 |    5.60 |    7.45 |
-| cyan-cooler    | #35afbf |    7.45 |    6.18 |    5.07 |    6.74 |
-| cyan-faint     | #8aa0df |    7.58 |    6.29 |    5.16 |    6.86 |
-#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f :: $6='(Λ $2 @1$6);%.2f
+| Name           |         | #0f0b15 | #1d202f | #2a2f42 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #b8c6d5 |   11.19 |    9.29 |    7.63 |
+| fg-dim         | #807c9f |    4.91 |    4.08 |    3.35 |
+| fg-alt         | #bf8a9f |    6.81 |    5.66 |    4.64 |
+| red            | #f47359 |    6.90 |    5.73 |    4.70 |
+| red-warmer     | #ef6560 |    6.21 |    5.15 |    4.23 |
+| red-cooler     | #ff6a7a |    7.04 |    5.84 |    4.80 |
+| red-faint      | #d56f72 |    5.88 |    4.88 |    4.01 |
+| green          | #29a444 |    6.01 |    4.99 |    4.10 |
+| green-warmer   | #6aad0f |    7.04 |    5.84 |    4.80 |
+| green-cooler   | #00a392 |    6.17 |    5.12 |    4.20 |
+| green-faint    | #61a06c |    6.26 |    5.20 |    4.26 |
+| yellow         | #b58a52 |    6.23 |    5.17 |    4.24 |
+| yellow-warmer  | #d1803f |    6.37 |    5.29 |    4.34 |
+| yellow-cooler  | #df8a88 |    7.53 |    6.25 |    5.13 |
+| yellow-faint   | #c0a38a |    8.20 |    6.81 |    5.59 |
+| blue           | #3f95f6 |    6.34 |    5.26 |    4.32 |
+| blue-warmer    | #6a9fff |    7.43 |    6.17 |    5.06 |
+| blue-cooler    | #029fff |    6.86 |    5.70 |    4.68 |
+| blue-faint     | #7a94df |    6.61 |    5.48 |    4.50 |
+| magenta        | #d369af |    5.94 |    4.93 |    4.05 |
+| magenta-warmer | #e580e0 |    7.87 |    6.54 |    5.36 |
+| magenta-cooler | #af85ea |    6.83 |    5.67 |    4.65 |
+| magenta-faint  | #c57faf |    6.51 |    5.41 |    4.44 |
+| cyan           | #4fbaef |    8.90 |    7.39 |    6.06 |
+| cyan-warmer    | #6fafdf |    8.22 |    6.83 |    5.60 |
+| cyan-cooler    | #35afbf |    7.45 |    6.18 |    5.07 |
+| cyan-faint     | #8aa0df |    7.58 |    6.29 |    5.16 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
 ** Distance and contrast between main backgrounds
 :PROPERTIES:
