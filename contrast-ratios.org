@@ -97,6 +97,59 @@ C1 and C2 are color values written in hexadecimal RGB."
 | #e7d2bc |     5653 |     1.26 |
 #+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
 
+* ef-atlantis
+:PROPERTIES:
+:CUSTOM_ID: h:e5007c31-f79f-40b2-b9a6-c67423dba936
+:END:
+
+** Base colours
+:PROPERTIES:
+:CUSTOM_ID: h:2912041c-ebf6-4112-aecc-cef5850e636f
+:END:
+
+| Name           |         | #1a143e | #1a204b | #272a3e |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #bfcccf |   10.51 |    9.43 |    8.58 |
+| fg-dim         | #7f8385 |    4.52 |    4.06 |    3.69 |
+| fg-alt         | #967e92 |    4.69 |    4.21 |    3.83 |
+| red            | #ef656a |    5.55 |    4.98 |    4.53 |
+| red-warmer     | #f47360 |    6.15 |    5.52 |    5.02 |
+| red-cooler     | #ef798f |    6.43 |    5.77 |    5.25 |
+| red-faint      | #c57062 |    4.84 |    4.34 |    3.95 |
+| green          | #1fa526 |    5.33 |    4.78 |    4.35 |
+| green-warmer   | #77b22f |    6.75 |    6.06 |    5.51 |
+| green-cooler   | #00a972 |    5.70 |    5.12 |    4.65 |
+| green-faint    | #81a06c |    5.92 |    5.31 |    4.83 |
+| yellow         | #c48502 |    5.52 |    4.96 |    4.51 |
+| yellow-warmer  | #e6832f |    6.31 |    5.66 |    5.15 |
+| yellow-cooler  | #b5967b |    6.27 |    5.63 |    5.12 |
+| yellow-faint   | #cab4a4 |    8.71 |    7.82 |    7.11 |
+| blue           | #379cf6 |    5.97 |    5.36 |    4.87 |
+| blue-warmer    | #6a88ff |    5.42 |    4.87 |    4.42 |
+| blue-cooler    | #029fff |    6.10 |    5.48 |    4.98 |
+| blue-faint     | #7a7fff |    5.20 |    4.66 |    4.24 |
+| magenta        | #d590af |    6.95 |    6.24 |    5.67 |
+| magenta-warmer | #e580ea |    7.09 |    6.37 |    5.79 |
+| magenta-cooler | #af9ef2 |    7.41 |    6.65 |    6.05 |
+| magenta-faint  | #c5a4cf |    7.90 |    7.09 |    6.45 |
+| cyan           | #4fb0cf |    6.96 |    6.24 |    5.68 |
+| cyan-warmer    | #6fafff |    7.62 |    6.84 |    6.22 |
+| cyan-cooler    | #3dc0b0 |    7.72 |    6.93 |    6.30 |
+| cyan-faint     | #92b4cf |    7.95 |    7.14 |    6.49 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
+** Distance and contrast between main backgrounds
+:PROPERTIES:
+:CUSTOM_ID: h:cd993a0b-d518-4ef5-a4b1-cbb1ebe43a9f
+:END:
+
+# bg-main / bg-dim, bg-main / bg-alt
+| #1a143e | distance | contrast |
+|---------+----------+----------|
+| #1a204b |     1074 |     1.11 |
+| #272a3e |     2313 |     1.23 |
+#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
+
 * ef-autumn
 :PROPERTIES:
 :CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
