@@ -88,7 +88,7 @@
 
     (bg-added "#a0d7b0")
     (bg-added-faint "#c0d7b2")
-    (bg-added-refine "#9ad590")
+    (bg-added-refine "#8bce94")
     (fg-added "#005200")
 
     (bg-changed "#e5e690")
@@ -96,9 +96,9 @@
     (bg-changed-refine "#edd482")
     (fg-changed "#553d00")
 
-    (bg-removed "#f8c8a6")
+    (bg-removed "#f0c8a6")
     (bg-removed-faint "#e0c9ac")
-    (bg-removed-refine "#f0aa90")
+    (bg-removed-refine "#e4b492")
     (fg-removed "#8f1013")
 
     (bg-mode-line-active "#75b194")
