@@ -147,7 +147,7 @@
 
     (accent-0 cyan)
     (accent-1 magenta)
-    (accent-2 blue-cooler)
+    (accent-2 blue)
     (accent-3 green)
 
     (date-common green-cooler)
