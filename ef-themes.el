@@ -63,6 +63,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
 
 (defconst ef-themes-light-themes
   '(ef-arbutus
+    ef-arcadia
     ef-cyprus
     ef-day
     ef-deuteranopia-light
@@ -83,7 +84,8 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
   "List of symbols with the light Ef themes.")
 
 (defconst ef-themes-dark-themes
-  '(ef-autumn
+  '(ef-atlantis
+    ef-autumn
     ef-bio
     ef-cherie
     ef-dark
