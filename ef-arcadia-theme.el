@@ -126,9 +126,9 @@
     (fg-link magenta-cooler)
     (fg-link-visited yellow-cooler)
     (name blue)
-    (keybind cyan-cooler)
+    (keybind cyan)
     (identifier magenta-faint)
-    (fg-prompt green-cooler)
+    (fg-prompt magenta-faint)
 
     (builtin green-warmer)
     (comment magenta-faint)
