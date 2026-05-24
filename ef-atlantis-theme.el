@@ -131,7 +131,7 @@
     (name blue-warmer)
     (keybind cyan-cooler)
     (identifier green-faint)
-    (fg-prompt cyan-cooler)
+    (fg-prompt blue-warmer)
 
     (builtin green-cooler)
     (comment blue-faint)
