@@ -70,7 +70,7 @@
     (cyan "#4fb0cf")
     (cyan-warmer "#6fafff")
     (cyan-cooler "#3dc0b0")
-    (cyan-faint "#92b4cf")
+    (cyan-faint "#90becf")
 
     (bg-red-intense "#bd1f30")
     (bg-green-intense "#107440")
