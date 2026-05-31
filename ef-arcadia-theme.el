@@ -45,7 +45,7 @@
     (fg-alt "#3f5f5f")
     (bg-active "#b0b7aa")
     (bg-inactive "#bfc2b0")
-    (border "#a5aaaf")
+    (border "#959a9f")
 
     (red "#882000")
     (red-warmer "#9a1500")
