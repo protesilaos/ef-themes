@@ -110,13 +110,13 @@
     (bg-hl-line "#2b265b")
     (bg-paren-match "#603849")
     (bg-err "#401500") ; check with err
-    (bg-warning "#3e004c") ; check with warning
+    (bg-warning "#3e300c") ; check with warning
     (bg-info "#003532") ; check with info
     (bg-region "#32446b")))
 
 (defconst ef-atlantis-palette-mappings-partial
   '((err red-cooler)
-    (warning magenta-cooler)
+    (warning yellow-cooler)
     (info green-cooler)
 
     (bg-prominent-warning bg-magenta-subtle)
