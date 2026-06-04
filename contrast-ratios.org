@@ -187,7 +187,7 @@ C1 and C2 are color values written in hexadecimal RGB."
 | magenta-faint  | #c5a4cf |    7.90 |    7.09 |    6.45 |
 | cyan           | #4fb0cf |    6.96 |    6.24 |    5.68 |
 | cyan-warmer    | #6fafff |    7.62 |    6.84 |    6.22 |
-| cyan-cooler    | #3dc0b0 |    7.72 |    6.93 |    6.30 |
+| cyan-cooler    | #5db2b7 |    7.02 |    6.30 |    5.73 |
 | cyan-faint     | #92b4cf |    7.95 |    7.14 |    6.49 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
