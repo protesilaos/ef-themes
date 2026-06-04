@@ -135,8 +135,8 @@
 
     (builtin green-cooler)
     (comment blue-faint)
-    (constant blue-cooler)
-    (fnname magenta)
+    (constant blue)
+    (fnname magenta-cooler)
     (fnname-call magenta-faint)
     (keyword cyan-cooler)
     (preprocessor yellow-cooler)
