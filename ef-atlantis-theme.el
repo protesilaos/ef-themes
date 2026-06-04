@@ -119,9 +119,6 @@
     (warning yellow-cooler)
     (info green-cooler)
 
-    (bg-prominent-warning bg-magenta-subtle)
-    (underline-warning magenta-faint)
-
     (modeline-err red)
     (modeline-warning yellow-cooler)
     (modeline-info cyan)
