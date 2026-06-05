@@ -87,7 +87,7 @@
     (bg-cyan-subtle "#bfe0d0")
 
     (bg-added "#a0d7b0")
-    (bg-added-faint "#c0d7b2")
+    (bg-added-faint "#c0d5b2")
     (bg-added-refine "#8bc794")
     (fg-added "#005200")
 
