@@ -197,12 +197,12 @@
     (rainbow-0 cyan)
     (rainbow-1 cyan-cooler)
     (rainbow-2 magenta)
-    (rainbow-3 cyan-warmer)
+    (rainbow-3 blue-warmer)
     (rainbow-4 green-warmer)
     (rainbow-5 blue)
     (rainbow-6 magenta-cooler)
     (rainbow-7 green)
-    (rainbow-8 blue-warmer)))
+    (rainbow-8 cyan-warmer)))
 
 (defcustom ef-arcadia-palette-overrides nil
   "Overrides for `ef-arcadia-palette'.
