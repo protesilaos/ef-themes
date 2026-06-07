@@ -194,15 +194,15 @@
 
     (bg-space-err bg-yellow-intense)
 
-    (rainbow-0 cyan)
-    (rainbow-1 cyan-cooler)
-    (rainbow-2 magenta)
+    (rainbow-0 green-cooler)
+    (rainbow-1 cyan-warmer)
+    (rainbow-2 green-warmer)
     (rainbow-3 blue-warmer)
-    (rainbow-4 green-warmer)
+    (rainbow-4 magenta)
     (rainbow-5 blue)
-    (rainbow-6 magenta-cooler)
-    (rainbow-7 green)
-    (rainbow-8 cyan-warmer)))
+    (rainbow-6 cyan-cooler)
+    (rainbow-7 magenta-faint)
+    (rainbow-8 green)))
 
 (defcustom ef-arcadia-palette-overrides nil
   "Overrides for `ef-arcadia-palette'.
