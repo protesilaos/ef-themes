@@ -103,8 +103,8 @@
 
     (bg-mode-line-active "#ffc255")
     (fg-mode-line-active "#742f18")
-    (bg-completion "#fbdf8f")
-    (bg-popup "#ffe6b2")
+    (bg-completion "#f3d0aa")
+    (bg-popup "#ffe5c9")
     (bg-hover "#c0e47f")
     (bg-hover-secondary "#ebdc8f")
     (bg-hl-line "#ffdaa6")
