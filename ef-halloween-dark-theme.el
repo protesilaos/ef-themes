@@ -72,12 +72,12 @@
     (cyan-cooler "#4dbbb0")
     (cyan-faint "#82a0af")
 
-    (bg-red-intense "#b02930")
-    (bg-green-intense "#4a7000")
-    (bg-yellow-intense "#8f5040")
-    (bg-blue-intense "#4648d0")
-    (bg-magenta-intense "#804fd5")
-    (bg-cyan-intense "#2270be")
+    (bg-red-intense "#a03530")
+    (bg-green-intense "#4a702f")
+    (bg-yellow-intense "#805930")
+    (bg-blue-intense "#6648c0")
+    (bg-magenta-intense "#a04fb5")
+    (bg-cyan-intense "#4280ae")
 
     (bg-red-subtle "#651f2a")
     (bg-green-subtle "#11422f")
