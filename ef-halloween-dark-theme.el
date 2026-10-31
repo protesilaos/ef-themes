@@ -163,7 +163,7 @@
 
     (fg-prose-code red-warmer)
     (prose-done green-cooler)
-    (fg-prose-macro magenta-cooler)
+    (fg-prose-macro magenta-warmer)
     (prose-metadata fg-dim)
     (prose-metadata-value fg-alt)
     (prose-table fg-alt)
