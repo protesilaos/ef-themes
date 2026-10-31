@@ -79,12 +79,12 @@
     (bg-magenta-intense "#a04fb5")
     (bg-cyan-intense "#4280ae")
 
-    (bg-red-subtle "#651f2a")
-    (bg-green-subtle "#11422f")
-    (bg-yellow-subtle "#583020")
-    (bg-blue-subtle "#2f3069")
-    (bg-magenta-subtle "#542657")
-    (bg-cyan-subtle "#123e55")
+    (bg-red-subtle "#6a242a")
+    (bg-green-subtle "#31502f")
+    (bg-yellow-subtle "#5f3520")
+    (bg-blue-subtle "#3f327b")
+    (bg-magenta-subtle "#61295f")
+    (bg-cyan-subtle "#2f4e65")
 
     (bg-added "#374018")
     (bg-added-faint "#2d3100")
