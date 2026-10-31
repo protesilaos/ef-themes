@@ -67,9 +67,9 @@
     (magenta-warmer "#d5708a")
     (magenta-cooler "#af79ae")
     (magenta-faint "#9f8890")
-    (cyan "#4fb0cf")
-    (cyan-warmer "#6fafff")
-    (cyan-cooler "#3dbbb0")
+    (cyan "#3fa0bf")
+    (cyan-warmer "#7fafc2")
+    (cyan-cooler "#4dbbb0")
     (cyan-faint "#82a0af")
 
     (bg-red-intense "#b02930")

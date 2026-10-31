@@ -863,8 +863,8 @@ overall design of the project.
 | magenta-warmer | #d5708a |    4.78 |    4.13 |    3.67 |
 | magenta-cooler | #af79ae |    4.53 |    3.91 |    3.48 |
 | magenta-faint  | #9f8890 |    4.70 |    4.05 |    3.60 |
-| cyan           | #4fb0cf |    6.20 |    5.35 |    4.76 |
-| cyan-warmer    | #6fafff |    6.80 |    5.86 |    5.21 |
+| cyan           | #3fa0bf |    5.14 |    4.43 |    3.94 |
+| cyan-warmer    | #7fafc2 |    6.47 |    5.58 |    4.97 |
 | cyan-cooler    | #3dbbb0 |    6.56 |    5.66 |    5.03 |
 | cyan-faint     | #82a0af |    5.58 |    4.81 |    4.28 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
