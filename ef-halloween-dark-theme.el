@@ -177,7 +177,7 @@
     (mail-cite-2 red-faint)
     (mail-cite-3 yellow-faint)
     (mail-part magenta-faint)
-    (mail-recipient red-warmer)
+    (mail-recipient red-cooler)
     (mail-subject magenta-cooler)
     (mail-other yellow-warmer)
 
