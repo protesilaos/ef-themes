@@ -85,25 +85,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #546f70 |    4.64 |    3.97 |    3.73 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:3f19c88c-d80a-4f51-83fd-de1239588c61
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #ffead8 | distance | contrast |
-|---------+----------+----------|
-| #f0d8cf |     2145 |     1.17 |
-| #e7d2bc |     5653 |     1.26 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f8c6b6 | #f5d0b0 | #f0aaa9 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.05 |    6.40 |    4.86 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-arcadia
 :PROPERTIES:
 :CUSTOM_ID: h:5931bca9-4574-452c-9807-4c29f7ec0f7f
@@ -144,25 +125,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-cooler    | #005070 |    6.68 |    5.95 |    4.28 |
 | cyan-faint     | #304650 |    7.51 |    6.70 |    4.82 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:32f4eb28-f1d8-4eb6-8209-679a27de382d
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #d6e4d3 | distance | contrast |
-|---------+----------+----------|
-| #ced7c8 |     1128 |     1.12 |
-| #b0b7aa |    15973 |     1.56 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #edc5a6 | #e0c9ac | #e4ac92 |
-|---------+---------+---------+---------|
-| #8f1013 |    5.84 |    5.83 |    4.71 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-atlantis
 :PROPERTIES:
@@ -205,25 +167,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #92b4cf |    7.95 |    7.14 |    6.49 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:cd993a0b-d518-4ef5-a4b1-cbb1ebe43a9f
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #1a143e | distance | contrast |
-|---------+----------+----------|
-| #1a204b |     1074 |     1.11 |
-| #272a3e |     2313 |     1.23 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5a3142 | #4a2034 | #782a4a |
-|---------+---------+---------+---------|
-| #f0bfcf |    6.69 |    8.44 |    5.86 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-autumn
 :PROPERTIES:
 :CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
@@ -265,25 +208,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #82a0af |    7.00 |    5.76 |    4.59 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:2b8cf2d5-079f-4f69-b631-6da33da9416f
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #0f0e06 | distance | contrast |
-|---------+----------+----------|
-| #26211d |     4120 |     1.21 |
-| #36322f |    13351 |     1.52 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #4b120a | #3a0a00 | #6f1a16 |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.68 |   11.00 |    7.33 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-bio
 :PROPERTIES:
 :CUSTOM_ID: h:3926f2b9-ff3b-42db-b11a-54fcc11488cb
@@ -321,25 +245,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-cooler    | #5dc0aa |    8.62 |    7.07 |    5.90 |
 | cyan-faint     | #7fb4cf |    8.39 |    6.88 |    5.74 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:66e7998e-bfac-4f7e-a269-b6f701e567d4
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #111111 | distance | contrast |
-|---------+----------+----------|
-| #222522 |     3068 |     1.22 |
-| #303230 |     9232 |     1.46 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #4e1119 | #380a0f | #751a1f |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.49 |   11.04 |    6.99 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-cherie
 :PROPERTIES:
@@ -382,25 +287,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #aac0cf |   10.21 |    8.46 |    7.21 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:0ba6044d-7ef0-4f99-a61b-908d5ef32e59
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #190a0f | distance | contrast |
-|---------+----------+----------|
-| #291f26 |     3857 |     1.21 |
-| #392a2f |     9288 |     1.42 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #510c28 | #340a14 | #701a35 |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.39 |   11.22 |    7.13 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-cyprus
 :PROPERTIES:
 :CUSTOM_ID: h:029a92c2-e4f5-4457-9eec-8a89dea471f4
@@ -441,25 +327,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-cooler    | #007a9f |    4.60 |    4.15 |    3.81 |
 | cyan-faint     | #4f677f |    5.50 |    4.97 |    4.56 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:aec7096d-454b-4e06-abfd-e9d130c607c7
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fcf7ef | distance | contrast |
-|---------+----------+----------|
-| #f0ece0 |     1379 |     1.11 |
-| #e5e3d8 |     4278 |     1.21 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd3d4 | #ffe6e1 | #f6c0c9 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.84 |    7.78 |    5.86 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-dark
 :PROPERTIES:
@@ -502,25 +369,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-faint     | #8aa0df |    8.17 |    6.77 |    5.51 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:3b421386-0db3-4076-8386-ab6f96a1b327
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #000000 | distance | contrast |
-|---------+----------+----------|
-| #1a1a1a |     6131 |     1.21 |
-| #2b2b2b |    16771 |     1.48 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #4f1119 | #380a0f | #781a1f |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.43 |   11.04 |    6.84 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-day
 :PROPERTIES:
 :CUSTOM_ID: h:3146bf01-7f75-4e26-bd68-feeb268cf7ff
@@ -561,25 +409,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 | cyan-cooler    | #0f7b8f |    4.59 |    4.11 |    3.79 |
 | cyan-faint     | #4f6f8f |    4.87 |    4.36 |    4.03 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:a03046a7-225d-4114-9415-fa565c8bcfbf
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff5ea | distance | contrast |
-|---------+----------+----------|
-| #f2e9db |     1546 |     1.12 |
-| #e9e0d8 |     3887 |     1.21 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd4d8 | #ffe3e3 | #ffc0ca |
-|---------+---------+---------+---------|
-| #8f1313 |    6.90 |    7.64 |    6.01 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-deuteranopia-dark
 :PROPERTIES:
@@ -626,25 +455,6 @@ overall design of the project.
 | cyan-faint     | #8aa0df |    7.69 |    6.43 |    5.11 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:67d4c194-bacf-4d6a-b67b-700b1444b500
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #000a1f | distance | contrast |
-|---------+----------+----------|
-| #121f34 |     3760 |     1.20 |
-| #243145 |    13099 |     1.51 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #323200 | #281a00 | #484800 |
-|---------+---------+---------+---------|
-| #d4d48f |    8.55 |   11.00 |    6.18 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-deuteranopia-light
 :PROPERTIES:
 :CUSTOM_ID: h:64efdb85-f6fc-418b-96fc-156409e0258d
@@ -690,25 +500,6 @@ overall design of the project.
 | cyan-faint     | #506fa0 |    4.70 |    4.16 |    3.44 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:4bae6fee-350d-4b65-ab8c-4a196beada4f
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #f5f5ff | distance | contrast |
-|---------+----------+----------|
-| #e8e8ea |     2098 |     1.13 |
-| #d3d3e0 |    10071 |     1.37 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #fff0af | #efefcb | #f0da88 |
-|---------+---------+---------+---------|
-| #553d00 |    8.93 |    8.71 |    7.35 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-dream
 :PROPERTIES:
 :CUSTOM_ID: h:8a8a4518-9eca-4ece-8bc4-25fbc5530f62
@@ -749,25 +540,6 @@ overall design of the project.
 | cyan-cooler    | #65c5a8 |    7.74 |    6.35 |    5.49 |
 | cyan-faint     | #99bfcf |    8.21 |    6.73 |    5.82 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:16e950e0-2433-4858-8ebb-29deaa6bfb1e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #232025 | distance | contrast |
-|---------+----------+----------|
-| #322f34 |     2040 |     1.22 |
-| #3b393e |     5561 |     1.41 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5a3142 | #4a2034 | #782a4a |
-|---------+---------+---------+---------|
-| #f0bfcf |    6.69 |    8.44 |    5.86 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-duo-dark
 :PROPERTIES:
@@ -810,25 +582,6 @@ overall design of the project.
 | cyan-faint     | #8aa0df |    7.99 |    6.66 |    5.65 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:9f1301ef-971b-499e-9465-cb9c88c47580
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #070019 | distance | contrast |
-|---------+----------+----------|
-| #1d1a26 |     4234 |     1.20 |
-| #2a2739 |    11716 |     1.42 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #3d091f | #27040f | #5b0f26 |
-|---------+---------+---------+---------|
-| #ffbfbf |   10.70 |   12.12 |    8.73 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-duo-light
 :PROPERTIES:
 :CUSTOM_ID: h:d6590592-452d-4ef1-8e9a-017d87b87239
@@ -869,25 +622,6 @@ overall design of the project.
 | cyan-cooler    | #1f77bb |    4.52 |    4.10 |    3.64 |
 | cyan-faint     | #3f70a0 |    4.94 |    4.48 |    3.98 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:fb1c3c25-16d8-483e-a9cf-15f511325cf1
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff8f0 | distance | contrast |
-|---------+----------+----------|
-| #f6ece8 |      954 |     1.10 |
-| #e7e0da |     5034 |     1.24 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd4d8 | #ffe3e3 | #ffc0ca |
-|---------+---------+---------+---------|
-| #8f1313 |    6.90 |    7.64 |    6.01 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-eagle
 :PROPERTIES:
@@ -930,25 +664,6 @@ overall design of the project.
 | cyan-faint     | #304f60 |    7.31 |    6.30 |    5.18 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:0199de6f-1c86-4b8c-ac15-407fd76c395b
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #f1ecd0 | distance | contrast |
-|---------+----------+----------|
-| #e4dbc0 |     2199 |     1.16 |
-| #cec8ae |    11249 |     1.41 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f8c8a6 | #f0d9bc | #f0aa90 |
-|---------+---------+---------+---------|
-| #8f1013 |    6.13 |    6.82 |    4.82 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-elea-dark
 :PROPERTIES:
 :CUSTOM_ID: h:2c38512b-f72c-4373-8972-de3bcc232df0
@@ -989,25 +704,6 @@ overall design of the project.
 | cyan-cooler    | #60d5c2 |    8.68 |    7.17 |    5.80 |
 | cyan-faint     | #99bfcf |    7.88 |    6.51 |    5.26 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:43799f3a-2d1a-482d-b34e-ccd6039515f6
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #222524 | distance | contrast |
-|---------+----------+----------|
-| #303332 |     1777 |     1.21 |
-| #3e4140 |     7111 |     1.50 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5e242f | #4a242a | #772a35 |
-|---------+---------+---------+---------|
-| #ffbfbf |    7.61 |    8.53 |    6.21 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-elea-light
 :PROPERTIES:
@@ -1050,25 +746,6 @@ overall design of the project.
 | cyan-faint     | #4f677f |    5.24 |    4.72 |    3.98 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:e2379dc8-f35e-42d4-9105-59e865a4851b
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #edf5e2 | distance | contrast |
-|---------+----------+----------|
-| #e3e9d6 |     1177 |     1.11 |
-| #d0d7ca |     7297 |     1.32 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f2d0c6 | #f0e0c0 | #efbfbd |
-|---------+---------+---------+---------|
-| #8f1313 |    6.44 |    7.10 |    5.66 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-fig
 :PROPERTIES:
 :CUSTOM_ID: h:419187ef-8fc5-4a7b-b1fd-e7b397a0e8b7
@@ -1109,25 +786,6 @@ overall design of the project.
 | cyan-cooler    | #80dfbf |    8.97 |    7.60 |    6.55 |
 | cyan-faint     | #99bfcf |    7.27 |    6.16 |    5.30 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:7f0abd62-1d81-4ad0-b3da-62da02578e53
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #3b2043 | distance | contrast |
-|---------+----------+----------|
-| #432e4e |     1270 |     1.18 |
-| #4a385e |     4847 |     1.37 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5f2f2f | #4f283a | #7e3635 |
-|---------+---------+---------+---------|
-| #ffbfbf |    6.96 |    7.93 |    5.46 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-frost
 :PROPERTIES:
@@ -1230,25 +888,6 @@ overall design of the project.
 | cyan-faint     | #506fa0 |    4.83 |    4.19 |    3.72 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:b25b5bc6-23fd-4c22-a347-ee9f03aefe19
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff7f7 | distance | contrast |
-|---------+----------+----------|
-| #efe7e7 |     2322 |     1.15 |
-| #e0dbdb |     7635 |     1.30 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffcfda | #ffe3e3 | #ffb9c9 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.69 |    7.64 |    5.74 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-light
 :PROPERTIES:
 :CUSTOM_ID: h:02d01731-b9ab-4653-9e71-ab1592c64734
@@ -1289,25 +928,6 @@ overall design of the project.
 | cyan-cooler    | #1f77bb |    4.76 |    4.14 |    3.44 |
 | cyan-faint     | #506fa0 |    5.09 |    4.43 |    3.68 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:934dd36a-ba24-4669-9df2-023b0ee1c81e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #ffffff | distance | contrast |
-|---------+----------+----------|
-| #efefef |     2322 |     1.15 |
-| #dbdbdb |    11755 |     1.38 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd8d5 | #ffe9e9 | #f3b5af |
-|---------+---------+---------+---------|
-| #8f1313 |    7.06 |    7.96 |    5.30 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-maris-dark
 :PROPERTIES:
@@ -1350,25 +970,6 @@ overall design of the project.
 | cyan-faint     | #99bfcf |    8.71 |    7.28 |    6.26 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:2c3cdc01-5d84-471e-8845-344935b9007e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #131c2b | distance | contrast |
-|---------+----------+----------|
-| #1d2c39 |     1817 |     1.20 |
-| #2a3644 |     5669 |     1.39 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5e242f | #4a202d | #742a43 |
-|---------+---------+---------+---------|
-| #ffbfbf |    7.61 |    8.76 |    6.24 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-maris-light
 :PROPERTIES:
 :CUSTOM_ID: h:2658abe7-b526-4745-8121-0cfafc6f56f5
@@ -1409,25 +1010,6 @@ overall design of the project.
 | cyan-cooler    | #006f70 |    5.39 |    4.61 |    4.16 |
 | cyan-faint     | #3f627f |    5.79 |    4.95 |    4.47 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:1678b892-542f-40be-9dc8-40e37e487c75
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #edf4f8 | distance | contrast |
-|---------+----------+----------|
-| #e0e7ef |     1347 |     1.12 |
-| #cfd8e3 |     6710 |     1.30 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f5c7d6 | #f0d6d6 | #efb1cd |
-|---------+---------+---------+---------|
-| #8f1313 |    6.18 |    6.74 |    5.22 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-melissa-dark
 :PROPERTIES:
@@ -1470,25 +1052,6 @@ overall design of the project.
 | cyan-faint     | #99bfcf |    7.36 |    5.97 |    4.51 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:4a353b6d-d900-41ff-b642-21bb186227a3
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #352718 | distance | contrast |
-|---------+----------+----------|
-| #483426 |     2042 |     1.23 |
-| #59463f |    11021 |     1.63 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #622a1f | #4b240a | #7f3325 |
-|---------+---------+---------+---------|
-| #ffbfbf |    7.19 |    8.65 |    5.60 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-melissa-light
 :PROPERTIES:
 :CUSTOM_ID: h:7bf40084-3aa0-4273-a528-34b6ee794351
@@ -1529,25 +1092,6 @@ overall design of the project.
 | cyan-cooler    | #0f708a |    5.24 |    4.70 |    4.03 |
 | cyan-faint     | #4f6f8f |    4.85 |    4.35 |    3.73 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:d5be7c4c-5cc5-4f8e-bb8a-3ea1afb3019a
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff6d8 | distance | contrast |
-|---------+----------+----------|
-| #f5e9cb |     1325 |     1.12 |
-| #e7d7c6 |     6256 |     1.30 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f8d0b6 | #f5deb0 | #f0bba9 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.47 |    7.03 |    5.46 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-night
 :PROPERTIES:
@@ -1590,25 +1134,6 @@ overall design of the project.
 | cyan-faint     | #92b4df |    9.13 |    6.44 |    6.44 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:af14156e-2999-467d-8d56-97cceacaca46
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #000e17 | distance | contrast |
-|---------+----------+----------|
-| #1a202b |     3892 |     1.20 |
-| #242e39 |    10245 |     1.42 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #450f1f | #2f060f | #641426 |
-|---------+---------+---------+---------|
-| #ffbfbf |   10.03 |   11.66 |    8.06 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-orange
 :PROPERTIES:
 :CUSTOM_ID: h:51d32541-7a8e-41e7-9e0c-9a27da52aa5e
@@ -1649,25 +1174,6 @@ overall design of the project.
 | cyan-cooler    | #0f738f |    4.71 |    4.35 |    3.63 |
 | cyan-faint     | #4f6f8f |    4.55 |    4.21 |    3.51 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:5093ce39-b5e2-4b95-827b-98d1f6b1f713
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #ffedc9 | distance | contrast |
-|---------+----------+----------|
-| #f7e5b6 |     1183 |     1.08 |
-| #e9d0a8 |     7075 |     1.30 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd090 | #f5de9f | #f0b972 |
-|---------+---------+---------+---------|
-| #9f2f00 |    5.09 |    5.50 |    4.13 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-owl
 :PROPERTIES:
@@ -1710,25 +1216,6 @@ overall design of the project.
 | cyan-faint     | #a2c5d8 |    7.70 |    6.21 |    5.18 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:24e7a52b-26bb-4f7b-b5e8-51b84ba56f30
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #292c2f | distance | contrast |
-|---------+----------+----------|
-| #373b3d |     1894 |     1.24 |
-| #40474b |     6322 |     1.48 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5a3142 | #4a2034 | #782a4a |
-|---------+---------+---------+---------|
-| #f0bfcf |    6.69 |    8.44 |    5.86 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-reverie
 :PROPERTIES:
 :CUSTOM_ID: h:eea07b9c-81ea-4158-b7d6-79dcc8217b8b
@@ -1769,25 +1256,6 @@ overall design of the project.
 | cyan-cooler    | #0b6e8a |    4.98 |    4.13 |    3.66 |
 | cyan-faint     | #456b82 |    4.89 |    4.05 |    3.60 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:f1a09072-3df5-49f5-a91f-ad43dba6471e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #f3eddf | distance | contrast |
-|---------+----------+----------|
-| #e5d6d4 |     2963 |     1.21 |
-| #d9cac8 |     8033 |     1.36 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #f8c3bf | #f4d8d0 | #f9a8bd |
-|---------+---------+---------+---------|
-| #801530 |    6.55 |    7.53 |    5.50 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-rosa
 :PROPERTIES:
@@ -1830,25 +1298,6 @@ overall design of the project.
 | cyan-faint     | #99bfcf |    7.84 |    6.39 |    5.53 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:af14156e-2999-467d-8d56-97cceacaca46
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #322023 | distance | contrast |
-|---------+----------+----------|
-| #432e32 |     2067 |     1.23 |
-| #4a3842 |     6294 |     1.42 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #5f252f | #4a242a | #792d35 |
-|---------+---------+---------+---------|
-| #ffbfbf |    7.51 |    8.53 |    6.01 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-spring
 :PROPERTIES:
 :CUSTOM_ID: h:f8eea1d3-359a-4ab6-9c5c-c54ebe896b43
@@ -1889,25 +1338,6 @@ overall design of the project.
 | cyan-cooler    | #0f7b8f |    4.84 |    4.27 |    3.91 |
 | cyan-faint     | #5f60bf |    5.26 |    4.64 |    4.24 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:e9585341-8217-4f8a-9bbf-99dd360b21b3
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #f6fff9 | distance | contrast |
-|---------+----------+----------|
-| #e8f0f0 |     1655 |     1.13 |
-| #e0e6e3 |     4958 |     1.24 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd6e0 | #ffe9e6 | #f5bfc8 |
-|---------+---------+---------+---------|
-| #8f1313 |    7.02 |    7.95 |    5.80 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-summer
 :PROPERTIES:
@@ -1950,25 +1380,6 @@ overall design of the project.
 | cyan-faint     | #5f60bf |    4.92 |    4.36 |    3.86 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:a36fc40a-a68f-4156-b803-fdf025dfb1f9
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff2f3 | distance | contrast |
-|---------+----------+----------|
-| #f2e5ea |     1353 |     1.12 |
-| #efd3e4 |     5100 |     1.27 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffcee0 | #ffdfe6 | #f5b6c8 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.68 |    7.47 |    5.46 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-symbiosis
 :PROPERTIES:
 :CUSTOM_ID: h:0340271b-6038-4c8c-b551-d8727bbcef54
@@ -2009,25 +1420,6 @@ overall design of the project.
 | cyan-cooler    | #1dbfcf |    8.75 |    7.66 |    5.94 |
 | cyan-faint     | #8aa0df |    7.61 |    6.66 |    5.16 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:b87223fb-7689-4cd2-95c0-13a79218980e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #130911 | distance | contrast |
-|---------+----------+----------|
-| #221920 |     2165 |     1.14 |
-| #372d32 |    11159 |     1.47 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #4e111f | #380a0f | #751a1f |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.45 |   11.04 |    6.99 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-trio-dark
 :PROPERTIES:
@@ -2070,25 +1462,6 @@ overall design of the project.
 | cyan-faint     | #8ac0ef |    9.80 |    8.00 |    6.73 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:81d313cf-401c-4280-80fe-72185879034f
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #160f0f | distance | contrast |
-|---------+----------+----------|
-| #2a2228 |     4122 |     1.22 |
-| #362f35 |    10494 |     1.46 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #450f1f | #2f060f | #641426 |
-|---------+---------+---------+---------|
-| #ffbfbf |   10.03 |   11.66 |    8.06 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-trio-light
 :PROPERTIES:
 :CUSTOM_ID: h:1e351ab9-e2c4-496e-b40f-2d813db940e2
@@ -2129,25 +1502,6 @@ overall design of the project.
 | cyan-cooler    | #0f7a9d |    4.54 |    4.02 |    3.75 |
 | cyan-faint     | #5f60bf |    4.98 |    4.41 |    4.12 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:847a4c42-7068-4cb6-8d23-833588ae921e
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #f8f5ff | distance | contrast |
-|---------+----------+----------|
-| #ece8f1 |     1514 |     1.12 |
-| #e3e0e9 |     4089 |     1.21 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffcee0 | #ffdfe6 | #f5b6c8 |
-|---------+---------+---------+---------|
-| #8f1313 |    6.68 |    7.47 |    5.46 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
 
 * ef-tritanopia-dark
 :PROPERTIES:
@@ -2194,25 +1548,6 @@ overall design of the project.
 | cyan-faint     | #82a0af |    7.16 |    5.73 |    4.75 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:b85796e6-0f4e-4fe9-91f7-650383af0d74
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #15050f | distance | contrast |
-|---------+----------+----------|
-| #282026 |     5245 |     1.25 |
-| #352f2f |    12271 |     1.51 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #4d091f | #37040f | #6b0f26 |
-|---------+---------+---------+---------|
-| #ffbfbf |    9.79 |   11.34 |    7.82 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-tritanopia-light
 :PROPERTIES:
 :CUSTOM_ID: h:56d0b7f8-5016-4101-8f88-3bce3c519f1f
@@ -2258,25 +1593,6 @@ overall design of the project.
 | cyan-faint     | #5f6a90 |    5.11 |    4.53 |    3.80 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:a0ac23af-ec4f-494f-8689-a16e52ee4af5
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #fff9f9 | distance | contrast |
-|---------+----------+----------|
-| #ece8e8 |     2836 |     1.17 |
-| #dad6d6 |    11536 |     1.38 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #ffd6e0 | #ffe9e6 | #f5bfc8 |
-|---------+---------+---------+---------|
-| #8f1313 |    7.02 |    7.95 |    5.80 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
-
 * ef-winter
 :PROPERTIES:
 :CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
@@ -2317,22 +1633,3 @@ overall design of the project.
 | cyan-cooler    | #35afbf |    7.45 |    6.18 |    5.07 |
 | cyan-faint     | #8aa0df |    7.58 |    6.29 |    5.16 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
-
-** Distance and contrast between main backgrounds
-:PROPERTIES:
-:CUSTOM_ID: h:3f1ebd01-f359-44d3-99a3-85e58823ce46
-:END:
-
-# bg-main / bg-dim, bg-main / bg-alt
-| #0f0b15 | distance | contrast |
-|---------+----------+----------|
-| #1d202f |     4175 |     1.20 |
-| #2a2f42 |    12670 |     1.47 |
-#+TBLFM: $2='(Δ $1 @1$1) :: $3='(Λ $1 @1$1);%.2f
-
-** Diff colours
-
-|         | #450f1f | #2f060f | #641426 |
-|---------+---------+---------+---------|
-| #ffbfbf |   10.03 |   11.66 |    8.06 |
-#+TBLFM: $2='(Λ $1 @1);%.2f :: $3='(Λ $1 @1);%.2f :: $4='(Λ $1 @1);%.2f
