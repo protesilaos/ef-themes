@@ -850,7 +850,7 @@ overall design of the project.
 | green          | #4faf26 |    5.50 |    4.75 |    4.22 |
 | green-warmer   | #94aa0f |    5.89 |    5.08 |    4.52 |
 | green-cooler   | #5fab66 |    5.51 |    4.75 |    4.23 |
-| green-faint    | #80905f |    4.46 |    3.85 |    3.42 |
+| green-faint    | #88935f |    4.69 |    4.05 |    3.60 |
 | yellow         | #f09c43 |    7.01 |    6.04 |    5.38 |
 | yellow-warmer  | #da832f |    5.34 |    4.60 |    4.09 |
 | yellow-cooler  | #deb351 |    7.84 |    6.76 |    6.01 |
