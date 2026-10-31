@@ -92,10 +92,10 @@
     (bg-added-fringe "#506123")
     (fg-added "#9bd370")
 
-    (bg-changed "#363300")
-    (bg-changed-faint "#2a1f00")
-    (bg-changed-refine "#4a4a00")
-    (bg-changed-fringe "#767600")
+    (bg-changed "#4f4514")
+    (bg-changed-faint "#343010")
+    (bg-changed-refine "#604a20")
+    (bg-changed-fringe "#765010")
     (fg-changed "#efef80")
 
     (bg-removed "#67200a")
