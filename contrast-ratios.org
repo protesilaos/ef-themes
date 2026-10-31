@@ -845,7 +845,7 @@ overall design of the project.
 | fg-alt         | #e0926f |    6.25 |    5.39 |    4.79 |
 | red            | #f07160 |    5.32 |    4.58 |    4.08 |
 | red-warmer     | #f07a3f |    5.55 |    4.79 |    4.26 |
-| red-cooler     | #e37f6f |    5.53 |    4.77 |    4.24 |
+| red-cooler     | #e97f6f |    5.68 |    4.90 |    4.35 |
 | red-faint      | #df7f7f |    5.49 |    4.74 |    4.21 |
 | green          | #4faf26 |    5.50 |    4.75 |    4.22 |
 | green-warmer   | #94aa0f |    5.89 |    5.08 |    4.52 |

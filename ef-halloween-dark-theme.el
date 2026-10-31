@@ -49,7 +49,7 @@
 
     (red "#f07160")
     (red-warmer "#f07a3f")
-    (red-cooler "#e37f6f")
+    (red-cooler "#e97f6f")
     (red-faint "#df7f7f")
     (green "#4faf26")
     (green-warmer "#94aa0f")
