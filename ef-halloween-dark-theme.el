@@ -146,8 +146,8 @@
 
     (accent-0 red-warmer)
     (accent-1 magenta-cooler)
-    (accent-2 green-warmer)
-    (accent-3 yellow)
+    (accent-2 yellow)
+    (accent-3 green-warmer)
 
     (date-common magenta)
     (date-deadline magenta-warmer)
