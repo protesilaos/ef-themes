@@ -104,7 +104,7 @@
     (bg-removed-fringe "#ef9052")
     (fg-removed "#9f2f00")
 
-    (bg-mode-line-active "#f3a342")
+    (bg-mode-line-active "#f3a362")
     (fg-mode-line-active "#702328")
     (bg-completion "#f4cf88")
     (bg-popup "#f0ecb0")
