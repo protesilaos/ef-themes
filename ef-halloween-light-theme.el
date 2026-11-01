@@ -124,7 +124,7 @@
 
     (fg-link magenta-cooler)
     (fg-link-visited green-faint)
-    (name yellow)
+    (name yellow-warmer)
     (keybind red-warmer)
     (identifier green-faint)
     (fg-prompt red)
