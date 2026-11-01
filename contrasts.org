@@ -36,10 +36,6 @@ C1 and C2 are color values written in hexadecimal RGB."
     (max ct (/ ct))))
 
 (defalias #'Λ #'modus-themes-contrast)
-
-;; Just an alias for the built-in function that measures distance
-;; between colours...
-(defalias #'Δ #'color-distance)
 #+end_src
 
 * ef-arbutus
