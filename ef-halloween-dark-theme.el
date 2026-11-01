@@ -122,7 +122,7 @@
     (warning yellow-cooler)
     (info green-warmer)
 
-    (fg-link magenta-cooler)
+    (fg-link blue-warmer)
     (fg-link-visited green-faint)
     (name yellow)
     (keybind red-warmer)
