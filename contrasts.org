@@ -2,8 +2,6 @@
 #+author: Protesilaos (https://protesilaos.com)
 #+startup: content indent
 
-Check this files Git history for updates.
-
 Evaluate these snippets, otherwise the tables will not work.  Then
 update a table by typing =C-c C-c= with point at the =#+TBLFM:= line.
 
