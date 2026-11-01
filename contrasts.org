@@ -792,7 +792,7 @@ overall design of the project.
 | magenta        | #a05074 |    4.63 |    4.25 |    3.75 |
 | magenta-warmer | #b03f80 |    4.66 |    4.27 |    3.77 |
 | magenta-cooler | #8450c0 |    4.64 |    4.25 |    3.75 |
-| magenta-faint  | #705e90 |    4.88 |    4.48 |    3.95 |
+| magenta-faint  | #785e84 |    4.83 |    4.43 |    3.91 |
 | cyan           | #3f60af |    5.15 |    4.72 |    4.16 |
 | cyan-warmer    | #4060a0 |    5.31 |    4.87 |    4.29 |
 | cyan-cooler    | #0f708a |    4.87 |    4.46 |    3.94 |
