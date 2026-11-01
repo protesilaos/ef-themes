@@ -133,6 +133,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-fig ef-themes "Legible dark theme with warm green, yellow, and magenta colors." dark ef-fig-palette nil ef-fig-palette-overrides)
     (ef-frost ef-themes "Legible light cool theme with blue, cyan, teal, purple colors." light ef-frost-palette nil ef-frost-palette-overrides)
     (ef-halloween-dark ef-themes "Legible dark theme with a Halloween style" dark ef-halloween-dark-palette nil ef-halloween-dark-palette-overrides)
+    (ef-halloween-light ef-themes "Legible light theme with a Halloween style" light ef-halloween-light-palette nil ef-halloween-light-palette-overrides)
     (ef-kassio ef-themes "Legible light grey theme with blue, red, magenta, and earthly colors." light ef-kassio-palette nil ef-kassio-palette-overrides)
     (ef-light ef-themes "Legible light theme with blue, magenta, cyan, purple colors." light ef-light-palette nil ef-light-palette-overrides)
     (ef-maris-dark ef-themes "Legible dark marine theme with blue, cyan, and green colors." dark ef-maris-dark-palette nil ef-maris-dark-palette-overrides)

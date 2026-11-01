@@ -763,6 +763,42 @@ overall design of the project.
 | cyan-faint     | #82a0af |    5.58 |    4.81 |    4.28 |
 #+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
 
+* ef-halloween-light
+:PROPERTIES:
+:CUSTOM_ID: h:8631b6d9-42c9-46ac-9754-124239ab370b
+:END:
+
+| Name           |         | #f2f0c4 | #efe5b4 | #e7d5b6 |
+|----------------+---------+---------+---------+---------|
+| fg-main        | #684431 |    7.33 |    6.72 |    5.93 |
+| fg-dim         | #706381 |    4.76 |    4.36 |    3.85 |
+| fg-alt         | #80531a |    5.69 |    5.22 |    4.60 |
+| red            | #ba2d2f |    5.15 |    4.72 |    4.16 |
+| red-warmer     | #c04000 |    4.54 |    4.16 |    3.67 |
+| red-cooler     | #c02945 |    4.95 |    4.54 |    4.00 |
+| red-faint      | #b04950 |    4.61 |    4.22 |    3.73 |
+| green          | #007a0a |    4.76 |    4.37 |    3.85 |
+| green-warmer   | #5a7400 |    4.59 |    4.20 |    3.71 |
+| green-cooler   | #007850 |    4.74 |    4.35 |    3.84 |
+| green-faint    | #61704c |    4.59 |    4.21 |    3.71 |
+| yellow         | #a05a22 |    4.53 |    4.15 |    3.67 |
+| yellow-warmer  | #b05000 |    4.52 |    4.14 |    3.65 |
+| yellow-cooler  | #a04f40 |    4.89 |    4.49 |    3.96 |
+| yellow-faint   | #935b42 |    4.73 |    4.33 |    3.82 |
+| blue           | #375cc6 |    5.14 |    4.71 |    4.16 |
+| blue-warmer    | #5050df |    5.07 |    4.65 |    4.11 |
+| blue-cooler    | #265fbf |    5.20 |    4.76 |    4.20 |
+| blue-faint     | #4a659f |    4.94 |    4.53 |    3.99 |
+| magenta        | #aa3e74 |    4.94 |    4.53 |    4.00 |
+| magenta-warmer | #b02f80 |    5.06 |    4.64 |    4.09 |
+| magenta-cooler | #8450ca |    4.53 |    4.15 |    3.66 |
+| magenta-faint  | #705e90 |    4.88 |    4.48 |    3.95 |
+| cyan           | #3f60af |    5.15 |    4.72 |    4.16 |
+| cyan-warmer    | #4060a0 |    5.31 |    4.87 |    4.29 |
+| cyan-cooler    | #0f708a |    4.87 |    4.46 |    3.94 |
+| cyan-faint     | #4f6f8f |    4.51 |    4.13 |    3.65 |
+#+TBLFM: $3='(Λ $2 @1$3);%.2f :: $4='(Λ $2 @1$4);%.2f :: $5='(Λ $2 @1$5);%.2f
+
 * ef-kassio
 :PROPERTIES:
 :CUSTOM_ID: h:1e4baffb-ba57-4334-924d-720881adc809
