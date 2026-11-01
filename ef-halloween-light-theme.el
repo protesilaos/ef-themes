@@ -110,7 +110,7 @@
     (bg-popup "#f0ecb0")
     (bg-hover "#deb0d0")
     (bg-hover-secondary "#f3d37a")
-    (bg-hl-line "#f3dbaa")
+    (bg-hl-line "#e4dbbb")
     (bg-paren-match "#b3d17f")
     (bg-err "#f3d4b5") ; check with err
     (bg-warning "#fee28f") ; check with warning
