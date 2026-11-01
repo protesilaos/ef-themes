@@ -49,11 +49,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:60f12c67-b271-42a8-a84d-647c05c1fbda
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:5d174ec6-499c-4343-b625-e64e68f2367a
-:END:
-
 | Name           |         | #ffead8 | #f0d8cf | #e7d2cb |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #393330 |   10.66 |    9.13 |    8.57 |
@@ -88,11 +83,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 * ef-arcadia
 :PROPERTIES:
 :CUSTOM_ID: h:5931bca9-4574-452c-9807-4c29f7ec0f7f
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:45bde6a3-5448-421a-8344-61a6edc25127
 :END:
 
 | Name           |         | #d6e4d3 | #ced7c8 | #b0b7aa |
@@ -131,11 +121,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:e5007c31-f79f-40b2-b9a6-c67423dba936
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:2912041c-ebf6-4112-aecc-cef5850e636f
-:END:
-
 | Name           |         | #1a143e | #1a204b | #272a3e |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #bfcccf |   10.51 |    9.43 |    8.58 |
@@ -170,11 +155,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 * ef-autumn
 :PROPERTIES:
 :CUSTOM_ID: h:17149328-8ce1-40ad-a013-d47a88cb6456
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:85f29c2d-ae5c-4bb8-94bf-ac43543c8539
 :END:
 
 | Name           |         | #0f0e06 | #26211d | #36322f |
@@ -213,11 +193,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:3926f2b9-ff3b-42db-b11a-54fcc11488cb
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:669d758b-9d7b-441d-bd56-bc15a1bc27e4
-:END:
-
 | Name           |         | #111111 | #222522 | #303230 |
 |----------------+---------+---------+---------+---------|
 | red            | #ef6560 |    6.03 |    4.94 |    4.12 |
@@ -249,11 +224,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 * ef-cherie
 :PROPERTIES:
 :CUSTOM_ID: h:4c9fdb25-3dd3-443c-915d-db5cd995c6f7
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:2a58ddd5-05ff-4aab-b2e4-c5e6b4ad4749
 :END:
 
 | Name           |         | #190a0f | #291f26 | #392a2f |
@@ -292,11 +262,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:029a92c2-e4f5-4457-9eec-8a89dea471f4
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:4330b001-f03b-470c-b255-b948e61cf41f
-:END:
-
 | Name           |         | #fcf7ef | #f0ece0 | #e5e3d8 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #242521 |   14.46 |   13.06 |   11.98 |
@@ -331,11 +296,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 * ef-dark
 :PROPERTIES:
 :CUSTOM_ID: h:c97a3ebc-de07-40bf-af86-1df8be72f214
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:bdc5d5b7-4d1a-4e3d-8333-01a96164f4d8
 :END:
 
 | Name           |         | #000000 | #1a1a1a | #2b2b2b |
@@ -374,11 +334,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 :CUSTOM_ID: h:3146bf01-7f75-4e26-bd68-feeb268cf7ff
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:36958e2f-8e19-47d8-ba3e-16fd7c8df3e4
-:END:
-
 | Name           |         | #fff5ea | #f2e9db | #e9e0d8 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #584141 |    8.68 |    7.77 |    7.17 |
@@ -413,11 +368,6 @@ C1 and C2 are color values written in hexadecimal RGB."
 * ef-deuteranopia-dark
 :PROPERTIES:
 :CUSTOM_ID: h:12b9f4e4-5d65-460d-b3cb-2664f7830c24
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:922e7f85-8666-4d18-9399-ffb90d688a05
 :END:
 
 Most of these are not actually used.  The theme only maps the blues and
@@ -460,11 +410,6 @@ overall design of the project.
 :CUSTOM_ID: h:64efdb85-f6fc-418b-96fc-156409e0258d
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:4b25f3a6-8775-467b-8470-35248a2585f5
-:END:
-
 Most of these are not actually used.  The theme only maps the blues and
 yellows.  We just define the entire palette to make it work with the
 overall design of the project.
@@ -505,11 +450,6 @@ overall design of the project.
 :CUSTOM_ID: h:8a8a4518-9eca-4ece-8bc4-25fbc5530f62
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:d25270b3-c82b-41d3-8cea-9a1e01e9af92
-:END:
-
 | Name           |         | #232025 | #322f34 | #3b393e |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #efd5c5 |   11.49 |    9.42 |    8.15 |
@@ -544,11 +484,6 @@ overall design of the project.
 * ef-duo-dark
 :PROPERTIES:
 :CUSTOM_ID: h:d9fc786a-79e2-4cf7-bc71-64d9cf7de79d
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:3730662d-f752-4180-983b-371e32c2a82e
 :END:
 
 | Name           |         | #070019 | #1d1a26 | #2a2739 |
@@ -587,11 +522,6 @@ overall design of the project.
 :CUSTOM_ID: h:d6590592-452d-4ef1-8e9a-017d87b87239
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:2feec2e7-adc3-4e11-a046-6842e89de0e7
-:END:
-
 | Name           |         | #fff8f0 | #f6ece8 | #e7e0da |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #222222 |   15.10 |   13.70 |   12.18 |
@@ -626,11 +556,6 @@ overall design of the project.
 * ef-eagle
 :PROPERTIES:
 :CUSTOM_ID: h:bddae4eb-12dd-421f-91fa-e62e640df081
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:564803b1-08f9-47cc-a01c-738108701cce
 :END:
 
 | Name           |         | #f1ecd0 | #e4dbc0 | #cec8ae |
@@ -669,11 +594,6 @@ overall design of the project.
 :CUSTOM_ID: h:2c38512b-f72c-4373-8972-de3bcc232df0
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:8228a3a0-74c8-401d-8cd6-a33c59d64a94
-:END:
-
 | Name           |         | #222524 | #303332 | #3e4140 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #eaf2ef |   13.58 |   11.21 |    9.06 |
@@ -708,11 +628,6 @@ overall design of the project.
 * ef-elea-light
 :PROPERTIES:
 :CUSTOM_ID: h:ddb01f51-8f6a-466a-a73e-ed3cf23085b7
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:8cc6238b-e968-4703-a205-58b026f7b3bb
 :END:
 
 | Name           |         | #edf5e2 | #e3e9d6 | #d0d7ca |
@@ -751,11 +666,6 @@ overall design of the project.
 :CUSTOM_ID: h:419187ef-8fc5-4a7b-b1fd-e7b397a0e8b7
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:92ad50c8-2bb8-4400-9192-503bec4c0e7e
-:END:
-
 | Name           |         | #3b2043 | #432e4e | #4a385e |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #e4d3e1 |    9.98 |    8.45 |    7.28 |
@@ -790,11 +700,6 @@ overall design of the project.
 * ef-frost
 :PROPERTIES:
 :CUSTOM_ID: h:3e0fd298-d1b7-4b31-84e9-73f2493944a1
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:043da298-8374-461c-80f0-648b81be0920
 :END:
 
 | Name           |         | #fcffff | #eaefef | #d7dbdb |
@@ -833,11 +738,6 @@ overall design of the project.
 :CUSTOM_ID: h:392da6f5-d8ca-44cf-8584-e3bd3ab700a7
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:043da298-8374-461c-80f0-648b81be0920
-:END:
-
 | Name           |         | #332019 | #452821 | #41352f |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #e8c08a |    9.06 |    7.82 |    6.95 |
@@ -872,11 +772,6 @@ overall design of the project.
 * ef-kassio
 :PROPERTIES:
 :CUSTOM_ID: h:1e4baffb-ba57-4334-924d-720881adc809
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:8a313d2d-5bfe-4472-aaae-f1d369f38303
 :END:
 
 | Name           |         | #fff7f7 | #efe7e7 | #e0dbdb |
@@ -915,11 +810,6 @@ overall design of the project.
 :CUSTOM_ID: h:02d01731-b9ab-4653-9e71-ab1592c64734
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:fa4269da-7941-4b53-a523-e2edd86d457e
-:END:
-
 | Name           |         | #ffffff | #efefef | #dbdbdb |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #202020 |   16.29 |   14.17 |   11.77 |
@@ -954,11 +844,6 @@ overall design of the project.
 * ef-maris-dark
 :PROPERTIES:
 :CUSTOM_ID: h:b1b88202-5e59-48ed-ae04-68851d59dd9b
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:6dece92c-4e27-40b2-8355-d9e2f6e13499
 :END:
 
 | Name           |         | #131c2b | #1d2c39 | #2a3644 |
@@ -997,11 +882,6 @@ overall design of the project.
 :CUSTOM_ID: h:2658abe7-b526-4745-8121-0cfafc6f56f5
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:3e218a03-fba5-44d7-89cf-8e14bb72d888
-:END:
-
 | Name           |         | #edf4f8 | #dce2ef | #cfd8e3 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #151a27 |   15.63 |   13.37 |   12.06 |
@@ -1036,11 +916,6 @@ overall design of the project.
 * ef-melissa-dark
 :PROPERTIES:
 :CUSTOM_ID: h:fd96778f-a473-43ab-b062-1678134e004c
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:aa94bffd-ca6e-4ca7-9222-f4afdf9f6188
 :END:
 
 | Name           |         | #352718 | #483426 | #59463f |
@@ -1079,11 +954,6 @@ overall design of the project.
 :CUSTOM_ID: h:7bf40084-3aa0-4273-a528-34b6ee794351
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:8fd85c99-db72-433b-9a37-954899c2d947
-:END:
-
 | Name           |         | #fff6d8 | #f5e9cb | #e7d7c6 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #484431 |    9.05 |    8.11 |    6.96 |
@@ -1118,11 +988,6 @@ overall design of the project.
 * ef-night
 :PROPERTIES:
 :CUSTOM_ID: h:cc74fbff-d0da-4fef-a83a-8e92d27738b9
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
 :END:
 
 | Name           |         | #000e17 | #242e39 | #242e39 |
@@ -1161,11 +1026,6 @@ overall design of the project.
 :CUSTOM_ID: h:51d32541-7a8e-41e7-9e0c-9a27da52aa5e
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:74fddb93-fb8b-47ee-865b-70ac3e798332
-:END:
-
 | Name           |         | #ffedc9 | #f7e5b6 | #e9d0a8 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #6c4631 |    7.12 |    6.58 |    5.49 |
@@ -1200,11 +1060,6 @@ overall design of the project.
 * ef-owl
 :PROPERTIES:
 :CUSTOM_ID: h:1593749c-d874-4252-ac78-7345b67bc16f
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:e6f75663-0cea-43d7-b503-9460417ad620
 :END:
 
 | Name           |         | #292c2f | #373b3d | #40474b |
@@ -1243,11 +1098,6 @@ overall design of the project.
 :CUSTOM_ID: h:eea07b9c-81ea-4158-b7d6-79dcc8217b8b
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:f6fc19ec-672b-4b0d-9d6a-a7fd7d49cfd5
-:END:
-
 | Name           |         | #f3eddf | #e5d6d4 | #d9cac8 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #4f204f |   10.89 |    9.02 |    8.01 |
@@ -1282,11 +1132,6 @@ overall design of the project.
 * ef-rosa
 :PROPERTIES:
 :CUSTOM_ID: h:cc74fbff-d0da-4fef-a83a-8e92d27738b9
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:2e0d0312-3984-48d8-9adc-1d132c1ab651
 :END:
 
 | Name           |         | #322023 | #432e32 | #4a3842 |
@@ -1325,11 +1170,6 @@ overall design of the project.
 :CUSTOM_ID: h:f8eea1d3-359a-4ab6-9c5c-c54ebe896b43
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:1e3e257a-6362-46f2-bbe1-f3d4ea71ff57
-:END:
-
 | Name           |         | #f6fff9 | #e8f0f0 | #e0e6e3 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #34494a |    9.37 |    8.26 |    7.55 |
@@ -1364,11 +1204,6 @@ overall design of the project.
 * ef-summer
 :PROPERTIES:
 :CUSTOM_ID: h:11cc99c5-435d-4928-9fe1-1b4763cd47ff
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:5f7da43e-0853-4fd5-a3e0-a149fc63a855
 :END:
 
 | Name           |         | #fff2f3 | #f2e4ea | #efd3e4 |
@@ -1407,11 +1242,6 @@ overall design of the project.
 :CUSTOM_ID: h:0340271b-6038-4c8c-b551-d8727bbcef54
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:95ff9ca7-21e5-472e-b30f-14650c576005
-:END:
-
 | Name           |         | #130911 | #221920 | #372d32 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #d0d0d0 |   12.67 |   11.09 |    8.60 |
@@ -1446,11 +1276,6 @@ overall design of the project.
 * ef-trio-dark
 :PROPERTIES:
 :CUSTOM_ID: h:0b8d9f78-dc10-4b50-9197-90713266ec71
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:db8a51f5-a28f-422c-a046-b44bc0fdfb24
 :END:
 
 | Name           |         | #160f0f | #2a2228 | #362f35 |
@@ -1489,11 +1314,6 @@ overall design of the project.
 :CUSTOM_ID: h:1e351ab9-e2c4-496e-b40f-2d813db940e2
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:ea3998f4-10ed-4b6e-bd2e-c342860a7597
-:END:
-
 | Name           |         | #f8f5ff | #ebe7f1 | #e3e0e9 |
 |----------------+---------+---------+---------+---------|
 | fg-main        | #4f3363 |    9.82 |    8.68 |    8.11 |
@@ -1528,11 +1348,6 @@ overall design of the project.
 * ef-tritanopia-dark
 :PROPERTIES:
 :CUSTOM_ID: h:c8ec7d4a-7157-49f5-b946-1d5a3d6f095b
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:efb0e541-d75d-4fe4-ba2d-ae69dcc687d0
 :END:
 
 Most of these are not actually used.  The theme only maps the reds and
@@ -1575,11 +1390,6 @@ overall design of the project.
 :CUSTOM_ID: h:56d0b7f8-5016-4101-8f88-3bce3c519f1f
 :END:
 
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:39239fdd-6585-4070-a92d-0ff2059197a3
-:END:
-
 Most of these are not actually used.  The theme only maps the reds and
 cyans.  We just define the entire palette to make it work with the
 overall design of the project.
@@ -1618,11 +1428,6 @@ overall design of the project.
 * ef-winter
 :PROPERTIES:
 :CUSTOM_ID: h:be3bb946-642a-4ab5-80c3-86cb754b9771
-:END:
-
-** Base colours
-:PROPERTIES:
-:CUSTOM_ID: h:76e0b621-7872-4597-8bdc-6c007e43aff5
 :END:
 
 | Name           |         | #0f0b15 | #1d202f | #2a2f42 |
