@@ -790,7 +790,7 @@ overall design of the project.
 | blue-cooler    | #265fbf |    5.20 |    4.76 |    4.20 |
 | blue-faint     | #4a659f |    4.94 |    4.53 |    3.99 |
 | magenta        | #a05074 |    4.63 |    4.25 |    3.75 |
-| magenta-warmer | #b02f80 |    5.06 |    4.64 |    4.09 |
+| magenta-warmer | #b03f80 |    4.66 |    4.27 |    3.77 |
 | magenta-cooler | #8450c0 |    4.64 |    4.25 |    3.75 |
 | magenta-faint  | #705e90 |    4.88 |    4.48 |    3.95 |
 | cyan           | #3f60af |    5.15 |    4.72 |    4.16 |
