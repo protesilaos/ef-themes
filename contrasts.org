@@ -782,7 +782,7 @@ overall design of the project.
 | green-cooler   | #007850 |    4.74 |    4.35 |    3.84 |
 | green-faint    | #61704c |    4.59 |    4.21 |    3.71 |
 | yellow         | #a05a22 |    4.53 |    4.15 |    3.67 |
-| yellow-warmer  | #b05000 |    4.52 |    4.14 |    3.65 |
+| yellow-warmer  | #aa5300 |    4.57 |    4.19 |    3.70 |
 | yellow-cooler  | #a04f40 |    4.89 |    4.49 |    3.96 |
 | yellow-faint   | #935b42 |    4.73 |    4.33 |    3.82 |
 | blue           | #375cc6 |    5.14 |    4.71 |    4.16 |
