@@ -109,7 +109,7 @@
     (bg-completion "#622521")
     (bg-popup "#402626")
     (bg-hover "#694a7c")
-    (bg-hover-secondary "#583426")
+    (bg-hover-secondary "#683426")
     (bg-hl-line "#4e3020")
     (bg-paren-match "#50542b")
     (bg-err "#552010") ; check with err
