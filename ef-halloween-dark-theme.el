@@ -48,7 +48,7 @@
     (border "#89685f")
 
     (red "#f07160")
-    (red-warmer "#f07a3f")
+    (red-warmer "#ff733f")
     (red-cooler "#e97f6f")
     (red-faint "#df7f7f")
     (green "#4faf26")
