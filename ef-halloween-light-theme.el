@@ -47,7 +47,7 @@
     (bg-inactive "#ead8b0")
     (border "#c0b0a6")
 
-    (red "#ba2d2f")
+    (red "#b02f3f")
     (red-warmer "#c93000")
     (red-cooler "#c02945")
     (red-faint "#b04950")
