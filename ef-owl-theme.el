@@ -146,7 +146,7 @@
 
     (accent-0 cyan-cooler)
     (accent-1 yellow-cooler)
-    (accent-2 red)
+    (accent-2 yellow-warmer)
     (accent-3 green)
 
     (date-common cyan-cooler)
