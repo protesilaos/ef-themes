@@ -99,6 +99,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     ef-night
     ef-owl
     ef-rosa
+    ef-october
     ef-symbiosis
     ef-trio-dark
     ef-tritanopia-dark
@@ -147,6 +148,7 @@ and Modus into a single group, enable `modus-themes-include-derivatives-mode'."
     (ef-rosa ef-themes "Legible dark rosewood theme with magenta and green colors." dark ef-rosa-palette nil ef-rosa-palette-overrides)
     (ef-spring ef-themes "Legible light floral theme with cool, varied colors (green, cyan, red)." light ef-spring-palette nil ef-spring-palette-overrides)
     (ef-summer ef-themes "Legible light warm pink theme with magenta, purple, gold, cyan colors." light ef-summer-palette nil ef-summer-palette-overrides)
+    (ef-october ef-themes "Legible dark warm plum theme with magenta, purple, gold, cyan colors." dark ef-october-palette nil ef-october-palette-overrides)
     (ef-symbiosis ef-themes "Legible dark brown-black theme with blue, green, cyan, gold colors." dark ef-symbiosis-palette nil ef-symbiosis-palette-overrides)
     (ef-trio-dark ef-themes "Legible dark purple grey theme with magenta, blue, teal colors." dark ef-trio-dark-palette nil ef-trio-dark-palette-overrides)
     (ef-trio-light ef-themes "Legible light purple grey theme with magenta, blue, and teal colors." light ef-trio-light-palette nil ef-trio-light-palette-overrides)
