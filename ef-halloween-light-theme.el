@@ -193,6 +193,8 @@
 
     (bg-space-err bg-yellow-intense)
 
+    (fg-line-number-active red)
+
     (rainbow-0 red-warmer)
     (rainbow-1 yellow)
     (rainbow-2 red)
