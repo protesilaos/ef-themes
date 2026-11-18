@@ -144,8 +144,8 @@
     (rx-backslash magenta-cooler) ; compare with `string'
     (rx-construct red)
 
-    (accent-0 red-warmer)
-    (accent-1 magenta-cooler)
+    (accent-0 magenta-cooler)
+    (accent-1 red-warmer)
     (accent-2 yellow)
     (accent-3 green-warmer)
 
