@@ -12,6 +12,23 @@ the manual: <https://protesilaos.com/emacs/ef-themes>.
 
 #+toc: headlines 1 insert TOC here, with one headline level
 
+* Version 2.3.0 on 2026-11-18
+:PROPERTIES:
+:CUSTOM_ID: h:2aa67579-66da-4a4b-bd02-d98ab707ebc0
+:END:
+
+This version introduces a pair of new themes to the collection:
+~ef-halloween-light~ and ~ef-halloween-dark~. I produced the prototype
+of the dark theme during a livestream, if you are curious to learn
+about the process: <https://protesilaos.com/codelog/2026-10-31-emacs-live-ef-themes-halloween/>.
+
+The two themes add to an already comprehensive collection that covers
+a broad spectrum of styles. All themes are consistent with the spirit
+of avoiding exaggerations while remaining legible.
+
+Note that since version =2.0.0=, the ~ef-themes~ are built on top of
+my ~modus-themes~. They benefit from all the changes I make there.
+
 * Version 2.2.0 on 2026-06-21
 :PROPERTIES:
 :CUSTOM_ID: h:4b6e7930-4923-4abe-857b-06c81ceeae61
